@@ -1,12 +1,12 @@
 ---
-description: Ape Smart
+description: Discover Your Next Big Opportunity
 ---
 
 # Discover
 
 ## Overview
 
-Discover was conceived with the intention of surfacing valuable market data that would empower KyberSwap users to make data-driven trades. Discover aggregates both on-chain and off-chain data across [multiple chains](../../getting-started/supported-exchanges-and-networks.md) and condenses this wealth of data into actionable insights which can be conveniently accessed via the [KyberSwap Interface](https://kyberswap.com/discover). With Discover, you can ape smartly into the next big opportunity.
+Discover was conceived with the intention of surfacing valuable market data that would empower KyberSwap users to make data-driven trades. Discover aggregates both on-chain and off-chain data across [multiple chains](../../getting-started/supported-exchanges-and-networks.md) and condenses this wealth of data into actionable insights which can be conveniently accessed via the [KyberSwap Interface](https://kyberswap.com/discover). With Discover, you can discover your next big opportunity.
 
 ## Next steps
 
