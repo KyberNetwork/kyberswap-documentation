@@ -6,9 +6,9 @@ description: Your KyberAI Questions Answered
 
 <details>
 
-<summary>Are there API Endpoints for KyberAI?</summary>
+<summary>Are there API Endpoints for Discover?</summary>
 
-KyberAI on [KyberSwap.com](http://kyberswap.com/) were developed for the benefit and convenience of KyberSwap users and are intended to help our users make informed decisions about trading on our platform.
+Discover on [KyberSwap.com](http://kyberswap.com/) were developed for the benefit and convenience of KyberSwap users and are intended to help our users make informed decisions about trading on our platform.
 
 As such, we do not have any public-facing API endpoints, and we do not currently have any plans to make this feature available outside of the KyberSwap platform.
 
