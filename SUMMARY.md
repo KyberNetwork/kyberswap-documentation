@@ -38,7 +38,7 @@
   * [Concepts](kyberswap-solutions/kyberswap-aggregator/concepts/README.md)
     * [Dynamic Trade Routing](kyberswap-solutions/kyberswap-aggregator/concepts/dynamic-trade-routing.md)
   * [User Guides](kyberswap-solutions/kyberswap-aggregator/user-guides/README.md)
-    *
+    * [Instantly Swap At The Best Rates](kyberswap-solutions/kyberswap-interface/user-guides/instantly-swap-at-the-best-rates.md)
   * [Developer Guides](kyberswap-solutions/kyberswap-aggregator/developer-guides/README.md)
     * [Execute A Swap With The Aggregator API](kyberswap-solutions/kyberswap-aggregator/developer-guides/execute-a-swap-with-the-aggregator-api.md)
   * [Contracts](kyberswap-solutions/kyberswap-aggregator/contracts/README.md)
@@ -56,7 +56,7 @@
   * [Concepts](kyberswap-solutions/limit-order/concepts/README.md)
     * [Off-Chain Relay, On-Chain Settlement](kyberswap-solutions/limit-order/concepts/off-chain-relay.md)
   * [User Guides](kyberswap-solutions/limit-order/user-guides/README.md)
-    *
+    * [Swap At Your Preferred Rates](kyberswap-solutions/kyberswap-interface/user-guides/trade-at-your-preferred-rates.md)
     * [Update Limit Orders](kyberswap-solutions/limit-order/user-guides/update-limit-orders.md)
     * [Cancel Limit Orders](kyberswap-solutions/limit-order/user-guides/cancel-limit-orders.md)
   * [Developer Guides](kyberswap-solutions/limit-order/developer-guides/README.md)
