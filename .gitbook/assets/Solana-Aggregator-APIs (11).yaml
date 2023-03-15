@@ -1,0 +1,264 @@
+openapi: 3.0.0
+info:
+  title: Kyber Swap Solana Aggregator API (v1.0.0)
+  version: 1.0.0
+  contact:
+    name: Simon
+    email: simon.ha@kyber.network
+    url: 'https://kyberswap.com'
+servers:
+  - url: http://{{route_service}}
+paths:
+  /route:
+    get:
+      summary: Get swap route
+      description: Retrieve the information about a Swap between 2 tokens.
+      tags:
+        - route
+      parameters:
+        - name: tokenIn
+          in: query
+          schema:
+            type: string
+          example: EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v
+          description: |
+            Address of the input token.
+            Example: `EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v`
+        - name: tokenOut
+          in: query
+          schema:
+            type: string
+          example: Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB
+          description: |
+            Address of the output token.
+            Example: `Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB`
+        - name: amountIn
+          in: query
+          schema:
+            type: integer
+            example: '10000000000000'
+          description: |
+            Amount of the input token (in wei).
+            Example: `10000000000000`
+        - name: dexes
+          in: query
+          schema:
+            type: string
+          description: |
+            DEX IDs included in the route, separated by comma.
+            Example: kyberswap, kybberswapv2
+        - name: slippageTolerance
+          in: query
+          schema:
+            type: integer
+            example: '200'
+          description: |
+            This is the amount of slippage the user can accept for his trade. The unit is bps.
+            The value is in ranges [0, 2000], 10 means 0.1%.
+            Default value is 50/10000 ~ 0.5%.
+        - name: to
+          in: query
+          schema:
+            type: string
+            example: 5Ba2nY9QuLVJ1Ct56k42tFJQQauujJPPPTXyC3kURV66
+          description: |
+            Address to receive the output token
+            Example: `5Ba2nY9QuLVJ1Ct56k42tFJQQauujJPPPTXyC3kURV66`
+        - name: programState
+          in: query
+          schema:
+            type: string
+            example: 8Q9k9zEBQR8LwEFo77uWCe4HWU2xXGxjM7aecsf7FLMJ
+          description: |
+            Deployed program.
+            Example: `8Q9k9zEBQR8LwEFo77uWCe4HWU2xXGxjM7aecsf7FLMJ`
+        - name: clientData
+          in: query
+          schema:
+            type: string
+            example: '%7B%22source%22%3A%22kyberswap%22%7D'
+          description: |
+            String to present to your client.
+            Example: `yourCompanyNameHere`
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json: {}
+  /dexes:
+    get:
+      tags:
+        - dexes
+      summary: Get list of DEXs
+      description: Get the list of DEX IDs through which the swap will be routed to. Used for filtering the included DEXs fore the swap.
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                example:
+                  {
+                      "code": 0,
+                      "message": "successfully",
+                      "data": {
+                          "dexes": [
+                              "OrcaV2",
+                              "Serum",
+                              "RaydiumV5",
+                              "WhirlPool",
+                              "Saber",
+                              "RaydiumV4"
+                          ]
+                      }
+                  }
+
+  /route/encode:
+    get:
+      tags:
+        - encode
+      summary: Encode swap route
+      description: Encode the swap route to be sent to the KyberSwap Aggregator smart contract.
+      parameters:
+        - name: tokenIn
+          in: query
+          schema:
+            type: string
+          required: true
+          description: |
+            Base58 token address of the input token.
+            Example: `EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v`
+          example: EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v
+        - name: tokenOut
+          in: query
+          schema:
+            type: string
+          required: true
+          description: |
+            Base58 token address of the output token.
+            Example: `Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB`
+          example: Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB
+        - name: amountIn
+          in: query
+          schema:
+            type: integer
+          required: true
+          description: |
+            Amount of the input token (in wei): amountIn * tokenDecimal
+            Example: `10000000000000`
+          example: '10000000000000'
+        - name: dexes
+          in: query
+          schema:
+            type: string
+          description: |
+            Optional. 
+
+            Dex array, split by ",". 
+            Example: `OrcaV2, RaydiumV4`
+            
+            Allowed DEX values:
+            OrcaV2,Serum,RaydiumV5,WhirlPool,Saber,RaydiumV4,Mercurial,GooseFx
+            Note: empty value is implicit as using all dexes.
+        - name: slippageTolerance
+          in: query
+          schema:
+            type: integer
+          description: |
+            This is the amount of slippage the user can accept for his trade. The unit is bps.
+            The value is in ranges [0, 2000], 10 means 0.1%.
+            Default value is 50/10000 ~ 0.5%.
+          example: '200'
+        - name: to
+          in: query
+          schema:
+            type: string
+          required: true
+          description: |
+            Address to receive the output token
+            Example: `5Ba2nY9QuLVJ1Ct56k42tFJQQauujJPPPTXyC3kURV66`
+          example: 5Ba2nY9QuLVJ1Ct56k42tFJQQauujJPPPTXyC3kURV66
+        - name: programState
+          in: query
+          schema:
+            type: string
+          required: true
+          description: |
+            Deployed program.
+            Example: `8Q9k9zEBQR8LwEFo77uWCe4HWU2xXGxjM7aecsf7FLMJ`
+          example: 8Q9k9zEBQR8LwEFo77uWCe4HWU2xXGxjM7aecsf7FLMJ
+        - name: clientData
+          in: query
+          schema:
+            type: string
+          description: |
+            String to present to your client.
+            Example: `yourCompanyNameHere`
+          example: '%7B%22source%22%3A%22kyberswap%22%7D'
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: string
+                example:
+                  {
+                      "inputAmount": "10000000000000",
+                      "outputAmount": "2343543369711",
+                      "minOutputAmount": "2297591538932",
+                      "amountInUsd": 10000000,
+                      "amountOutUsd": 2343543.369711,
+                      "swaps": [
+                          [
+                              {
+                                  "pool": "YAkoNb6HKmSxQN9L8hiBE5tPJRsniSSMzND1boHmZxe",
+                                  "tokenIn": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+                                  "tokenOut": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+                                  "swapAmount": "9000000000000",
+                                  "amountOut": "1354816427350",
+                                  "limitReturnAmount": "0",
+                                  "maxPrice": "115792089237316195423570985008687907853269984665640564039457584007913129639935",
+                                  "exchange": "Saber",
+                                  "poolLength": 2,
+                                  "poolType": "Saber",
+                                  "reserveUsd": 2404817.844718,
+                                  "extra": ""
+                              }
+                          ],
+                          [
+                              {
+                                  "pool": "2EXiumdi14E9b8Fy62QcA5Uh6WdHS2b38wtSxp72Mibj",
+                                  "tokenIn": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+                                  "tokenOut": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+                                  "swapAmount": "1000000000000",
+                                  "amountOut": "988726942361",
+                                  "limitReturnAmount": "0",
+                                  "maxPrice": "115792089237316195423570985008687907853269984665640564039457584007913129639935",
+                                  "exchange": "RaydiumV5",
+                                  "poolLength": 2,
+                                  "poolType": "RaydiumV5",
+                                  "reserveUsd": 2702850.685077,
+                                  "extra": ""
+                              }
+                          ]
+                      ],
+                      "tokens": {
+                          "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v": {
+                              "address": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+                              "symbol": "USDC",
+                              "name": "USD Coin",
+                              "price": 1,
+                              "decimals": 6
+                          },
+                          "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB": {
+                              "address": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+                              "symbol": "USDT",
+                              "name": "USDT",
+                              "price": 1,
+                              "decimals": 6
+                          }
+                      },
+                      "encodedMessage": "AgAKHT4j52B5mkP8cHmRIwmkBlhRESg2aC6x7Ub+gyBL1MNnbfAN1HGGv8afaoeRqV/FwDUZv/E9aYvAZMvjyHyBL5VYvmCxSY7K6u0z50WvuDb6Q7uqTbs0PusShvTLb7QssK1OASTn+c50QvivzeJ4xRWFN0DcUIZ/ZkvNVmitjmb8zM1upXsbXf62Oln6oC2GEZPEH3B8AlKwgiL8K0TIG6gOc4kgtGuyXl0ESYePbf88nUoP2Y6/dQbN3Bpb6RI8W0rzQGFso9f953BUJltyQYmb9hJx0kMdyGQP+6tWq9PTElL5v5i0qbUvlQBVmPjpztMZ2G0/CghyhpxacmCiGtI7U+roK03mEQLpMUcfIHksCBDRX/PYhV7f7KjMHcUvnkNPXYyRIbguEvA18701p9YUEttTbELVAeko/Z1jGDH5Cu5UtMkZ2LFqoRRq2mRUxtqJDiVae7jj6CHAVwTpZ4umoL/ss2VXgjucK+xd/en6iFCT02sAlvYoAWlSoQgn1lrm55GhQ3Zmr/vZZ9TuiodRJFEUJKQ2Ur+0A0rA/ICvH3LGCKjJVyWGyzl6RaGPQK2sgzECdNxhN5tnXirfoiaLsn0VNfRJj6DZF2cA9epKWsCjylurJ0vprq2VWOzjLHwppRfh42LZrfoRfbA01hIPbSetuF8ST2LWqvrmmXK77wOAZWD3XeNui0wZMC/p5vTzd328LiC9IvcDSEkTBF56iexAzmhCe4SxDWDl0+W+xAE5iUamN4WsB13vIk7uf9PnrRgqo6aX4G9oDjnwTdwdgPedvDFxgBQ2yaQS0o15AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGhNtJbPrf59Wh0YzTm5bNPIjbZITBvHVoGDkRm2r/tgf8CQgmL4CqvVpr49A4XoBc90SoQAgPoxO2UVWbvFo7PkD6V8VszoAjBQcyWMw6R30RL27XXSKNgnViRFh7n6wG3fbh12Whk9nL4UbO63msHLSF7V9bN5E6jPWFfv8AqUf1oq97JdK7lK1cSVhGX1IPkCzQMcTg3QYud/zj+yKIKy+EPXpPEmOxuCd7WQadA8IVKhrFRurZXVs8wVDdVg+FDy1uAqR6+CTQmradxC1wyyjL+iSft+5XudJWwSdi7wMGRm/lIRcy/+ytunLDm+e8jOW7xfcSayxDmzpAAAAA2gdcsv9exoF2E95TC2kqhzVHd2naR0MMvYFUM1xKgycAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAUbAAUCwFwVABwEAQAFEwguijSjUn1TphwMARQFFRYAAgMEBQYXJhxqphnZAeVBAJDNeS8IAAABEQAAAAEAkM15LwgAAAAAAAAAAAAAHBUBGAUXBxkICQoLGgwNDg8QERICBQAmHGqmGdkB5UEAEKXU6AAAAAERAAAACQAQpdToAAAAAAAAAAAAAAAcAwABBRB8M3KQBiHG0/SkIPMWAgAA",
+                      "serumOpenOrdersAccountByMarket": {}
+                  }

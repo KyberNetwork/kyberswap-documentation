@@ -1,0 +1,276 @@
+openapi: 3.0.0
+info:
+  title: Kyber Swap Aggregator APIs
+  description: |
+    Kyber Swap Aggregator APIs for external partners
+  license:
+    name: Apache 2.0
+    url: https://www.apache.org/licenses/LICENSE-2.0.html
+  version: '1.0'
+  contact:
+    name: Tien
+    email: matthew@kyber.network
+    url: https://kyberswap.com
+servers:
+  - url: https://aggregator-api.kyberswap.com
+tags:
+  - name: swap
+    description: Swap operator
+paths:
+  /{chain}/route/encode:
+    parameters:
+      - schema:
+          type: string
+        name: chain
+        description: |
+          Supported chains: 
+            - arbitrum 
+            - aurora
+            - avalanche
+            - bsc
+            - bttc
+            - cronos
+            - ethereum
+            - fantom
+            - oasis
+            - polygon
+            - velas
+            - optimism
+            
+          Supported testnet: (in progress)
+            - rinkeby
+        in: path
+        required: true
+    get:
+      summary: Get Swap Info with Encoded Data
+      tags:
+        - swap
+      responses:
+        '200':
+          description: Swap Found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Swap'
+              examples:
+                example-1:
+                  value:
+                    inputAmount: '1000000000000000000'
+                    outputAmount: '1214880136112732694'
+                    totalGas: 245000
+                    gasPriceGwei: '5'
+                    gasUsd: 0.375077417465403
+                    amountInUsd: 306.1856469105331
+                    amountOutUsd: 1.156894412043665
+                    receivedUsd: 0.781816994578262
+                    swaps:
+                      - - pool: '0x3d94d03eb9ea2d4726886ab8ac9fc0f18355fd13'
+                          tokenIn: '0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c'
+                          tokenOut: '0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82'
+                          swapAmount: '1000000000000000000'
+                          amountOut: '58328492486235761945'
+                          limitReturnAmount: '0'
+                          maxPrice: >-
+                            115792089237316195423570985008687907853269984665640564039457584007913129639935
+                          exchange: biswap
+                          poolLength: 2
+                          poolType: uni
+                        - pool: '0x487c6c1744064fdebf16b4ec6eddcef2b277db64'
+                          tokenIn: '0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82'
+                          tokenOut: '0xb5102cee1528ce2c760893034a4603663495fd72'
+                          swapAmount: '58328492486235761945'
+                          amountOut: '1214880136112732694'
+                          limitReturnAmount: '0'
+                          maxPrice: >-
+                            115792089237316195423570985008687907853269984665640564039457584007913129639935
+                          exchange: pancake
+                          poolLength: 2
+                          poolType: uni
+                    encodedSwapData: >-
+                      0xabcffc26000000000000000000000000d12bcdfb9a39be79da3bdf02557efdcd5ca59e77000000000000000000000000000000000000000000000000000000000000008000000000000000000000000000000000000000000000000000000000000002000000000000000000000000000000000000000000000000000000000000000620000000000000000000000000eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee000000000000000000000000b5102cee1528ce2c760893034a4603663495fd7200000000000000000000000000000000000000000000000000000000000001200000000000000000000000000000000000000000000000000000000000000140000000000000000000000000a36001176122b25ec20c7f2f6adc3808d381aa890000000000000000000000000000000000000000000000000de0b6b3a7640000000000000000000000000000000000000000000000000000100e97793199068e000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001600000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000002000000000000000000000000000000000000000000000000000000000000000e0000000000000000000000000eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee000000000000000000000000b5102cee1528ce2c760893034a4603663495fd72000000000000000000000000000000000000000000000000100e97793199068e000000000000000000000000a36001176122b25ec20c7f2f6adc3808d381aa8900000000000000000000000000000000000000000000000000000000627b7cc100000000000000000000000000000000000000000000000000000000000003c0000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000002000000000000000000000000000000000000000000000000000000000000004000000000000000000000000000000000000000000000000000000000000001600000000000000000000000000000000000000000000000000000000000000040000000000000000000000000000000000000000000000000000000000000000500000000000000000000000000000000000000000000000000000000000000c00000000000000000000000003d94d03eb9ea2d4726886ab8ac9fc0f18355fd13000000000000000000000000bb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c0000000000000000000000000e09fabb73bd3ade0a17ecc321fd13a19e81ce82000000000000000000000000487c6c1744064fdebf16b4ec6eddcef2b277db640000000000000000000000000000000000000000000000000de0b6b3a764000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000040000000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000c0000000000000000000000000487c6c1744064fdebf16b4ec6eddcef2b277db640000000000000000000000000e09fabb73bd3ade0a17ecc321fd13a19e81ce82000000000000000000000000b5102cee1528ce2c760893034a4603663495fd72000000000000000000000000a36001176122b25ec20c7f2f6adc3808d381aa89000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004000000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000000
+                    routerAddress: '0x00555513Acf282B42882420E5e5bA87b44D8fA6E'
+      operationId: get-route-encode
+      description: >-
+        Retrieve the information about a Swap between 2 tokens with encoded data
+        to submit to KyberSwap router contract
+      parameters:
+        - schema:
+            type: string
+          in: query
+          name: tokenIn
+          required: true
+          description: |
+            Address of the input token \
+            `0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE` in case of native token
+        - schema:
+            type: string
+          in: query
+          name: tokenOut
+          description: |
+            Address of the output token \
+            `0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE` in case of native token
+          required: true
+        - schema:
+            type: string
+          in: query
+          name: amountIn
+          description: Amount of the input token
+          required: true
+        - schema:
+            type: string
+            enum:
+              - '0'
+              - '1'
+          in: query
+          name: saveGas
+          description: 0 = maximize return, 1 = no splitting
+        - schema:
+            type: string
+          in: query
+          name: slippageTolerance
+          description: >
+            This is the amount of slippage the user can accept for his trade.
+            The unit is bip. \
+
+            The value is in ranges [0, 2000], 10 means 0.1%. \
+
+            Default value is 50/10000 ~ 0.5%.
+        - schema:
+            type: boolean
+          in: query
+          name: isInBps
+          description: |
+            if true, fee is taken in BPS
+        - schema:
+            type: string
+            enum:
+              - currency_in
+              - currency_out
+          in: query
+          name: chargeFeeBy
+          allowEmptyValue: true
+          description: >
+            Indicates where fee is charged by input token `currency_in` or
+            output token `currency_out` \
+
+            Default is empty => no fee charge
+        - schema:
+            type: string
+          in: query
+          name: feeReceiver
+          description: Address to receive fee (if chargeFeeBy is not empty
+        - schema:
+            type: string
+          in: query
+          name: feeAmount
+          description: >
+            Amount of Fee to be collected \
+
+            if isInBps = true, feeAmount is the percentage of fee that we will
+            take with base unit = 10000, i.e feeAmount = 10 means taking 0.1% \
+
+            if isInBps = false, feeAmount is the amount of token that we will
+            take as fee, i.e feeAmount = 10 means taking 10 token weis as fee
+        - schema:
+            type: string
+            example: '1551036863'
+          in: query
+          name: deadline
+          description: >-
+            Deadline (in Unix time second) for the transaction to be executed.
+            Default will be +20 minute. Cannot be in the past.
+        - schema:
+            type: string
+          in: query
+          name: to
+          description: Address to receive the output token
+          required: true
+        - schema:
+            type: string
+            example: '{"source":"kyberswap"}'
+          in: query
+          name: clientData
+          description: Json string present your client
+        - schema:
+            type: string
+            enum:
+              - Latest
+          in: header
+          name: Accept-Version
+          description: Version of Aggregator
+          required: true
+components:
+  schemas:
+    Swap:
+      type: object
+      properties:
+        inputAmount:
+          type: string
+          description: The input amount of `tokenIn`, in wei
+        outputAmount:
+          type: string
+          description: The input amount of `tokenOut`, in wei
+        totalGas:
+          type: integer
+          description: Estimated gas fee
+        gasPriceGwei:
+          type: string
+          description: Current gas price in Gwei
+        gasUsd:
+          type: number
+          description: Current gas price in USD
+        amountInUsd:
+          type: number
+          description: Estimate of input value, in USD
+        amountOutUsd:
+          type: number
+          description: Estimate of out value, in USD
+        receivedUsd:
+          type: number
+          description: Estimate of final received value, in USD
+        swaps:
+          type: array
+          description: Swap path, a 2-dimen array describe how swap is executed
+          items:
+            type: array
+            items:
+              $ref: '#/components/schemas/SwapSequence'
+        encodedSwapData:
+          type: string
+          description: The encoded data to be sent to our router address
+        routerAddress:
+          type: string
+    SwapSequence:
+      type: object
+      properties:
+        pool:
+          type: string
+          description: The address of the pool used in our executor
+        tokenIn:
+          type: string
+          description: The input token for this pool
+        tokenOut:
+          type: string
+          description: The output token for this pool
+        swapAmount:
+          type: string
+          description: The input amount swap through this pool
+        amountOut:
+          type: string
+          description: The output amount after swap through this pool
+        limitReturnAmount:
+          type: string
+          description: The limit return amount
+        maxPrice:
+          type: string
+          description: The max price
+        exchange:
+          type: string
+          description: The original exchange of this pool
+        poolLength:
+          type: integer
+          description: The number of token in this pool
+        poolType:
+          type: string
+          description: |
+            The type of this pool (internal definition by our aggregator)

@@ -1,0 +1,794 @@
+openapi: 3.0.0
+info:
+  title: KyberSwap Aggregator APIs
+  description: |
+    KyberSwap Aggregator APIs for external partners
+  license:
+    name: Apache 2.0
+    url: 'https://www.apache.org/licenses/LICENSE-2.0.html'
+  version: '2.0'
+  contact:
+    name: Kai
+    email: awkaishin@kyber.network
+    url: 'https://kyberswap.com'
+servers:
+  - url: 'https://aggregator-api.kyberswap.com'
+tags:
+  - name: swap
+    description: |
+      Set of APIs that enable swap routes to be queried with or without encoded data. V2 improves the response time for getting a route via offloading encoding requirements to the post method.
+      Please use V2 `GET` API for a more performant route query. The same params can then be reused in the `POST` API to get the encoded data for submission to the KyberSwap router contract.
+paths:
+  '/{chain}/route/encode':
+    parameters:
+      - schema:
+          type: string
+        name: chain
+        description: |
+          Supported chains: 
+            - arbitrum 
+            - aurora
+            - avalanche
+            - bsc
+            - bttc
+            - cronos
+            - ethereum
+            - fantom
+            - oasis
+            - polygon
+            - velas
+            - optimism
+        in: path
+        required: true
+    get:
+      summary: '[V1] Get Swap Info with Encoded Data'
+      description: Retrieve the information about a Swap between 2 tokens with encoded data to submit to KyberSwap router contract
+      operationId: get-route-encode
+      tags:
+        - swap
+      responses:
+        '200':
+          description: Swap Found
+          content:
+            application/json:              
+              schema:
+                $ref: '#/components/schemas/Swap'
+                example:
+                  $ref: '#/components/examples/SampleResponseSwapV1'  
+      parameters:
+        - schema:
+            type: string
+          in: query
+          name: tokenIn
+          required: true
+          description: |
+            Address of the input token \
+            `0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE` in case of native token
+        - schema:
+            type: string
+          in: query
+          name: tokenOut
+          description: |
+            Address of the output token \
+            `0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE` in case of native token
+          required: true
+        - schema:
+            type: string
+          in: query
+          name: amountIn
+          description: Amount of the input token (in wei)
+          required: true
+        - schema:
+            type: string
+            enum:
+              - '0'
+              - '1'
+          in: query
+          name: saveGas
+          description: '0 = maximize return, 1 = no splitting'
+        - schema:
+            type: string
+          in: query
+          name: slippageTolerance
+          description: |
+            This is the amount of slippage the user can accept for his trade. The unit is bip. \
+            The value is in ranges [0, 2000], 10 means 0.1%. \
+            Default value is 50/10000 ~ 0.5%.
+        - schema:
+            type: boolean
+          in: query
+          name: isInBps
+          description: |
+            if true, fee is taken in BPS
+        - schema:
+            type: string
+            enum:
+              - currency_in
+              - currency_out
+          in: query
+          name: chargeFeeBy
+          allowEmptyValue: true
+          description: |
+            Indicates whether fee is charged by input token `currency_in` or output token `currency_out` \
+            Default is empty whereby no fee is charged
+        - schema:
+            type: string
+          in: query
+          name: feeReceiver
+          description: Address to receive fee (if `chargeFeeBy` is not empty)
+        - schema:
+            type: string
+          in: query
+          name: feeAmount
+          description: |
+            Fee amount to be collected \
+            if `isInBps` = `true`, `feeAmount` is the percentage of fees that we will take with base unit = 10000, i.e `feeAmount` = 10 and `isInBps` = `true` then fee = 0.1% \
+            if `isInBps` = `false`, `feeAmount` is the amount of token that we will take as fee, i.e `feeAmount` = 10 and `isInBps` = 'false' then fee = 10 token weis
+        - schema:
+            type: string
+            example: '1551036863'
+          in: query
+          name: deadline
+          description: Deadline (in Unix time second) for the transaction to be executed. Default will be +20 minute. Cannot be in the past.
+        - schema:
+            type: string
+          in: query
+          name: to
+          description: Address to receive the output token
+          required: true
+        - schema:
+            type: string
+            example: '{"source":"EnterYourProjectNameHere"}'
+          in: query
+          name: clientData
+          description: Json string to present to your client
+        - schema:
+            type: string
+            enum:
+              - Latest
+          in: header
+          name: Accept-Version
+          description: Version of Aggregator
+          required: true
+
+  '/{chain}/api/v1/routes':
+    parameters:
+      - schema:
+          type: string
+        name: chain
+        description: |
+          Supported chains: 
+            - arbitrum 
+            - aurora
+            - avalanche
+            - bsc
+            - bttc
+            - cronos
+            - ethereum
+            - fantom
+            - oasis
+            - polygon
+            - velas
+            - optimism
+        in: path
+        required: true
+    get:
+      summary: '[V2] Get Swap Route'
+      description: Retrieve the route information about a Swap between 2 tokens. Please use V2 `GET` API for a more performant route query. The same params can then be reused in the `POST` API to get the encoded data for submission to the KyberSwap router contract.
+      operationId: get-route
+      tags:
+        - swap
+      responses:
+        '200':
+          description: Swap Found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SwapRouteSuccess'
+                example:
+                  $ref: '#/components/examples/SampleResponseSwapV2'  
+      parameters:
+        - schema:
+            type: string
+          in: query
+          name: tokenIn
+          required: true
+          description: |
+            Address of the input token \
+            `0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE` in case of native token
+        - schema:
+            type: string
+          in: query
+          name: tokenOut
+          description: |
+            Address of the output token \
+            `0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE` in case of native token
+          required: true
+        - schema:
+            type: string
+          in: query
+          name: amountIn
+          description: Amount of the input token (in wei)
+          required: true
+        - schema:
+            type: string
+            enum:
+              - '0'
+              - '1'
+          in: query
+          name: saveGas
+          description: '0 = maximize return, 1 = no splitting'
+        - schema:
+            type: string
+          in: query
+          name: slippageTolerance
+          description: |
+            This is the amount of slippage the user can accept for his trade. The unit is bip. \
+            The value is in ranges [0, 2000], 10 means 0.1%. \
+            Default value is 50/10000 ~ 0.5%.
+        - schema:
+            type: boolean
+          in: query
+          name: isInBps
+          description: |
+            if true, fee is taken in BPS
+        - schema:
+            type: string
+            enum:
+              - currency_in
+              - currency_out
+          in: query
+          name: chargeFeeBy
+          allowEmptyValue: true
+          description: |
+            Indicates whether fee is charged by input token `currency_in` or output token `currency_out` \
+            Default is empty whereby no fee is charged
+        - schema:
+            type: string
+          in: query
+          name: feeReceiver
+          description: Address to receive fee (if `chargeFeeBy` is not empty)
+        - schema:
+            type: string
+          in: query
+          name: feeAmount
+          description: |
+            Fee amount to be collected \
+            if `isInBps` = `true`, `feeAmount` is the percentage of fees that we will take with base unit = 10000, i.e `feeAmount` = 10 and `isInBps` = `true` then fee = 0.1% \
+            if `isInBps` = `false`, `feeAmount` is the amount of token that we will take as fee, i.e `feeAmount` = 10 and `isInBps` = 'false' then fee = 10 token weis
+        - schema:
+            type: string
+            example: '1551036863'
+          in: query
+          name: deadline
+          description: Deadline (in Unix time second) for the transaction to be executed. Default will be +20 minute. Cannot be in the past.
+        - schema:
+            type: string
+          in: query
+          name: to
+          description: Address to receive the output token
+          required: true
+        - schema:
+            type: string
+            example: '{"source":"EnterYourProjectNameHere"}'
+          in: query
+          name: clientData
+          description: Json string to present to your client
+        - schema:
+            type: string
+            enum:
+              - Latest
+          in: header
+          name: Accept-Version
+          description: Version of Aggregator
+          required: true
+
+  '/{chain}/api/v1/route/build':
+    parameters:
+      - schema:
+          type: string
+        name: chain
+        description: |
+          Supported chains: 
+            - arbitrum 
+            - aurora
+            - avalanche
+            - bsc
+            - bttc
+            - cronos
+            - ethereum
+            - fantom
+            - oasis
+            - polygon
+            - velas
+            - optimism
+        in: path
+        required: true
+    post:
+      summary: '[V2] Post Swap Route For Encoded Data'
+      description: Get the encoded swap route to be forwarded to the KyberSwap router contract. For simplicity, the request body should contain the `routeSummary` returned by [V2] Get Swap Route appended with the `recipient` address.
+      operationId: post-route-encoded
+      tags:
+        - swap
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/SwapEncode'        
+      responses:
+        '200':
+          description: Successfully encoded
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SwapEncodeSuccess'
+                example:
+                  $ref: '#/components/examples/SampleResponseSwapEncodedV2'  
+
+
+
+components:
+  schemas:
+    Swap:
+      type: object
+      properties:
+        inputAmount:
+          type: string
+          description: 'The input amount of `tokenIn`, in wei'
+        outputAmount:
+          type: string
+          description: 'The input amount of `tokenOut`, in wei'
+        totalGas:
+          type: integer
+          description: Estimated gas fee
+        gasPriceGwei:
+          type: string
+          description: Current gas price in Gwei
+        gasUsd:
+          type: number
+          description: Current gas price in USD
+        amountInUsd:
+          type: number
+          description: 'Estimate of input value, in USD'
+        amountOutUsd:
+          type: number
+          description: 'Estimate of out value, in USD'
+        receivedUsd:
+          type: number
+          description: 'Estimate of final received value, in USD'
+        swaps:
+          type: array
+          description: 'Swap path, a 2-dimen array describe how swap is executed'
+          items:
+            type: array
+            items:
+              $ref: '#/components/schemas/SwapSequence'
+        encodedSwapData:
+          type: string
+          description: The encoded data to be sent to our router address
+        routerAddress:
+          type: string
+
+    SwapSequence:
+      type: object
+      properties:
+        pool:
+          type: string
+          description: The address of the pool used in our executor
+        tokenIn:
+          type: string
+          description: The input token for this pool
+        tokenOut:
+          type: string
+          description: The output token for this pool
+        swapAmount:
+          type: string
+          description: The input amount swap through this pool
+        amountOut:
+          type: string
+          description: The output amount after swap through this pool
+        limitReturnAmount:
+          type: string
+          description: Maximum for amount of output token returned. Set to zero as using minReturnAmount instead  
+        maxPrice:
+          type: string
+          description: The max price
+        exchange:
+          type: string
+          description: The original exchange of this pool
+        poolLength:
+          type: integer
+          description: The number of token in this pool
+        poolType:
+          type: string
+          description: |
+            The type of this pool (internal definition by our aggregator)
+
+    SwapRouteSuccess:
+      type: object
+      properties:
+        code:
+          type: string
+          description: Response code
+        message:
+          type: string
+          description: Response message
+        data:
+          type: object
+          description: Response data
+          properties:
+            routeSummary:
+              type: object
+              description: The summarised routing data
+              properties:
+                tokenIn:
+                  type: string
+                  description: The input token for the swap
+                amountIn:
+                  type: string
+                  description: The amount of input token for the swap in wei
+                amountInUsd:
+                  type: string
+                  description: Estimate of input value, in USD
+                tokenInMarketPriceAvailable:
+                  type: boolean
+                  description: Availability of input price data from Coingecko
+                tokenOut:
+                  type: string
+                  description: The output token for the swap
+                amountOut:
+                  type: string
+                  description: The amount of output token for the swap in wei
+                amountOutUsd:
+                  type: string
+                  description: Estimate of output value, in USD
+                tokenOutMarketPriceAvailable:
+                  type: boolean
+                  description: Availability of output token price data from Coingecko
+                gas:
+                  type: string
+                  description: Estimated gas required for swap
+                gasPrice:
+                  type: string
+                  description: Estimated price of gas required for swap
+                gasUsd:
+                  type: string
+                  description: Estimated USD price of gas required for swap
+                extraFee:
+                  type: object
+                  description: Fee configuration for the swap
+                  properties:
+                    feeAmount:
+                      type: string
+                      description: Fee amount to be collected
+                    chargeFeeBy:
+                      type: string
+                      enum:
+                        - currency_in
+                        - currency_out
+                      description: |
+                        Indicates whether fee is charged by input token `currency_in` or output token `currency_out` \
+                        Default is empty whereby no fee is charged
+                    isInBps:
+                      type: string
+                      description: If true, fee is taken in BPS
+                    feeReceiver:
+                      type: string
+                      description: Address which the fees will be sent to
+                route:
+                  type: object
+                  description: Array of swap routes 
+                  properties:
+                    pool:
+                      type: string
+                      description: Address of the pool which the swap has been routed to
+                    tokenIn:
+                      type: string
+                      description: The input token address for this pool
+                    tokenOut:
+                      type: string
+                      description: The output token address for this pool                  
+                    limitReturnAmount:
+                      type: string
+                      description: Maximum for amount of output token returned. Set to zero as using minReturnAmount instead                  
+                    swapAmount:
+                      type: string
+                      description: The amount of input token to be swapped through this pool, in wei
+                    amountOut:
+                      type: string
+                      description: The amount of output token received through swapping through this pool, in wei
+                    exchange:
+                      type: string
+                      description: The exchange where the pool originated from
+                    poolLength:
+                      type: string
+                      description: Number of tokens in the pool
+                    poolType:
+                      type: string
+                      description: The pool type as defined by our internal aggregator
+                    extra:
+                      type: string
+                      description: Additional pool metadata
+
+    SwapEncode:
+      type: object
+      required:
+        - routeSummary
+        - recipient
+      properties:
+        routeSummary:
+          type: object
+          description: The summarised routing data
+          required:
+            - tokenIn
+            - amountIn
+            - amountInUsd
+            - tokenInMarketPriceAvailable
+            - tokenOut
+            - amountOut
+            - amountOutUsd
+            - tokenOutMarketPriceAvailable
+            - gas
+            - gasPrice
+            - gasUsd
+            - route
+          properties:
+            tokenIn:
+              type: string
+              description: The input token for the swap
+            amountIn:
+              type: string
+              description: The amount of input token for the swap in wei
+            amountInUsd:
+              type: string
+              description: Estimate of input value, in USD
+            tokenInMarketPriceAvailable:
+              type: boolean
+              description: Availability of input price data from Coingecko
+            tokenOut:
+              type: string
+              description: The output token for the swap
+            amountOut:
+              type: string
+              description: The amount of output token for the swap in wei
+            amountOutUsd:
+              type: string
+              description: Estimate of output value, in USD
+            tokenOutMarketPriceAvailable:
+              type: boolean
+              description: Availability of output token price data from Coingecko
+            gas:
+              type: string
+              description: Estimated gas required for swap
+            gasPrice:
+              type: string
+              description: Estimated price of gas required for swap
+            gasUsd:
+              type: string
+              description: Estimated USD price of gas required for swap
+            extraFee:
+              type: object
+              description: Fee configuration for the swap
+              required:
+                - feeAmount
+                - chargeFeeBy
+                - isInBps
+                - feeReceiver
+              properties:
+                feeAmount:
+                  type: string
+                  description: Fee amount to be collected
+                chargeFeeBy:
+                  type: string
+                  enum:
+                    - currency_in
+                    - currency_out
+                  description: |
+                    Indicates whether fee is charged by input token `currency_in` or output token `currency_out` \
+                    Default is empty whereby no fee is charged
+                isInBps:
+                  type: string
+                  description: If true, fee is taken in BPS
+                feeReceiver:
+                  type: string
+                  description: Address which the fees will be sent to
+            route:
+              type: object
+              description: Array of swap routes 
+              required:
+                - pool
+                - tokenIn
+                - tokenOut
+                - limitReturnAmount
+                - swapAmount
+                - amountOut
+                - exchange
+                - poolLength
+                - poolType
+                - extra
+              properties:
+                pool:
+                  type: string
+                  description: Address of the pool which the swap has been routed to
+                tokenIn:
+                  type: string
+                  description: The input token address for this pool
+                tokenOut:
+                  type: string
+                  description: The output token address for this pool                  
+                limitReturnAmount:
+                  type: string
+                  description: Maximum for amount of output token returned. Set to zero as using minReturnAmount instead                
+                swapAmount:
+                  type: string
+                  description: The amount of input token to be swapped through this pool, in wei
+                amountOut:
+                  type: string
+                  description: The amount of output token received through swapping through this pool, in wei
+                exchange:
+                  type: string
+                  description: The exchange where the pool originated from
+                poolLength:
+                  type: string
+                  description: Number of tokens in the pool
+                poolType:
+                  type: string
+                  description: The pool type as defined by our internal aggregator
+                extra:
+                  type: string
+                  description: Additional pool metadata
+        recipient:
+          type: string
+          description: Address which the swap output tokens will be sent to
+
+    SwapEncodeSuccess:
+      type: object
+      properties:
+        code:
+          type: string
+          description: Response code
+        message:
+          type: string
+          description: Response message
+        data:
+          type: object
+          description: Response data for encoded swap
+          properties:
+            amountIn:
+              type: string
+              description: The amount of input token for the swap in wei
+            amountInUsd:
+              type: string
+              description: Estimated input value, in USD
+            amountOut:
+              type: string
+              description: The amount of output token for the swap in wei
+            amountOutUsd:
+              type: string
+              description: Estimated output value, in USD
+            gas:
+              type: string
+              description: Estimated gas required for swap
+            gasUsd:
+              type: string
+              description: Estimated USD price of gas required for swap
+            outputChange:
+              type: object
+              description: \[Deprecated] Additional swap data for client calculation
+              properties:
+                amount:
+                  type: string
+                  description: Output change in number of tokens
+                percent:
+                  type: number
+                  description: Output change as a percentage
+                level:
+                  type: number
+                  description: Output change level
+            data:
+              type: string
+              description: The encoded data to be sent to KyberSwap router address
+            routerAddress:
+              type: string
+              description: The KyberSwap router address
+  examples:  
+    SampleResponseSwapV1:
+      value:
+        inputAmount: "1000000000000000000"
+        outputAmount: "1667970343"
+        totalGas: 250000
+        gasPriceGwei: "298.5144176"
+        gasUsd: 0.105226332201885
+        amountInUsd: 1668.59
+        amountOutUsd: 1667.970343
+        receivedUsd: 1667.865116667798
+        swaps:
+          - - pool: "0x45dda9cb7c25131df268515131f647d726f50608"
+              tokenIn: "0x7ceb23fd6bc0add59e62ac25578270cff1b9f619"
+              tokenOut: "0x2791bca1f2de4661ed88a30c99a7a9449aa84174"
+              swapAmount: "999000000000000000"
+              amountOut: "1667970343"
+              limitReturnAmount: "0"
+              maxPrice: "115792089237316195423570985008687907853269984665640564039457584007913129639935"
+              exchange: "uniswapv3"
+              poolLength: 2,
+              poolType: "univ3"
+        tokens:
+          "0x2791bca1f2de4661ed88a30c99a7a9449aa84174": 
+              address: "0x2791bca1f2de4661ed88a30c99a7a9449aa84174"
+              symbol: "USDC"
+              name: "USD Coin"
+              price: 1
+              decimals: 6
+          "0x7ceb23fd6bc0add59e62ac25578270cff1b9f619": 
+              address: "0x7ceb23fd6bc0add59e62ac25578270cff1b9f619"
+              symbol: "WETH"
+              name: "Wrapped Ether"
+              price: 1668.59
+              decimals: 18
+        encodedSwapData: '0xe21fd0e900000000000000000000000000000000000000000000000000000000000000200000000000000000000000001d5702c6d7eb30e42a8c94b8db7ea2e8444a37fd000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000a000000000000000000000000000000000000000000000000000000000000003c000000000000000000000000000000000000000000000000000000000000006400000000000000000000000000000000000000000000000000000000000000300000000000000000000000000000000000000000000000000000000000000002000000000000000000000000000000000000000000000000000000000000000e00000000000000000000000007ceb23fd6bc0add59e62ac25578270cff1b9f6190000000000000000000000002791bca1f2de4661ed88a30c99a7a9449aa841740000000000000000000000000000000000000000000000000000000062ec95af0000000000000000000000006131b5fae19ea4f9d964eac0408e4408b66337b50000000000000000000000000000000000000000000000000000000063f6f85b00000000000000000000000000000000000000000000000000000000000002c0000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000002000000000000000000000000000000000000000000000000000000000000000409e8aa9350000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000001d5702c6d7eb30e42a8c94b8db7ea2e8444a37fd00000000000000000000000045dda9cb7c25131df268515131f647d726f506080000000000000000000000007ceb23fd6bc0add59e62ac25578270cff1b9f6190000000000000000000000002791bca1f2de4661ed88a30c99a7a9449aa841740000000000000000000000000000000000000000000000000ddd2935029d800000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000007ceb23fd6bc0add59e62ac25578270cff1b9f6190000000000000000000000002791bca1f2de4661ed88a30c99a7a9449aa84174000000000000000000000000000000000000000000000000000000000000016000000000000000000000000000000000000000000000000000000000000001a000000000000000000000000000000000000000000000000000000000000001e000000000000000000000000000000000000000000000000000000000000002200000000000000000000000000513c794bc2c65c6f374a86d6ad04425e32df22e0000000000000000000000000000000000000000000000000de0b6b3a76400000000000000000000000000000000000000000000000000000000000062ec95af0000000000000000000000000000000000000000000000000000000000000080000000000000000000000000000000000000000000000000000000000000026000000000000000000000000000000000000000000000000000000000000000010000000000000000000000001d5702c6d7eb30e42a8c94b8db7ea2e8444a37fd00000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000ddd2935029d800000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000513c794bc2c65c6f374a86d6ad04425e32df22e0000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000a000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001df7b22536f75726365223a22222c22416d6f756e74496e555344223a22313636382e3539222c22416d6f756e744f7574555344223a22313636372e393730333433222c22526566657272616c223a22222c22466c616773223a332c22496e74656772697479496e666f223a7b224b65794944223a2231222c225369676e6174757265223a225057614f647055363157744e724258424777424f77665434755547674f4e5162597654747273566d30422b626d362b6b58357362722f6b746f554e655a646b4c354378325576674541795a4a5248565349505558627833336a445262773356337549446c41584241687578616e353642524846686f7a492b422b4b396b3961716d4168712b6f4e49696e535939386e4d4a595072504b506c787a457657653043684d32756a4c7264395876474e7143494f6c7644526531426c5259425a552f625936593034454c3149796d6467684b544237316c32637541643274507335347347414f4e3534356e786a58746d6946674668343570754a5a6e6a7876524b3376754861306a71334357384f51444f41416661416261636176544b6774566b42592b4e5058683965495a6c6b4933596f766e44586e6e4236366652747647506175787a374750386a786e735730646164655a344f5a41513d3d227d7d00'
+        routerAddress: '0x6131B5fae19EA4f9D964eAc0408E4408b66337b5'
+
+    SampleResponseSwapV2:
+      value:
+        code: "0"
+        message: "successfully"
+        data:
+          routeSummary:
+            tokenIn: "0x7ceb23fd6bc0add59e62ac25578270cff1b9f619"
+            amountIn: "1000000000000000000"
+            amountInUsd: "1668.95"
+            tokenInMarketPriceAvailable: true,
+            tokenOut: "0x2791bca1f2de4661ed88a30c99a7a9449aa84174"
+            amountOut: "1666243758"
+            amountOutUsd: "1665.9071767608839"
+            tokenOutMarketPriceAvailable: true
+            gas: "253000"
+            gasPrice: "181.968304449"
+            gasUsd: "0.06491355324609177"
+            extraFee: 
+              feeAmount: "10"
+              chargeFeeBy: "currency_out"
+              isInBps: true,
+              feeReceiver: "0x0513c794bC2c65C6f374a86D6ad04425e32Df22e"
+            route:
+              - - pool: "0x4b543e89351faa242cb0172b2da0cdb52db699b4"
+                  tokenIn: "0x7ceb23fd6bc0add59e62ac25578270cff1b9f619"
+                  tokenOut: "0x2791bca1f2de4661ed88a30c99a7a9449aa84174"
+                  limitReturnAmount: "0"
+                  swapAmount: "1000000000000000000"
+                  amountOut: "1667911669"
+                  exchange: "dodo"
+                  poolLength: 2,
+                  poolType: "dodo"
+                  extra: 
+                    type: "DPP"
+                    dodoV1SellHelper: "0xdfaf9584f5d229a9dbe5978523317820a8897c5a"
+                    baseToken: "0x7ceb23fd6bc0add59e62ac25578270cff1b9f619"
+                    quoteToken: "0x2791bca1f2de4661ed88a30c99a7a9449aa84174"                          
+          routerAddress: "0x6131B5fae19EA4f9D964eAc0408E4408b66337b5"
+    
+    SampleResponseSwapEncodedV2:
+      value:
+        code: 0
+        message: "successfully"
+        data:
+          amountIn: "1000000000000000000"
+          amountInUsd: "1668.5"
+          amountOut: "1666243758"
+          amountOutUsd: "1666.243758"
+          gas: "253000"
+          gasUsd: "0.06491355324609177"
+          outputChange: 
+            amount": "0"
+            percent": 0
+            level": 0
+          data: '0xe21fd0e900000000000000000000000000000000000000000000000000000000000000200000000000000000000000001d5702c6d7eb30e42a8c94b8db7ea2e8444a37fd000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000a000000000000000000000000000000000000000000000000000000000000003e000000000000000000000000000000000000000000000000000000000000006600000000000000000000000000000000000000000000000000000000000000320000000000000000000000000000000000000000000000000000000000000002000000000000000000000000000000000000000000000000000000000000000e00000000000000000000000007ceb23fd6bc0add59e62ac25578270cff1b9f6190000000000000000000000002791bca1f2de4661ed88a30c99a7a9449aa84174000000000000000000000000000000000000000000000000000000006350dcae0000000000000000000000006131b5fae19ea4f9d964eac0408e4408b66337b50000000000000000000000000000000000000000000000000000000063f6fe9c00000000000000000000000000000000000000000000000000000000000002e0000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000002000000000000000000000000000000000000000000000000000000000000000408a5da90f0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001200000000000000000000000001d5702c6d7eb30e42a8c94b8db7ea2e8444a37fd0000000000000000000000004b543e89351faa242cb0172b2da0cdb52db699b40000000000000000000000007ceb23fd6bc0add59e62ac25578270cff1b9f6190000000000000000000000002791bca1f2de4661ed88a30c99a7a9449aa841740000000000000000000000000000000000000000000000000de0b6b3a76400000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000dfaf9584f5d229a9dbe5978523317820a8897c5a0000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000007ceb23fd6bc0add59e62ac25578270cff1b9f6190000000000000000000000002791bca1f2de4661ed88a30c99a7a9449aa84174000000000000000000000000000000000000000000000000000000000000016000000000000000000000000000000000000000000000000000000000000001a000000000000000000000000000000000000000000000000000000000000001e000000000000000000000000000000000000000000000000000000000000002200000000000000000000000000513c794bc2c65c6f374a86d6ad04425e32df22e0000000000000000000000000000000000000000000000000de0b6b3a7640000000000000000000000000000000000000000000000000000000000006350dcae00000000000000000000000000000000000000000000000000000000000000c0000000000000000000000000000000000000000000000000000000000000026000000000000000000000000000000000000000000000000000000000000000010000000000000000000000001d5702c6d7eb30e42a8c94b8db7ea2e8444a37fd00000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000de0b6b3a764000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000513c794bc2c65c6f374a86d6ad04425e32df22e0000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000a000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001de7b22536f75726365223a22222c22416d6f756e74496e555344223a22313636382e35222c22416d6f756e744f7574555344223a22313636362e323433373538222c22526566657272616c223a22222c22466c616773223a332c22496e74656772697479496e666f223a7b224b65794944223a2231222c225369676e6174757265223a22435558755770383248546b6148425659454b574f784a7a76367a2b4f4d7952302f51324558726e41773863646e753474755344534744347a454367504f35374c626b6e366d5054344d5647726f30515a6f497750486c4a50615935426e4f347a416c6f5876532f4a4b31467066776553516b79726d555834793478624f554341655474497477546c726c4d64694e5474544852764c76555255436443443875362b6f4c68766f782b6e5336483378672f7453693566327673744471666166506864524b45496b432f7841584c4a3279764769567361564542722b55483943774e455a53756f7765424f4c4d386f4d7a3047306a4b7470395768756a50796171757832694b674f625271347974625976586935744f6d734d486935654574782b54705539546f694a5957317252456a447170426c486d5849526738714d734a6b46495361314e352f31374b447957482f48366f466e39513d3d227d7d0000'
+          routerAddress: "0x6131B5fae19EA4f9D964eAc0408E4408b66337b5"
+
+
+
+
+
+    
