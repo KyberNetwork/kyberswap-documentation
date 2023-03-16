@@ -18,7 +18,7 @@ KyberSwap powers 100+ integrated projects and has facilitated over US$11 billion
 
 Currently deployed on 13 chains, including Ethereum, Ethereum Proof-of-Work, Polygon, BNB, Avalanche, Fantom, Cronos, Arbitrum, BitTorrent, Velas, Aurora, Oasis and Optimism. KyberSwap aggregates liquidity from over 80 DEXs to give users the best rates possible for their swaps.
 
-<figure><img src=".gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/230221_ecosystem-stats.png" alt=""><figcaption><p>The KyberSwap Ecosystem</p></figcaption></figure>
 
 ## Our Solutions
 
