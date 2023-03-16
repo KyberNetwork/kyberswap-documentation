@@ -59,6 +59,12 @@ Upon clicking the "Swap" button, KyberSwap Aggregator will attempt to secure the
 
 ![Specify swap amount](https://support.kyberswap.com/hc/article\_attachments/14746766951449)
 
+{% hint style="info" %}
+#### Slippage tolerance: Protecting your trades
+
+KyberSwap allows you to avoid any negative trade outcomes by setting a [slippage](../../../getting-started/foundational-topics/decentralized-finance/slippage.md) tolerance. Please refer to [Customizing trade parameters](instantly-swap-at-the-best-rates.md#customizing-trade-parameters) below for further details.
+{% endhint %}
+
 ### **Step 4**: Approve or permit contract to swap tokens
 
 Approve or Permit KyberSwap to swap the tokens on your behalf. Proceed to Step 5 if token approval/permit is not required.
@@ -133,7 +139,7 @@ The confirmation screen displays a few key pieces of information to review.
 Do take note of the resulting price impact of your trade as this will determine the final average price of your trade. Higher trade volumes relative to available liquidity will result in each additional token unit being acquired at a higher price. As such, a higher price impact would result in subpar swap rates.
 {% endhint %}
 
-* **Slippage**: The maximum theoretical slippage that you will incur from this transaction. See [Customizing trade parameters](instantly-swap-at-the-best-rates.md#customizing-trade-parameters) below for further details.
+* **Slippage**: The estimated difference between the expected price and final price of the trade. Slippage is an inherent characteristic of all active markets whose risks can only be mitigated. For more detailed insights, please refer to [Slippage](../../../getting-started/foundational-topics/decentralized-finance/slippage.md).
 
 Click the “Confirm Swap” button to proceed. You should see the Transaction Submitted screen appear. You can click on "View Transaction" to see your transaction on the blockchain explorer.
 
