@@ -65,51 +65,15 @@ Upon clicking the "Swap" button, KyberSwap Aggregator will attempt to secure the
 KyberSwap allows you to avoid any negative trade outcomes by setting a [slippage](../../../getting-started/foundational-topics/decentralized-finance/slippage.md) tolerance. Please refer to [Customizing trade parameters](instantly-swap-at-the-best-rates.md#customizing-trade-parameters) below for further details.
 {% endhint %}
 
-### **Step 4**: Approve or permit contract to swap tokens
+### **Step 4**: Approve contract to swap tokens
 
-Approve or Permit KyberSwap to swap the tokens on your behalf. Proceed to Step 5 if token approval/permit is not required.
+Approve KyberSwap to swap the tokens on your behalf. Proceed to [Step 5](instantly-swap-at-the-best-rates.md#step-5-confirm-the-swap) if token approval is not required.
 
-If this is the first time you are swapping this token on this network using this wallet, the "Swap" button will be greyed out. You will first need to approve/permit the KyberSwap smart contract to spend your tokens before proceeding with the swap.
+If this is the first time you are swapping this token on this network using this wallet, the "Swap" button will be greyed out. You will first need to approve the KyberSwap smart contract to spend your tokens before proceeding with the swap.
 
-In the pursuit of greater gas savings for our users, KyberSwap has implemented a permit option for tokens which follow the [EIP-2612](https://eips.ethereum.org/EIPS/eip-2612) standard. In contrast to the basic [ERC20](../../../getting-started/foundational-topics/decentralized-finance/tokens.md#token-standards) token implementation, EIP-2612 enables gasless approvals of smart contract allowances with just a signed message. In other words, approving a token via "Permit" does not require any gas and achieves the same effect as the ERC20 "Approve". If you see a "Permit" button, it means your token is eligible for gasless approvals!
+Click on the "Approve \[Token]" button to begin this process. Your wallet will prompt you to give your approval for the KyberSwap smart contract to transact using this token on this network. This is a one-time action and subsequent swaps involving this token will not require further approvals unless there is an update to the smart contract.
 
-{% tabs %}
-{% tab title="Permit" %}
-Click on the "Permit \[Token]" button to allow KyberSwap to swap the tokens on your behalf.
-
-<figure><img src="../../../.gitbook/assets/image (63).png" alt=""><figcaption><p>Permit EIP-2612 compatible tokens</p></figcaption></figure>
-
-To ensure the safety of your tokens, KyberSwap will also prompt you to select a permit limit for the token being approved. By setting a permit allowance limit, this ensures that KyberSwap is only able to swap the specified number of tokens from your wallet. As long as the accumulated tokens for current or future swaps exceeds this limit, another permit process will be required. You can either set a custom allowance limit or opt for an infinite limit.
-
-<figure><img src="../../../.gitbook/assets/1366_Permit Amount.png" alt=""><figcaption><p>Permit allowance popup</p></figcaption></figure>
-
-Upon confirming a permit limit, your wallet will then prompt you to sign the transaction.
-
-{% hint style="info" %}
-#### A note on permits
-
-By permitting the swap, you are authorizing KyberSwap to swap the exact amount of tokens specified in the trade for the next 24 hours. This 24 hour deadline is implemented as a safety mechanism to ensure that the permit expires in case a corresponding swap order was not submitted or in the highly improbable event that an order was not filled. A new permit will be required upon the expiration of the current permit.&#x20;
-
-Note that the granting of a permit and the confirmation of a swap ([step 5](instantly-swap-at-the-best-rates.md#step-5-confirm-the-swap)) are separate transactions whereby the latter is unable to proceed without the completion of the former. More importantly, as opposed to permits, swaps will always require gas to be paid as token transfers have to be confirmed by the network. As such, in the case whereby a swap remains in a pending state, it is possible to cancel the swap transaction in your wallet while the permit remains valid until expiry. If a future swap requires more tokens than an existing permit, the user will be requested to sign a new permit.
-{% endhint %}
-{% endtab %}
-
-{% tab title="Approve" %}
-Click on the "Approve \[Token]" button to allow KyberSwap to swap the tokens on your behalf.
-
-<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption><p>Approve ERC20 token</p></figcaption></figure>
-
-To ensure the safety of your tokens, KyberSwap will also prompt you to select an allowance limit for the token being approved. By setting an allowance limit, this ensures that KyberSwap is only able to swap the specified number of tokens from your wallet. As long as the accumulated tokens for current or future swaps exceeds this limit, another approve process will be required. You can either set a custom allowance limit or opt for an infinite limit.
-
-Hovering your mouse above the options will also bring up the helpers for your convenience.
-
-<figure><img src="../../../.gitbook/assets/image (85).png" alt=""><figcaption><p>Infinite allowance helper</p></figcaption></figure>
-
-<figure><img src="../../../.gitbook/assets/image (25).png" alt=""><figcaption><p>Custom allowance helper</p></figcaption></figure>
-
-Upon confirming an allowance limit, your wallet will then prompt you to sign the transaction request with the relevant gas fees.
-{% endtab %}
-{% endtabs %}
+<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption><p>Approve ERC20 tokens</p></figcaption></figure>
 
 ### **Step 5**: Confirm the swap
 
