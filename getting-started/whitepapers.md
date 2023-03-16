@@ -8,7 +8,7 @@ The KyberSwap team is constantly innovating to bring you the best liquidity solu
 
 {% tabs %}
 {% tab title="KyberSwap Classic" %}
-{% embed url="https://files.kyber.network/DMM-Feb21.pdf" %}
+{% embed url="https://drive.google.com/file/d/1Pvvn_qJ_9xQr_ga2CWqGexLo4wF2jklO/view?usp=share_link" %}
 
 _Please note that the naming of certain concepts have been altered in the docs for ease of understanding:_&#x20;
 
@@ -17,6 +17,6 @@ _Please note that the naming of certain concepts have been altered in the docs f
 {% endtab %}
 
 {% tab title="KyberSwap Elastic" %}
-{% embed url="https://docs.kyberswap.com/files/Dynamic_Market_Making_v2_whitepaper.pdf" %}
+{% embed url="https://drive.google.com/file/d/1QkRW9laRQLYQxmqNwIgIb-2aGc-0kAO5/view?usp=share_link" %}
 {% endtab %}
 {% endtabs %}
