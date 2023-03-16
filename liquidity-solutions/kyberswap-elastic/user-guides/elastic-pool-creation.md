@@ -89,7 +89,7 @@ This is the range at which your capital will be used in the pool. If the market 
 
 You can set your price range either using the sliders or by typing in prices manually.
 
-<figure><img src="../../../.gitbook/assets/image (3).png" alt=""><figcaption><p>Select price range</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1).png" alt=""><figcaption><p>Select price range</p></figcaption></figure>
 
 For convenience, KyberSwap also provides you the option to choose from a list of preset ranges which correspond to different DeFi familiarity and risk profiles. The section below provides some guidance on the percentage-based options matched to the token pair correlation which is calculated by KyberSwap.
 

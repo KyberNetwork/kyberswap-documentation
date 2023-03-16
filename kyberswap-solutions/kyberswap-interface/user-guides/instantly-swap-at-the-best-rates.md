@@ -79,7 +79,11 @@ Click on the "Permit \[Token]" button to allow KyberSwap to swap the tokens on y
 
 <figure><img src="../../../.gitbook/assets/image (63).png" alt=""><figcaption><p>Permit EIP-2612 compatible tokens</p></figcaption></figure>
 
-Upon clicking the "Permit" button, your wallet will prompt you to sign the transaction. Notice that no gas was required in this case!
+To ensure the safety of your tokens, KyberSwap will also prompt you to select a permit limit for the token being approved. By setting a permit allowance limit, this ensures that KyberSwap is only able to swap the specified number of tokens from your wallet. As long as the accumulated tokens for current or future swaps exceeds this limit, another permit process will be required. You can either set a custom allowance limit or opt for an infinite limit.
+
+<figure><img src="../../../.gitbook/assets/1366_Permit Amount.png" alt=""><figcaption><p>Permit allowance popup</p></figcaption></figure>
+
+Upon confirming a permit limit, your wallet will then prompt you to sign the transaction.
 
 {% hint style="info" %}
 #### A note on permits
@@ -93,11 +97,9 @@ Note that the granting of a permit and the confirmation of a swap ([step 5](inst
 {% tab title="Approve" %}
 Click on the "Approve \[Token]" button to allow KyberSwap to swap the tokens on your behalf.
 
-<figure><img src="../../../.gitbook/assets/image (34).png" alt=""><figcaption><p>Approve ERC20 token</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption><p>Approve ERC20 token</p></figcaption></figure>
 
 To ensure the safety of your tokens, KyberSwap will also prompt you to select an allowance limit for the token being approved. By setting an allowance limit, this ensures that KyberSwap is only able to swap the specified number of tokens from your wallet. As long as the accumulated tokens for current or future swaps exceeds this limit, another approve process will be required. You can either set a custom allowance limit or opt for an infinite limit.
-
-<figure><img src="../../../.gitbook/assets/image (21).png" alt=""><figcaption><p>Approve allowance popup</p></figcaption></figure>
 
 Hovering your mouse above the options will also bring up the helpers for your convenience.
 
