@@ -42,7 +42,11 @@ As hinted above, slippage can be either negative or positive as its definition d
 
 ## Protecting our users
 
-KyberSwap's highest priority is the safety of our users. As such, we have implemented multiple safeguards to ensure that traders using our platform do not receive any unwelcome surprises. The [KyberSwap Aggregator](../../../kyberswap-solutions/kyberswap-aggregator/) enables traders to set a `Max Slippage` while [KyberSwap Limit Order](../../../kyberswap-solutions/limit-order/) allows traders predefine the prices at which their trades will be executed.
+KyberSwap's highest priority is the safety of our users. As such, we have implemented multiple safeguards to ensure that traders using our platform do not receive any unwelcome surprises.&#x20;
+
+By splitting and rerouting trades across multiple liquidity sources, the [KyberSwap Aggregator](../../../kyberswap-solutions/kyberswap-aggregator/) minimizes the potential slippage incurred from any single source. Moreover, the [KyberSwap Aggregator](../../../kyberswap-solutions/kyberswap-aggregator/) enables traders to set a `Max Slippage` to guarantee that trades are only executed if the final price is within the expected price range.
+
+Lastly, [KyberSwap Limit Order](../../../kyberswap-solutions/limit-order/) allows traders predefine the prices at which their trades will be executed. This sidesteps any negative slippage risks and provides traders much greater price guarantees for their trades.
 
 {% tabs %}
 {% tab title="Traders" %}
