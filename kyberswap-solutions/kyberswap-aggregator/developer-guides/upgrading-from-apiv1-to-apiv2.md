@@ -24,13 +24,13 @@ Moreover, given the reduced latency for each call in APIv2, this reduces the lik
 
 Route and encoded data returned in single `GET` call.
 
-<figure><img src="../../../.gitbook/assets/Aggregator APIv2-APIv1.drawio (1).png" alt=""><figcaption><p>APIv1 sequence diagram</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Aggregator APIv2-APIv1.drawio (3).png" alt=""><figcaption><p>APIv1 sequence diagram</p></figcaption></figure>
 
 ### APIv2 swap flow&#x20;
 
 Route summary returned in `GET` response and encoded data returned in `POST` response.
 
-<figure><img src="../../../.gitbook/assets/Aggregator APIv2-APIv2.drawio.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Aggregator APIv2-APIv2.drawio.png" alt=""><figcaption><p>APIv2 sequence diagram</p></figcaption></figure>
 
 ## Field mappings
 
