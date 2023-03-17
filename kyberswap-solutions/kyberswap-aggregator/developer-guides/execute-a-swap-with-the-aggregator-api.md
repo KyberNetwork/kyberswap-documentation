@@ -18,8 +18,10 @@ To execute a swap, the router (`MetaAggregationRouterV2`) contract requires the 
 {% hint style="info" %}
 #### Backwards compatibility
 
-Following feedback on the initial `[V1]` API, KyberSwap has implemented a more performant `[V2]` API which improves the response time for getting a route via offloading encoding requirements to the post method.\
-\
+Following feedback on the initial `[V1]` API, KyberSwap has implemented a more performant `[V2]` API which improves the response time for getting a route via offloading encoding requirements to the post method.
+
+**Please refer to** [**Upgrading From APIv1 To APIv2**](upgrading-from-apiv1-to-apiv2.md) **for further details on the motivation behind the upgrade as well as the relevant changes to swap flow and parameters.**
+
 Please use the `[V2]GET` API for more efficient route queries. The returned route can then be reused in the `[V2]POST` body to get the encoded swap data. The `[V1]GET` and `[V2]GET` remains backwards compatible with the main change being the queried path.
 {% endhint %}
 
