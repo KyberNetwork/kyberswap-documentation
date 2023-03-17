@@ -11,7 +11,13 @@ The guides in the following section are targeted at application developers as we
 KyberSwap Aggregator offers developers 2 options for integration:
 
 * ****[**KyberSwap Widget**](../../kyberswap-widget/): An endlessly customizable widget that can be seamlessly integrated with a few lines of code.
-* ****[**Aggregator API**](../aggregator-api-specification/): For developers that require more fine-tuned control when integrating swap functionality within their app.
+* ****[**Aggregator API**](../aggregator-api-specification/): For developers that require more fine-tuned control when integrating swap functionality within their app.&#x20;
+
+{% hint style="info" %}
+#### Aggregator APIv2
+
+The [EVM swap](../aggregator-api-specification/evm-swaps.md) API has been upgraded for more performant queries and the details behind the enhancement as well as the updated swap flows can be viewed on [Upgrading From APIv1 to APIv2](upgrading-from-apiv1-to-apiv2.md).
+{% endhint %}
 
 KyberSwap Aggregator implements a router contract which handles the complexity of routing and executing swaps atomically. Please refer to [Aggregator Contract Addresses](../contracts/aggregator-contract-addresses.md) for the full list of contracts which have been deployed across the supported chains.
 
