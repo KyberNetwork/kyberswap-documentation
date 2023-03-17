@@ -46,7 +46,7 @@ Note: If you choose to remove 100% of the liquidity in this position, that is ta
 
 {% tabs %}
 {% tab title="Token Pair" %}
-<figure><img src="../../../.gitbook/assets/image (13).png" alt=""><figcaption><p>Token pair removal</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (44).png" alt=""><figcaption><p>Token pair removal</p></figcaption></figure>
 
 Specify the amount of liquidity to remove. You can do this either by using the pre-set percentage buttons or the percentage slider, or by manually typing in the amount for either leg of the pair.&#x20;
 {% endtab %}

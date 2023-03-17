@@ -6,7 +6,7 @@ description: KyberSwap Aggregator Solana APIs
 
 ## Download OpenAPI specification:&#x20;
 
-{% file src="../../../.gitbook/assets/Solana-Aggregator-APIs (2).yaml" %}
+{% file src="../../../.gitbook/assets/Solana-Aggregator-APIs (11).yaml" %}
 
 {% hint style="success" %}
 #### Note on integrations: clientID
@@ -23,14 +23,14 @@ In order to continuously improve the KyberSwap Aggregator, our APIs implement a 
 
 ## Solana swap APIs
 
-{% swagger src="../../../.gitbook/assets/Solana-Aggregator-APIs (11).yaml" path="/route" method="get" %}
-[Solana-Aggregator-APIs (11).yaml](<../../../.gitbook/assets/Solana-Aggregator-APIs (11).yaml>)
+{% swagger src="../../../.gitbook/assets/Solana-Aggregator-APIs (2).yaml" path="/route" method="get" %}
+[Solana-Aggregator-APIs (2).yaml](<../../../.gitbook/assets/Solana-Aggregator-APIs (2).yaml>)
 {% endswagger %}
 
-{% swagger src="../../../.gitbook/assets/Solana-Aggregator-APIs (11).yaml" path="/dexes" method="get" %}
-[Solana-Aggregator-APIs (11).yaml](<../../../.gitbook/assets/Solana-Aggregator-APIs (11).yaml>)
+{% swagger src="../../../.gitbook/assets/Solana-Aggregator-APIs (2).yaml" path="/dexes" method="get" %}
+[Solana-Aggregator-APIs (2).yaml](<../../../.gitbook/assets/Solana-Aggregator-APIs (2).yaml>)
 {% endswagger %}
 
-{% swagger src="../../../.gitbook/assets/Solana-Aggregator-APIs (11).yaml" path="/route/encode" method="get" %}
-[Solana-Aggregator-APIs (11).yaml](<../../../.gitbook/assets/Solana-Aggregator-APIs (11).yaml>)
+{% swagger src="../../../.gitbook/assets/Solana-Aggregator-APIs (2).yaml" path="/route/encode" method="get" %}
+[Solana-Aggregator-APIs (2).yaml](<../../../.gitbook/assets/Solana-Aggregator-APIs (2).yaml>)
 {% endswagger %}

@@ -10,6 +10,12 @@ KyberSwap Aggregator enables traders to swap at the best rates by seamlessly con
 
 For developers, KyberSwap Aggregator provides you a set of [APIs](aggregator-api-specification/) which enables you to discover the best DEXs to route your swap via a single API call. Developers integrating KyberSwap also have the option of customising fees, as well as which token they would like to accept the fees in.
 
+{% hint style="info" %}
+#### Supported exchanges and networks
+
+For the full list of DEXs which have been integrated across KyberSwap Aggregator supported chains, please refer to [Supported Exchanges And Networks](../../getting-started/supported-exchanges-and-networks.md).
+{% endhint %}
+
 ## Next Steps
 
 <details>

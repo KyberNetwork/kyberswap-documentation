@@ -67,7 +67,7 @@ For the example below, we are connecting to KyberSwap with MetaMask.
 
 <figure><img src="../../../.gitbook/assets/image (72).png" alt=""><figcaption><p>Select MetaMask account to connect</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (92).png" alt=""><figcaption><p>Confirm connection</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (29).png" alt=""><figcaption><p>Confirm connection</p></figcaption></figure>
 
 Once confirmed, you should be able to see the same wallet account being reflected on the top right of the KyberSwap app. You can even click on the connected account to bring up a handy account summary.
 
