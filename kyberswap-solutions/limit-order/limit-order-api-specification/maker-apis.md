@@ -6,7 +6,7 @@ description: KyberSwap Limit Order Maker APIs
 
 ## Download OpenAPI specification:
 
-{% file src="../../../.gitbook/assets/Limit-Order-APIs (14).yaml" %}
+{% file src="../../../.gitbook/assets/Limit-Order-APIs (14) (1).yaml" %}
 
 ## Maker APIs
 
@@ -22,8 +22,8 @@ description: KyberSwap Limit Order Maker APIs
 [Limit-Order-APIs (4).yaml](<../../../.gitbook/assets/Limit-Order-APIs (4).yaml>)
 {% endswagger %}
 
-{% swagger src="../../../.gitbook/assets/Limit-Order-APIs (22).yaml" path="/write/api/v1/orders/sign-message" method="post" %}
-[Limit-Order-APIs (22).yaml](<../../../.gitbook/assets/Limit-Order-APIs (22).yaml>)
+{% swagger src="../../../.gitbook/assets/Limit-Order-APIs (25).yaml" path="/write/api/v1/orders/sign-message" method="post" %}
+[Limit-Order-APIs (25).yaml](<../../../.gitbook/assets/Limit-Order-APIs (25).yaml>)
 {% endswagger %}
 
 {% swagger src="../../../.gitbook/assets/Limit-Order-APIs (8).yaml" path="/write/api/v1/encode/increase-nonce" method="post" %}

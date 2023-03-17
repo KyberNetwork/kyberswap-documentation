@@ -43,6 +43,7 @@
     *
   * [Developer Guides](kyberswap-solutions/kyberswap-aggregator/developer-guides/README.md)
     * [Execute A Swap With The Aggregator API](kyberswap-solutions/kyberswap-aggregator/developer-guides/execute-a-swap-with-the-aggregator-api.md)
+    * [Upgrading From APIv1 to APIv2](kyberswap-solutions/kyberswap-aggregator/developer-guides/upgrading-from-apiv1-to-apiv2.md)
   * [Contracts](kyberswap-solutions/kyberswap-aggregator/contracts/README.md)
     * [Aggregator Contract Addresses](kyberswap-solutions/kyberswap-aggregator/contracts/aggregator-contract-addresses.md)
   * [DEX IDs](kyberswap-solutions/kyberswap-aggregator/dex-ids.md)
