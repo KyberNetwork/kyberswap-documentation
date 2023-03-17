@@ -59,10 +59,10 @@ Upon clicking the "Swap" button, KyberSwap Aggregator will attempt to secure the
 
 ![Specify swap amount](https://support.kyberswap.com/hc/article\_attachments/14746766951449)
 
-{% hint style="info" %}
+{% hint style="danger" %}
 #### Slippage tolerance: Protecting your trades
 
-KyberSwap allows you to avoid any negative trade outcomes by setting a [slippage](../../../getting-started/foundational-topics/decentralized-finance/slippage.md) tolerance. Please refer to [Customizing trade parameters](instantly-swap-at-the-best-rates.md#customizing-trade-parameters) below for further details.
+KyberSwap enables you to avoid any negative trade outcomes by setting a [slippage](../../../getting-started/foundational-topics/decentralized-finance/slippage.md) tolerance. Please refer to [Customizing trade parameters](instantly-swap-at-the-best-rates.md#customizing-trade-parameters) below for further details.
 {% endhint %}
 
 ### **Step 4**: Approve contract to swap tokens
@@ -103,6 +103,8 @@ The confirmation screen displays a few key pieces of information to review.
 #### Price impact
 
 Do take note of the resulting price impact of your trade as this will determine the final average price of your trade. Higher trade volumes relative to available liquidity will result in each additional token unit being acquired at a higher price. As such, a higher price impact would result in subpar swap rates.
+
+Please refer to the [Price Impact](../../../getting-started/foundational-topics/decentralized-finance/price-impact.md) page for further details.
 {% endhint %}
 
 * **Slippage**: The estimated difference between the expected price and final price of the trade. Slippage is an inherent characteristic of all active markets whose risks can only be mitigated. For more detailed insights, please refer to [Slippage](../../../getting-started/foundational-topics/decentralized-finance/slippage.md).
@@ -121,7 +123,7 @@ You should also see the transaction appear in your account’s transaction histo
 
 The KyberSwap Interface also provides additional features for more advanced traders that allow customisation of the following trade parameters:
 
-* **Max Slippage:** The maximum amount of slippage before the trade is reverted. Slippage refers to the difference between the expected and final price at which the trade was executed. As market conditions can change between the submission and execution of the trade, this guarantees that the trade will only be executed if the final price is within the expected price interval.&#x20;
+* **Max Slippage:** The maximum amount of slippage before the trade is reverted. Slippage refers to the difference between the expected and final price at which the trade was executed. As market conditions can change between the submission and execution of the trade, this guarantees that the trade will only be executed if the final price is within the expected price interval. Please refer to [Slippage](../../../getting-started/foundational-topics/decentralized-finance/slippage.md) page for more details.
 
 {% hint style="warning" %}
 #### Max Slippage setting

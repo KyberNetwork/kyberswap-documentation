@@ -15,6 +15,7 @@
     * [Order Book DEX](getting-started/foundational-topics/decentralized-finance/order-book.md)
     * [DEX Aggregator](getting-started/foundational-topics/decentralized-finance/dex-aggregator.md)
     * [Slippage](getting-started/foundational-topics/decentralized-finance/slippage.md)
+    * [Price Impact](getting-started/foundational-topics/decentralized-finance/price-impact.md)
     * [Maximal Extractable Value (MEV)](getting-started/foundational-topics/decentralized-finance/maximal-extractable-value-mev.md)
   * [Decentralized Technologies](getting-started/foundational-topics/decentralized-technologies/README.md)
     * [Wallets](getting-started/foundational-topics/decentralized-technologies/wallets.md)

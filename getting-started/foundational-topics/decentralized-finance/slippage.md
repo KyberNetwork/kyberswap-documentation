@@ -1,5 +1,5 @@
 ---
-description: Bracing For The Unexpected
+description: Securing Your Trades Against Market Fluctuations
 ---
 
 # Slippage
@@ -13,7 +13,9 @@ It is important to note that slippage is an inherent characteristic of any activ
 {% hint style="info" %}
 #### Slippage vs price impact
 
-Although closely related, slippage and price impact are separate concepts. Slippage occurs due to factors external to the trader while price impact occurs due to the size of a trade relative to the available liquidity.
+Although closely related, slippage and price impact are separate concepts. Slippage occurs due to market factors external to the trader while price impact occurs due to the size of a trade relative to the available liquidity.
+
+Please refer to the [Price Impact](price-impact.md) page for more details.
 {% endhint %}
 
 ## DEX slippage
