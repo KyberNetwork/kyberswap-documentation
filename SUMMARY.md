@@ -5,7 +5,7 @@
 ## Getting Started
 
 * [Quickstart](getting-started/quickstart.md)
-* [Supported Exchanges and Networks](getting-started/supported-exchanges-and-networks.md)
+* [Supported Exchanges And Networks](getting-started/supported-exchanges-and-networks.md)
 * [Foundational Topics](getting-started/foundational-topics/README.md)
   * [Decentralized Finance](getting-started/foundational-topics/decentralized-finance/README.md)
     * [Tokens](getting-started/foundational-topics/decentralized-finance/tokens.md)

@@ -135,7 +135,7 @@ Setting a higher slippage increases the likelihood of transaction success but co
 
 * **Transaction Time Limit:** The amount of time from submission that the transaction is valid for. If the transaction is not executed within the specified time frame, the transaction will be cancelled.
 * **Advanced Mode:** Toggle this button to allow for high impact trades without any confirmation prompts. Be extra careful when enabling this as large trades might result in significant slippage.
-* **Liquidity Sources:** Select the liquidity sources (i.e. DEXes) through which your trade will be routed. By default, all KyberSwap supported DEXes on the connected chain will be selected.
+* **Liquidity Sources:** Select the liquidity sources (i.e. DEXes) through which your trade will be routed. By default, all KyberSwap supported DEXes on the connected chain will be selected. You can view the list of supported DEXs on each chain on the [Supported Exchanges And Networks Page](../../../getting-started/supported-exchanges-and-networks.md).
 
 These settings can be accessed via selecting the slider icons on the main swap page:
 

@@ -2,13 +2,19 @@
 description: 13+ Chains, 200+ DEXs, and we're just getting started...
 ---
 
-# Supported Exchanges and Networks
+# Supported Exchanges And Networks
 
 ## Chains and DEXs
 
 The KyberSwap product suite has been deployed across the majority of the most established DeFi chains. Whichever your preferred chain, the [KyberSwap Aggregator](../kyberswap-solutions/kyberswap-aggregator/) ensures the best swap rates by aggregating liquidity across the most established DEXs deployed on that chain.
 
-For developers integrating with the KyberSwap Aggregator, please refer to [DEX IDs](../kyberswap-solutions/kyberswap-aggregator/dex-ids.md) for internal mapping of DEXs used for filtering.
+{% hint style="info" %}
+#### DEX filtering
+
+For traders, you can specify which DEXs are considered when computing your swap route by [Customizing Trade Parameters](../kyberswap-solutions/kyberswap-interface/user-guides/instantly-swap-at-the-best-rates.md#customizing-trade-parameters) directly on the [KyberSwap Interface](../kyberswap-solutions/kyberswap-interface/).
+
+For developers integrating with the [KyberSwap Aggregator](../kyberswap-solutions/kyberswap-aggregator/), please refer to [DEX IDs](../kyberswap-solutions/kyberswap-aggregator/dex-ids.md) for internal mapping of DEXs used for filtering via the [API](../kyberswap-solutions/kyberswap-aggregator/aggregator-api-specification/).
+{% endhint %}
 
 <details>
 
