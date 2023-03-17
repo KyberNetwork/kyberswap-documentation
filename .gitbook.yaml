@@ -29,7 +29,7 @@ redirects:
   kyber-dao/staking: governance/kyberdao/user-guides/staking.md
   kyber-dao/voting: governance/kyberdao/user-guides/voting.md
   kyber-dao/others: governance/kyberdao/faq.md
-  fees-to-kyber-dao: governance/kyberdao/fees-to-kyberdao.md
+  kyber-dao/fees-to-kyber-dao: governance/kyberdao/fees-to-kyberdao.md
   third-party-integration: reference/third-party-integrations.md
   Classic/introduction: liquidity-solutions/kyberswap-classic/README.md
   Classic/contract/overview: liquidity-solutions/kyberswap-classic/developer-guides/README.md
