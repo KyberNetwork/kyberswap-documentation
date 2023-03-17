@@ -16,7 +16,7 @@ To tackle these challenges, KyberSwap Elastic introduced an innovative liquidity
 
 Lets look into these 2 types of farming mechanisms, as it will be important for liquidity providers (and farmers) to monitor their liquidity positions and adjust when needed to maximize their earnings through farming:
 
-## **Farming Type 1 - Active time** **of your liquidity**
+### **Farming Type 1 - Active time** **of your liquidity**
 
 This type of Farm relies on a single factor:
 
