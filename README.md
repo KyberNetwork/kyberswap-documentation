@@ -14,7 +14,7 @@ For more information on Kyber Network, the organization, please visit the offici
 
 For liquidity providers, KyberSwap has a suite of capital efficient protocols designed to optimize rewards. KyberSwap Classic’s protocol is DeFi’s first market maker protocol that dynamically adjusts liquidity provider (LP) fees based on market conditions, while KyberSwap Elastic is a tick-based AMM with concentrated liquidity, customizable fee tiers, reinvestment curve and other advanced features specially designed to give LPs the flexibility and tools to take your earning strategy to the next level without compromising on security.
 
-KyberSwap powers 100+ integrated projects and has facilitated over US$11 billion worth of transactions for thousands of users since its inception.
+KyberSwap powers 100+ integrated projects and has facilitated over US$17 billion worth of transactions for thousands of users since its inception.
 
 Currently deployed on 13 chains, including Ethereum, Ethereum Proof-of-Work, Polygon, BNB, Avalanche, Fantom, Cronos, Arbitrum, BitTorrent, Velas, Aurora, Oasis and Optimism. KyberSwap aggregates liquidity from over 80 DEXs to give users the best rates possible for their swaps.
 
