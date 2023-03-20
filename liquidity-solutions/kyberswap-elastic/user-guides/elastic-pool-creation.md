@@ -64,22 +64,26 @@ With the token pair selected, you will then be required to select your fee tier.
 
 <figure><img src="../../../.gitbook/assets/image (94).png" alt=""><figcaption><p>Select fee tier</p></figcaption></figure>
 
-KyberSwap currently offers the following tiers to cater for different token pair correlations:
+KyberSwap Elastic currently offers the following tiers to cater for different token pair correlations:
 
 <details>
 
 <summary><strong>Fee tier options</strong></summary>
 
-1. **0.008% fee tier: Best for very stable pairs**\
-   ****The 0.008% fee tier is ideal for token pairs that typically trade at a fixed or extremely high correlated rate, such as pairs of stablecoins (e.g. DAI-USDC). Liquidity providers take on minimal price risk in these pools, and traders expect to pay minimal fees.
-2. **0.01% fee tier: Best for very stable pairs**\
-   ****The 0.01% fee tier is ideal for token pairs that typically trade at a fixed or extremely high correlated rate, such as pairs of stablecoins (e.g. DAI-USDC). Liquidity providers take on minimal price risk in these pools, and traders expect to pay minimal fees.
-3. **0.04% fee tier: Best for stable pairs**\
+In general, the lower the token correlation, the higher the recommended fee tier. Higher fee tiers offsets the impermanent loss risks which accompanies less correlated pairs.
+
+1. **Best for very stable pairs: 0.008%, 0.01%, 0.02%**\
+   ****These fee tiers are ideal for token pairs that typically trade at a fixed or extremely high correlated rate, such as pairs of stablecoins (e.g. DAI-USDC). Liquidity providers take on minimal price risk in these pools, and traders expect to pay minimal fees.
+2. **Best for stable pairs: 0.04%** \
    ****The 0.04% fee tier is ideal for token pairs that typically trade at a fixed or highly correlated rate, such as pairs of stablecoins (e.g. DAI-USDC). Liquidity providers take on minimal price risk in these pools, and traders expect to pay minimal fees.
-4. **0.3% fee tier: Best for most pairs**\
-   ****The 0.30% fee tier is best suited for less correlated token pairs such as the ETH-DAI token pair, which are subject to significant price movements to either upside or downside. This higher fee is more likely to compensate liquidity providers for the greater price risk that they take on relative to stablecoin LPs.
-5. **1% fee tier: Best for exotic pairs**\
+3. **Best for most pairs: 0.1%, 0.25%, 0.3%**\
+   ****These fee tiers are best suited for less correlated token pairs such as the ETH-DAI token pair, which are subject to significant price movements to either upside or downside. This higher fee is more likely to compensate liquidity providers for the greater price risk that they take on relative to stablecoin LPs.
+4. **Best for exotic pairs: 1%** \
    ****The 1% fee tier is best suited for even less correlated token pairs such as the ETH-KNC token pair, which are subject to significant price movements to either upside or downside. This higher fee is more likely to compensate liquidity providers for the greater price risk that they take on relative to stablecoin liquidity providers.
+5. **Best for very volatile pairs: 2%**\
+   ****The 2% fee tier is best suited for very volatile pairs which are subject to extreme price movements to either the upside or downside. The significantly higher fee is more likely to compensate liquidity providers for the significant price risk.
+6. **Best for rare use cases: 5%** \
+   ****The 5% fee tier is created specifically for the purpose of price discovery for new tokens against exotic tokens such as KNC. As the final price of the token pair can differ significantly from launch, a higher fee compensates LPs for the extreme IL risks during this highly volatile period.
 
 </details>
 

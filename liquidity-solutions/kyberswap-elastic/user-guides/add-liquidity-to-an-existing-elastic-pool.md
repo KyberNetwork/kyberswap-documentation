@@ -52,7 +52,7 @@ Select the pool youâ€™d like to participate in by clicking on the appropriate â€
 
 ### **Step 3**: Select fee tier&#x20;
 
-For a list of fee tiers and their recommended applications, please refer to [this article](https://support.kyberswap.com/hc/en-us/articles/13954867874329).
+For a list of fee tiers and their recommended applications, please refer to [Fee Tier Options](elastic-pool-creation.md#fee-tier-options).
 
 ![Select fee tier](https://support.kyberswap.com/hc/article\_attachments/14197115918873)
 
