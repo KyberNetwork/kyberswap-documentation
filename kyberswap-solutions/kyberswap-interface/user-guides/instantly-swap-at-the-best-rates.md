@@ -60,9 +60,9 @@ Upon clicking the "Swap" button, KyberSwap Aggregator will attempt to secure the
 ![Specify swap amount](https://support.kyberswap.com/hc/article\_attachments/14746766951449)
 
 {% hint style="danger" %}
-#### Slippage tolerance: Protecting your trades
+#### Max slippage: Protecting your trades
 
-KyberSwap enables you to avoid any negative trade outcomes by setting a [slippage](../../../getting-started/foundational-topics/decentralized-finance/slippage.md) tolerance. Please refer to [Customizing trade parameters](instantly-swap-at-the-best-rates.md#customizing-trade-parameters) below for further details.
+KyberSwap enables you to avoid any negative trade outcomes by setting a Max Slippage. Please refer to [Customizing trade parameters](instantly-swap-at-the-best-rates.md#customizing-trade-parameters) below for further details or [Slippage](../../../getting-started/foundational-topics/decentralized-finance/slippage.md) if you would like to understand the concept better.
 {% endhint %}
 
 ### **Step 4**: Approve contract to swap tokens
@@ -86,7 +86,7 @@ Do note that upon the "Confirm Swap" pop-up being displayed, the final route has
 
 In times of extreme volatility, the market conditions might have changed significantly in-between clicking the "Swap" button and the "Confirm Swap" pop-up being displayed. KyberSwap will display the latest rates in the "Confirm Swap" pop-up to reduce the likelihood that the transaction will fail.&#x20;
 
-Please review the swap information in full prior to confirmation as the final secured route might differ from the swap screen (see [Step 3](instantly-swap-at-the-best-rates.md#step-3-configure-swap-amount)). To protect your trade, KyberSwap highly recommends that users take advantage of our "Max Slippage" feature (refer to [Cutomizing trade parameters](instantly-swap-at-the-best-rates.md#customizing-trade-parameters)).
+Please review the swap information in full prior to confirmation as the final secured route might differ from the swap screen (see [Step 3](instantly-swap-at-the-best-rates.md#step-3-configure-swap-amount)). To protect your trade, KyberSwap highly recommends that users take advantage of our "Max Slippage" feature (refer to [Customizing trade parameters](instantly-swap-at-the-best-rates.md#customizing-trade-parameters)).
 {% endhint %}
 
 The confirmation screen displays a few key pieces of information to review.
@@ -128,9 +128,9 @@ The KyberSwap Interface also provides additional features for more advanced trad
 {% hint style="warning" %}
 #### Max Slippage setting
 
-While KyberSwap recommends keeping the slippage as low as possible to ensure that trades are executed at the best rates, such transactions might face a higher failure rate in times of extreme market volatility.
+While KyberSwap recommends keeping the Max Slippage as low as possible to ensure that trades are executed at the best rates, such transactions might face a higher failure rate in times of extreme market volatility.
 
-Setting a higher slippage increases the likelihood of transaction success but comes with greater risks of worse rates due to market volatility as well as the presence of frontrunning opportunities. **KyberSwap highly recommends setting a slippage for all swaps to protect your trades.**
+Setting a higher Max Slippage increases the likelihood of transaction success but comes with greater risks of worse rates due to market volatility as well as the presence of frontrunning opportunities. **KyberSwap highly recommends setting a Max Slippage for all swaps to protect your trades.**
 {% endhint %}
 
 * **Transaction Time Limit:** The amount of time from submission that the transaction is valid for. If the transaction is not executed within the specified time frame, the transaction will be cancelled.
