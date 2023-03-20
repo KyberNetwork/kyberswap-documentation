@@ -6,7 +6,7 @@ description: KyberSwap Aggregator EVM APIs
 
 ## Download OpenAPI specification:
 
-{% file src="../../../.gitbook/assets/Kyber-Swap-Aggregator-APIs (14).yaml" %}
+{% file src="../../../.gitbook/assets/Kyber-Swap-Aggregator-APIs.yaml" %}
 
 {% hint style="success" %}
 #### Note on integrations: clientID
@@ -31,6 +31,6 @@ In order to continuously improve the KyberSwap Aggregator, our APIs implement a 
 [Kyber-Swap-Aggregator-APIs (14).yaml](<../../../.gitbook/assets/Kyber-Swap-Aggregator-APIs (14).yaml>)
 {% endswagger %}
 
-{% swagger src="../../../.gitbook/assets/Kyber-Swap-Aggregator-APIs (14).yaml" path="/{chain}/api/v1/route/build" method="post" %}
-[Kyber-Swap-Aggregator-APIs (14).yaml](<../../../.gitbook/assets/Kyber-Swap-Aggregator-APIs (14).yaml>)
+{% swagger src="../../../.gitbook/assets/Kyber-Swap-Aggregator-APIs.yaml" path="/{chain}/api/v1/route/build" method="post" %}
+[Kyber-Swap-Aggregator-APIs.yaml](../../../.gitbook/assets/Kyber-Swap-Aggregator-APIs.yaml)
 {% endswagger %}
