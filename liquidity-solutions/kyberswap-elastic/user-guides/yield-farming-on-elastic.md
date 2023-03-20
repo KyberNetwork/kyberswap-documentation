@@ -64,7 +64,7 @@ For the purposes of this guide, we will use the following USDC-stMATIC pool on P
 
 Deposit liquidity into the farming contract by clicking on the “Deposit” button on the Active Farms page and then selecting the NFT associated with the liquidity position that you would like to stake. Click the “Deposit Selected” button to proceed. (This is an onchain transaction.)
 
-![Deposit to farming ocntract](https://support.kyberswap.com/hc/article\_attachments/14231073926425)
+![Deposit to farming contract](https://support.kyberswap.com/hc/article\_attachments/14231073926425)
 
 ![Select position to deposit](https://support.kyberswap.com/hc/article\_attachments/14231089720601)
 
