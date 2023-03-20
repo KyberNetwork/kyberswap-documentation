@@ -6,7 +6,7 @@ description: Customized Liquidity Positions With Auto-Compounding Yields
 
 ## Overview
 
-As the AMM space matured, increasingly sophisticated yield generation strategies created a strong demand for customized liquidity positions whereby liquidity providers were able to specify a price range for their liquidity positions. Realizing this demand, KyberSwap Elastic iterated upon the [capital amplification](../kyberswap-classic/) capabilities of its [Classic](../kyberswap-classic/) counterpart by incorporating emerging concentrated liquidity concepts popularized by Uniswap V3. Through fusing the benefits of each, KyberSwap Elastic enables liquidity providers to determine their preferred liquidity price ranges while still maximizing returns through greater capital efficiency as well as the auto-compounding of yields.
+As the AMM space matured, increasingly sophisticated yield generation strategies created a strong demand for customized liquidity positions whereby liquidity providers were able to specify a price range for their liquidity positions. Realizing this demand, KyberSwap Elastic iterated upon the [capital amplification](../kyberswap-classic/) capabilities of its [Classic](../kyberswap-classic/) counterpart by incorporating emerging [concentrated liquidity](concepts/concentrated-liquidity.md) concepts popularized by Uniswap V3. Through fusing the benefits of each, KyberSwap Elastic enables liquidity providers to determine their preferred liquidity price ranges while still maximizing returns through greater capital efficiency as well as the [auto-compounding of yields](concepts/reinvestment-curve.md).
 
 Through these improved LP incentives, KyberSwap Elastic is also able to further reduce slippage for traders as market forces will incentivize liquidity to be concentrated within the most actively traded price ranges. LPs are able to compound their finely tuned risk-adjusted returns while simultaneously encouraging greater market stability through reduced slippage risks for traders.
 
@@ -43,4 +43,3 @@ Through these improved LP incentives, KyberSwap Elastic is also able to further 
 * [View Elastic contract code and addresses](contracts/)
 
 </details>
-
