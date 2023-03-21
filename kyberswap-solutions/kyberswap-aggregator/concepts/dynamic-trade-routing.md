@@ -10,5 +10,5 @@ KyberSwap trades are split and routed through different DEXs for the best prices
 
 KyberSwap's DEX aggregator also provides the following benefits:
 
-* **Optimised Trade Route**: If a trade only passes through KyberSwap’s own pools, the gas fees associated with this trade will be minimal. The gas fees charged to our users will be as if the DEX aggregator was not used at all.
-* **Reduced Gas Fees**: We reduce the number of transfers. Therefore, the gas fees associated with trading Fee on Transfer (FoT) tokens are also reduced. _In Fee on Transfer tokens, generally, a small portion of every transfer is either burnt or diverted to another wallet (i.e. tax). FoT tokens are common on the BSC chain._
+* **KyberSwap Ecosystem Gas Savings**: The KyberSwap Aggregator is able to generate additional gas savings for trades which are wholly routed via KyberSwap pools by optimizing the trade route internally.&#x20;
+* **Fee on Transfer Savings**: KyberSwap Aggregator can also be configured to minimize the number of transfers. As a result, the gas fees associated with trading Fee on Transfer (FoT) tokens are also reduced. _In Fee on Transfer tokens, generally, a small portion of every transfer is either burnt or diverted to another wallet (i.e. tax). FoT tokens are common on the BSC chain._
