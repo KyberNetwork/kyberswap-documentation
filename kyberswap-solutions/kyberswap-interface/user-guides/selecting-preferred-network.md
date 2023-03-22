@@ -60,7 +60,7 @@ Select your preferred chain and you should then be prompted by your wallet to co
 
 <figure><img src="../../../.gitbook/assets/image (65).png" alt=""><figcaption><p>Adding a Polygon chain to MetaMask</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption><p>Switch to Polygon chain on Metamask</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1).png" alt=""><figcaption><p>Switch to Polygon chain on Metamask</p></figcaption></figure>
 
 Once the switch has been approved, KyberSwap would then be connected to your selected network as can be verified via the active chain displayed in the top right of the KyberSwap app.
 

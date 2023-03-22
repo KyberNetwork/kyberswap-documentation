@@ -73,7 +73,7 @@ If this is the first time you are swapping this token on this network using this
 
 Click on the "Approve \[Token]" button to begin this process. Your wallet will prompt you to give your approval for the KyberSwap smart contract to transact using this token on this network. This is a one-time action and subsequent swaps involving this token will not require further approvals unless there is an update to the smart contract.
 
-<figure><img src="../../../.gitbook/assets/image (3).png" alt=""><figcaption><p>Approve ERC20 tokens</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (3).png" alt=""><figcaption><p>Approve ERC20 tokens</p></figcaption></figure>
 
 ### **Step 5**: Confirm the swap
 
@@ -123,14 +123,14 @@ You should also see the transaction appear in your account’s transaction histo
 
 The KyberSwap Interface also provides additional features for more advanced traders that allow customisation of the following trade parameters:
 
-* **Max Slippage:** The maximum amount of slippage before the trade is reverted. Slippage refers to the difference between the expected and final price at which the trade was executed. As market conditions can change between the submission and execution of the trade, this guarantees that the trade will only be executed if the final price is within the expected price interval. Please refer to [Slippage](../../../getting-started/foundational-topics/decentralized-finance/slippage.md) page for more details.
+* **Max Slippage:** The maximum amount of slippage before the trade is reverted. Slippage refers to the difference between the expected and final price at which the trade was executed. As market conditions can change between the submission and execution of the trade, this guarantees that the trade will only be executed if the final price is within the expected price interval. For more details on slippage, refer to our [Foundational Topics](../../../getting-started/foundational-topics/decentralized-finance/slippage.md).
 
 {% hint style="warning" %}
 #### Max Slippage setting
 
 While KyberSwap recommends keeping the Max Slippage as low as possible to ensure that trades are executed at the best rates, such transactions might face a higher failure rate in times of extreme market volatility.
 
-Setting a higher Max Slippage increases the likelihood of transaction success but comes with greater risks of worse rates due to market volatility as well as the presence of frontrunning opportunities. **KyberSwap highly recommends setting a Max Slippage for all swaps to protect your trades.**
+Setting a higher Max slippage increases the likelihood of transaction success but comes with greater risks of worse rates due to market volatility as well as the presence of frontrunning opportunities. **KyberSwap highly recommends setting a Max Slippage for all swaps to protect your trades.**
 {% endhint %}
 
 * **Transaction Time Limit:** The amount of time from submission that the transaction is valid for. If the transaction is not executed within the specified time frame, the transaction will be cancelled.
