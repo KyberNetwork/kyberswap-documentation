@@ -21,6 +21,70 @@ As this liquidity solution involved the creation of a fundamentally different ma
 
 Taken as a whole, this solution came to be known as the **Automated Market Maker (AMM).** “Automated” because it is always available for trading and does not depend on the traditional interaction between buyers and sellers where orders must first be submitted (i.e. [orderbook model](order-book.md)).
 
+## Price curves
+
+Price curves are key to ensuring the stability of the pool as well as the capital efficiency of the assets within a pool. Price curves are essentially constant product curves whose most basic form,   $$x * y =k$$, ensures that the price for each additional token purchased from the pool scales according to the relative ratio of tokens in the pool.&#x20;
+
+<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption><p>A constant price curve</p></figcaption></figure>
+
+For AMM implementations, $$x$$ is the quantity of `TokenA` while $$y$$ is the quantity of `TokenB`. This means that the pool's token ratio always shifts according to the constant product, $$k$$,  of the token quantities. Any action against the pool (trades, deposits, or withdrawals), will always be executed based on the price curve.
+
+### Example
+
+For ease of understanding, the example below showcases how prices change according to a standard constant product curve (i.e. $$x * y =k$$). Newer AMM iterations implement more complex price curves but the underlying principals remains the same.
+
+The example below assumes an existing ETH/USDT pool which has an exact 50:50 value ratio of tokens (1 ETH = 2000 USDT).
+
+| Liquidity Pool  | ETH amount | USDT amount | Constant   |
+| --------------- | ---------- | ----------- | ---------- |
+| ETH/USDT        | 100        | 200,000     | 20,000,000 |
+
+#### Swap
+
+A trader decides to trade 2 ETH for USDT using the pool. We can calculate the equivalent USDT amount for the trade by using the constant product `20,000,000` calculated above. Note that $$x$$ refers to ETH amount and $$y$$ refers to USDT amount.
+
+$$
+(x +\Delta{x})(y+\Delta{y})=k
+$$
+
+$$
+(100+2)(200,000+\Delta{y})=20,000,000
+$$
+
+$$
+\Delta{y}=\frac{20,000,000}{102} - 200,000
+$$
+
+$$
+\Delta{y}=-3,921.57
+$$
+
+For a 1 ETH swap, the trader will receive 3,921.57 USDT. In effect, the average price per ETH is effectively 1,960.79 USDT. Notice that the final price differs from the initial pool price before the swap (i.e. 1 ETH = 2,000 USDT). This exponential price scaling ensures that the `20,000,000` constant is maintained as the supply of each token in the pool changes.
+
+| Liquidity Pool  | ETH amount | USDT amount | Constant   |
+| --------------- | ---------- | ----------- | ---------- |
+| ETH/USDT        | 102        | 196,078     | 20,000,000 |
+
+Based on the above, the price for the next ETH unit in the pool after the trade is `196,078/102 = 1,922.33`.
+
+Critically, the changes in pool ratios have to be taken within the wider context of the overall ETH/USDT market. In this case, assuming that the market price of ETH on external markets remains at 1 ETH to 2,000 USDT, a profit opportunity presents itself for arbitrageurs who will buy ETH from the pool and sell it on external exchanges to pocket the price differential (i.e. buy 2 ETH at an average price of 1,960.79 and resell it for 2,000 hence making a profit of 78.42). This arbitrage action will bring the pool back in line with the market rate. Arbitrageurs play a crucial role in rebalancing the pool with the external market.
+
+#### Adding and removing liquidity
+
+For liquidity contributions and withdrawals, the ratio of the tokens in the pool must be maintained. Assuming we have the same ETH/USDT pool above:
+
+| Liquidity Pool  | ETH amount | USDT amount | Constant   |
+| --------------- | ---------- | ----------- | ---------- |
+| ETH/USDT        | 102        | 196,078     | 20,000,000 |
+
+Any liquidity additions or removals, will require a ratio of 1ETH:1,922USDT. This ensures that the price of the pool is unaffected by liquidity additions or removals. Consequently, note that the ratio will be dependent upon the exact ratio in the pool at the point of adding/removing liquidity.
+
+Assuming that a liquidity provider wants to remove exactly 2 ETH from the pool, the withdrawal will also result in 3,844 USDT being removed from the pool. Notice that the constant has also been updated but the price ratio remains the same (192,234/100=1,922).
+
+| Liquidity Pool  | ETH amount | USDT amount | Constant   |
+| --------------- | ---------- | ----------- | ---------- |
+| ETH/USDT        | 100        | 192,234     | 19,223,400 |
+
 ## Trade and earn at the best rates
 
 KyberSwap implements two AMM variants, [KyberSwap Classic](../../../liquidity-solutions/kyberswap-elastic/) and [KyberSwap Elastic](../../../liquidity-solutions/kyberswap-elastic/), which provides LPs multiple options for generating yield. For traders, [KyberSwap Aggregator](../../../kyberswap-solutions/kyberswap-aggregator/) abstracts the complexity of searching for the best pools by conveniently splitting and routing your trade across pools with the most optimal liquidity.

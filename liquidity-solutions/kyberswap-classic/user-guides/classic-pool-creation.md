@@ -34,7 +34,7 @@ Still deciding on which solution suits you best?&#x20;
 
 Ensure you are on the correct network, and then click the “Create Pool” button at the top right of the screen.
 
-<figure><img src="../../../.gitbook/assets/image (42).png" alt=""><figcaption><p>Classic Pool page</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (42) (1).png" alt=""><figcaption><p>Classic Pool page</p></figcaption></figure>
 
 This will bring up the Create a new pool screen, but it will be fairly empty until the parameters of the pool are properly specified.
 

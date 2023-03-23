@@ -11,7 +11,7 @@
   * [Decentralized Finance](getting-started/foundational-topics/decentralized-finance/README.md)
     * [Tokens](getting-started/foundational-topics/decentralized-finance/tokens.md)
     * [Stablecoins](getting-started/foundational-topics/decentralized-finance/stablecoins.md)
-    * [Decentralised Exchange (DEX)](getting-started/foundational-topics/decentralized-finance/decentralised-exchange-dex.md)
+    * [Decentralized Exchange (DEX)](getting-started/foundational-topics/decentralized-finance/decentralised-exchange-dex.md)
     * [Automated Market Maker DEX](getting-started/foundational-topics/decentralized-finance/automated-market-maker.md)
     * [Order Book DEX](getting-started/foundational-topics/decentralized-finance/order-book.md)
     * [DEX Aggregator](getting-started/foundational-topics/decentralized-finance/dex-aggregator.md)
