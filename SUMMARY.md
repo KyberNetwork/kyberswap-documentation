@@ -141,6 +141,9 @@
     * [Staking](governance/kyberdao/user-guides/staking.md)
     * [Voting](governance/kyberdao/user-guides/voting.md)
   * [Fees to KyberDAO](governance/kyberdao/fees-to-kyberdao.md)
+  * [Contracts](governance/kyberdao/contracts/README.md)
+    * [KyberDAO Contract Repo](governance/kyberdao/contracts/kyberdao-contract-repo.md)
+    * [KyberDAO Contract Addresses](governance/kyberdao/contracts/kyberdao-contract-addresses.md)
   * [FAQ - Others](governance/kyberdao/faq.md)
 
 ## Reference
