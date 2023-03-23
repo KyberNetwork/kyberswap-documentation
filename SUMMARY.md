@@ -4,7 +4,8 @@
 
 ## Getting Started
 
-* [Quickstart](getting-started/quickstart.md)
+* [Quickstart](getting-started/quickstart/README.md)
+  * [FAQ](getting-started/quickstart/faq.md)
 * [Supported Exchanges And Networks](getting-started/supported-exchanges-and-networks.md)
 * [Foundational Topics](getting-started/foundational-topics/README.md)
   * [Decentralized Finance](getting-started/foundational-topics/decentralized-finance/README.md)
@@ -14,6 +15,7 @@
     * [Automated Market Maker DEX](getting-started/foundational-topics/decentralized-finance/automated-market-maker.md)
     * [Order Book DEX](getting-started/foundational-topics/decentralized-finance/order-book.md)
     * [DEX Aggregator](getting-started/foundational-topics/decentralized-finance/dex-aggregator.md)
+    * [Impermanent Loss](getting-started/foundational-topics/decentralized-finance/impermanent-loss.md)
     * [Slippage](getting-started/foundational-topics/decentralized-finance/slippage.md)
     * [Price Impact](getting-started/foundational-topics/decentralized-finance/price-impact.md)
     * [Maximal Extractable Value (MEV)](getting-started/foundational-topics/decentralized-finance/maximal-extractable-value-mev.md)

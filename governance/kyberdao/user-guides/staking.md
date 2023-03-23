@@ -22,7 +22,7 @@ Step 2: Connect your wallet
 
 Step 3: Stake KNC
 
-<img src="https://docs.kyberswap.com/assets/images/stake_knc-716742f4afcedbc78cbb3ac14db465ff.png" alt="Stake KNC" data-size="original">
+![](<../../../.gitbook/assets/image (1).png>)
 
 If you stake KNC in epoch “n”, you or your delegate will only be eligible to vote in epoch “n+1” (next epoch onwards). Example:
 

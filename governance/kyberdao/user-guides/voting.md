@@ -50,7 +50,7 @@ Step 3: Paste the Ethereum address that you want to delegate voting power to →
 
 Important: In this default delegation method, your delegate is responsible for voting on your behalf and distributing your KNC rewards to you (though your delegate can’t touch or withdraw your own staked KNC). Kyber Network does not hold your funds or manage this process. KyberDAO voting is operated using the blockchain and is fully transparent and verifiable.
 
-<img src="https://docs.kyberswap.com/assets/images/delegate_knc-9070adbc69c6ef31576e96e31c078003.png" alt="Stake KNC" data-size="original">
+![](<../../../.gitbook/assets/image (8).png>)
 
 </details>
 

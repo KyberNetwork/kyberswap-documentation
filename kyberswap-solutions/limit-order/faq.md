@@ -4,6 +4,8 @@ description: Your KyberSwap Limit Order Questions Answered
 
 # FAQ
 
+## Ecosystem
+
 <details>
 
 <summary>Which chains are supported by Limit Orders?</summary>
@@ -29,6 +31,8 @@ Please refer to [Supported Exchanges and Networks](../../getting-started/support
 KyberSwap whitelists well-known tokens for ease of access, but you can import custom tokens that meet the ERC20 standard via our user interface. For more information on how to do this, please refer to [Add Your Favourite Tokens](../kyberswap-interface/user-guides/add-your-favourite-tokens.md).
 
 </details>
+
+## Trading
 
 <details>
 

@@ -4,11 +4,13 @@ description: Your KyberSwap Aggregator Questions Answered
 
 # FAQ
 
+## Ecosystem
+
 <details>
 
 <summary>Which chains does KyberSwap Aggregator support?</summary>
 
-The full list of supported  chains can be found on [Supported Exchanges and Networks](../../getting-started/supported-exchanges-and-networks.md).
+The full list of supported chains can be found on [Supported Exchanges and Networks](../../getting-started/supported-exchanges-and-networks.md).
 
 </details>
 
@@ -40,21 +42,19 @@ It should be noted that of these Trading Fees collected by LPs, 10% goes to Kybe
 
 </details>
 
+## Trading
+
 <details>
 
 <summary>How do I change slippage tolerance?</summary>
 
-Slippage tolerance for swaps defaults to a conservative 0.5%, but you can change this in Swap settings. From the Swap page, click on the Swap Settings button.
-
-<img src="https://support.kyberswap.com/hc/article_attachments/13785737074585" alt="SwapSettingsButton.png" data-size="original">
-
-This brings up the Swap settings page. You can use the selection buttons to specify your slippage tolerance. You can also enter a custom percentage in the field on the right.
-
-<img src="https://support.kyberswap.com/hc/article_attachments/13785759119257" alt="SwapSettingsScreenSlippage.png" data-size="original">
+Slippage tolerance for swaps defaults to a conservative 0.5%, but you can [change this in Swap settings](../kyberswap-interface/user-guides/instantly-swap-at-the-best-rates.md#customizing-trade-parameters).
 
 For more information on completing a swap, you can refer to [Instantly Swap At The Best Rates](../kyberswap-interface/user-guides/instantly-swap-at-the-best-rates.md) for a step-by-step guide.
 
 </details>
+
+## Troubleshooting
 
 <details>
 
@@ -80,11 +80,23 @@ If you have a queue of stuck transactions, you may only need to cancel/expedite 
 
 Here are links to instructions on how to perform this action on some of the more common Web3 wallets.
 
+* [Metamask](https://metamask.zendesk.com/hc/en-us/articles/360015489251-How-to-Speed-Up-or-Cancel-a-Pending-Transaction)
+* [Trust Wallet](https://community.trustwallet.com/t/pending-stuck-transactions/126)
+* [MEW](https://help.myetherwallet.com/en/articles/5461454-canceling-or-replacing-a-transaction-after-it-s-been-sent)
 * [1inch iOS Wallet](https://help.1inch.io/en/articles/5211509-how-to-cancel-or-speed-up-a-pending-transaction-in-the-1inch-wallet)
 * [Crypto.com Defi Wallet](https://help.crypto.com/en/articles/4476691-how-do-i-cancel-or-speed-up-my-pending-eth-erc-20-transaction-on-crypto-com-defi-wallet-with-replace-by-fee)
-* [Metamask](https://metamask.zendesk.com/hc/en-us/articles/360015489251-How-to-Speed-Up-or-Cancel-a-Pending-Transaction)
-* [MEW](https://help.myetherwallet.com/en/articles/5461454-canceling-or-replacing-a-transaction-after-it-s-been-sent)
-* [Trust Wallet](https://community.trustwallet.com/t/pending-stuck-transactions/126)
+
+</details>
+
+<details>
+
+<summary>I received fewer tokens than expected</summary>
+
+Before confirming a swap transaction, you will be shown an order confirmation screen that clearly displays the tokens you will receive after the swap. This screen helps to ensure that there are no unpleasant surprises; you will never receive fewer tokens than the minimum amount displayed on this screen if the swap is successful.
+
+Do pay particular attention to the [Price Impact](../../getting-started/foundational-topics/decentralized-finance/price-impact.md) and [Slippage](../../getting-started/foundational-topics/decentralized-finance/slippage.md) numbers. For further details, please refer to [Confirm the swap](../kyberswap-interface/user-guides/instantly-swap-at-the-best-rates.md#step-5-confirm-the-swap).
+
+![](<../../.gitbook/assets/image (2).png>)
 
 </details>
 

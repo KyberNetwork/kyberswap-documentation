@@ -4,6 +4,8 @@ description: Your KyberSwap Classic Questions Answered
 
 # FAQ
 
+## Ecosystem
+
 <details>
 
 <summary>Which chains does KyberSwap Classic support?</summary>
@@ -24,7 +26,9 @@ KyberSwap whitelists well-known tokens for ease of access, but you can import cu
 
 <summary>What is the difference between Classic vs Elastic?</summary>
 
+Both KyberSwap Classic and Elastic are [AMM](../../getting-started/foundational-topics/decentralized-finance/automated-market-maker.md) liquidity solutions that were created with the intent of optimizing LP yields through greater capital efficiency. KyberSwap Classic enables pools to be configured with [dynamic fees](concepts/flexible-fee-adjustment.md) which respond to market conditions while KyberSwap Elastic enables users to enter into [concentrated liquidity](../kyberswap-elastic/concepts/concentrated-liquidity.md) positions with [auto-compounding fees](../kyberswap-elastic/concepts/reinvestment-curve.md).
 
+For the full comparison, please refer to [Classic vs Elastic](../classic-vs-elastic/).
 
 </details>
 
@@ -35,6 +39,8 @@ KyberSwap whitelists well-known tokens for ease of access, but you can import cu
 Rainmaker was the name for a yield farming program that KyberSwap ran in 2021. It has since been discontinued but liquidity providers are still able to earn additional farming rewards via KyberSwap's new [farms](https://youtu.be/vdrOyynrQwE).
 
 </details>
+
+## Yield farming
 
 <details>
 
@@ -56,6 +62,8 @@ From here you can see the types of coins offered under the “My Rewards” colu
 
 There is no deadline for collecting (aka harvesting) your pool farm rewards. However please note that some farming pools have vesting periods: after harvesting, the rewards can only be withdrawn after a set vesting period. The vesting period counter starts at the point of collection.
 
+Please refer to [Harvesting and claiming rewards](user-guides/yield-farming-on-classic.md#harvesting-and-claiming-rewards) for further details.
+
 </details>
 
 <details>
@@ -63,18 +71,6 @@ There is no deadline for collecting (aka harvesting) your pool farm rewards. How
 <summary>How long is the vesting period for yield farming rewards?</summary>
 
 Farming pool rewards can be withdrawn after they vest. The vesting period varies from pool to pool, with some farming pools not having a vesting period. You can check the vesting period of the farm you’re participating in by navigating to the Vesting tab on the Farms page. Note that the vesting period counter starts at the point of collection.
-
-</details>
-
-<details>
-
-<summary>How secure are KyberSwap and KyberDAO?</summary>
-
-Kyber Network highly values the security of the KyberSwap protocol and the KyberDAO governance platform.
-
-KyberSwap is fully non-custodial and our users’ funds are not held by KyberSwap. In addition, KyberSwap, KyberDAO, and their associated smart contracts have been audited by reputable audit teams in the blockchain industry, such as [Chainsecurity](https://chainsecurity.com/) and [Hacken](https://hacken.io/).
-
-You can refer to the [Audits](../../reference/audits.md) page for the respective reports.
 
 </details>
 
