@@ -4,7 +4,7 @@ description: Your KyberDAO Questions Answered
 
 # FAQ - Others
 
-## Ecosystem
+## General
 
 <details>
 

@@ -4,7 +4,7 @@ description: Your KyberSwap Aggregator Questions Answered
 
 # FAQ
 
-## Ecosystem
+## General
 
 <details>
 

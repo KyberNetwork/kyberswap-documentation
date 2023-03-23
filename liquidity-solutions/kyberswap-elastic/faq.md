@@ -4,7 +4,7 @@ description: Your KyberSwap Elastic Questions Answered
 
 # FAQ
 
-## Ecosystem
+## General
 
 <details>
 

@@ -4,7 +4,7 @@ description: Your KyberSwap Limit Order Questions Answered
 
 # FAQ
 
-## Ecosystem
+## General
 
 <details>
 

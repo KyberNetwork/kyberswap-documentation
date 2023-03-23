@@ -4,7 +4,7 @@ description: Your KyberSwap Classic Questions Answered
 
 # FAQ
 
-## Ecosystem
+## General
 
 <details>
 
