@@ -50,13 +50,25 @@ Select the pool you’d like to participate in by clicking on the appropriate �
 
 From here you have two options: either deposit double-sided liquidity or single-sided liquidity.
 
+{% hint style="danger" %}
+#### Adding liquidity to an out of range pool
+
+For the safety of our LPs, KyberSwap Classic will highlight pools which are out of range with the caution icon on the pool card.
+
+![](<../../../.gitbook/assets/image (18).png>)
+
+This is because any liquidity additions that significantly deviates from the market price would immediately result in [impermanent loss](../../../getting-started/foundational-topics/decentralized-finance/impermanent-loss.md) as arbitrageurs sweep up the significantly discounted token from the position.
+
+![](<../../../.gitbook/assets/image (23).png>)
+{% endhint %}
+
 ### **Step 3**: Configure token amounts for liquidity provision
 
 {% tabs %}
 {% tab title="Double-Sided Liquidity" %}
 To deposit double-sided liquidity, make sure “Token Pair” is selected on the toggle at the top of the screen, then specify the amounts you would like to deposit. You can either manually type in amounts or use the “Max” and “Half” buttons. Once you specify the deposit amount for one leg of the pair, the corresponding leg’s amount will be automatically calculated and populated for you.
 
-![003a\_TwoSidedDeposit.png](https://support.kyberswap.com/hc/article\_attachments/14431128365593)
+![Two sided deposit](https://support.kyberswap.com/hc/article\_attachments/14431128365593)
 {% endtab %}
 
 {% tab title="Single-Sided Liquidity (a.k.a. zaps)" %}
@@ -64,7 +76,7 @@ To deposit single-sided liquidity, make sure “Single Token” is selected on t
 
 Note: If you choose single-sided, in the final step, KyberSwap will automatically swap the appropriate amount of your deposited token so that your liquidity contribution is balanced between the two legs. You can see a preview of your final pool allocation on the screen.
 
-![003b\_SingleSidedDeposit.png](https://support.kyberswap.com/hc/article\_attachments/14431128368025)
+![Single sided deposit](https://support.kyberswap.com/hc/article\_attachments/14431128368025)
 
 Note: The proportion of liquidity deposited for each leg of the pair is automatically determined based on the current ratio of the pool.
 {% endtab %}

@@ -46,7 +46,7 @@ Note: If you choose to remove 100% of the liquidity in this position, that is ta
 
 {% tabs %}
 {% tab title="Token Pair" %}
-<figure><img src="../../../.gitbook/assets/image (13).png" alt=""><figcaption><p>Token pair removal</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (13) (1).png" alt=""><figcaption><p>Token pair removal</p></figcaption></figure>
 
 Specify the amount of liquidity to remove. You can do this either by using the pre-set percentage buttons or the percentage slider, or by manually typing in the amount for either leg of the pair.&#x20;
 {% endtab %}
@@ -64,7 +64,7 @@ You can also switch the output token by selecting the token under the "Output" s
 
 If you haven't done so, you will need to permit the pool contract to remove your position from the pool. Note that this signature request does not require any gas.
 
-<figure><img src="../../../.gitbook/assets/image (7).png" alt=""><figcaption><p>Metamask permit signature</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (7) (1).png" alt=""><figcaption><p>Metamask permit signature</p></figcaption></figure>
 
 Once you have authorized the contract, the previously disabled "Remove" button will now be available.
 

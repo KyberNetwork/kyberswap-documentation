@@ -88,7 +88,7 @@ Upon selecting the "Buy Crypto" button, a Transak order pop-up will be displayed
 
 Additionally, you are also provided the option to select your preferred payment method.
 
-<figure><img src="../../../.gitbook/assets/image (30).png" alt=""><figcaption><p>Select preferred currency</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (30) (1).png" alt=""><figcaption><p>Select preferred currency</p></figcaption></figure>
 
 ### Step 4: Select a cryptocurrency and chain
 
@@ -124,23 +124,23 @@ If this is your first time using Transak, there might be some processing time re
 
 You will be notified once the KYC process is completed.
 
-<figure><img src="../../../.gitbook/assets/image (17).png" alt=""><figcaption><p>KYC completed</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (17) (1).png" alt=""><figcaption><p>KYC completed</p></figcaption></figure>
 
 Upon receiving the verification success email, an "Order Now" button will then be made available to you.
 
-<figure><img src="../../../.gitbook/assets/image (28).png" alt=""><figcaption><p>Account details</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (28) (1).png" alt=""><figcaption><p>Account details</p></figcaption></figure>
 
 ### Step 8: Enter payment details
 
 Following successful KYC, you will then be prompted for your payment details. In this case, the payment method selected is via credit/debit card.
 
-<figure><img src="../../../.gitbook/assets/image (11).png" alt=""><figcaption><p>Payment details</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (11) (1).png" alt=""><figcaption><p>Payment details</p></figcaption></figure>
 
 ### Step 9: Confirm your order
 
 You will then be able to review and confirm your order.
 
-<figure><img src="../../../.gitbook/assets/image (19).png" alt=""><figcaption><p>Confirm the order</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (19) (1).png" alt=""><figcaption><p>Confirm the order</p></figcaption></figure>
 
 ### Step 10: Swap your crypto
 

@@ -50,6 +50,14 @@ Select the pool you’d like to participate in by clicking on the appropriate �
 
 ![Add liquidity pop-up](https://support.kyberswap.com/hc/article\_attachments/14197098964249)
 
+{% hint style="danger" %}
+#### Adding liquidity to an out of range pool
+
+For the safety of our LPs, KyberSwap Elastic will notify LPs when adding liquidity to a pool that is out of range. This is because any liquidity additions that significantly deviates from the market price would immediately result in [impermanent loss](../../../getting-started/foundational-topics/decentralized-finance/impermanent-loss.md) as arbitrageurs sweep up the significantly discounted token from the position.
+
+![](<../../../.gitbook/assets/image (4).png>)
+{% endhint %}
+
 ### **Step 3**: Select fee tier&#x20;
 
 For a list of fee tiers and their recommended applications, please refer to [Fee Tier Options](elastic-pool-creation.md#fee-tier-options).
@@ -65,6 +73,16 @@ You can set your price range either using the sliders or by typing in prices man
 ![Select price range](https://support.kyberswap.com/hc/article\_attachments/14197115971993)
 
 Note: You can also choose to click on the “Full Price Range” option, but that will set your range to be between 0 and infinity, and your liquidity will be very thinly spread out, greatly impairing its fee-earning potential.
+
+{% hint style="warning" %}
+#### Single-sided liquidity
+
+For the safety of our LPs, KyberSwap Elastic only allows single-sided liquidity to be added if the selected price range does not support the current market price. This is because the addition of double-sided liquidity outside the market price would immediately result in [impermanent loss](../../../getting-started/foundational-topics/decentralized-finance/impermanent-loss.md) as arbitrageurs sweep up the significantly discounted token from the position.
+
+Whenever a position outside the market price is created, the deposit amount for the corresponding token that is prone to immediate impermanent loss is disabled.
+
+![](<../../../.gitbook/assets/image (8).png>)
+{% endhint %}
 
 ### **Step 5**: Configure token amounts
 
