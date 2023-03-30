@@ -391,7 +391,7 @@ Primarily returns the pool's current price and ticks, and whether it is locked.
 
 | Field                | Type      | Explanation                                       |
 | -------------------- | --------- | ------------------------------------------------- |
-| `sqrtP`              | `uint160` | current sqrt price, multiplied by $$296296$$      |
+| `sqrtP`              | `uint160` | current sqrt price, multiplied by $$2^{96}$$      |
 | `currentTick`        | `int24`   | current tick that closely reflects `sqrtP`        |
 | `nearestCurrentTick` | `int24`   | nearest initialized tick that is <= `currentTick` |
 | `locked`             | `bool`    | true if pool is locked, false otherwise           |
