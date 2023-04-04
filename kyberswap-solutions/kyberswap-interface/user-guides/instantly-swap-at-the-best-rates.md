@@ -84,9 +84,9 @@ Click the “Swap” button to bring up the confirmation screen.&#x20;
 
 Do note that once the final route has been secured, the details related to your swap would be available for your review in the "Confirm Swap" pop-up.
 
-In times of extreme volatility, the market conditions might have changed significantly in-between clicking the "Swap" button and the "Confirm Swap" pop-up being displayed. KyberSwap will display the latest rates in the "Confirm Swap" pop-up to reduce the likelihood that the transaction will fail.&#x20;
+In times of volatility, the market conditions might have changed in-between clicking the "Swap" button and the "Confirm Swap" pop-up being displayed. KyberSwap will display the latest rates in the "Confirm Swap" pop-up for you to review.
 
-**To protect your trade, you will need to accept the new price before proceeding with the swap in cases whereby the swap route has changed.**
+**If there is a change in the price, to protect you, you will need to accept the new price before proceeding with the swap.**
 
 ![](../../../.gitbook/assets/1366\_Confirmation\_Popup\_Price\_Update-2.png)
 
