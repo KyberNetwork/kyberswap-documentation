@@ -86,7 +86,13 @@ Do note that once the final route has been secured, the details related to your 
 
 In times of extreme volatility, the market conditions might have changed significantly in-between clicking the "Swap" button and the "Confirm Swap" pop-up being displayed. KyberSwap will display the latest rates in the "Confirm Swap" pop-up to reduce the likelihood that the transaction will fail.&#x20;
 
-Please review the swap information in full prior to confirmation as the final secured route might differ from the swap screen (see [Step 3](instantly-swap-at-the-best-rates.md#step-3-configure-swap-amount)). To protect your trade, KyberSwap highly recommends that users take advantage of our "Max Slippage" feature (refer to [Customizing trade parameters](instantly-swap-at-the-best-rates.md#customizing-trade-parameters)).
+**To protect your trade, you will need to accept the new price before proceeding with the swap in cases whereby the swap route has changed.**
+
+![](../../../.gitbook/assets/1366\_Confirmation\_Popup\_Price\_Update-2.png)
+
+![](../../../.gitbook/assets/1366\_Confirmation\_Popup\_Update\_Price\_Confirmed-3.png)
+
+Please review the swap information in full prior to confirmation as the final secured route might differ from the swap screen (see [Step 3](instantly-swap-at-the-best-rates.md#step-3-configure-swap-amount)). As an additional safeguard, KyberSwap highly recommends that users take advantage of our "Max Slippage" feature (refer to [Customizing trade parameters](instantly-swap-at-the-best-rates.md#customizing-trade-parameters)).
 {% endhint %}
 
 The confirmation screen displays a few key pieces of information to review.
