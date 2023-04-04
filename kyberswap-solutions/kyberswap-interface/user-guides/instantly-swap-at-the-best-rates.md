@@ -82,7 +82,7 @@ Click the “Swap” button to bring up the confirmation screen.&#x20;
 {% hint style="warning" %}
 #### Route confirmation and market volatility
 
-Do note that upon the "Confirm Swap" pop-up being displayed, the final route has already been secured (i.e. "locked-in) and only gas fee estimations are being refreshed based on the market rate.
+Do note that once the final route has been secured, the details related to your swap would be available for your review in the "Confirm Swap" pop-up.
 
 In times of extreme volatility, the market conditions might have changed significantly in-between clicking the "Swap" button and the "Confirm Swap" pop-up being displayed. KyberSwap will display the latest rates in the "Confirm Swap" pop-up to reduce the likelihood that the transaction will fail.&#x20;
 
