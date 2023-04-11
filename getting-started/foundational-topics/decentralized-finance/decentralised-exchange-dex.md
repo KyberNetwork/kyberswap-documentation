@@ -2,7 +2,7 @@
 description: Non-Custodial Token Swaps
 ---
 
-# Decentralised Exchange (DEX)
+# Decentralized Exchange (DEX)
 
 ## Overview
 
@@ -12,7 +12,7 @@ Decentralised exchanges (DEXs) enables peer-to-peer trading of tokens without th
 
 DEXs come in two flavors which are differentiated based on their order matching mechanisms which are further detailed in their respective pages:
 
-<table data-card-size="large" data-view="cards"><thead><tr><th></th><th data-hidden></th><th data-hidden></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><strong></strong><a href="order-book.md"><strong>Order Book DEX</strong></a><strong></strong></td><td></td><td></td><td><a href="order-book.md">order-book.md</a></td></tr><tr><td><strong></strong><a href="automated-market-maker.md"><strong>Automated Market Maker (AMM) DEX</strong></a><strong></strong></td><td></td><td></td><td><a href="automated-market-maker.md">automated-market-maker.md</a></td></tr></tbody></table>
+<table data-card-size="large" data-view="cards"><thead><tr><th></th><th data-hidden></th><th data-hidden></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><a href="order-book.md"><strong>Order Book DEX</strong></a></td><td></td><td></td><td><a href="order-book.md">order-book.md</a></td></tr><tr><td><a href="automated-market-maker.md"><strong>Automated Market Maker (AMM) DEX</strong></a></td><td></td><td></td><td><a href="automated-market-maker.md">automated-market-maker.md</a></td></tr></tbody></table>
 
 For the purpose of this comparison, the table below summarizes the pros and cons of each according to three main convenience factors:
 
@@ -70,7 +70,7 @@ KyberSwap understands that market conditions can change rapidly and we want to p
 {% endtab %}
 
 {% tab title="Developers" %}
-* [Integrating The KyberSwap Widget](../../../kyberswap-solutions/kyberswap-widget/developer-guides/draft-integrating-the-kyberswap-widget.md)
+* [Integrating The KyberSwap Widget](broken-reference)
 * [Execute A Swap With The Aggregator API](../../../kyberswap-solutions/kyberswap-aggregator/developer-guides/execute-a-swap-with-the-aggregator-api.md)
 * [Place A Limit Order](../../../kyberswap-solutions/limit-order/developer-guides/place-a-limit-order.md)
 * [Fill A Limit Order](../../../kyberswap-solutions/limit-order/developer-guides/fill-a-limit-order.md)

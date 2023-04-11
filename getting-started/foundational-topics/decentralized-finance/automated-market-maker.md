@@ -100,7 +100,7 @@ KyberSwap implements two AMM variants, [KyberSwap Classic](../../../liquidity-so
 {% endtab %}
 
 {% tab title="Developers" %}
-* [Integrating The KyberSwap Widget](../../../kyberswap-solutions/kyberswap-widget/developer-guides/draft-integrating-the-kyberswap-widget.md)
+* [Integrating The KyberSwap Widget](broken-reference)
 * [Execute A Swap With The Aggregator API](../../../kyberswap-solutions/kyberswap-aggregator/developer-guides/execute-a-swap-with-the-aggregator-api.md)
 {% endtab %}
 {% endtabs %}

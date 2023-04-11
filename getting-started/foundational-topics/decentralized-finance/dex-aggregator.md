@@ -54,7 +54,7 @@ For developers, KyberSwap Aggregator exposes a set of [swap APIs ](../../../kybe
 {% endtab %}
 
 {% tab title="Developers" %}
-* [Integrating The KyberSwap Widget](../../../kyberswap-solutions/kyberswap-widget/developer-guides/draft-integrating-the-kyberswap-widget.md)
+* [Integrating The KyberSwap Widget](broken-reference)
 * [Execute A Swap With The Aggregator API](../../../kyberswap-solutions/kyberswap-aggregator/developer-guides/execute-a-swap-with-the-aggregator-api.md)
 * [Aggregator API Specification](../../../kyberswap-solutions/kyberswap-aggregator/aggregator-api-specification/)
 * [Aggregator Contracts](../../../kyberswap-solutions/kyberswap-aggregator/contracts/)
