@@ -38,15 +38,15 @@ $$t_{unlock} = \frac{(t_{lock} + t_{target}) * (BPS - claimBps_{new}) * fee_{col
 
 **Input**[**​**](https://docs.kyberswap.com/explanation/peripheral-library-contracts#input)
 
-| Field                 | Type                                                              | Formula Variable  | Explanation                                                                       |
-| --------------------- | ----------------------------------------------------------------- | ----------------- | --------------------------------------------------------------------------------- |
-| `self`                | ``[`Data`](elastic-peripheral-library-contracts.md#struct-data)`` | N.A.              | stored data values for an existing position                                       |
-| `currentLiquidity`    | `uint128`                                                         | $$L$$             | current position liquidity                                                        |
-| `liquidityDelta`      | `uint128`                                                         | $$\Delta{L}$$     | quantity change to be applied                                                     |
-| `currentTime`         | `uint32`                                                          | $$t_{now}$$       | current block timestamp                                                           |
-| `isAddLiquidity`      | `bool`                                                            | N.A.              | true = add liquidity, false = remove liquidity                                    |
-| `feesSinceLastAction` | `uint256`                                                         | $$fee_{collect}$$ | fees accrued since last action                                                    |
-| `vestingPeriod`       | `uint256`                                                         | $$t_{target}$$    | maximum time duration for which LP fees are proportionally burnt upon LP removals |
+| Field                 | Type                                                          | Formula Variable  | Explanation                                                                       |
+| --------------------- | ------------------------------------------------------------- | ----------------- | --------------------------------------------------------------------------------- |
+| `self`                | [`Data`](elastic-peripheral-library-contracts.md#struct-data) | N.A.              | stored data values for an existing position                                       |
+| `currentLiquidity`    | `uint128`                                                     | $$L$$             | current position liquidity                                                        |
+| `liquidityDelta`      | `uint128`                                                     | $$\Delta{L}$$     | quantity change to be applied                                                     |
+| `currentTime`         | `uint32`                                                      | $$t_{now}$$       | current block timestamp                                                           |
+| `isAddLiquidity`      | `bool`                                                        | N.A.              | true = add liquidity, false = remove liquidity                                    |
+| `feesSinceLastAction` | `uint256`                                                     | $$fee_{collect}$$ | fees accrued since last action                                                    |
+| `vestingPeriod`       | `uint256`                                                     | $$t_{target}$$    | maximum time duration for which LP fees are proportionally burnt upon LP removals |
 
 **Output**[**​**](https://docs.kyberswap.com/explanation/peripheral-library-contracts#output)
 

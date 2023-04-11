@@ -21,7 +21,7 @@ Still deciding on which solution suits you best?&#x20;
 
 1. [Connect Your Wallet](../../../kyberswap-solutions/kyberswap-interface/user-guides/connect-your-wallet.md)
 2. [Switching Networks](../../../kyberswap-solutions/kyberswap-interface/user-guides/selecting-preferred-network.md)
-3. [Classic Pool Creation ](classic-pool-creation.md)****
+3. [Classic Pool Creation ](classic-pool-creation.md)
 4. [Add Liquidity To An Existing Classic Pool ](add-liquidity-to-an-existing-classic-pool.md)
 5. [Yield Farming On Classic ](yield-farming-on-classic.md)
 6. **Removing Liquidity On Classic <-**
@@ -64,7 +64,7 @@ You can also switch the output token by selecting the token under the "Output" s
 
 If you haven't done so, you will need to permit the pool contract to remove your position from the pool. Note that this signature request does not require any gas.
 
-<figure><img src="../../../.gitbook/assets/image (7) (1).png" alt=""><figcaption><p>Metamask permit signature</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (7).png" alt=""><figcaption><p>Metamask permit signature</p></figcaption></figure>
 
 Once you have authorized the contract, the previously disabled "Remove" button will now be available.
 

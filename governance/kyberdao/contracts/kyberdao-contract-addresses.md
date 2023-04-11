@@ -10,18 +10,18 @@ description: Governance Contracts
 
 <summary>Ethereum (ChainID: 1)</summary>
 
-* AdminUpgradeabilityProxy (KNC Token): [`0xdeFA4e8a7bcBA345F687a2f1456F5Edd9CE97202`](https://etherscan.io/address/0xdeFA4e8a7bcBA345F687a2f1456F5Edd9CE97202)``
-* KyberNetworkTokenV2 (KNC Implementation): [`0xe5E8E834086F1a964f9A089eB6Ae11796862e4CE`](https://etherscan.io/address/0xe5E8E834086F1a964f9A089eB6Ae11796862e4CE)``
-* KyberStaking: [`0xeadb96F1623176144EBa2B24e35325220972b3bD`](https://etherscan.io/address/0xeadb96F1623176144EBa2B24e35325220972b3bD)``
-* KyberGovernance: [`0x7Ec8FcC26bE7e9E85B57E73083E5Fe0550d8A7fE`](https://etherscan.io/address/0x7Ec8FcC26bE7e9E85B57E73083E5Fe0550d8A7fE)``
-* DefaultExecutor (Short Executor): [`0x41f5D722e6471c338392884088bD03340f50b3b5`](https://etherscan.io/address/0x41f5D722e6471c338392884088bD03340f50b3b5)``
-* DefaultExecutor (Long Executor): [`0x6758A66cD25fef7767A44895041678Fc4Ae9AfD0`](https://etherscan.io/address/0x6758A66cD25fef7767A44895041678Fc4Ae9AfD0)``
-* EpochVotingPowerStrategy: [`0xfbd73581af42b26295CF4B88B74A5AF71F209F8b`](https://etherscan.io/address/0xfbd73581af42b26295CF4B88B74A5AF71F209F8b)``
-* TreasuryPool: [`0x0E590bB5F02A0c38888bFFb45DeE050b8fB60Bda`](https://etherscan.io/address/0x0E590bB5F02A0c38888bFFb45DeE050b8fB60Bda)``
-* RewardsDistributor: [`0x5EC0DcF4f6F55f28550c70B854082993fdc0D3B2`](https://etherscan.io/address/0x5EC0DcF4f6F55f28550c70B854082993fdc0D3B2)``
-* RewardPool: [`0xD2D0a0557E5B78E29542d440eC968F9253Daa2e2`](https://etherscan.io/address/0xD2D0a0557E5B78E29542d440eC968F9253Daa2e2)``
-* KatanaFeeHandler: [`0x9Fb131eFbac23b735d7764AB12F9e52cC68401CA`](https://etherscan.io/address/0x9Fb131eFbac23b735d7764AB12F9e52cC68401CA)``
-* MultiSigWalletWithDailyLimit (DAO Multisig - Treasury): [`0x91c9D4373B077eF8082F468C7c97f2c499e36F5b`](https://etherscan.io/address/0x91c9D4373B077eF8082F468C7c97f2c499e36F5b)``
+* AdminUpgradeabilityProxy (KNC Token): [`0xdeFA4e8a7bcBA345F687a2f1456F5Edd9CE97202`](https://etherscan.io/address/0xdeFA4e8a7bcBA345F687a2f1456F5Edd9CE97202)
+* KyberNetworkTokenV2 (KNC Implementation): [`0xe5E8E834086F1a964f9A089eB6Ae11796862e4CE`](https://etherscan.io/address/0xe5E8E834086F1a964f9A089eB6Ae11796862e4CE)
+* KyberStaking: [`0xeadb96F1623176144EBa2B24e35325220972b3bD`](https://etherscan.io/address/0xeadb96F1623176144EBa2B24e35325220972b3bD)
+* KyberGovernance: [`0x7Ec8FcC26bE7e9E85B57E73083E5Fe0550d8A7fE`](https://etherscan.io/address/0x7Ec8FcC26bE7e9E85B57E73083E5Fe0550d8A7fE)
+* DefaultExecutor (Short Executor): [`0x41f5D722e6471c338392884088bD03340f50b3b5`](https://etherscan.io/address/0x41f5D722e6471c338392884088bD03340f50b3b5)
+* DefaultExecutor (Long Executor): [`0x6758A66cD25fef7767A44895041678Fc4Ae9AfD0`](https://etherscan.io/address/0x6758A66cD25fef7767A44895041678Fc4Ae9AfD0)
+* EpochVotingPowerStrategy: [`0xfbd73581af42b26295CF4B88B74A5AF71F209F8b`](https://etherscan.io/address/0xfbd73581af42b26295CF4B88B74A5AF71F209F8b)
+* TreasuryPool: [`0x0E590bB5F02A0c38888bFFb45DeE050b8fB60Bda`](https://etherscan.io/address/0x0E590bB5F02A0c38888bFFb45DeE050b8fB60Bda)
+* RewardsDistributor: [`0x5EC0DcF4f6F55f28550c70B854082993fdc0D3B2`](https://etherscan.io/address/0x5EC0DcF4f6F55f28550c70B854082993fdc0D3B2)
+* RewardPool: [`0xD2D0a0557E5B78E29542d440eC968F9253Daa2e2`](https://etherscan.io/address/0xD2D0a0557E5B78E29542d440eC968F9253Daa2e2)
+* KatanaFeeHandler: [`0x9Fb131eFbac23b735d7764AB12F9e52cC68401CA`](https://etherscan.io/address/0x9Fb131eFbac23b735d7764AB12F9e52cC68401CA)
+* MultiSigWalletWithDailyLimit (DAO Multisig - Treasury): [`0x91c9D4373B077eF8082F468C7c97f2c499e36F5b`](https://etherscan.io/address/0x91c9D4373B077eF8082F468C7c97f2c499e36F5b)
 
 </details>
 
@@ -29,7 +29,7 @@ description: Governance Contracts
 
 <summary>BSC (ChainID: 56)</summary>
 
-* MultiSigWalletWithDailyLimit (DAO Multisig - Treasury): [`0x91c9D4373B077eF8082F468C7c97f2c499e36F5b`](https://bscscan.com/address/0x91c9D4373B077eF8082F468C7c97f2c499e36F5b)``
+* MultiSigWalletWithDailyLimit (DAO Multisig - Treasury): [`0x91c9D4373B077eF8082F468C7c97f2c499e36F5b`](https://bscscan.com/address/0x91c9D4373B077eF8082F468C7c97f2c499e36F5b)
 
 </details>
 
@@ -37,7 +37,7 @@ description: Governance Contracts
 
 <summary>Arbitrum (ChainID: 42161)</summary>
 
-* MultiSigWalletWithDailyLimit (DAO Multisig - Treasury): [`0x91c9D4373B077eF8082F468C7c97f2c499e36F5b`](https://arbiscan.io/address/0x5649B4DD00780e99Bab7Abb4A3d581Ea1aEB23D0)``
+* MultiSigWalletWithDailyLimit (DAO Multisig - Treasury): [`0x91c9D4373B077eF8082F468C7c97f2c499e36F5b`](https://arbiscan.io/address/0x5649B4DD00780e99Bab7Abb4A3d581Ea1aEB23D0)
 
 </details>
 
@@ -45,7 +45,7 @@ description: Governance Contracts
 
 <summary>Polygon (ChainID: 137)</summary>
 
-* MultiSigWalletWithDailyLimit (DAO Multisig - Treasury): [`0x91c9D4373B077eF8082F468C7c97f2c499e36F5b`](https://polygonscan.com/address/0x91c9D4373B077eF8082F468C7c97f2c499e36F5b)``
+* MultiSigWalletWithDailyLimit (DAO Multisig - Treasury): [`0x91c9D4373B077eF8082F468C7c97f2c499e36F5b`](https://polygonscan.com/address/0x91c9D4373B077eF8082F468C7c97f2c499e36F5b)
 
 </details>
 
@@ -53,7 +53,7 @@ description: Governance Contracts
 
 <summary>Optimism (ChainID: 10)</summary>
 
-* MultiSigWalletWithDailyLimit (DAO Multisig - Treasury): [`0x91c9D4373B077eF8082F468C7c97f2c499e36F5b`](https://optimistic.etherscan.io/address/0x91c9D4373B077eF8082F468C7c97f2c499e36F5b)``
+* MultiSigWalletWithDailyLimit (DAO Multisig - Treasury): [`0x91c9D4373B077eF8082F468C7c97f2c499e36F5b`](https://optimistic.etherscan.io/address/0x91c9D4373B077eF8082F468C7c97f2c499e36F5b)
 
 </details>
 
@@ -61,7 +61,7 @@ description: Governance Contracts
 
 <summary>Fantom (ChainID: 250)</summary>
 
-* MultiSigWalletWithDailyLimit (DAO Multisig - Treasury): [`0x91c9D4373B077eF8082F468C7c97f2c499e36F5b`](https://ftmscan.com/address/0x91c9D4373B077eF8082F468C7c97f2c499e36F5b)``
+* MultiSigWalletWithDailyLimit (DAO Multisig - Treasury): [`0x91c9D4373B077eF8082F468C7c97f2c499e36F5b`](https://ftmscan.com/address/0x91c9D4373B077eF8082F468C7c97f2c499e36F5b)
 
 </details>
 
@@ -69,7 +69,7 @@ description: Governance Contracts
 
 <summary>Avalanche (ChainID: 43114)</summary>
 
-* MultiSigWalletWithDailyLimit (DAO Multisig - Treasury): [`0x91c9D4373B077eF8082F468C7c97f2c499e36F5b`](https://snowtrace.io/address/0x91c9D4373B077eF8082F468C7c97f2c499e36F5b)``
+* MultiSigWalletWithDailyLimit (DAO Multisig - Treasury): [`0x91c9D4373B077eF8082F468C7c97f2c499e36F5b`](https://snowtrace.io/address/0x91c9D4373B077eF8082F468C7c97f2c499e36F5b)
 
 </details>
 
@@ -77,7 +77,7 @@ description: Governance Contracts
 
 <summary>Cronos (ChainID: 25)</summary>
 
-* MultiSigWalletWithDailyLimit (DAO Multisig - Treasury): [`0x91c9D4373B077eF8082F468C7c97f2c499e36F5b`](https://cronoscan.com/address/0x91c9D4373B077eF8082F468C7c97f2c499e36F5b)``
+* MultiSigWalletWithDailyLimit (DAO Multisig - Treasury): [`0x91c9D4373B077eF8082F468C7c97f2c499e36F5b`](https://cronoscan.com/address/0x91c9D4373B077eF8082F468C7c97f2c499e36F5b)
 
 </details>
 
@@ -85,7 +85,7 @@ description: Governance Contracts
 
 <summary>BitTorrent Chain (ChainID: 199)</summary>
 
-* MultiSigWalletWithDailyLimit (DAO Multisig - Treasury): [`0x91c9D4373B077eF8082F468C7c97f2c499e36F5b`](https://bttcscan.com/address/0x91c9D4373B077eF8082F468C7c97f2c499e36F5b)``
+* MultiSigWalletWithDailyLimit (DAO Multisig - Treasury): [`0x91c9D4373B077eF8082F468C7c97f2c499e36F5b`](https://bttcscan.com/address/0x91c9D4373B077eF8082F468C7c97f2c499e36F5b)
 
 </details>
 

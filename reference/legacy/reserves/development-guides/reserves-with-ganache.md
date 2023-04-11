@@ -5,10 +5,10 @@ You are referring to the **`Legacy`** version of KyberSwap docs.
 
 For the most updated information, please refer to:
 
-* **``**[**`Classic`**](../../../../liquidity-solutions/kyberswap-classic/)**``**
-* **``**[**`Elastic`**](../../../../liquidity-solutions/kyberswap-elastic/)**``**
-* **``**[**`Limit Order`**](../../../../kyberswap-solutions/limit-order/)**``**
-* **``**[**`Aggregator`**](../../../../kyberswap-solutions/kyberswap-aggregator/)**``**
+* [**`Classic`**](../../../../liquidity-solutions/kyberswap-classic/)
+* [**`Elastic`**](../../../../liquidity-solutions/kyberswap-elastic/)
+* [**`Limit Order`**](../../../../kyberswap-solutions/limit-order/)
+* [**`Aggregator`**](../../../../kyberswap-solutions/kyberswap-aggregator/)
 {% endhint %}
 
 [Ganache](https://truffleframework.com/ganache) enables you to create a private Ethereum blockchain on your local machine for running tests, executing commands, and inspecting its state while controlling how the chain operates. You can also refer to the [Workshop repository](https://github.com/KyberNetwork/workshop) for the same instructions.

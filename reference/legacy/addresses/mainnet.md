@@ -5,10 +5,10 @@ You are referring to the **`Legacy`** version of KyberSwap docs.
 
 For the most updated information, please refer to:
 
-* **``**[**`Classic`**](../../../liquidity-solutions/kyberswap-classic/)**``**
-* **``**[**`Elastic`**](../../../liquidity-solutions/kyberswap-elastic/)**``**
-* **``**[**`Limit Order`**](../../../kyberswap-solutions/limit-order/)**``**
-* **``**[**`Aggregator`**](../../../kyberswap-solutions/kyberswap-aggregator/)**``**
+* [**`Classic`**](../../../liquidity-solutions/kyberswap-classic/)
+* [**`Elastic`**](../../../liquidity-solutions/kyberswap-elastic/)
+* [**`Limit Order`**](../../../kyberswap-solutions/limit-order/)
+* [**`Aggregator`**](../../../kyberswap-solutions/kyberswap-aggregator/)
 {% endhint %}
 
 Please note that `KyberReserve`, `ConversionRates`, `SanityRates`, `OrderbookReserve` and `LiquidityConversionRates` contracts below are example reserve addresses. Your reserve will have different addresses for these contracts.

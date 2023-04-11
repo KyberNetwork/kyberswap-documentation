@@ -23,7 +23,7 @@ Still deciding on which solution suits you best?&#x20;
 
 1. [Connect Your Wallet](../../../kyberswap-solutions/kyberswap-interface/user-guides/connect-your-wallet.md)
 2. [Switching Networks](../../../kyberswap-solutions/kyberswap-interface/user-guides/selecting-preferred-network.md)
-3. [Classic Pool Creation ](classic-pool-creation.md)****
+3. [Classic Pool Creation ](classic-pool-creation.md)
 4. **Add Liquidity To An Existing Classic Pool** **<-**
 5. [Yield Farming On Classic](yield-farming-on-classic.md)
 6. [Removing Liquidity On Classic](removing-liquidity-on-classic.md)
@@ -55,11 +55,11 @@ From here you have two options: either deposit double-sided liquidity or single-
 
 For the safety of our LPs, KyberSwap Classic will highlight pools which are out of range with the caution icon on the pool card.
 
-![](<../../../.gitbook/assets/image (18).png>)
+![](<../../../.gitbook/assets/image (18) (1).png>)
 
 This is because any liquidity additions that significantly deviates from the market price would immediately result in [impermanent loss](../../../getting-started/foundational-topics/decentralized-finance/impermanent-loss.md) as arbitrageurs sweep up the significantly discounted token from the position.
 
-![](<../../../.gitbook/assets/image (23).png>)
+![](<../../../.gitbook/assets/image (23) (1).png>)
 {% endhint %}
 
 ### **Step 3**: Configure token amounts for liquidity provision

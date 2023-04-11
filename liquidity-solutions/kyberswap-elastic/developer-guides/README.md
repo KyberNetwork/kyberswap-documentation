@@ -14,18 +14,18 @@ Given the composability of DeFi protocols, we recommend using Hardhat's [mainnet
 
 KyberSwap Elastic consists of multiple smart contracts, each having been deliberately confined to a specific function. If you would like to view the full list of contracts as well as their respective functions and variables, the contracts have been split according to the below:
 
-* ****[**Core Contracts:**](../contracts/elastic-core-contracts.md) Handles all pool functionalities, including the creation of the pool
-* ****[**Core Libraries:**](../contracts/elastic-core-libraries.md) Contains deployment contracts as well as multiple math contracts for safe handling of numbers.
-* ****[**Periphery Core Contracts:**](../contracts/elastic-periphery-core-contracts.md) Contracts which handle swap routing as well as management of liquidity positions.
-* ****[**Peripheral Library Contracts:**](../contracts/elastic-peripheral-library-contracts.md) Contains the anti-sniping contract as well as various contracts to aid data queries.
-* ****[**Peripheral Base Contracts:**](../contracts/elastic-peripheral-base-contracts.md) Helper contracts that process, validate, and store peripheral liquidity flows.
+* [**Core Contracts:**](../contracts/elastic-core-contracts.md) Handles all pool functionalities, including the creation of the pool
+* [**Core Libraries:**](../contracts/elastic-core-libraries.md) Contains deployment contracts as well as multiple math contracts for safe handling of numbers.
+* [**Periphery Core Contracts:**](../contracts/elastic-periphery-core-contracts.md) Contracts which handle swap routing as well as management of liquidity positions.
+* [**Peripheral Library Contracts:**](../contracts/elastic-peripheral-library-contracts.md) Contains the anti-sniping contract as well as various contracts to aid data queries.
+* [**Peripheral Base Contracts:**](../contracts/elastic-peripheral-base-contracts.md) Helper contracts that process, validate, and store peripheral liquidity flows.
 
 The contracts that are of particular interest are listed below:
 
-* ****[**Factory:**](../contracts/elastic-core-contracts.md#factory) Handles deployment of Kyberswap Elastic pools and where administrative configurations are held, such as the whitelisting of NFT position managers, and government fee settings.
-* ****[**Router:**](../contracts/elastic-periphery-core-contracts.md#router) Handles the routing of swaps across an Elastic pool.
+* [**Factory:**](../contracts/elastic-core-contracts.md#factory) Handles deployment of Kyberswap Elastic pools and where administrative configurations are held, such as the whitelisting of NFT position managers, and government fee settings.
+* [**Router:**](../contracts/elastic-periphery-core-contracts.md#router) Handles the routing of swaps across an Elastic pool.
 * QouterV2: Allows getting the expected amount out or amount in for a given swap without executing the swap.
-* ****[**AntiSnipAttackPositionManager:**](../contracts/elastic-periphery-core-contracts.md#antisnipattackpositionmanager) Adds the anti-sniping attack feature to the liquidity additions or removals.
+* [**AntiSnipAttackPositionManager:**](../contracts/elastic-periphery-core-contracts.md#antisnipattackpositionmanager) Adds the anti-sniping attack feature to the liquidity additions or removals.
 * TicksFeeReader: Handles the management of ticks as well as the corresponding positions and fees.
 * TokenPositionDescriptor: Enables querying of position information.
 * TokenPositionDescriptionProxy: An ERC1967 contract that implements an upgradeable proxy for the TokenPositionDescriptor contract.

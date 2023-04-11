@@ -13,7 +13,7 @@ A [**Limit Order** ](../../limit-order/)is a way for KyberSwap traders to swap t
 <summary>Trader Flow</summary>
 
 1. [Connect Your Wallet ](connect-your-wallet.md)
-2. [Switching Networks ](selecting-preferred-network.md)****
+2. [Switching Networks ](selecting-preferred-network.md)
 3. Get Tokens
    * [Get Crypto With Fiat](get-crypto-with-fiat.md)
    * [Bridge Your Assets Across Multiple Chains](bridge-your-assets-across-multiple-chains.md)

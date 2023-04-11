@@ -8,7 +8,7 @@ description: Additional Rewards Across Multiple Chains
 
 <summary>Ethereum (ChainID: 1)</summary>
 
-* **KyberSwapElasticLM:** [`0xb85ebE2e4eA27526f817FF33fb55fB240057C03F`](https://etherscan.io/address/0xb85ebE2e4eA27526f817FF33fb55fB240057C03F)``
+* **KyberSwapElasticLM:** [`0xb85ebE2e4eA27526f817FF33fb55fB240057C03F`](https://etherscan.io/address/0xb85ebE2e4eA27526f817FF33fb55fB240057C03F)
 
 </details>
 
@@ -16,7 +16,7 @@ description: Additional Rewards Across Multiple Chains
 
 <summary>Arbitrum (ChainID: 42161)</summary>
 
-* **KyberSwapElasticLM:** [`0xBdEc4a045446F583dc564C0A227FFd475b329bf0`](https://arbiscan.io/address/0xBdEc4a045446F583dc564C0A227FFd475b329bf0)``
+* **KyberSwapElasticLM:** [`0xBdEc4a045446F583dc564C0A227FFd475b329bf0`](https://arbiscan.io/address/0xBdEc4a045446F583dc564C0A227FFd475b329bf0)
 
 </details>
 

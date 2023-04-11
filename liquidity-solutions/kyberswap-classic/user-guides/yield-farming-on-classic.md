@@ -27,7 +27,7 @@ Still deciding on which solution suits you best?&#x20;
 
 1. [Connect Your Wallet](../../../kyberswap-solutions/kyberswap-interface/user-guides/connect-your-wallet.md)
 2. [Switching Networks](../../../kyberswap-solutions/kyberswap-interface/user-guides/selecting-preferred-network.md)
-3. [Classic Pool Creation ](classic-pool-creation.md)****
+3. [Classic Pool Creation ](classic-pool-creation.md)
 4. [Add Liquidity To An Existing Classic Pool ](add-liquidity-to-an-existing-classic-pool.md)
 5. **Yield Farming On Classic** **<-**
 6. [Removing Liquidity On Classic](removing-liquidity-on-classic.md)

@@ -38,7 +38,7 @@ Ensure you are on the correct network, and then click the “Create Pool” butt
 
 This will bring up the Create a new pool screen, but it will be fairly empty until the parameters of the pool are properly specified.
 
-<figure><img src="../../../.gitbook/assets/image (22) (1).png" alt=""><figcaption><p>Pool creation screen</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (22).png" alt=""><figcaption><p>Pool creation screen</p></figcaption></figure>
 
 ### **Step 2**: Select tokens to add
 
@@ -52,14 +52,14 @@ Specify the token amounts to contribute as liquidity to the new pool. Upon enter
 
 Do note that KyberSwap Classic enables users to configure their pool according to their preferred price ranges hence LPs are able to define the starting price of their pool.
 
-<figure><img src="../../../.gitbook/assets/image (26).png" alt=""><figcaption><p>Token amounts and price ratio</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (26) (1).png" alt=""><figcaption><p>Token amounts and price ratio</p></figcaption></figure>
 
 {% hint style="danger" %}
 #### Price deviations
 
 As a safety precaution, KyberSwap Classic will prompt the LP if the specified pool price deviates significantly from the market price.This is because any liquidity additions that significantly deviates from the market price would immediately result in [impermanent loss](../../../getting-started/foundational-topics/decentralized-finance/impermanent-loss.md) as arbitrageurs sweep up the significantly discounted token from the position.
 
-![](<../../../.gitbook/assets/image (22).png>)
+![](<../../../.gitbook/assets/image (22) (1).png>)
 {% endhint %}
 
 ### Step 4: Select AMP value
@@ -83,17 +83,17 @@ KyberSwap currently offers the following tiers to cater for different token pair
 <summary><strong>Fee tier options</strong></summary>
 
 1. **0.008% fee tier: Best for very stable pairs**\
-   ****The 0.008% fee tier is ideal for token pairs that typically trade at a fixed or extremely high correlated rate, such as pairs of stablecoins (e.g. DAI-USDC). Liquidity providers take on minimal price risk in these pools, and traders expect to pay minimal fees.
+   The 0.008% fee tier is ideal for token pairs that typically trade at a fixed or extremely high correlated rate, such as pairs of stablecoins (e.g. DAI-USDC). Liquidity providers take on minimal price risk in these pools, and traders expect to pay minimal fees.
 2. **0.01% fee tier: Best for very stable pairs**\
-   ****The 0.01% fee tier is ideal for token pairs that typically trade at a fixed or extremely high correlated rate, such as pairs of stablecoins (e.g. DAI-USDC). Liquidity providers take on minimal price risk in these pools, and traders expect to pay minimal fees.
+   The 0.01% fee tier is ideal for token pairs that typically trade at a fixed or extremely high correlated rate, such as pairs of stablecoins (e.g. DAI-USDC). Liquidity providers take on minimal price risk in these pools, and traders expect to pay minimal fees.
 3. **0.05% fee tier: Best for stable pairs**\
-   ****The 0.04% fee tier is ideal for token pairs that typically trade at a fixed or highly correlated rate, such as pairs of stablecoins (e.g. DAI-USDC). Liquidity providers take on minimal price risk in these pools, and traders expect to pay minimal fees.
+   The 0.04% fee tier is ideal for token pairs that typically trade at a fixed or highly correlated rate, such as pairs of stablecoins (e.g. DAI-USDC). Liquidity providers take on minimal price risk in these pools, and traders expect to pay minimal fees.
 4. **0.3% fee tier: Best for most pairs**\
-   ****The 0.30% fee tier is best suited for less correlated token pairs such as the ETH-DAI token pair, which are subject to significant price movements to either upside or downside. This higher fee is more likely to compensate liquidity providers for the greater price risk that they take on relative to stablecoin LPs.
+   The 0.30% fee tier is best suited for less correlated token pairs such as the ETH-DAI token pair, which are subject to significant price movements to either upside or downside. This higher fee is more likely to compensate liquidity providers for the greater price risk that they take on relative to stablecoin LPs.
 5. **0.5% fee tier: Best for weakly correlated pairs**\
-   ****The 0.5% fee tier is best suited for weakly correlated token pairs such as the ETH-LINK token pair, which are subject to price movements to either upside or downside. This higher fee is more likely to compensate liquidity providers for the greater price risk that they take on relative to stablecoin liquidity providers.
+   The 0.5% fee tier is best suited for weakly correlated token pairs such as the ETH-LINK token pair, which are subject to price movements to either upside or downside. This higher fee is more likely to compensate liquidity providers for the greater price risk that they take on relative to stablecoin liquidity providers.
 6. **1% fee tier: Best for exotic pairs**\
-   ****The 1% fee tier is best suited for even less correlated token pairs such as the ETH-KNC token pair, which are subject to significant price movements to either upside or downside. This higher fee is more likely to compensate liquidity providers for the greater price risk that they take on relative to stablecoin liquidity providers.
+   The 1% fee tier is best suited for even less correlated token pairs such as the ETH-KNC token pair, which are subject to significant price movements to either upside or downside. This higher fee is more likely to compensate liquidity providers for the greater price risk that they take on relative to stablecoin liquidity providers.
 
 </details>
 
@@ -113,7 +113,7 @@ You will need to confirm this transaction in your wallet
 
 <figure><img src="../../../.gitbook/assets/image (35).png" alt=""><figcaption><p>KyberSwap pending confirmation from wallet</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (6) (1).png" alt=""><figcaption><p>Metamask confirmation</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (6).png" alt=""><figcaption><p>Metamask confirmation</p></figcaption></figure>
 
 Once you’ve confirmed the transaction you will see a screen informing you that the transaction has been submitted. You can click on “View Transaction” to view your transaction on the appropriate blockchain explorer.
 

@@ -12,8 +12,8 @@ The KyberSwap team is constantly innovating to bring you the best liquidity solu
 
 _Please note that the naming of certain concepts have been altered in the docs for ease of understanding:_&#x20;
 
-* _Dynamic Pricing Curve Setups =_ [_Programmable Pricing Curves_](../liquidity-solutions/kyberswap-classic/concepts/dynamic-pricing-curves.md)__
-* _Flexible Fee Adjustment =_ [_Dynamic Auto-Adjusting Fees_](../liquidity-solutions/kyberswap-classic/concepts/flexible-fee-adjustment.md)__
+* _Dynamic Pricing Curve Setups =_ [_Programmable Pricing Curves_](../liquidity-solutions/kyberswap-classic/concepts/dynamic-pricing-curves.md)
+* _Flexible Fee Adjustment =_ [_Dynamic Auto-Adjusting Fees_](../liquidity-solutions/kyberswap-classic/concepts/flexible-fee-adjustment.md)
 {% endtab %}
 
 {% tab title="KyberSwap Elastic" %}

@@ -36,7 +36,7 @@ A user holding some `ETH` and `USDT` is planning to earn yield for her asset by 
 * The current price of the pool is 1200
 * Based on the current price, the [tick ranges](https://docs.kyberswap.com/overview/elastic-walkthrough) of the pool increases in roughly 1% (\~12USD) steps:
 
-![Ticks](https://docs.kyberswap.com/assets/images/APR%20Calculation-Ticks-f34bf81e9f7f75888b17028141d929e9.png)
+<figure><img src="../../../.gitbook/assets/APR Calculation-Ticks.drawio.png" alt=""><figcaption><p>Ticks</p></figcaption></figure>
 
 #### Single interval calculation[​](https://docs.kyberswap.com/overview/elastic-pool-apr-calculation#single-interval-calculation) <a href="#single-interval-calculation" id="single-interval-calculation"></a>
 
@@ -46,7 +46,7 @@ To calculate the return for the earliest time interval (10:00 AM, 3rd Jan ←→
 * Pool price at the end of the interval (12 PM, 3rd Jan ←→ 12:30 PM, 3rd Jan). This is used to calculate in-range positions for this interval = 1190
 * Based on above price, the 30m tick range to consider = 1188-1200 (.....1176 - **1188 - 1200** - 1212.....)
 
-![Position TVL](https://docs.kyberswap.com/assets/images/APR%20Calculation-TVL-f5b6296d43968005988b15dd26571329.png)
+<figure><img src="../../../.gitbook/assets/APR Calculation-TVL.drawio (4).png" alt=""><figcaption><p>Position TVL</p></figcaption></figure>
 
 * TVL for active liquidity positions that supported the tick 1188-1200 at 12:30PM, 3rd Jan = USD9000 (aggregate TVL of position 1 + 2 + 3 below)
 

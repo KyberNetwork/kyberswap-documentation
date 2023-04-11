@@ -5,10 +5,10 @@ You are referring to the **`Legacy`** version of KyberSwap docs.
 
 For the most updated information, please refer to:
 
-* **``**[**`Classic`**](../../../../liquidity-solutions/kyberswap-classic/)**``**
-* **``**[**`Elastic`**](../../../../liquidity-solutions/kyberswap-elastic/)**``**
-* **``**[**`Limit Order`**](../../../../kyberswap-solutions/limit-order/)**``**
-* **``**[**`Aggregator`**](../../../../kyberswap-solutions/kyberswap-aggregator/)**``**
+* [**`Classic`**](../../../../liquidity-solutions/kyberswap-classic/)
+* [**`Elastic`**](../../../../liquidity-solutions/kyberswap-elastic/)
+* [**`Limit Order`**](../../../../kyberswap-solutions/limit-order/)
+* [**`Aggregator`**](../../../../kyberswap-solutions/kyberswap-aggregator/)
 {% endhint %}
 
 A network fee may be charged for a Kyber trade (dependent on reserve type). The network fee percentage is determined on the KyberDAO, and may change over time.

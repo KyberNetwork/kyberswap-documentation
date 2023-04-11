@@ -38,6 +38,8 @@
     * [Refer And Get Rewarded](kyberswap-solutions/kyberswap-interface/user-guides/refer-and-get-rewarded.md)
     * [Get Crypto With Fiat](kyberswap-solutions/kyberswap-interface/user-guides/get-crypto-with-fiat.md)
     * [Bridge Your Assets Across Multiple Chains](kyberswap-solutions/kyberswap-interface/user-guides/bridge-your-assets-across-multiple-chains.md)
+  * [Notifications](kyberswap-solutions/kyberswap-interface/notifications/README.md)
+    * [Notification Center](kyberswap-solutions/kyberswap-interface/notifications/notification-center.md)
 * [KyberSwap Aggregator](kyberswap-solutions/kyberswap-aggregator/README.md)
   * [Concepts](kyberswap-solutions/kyberswap-aggregator/concepts/README.md)
     * [Dynamic Trade Routing](kyberswap-solutions/kyberswap-aggregator/concepts/dynamic-trade-routing.md)

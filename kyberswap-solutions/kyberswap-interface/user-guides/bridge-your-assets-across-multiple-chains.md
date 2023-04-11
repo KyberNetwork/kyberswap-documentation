@@ -17,13 +17,13 @@ More information can be found on our third-party integration [page](../../../ref
 <summary>Trader Flow</summary>
 
 1. [Connect Your Wallet ](connect-your-wallet.md)
-2. [Switching Networks ](selecting-preferred-network.md)****
+2. [Switching Networks ](selecting-preferred-network.md)
 3. Get Tokens
    * [Get Crypto With Fiat](get-crypto-with-fiat.md)&#x20;
    * **Bridge Your Assets Across Multiple Chains** **<-**
 4. Swap Tokens
    * [Instantly Swap At The Best Rates ](instantly-swap-at-the-best-rates.md)
-   * [Swap At Your Preferred Rates ](trade-at-your-preferred-rates.md)****
+   * [Swap At Your Preferred Rates ](trade-at-your-preferred-rates.md)
 
 </details>
 

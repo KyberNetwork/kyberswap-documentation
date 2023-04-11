@@ -17,13 +17,13 @@ KyberSwap has integrated the Transak toolkit to enable our customers to convenie
 <summary>Trader Flow</summary>
 
 1. [Connect Your Wallet ](connect-your-wallet.md)
-2. [Switching Networks ](selecting-preferred-network.md)****
+2. [Switching Networks ](selecting-preferred-network.md)
 3. Get Tokens
    * **Get Crypto With Fiat** **<-**
    * [Bridge Your Assets Across Multiple Chains](bridge-your-assets-across-multiple-chains.md)
 4. Swap Tokens
    * [Instantly Swap At The Best Rates ](instantly-swap-at-the-best-rates.md)
-   * [Swap At Your Preferred Rates ](trade-at-your-preferred-rates.md)****
+   * [Swap At Your Preferred Rates ](trade-at-your-preferred-rates.md)
 
 </details>
 
@@ -54,7 +54,7 @@ Click here for more information on [**Transak**](https://docs.transak.com/docs/w
 
 Transak is integrated on KyberSwap through a browser integration that will redirect users to Transak to access their fiat on ramp services.
 
-<figure><img src="../../../.gitbook/assets/image (5) (1).png" alt=""><figcaption><p>Purchase crypto with fiat on KyberSwap with Transak</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5) (1) (1).png" alt=""><figcaption><p>Purchase crypto with fiat on KyberSwap with Transak</p></figcaption></figure>
 
 **\*All of the KYC, regulation & compliance, fiat payment methods, and crypto coverage are solely handled by Transak.**
 
@@ -62,7 +62,7 @@ Clicking "Buy Crypto" will bring you to a third party website, owned and operate
 
 For support, please contact Transak [**here**](https://support.transak.com/)**.**
 
-Click [**here**](https://transak.com/blog/kyberswap-now-integrated-with-transak)****[ ](https://blog.kyber.network/kyberswap-launches-multichain-integration-39e12c42fb73)for the official announcement.
+Click [**here**](https://transak.com/blog/kyberswap-now-integrated-with-transak)[ ](https://blog.kyber.network/kyberswap-launches-multichain-integration-39e12c42fb73)for the official announcement.
 
 ## Buy crypto easily with over 50+ currencies&#x20;
 
@@ -88,7 +88,7 @@ Upon selecting the "Buy Crypto" button, a Transak order pop-up will be displayed
 
 Additionally, you are also provided the option to select your preferred payment method.
 
-<figure><img src="../../../.gitbook/assets/image (30) (1).png" alt=""><figcaption><p>Select preferred currency</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (30).png" alt=""><figcaption><p>Select preferred currency</p></figcaption></figure>
 
 ### Step 4: Select a cryptocurrency and chain
 
@@ -124,17 +124,17 @@ If this is your first time using Transak, there might be some processing time re
 
 You will be notified once the KYC process is completed.
 
-<figure><img src="../../../.gitbook/assets/image (17) (1).png" alt=""><figcaption><p>KYC completed</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (17).png" alt=""><figcaption><p>KYC completed</p></figcaption></figure>
 
 Upon receiving the verification success email, an "Order Now" button will then be made available to you.
 
-<figure><img src="../../../.gitbook/assets/image (28) (1).png" alt=""><figcaption><p>Account details</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (28).png" alt=""><figcaption><p>Account details</p></figcaption></figure>
 
 ### Step 8: Enter payment details
 
 Following successful KYC, you will then be prompted for your payment details. In this case, the payment method selected is via credit/debit card.
 
-<figure><img src="../../../.gitbook/assets/image (11) (1).png" alt=""><figcaption><p>Payment details</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (11).png" alt=""><figcaption><p>Payment details</p></figcaption></figure>
 
 ### Step 9: Confirm your order
 

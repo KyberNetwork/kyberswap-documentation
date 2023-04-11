@@ -2,7 +2,7 @@
 description: More Performant Routing And Encoding
 ---
 
-# Upgrading From APIv1 to APIv2
+# Upgrading From APIv1 To APIv2
 
 ## Overview
 
@@ -36,9 +36,9 @@ Route summary returned in `GET` response and encoded data returned in `POST` res
 
 As part of this upgrade, some of the parameters have also been modified to make it more intuitive. The table below maps the relevant changes for avoidance of doubt.
 
-* APIv1 `GET`: [`/{chain}/route/encode`](../aggregator-api-specification/evm-swaps.md#chain-route-encode)``
-* APIv2 `GET`: [`/{chain}/api/v1/routes`](../aggregator-api-specification/evm-swaps.md#chain-api-v1-routes)``
-* APIv2 `POST`: [`/{chain}/api/v1/route/build`](../aggregator-api-specification/evm-swaps.md#chain-api-v1-route-build)``
+* APIv1 `GET`: [`/{chain}/route/encode`](../aggregator-api-specification/evm-swaps.md#chain-route-encode)
+* APIv2 `GET`: [`/{chain}/api/v1/routes`](../aggregator-api-specification/evm-swaps.md#chain-api-v1-routes)
+* APIv2 `POST`: [`/{chain}/api/v1/route/build`](../aggregator-api-specification/evm-swaps.md#chain-api-v1-route-build)
 
 ### Request
 

@@ -21,7 +21,7 @@ Still deciding on which solution suits you best?&#x20;
 
 1. [Connect Your Wallet](../../../kyberswap-solutions/kyberswap-interface/user-guides/connect-your-wallet.md)
 2. [Switching Networks](../../../kyberswap-solutions/kyberswap-interface/user-guides/selecting-preferred-network.md)
-3. [Elastic Pool Creation ](elastic-pool-creation.md)****
+3. [Elastic Pool Creation ](elastic-pool-creation.md)
 4. [Add Liquidity To An Existing Elastic Pool ](add-liquidity-to-an-existing-elastic-pool.md)
 5. [Increasing Liquidity On Elastic](increasing-liquidity-on-elastic.md)&#x20;
 6. **Elastic Fee Collection <-**

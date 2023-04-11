@@ -5,10 +5,10 @@ You are referring to the **`Legacy`** version of KyberSwap docs.
 
 For the most updated information, please refer to:
 
-* **``**[**`Classic`**](../../../../liquidity-solutions/kyberswap-classic/)**``**
-* **``**[**`Elastic`**](../../../../liquidity-solutions/kyberswap-elastic/)**``**
-* **``**[**`Limit Order`**](../../../../kyberswap-solutions/limit-order/)**``**
-* **``**[**`Aggregator`**](../../../../kyberswap-solutions/kyberswap-aggregator/)**``**
+* [**`Classic`**](../../../../liquidity-solutions/kyberswap-classic/)
+* [**`Elastic`**](../../../../liquidity-solutions/kyberswap-elastic/)
+* [**`Limit Order`**](../../../../kyberswap-solutions/limit-order/)
+* [**`Aggregator`**](../../../../kyberswap-solutions/kyberswap-aggregator/)
 {% endhint %}
 
 In this guide, we will learn how to configure and deploy an Automated Price Reserve. Please note that the APR is centrally managed by the team setting it up and does not allow permissionless contribution. Should you wish to deploy or contribute liquidity to a permissionless AMM, kindly visit our [DMM guide](https://docs.kyberswap.com/Legacy/reserves/development-guides/reserves-dmm.md).

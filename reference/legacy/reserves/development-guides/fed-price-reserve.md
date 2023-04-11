@@ -5,10 +5,10 @@ You are referring to the **`Legacy`** version of KyberSwap docs.
 
 For the most updated information, please refer to:
 
-* **``**[**`Classic`**](../../../../liquidity-solutions/kyberswap-classic/)**``**
-* **``**[**`Elastic`**](../../../../liquidity-solutions/kyberswap-elastic/)**``**
-* **``**[**`Limit Order`**](../../../../kyberswap-solutions/limit-order/)**``**
-* **``**[**`Aggregator`**](../../../../kyberswap-solutions/kyberswap-aggregator/)**``**
+* [**`Classic`**](../../../../liquidity-solutions/kyberswap-classic/)
+* [**`Elastic`**](../../../../liquidity-solutions/kyberswap-elastic/)
+* [**`Limit Order`**](../../../../kyberswap-solutions/limit-order/)
+* [**`Aggregator`**](../../../../kyberswap-solutions/kyberswap-aggregator/)
 {% endhint %}
 
 In this guide, we will learn how to configure and deploy a Fed Price Reserve either locally via ganache or to the Ropsten testnet.

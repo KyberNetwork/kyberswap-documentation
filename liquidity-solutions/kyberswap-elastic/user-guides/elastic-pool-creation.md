@@ -56,9 +56,9 @@ As an open and permissionless protocol, KyberSwap Elastic allows any ERC20 token
 
 This is due to a small portion of the provided liquidity being allocated to meet the minimum liquidity requirements when creating a new [reinvestment curve](../concepts/reinvestment-curve.md). While care has been taken when designing this anti-spam mechanism to suit the vast majority of tokens, token teams are still free to define their own tokens. Please refer to [Pool Initialization](../concepts/pool-process-flows.md#pool-unlocking--initialization) for further details.
 
-<figure><img src="../../../.gitbook/assets/image (10).png" alt=""><figcaption><p>Select token pair</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (10) (2).png" alt=""><figcaption><p>Select token pair</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption><p>Token pair selected</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (3).png" alt=""><figcaption><p>Token pair selected</p></figcaption></figure>
 
 Notice that upon selecting the token pair, the current market price is also displayed for reference. Additionally, when creating a new pool, a small amount of liquidity will be needed to seed the pool's liquidity in order to [prevent spam](../concepts/pool-process-flows.md#pool-unlocking--initialization).
 
@@ -66,7 +66,7 @@ Notice that upon selecting the token pair, the current market price is also disp
 
 With the token pair selected, you will then be required to select your fee tier. For your convenience, the distribution of liquidity is also displayed in the dropdown to allow you to see which are the most popular fee tiers for your selected token pairs. Additionally, pools which are eligible for [farming rewards](yield-farming-on-elastic.md) are also highlighted via the :moneybag: icon.
 
-<figure><img src="../../../.gitbook/assets/image (15).png" alt=""><figcaption><p>Select fee tier</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (15) (2).png" alt=""><figcaption><p>Select fee tier</p></figcaption></figure>
 
 KyberSwap Elastic currently offers the following tiers to cater for different token pair correlations:
 
@@ -77,17 +77,17 @@ KyberSwap Elastic currently offers the following tiers to cater for different to
 In general, the lower the token correlation, the higher the recommended fee tier. Higher fee tiers offsets the impermanent loss risks which accompanies less correlated pairs.
 
 1. **Best for very stable pairs: 0.008%, 0.01%, 0.02%**\
-   ****These fee tiers are ideal for token pairs that typically trade at a fixed or extremely high correlated rate, such as pairs of stablecoins (e.g. DAI-USDC). Liquidity providers take on minimal price risk in these pools, and traders expect to pay minimal fees.
+   These fee tiers are ideal for token pairs that typically trade at a fixed or extremely high correlated rate, such as pairs of stablecoins (e.g. DAI-USDC). Liquidity providers take on minimal price risk in these pools, and traders expect to pay minimal fees.
 2. **Best for stable pairs: 0.04%** \
-   ****The 0.04% fee tier is ideal for token pairs that typically trade at a fixed or highly correlated rate, such as pairs of stablecoins (e.g. DAI-USDC). Liquidity providers take on minimal price risk in these pools, and traders expect to pay minimal fees.
+   The 0.04% fee tier is ideal for token pairs that typically trade at a fixed or highly correlated rate, such as pairs of stablecoins (e.g. DAI-USDC). Liquidity providers take on minimal price risk in these pools, and traders expect to pay minimal fees.
 3. **Best for most pairs: 0.1%, 0.25%, 0.3%**\
-   ****These fee tiers are best suited for less correlated token pairs such as the ETH-DAI token pair, which are subject to significant price movements to either upside or downside. This higher fee is more likely to compensate liquidity providers for the greater price risk that they take on relative to stablecoin LPs.
+   These fee tiers are best suited for less correlated token pairs such as the ETH-DAI token pair, which are subject to significant price movements to either upside or downside. This higher fee is more likely to compensate liquidity providers for the greater price risk that they take on relative to stablecoin LPs.
 4. **Best for exotic pairs: 1%** \
-   ****The 1% fee tier is best suited for even less correlated token pairs such as the ETH-KNC token pair, which are subject to significant price movements to either upside or downside. This higher fee is more likely to compensate liquidity providers for the greater price risk that they take on relative to stablecoin liquidity providers.
+   The 1% fee tier is best suited for even less correlated token pairs such as the ETH-KNC token pair, which are subject to significant price movements to either upside or downside. This higher fee is more likely to compensate liquidity providers for the greater price risk that they take on relative to stablecoin liquidity providers.
 5. **Best for very volatile pairs: 2%**\
-   ****The 2% fee tier is best suited for very volatile pairs which are subject to extreme price movements to either the upside or downside. The significantly higher fee is more likely to compensate liquidity providers for the significant price risk.
+   The 2% fee tier is best suited for very volatile pairs which are subject to extreme price movements to either the upside or downside. The significantly higher fee is more likely to compensate liquidity providers for the significant price risk.
 6. **Best for rare use cases: 5%** \
-   ****The 5% fee tier is created specifically for the purpose of price discovery for new tokens against exotic tokens such as KNC. As the final price of the token pair can differ significantly from launch, a higher fee compensates LPs for the extreme IL risks during this highly volatile period.
+   The 5% fee tier is created specifically for the purpose of price discovery for new tokens against exotic tokens such as KNC. As the final price of the token pair can differ significantly from launch, a higher fee compensates LPs for the extreme IL risks during this highly volatile period.
 
 </details>
 
@@ -101,14 +101,14 @@ Selecting a fee tier with existing liquidity will result in your position being 
 
 Upon selecting a new fee tier, you will then need to specify the starting price for the pool. For reference, the current market price of the token pair selected is also displayed. The starting price will determine the specific [price curve](../../../getting-started/foundational-topics/decentralized-finance/automated-market-maker.md#price-curves) that is implemented for the pool.
 
-<figure><img src="../../../.gitbook/assets/image (28).png" alt=""><figcaption><p>Set starting price</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (28) (1).png" alt=""><figcaption><p>Set starting price</p></figcaption></figure>
 
 {% hint style="danger" %}
 #### Price deviations
 
 As a safety precaution, KyberSwap Elastic will prompt the LP if the specified pool price deviates significantly from the market price.This is because any liquidity additions that significantly deviates from the market price would immediately result in [impermanent loss](../../../getting-started/foundational-topics/decentralized-finance/impermanent-loss.md) as arbitrageurs sweep up the significantly discounted token from the position.
 
-![](../../../.gitbook/assets/image.png)
+![](<../../../.gitbook/assets/image (27).png>)
 {% endhint %}
 
 ### **Step 5**: Set price range
@@ -117,7 +117,7 @@ This is the range at which your capital will be used in the pool. If the market 
 
 You can set your price range either by typing in the prices manually or ussing the +/- buttons. For new pools, as there is no existing liquidity, no liquidity data will be shown.
 
-<figure><img src="../../../.gitbook/assets/image (27).png" alt=""><figcaption><p>Select price range</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (27) (2).png" alt=""><figcaption><p>Select price range</p></figcaption></figure>
 
 For convenience, KyberSwap also provides you the option to choose from a list of preset ranges which correspond to different DeFi familiarity and risk profiles. The section below provides some guidance on the percentage-based options matched to the token pair correlation which is calculated by KyberSwap.
 
@@ -177,7 +177,7 @@ Specify the deposit amounts, or how much liquidity you would like to add to open
 
 Note: The proportion of liquidity deposited for each leg of the pair is determined by your price range, so it is helpful to set the price range before specifying your deposit amounts.
 
-<figure><img src="../../../.gitbook/assets/image (5).png" alt=""><figcaption><p>Specify deposit amount</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5) (2).png" alt=""><figcaption><p>Specify deposit amount</p></figcaption></figure>
 
 ### **Step 6**: Authorize contract
 
@@ -191,11 +191,11 @@ Once the approval is confirmed, the previously-greyed-out “Preview” button w
 
 Click on the “Preview” button to bring up the preview screen. Once you have reviewed the information on this screen, click on the “Supply” button to proceed.
 
-<figure><img src="../../../.gitbook/assets/image (17).png" alt=""><figcaption><p>Add liquidity preview for confirmation</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (17) (1).png" alt=""><figcaption><p>Add liquidity preview for confirmation</p></figcaption></figure>
 
 You will need to confirm this transaction in your wallet.
 
-<figure><img src="../../../.gitbook/assets/image (13).png" alt=""><figcaption><p>Add liquidity confirmation</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (13) (2).png" alt=""><figcaption><p>Add liquidity confirmation</p></figcaption></figure>
 
 Once you’ve confirmed the transaction you will see a screen informing you that the transaction has been submitted. You can click on “View Transaction” to view your transaction on the appropriate blockchain explorer.
 
@@ -203,4 +203,4 @@ Once you’ve confirmed the transaction you will see a screen informing you that
 
 Your new position should now be visible on the My Pools page on KyberSwap.
 
-<figure><img src="../../../.gitbook/assets/image (12).png" alt=""><figcaption><p>My pools</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (12) (1).png" alt=""><figcaption><p>My pools</p></figcaption></figure>

@@ -15,7 +15,7 @@ Please refer to [Supported Exchanges and Networks](../../../getting-started/supp
 <summary>Trader Flow</summary>
 
 1. [Connect Your Wallet ](connect-your-wallet.md)
-2. [Switching Networks ](selecting-preferred-network.md)****
+2. [Switching Networks ](selecting-preferred-network.md)
 3. Get Tokens
    * [Get Crypto With Fiat](get-crypto-with-fiat.md)
    * [Bridge Your Assets Across Multiple Chains](bridge-your-assets-across-multiple-chains.md)
@@ -73,7 +73,7 @@ If this is the first time you are swapping this token on this network using this
 
 Click on the "Approve \[Token]" button to begin this process. Your wallet will prompt you to give your approval for the KyberSwap smart contract to transact using this token on this network. This is a one-time action and subsequent swaps involving this token will not require further approvals unless there is an update to the smart contract.
 
-<figure><img src="../../../.gitbook/assets/image (3) (3).png" alt=""><figcaption><p>Approve ERC20 tokens</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (2).png" alt=""><figcaption><p>Approve ERC20 tokens</p></figcaption></figure>
 
 ### **Step 5**: Confirm the swap
 

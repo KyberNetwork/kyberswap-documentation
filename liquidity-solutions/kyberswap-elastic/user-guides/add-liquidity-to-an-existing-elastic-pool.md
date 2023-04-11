@@ -23,7 +23,7 @@ Still deciding on which solution suits you best?&#x20;
 
 1. [Connect Your Wallet](../../../kyberswap-solutions/kyberswap-interface/user-guides/connect-your-wallet.md)
 2. [Switching Networks](../../../kyberswap-solutions/kyberswap-interface/user-guides/selecting-preferred-network.md)
-3. [Elastic Pool Creation ](elastic-pool-creation.md)****
+3. [Elastic Pool Creation ](elastic-pool-creation.md)
 4. **Add Liquidity To An Existing Elastic Pool <-**
 5. [Increasing Liquidity On Elastic](increasing-liquidity-on-elastic.md)
 6. [Elastic Fee Collection](elastic-fee-collection.md)
@@ -55,7 +55,7 @@ Select the pool youâ€™d like to participate in by clicking on the appropriate â€
 
 For the safety of our LPs, KyberSwap Elastic will notify LPs when adding liquidity to a pool that is out of range. This is because any liquidity additions that significantly deviates from the market price would immediately result in [impermanent loss](../../../getting-started/foundational-topics/decentralized-finance/impermanent-loss.md) as arbitrageurs sweep up the significantly discounted token from the position.
 
-![](<../../../.gitbook/assets/image (4).png>)
+![](<../../../.gitbook/assets/image (4) (3).png>)
 {% endhint %}
 
 ### **Step 3**: Select fee tier&#x20;
@@ -81,7 +81,7 @@ For the safety of our LPs, KyberSwap Elastic only allows single-sided liquidity 
 
 Whenever a position outside the market price is created, the deposit amount for the corresponding token that is prone to immediate impermanent loss is disabled.
 
-![](<../../../.gitbook/assets/image (8).png>)
+![](<../../../.gitbook/assets/image (8) (2).png>)
 {% endhint %}
 
 ### **Step 5**: Configure token amounts

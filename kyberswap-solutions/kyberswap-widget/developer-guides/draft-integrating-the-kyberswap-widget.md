@@ -22,12 +22,19 @@ yarn add @kyberswap/widgets
 
 ## Adding the Swap widget to your app
 
+{% hint style="success" %}
+#### Note on integrations: clientID
+
+In order to continuously improve the KyberSwap Widget, our widget implements a `client` field that enables us to understand how the widget swaps are being utilized. As a developer integrating with our widget, **please add your clientID (i.e. company name) to the `client` field** to enable us to serve you better. Refer below for example.
+{% endhint %}
+
 Embed the React component in your application with this piece of code:
 
 ```
 import { Widget } from "@kyberswap/widgets";
 
 <Widget
+    client="yourCompanyNameHere"
     theme={theme}
     tokenList={[]}
     provider={ethersProvider}

@@ -5,10 +5,10 @@ You are referring to the **`Legacy`** version of KyberSwap docs.
 
 For the most updated information, please refer to:
 
-* **``**[**`Classic`**](../../../liquidity-solutions/kyberswap-classic/)**``**
-* **``**[**`Elastic`**](../../../liquidity-solutions/kyberswap-elastic/)**``**
-* **``**[**`Limit Order`**](../../../kyberswap-solutions/limit-order/)**``**
-* **``**[**`Aggregator`**](../../../kyberswap-solutions/kyberswap-aggregator/)**``**
+* [**`Classic`**](../../../liquidity-solutions/kyberswap-classic/)
+* [**`Elastic`**](../../../liquidity-solutions/kyberswap-elastic/)
+* [**`Limit Order`**](../../../kyberswap-solutions/limit-order/)
+* [**`Aggregator`**](../../../kyberswap-solutions/kyberswap-aggregator/)
 {% endhint %}
 
 ![Guides Overview](https://docs.kyberswap.com/assets/images/guidesoverview-30dd38039205ea915fca26dfb42d19a1.png)

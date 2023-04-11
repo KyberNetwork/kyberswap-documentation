@@ -165,9 +165,9 @@ Add liquidity to a pool. _token0_ and _token1_ should be in the correct order, i
 
 **Input**[**​**](https://docs.kyberswap.com/explanation/peripheral-base-contracts#input-1)
 
-| Type                                                                                       | Explanation                                |
-| ------------------------------------------------------------------------------------------ | ------------------------------------------ |
-| ``[`AddLiquidityParams`](elastic-peripheral-base-contracts.md#struct-addliquidityparams)`` | Parameters for addiing liquidity to a pool |
+| Type                                                                                   | Explanation                                |
+| -------------------------------------------------------------------------------------- | ------------------------------------------ |
+| [`AddLiquidityParams`](elastic-peripheral-base-contracts.md#struct-addliquidityparams) | Parameters for addiing liquidity to a pool |
 
 **Output**[**​**](https://docs.kyberswap.com/explanation/peripheral-base-contracts#output-1)
 
