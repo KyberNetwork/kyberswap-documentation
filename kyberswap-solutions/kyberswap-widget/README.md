@@ -10,7 +10,7 @@ description: Plug And Play The Best Rates Straight From Your App
 
 KyberSwap Widget provides users of your website with a handy tool for swap tokens at the best rate. The KyberSwap Widget supports swaps across all Aggregator EVM chains. Please refer to [Supported Exchanges and Networks ](../../getting-started/supported-exchanges-and-networks.md)for the full list of supported chains.
 
-For guides on how to integrate the KyberSwap Widget into your app, you can refer to [Integrating The KyberSwap Widget](broken-reference).
+For guides on how to integrate the KyberSwap Widget into your app, you can refer to [Integrating The KyberSwap Widget](developer-guides/integrating-the-kyberswap-widget.md).
 
 ## Example use cases
 

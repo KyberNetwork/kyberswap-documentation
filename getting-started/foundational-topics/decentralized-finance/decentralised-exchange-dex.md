@@ -70,7 +70,7 @@ KyberSwap understands that market conditions can change rapidly and we want to p
 {% endtab %}
 
 {% tab title="Developers" %}
-* [Integrating The KyberSwap Widget](broken-reference)
+* [Integrating The KyberSwap Widget](../../../kyberswap-solutions/kyberswap-widget/developer-guides/integrating-the-kyberswap-widget.md)
 * [Execute A Swap With The Aggregator API](../../../kyberswap-solutions/kyberswap-aggregator/developer-guides/execute-a-swap-with-the-aggregator-api.md)
 * [Place A Limit Order](../../../kyberswap-solutions/limit-order/developer-guides/place-a-limit-order.md)
 * [Fill A Limit Order](../../../kyberswap-solutions/limit-order/developer-guides/fill-a-limit-order.md)
