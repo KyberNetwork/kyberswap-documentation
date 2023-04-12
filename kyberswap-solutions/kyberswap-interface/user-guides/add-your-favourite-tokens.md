@@ -24,6 +24,16 @@ Next, tap on either (or both) of the coin selector buttons to bring up the Token
 
 Enter either the ticker symbol or the contract address of the token you wish to import.&#x20;
 
+{% hint style="info" %}
+#### Importing exotic tokens
+
+Do note that KyberSwap will display a warning if you try to add less frequently swapped tokens. This is because such tokens usually has limited liquidity which could result in negative outcomes due to  greater [slippage](../../../getting-started/foundational-topics/decentralized-finance/slippage.md) and [price impact](../../../getting-started/foundational-topics/decentralized-finance/price-impact.md) risks.&#x20;
+
+![](<../../../.gitbook/assets/Screenshot 2023-04-11 at 4.38.51 PM (1).png>)
+
+Users are advised to proceed carefully when trading such exotic tokens as changing market conditions can significantly impact the outcome of a trade. It is highly recommended that users safeguard their transactions by using KyberSwap's [Max Slippage](instantly-swap-at-the-best-rates.md#customizing-trade-parameters) feature when trading exotic tokens.
+{% endhint %}
+
 ### Step 3: Import token
 
 Once you have found the intended token, tap on the Import button and the “I Understand” confirmation button that subsequently appears.

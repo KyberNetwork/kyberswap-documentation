@@ -22,6 +22,6 @@ description: KyberSwap Limit Order Taker APIs
 [Limit-Order-APIs (20).yaml](<../../../.gitbook/assets/Limit-Order-APIs (20).yaml>)
 {% endswagger %}
 
-{% swagger src="../../../.gitbook/assets/Limit-Order-APIs (14) (1).yaml" path="/read-partner/api/v1/orders/pairs" method="get" %}
-[Limit-Order-APIs (14) (1).yaml](<../../../.gitbook/assets/Limit-Order-APIs (14) (1).yaml>)
+{% swagger src="../../../.gitbook/assets/Limit-Order-APIs (17).yaml" path="/read-partner/api/v1/orders/pairs" method="get" %}
+[Limit-Order-APIs (17).yaml](<../../../.gitbook/assets/Limit-Order-APIs (17).yaml>)
 {% endswagger %}

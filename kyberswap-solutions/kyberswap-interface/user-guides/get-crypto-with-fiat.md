@@ -128,7 +128,7 @@ You will be notified once the KYC process is completed.
 
 Upon receiving the verification success email, an "Order Now" button will then be made available to you.
 
-<figure><img src="../../../.gitbook/assets/image (28).png" alt=""><figcaption><p>Account details</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (28) (2).png" alt=""><figcaption><p>Account details</p></figcaption></figure>
 
 ### Step 8: Enter payment details
 

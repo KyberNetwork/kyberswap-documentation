@@ -22,7 +22,7 @@ Step 2: Connect your wallet
 
 Step 3: Stake KNC
 
-![](<../../../.gitbook/assets/image (1) (1).png>)
+![](<../../../.gitbook/assets/image (1) (2).png>)
 
 If you stake KNC in epoch “n”, you or your delegate will only be eligible to vote in epoch “n+1” (next epoch onwards). Example:
 

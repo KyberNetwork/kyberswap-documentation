@@ -52,14 +52,14 @@ Specify the token amounts to contribute as liquidity to the new pool. Upon enter
 
 Do note that KyberSwap Classic enables users to configure their pool according to their preferred price ranges hence LPs are able to define the starting price of their pool.
 
-<figure><img src="../../../.gitbook/assets/image (26) (1).png" alt=""><figcaption><p>Token amounts and price ratio</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (26).png" alt=""><figcaption><p>Token amounts and price ratio</p></figcaption></figure>
 
 {% hint style="danger" %}
 #### Price deviations
 
 As a safety precaution, KyberSwap Classic will prompt the LP if the specified pool price deviates significantly from the market price.This is because any liquidity additions that significantly deviates from the market price would immediately result in [impermanent loss](../../../getting-started/foundational-topics/decentralized-finance/impermanent-loss.md) as arbitrageurs sweep up the significantly discounted token from the position.
 
-![](<../../../.gitbook/assets/image (20) (1) (1).png>)
+![](<../../../.gitbook/assets/image (11) (1) (1).png>)
 {% endhint %}
 
 ### Step 4: Select AMP value
@@ -107,13 +107,13 @@ If you haven’t already done so, you will need to need to authorize the KyberSw
 
 Click on the "Create" button to bring up the preview screen. Once you have reviewed the information on this screen, click on the "Create Pool" button to proceed.
 
-<figure><img src="../../../.gitbook/assets/image (15) (1).png" alt=""><figcaption><p>Create pool preview</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (15).png" alt=""><figcaption><p>Create pool preview</p></figcaption></figure>
 
 You will need to confirm this transaction in your wallet
 
 <figure><img src="../../../.gitbook/assets/image (35).png" alt=""><figcaption><p>KyberSwap pending confirmation from wallet</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (6).png" alt=""><figcaption><p>Metamask confirmation</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (6) (2).png" alt=""><figcaption><p>Metamask confirmation</p></figcaption></figure>
 
 Once you’ve confirmed the transaction you will see a screen informing you that the transaction has been submitted. You can click on “View Transaction” to view your transaction on the appropriate blockchain explorer.
 

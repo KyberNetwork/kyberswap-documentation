@@ -31,17 +31,17 @@ Please refer to [Supported Exchanges and Networks](../../../getting-started/supp
 
 [Connect your Web3 wallet to KyberSwap](connect-your-wallet.md) and [select the network](selecting-preferred-network.md) that you would like to use for the swap using the selector at the top right of the Swap page.
 
-![Connected chain and wallet](https://support.kyberswap.com/hc/article\_attachments/13999999636249)
+<figure><img src="../../../.gitbook/assets/Screenshot 2023-04-12 at 12.23.58 PM.png" alt=""><figcaption><p>Connected chain and wallet</p></figcaption></figure>
 
 ### **Step 2:** Specify your swap pair
 
-&#x20;You can either do this manually using the individual token selection buttons on the swap screen
+&#x20;You can either do this manually using the individual token selection buttons on the swap screen.
 
-![Specify token individually](https://support.kyberswap.com/hc/article\_attachments/14746734857625)
+<figure><img src="../../../.gitbook/assets/Screenshot 2023-04-12 at 12.27.26 PM.png" alt=""><figcaption><p>Specify tokens individually</p></figcaption></figure>
 
 or by searching for your desired swap pair using the search field. (The keyboard shortcut Ctrl+K also opens this search feature.)
 
-![Swap via smart search](https://support.kyberswap.com/hc/article\_attachments/14746770685465)
+<figure><img src="../../../.gitbook/assets/Screenshot 2023-04-12 at 12.28.37 PM.png" alt=""><figcaption><p>Swap via smart search</p></figcaption></figure>
 
 ### **Step 3**: Configure swap amount
 
@@ -57,7 +57,7 @@ Do note that the KyberSwap Interface will continuously update the swap rates in 
 Upon clicking the "Swap" button, KyberSwap Aggregator will attempt to secure the final route that will be displayed on the "Confirm Swap" pop-up (see [Step 5](instantly-swap-at-the-best-rates.md#step-5-confirm-the-swap)).
 {% endhint %}
 
-![Specify swap amount](https://support.kyberswap.com/hc/article\_attachments/14746766951449)
+<figure><img src="../../../.gitbook/assets/Screenshot 2023-04-12 at 12.30.23 PM.png" alt=""><figcaption><p>Specify swap amount</p></figcaption></figure>
 
 {% hint style="danger" %}
 #### Max slippage: Protecting your trades
@@ -73,7 +73,7 @@ If this is the first time you are swapping this token on this network using this
 
 Click on the "Approve \[Token]" button to begin this process. Your wallet will prompt you to give your approval for the KyberSwap smart contract to transact using this token on this network. This is a one-time action and subsequent swaps involving this token will not require further approvals unless there is an update to the smart contract.
 
-<figure><img src="../../../.gitbook/assets/image (3) (2).png" alt=""><figcaption><p>Approve ERC20 tokens</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (4).png" alt=""><figcaption><p>Approve ERC20 tokens</p></figcaption></figure>
 
 ### **Step 5**: Confirm the swap
 
@@ -82,22 +82,60 @@ Click the “Swap” button to bring up the confirmation screen.&#x20;
 {% hint style="warning" %}
 #### Route confirmation and market volatility
 
-Do note that once the final route has been secured, the details related to your swap would be available for your review in the "Confirm Swap" pop-up.
+Do note that once the final route has been secured, the details related to your swap will be available for your review in the "Confirm Swap Details" pop-up.
 
-In times of volatility, the market conditions might have changed in-between clicking the "Swap" button and the "Confirm Swap" pop-up being displayed. KyberSwap will display the latest rates in the "Confirm Swap" pop-up for you to review.
+In times of volatility, the market conditions might have changed in-between clicking the "Swap" button and the "Confirm Swap Details" pop-up being displayed. KyberSwap will display the latest rates in the "Confirm Swap Details" pop-up for you to review.
 
-**If there is a change in the price, to protect you, you will need to accept the new price before proceeding with the swap.**
-
-![](../../../.gitbook/assets/1366\_Confirmation\_Popup\_Price\_Update-2.png)
-
-![](../../../.gitbook/assets/1366\_Confirmation\_Popup\_Update\_Price\_Confirmed-3.png)
+**If there is a change in the price, to protect you, you will need to accept the new price before proceeding with the swap. Refer tabs below for the various scenarios.**
 
 Please review the swap information in full prior to confirmation as the final secured route might differ from the swap screen (see [Step 3](instantly-swap-at-the-best-rates.md#step-3-configure-swap-amount)). As an additional safeguard, KyberSwap highly recommends that users take advantage of our "Max Slippage" feature (refer to [Customizing trade parameters](instantly-swap-at-the-best-rates.md#customizing-trade-parameters)).
 {% endhint %}
 
-The confirmation screen displays a few key pieces of information to review.
+{% tabs %}
+{% tab title="No change in price" %}
+If there are no changes to the swap price between viewing the route and confirming the route, the UI will display the following "Confirm Swap Details" pop-up.
 
-![Swap confirmation popup](https://support.kyberswap.com/hc/article\_attachments/13999992516249)
+<figure><img src="../../../.gitbook/assets/Screenshot 2023-04-12 at 12.33.24 PM.png" alt=""><figcaption><p>Confirm swap with no change in price</p></figcaption></figure>
+{% endtab %}
+
+{% tab title="Better price" %}
+In the case whereby the market has moved in the trader's favor, the "Confirm Swap Details" pop-up will display the greater amount and users can proceed with the swap. The user can continue to swap at even better rates thanks to KyberSwap sourcing the most optimal and updated route.
+
+<figure><img src="../../../.gitbook/assets/Screenshot 2023-04-11 at 6.26.02 PM.png" alt=""><figcaption><p>Confirm swap with better rates</p></figcaption></figure>
+{% endtab %}
+
+{% tab title="Worse price" %}
+In cases whereby market conditions have moved against the trader, KyberSwap will display various warnings depending on the severity of the price deviation. To protect our users, additional safeguards are put in place to ensure that users are always in full control of their trades.&#x20;
+
+#### Price drops by less than 1% (price drop <1%)
+
+A warning is displayed but no additional steps are required to confirm the swap.
+
+<figure><img src="../../../.gitbook/assets/Screenshot 2023-04-11 at 6.20.23 PM.png" alt=""><figcaption><p>Confirm swap for price drop &#x3C; 1%</p></figcaption></figure>
+
+#### Price drops more than 1% but less than 5% (1%< price drop < 5%)
+
+A warning is displayed and user will have to accept the new amount by clicking on the "Accept New Amount" button.
+
+<figure><img src="../../../.gitbook/assets/Screenshot 2023-04-11 at 6.18.25 PM.png" alt=""><figcaption><p>Accept new amount for 1% &#x3C; price drop &#x3C; 5%</p></figcaption></figure>
+
+#### Price drops more than 5% but less than 10% (5%< price drop < 10%)
+
+A strong warning is displayed and user will have to accept the new amount by clicking on the "Accept New Amount" button.
+
+<figure><img src="../../../.gitbook/assets/Screenshot 2023-04-11 at 6.21.54 PM.png" alt=""><figcaption><p>Accept new amount for 5% &#x3C; price drop &#x3C; 10%</p></figcaption></figure>
+
+#### Price drops more than 10% (10%< price drop)
+
+A warning is displayed and user will have to accept the new amount by clicking on the "Accept New Amount" button. Additionally, users will have to manually type in their confirmation to validate that they consent to the significant price deviation.
+
+<figure><img src="../../../.gitbook/assets/Screenshot 2023-04-11 at 6.23.34 PM.png" alt=""><figcaption><p>Accept new amount for price drop &#x3C; 10%</p></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/Screenshot 2023-04-11 at 6.43.19 PM.png" alt=""><figcaption><p>Manual confirmation of price drop greater than 10%</p></figcaption></figure>
+{% endtab %}
+{% endtabs %}
+
+In all the above cases, the confirmation screen will always display a few key pieces of information for review:
 
 * Estimated return after the Swap.
 * **Current Price**: the rate at which the swap will happen (this can be inverted using the 🔁 button).
@@ -115,17 +153,17 @@ Please refer to the [Price Impact](../../../getting-started/foundational-topics/
 
 * **Slippage**: The estimated difference between the expected price and final price of the trade. Slippage is an inherent characteristic of all active markets whose risks can only be mitigated. For more detailed insights, please refer to [Slippage](../../../getting-started/foundational-topics/decentralized-finance/slippage.md).
 
-Click the “Confirm Swap” button to proceed. You should see the Transaction Submitted screen appear. You can click on "View Transaction" to see your transaction on the blockchain explorer.
+Click the “Confirm Swap” button to proceed. You should see the Transaction Submitted screen appear. You can click on "View Transaction" to see your transaction on the blockchain explorer. Additionally, you can add the token to MetaMask if you haven't already done so.
 
-![Transaction broadcasted confirmation](https://support.kyberswap.com/hc/article\_attachments/13999993296281)
+<figure><img src="../../../.gitbook/assets/image (5).png" alt=""><figcaption><p>Transaction broadcasted confirmation</p></figcaption></figure>
 
 You should also see the transaction appear in your account’s transaction history.
 
-![Transaction history](https://support.kyberswap.com/hc/article\_attachments/14000001237273)
+<figure><img src="../../../.gitbook/assets/Screenshot 2023-04-12 at 12.58.30 PM (1).png" alt=""><figcaption><p>Transaction history in the KyberSwap wallet UI</p></figcaption></figure>
 
 ## Customizing trade parameters
 
-<figure><img src="../../../.gitbook/assets/image (52).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (6).png" alt=""><figcaption><p>Advanced swap settings</p></figcaption></figure>
 
 The KyberSwap Interface also provides additional features for more advanced traders that allow customisation of the following trade parameters:
 
@@ -140,9 +178,9 @@ Setting a higher Max slippage increases the likelihood of transaction success bu
 {% endhint %}
 
 * **Transaction Time Limit:** The amount of time from submission that the transaction is valid for. If the transaction is not executed within the specified time frame, the transaction will be cancelled.
-* **Advanced Mode:** Toggle this button to allow for high impact trades without any confirmation prompts. Be extra careful when enabling this as large trades might result in significant slippage.
+* **Degen Mode:** Toggle this button to allow for high impact trades without any confirmation prompts. Be extra careful when enabling this as large trades might result in significant slippage.&#x20;
 * **Liquidity Sources:** Select the liquidity sources (i.e. DEXes) through which your trade will be routed. By default, all KyberSwap supported DEXes on the connected chain will be selected. You can view the list of supported DEXs on each chain on the [Supported Exchanges And Networks Page](../../../getting-started/supported-exchanges-and-networks.md).
 
 These settings can be accessed via selecting the slider icons on the main swap page:
 
-<figure><img src="../../../.gitbook/assets/image (87).png" alt=""><figcaption><p>Access the trading settings</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Screenshot 2023-04-12 at 1.01.34 PM.png" alt=""><figcaption><p>Access trade settings</p></figcaption></figure>
