@@ -16,10 +16,11 @@ const theme: Theme = {
 }
 
 <Widget
-theme={theme}
-tokenList={[]}
-provider={ethersProvider}
-defaultTokenOut={defaultTokenOut[chainId]}
+  client="yourCompanyNameHere"
+  theme={theme}
+  tokenList={[]}
+  provider={ethersProvider}
+  defaultTokenOut={defaultTokenOut[chainId]}
 />
 ```
 
