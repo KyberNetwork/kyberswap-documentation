@@ -91,6 +91,8 @@ In times of volatility, the market conditions might have changed in-between clic
 Please review the swap information in full prior to confirmation as the final secured route might differ from the swap screen (see [Step 3](instantly-swap-at-the-best-rates.md#step-3-configure-swap-amount)). As an additional safeguard, KyberSwap highly recommends that users take advantage of our "Max Slippage" feature (refer to [Customizing trade parameters](instantly-swap-at-the-best-rates.md#customizing-trade-parameters)).
 {% endhint %}
 
+#### Price changes (==, ++, --)
+
 {% tabs %}
 {% tab title="No change in price" %}
 If there are no changes to the swap price between viewing the route and confirming the route, the UI will display the following "Confirm Swap Details" pop-up.
@@ -178,9 +180,45 @@ Setting a higher Max slippage increases the likelihood of transaction success bu
 {% endhint %}
 
 * **Transaction Time Limit:** The amount of time from submission that the transaction is valid for. If the transaction is not executed within the specified time frame, the transaction will be cancelled.
-* **Degen Mode:** Toggle this button to allow for high impact trades without any confirmation prompts. Be extra careful when enabling this as large trades might result in significant slippage.&#x20;
+* **Degen Mode:** Refer to [Degen Mode](instantly-swap-at-the-best-rates.md#degen-mode-tread-carefully) section below.
 * **Liquidity Sources:** Select the liquidity sources (i.e. DEXes) through which your trade will be routed. By default, all KyberSwap supported DEXes on the connected chain will be selected. You can view the list of supported DEXs on each chain on the [Supported Exchanges And Networks Page](../../../getting-started/supported-exchanges-and-networks.md).
 
 These settings can be accessed via selecting the slider icons on the main swap page:
 
 <figure><img src="../../../.gitbook/assets/Screenshot 2023-04-12 at 1.01.34 PM.png" alt=""><figcaption><p>Access trade settings</p></figcaption></figure>
+
+## Degen Mode: Tread carefully
+
+KyberSwap implemented Degen Mode for our most "advanced" apes. While KyberSwap has consistently iterated upon industry-leading safeguards to enable our users to trade safely, we are aware that some advanced traders might find these protective features inconvenient. As such, switching to Degen Mode allows users to conduct high impact trades without any confirmation prompts nor price impact limits.
+
+{% hint style="info" %}
+#### Price deviations
+
+Note that even with Degen Mode turned on, any significant price deviations that occurs while the swap is being secured will still require user confirmation. Please refer to [Route confirmation and market volatility](instantly-swap-at-the-best-rates.md#step-5-confirm-the-swap) for more details.
+{% endhint %}
+
+### Overriding safeguards
+
+By turning on Degen Mode, multiple safeguards will be overridden allowing users to:
+
+* Configure max slippage ≥ 20% and ≤ 50%
+* Confirm trades with price impact ≥10%
+* Proceed with swaps when price impact is unable to be calculated
+
+### Activating Degen Mode
+
+{% hint style="danger" %}
+#### Advanced traders only
+
+Tread carefully when turning on Degen Mode as [slippage](../../../getting-started/foundational-topics/decentralized-finance/slippage.md) and [price impact](../../../getting-started/foundational-topics/decentralized-finance/price-impact.md) risks are not conservatively capped which could result in significant losses. **KyberSwap recommends that users only activate Degen Mode if you are fully aware of the risks of unprotected trades.**
+{% endhint %}
+
+Degen Mode can be toggled on via the "[Advanced Settings](instantly-swap-at-the-best-rates.md#customizing-trade-parameters)" pop-up covered in the previous section.
+
+<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption><p>Degen Mode toggle</p></figcaption></figure>
+
+Upon toggling the Degen Mode switch, you will be prompted to manually confirm the switch.
+
+<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption><p>Confirm Degen Mode</p></figcaption></figure>
+
+As a safety precaution, Degen Mode will be auto-disabled after 30 minutes of being switched on.
