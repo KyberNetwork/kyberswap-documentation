@@ -9,20 +9,31 @@ description: Understanding Your Elastic APR
 To demonstrate the practicality of the [reinvestment curve design](https://docs.kyberswap.com/overview/elastic-walkthrough), KyberSwap also displays an average APR for each Elastic pool. In order to provide a more accurate estimate of potential APR, the average APR calculation will have to prioritize active liquidity positions which were accumulating fees during a selected time interval. As such, APR calculations are based on the historical data for the selected pool. KyberSwap Elastic APR calculations are based on 30 minute intervals whereby the return per interval is:
 
 $$
-\frac{Pool\ Fees}{TVL\ In-Range} * 100\%
+\frac{PoolFees}{TVL_{InRange} } * 100\%
 $$
 
 Extending this over a day, we get the sum for 48 intervals (30 min each). This is the daily return if your liquidity position was in range for the whole day:
 
 $$
-\sum_{0<x\le 48}(\frac{Pool\ Fees}{TVL\ In-Range}) * 100\%
+\sum_{0<x\le 48}(\frac{PoolFees}{TVL_{ InRange}}) * 100\%
 $$
 
 To get the APR from the last 24 hours of trading data, we multiply the above by the number of days in a year. The final APR calculation is as follows:
 
 $$
-\sum_{0<x\le 48}(\frac{Pool\ Fees}{TVL\ In-Range}) * 100\% * 365
+\sum_{0<x\le 48}(\frac{PoolFees}{TVL_{ InRange}}) * 100\% * 365
 $$
+
+{% hint style="info" %}
+#### Data sampling and APR accuracy
+
+To account for market volatility which could result in significant changes to the pool's liquidity within the specified 30 minute interval, the APR formula samples the data according to the following rules:
+
+* $$PoolFees$$ is calculated at the end of the interval to account for all fees earned over the interval period
+* $$TVL_{InRange}$$ is calculated at the beginning of the interval to determine positions which have supported the pool in the past
+
+By sampling 48 times throughout a day, the APR displayed better approximates the expected APR for the pool as intraday variances are smoothened out.
+{% endhint %}
 
 ### Example APR calculation[​](https://docs.kyberswap.com/overview/elastic-pool-apr-calculation#example-apr-calculation) <a href="#example-apr-calculation" id="example-apr-calculation"></a>
 
@@ -42,13 +53,13 @@ A user holding some `ETH` and `USDT` is planning to earn yield for her asset by 
 
 To calculate the return for the earliest time interval (10:00 AM, 3rd Jan ←→ 10:30 AM, 3rd Jan):
 
-* 30m Fees = USD2000
+* 30m Fees at the end of the interval = USD2000
 * Pool price at the end of the interval (12 PM, 3rd Jan ←→ 12:30 PM, 3rd Jan). This is used to calculate in-range positions for this interval = 1190
 * Based on above price, the 30m tick range to consider = 1188-1200 (.....1176 - **1188 - 1200** - 1212.....)
 
 <figure><img src="../../../.gitbook/assets/APR Calculation-TVL.drawio (4).png" alt=""><figcaption><p>Position TVL</p></figcaption></figure>
 
-* TVL for active liquidity positions that supported the tick 1188-1200 at 12:30PM, 3rd Jan = USD9000 (aggregate TVL of position 1 + 2 + 3 below)
+* TVL for active liquidity positions that supported the tick 1188-1200 at 12PM, 3rd Jan = USD9000 (aggregate TVL of position 1 + 2 + 3 below)
 
 | Liquidity Position | Tick Range  | TVL (USD) | Included                              |
 | ------------------ | ----------- | --------- | ------------------------------------- |

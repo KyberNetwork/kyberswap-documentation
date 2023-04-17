@@ -59,7 +59,7 @@ Do note that KyberSwap Classic enables users to configure their pool according t
 
 As a safety precaution, KyberSwap Classic will prompt the LP if the specified pool price deviates significantly from the market price.This is because any liquidity additions that significantly deviates from the market price would immediately result in [impermanent loss](../../../getting-started/foundational-topics/decentralized-finance/impermanent-loss.md) as arbitrageurs sweep up the significantly discounted token from the position.
 
-![](<../../../.gitbook/assets/image (11) (1) (1).png>)
+![](<../../../.gitbook/assets/image (22) (1).png>)
 {% endhint %}
 
 ### Step 4: Select AMP value
@@ -113,7 +113,7 @@ You will need to confirm this transaction in your wallet
 
 <figure><img src="../../../.gitbook/assets/image (35).png" alt=""><figcaption><p>KyberSwap pending confirmation from wallet</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (6) (2).png" alt=""><figcaption><p>Metamask confirmation</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (6) (1).png" alt=""><figcaption><p>Metamask confirmation</p></figcaption></figure>
 
 Once you’ve confirmed the transaction you will see a screen informing you that the transaction has been submitted. You can click on “View Transaction” to view your transaction on the appropriate blockchain explorer.
 

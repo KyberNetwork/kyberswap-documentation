@@ -73,7 +73,7 @@ If this is the first time you are swapping this token on this network using this
 
 Click on the "Approve \[Token]" button to begin this process. Your wallet will prompt you to give your approval for the KyberSwap smart contract to transact using this token on this network. This is a one-time action and subsequent swaps involving this token will not require further approvals unless there is an update to the smart contract.
 
-<figure><img src="../../../.gitbook/assets/image (3) (4).png" alt=""><figcaption><p>Approve ERC20 tokens</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1).png" alt=""><figcaption><p>Approve ERC20 tokens</p></figcaption></figure>
 
 ### **Step 5**: Confirm the swap
 
@@ -157,7 +157,7 @@ Please refer to the [Price Impact](../../../getting-started/foundational-topics/
 
 Click the “Confirm Swap” button to proceed. You should see the Transaction Submitted screen appear. You can click on "View Transaction" to see your transaction on the blockchain explorer. Additionally, you can add the token to MetaMask if you haven't already done so.
 
-<figure><img src="../../../.gitbook/assets/image (5).png" alt=""><figcaption><p>Transaction broadcasted confirmation</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5) (3).png" alt=""><figcaption><p>Transaction broadcasted confirmation</p></figcaption></figure>
 
 You should also see the transaction appear in your account’s transaction history.
 
@@ -165,7 +165,7 @@ You should also see the transaction appear in your account’s transaction histo
 
 ## Customizing trade parameters
 
-<figure><img src="../../../.gitbook/assets/image (6).png" alt=""><figcaption><p>Advanced swap settings</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (6) (3).png" alt=""><figcaption><p>Advanced swap settings</p></figcaption></figure>
 
 The KyberSwap Interface also provides additional features for more advanced traders that allow customisation of the following trade parameters:
 
@@ -215,10 +215,10 @@ Tread carefully when turning on Degen Mode as [slippage](../../../getting-starte
 
 Degen Mode can be toggled on via the "[Advanced Settings](instantly-swap-at-the-best-rates.md#customizing-trade-parameters)" pop-up covered in the previous section.
 
-<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption><p>Degen Mode toggle</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption><p>Degen Mode toggle</p></figcaption></figure>
 
 Upon toggling the Degen Mode switch, you will be prompted to manually confirm the switch.
 
-<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption><p>Confirm Degen Mode</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (21).png" alt=""><figcaption><p>Confirm Degen Mode</p></figcaption></figure>
 
 As a safety precaution, Degen Mode will be auto-disabled after 30 minutes of being switched on.
