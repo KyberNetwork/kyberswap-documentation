@@ -161,7 +161,7 @@ Click the “Confirm Swap” button to proceed. You should see the Transaction S
 
 You should also see the transaction appear in your account’s transaction history.
 
-<figure><img src="../../../.gitbook/assets/Screenshot 2023-04-12 at 12.58.30 PM (1).png" alt=""><figcaption><p>Transaction history in the KyberSwap wallet UI</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Screenshot 2023-04-12 at 12.58.30 PM.png" alt=""><figcaption><p>Transaction history in the KyberSwap wallet UI</p></figcaption></figure>
 
 ## Customizing trade parameters
 

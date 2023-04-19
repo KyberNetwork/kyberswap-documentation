@@ -69,7 +69,7 @@ Click [**here**](https://docs.multichain.org/getting-started/introduction)[ ](ht
 
 The link to the bridge interface can be found within the "Swap" dropdown of the KyberSwap landing page. Alternatively, you can go directly to [https://kyberswap.com/bridge](https://kyberswap.com/bridge).
 
-<figure><img src="../../../.gitbook/assets/image (16) (1).png" alt=""><figcaption><p>Bridge navigation</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (16).png" alt=""><figcaption><p>Bridge navigation</p></figcaption></figure>
 
 ### **Step 2**: Select token and chains
 
