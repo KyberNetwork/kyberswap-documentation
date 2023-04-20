@@ -4,7 +4,7 @@ description: Sourcing The Most Capitally Efficient Liquidity For Your Trade
 
 # Instantly Swap At The Best Rates
 
-## Introduction
+Introduction
 
 KyberSwap allows you to swap tokens easily at the best rates by aggregating liquidity from different DEXs on the network. Through splitting and optimizing trade routes across various liquidity sources, KyberSwap is able to source the best rates for your swap.
 
@@ -65,15 +65,61 @@ Upon clicking the "Swap" button, KyberSwap Aggregator will attempt to secure the
 KyberSwap enables you to avoid any negative trade outcomes by setting a Max Slippage. Please refer to [Customizing trade parameters](instantly-swap-at-the-best-rates.md#customizing-trade-parameters) below for further details or [Slippage](../../../getting-started/foundational-topics/decentralized-finance/slippage.md) if you would like to understand the concept better.
 {% endhint %}
 
-### **Step 4**: Approve contract to swap tokens
+### **Step 4**: Approve or permit contract to swap tokens
 
-Approve KyberSwap to swap the tokens on your behalf. Proceed to [Step 5](instantly-swap-at-the-best-rates.md#step-5-confirm-the-swap) if token approval is not required.
+Approve or Permit KyberSwap to swap the tokens on your behalf. Proceed to Step 5 if token approval/permit is not required.
 
-If this is the first time you are swapping this token on this network using this wallet, the "Swap" button will be greyed out. You will first need to approve the KyberSwap smart contract to spend your tokens before proceeding with the swap.
+If this is the first time you are swapping this token on this network using this wallet, the "Swap" button will be greyed out. You will first need to approve/permit the KyberSwap smart contract to spend your tokens before proceeding with the swap.
 
-Click on the "Approve \[Token]" button to begin this process. Your wallet will prompt you to give your approval for the KyberSwap smart contract to transact using this token on this network. This is a one-time action and subsequent swaps involving this token will not require further approvals unless there is an update to the smart contract.
+In the pursuit of greater gas savings for our users, KyberSwap has implemented a permit option for tokens which follow the [ERC-2612](https://eips.ethereum.org/EIPS/eip-2612) standard. In contrast to the basic [ERC20](../../../getting-started/foundational-topics/decentralized-finance/tokens.md#token-standards) token implementation, ERC-2612 enables gasless approvals of smart contract allowances with just a signed message. In other words, approving a token via "Permit" does not require any gas and achieves the same effect as the ERC20 "Approve". If you see a "Permit" button, it means your token is eligible for gasless approvals!
 
-<figure><img src="../../../.gitbook/assets/image (3) (1).png" alt=""><figcaption><p>Approve ERC20 tokens</p></figcaption></figure>
+{% hint style="info" %}
+#### Permitable tokens
+
+Please refer to [Permitable Tokens](../../../reference/permitable-tokens.md) for the full list of tokens which have implemented the ERC-2612 standard.
+{% endhint %}
+
+{% tabs %}
+{% tab title="Permit" %}
+Click on the "Permit \[Token]" button to allow KyberSwap to swap the tokens on your behalf.
+
+<figure><img src="../../../.gitbook/assets/Screenshot 2023-04-17 at 10.23.57 AM.png" alt=""><figcaption><p>Permit EIP-2612 compatible tokens</p></figcaption></figure>
+
+To ensure the safety of your tokens, users will be prompted to sign the transaction for the exact amount in their wallet UI. By signing the permit request, this ensures that KyberSwap is only able to swap the exact number of tokens from your wallet. As long as the accumulated tokens for current or future swaps exceeds this limit, another permit process will be required.
+
+Upon signing the permit, you will then be able to proceed with the swap.
+
+<figure><img src="../../../.gitbook/assets/Screenshot 2023-04-17 at 10.27.45 AM.png" alt=""><figcaption><p>Note the value in the signature request matches the swap amount</p></figcaption></figure>
+
+{% hint style="info" %}
+#### A note on permits
+
+By permitting the swap, you are authorizing KyberSwap to swap the exact amount of tokens specified in the trade for the next 24 hours. This 24 hour deadline is implemented as a safety mechanism to ensure that the permit expires in case a corresponding swap order was not submitted or in the highly improbable event that an order was not filled. A new permit will be required upon the expiration of the current permit.&#x20;
+
+Note that the granting of a permit and the confirmation of a swap ([step 5](instantly-swap-at-the-best-rates.md#step-5-confirm-the-swap)) are separate transactions whereby the latter is unable to proceed without the completion of the former. More importantly, as opposed to permits, swaps will always require gas to be paid as token transfers have to be confirmed by the network. As such, in the case whereby a swap remains in a pending state, it is possible to cancel the swap transaction in your wallet while the permit remains valid until expiry. If a future swap requires more tokens than an existing permit, the user will be requested to sign a new permit.
+{% endhint %}
+{% endtab %}
+
+{% tab title="Approve" %}
+Click on the "Approve \[Token]" button to allow KyberSwap to swap the tokens on your behalf.
+
+<figure><img src="../../../.gitbook/assets/Screenshot 2023-03-24 at 3.27.03 PM.png" alt=""><figcaption><p>Approve token</p></figcaption></figure>
+
+To ensure the safety of your tokens, KyberSwap will also prompt you to select an allowance limit for the token being approved. By setting an allowance limit, this ensures that KyberSwap is only able to swap the specified number of tokens from your wallet. As long as the accumulated tokens for current or future swaps exceeds this limit, another approve process will be required. You can either set a custom allowance limit or opt for an infinite limit.
+
+Hovering your mouse above the options will also bring up the helpers for your convenience.&#x20;
+
+<figure><img src="../../../.gitbook/assets/image (85).png" alt=""><figcaption><p>Infinite allowance helper</p></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/image (25) (2).png" alt=""><figcaption><p>Custom allowance helper</p></figcaption></figure>
+
+Note that setting a custom allowance limit via the KyberSwap UI will be available for all wallets except for MetaMask and Trust Wallet. For these, users will be prompted to set the allowance limit directly in their wallet UI. This avoids any tx failures caused by amount mismatch.
+
+<figure><img src="../../../.gitbook/assets/Allowance Limit Metamask.png" alt=""><figcaption><p>Set allowance limit in MetaMask</p></figcaption></figure>
+
+Upon confirming an allowance limit, your wallet will then prompt you to sign the transaction request with the relevant gas fees.
+{% endtab %}
+{% endtabs %}
 
 ### **Step 5**: Confirm the swap
 
@@ -161,11 +207,11 @@ Click the “Confirm Swap” button to proceed. You should see the Transaction S
 
 You should also see the transaction appear in your account’s transaction history.
 
-<figure><img src="../../../.gitbook/assets/Screenshot 2023-04-12 at 12.58.30 PM.png" alt=""><figcaption><p>Transaction history in the KyberSwap wallet UI</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Screenshot 2023-04-12 at 12.58.30 PM (1).png" alt=""><figcaption><p>Transaction history in the KyberSwap wallet UI</p></figcaption></figure>
 
 ## Customizing trade parameters
 
-<figure><img src="../../../.gitbook/assets/image (6) (3).png" alt=""><figcaption><p>Advanced swap settings</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (6) (1).png" alt=""><figcaption><p>Advanced swap settings</p></figcaption></figure>
 
 The KyberSwap Interface also provides additional features for more advanced traders that allow customisation of the following trade parameters:
 
@@ -215,10 +261,10 @@ Tread carefully when turning on Degen Mode as [slippage](../../../getting-starte
 
 Degen Mode can be toggled on via the "[Advanced Settings](instantly-swap-at-the-best-rates.md#customizing-trade-parameters)" pop-up covered in the previous section.
 
-<figure><img src="../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption><p>Degen Mode toggle</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (6).png" alt=""><figcaption><p>Degen Mode toggle</p></figcaption></figure>
 
 Upon toggling the Degen Mode switch, you will be prompted to manually confirm the switch.
 
-<figure><img src="../../../.gitbook/assets/image (21).png" alt=""><figcaption><p>Confirm Degen Mode</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (30).png" alt=""><figcaption><p>Confirm Degen Mode</p></figcaption></figure>
 
 As a safety precaution, Degen Mode will be auto-disabled after 30 minutes of being switched on.

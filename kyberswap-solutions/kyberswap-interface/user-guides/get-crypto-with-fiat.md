@@ -76,7 +76,7 @@ The link to the buy crypto interface can be found within the "Swap" dropdown of 
 
 Follow the instructions on the screen where you will be prompted to connect your wallet if you have yet to connect a wallet to KyberSwap. If you already have a connected wallet, your connected wallet address will be displayed on-screen as per the second image below.
 
-<figure><img src="../../../.gitbook/assets/image (31).png" alt=""><figcaption><p>Connect your crypto wallet</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (31) (1).png" alt=""><figcaption><p>Connect your crypto wallet</p></figcaption></figure>
 
 Clicking the "Connect your wallet" button should bring up the connect wallet pop-up similar to the one in the [Connect Your Wallet](connect-your-wallet.md) guide. Once you have connected wallet, your wallet address will be displayed on-screen.
 
@@ -88,7 +88,7 @@ Upon selecting the "Buy Crypto" button, a Transak order pop-up will be displayed
 
 Additionally, you are also provided the option to select your preferred payment method.
 
-<figure><img src="../../../.gitbook/assets/image (30).png" alt=""><figcaption><p>Select preferred currency</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (30) (1).png" alt=""><figcaption><p>Select preferred currency</p></figcaption></figure>
 
 ### Step 4: Select a cryptocurrency and chain
 
@@ -116,7 +116,7 @@ You will then be prompted to enter personally identifiable information (personal
 
 Do note that as this transaction involves transaction in fiat, **KYC is required for the transaction to be processed by Transak**. **The handling of KYC is exclusively performed by Transak, and KyberSwap does not retain any KYC information.**
 
-<figure><img src="../../../.gitbook/assets/image (39) (1).png" alt=""><figcaption><p>Fill in your details</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (39).png" alt=""><figcaption><p>Fill in your details</p></figcaption></figure>
 
 If this is your first time using Transak, there might be some processing time required for the KYC process.
 
@@ -128,7 +128,7 @@ You will be notified once the KYC process is completed.
 
 Upon receiving the verification success email, an "Order Now" button will then be made available to you.
 
-<figure><img src="../../../.gitbook/assets/image (28) (1).png" alt=""><figcaption><p>Account details</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (28) (2).png" alt=""><figcaption><p>Account details</p></figcaption></figure>
 
 ### Step 8: Enter payment details
 

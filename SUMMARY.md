@@ -232,6 +232,7 @@
       * [OrderbookReserveInterface](reference/legacy/api-abi/misc-contracts/orderbookreserveinterface.md)
       * [OrderbookReserveLister](reference/legacy/api-abi/misc-contracts/orderbookreservelister.md)
 * [Audits](reference/audits.md)
+* [Permitable Tokens](reference/permitable-tokens.md)
 * [Third-Party Integrations](reference/third-party-integrations.md)
 * [KyberSwap Dapp](https://kyberswap.com/)
 * [GitHub](https://github.com/KyberNetwork)
