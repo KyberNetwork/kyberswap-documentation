@@ -56,9 +56,9 @@ As an open and permissionless protocol, KyberSwap Elastic allows any ERC20 token
 
 This is due to a small portion of the provided liquidity being allocated to meet the minimum liquidity requirements when creating a new [reinvestment curve](../concepts/reinvestment-curve.md). While care has been taken when designing this anti-spam mechanism to suit the vast majority of tokens, token teams are still free to define their own tokens. Please refer to [Pool Initialization](../concepts/pool-process-flows.md#pool-unlocking--initialization) for further details.
 
-<figure><img src="../../../.gitbook/assets/image (10) (1).png" alt=""><figcaption><p>Select token pair</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (10).png" alt=""><figcaption><p>Select token pair</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (1) (2).png" alt=""><figcaption><p>Token pair selected</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (6).png" alt=""><figcaption><p>Token pair selected</p></figcaption></figure>
 
 Notice that upon selecting the token pair, the current market price is also displayed for reference. Additionally, when creating a new pool, a small amount of liquidity will be needed to seed the pool's liquidity in order to [prevent spam](../concepts/pool-process-flows.md#pool-unlocking--initialization).
 
@@ -101,14 +101,14 @@ Selecting a fee tier with existing liquidity will result in your position being 
 
 Upon selecting a new fee tier, you will then need to specify the starting price for the pool. For reference, the current market price of the token pair selected is also displayed. The starting price will determine the specific [price curve](../../../getting-started/foundational-topics/decentralized-finance/automated-market-maker.md#price-curves) that is implemented for the pool.
 
-<figure><img src="../../../.gitbook/assets/image (28) (1).png" alt=""><figcaption><p>Set starting price</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (28).png" alt=""><figcaption><p>Set starting price</p></figcaption></figure>
 
 {% hint style="danger" %}
 #### Price deviations
 
 As a safety precaution, KyberSwap Elastic will prompt the LP if the specified pool price deviates significantly from the market price.This is because any liquidity additions that significantly deviates from the market price would immediately result in [impermanent loss](../../../getting-started/foundational-topics/decentralized-finance/impermanent-loss.md) as arbitrageurs sweep up the significantly discounted token from the position.
 
-![](<../../../.gitbook/assets/image (7).png>)
+![](<../../../.gitbook/assets/image (35).png>)
 {% endhint %}
 
 ### **Step 5**: Set price range
@@ -117,7 +117,7 @@ This is the range at which your capital will be used in the pool. If the market 
 
 You can set your price range either by typing in the prices manually or ussing the +/- buttons. For new pools, as there is no existing liquidity, no liquidity data will be shown.
 
-<figure><img src="../../../.gitbook/assets/image (27).png" alt=""><figcaption><p>Select price range</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (27) (1).png" alt=""><figcaption><p>Select price range</p></figcaption></figure>
 
 For convenience, KyberSwap also provides you the option to choose from a list of preset ranges which correspond to different DeFi familiarity and risk profiles. The section below provides some guidance on the percentage-based options matched to the token pair correlation which is calculated by KyberSwap.
 
@@ -177,7 +177,7 @@ Specify the deposit amounts, or how much liquidity you would like to add to open
 
 Note: The proportion of liquidity deposited for each leg of the pair is determined by your price range, so it is helpful to set the price range before specifying your deposit amounts.
 
-<figure><img src="../../../.gitbook/assets/image (5).png" alt=""><figcaption><p>Specify deposit amount</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5) (2).png" alt=""><figcaption><p>Specify deposit amount</p></figcaption></figure>
 
 ### **Step 6**: Authorize contract
 
@@ -191,11 +191,11 @@ Once the approval is confirmed, the previously-greyed-out “Preview” button w
 
 Click on the “Preview” button to bring up the preview screen. Once you have reviewed the information on this screen, click on the “Supply” button to proceed.
 
-<figure><img src="../../../.gitbook/assets/image (17) (1).png" alt=""><figcaption><p>Add liquidity preview for confirmation</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (17).png" alt=""><figcaption><p>Add liquidity preview for confirmation</p></figcaption></figure>
 
 You will need to confirm this transaction in your wallet.
 
-<figure><img src="../../../.gitbook/assets/image (13) (1).png" alt=""><figcaption><p>Add liquidity confirmation</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (13) (2).png" alt=""><figcaption><p>Add liquidity confirmation</p></figcaption></figure>
 
 Once you’ve confirmed the transaction you will see a screen informing you that the transaction has been submitted. You can click on “View Transaction” to view your transaction on the appropriate blockchain explorer.
 

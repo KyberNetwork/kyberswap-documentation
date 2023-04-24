@@ -1,10 +1,20 @@
 ---
-description: Understanding Your Elastic APR
+description: Understanding KyberSwap Elastic APRs
 ---
 
-# Elastic Pool APR Calculations
+# Elastic APR Calculations
 
-## Annual Percentage Rate (APR) calculation[​](https://docs.kyberswap.com/overview/elastic-pool-apr-calculation#annual-percentage-rate-apr-calculation) <a href="#annual-percentage-rate-apr-calculation" id="annual-percentage-rate-apr-calculation"></a>
+{% hint style="info" %}
+#### KyberSwap APRs
+
+As each liquidity position in Elastic is non-fungible, different formulas are required in order to provide users with a best estimate of the expected returns. To this end, KyberSwap computes the following APRs for Elastic LPs:
+
+* [**Elastic Pool APR**](apr-calculations.md#annual-percentage-rate-apr-calculation): The APR for the pool. Calculated by sampling the fees over the active liquidity range every 30 minutes for the last 24 hours and extrapolates to an annual basis.
+* [**My Pool APR**](apr-calculations.md#my-pool-apr-calculation): The APR for a specific position within a pool. My Pool APR is calculated by extrapolating the total fees earned since the position was created over the period of a year.
+* [**My Farm APR**](apr-calculations.md#my-farm-apr-calculation): The APR for all positions within a specific farm. My Farm APR is calculated by dividing the 24H farm rewards over the USD value of the position and extrapolating it over a period of a year.
+{% endhint %}
+
+## Elastic Pool Annual Percentage Rate (APR) calculation[​](https://docs.kyberswap.com/overview/elastic-pool-apr-calculation#annual-percentage-rate-apr-calculation) <a href="#annual-percentage-rate-apr-calculation" id="annual-percentage-rate-apr-calculation"></a>
 
 To demonstrate the practicality of the [reinvestment curve design](https://docs.kyberswap.com/overview/elastic-walkthrough), KyberSwap also displays an average APR for each Elastic pool. In order to provide a more accurate estimate of potential APR, the average APR calculation will have to prioritize active liquidity positions which were accumulating fees during a selected time interval. As such, APR calculations are based on the historical data for the selected pool. KyberSwap Elastic APR calculations are based on 30 minute intervals whereby the return per interval is:
 
@@ -35,7 +45,7 @@ To account for market volatility which could result in significant changes to th
 By sampling 48 times throughout a day, the APR displayed better approximates the expected APR for the pool as intraday variances are smoothened out.
 {% endhint %}
 
-### Example APR calculation[​](https://docs.kyberswap.com/overview/elastic-pool-apr-calculation#example-apr-calculation) <a href="#example-apr-calculation" id="example-apr-calculation"></a>
+### Example Elastic pool APR calculation[​](https://docs.kyberswap.com/overview/elastic-pool-apr-calculation#example-apr-calculation) <a href="#example-apr-calculation" id="example-apr-calculation"></a>
 
 #### Scenario[​](https://docs.kyberswap.com/overview/elastic-pool-apr-calculation#scenario) <a href="#scenario" id="scenario"></a>
 
@@ -63,11 +73,63 @@ To calculate the return for the earliest time interval (10:00 AM, 3rd Jan ←→
 
 | Liquidity Position | Tick Range  | TVL (USD) | Included                              |
 | ------------------ | ----------- | --------- | ------------------------------------- |
-| 1                  | 1100 - 1200 | 1000      | <mark style="color:green;">Yes</mark> |
-| 2                  | 1152 - 1212 | 500       | <mark style="color:green;">Yes</mark> |
-| 3                  | 1188 - 1236 | 250       | <mark style="color:green;">Yes</mark> |
-| 4                  | 1100 - 1188 | 500       | <mark style="color:red;">No</mark>    |
+| 1                  | 1128 - 1200 | 1000      | <mark style="color:green;">Yes</mark> |
+| 2                  | 1164 - 1236 | 3000      | <mark style="color:green;">Yes</mark> |
+| 3                  | 1178 - 1212 | 5000      | <mark style="color:green;">Yes</mark> |
+| 4                  | 1212 - 1272 | 2000      | <mark style="color:red;">No</mark>    |
 
 * Return for the interval (12:00 PM, 3rd Jan ←→ 12:30 PM, 3rd Jan) = (2000/9000) \* 100% = 0.00222%
 
 The above calculation is repeated for each of the 48 intervals with the total returns for the day being the sum of all 48 intervals. This is then multiplied by 365 days to get the final estimated APR. For simplicity, assuming all 48 intervals have the exact same fees and TVL, the APR would be 38.93% (0.00222% \* 48 \* 365 ).
+
+## My Pool APR calculation
+
+As each Elastic position supports [specific liquidity ranges](concentrated-liquidity.md), the APR of a position varies greatly depending on whether the position is in-range (i.e. supporting the currently active trading price)  or out-of-range (i.e. outside the active trading price). Trading fees are only distributed to positions which have supported the trade and hence the My Pool APR calculations have to consider the customized liquidity range that was selected by the user.
+
+To account for the unique price ranges for each position, the My Pool APR calculation aggregates the trading fees that was earned by the position since its creation and extrapolates it over 365 days. In doing so, KyberSwap is able to provide a more accurate My Pool APR as the historical fees generated by that position already comprises the status of the position (i.e. in-range or out-of-range). As a result, the My Pool APR tends to smoothen out over a longer time period as variances caused by short-term market fluctuations will be distributed more evenly.
+
+### Example My Pool APR calculation
+
+#### Scenario
+
+A user opens a new position in the `ETH - USDT (1% fee tier)` Elastic Pool with a dollar value of USD1000. Over the course of 30 days, the `ETH` price swings significantly and his position constantly goes in and out of range. After 30 days, the position accumulates USD50 in fees.
+
+#### Calculation
+
+To calculate the My Pool APR, we assume that the position will continue to earn fees at a similar rate to the last 30 days. As such, extrapolating this to 365 days, the position is expected to earn \~USD608.33 (50/30 \* 365) over the course of the year.
+
+To get the My Pool APR, we take the expected annual earnings and divide it by the position's value:
+
+$$
+MyPoolAPR = \frac{EstimatedAnnualEarnings}{PositionCurrentValue}* 100\%
+$$
+
+$$
+MyPoolAPR = \frac{608.33}{1000}*100\%=60.83\%
+$$
+
+## My Farm APR calculation
+
+In a similar fashion to the My Pool APR, the My Farm APR can be obtained by extrapolating the rewards received by a staked position over the period of a year. Farming rewards are only distributed to positions which have supported the trade and hence the My Pool APR calculations have to consider the customized liquidity range that was selected by the user.
+
+To account for the unique price ranges for each position, the My Farm APR calculation aggregates the rewards that was earned by the position over the last 24 hours and extrapolates it over 365 days. In doing so, KyberSwap is able to provide a more accurate My Farm APR as the historical rewards earned by that position already comprises the status of the position (i.e. is it in-range or out-of-range).&#x20;
+
+In the case of My Farm APR, the rewards streamed per day is constant and known at the time of farm setup. As such, the My Farm APR will be determined by the amount of time that a staked position is in range as well as the current value of the position.
+
+$$
+MyFarmAPR=\frac{MyFarmRewards_{24H}}{CurrentValue_{position}}*365days*100\%
+$$
+
+In this case, the value of the rewards allocated to the user is compared against the value of the underlying position. This allows stakers to estimate their farming returns based on the liquidity that their stake has contributed to supporting the farm's active ranges.
+
+### Example My Farm APR calculation
+
+As an example, to calculate the farm APR for a staked position, we first get the total rewards that the position accrues in a day. For simplicity, assume that our sample position of USD10,000 accrues 10USD a day, we will get the following APR:
+
+$$
+MyFarmAPR=\frac{MyFarmRewards_{24H}}{CurrentValue_{position}}*365days*100\%
+$$
+
+$$
+MyFarmAPR=\frac{10}{10,000}*365*100\%=36.5\%
+$$

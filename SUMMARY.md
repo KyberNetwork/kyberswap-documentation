@@ -108,7 +108,7 @@
     * [Pool Process Flows](liquidity-solutions/kyberswap-elastic/concepts/pool-process-flows.md)
     * [Anti-Sniping Mechanism](liquidity-solutions/kyberswap-elastic/concepts/anti-sniping-mechanism.md)
     * [Tick-Based Farming](liquidity-solutions/kyberswap-elastic/concepts/tick-based-farming.md)
-    * [Elastic Pool APR Calculations](liquidity-solutions/kyberswap-elastic/concepts/apr-calculations.md)
+    * [Elastic APR Calculations](liquidity-solutions/kyberswap-elastic/concepts/apr-calculations.md)
   * [User Guides](liquidity-solutions/kyberswap-elastic/user-guides/README.md)
     * [Elastic Pool Creation](liquidity-solutions/kyberswap-elastic/user-guides/elastic-pool-creation.md)
     * [Add Liquidity To An Existing Elastic Pool](liquidity-solutions/kyberswap-elastic/user-guides/add-liquidity-to-an-existing-elastic-pool.md)

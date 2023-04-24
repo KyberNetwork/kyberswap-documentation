@@ -180,7 +180,7 @@ This is because the pool APR estimate (i.e. the APR due to LP fees) for the enti
 
 The pool APR estimate shown specific to your position takes the price range that you set into account, so while it does seem much lower than the pool's total average APR estimate, it is also likely to be more in line with reality as your position is likely to remain in range for longer.
 
-Please refer to [Elastic Pool APR Calculations](concepts/apr-calculations.md) for the exact logic and formula behind APR calculations.
+Please refer to [Elastic APR Calculations](concepts/apr-calculations.md) for the exact logic and formula behind the various APR calculations.
 
 </details>
 
