@@ -4,7 +4,7 @@ description: Sourcing The Most Capitally Efficient Liquidity For Your Trade
 
 # Instantly Swap At The Best Rates
 
-Introduction
+## Introduction
 
 KyberSwap allows you to swap tokens easily at the best rates by aggregating liquidity from different DEXs on the network. Through splitting and optimizing trade routes across various liquidity sources, KyberSwap is able to source the best rates for your swap.
 
