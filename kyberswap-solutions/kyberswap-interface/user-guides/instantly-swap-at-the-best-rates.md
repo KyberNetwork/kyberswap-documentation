@@ -83,13 +83,13 @@ Please refer to [Permitable Tokens](../../../reference/permitable-tokens.md) for
 {% tab title="Permit" %}
 Click on the "Permit \[Token]" button to allow KyberSwap to swap the tokens on your behalf.
 
-<figure><img src="../../../.gitbook/assets/Screenshot 2023-04-17 at 10.23.57 AM.png" alt=""><figcaption><p>Permit EIP-2612 compatible tokens</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Permit ERC2612 token.png" alt=""><figcaption><p>Permit EIP-2612 compatible tokens</p></figcaption></figure>
 
 To ensure the safety of your tokens, users will be prompted to sign the transaction for the exact amount in their wallet UI. By signing the permit request, this ensures that KyberSwap is only able to swap the exact number of tokens from your wallet. As long as the accumulated tokens for current or future swaps exceeds this limit, another permit process will be required.
 
 Upon signing the permit, you will then be able to proceed with the swap.
 
-<figure><img src="../../../.gitbook/assets/Screenshot 2023-04-17 at 10.27.45 AM.png" alt=""><figcaption><p>Note the value in the signature request matches the swap amount</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Permit signature exact value.png" alt=""><figcaption><p>Note the value in the signature request matches the swap amount</p></figcaption></figure>
 
 {% hint style="info" %}
 #### A note on permits
