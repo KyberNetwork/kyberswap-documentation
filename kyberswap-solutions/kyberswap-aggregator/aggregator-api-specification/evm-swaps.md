@@ -6,7 +6,7 @@ description: KyberSwap Aggregator EVM APIs
 
 ## Download OpenAPI specification:
 
-{% file src="../../../.gitbook/assets/Kyber-Swap-Aggregator-APIs (1).yaml" %}
+{% file src="../../../.gitbook/assets/Kyber-Swap-Aggregator-APIs (3).yaml" %}
 
 {% hint style="success" %}
 #### Note on integrations: clientID
@@ -23,14 +23,14 @@ In order to continuously improve the KyberSwap Aggregator, our APIs implement a 
 
 ## EVM swap APIs
 
-{% swagger src="../../../.gitbook/assets/Kyber-Swap-Aggregator-APIs (14).yaml" path="/{chain}/route/encode" method="get" %}
-[Kyber-Swap-Aggregator-APIs (14).yaml](<../../../.gitbook/assets/Kyber-Swap-Aggregator-APIs (14).yaml>)
+{% swagger src="../../../.gitbook/assets/Kyber-Swap-Aggregator-APIs (3).yaml" path="/{chain}/route/encode" method="get" %}
+[Kyber-Swap-Aggregator-APIs (3).yaml](<../../../.gitbook/assets/Kyber-Swap-Aggregator-APIs (3).yaml>)
 {% endswagger %}
 
-{% swagger src="../../../.gitbook/assets/Kyber-Swap-Aggregator-APIs (14).yaml" path="/{chain}/api/v1/routes" method="get" %}
-[Kyber-Swap-Aggregator-APIs (14).yaml](<../../../.gitbook/assets/Kyber-Swap-Aggregator-APIs (14).yaml>)
+{% swagger src="../../../.gitbook/assets/Kyber-Swap-Aggregator-APIs (3).yaml" path="/{chain}/api/v1/routes" method="get" %}
+[Kyber-Swap-Aggregator-APIs (3).yaml](<../../../.gitbook/assets/Kyber-Swap-Aggregator-APIs (3).yaml>)
 {% endswagger %}
 
-{% swagger src="../../../.gitbook/assets/Kyber-Swap-Aggregator-APIs (1).yaml" path="/{chain}/api/v1/route/build" method="post" %}
-[Kyber-Swap-Aggregator-APIs (1).yaml](<../../../.gitbook/assets/Kyber-Swap-Aggregator-APIs (1).yaml>)
+{% swagger src="../../../.gitbook/assets/Kyber-Swap-Aggregator-APIs (3).yaml" path="/{chain}/api/v1/route/build" method="post" %}
+[Kyber-Swap-Aggregator-APIs (3).yaml](<../../../.gitbook/assets/Kyber-Swap-Aggregator-APIs (3).yaml>)
 {% endswagger %}
