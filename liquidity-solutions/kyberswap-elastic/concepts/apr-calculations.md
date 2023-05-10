@@ -1,5 +1,5 @@
 ---
-description: Understanding KyberSwap Elastic APRs
+description: Understanding Your Elastic APR
 ---
 
 # Elastic APR Calculations
@@ -108,6 +108,18 @@ $$
 MyPoolAPR = \frac{608.33}{1000}*100\%=60.83\%
 $$
 
+## Elastic farm calculation
+
+As Elastic farm rewards are based on the [active time of liquidity](tick-based-farming.md#farming-mechanisms), the expected APR will be directly proportional to the amount of time which the user's underlying liquidity goes into supporting the active price. Given that this is highly dependent on the position's range which the LP has set relative to the market price, the estimated APRs for Elastic farm are computed using the TVL of the underlying pool (both in and out of range positions). As such, **the Elastic farm APRs displayed are the minimum returns that a staker can expect to receive by participating in the pool.**&#x20;
+
+As long as the staked position supports the active price range, returns will always exceed the stated Elastic farm APRs. The more [concentrated](concentrated-liquidity.md) the liquidity supporting the market price, the more rewards distributed to the position. Note that positions outside the active range are not eligible for farming rewards. The Elastic farm APR formula below simplifies the APR calculations so as not to add on the complexity of dynamically accounting for market movements as well as customized liquidity ranges which can go in and out of range.
+
+$$
+FarmAPR=\frac{TotalFarmRewards}{TVL_{underlyingPool}}*\frac{365 \text{ days}}{Time_{totalFarm}}*100\%
+$$
+
+Note that the total farm rewards are spread across the full TVL of the underlying pool. Consequently, any position that is staked and supporting the active price will receive a higher APR due to the fact that the position's liquidity will be more concentrated than the pool's min and max range.
+
 ## My Farm APR calculation
 
 In a similar fashion to the My Pool APR, the My Farm APR can be obtained by extrapolating the rewards received by a staked position over the period of a year. Farming rewards are only distributed to positions which have supported the trade and hence the My Pool APR calculations have to consider the customized liquidity range that was selected by the user.
@@ -132,4 +144,38 @@ $$
 
 $$
 MyFarmAPR=\frac{10}{10,000}*365*100\%=36.5\%
+$$
+
+## My Farm APR calculation
+
+In a similar fashion to the My Pool APR, the My Farm APR can be obtained by extrapolating the rewards received by a staked position over the period of a year. Farming rewards are only distributed to positions which have supported the trade and hence the My Pool APR calculations have to consider the customized liquidity range that was selected by the user.
+
+To account for the unique price ranges for each position, the My Farm APR calculation aggregates the rewards that was earned by the position over the last 24 hours and extrapolates it over 365 days. In doing so, KyberSwap is able to provide a more accurate My Farm APR as the historical rewards earned by that position already comprises the status of the position (i.e. is it in-range or out-of-range).&#x20;
+
+In the case of My Farm APR, the rewards streamed per day is constant and known at the time of farm setup. As such, the My Farm APR will be determined by the amount of time that a staked position is in range as well as the current value of the position.
+
+
+
+$$
+MyFarmRewards_{24H}=\frac{UserInRangeStakedTVL_{24H}}{FarmInRangeStakedTVL_{24H}}*FarmRewards_{24H}
+$$
+
+The expected My Farm APR can then be extrapolated based on the daily rewards allocated to the staked position:
+
+$$
+MyFarmAPR=\frac{MyFarmRewards_{24H}}{CurrentValue_{position}}*365days*100\%
+$$
+
+In this case, the value of the rewards allocated to the user is compared against the value of the underlying position. This allows stakers to estimate their farming returns based on the liquidity that their stake has contributed to the supporting the farm's active ranges.
+
+### Example My Farm APR calculation
+
+As an example, to calculate the farm APR for a staked position, we first get the total rewards that the position accrues in a day. For simplicity, assume that our sample position of USD10,000 accrues 10USD a day, we will get the following APR:
+
+$$
+MyFarmAPR=\frac{MyFarmRewards_{24H}}{CurrentValue_{position}}*365days*100\%
+$$
+
+$$
+MyFarmAPR=\frac{10*365}{10,000}*100\%=36.5\%
 $$

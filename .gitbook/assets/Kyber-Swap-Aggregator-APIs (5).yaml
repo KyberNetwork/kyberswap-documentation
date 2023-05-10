@@ -212,27 +212,12 @@ paths:
           required: true
         - schema:
             type: string
-          in: query
-          name: includedSources
-          description: Name of DEXs included in the route, separated by comma
-        - schema:
-            type: string
-          in: query
-          name: excludedSources
-          description: Name of DEXs excluded from the route, separated by comma
-        - schema:
-            type: string
             enum:
               - '0'
               - '1'
           in: query
           name: saveGas
           description: '0 = maximize return, 1 = no splitting'
-        - schema:
-            type: boolean
-          in: query
-          name: gasInclude
-          description: Determines whether gas is included when searching for route       
         - schema:
             type: string
           in: query
@@ -338,8 +323,8 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/SwapEncodeSuccess'
-              example:
-                $ref: '#/components/examples/SampleResponseSwapEncodedV2'  
+                example:
+                  $ref: '#/components/examples/SampleResponseSwapEncodedV2'  
 
 
 
@@ -384,7 +369,6 @@ components:
           description: The encoded data to be sent to our router address
         routerAddress:
           type: string
-          description: The KyberSwap router address
 
     SwapSequence:
       type: object
@@ -467,7 +451,7 @@ components:
                   description: Estimated gas required for swap
                 gasPrice:
                   type: string
-                  description: Estimated price of gas required for swap, in wei units
+                  description: Estimated price of gas required for swap
                 gasUsd:
                   type: string
                   description: Estimated USD price of gas required for swap
@@ -493,45 +477,39 @@ components:
                       type: string
                       description: Address which the fees will be sent to
                 route:
-                  type: array
-                  description: Array of swap routes
-                  items:
-                    type: array
-                    items:
-                      properties:
-                        pool:
-                          type: string
-                          description: Address of the pool which the swap has been routed to
-                        tokenIn:
-                          type: string
-                          description: The input token address for this pool
-                        tokenOut:
-                          type: string
-                          description: The output token address for this pool                  
-                        limitReturnAmount:
-                          type: string
-                          description: Maximum for amount of output token returned. Set to zero as using minReturnAmount instead                  
-                        swapAmount:
-                          type: string
-                          description: The amount of input token to be swapped through this pool, in wei
-                        amountOut:
-                          type: string
-                          description: The amount of output token received through swapping through this pool, in wei
-                        exchange:
-                          type: string
-                          description: The exchange where the pool originated from
-                        poolLength:
-                          type: integer
-                          description: Number of tokens in the pool
-                        poolType:
-                          type: string
-                          description: The pool type as defined by our internal aggregator
-                        extra:
-                          type: string
-                          description: Additional pool metadata
-            routerAddress:
-              type: string
-              description: The KyberSwap router address
+                  type: object
+                  description: Array of swap routes 
+                  properties:
+                    pool:
+                      type: string
+                      description: Address of the pool which the swap has been routed to
+                    tokenIn:
+                      type: string
+                      description: The input token address for this pool
+                    tokenOut:
+                      type: string
+                      description: The output token address for this pool                  
+                    limitReturnAmount:
+                      type: string
+                      description: Maximum for amount of output token returned. Set to zero as using minReturnAmount instead                  
+                    swapAmount:
+                      type: string
+                      description: The amount of input token to be swapped through this pool, in wei
+                    amountOut:
+                      type: string
+                      description: The amount of output token received through swapping through this pool, in wei
+                    exchange:
+                      type: string
+                      description: The exchange where the pool originated from
+                    poolLength:
+                      type: string
+                      description: Number of tokens in the pool
+                    poolType:
+                      type: string
+                      description: The pool type as defined by our internal aggregator
+                    extra:
+                      type: string
+                      description: Additional pool metadata
 
     SwapEncode:
       type: object
@@ -585,7 +563,7 @@ components:
               description: Estimated gas required for swap
             gasPrice:
               type: string
-              description: Estimated price of gas required for swap, in wei units
+              description: Estimated price of gas required for swap
             gasUsd:
               type: string
               description: Estimated USD price of gas required for swap
@@ -616,55 +594,51 @@ components:
                   type: string
                   description: Address which the fees will be sent to
             route:
-              type: array
+              type: object
               description: Array of swap routes 
-              items:
-                type: array
-                items:
-                  type: object
-                  required:
-                  - pool
-                  - tokenIn
-                  - tokenOut
-                  - limitReturnAmount
-                  - swapAmount
-                  - amountOut
-                  - exchange
-                  - poolLength
-                  - poolType
-                  - extra
-                  properties:
-                    pool:
-                      type: string
-                      description: Address of the pool which the swap has been routed to
-                    tokenIn:
-                      type: string
-                      description: The input token address for this pool
-                    tokenOut:
-                      type: string
-                      description: The output token address for this pool                  
-                    limitReturnAmount:
-                      type: string
-                      description: Maximum for amount of output token returned. Set to zero as using minReturnAmount instead                
-                    swapAmount:
-                      type: string
-                      description: The amount of input token to be swapped through this pool, in wei
-                    amountOut:
-                      type: string
-                      description: The amount of output token received through swapping through this pool, in wei
-                    exchange:
-                      type: string
-                      description: The exchange where the pool originated from
-                    poolLength:
-                      type: integer
-                      description: Number of tokens in the pool
-                    poolType:
-                      type: string
-                      description: The pool type as defined by our internal aggregator
-                    extra:
-                      type: string
-                      description: Additional pool metadata
-      recipient:
+              required:
+                - pool
+                - tokenIn
+                - tokenOut
+                - limitReturnAmount
+                - swapAmount
+                - amountOut
+                - exchange
+                - poolLength
+                - poolType
+                - extra
+              properties:
+                pool:
+                  type: string
+                  description: Address of the pool which the swap has been routed to
+                tokenIn:
+                  type: string
+                  description: The input token address for this pool
+                tokenOut:
+                  type: string
+                  description: The output token address for this pool                  
+                limitReturnAmount:
+                  type: string
+                  description: Maximum for amount of output token returned. Set to zero as using minReturnAmount instead                
+                swapAmount:
+                  type: string
+                  description: The amount of input token to be swapped through this pool, in wei
+                amountOut:
+                  type: string
+                  description: The amount of output token received through swapping through this pool, in wei
+                exchange:
+                  type: string
+                  description: The exchange where the pool originated from
+                poolLength:
+                  type: string
+                  description: Number of tokens in the pool
+                poolType:
+                  type: string
+                  description: The pool type as defined by our internal aggregator
+                extra:
+                  type: string
+                  description: Additional pool metadata
+        recipient:
           type: string
           description: Address which the swap output tokens will be sent to
 
@@ -737,7 +711,7 @@ components:
             limitReturnAmount: "0"
             maxPrice: "115792089237316195423570985008687907853269984665640564039457584007913129639935"
             exchange: "uniswapv3"
-            poolLength: 2
+            poolLength: 2,
             poolType: "univ3"
       tokens:
         "0x2791bca1f2de4661ed88a30c99a7a9449aa84174": 
@@ -769,7 +743,7 @@ components:
           amountOutUsd: "1665.9071767608839"
           tokenOutMarketPriceAvailable: true
           gas: "253000"
-          gasPrice: "181968304449"
+          gasPrice: "181.968304449"
           gasUsd: "0.06491355324609177"
           extraFee: 
             feeAmount: "10"
@@ -784,7 +758,7 @@ components:
                 swapAmount: "1000000000000000000"
                 amountOut: "1667911669"
                 exchange: "dodo"
-                poolLength: 2
+                poolLength: 2,
                 poolType: "dodo"
                 extra: 
                   type: "DPP"

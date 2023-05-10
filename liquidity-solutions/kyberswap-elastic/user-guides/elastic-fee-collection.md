@@ -52,4 +52,4 @@ KyberSwap will notify you of the fee collection success upon confirmation of the
 
 Notice that the fees have also been removed from your position.
 
-<figure><img src="../../../.gitbook/assets/image (86) (1).png" alt=""><figcaption><p>Position summary</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (86).png" alt=""><figcaption><p>Position summary</p></figcaption></figure>

@@ -54,7 +54,7 @@ In the example above, KyberSwap has connected to the Ethereum Mainnet as per the
 
 To change the network, you can select the dropdown which will display the full list of chain options for you to choose from.
 
-<figure><img src="../../../.gitbook/assets/image (20) (2).png" alt=""><figcaption><p>KyberSwap supported chains</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (20) (1).png" alt=""><figcaption><p>KyberSwap supported chains</p></figcaption></figure>
 
 Select your preferred chain and you should then be prompted by your wallet to confirm the network change. If this is your first time connecting to a chain, your wallet provider should display the details of the chain for your verification. The below is an example of adding the Polygon chain and confirming the chain switch using MetaMask.
 

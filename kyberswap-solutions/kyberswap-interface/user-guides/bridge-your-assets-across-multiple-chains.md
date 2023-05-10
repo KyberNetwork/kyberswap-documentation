@@ -59,7 +59,7 @@ Click [**here**](https://docs.multichain.org/getting-started/introduction) for m
 
 Multichain is integrated on KyberSwap through API front end functionality to provide users with an option to easily bridge tokens across chains.
 
-<figure><img src="../../../.gitbook/assets/image (40) (1).png" alt=""><figcaption><p>Bridge assets across chains on KyberSwap with Multichain</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (40).png" alt=""><figcaption><p>Bridge assets across chains on KyberSwap with Multichain</p></figcaption></figure>
 
 Click [**here**](https://docs.multichain.org/getting-started/introduction)[ ](https://blog.kyber.network/kyberswap-launches-multichain-integration-39e12c42fb73)for the official announcement.
 
