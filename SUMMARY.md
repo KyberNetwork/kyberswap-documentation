@@ -35,7 +35,6 @@
     * [Swap At Your Preferred Rates](kyberswap-solutions/kyberswap-interface/user-guides/trade-at-your-preferred-rates.md)
     * [Earn Yield By Contributing Liquidity](kyberswap-solutions/kyberswap-interface/user-guides/earn-yield-by-contributing-liquidity.md)
     * [Add Your Favourite Tokens](kyberswap-solutions/kyberswap-interface/user-guides/add-your-favourite-tokens.md)
-    * [Refer And Get Rewarded](kyberswap-solutions/kyberswap-interface/user-guides/refer-and-get-rewarded.md)
     * [Get Crypto With Fiat](kyberswap-solutions/kyberswap-interface/user-guides/get-crypto-with-fiat.md)
     * [Bridge Your Assets Across Multiple Chains](kyberswap-solutions/kyberswap-interface/user-guides/bridge-your-assets-across-multiple-chains.md)
   * [Notifications](kyberswap-solutions/kyberswap-interface/notifications/README.md)
