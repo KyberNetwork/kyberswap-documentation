@@ -6,7 +6,7 @@ coverY: 0
 
 # Introduction to KyberSwap
 
-Kyber Network is building a world to make DeFi accessible, safe and rewarding for users. Our flagship product, [KyberSwap](http://www.kyberswap.com), is a next-gen DEX aggregator providing the best rates for traders and maximizing returns for liquidity providers in DeFi.
+Kyber Network is building a world to make DeFi accessible, safe and rewarding for users. Our flagship product, [KyberSwap](http://www.kyberswap.com), is a next-gen DEX aggregator providing the best rates for traders and maximizing returns for liquidity providers in DeFi.&#x20;
 
 {% hint style="info" %}
 For more information on Kyber Network, the organization, please visit the official [Kyber Network page](https://kyber.network/).&#x20;
@@ -30,7 +30,7 @@ KyberSwap's solution suite was conceived with the goal of creating an open and d
 * [**KyberSwap Aggregator**](kyberswap-solutions/kyberswap-aggregator/) enables traders to swap at the best rates by seamlessly connecting users and applications to siloed liquidity across various decentralized exchanges and multiple chains. Through splitting and optimizing trade routes, KyberSwap Aggregator is able to objectively discover the most capital efficient liquidity sources thereby ensuring the best swap rates while encouraging greater market stability. Unlike other protocols, we do not charge any fees to our traders for our aggregator - 0% fee forever.
 * [**KyberSwap Widget**](kyberswap-solutions/kyberswap-widget/) enables developer teams to easily integrate swap functionality into their application with just a few lines of code. Seamlessly blend the best swap rates into your app with practically unlimited widget customization options.
 * [**Limit Order**](kyberswap-solutions/limit-order/) provides traders the ability to predefine their preferred swap rates which are automatically settled on-chain by KyberSwap smart contracts when market conditions favor the trader. Define your preferred trade parameters and have complete ownership of your assets while KyberSwap sources a matching counter-party.
-* [**KyberSwap Bridge**](kyberswap-solutions/kyberswap-interface/user-guides/bridge-your-assets-across-multiple-chains.md) solution allows users to conveniently bridge tokens between multiple supported chains. KyberSwap has integrated with the [Multichain](broken-reference) cross-chain router protocol hence enabling users to bridge their assets straight from the [KyberSwap Interface](https://kyberswap.com/bridge).
+* [**KyberSwap Bridge**](kyberswap-solutions/kyberswap-interface/user-guides/bridge-your-assets-across-multiple-chains.md) solution allows users to conveniently bridge tokens between multiple supported chains. KyberSwap has integrated with the [Multichain](https://multichain.org/) cross-chain router protocol hence enabling users to bridge their assets straight from the [KyberSwap Interface](https://kyberswap.com/bridge).
 
 ### Liquidity Solutions
 
