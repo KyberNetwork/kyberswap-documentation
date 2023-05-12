@@ -186,6 +186,19 @@ A warning is displayed and user will have to accept the new amount by clicking o
 In all the above cases, the confirmation screen will always display a few key pieces of information for review:
 
 * Estimated return after the Swap.
+
+{% hint style="info" %}
+#### KyberSwap fee sharing
+
+For every swap executed by the KyberSwap Aggregator, users will be able to see an estimated output amount based on the current price as well as a minimum received that takes into account the [max slippage setting](instantly-swap-at-the-best-rates.md#customizing-trade-parameters). KyberSwap Aggregator will always strive to execute swaps at the estimated output amount and revert the transaction if the minimum received amount is not achieved.
+
+In the event that the market moves in favor of the trade which results in a surplus of tokens above the estimated output amount (i.e positive slippage), this surplus will be distributed between traders, partners, and KyberSwap. **Traders will always get the estimated output amount as long as the swap is executed at or above the current rate**.&#x20;
+
+The distribution of surplus tokens will be in accordance with the fee sharing configuration that is mutually agreed between KyberSwap and our partners as this feature is rolled-out. Initially, the surplus will accrue to KyberSwap but as the ecosystem becomes more self-sufficient, traders and partners will also gain a share of the surplus.
+
+Note that this surplus is different from the trading fees charged as it only applies in cases where the executed swap rate is better than the estimated rate at point of transaction confirmation. Please refer [slippage ](../../../getting-started/foundational-topics/decentralized-finance/slippage.md)for more information.
+{% endhint %}
+
 * **Current Price**: the rate at which the swap will happen (this can be inverted using the 🔁 button).
 * **Minimum Received**: This is the minimum amount of output tokens that you will receive from the swap. The swap will only be completed if this minimum amount threshold is achieved else the transaction will revert.
 * **Gas Fee**: The estimated network fee associated with this transaction.
@@ -203,7 +216,7 @@ Please refer to the [Price Impact](../../../getting-started/foundational-topics/
 
 Click the “Confirm Swap” button to proceed. You should see the Transaction Submitted screen appear. You can click on "View Transaction" to see your transaction on the blockchain explorer. Additionally, you can add the token to MetaMask if you haven't already done so.
 
-<figure><img src="../../../.gitbook/assets/image (5) (3).png" alt=""><figcaption><p>Transaction broadcasted confirmation</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5) (1).png" alt=""><figcaption><p>Transaction broadcasted confirmation</p></figcaption></figure>
 
 You should also see the transaction appear in your account’s transaction history.
 
@@ -211,7 +224,7 @@ You should also see the transaction appear in your account’s transaction histo
 
 ## Customizing trade parameters
 
-<figure><img src="../../../.gitbook/assets/image (6) (1).png" alt=""><figcaption><p>Advanced swap settings</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (6) (2).png" alt=""><figcaption><p>Advanced swap settings</p></figcaption></figure>
 
 The KyberSwap Interface also provides additional features for more advanced traders that allow customisation of the following trade parameters:
 
@@ -261,10 +274,10 @@ Tread carefully when turning on Degen Mode as [slippage](../../../getting-starte
 
 Degen Mode can be toggled on via the "[Advanced Settings](instantly-swap-at-the-best-rates.md#customizing-trade-parameters)" pop-up covered in the previous section.
 
-<figure><img src="../../../.gitbook/assets/image (1) (6).png" alt=""><figcaption><p>Degen Mode toggle</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (5).png" alt=""><figcaption><p>Degen Mode toggle</p></figcaption></figure>
 
 Upon toggling the Degen Mode switch, you will be prompted to manually confirm the switch.
 
-<figure><img src="../../../.gitbook/assets/image (30).png" alt=""><figcaption><p>Confirm Degen Mode</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (20).png" alt=""><figcaption><p>Confirm Degen Mode</p></figcaption></figure>
 
 As a safety precaution, Degen Mode will be auto-disabled after 30 minutes of being switched on.

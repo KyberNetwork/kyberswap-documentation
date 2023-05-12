@@ -28,7 +28,7 @@ _We will not provide an order book interface for users to visualize the limit or
 
 To increase the likelihood that limit orders will be filled, KyberSwap Limit Orders has been integrated as an additional liquidity source on the [KyberSwap Aggregator](../kyberswap-aggregator/). This means that swaps via the Aggregator will also be routed through active limit orders which effectively increases the pool of potential takers for a limit order. By combining solutions, KyberSwap enables our users to discover the best liquidity sources for their trades.
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption><p>An Aggregator swap routed via Limit Orders</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption><p>An Aggregator swap routed via Limit Orders</p></figcaption></figure>
 
 ## Next Steps
 

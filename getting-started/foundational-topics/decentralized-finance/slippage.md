@@ -28,7 +28,7 @@ Note that for public blockchains, transactions are always batched into their res
 
 For [AMM DEXs](automated-market-maker.md), trades occur along a smooth price curve hence every trade against the pool will shift the market price according to the resulting token ratio changes in the pool. In the event that another transaction against the target pool is prioritized over yours, the actual price of the pool would have changed between the confirmation of your order and the final execution.&#x20;
 
-Due to how orders are prioritized on the blockchain (see above), it is not possible to guarantee the price at the point of order submission. As such, rather than failing the order which would result in an endless cascade of failed orders, most AMMs have implemented a slippage tolerance parameter  for trades against their pools. By setting the slippage as a percentage of the expected price, transactions can still be executed as long as the final price is within the boundaries set. This makes  transaction processing much more efficient at the application layer while also enabling traders to protect their trades.
+Due to how orders are prioritized on the blockchain (see above), it is not possible to guarantee the price at the point of order submission. As such, rather than failing the order which would result in an endless cascade of failed orders, most AMMs have implemented a slippage tolerance parameter for trades against their pools. By setting the slippage as a percentage of the expected price, transactions can still be executed as long as the final price is within the boundaries set. This makes  transaction processing much more efficient at the application layer while also enabling traders to protect their trades.
 
 While it is always recommended to keep the slippage setting as low as possible to ensure trades are executed at the best rates, such transactions might face a higher failure rate in times of extreme market volatility. Setting a higher slippage increases the likelihood of transaction success but comes with greater risks of worse rates due to market volatility as well as the presence of front-running opportunities.&#x20;
 
@@ -41,6 +41,54 @@ As limit orders can be valid for an indefinite amount of time, order book DEXs h
 ## Positive vs negative slippage
 
 As hinted above, slippage can be either negative or positive as its definition does not specify a particular direction in terms of expected and executed price. As a user in the DeFi space, it is usually harder to realize positive slippage due to the presence of [MEV](maximal-extractable-value-mev.md) bots which are always on the lookout for front-running opportunities. This is especially the case for larger trades where the gas costs required for a successful MEV strategy becomes progressively more insignificant as the trade size increases.
+
+## Slippage examples
+
+#### Scenario
+
+Alice got into `ETH` early and is planning to cash out her profits by selling her `ETH` for `USDT`. Alice wants to execute the swap immediately and decides to swap via the [KyberSwap Aggregator](../../../kyberswap-solutions/kyberswap-aggregator/) for the best rates.
+
+#### Assumptions
+
+* The current pool price is 2,000 (i.e. 1`ETH` = 2,000`USDT`) which is in line with the wider market price for `ETH`
+* `USDT` maintains it's peg with the US dollar
+* Alice wants to sell 1`ETH` and sets a [max slippage](../../../kyberswap-solutions/kyberswap-interface/user-guides/instantly-swap-at-the-best-rates.md#customizing-trade-parameters) of 1% (higher value chosen for illustrative purposes)
+* Alice confirms the 1`ETH` swap with an estimated output 2,000`USDT`&#x20;
+* Based on the above, the minimum received for the transaction is 1,980`USDT`. Below this threshold, the transaction is reverted (i.e. cancelled).
+
+#### Negative slippage
+
+Between confirming the swap and the execution of the swap, the market moves against Alice's trade and the swap was executed at 1,990.
+
+$$
+Slippage=\frac{actualOutput-estimatedOutput}{estimatedOutput}*100\%
+$$
+
+$$
+Slippage=\frac{1990-2000}{2000}*100\%=-0.5\%
+$$
+
+Alice expected 2,000`USDT` but only got 1,990`USDT` for a net shortfall of 10`USDT`. This equates to a negative slippage of 0.5%. Note that the negative slippage is capped at the 1% max slippage setting hence if output amount from the trade falls below 1,980`USDT`, the trade will not be executed. As such, it is always recommended that you [configure a max slippage](../../../kyberswap-solutions/kyberswap-interface/user-guides/instantly-swap-at-the-best-rates.md#customizing-trade-parameters) for your trades.
+
+#### No slippage
+
+Between confirming the swap and the execution of the swap, no other trades are executed before Alice's trade hence the executed price is as per the estimated 2,000.
+
+$$
+Slippage=\frac{2000-2000}{2000}*100\%=0\%
+$$
+
+Alice expected 2,000`USDT` and got 2,000`USDT`. Hence, there is no difference between the expected amount and the final executed amount resulting in no slippage incurred for this transaction.
+
+#### Positive slippage
+
+Between confirming the swap and the execution of the swap, the market moves in favor of Alice's trade and the swap was executed at 2,010.
+
+$$
+Slippage=\frac{2010-2000}{2000}*100\%=0.5\%
+$$
+
+Alice expected 2,000`USDT` and managed to get 2,010`USDT` for a net surplus of 10`USDT`. This equates to a positive slippage of 0.5%. Note that this surplus will be distributed according to [KyberSwap's fee sharing program](https://docs.kyberswap.com/kyberswap-solutions/kyberswap-interface/user-guides/instantly-swap-at-the-best-rates#kyberswap-fee-sharing).
 
 ## Protecting our users
 
