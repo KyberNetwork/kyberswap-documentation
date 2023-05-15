@@ -6,7 +6,7 @@ description: Sourcing The Most Capitally Efficient Liquidity For Your Trade
 
 ## Introduction
 
-KyberSwap allows you to swap tokens easily at the best rates by aggregating liquidity from different DEXs on the network. Through splitting and optimizing trade routes across various liquidity sources, KyberSwap is able to source the best rates for your swap.
+KyberSwap allows you to swap tokens easily at the best rates by aggregating liquidity from different DEXs and aggregators on the network. Through splitting and optimizing trade routes across various liquidity sources, KyberSwap is able to source the best rates for your swap.
 
 Please refer to [Supported Exchanges and Networks](../../../getting-started/supported-exchanges-and-networks.md) for the full list of decentralized exchanges which have been integrated with KyberSwap.
 
@@ -185,7 +185,7 @@ A warning is displayed and user will have to accept the new amount by clicking o
 
 In all the above cases, the confirmation screen will always display a few key pieces of information for review:
 
-* Estimated return after the Swap.
+* **Output amount:** Estimated return after the Swap.
 
 {% hint style="info" %}
 #### KyberSwap fee sharing
