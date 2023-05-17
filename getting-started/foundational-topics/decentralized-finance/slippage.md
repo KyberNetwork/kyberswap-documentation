@@ -88,7 +88,7 @@ $$
 Slippage=\frac{2010-2000}{2000}*100\%=0.5\%
 $$
 
-Alice expected 2,000`USDT` and managed to get 2,010`USDT` for a net surplus of 10`USDT`. This equates to a positive slippage of 0.5%. Note that this surplus will be distributed according to [KyberSwap's fee sharing program](https://docs.kyberswap.com/kyberswap-solutions/kyberswap-interface/user-guides/instantly-swap-at-the-best-rates#kyberswap-fee-sharing).
+Alice expected 2,000`USDT` and managed to get 2,010`USDT` for a net surplus of 10`USDT`. This equates to a positive slippage of 0.5%. Note that this surplus will be distributed according to [KyberSwap's surplus sharing program](https://docs.kyberswap.com/kyberswap-solutions/kyberswap-interface/user-guides/instantly-swap-at-the-best-rates#kyberswap-positive-slippage-surplus-collection).
 
 ## Protecting our users
 

@@ -63,7 +63,7 @@ If every trade results in impermanent loss for the LP, why then would LPs be inc
 
 In effect, arbitrageurs are a critical component of the AMM design ensuring that the pool always rebalances itself. It is this period between pool rebalancing which results in such losses being termed "impermanent". If the pool returns back to the initial ratio, LPs will be able to withdraw the same amount of tokens added with the additional fees accrued from providing liquidity.
 
-Nevertheless, this impermanent loss risk can become permanent if token pair valuations diverge significantly from each other and never reapporaches the initial ratio when liquidity was added. This is more likely to happen for less correlated token pairs and hence higher trading fees are required in order to offset the impermanent loss risks. This is the reason why pool trading fees tends to be in line with token correlation.&#x20;
+Nevertheless, this impermanent loss risk can become permanent if token pair valuations diverge significantly from each other and never reapproaches the initial ratio when liquidity was added. This is more likely to happen for less correlated token pairs and hence higher trading fees are required in order to offset the impermanent loss risks. This is the reason why pool trading fees tends to be in line with token correlation.&#x20;
 
 ## Impermanent loss mitigation
 
