@@ -52,7 +52,7 @@ In the example above, KyberSwap has connected to the Ethereum Mainnet as per the
 
 ### **Step 2: Switch networks**
 
-To change the network, you can select the dropdown which will display the full list of chain options for you to choose from.
+To change the network, you can select the dropdown which will display the full list of chain options for you to choose from. Please refer to [Supported Exchanges And Networks](../../../getting-started/supported-exchanges-and-networks.md) for the full details.
 
 <figure><img src="../../../.gitbook/assets/image (20) (2).png" alt=""><figcaption><p>KyberSwap supported chains</p></figcaption></figure>
 
