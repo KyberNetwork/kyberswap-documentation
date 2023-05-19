@@ -216,7 +216,7 @@ For every swap executed by the KyberSwap Aggregator, users will be able to see a
 
 In the event that the market moves in favor of the trade which results in a surplus of tokens above the estimated output amount (i.e positive slippage), this surplus will initially accrue to KyberSwap. Surplus sharing programs will be explored as the KyberSwap ecosystem grows to be more self-sufficient. **Critically, traders will always get the estimated output amount as long as the swap is executed at or above the current rate**.&#x20;
 
-Note that this surplus is different from fees as it only applies in cases where the executed swap rate is better than the estimated rate at point of transaction confirmation. Please refer [slippage ](../../../getting-started/foundational-topics/decentralized-finance/slippage.md)for more information.
+Note that this surplus is different from fees as it only applies in cases where the executed swap rate is better than the estimated rate at point of transaction confirmation. Please refer to [slippage ](../../../getting-started/foundational-topics/decentralized-finance/slippage.md)for more information.
 {% endhint %}
 
 * **Current Price**: the rate at which the swap will happen (this can be inverted using the 🔁 button).
