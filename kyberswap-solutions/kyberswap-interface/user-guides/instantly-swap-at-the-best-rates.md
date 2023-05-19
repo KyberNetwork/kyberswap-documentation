@@ -47,8 +47,6 @@ or by searching for your desired swap pair using the search field. (The keyboard
 
 Specify the amount you would like to swap by either typing in an amount manually or by using the “Max” and “Half” buttons to swap pre-set proportions of your wallet balance. An estimate of the amount returned should appear in the quote field.
 
-KyberSwap Interface allows users to customize trade parameters which enables greater trade security or even more advanced trade strategies. Refer to [Customizing trade parameters](instantly-swap-at-the-best-rates.md#customizing-trade-parameters) section for more details.
-
 {% hint style="info" %}
 #### Route refresh: Ensuring the best rates
 
@@ -57,12 +55,36 @@ Do note that the KyberSwap Interface will continuously update the swap rates in 
 Upon clicking the "Swap" button, KyberSwap Aggregator will attempt to secure the final route that will be displayed on the "Confirm Swap" pop-up (see [Step 5](instantly-swap-at-the-best-rates.md#step-5-confirm-the-swap)).
 {% endhint %}
 
-<figure><img src="../../../.gitbook/assets/Screenshot 2023-04-12 at 12.30.23 PM.png" alt=""><figcaption><p>Specify swap amount</p></figcaption></figure>
+KyberSwap Interface allows users to customize trade parameters which enables greater trade security or even more advanced trade strategies. Refer to [Customizing trade parameters](instantly-swap-at-the-best-rates.md#customizing-trade-parameters) section for more details.
 
 {% hint style="danger" %}
 #### Max slippage: Protecting your trades
 
 KyberSwap enables you to avoid any negative trade outcomes by setting a Max Slippage. Please refer to [Customizing trade parameters](instantly-swap-at-the-best-rates.md#customizing-trade-parameters) below for further details or [Slippage](../../../getting-started/foundational-topics/decentralized-finance/slippage.md) if you would like to understand the concept better.
+{% endhint %}
+
+<figure><img src="../../../.gitbook/assets/Screenshot 2023-04-12 at 12.30.23 PM.png" alt=""><figcaption><p>Specify swap amount</p></figcaption></figure>
+
+{% hint style="warning" %}
+#### Swap fees: Supporting transactions on low trading volume chains
+
+For chains which have low trading volumes, trades via the KyberSwap UI are charged a small % fee which goes into offsetting the operational costs for KyberSwap on that chain.
+
+The fees charged will be dependent on the token pair whereby **stable-stable swaps (i.e. USDC/DAI) will be charged 0.04% while swaps involving non-stable tokens (i.e. USDC/KNC, KNC/WETH) are charged 0.1%**.&#x20;
+
+In order to support infrastructure and maintenance requirements, KyberSwap charges a 0.04% fee for swaps between the following identified stables and chains:
+
+* Cronos (ChainID: 25) - [USDC](https://cronoscan.com/address/0xc21223249ca28397b4b6541dffaecc539bff0c59), [DAI](https://cronoscan.com/address/0xF2001B145b43032AAF5Ee2884e456CCd805F677D), [USDT](https://cronoscan.com/address/0x66e428c3f67a68878562e79A0234c1F83c208770), [BUSD](https://cronoscan.com/address/0xC74D59A548ecf7fc1754bb7810D716E9Ac3e3AE5), [MAI](https://cronoscan.com/address/0x2Ae35c8E3D4bD57e8898FF7cd2bBff87166EF8cb)
+* Velas (ChainID: 106) - [USDC](https://evmexplorer.velas.com/address/0xe2C120f188eBd5389F71Cf4d9C16d05b62A58993), [USDT](https://evmexplorer.velas.com/address/0x01445C31581c354b7338AC35693AB2001B50b9aE), [BUSD](https://evmexplorer.velas.com/address/0xc111c29A988AE0C0087D97b33C6E6766808A3BD3)
+* Aurora (ChainID: 1313161554) - [USDC.e](https://explorer.mainnet.aurora.dev/address/0xB12BFcA5A55806AaF64E99521918A4bf0fC40802), [USDT.e](https://explorer.mainnet.aurora.dev/address/0x4988a896b1227218e4A686fdE5EabdcAbd91571f), [DAI](https://explorer.mainnet.aurora.dev/address/0xe3520349F477A5F6EB06107066048508498A291b)
+* Oasis (ChainID: 42262) - [USDC](https://explorer.emerald.oasis.dev/address/0x80A16016cC4A2E6a2CACA8a4a498b1699fF0f844/transactions), [USDT](https://explorer.emerald.oasis.dev/address/0x6Cb9750a92643382e020eA9a170AbB83Df05F30B/transactions), [BUSD](https://explorer.emerald.oasis.dev/address/0x639A647fbe20b6c8ac19E48E2de44ea792c62c5C/transactions)
+
+All other swaps involving tokens not listed above will be charged a 0.1% fee. This will enable the KyberSwap UI to continue supporting swaps on low volume chains based on the trading activity on that chain.\
+\
+![](../../../.gitbook/assets/SwapFeesOnSmallChains.png)\
+\
+Any fees charged will be clearly stated on the swap page as well as again on the swap confirmation page. The estimated output amount displayed will be inclusive of the fees.\
+
 {% endhint %}
 
 ### **Step 4**: Approve or permit contract to swap tokens
@@ -111,7 +133,7 @@ Hovering your mouse above the options will also bring up the helpers for your co
 
 <figure><img src="../../../.gitbook/assets/image (85).png" alt=""><figcaption><p>Infinite allowance helper</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (25) (2).png" alt=""><figcaption><p>Custom allowance helper</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (25).png" alt=""><figcaption><p>Custom allowance helper</p></figcaption></figure>
 
 Note that setting a custom allowance limit via the KyberSwap UI will be available for all wallets except for MetaMask and Trust Wallet. For these, users will be prompted to set the allowance limit directly in their wallet UI. This avoids any tx failures caused by amount mismatch.
 
@@ -214,7 +236,7 @@ Please refer to the [Price Impact](../../../getting-started/foundational-topics/
 
 Click the “Confirm Swap” button to proceed. You should see the Transaction Submitted screen appear. You can click on "View Transaction" to see your transaction on the blockchain explorer. Additionally, you can add the token to MetaMask if you haven't already done so.
 
-<figure><img src="../../../.gitbook/assets/image (5) (1).png" alt=""><figcaption><p>Transaction broadcasted confirmation</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5) (1) (1).png" alt=""><figcaption><p>Transaction broadcasted confirmation</p></figcaption></figure>
 
 You should also see the transaction appear in your account’s transaction history.
 
@@ -222,7 +244,7 @@ You should also see the transaction appear in your account’s transaction histo
 
 ## Customizing trade parameters
 
-<figure><img src="../../../.gitbook/assets/image (6) (2).png" alt=""><figcaption><p>Advanced swap settings</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (6) (2) (1).png" alt=""><figcaption><p>Advanced swap settings</p></figcaption></figure>
 
 The KyberSwap Interface also provides additional features for more advanced traders that allow customisation of the following trade parameters:
 
@@ -276,6 +298,6 @@ Degen Mode can be toggled on via the "[Advanced Settings](instantly-swap-at-the-
 
 Upon toggling the Degen Mode switch, you will be prompted to manually confirm the switch.
 
-<figure><img src="../../../.gitbook/assets/image (20).png" alt=""><figcaption><p>Confirm Degen Mode</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (20) (3).png" alt=""><figcaption><p>Confirm Degen Mode</p></figcaption></figure>
 
 As a safety precaution, Degen Mode will be auto-disabled after 30 minutes of being switched on.
