@@ -151,6 +151,7 @@
 
 * [Legacy](reference/legacy/README.md)
   * [Elastic Legacy](reference/legacy/elastic-legacy/README.md)
+    * [Elastic Legacy Contract Repo](reference/legacy/elastic-legacy/elastic-contract-repo.md)
     * [Elastic Legacy Contract Addresses](reference/legacy/elastic-legacy/elastic-contract-addresses.md)
   * [Getting Started](reference/legacy/getting-started.md)
   * [Protocol](reference/legacy/protocol/README.md)

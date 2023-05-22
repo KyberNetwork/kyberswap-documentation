@@ -4,6 +4,17 @@ description: Liquidity Mining Across Multiple Chains
 
 # Elastic Legacy Contract Addresses
 
+{% hint style="warning" %}
+You are referring to the **`Legacy`** version of KyberSwap docs.
+
+For the most updated information, please refer to:
+
+* [**`Classic`**](../../../liquidity-solutions/kyberswap-classic/)
+* [**`Elastic`**](../../../liquidity-solutions/kyberswap-elastic/)
+* [**`Limit Order`**](../../../kyberswap-solutions/limit-order/)
+* [**`Aggregator`**](../../../kyberswap-solutions/kyberswap-aggregator/)
+{% endhint %}
+
 All KyberSwap Elastic contracts have been deployed at the same address across all supported chains. For your convenience, the full list of contracts can be found below:
 
 <details>
