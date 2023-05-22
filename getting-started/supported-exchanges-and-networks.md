@@ -18,7 +18,7 @@ For developers integrating with the [KyberSwap Aggregator](../kyberswap-solution
 
 <details>
 
-<summary>Ethereum</summary>
+<summary><img src="../.gitbook/assets/Ethereum_Chain_Negative.png" alt="" data-size="line">   Ethereum (ChainID: 1)</summary>
 
 Decentralized Exchanges:
 
@@ -47,7 +47,7 @@ Aggregators:
 
 <details>
 
-<summary>BSC</summary>
+<summary><img src="../.gitbook/assets/BSC_Chain_Negative.png" alt="" data-size="line">   BSC (ChainID: 56)</summary>
 
 Decentralized Exchanges:
 
@@ -81,7 +81,7 @@ Aggregators:
 
 <details>
 
-<summary>Arbitrum</summary>
+<summary><img src="../.gitbook/assets/Arbitrum_Chain_Negative.png" alt="" data-size="line">   Arbitrum (ChainID: 42161)</summary>
 
 Decentralized Exchanges:
 
@@ -109,7 +109,7 @@ Aggregators:
 
 <details>
 
-<summary>Polygon</summary>
+<summary><img src="../.gitbook/assets/Polygon_Chain_Negative.png" alt="" data-size="line">   Polygon (ChainID: 137)</summary>
 
 Decentralized Exchanges:
 
@@ -150,7 +150,7 @@ Aggregators:
 
 <details>
 
-<summary>Optimism</summary>
+<summary><img src="../.gitbook/assets/Optimism_Chain_Negative.png" alt="" data-size="line">   Optimism (ChainID: 10)</summary>
 
 Decentralized Exchanges:
 
@@ -175,7 +175,7 @@ Aggregators:
 
 <details>
 
-<summary>Fantom</summary>
+<summary><img src="../.gitbook/assets/Fantom_Chain_Negative.png" alt="" data-size="line">   Fantom (ChainID: 250)</summary>
 
 Decentralized Exchanges:
 
@@ -203,7 +203,7 @@ Aggregators:
 
 <details>
 
-<summary>Avalanche</summary>
+<summary><img src="../.gitbook/assets/Avalanche_Chain_Negative.png" alt="" data-size="line">   Avalanche (ChainID: 43114)</summary>
 
 Decentralized Exchanges:
 
@@ -233,7 +233,7 @@ Aggregators:
 
 <details>
 
-<summary>Cronos*</summary>
+<summary><img src="../.gitbook/assets/Cronos_Chain_Negative.png" alt="" data-size="line">   Cronos* (ChainID: 25)</summary>
 
 Decentralized Exchanges:
 
@@ -255,7 +255,7 @@ Aggregators:
 
 <details>
 
-<summary>Solana^*</summary>
+<summary><img src="../.gitbook/assets/Solana_Chain_Negative.png" alt="" data-size="line">   Solana^*</summary>
 
 Decentralized Exchanges:
 
@@ -276,7 +276,7 @@ Decentralized Exchanges:
 
 <details>
 
-<summary>Velas*</summary>
+<summary><img src="../.gitbook/assets/Velas_Chain_Negative.png" alt="" data-size="line">   Velas* (ChainID: 106)</summary>
 
 Decentralized Exchanges:
 
@@ -293,7 +293,7 @@ Aggregators:
 
 <details>
 
-<summary>Aurora*</summary>
+<summary><img src="../.gitbook/assets/Aurora_Chain_Negative.png" alt="" data-size="line">   Aurora* (ChainID: 1313161554)</summary>
 
 Decentralized Exchanges:
 
@@ -313,7 +313,7 @@ Aggregators:
 
 <details>
 
-<summary>Oasis*</summary>
+<summary><img src="../.gitbook/assets/Oasis_Chain_Negative.png" alt="" data-size="line">   Oasis* (ChainID: 42262)</summary>
 
 Decentralized Exchanges:
 
@@ -333,7 +333,7 @@ Aggregators:
 
 <details>
 
-<summary>BitTorrent Chain*</summary>
+<summary><img src="../.gitbook/assets/BitTorrentChain_Chain_Negative.png" alt="" data-size="line">   BitTorrent Chain* (ChainID: 199)</summary>
 
 Decentralized Exchanges:
 
