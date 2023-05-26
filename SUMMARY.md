@@ -123,6 +123,7 @@
   * [Contracts](liquidity-solutions/kyberswap-elastic/contracts/README.md)
     * [Elastic Contract Repo](liquidity-solutions/kyberswap-elastic/contracts/elastic-contract-repo.md)
     * [Elastic Contract Addresses](liquidity-solutions/kyberswap-elastic/contracts/elastic-contract-addresses.md)
+    * [Elastic Farming Contract Addresses](liquidity-solutions/kyberswap-elastic/contracts/elastic-farming-contract-addresses.md)
     * [Elastic Core Contracts](liquidity-solutions/kyberswap-elastic/contracts/elastic-core-contracts.md)
     * [Elastic Core Libraries](liquidity-solutions/kyberswap-elastic/contracts/elastic-core-libraries.md)
     * [Elastic Periphery Core Contracts](liquidity-solutions/kyberswap-elastic/contracts/elastic-periphery-core-contracts.md)
