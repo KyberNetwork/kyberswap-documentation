@@ -22,27 +22,13 @@ The series of diagrams below illustrates the tick-range mechanism for your conve
 
 2. LPs add their positions to selected tick ranges as indicated in the table below. Note that the contributed liquidity is evenly spread across all the tick intervals within the selected tick range.
 
-| Position | Total Value  | Tick Range       | Tick Intervals | TVL Per Tick Interval |
-| -------- | ------------ | ---------------- | -------------- | --------------------- |
-| 1        | 500          | $$T_1 - T_6$$    | 5              | 100                   |
-| 2        | 1200         | $$T_4 - T_8$$    | 4              | 300                   |
-| 3        | 500          | $$T_5 - T_{10}$$ | 5              | 100                   |
+<table><thead><tr><th width="115.33333333333331">Position</th><th width="126">Total Value </th><th width="152">Tick Range</th><th width="148">Tick Intervals</th><th>TVL Per Tick Interval</th></tr></thead><tbody><tr><td>1</td><td>500</td><td><span class="math">T_1 - T_6</span></td><td>5</td><td>100</td></tr><tr><td>2</td><td>1200</td><td><span class="math">T_4 - T_8</span></td><td>4</td><td>300 </td></tr><tr><td>3</td><td>500</td><td><span class="math">T_5 - T_{10}</span></td><td>5</td><td>100 </td></tr></tbody></table>
 
 <figure><img src="../../../.gitbook/assets/Tick-Range-TVL Overlay.drawio.png" alt=""><figcaption><p>3 separate liquidity positions</p></figcaption></figure>
 
 3. From the protocol's perspective, it is now able to track the total liquidity per tick interval as well as the proportional split between all positions within that interval.
 
-| Tick Interval    | TVL | P1 Proportion | P2 Proportion | P3 Proportion |
-| ---------------- | --- | ------------- | ------------- | ------------- |
-| $$T_1 - T_2$$    | 100 | 100 (100%)    | -             | -             |
-| $$T_2 - T_3$$    | 100 | 100 (100%)    | -             | -             |
-| $$T_3 - T_4$$    | 100 | 100 (100%)    | -             | -             |
-| $$T_4 - T_5$$    | 400 | 100 (25%)     | 300 (75%)     | -             |
-| $$T_5 - T_6$$    | 500 | 100 (20%)     | 300 (60%)     | 100 (20%)     |
-| $$T_6 - T_7$$    | 400 | -             | 300 (75%)     | 100 (25%)     |
-| $$T_7 - T_8$$    | 400 | -             | 300 (75%)     | 100 (25%)     |
-| $$T_8 - T_9$$    | 100 | -             | -             | 100 (100%)    |
-| $$T_9 - T_{10}$$ | 100 | -             | -             | 100 (100%)    |
+<table><thead><tr><th width="181.33333333333331">Tick Interval</th><th width="129">TVL</th><th>P1 Proportion</th><th>P2 Proportion</th><th>P3 Proportion</th></tr></thead><tbody><tr><td><span class="math">T_1 - T_2</span></td><td>100</td><td>100 (100%)</td><td>-</td><td>-</td></tr><tr><td><span class="math">T_2 - T_3</span></td><td>100</td><td>100 (100%)</td><td>-</td><td>-</td></tr><tr><td><span class="math">T_3 - T_4</span></td><td>100</td><td>100 (100%)</td><td>-</td><td>-</td></tr><tr><td><span class="math">T_4 - T_5</span></td><td>400</td><td>100 (25%)</td><td>300 (75%)</td><td>-</td></tr><tr><td><span class="math">T_5 - T_6</span></td><td>500</td><td>100 (20%)</td><td>300 (60%)</td><td>100 (20%)</td></tr><tr><td><span class="math">T_6 - T_7</span></td><td>400</td><td>-</td><td>300 (75%)</td><td>100 (25%)</td></tr><tr><td><span class="math">T_7 - T_8</span></td><td>400</td><td>-</td><td>300 (75%)</td><td>100 (25%)</td></tr><tr><td><span class="math">T_8 - T_9</span></td><td>100</td><td>-</td><td>-</td><td>100 (100%)</td></tr><tr><td><span class="math">T_9 - T_{10}</span></td><td>100</td><td>-</td><td>-</td><td>100 (100%)</td></tr></tbody></table>
 
 <figure><img src="../../../.gitbook/assets/Tick-Range-TVL Aggregate.drawio.png" alt=""><figcaption><p>Tick TVL with each position shown</p></figcaption></figure>
 

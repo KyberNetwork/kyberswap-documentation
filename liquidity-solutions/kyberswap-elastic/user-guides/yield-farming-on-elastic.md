@@ -46,7 +46,7 @@ If this is your first time interacting with KyberSwap Elastic liquidity pools on
 
 Click on the “Approve Farming Contract” button on the Farms page to begin. This will require an onchain approval through your Web3 wallet.
 
-Note: Be sure to check that the smart contract address is correct before authorizing the smart contract. KyberSwap Elastic farming smart contract addresses can be found [here](../contracts/elastic-farming-contract-addresses.md).
+Note: Be sure to check that the smart contract address is correct before authorizing the smart contract. KyberSwap Elastic farming smart contract addresses can be found [here](../../../reference/legacy/elastic-legacy/elastic-farming-contract-addresses.md).
 
 ![Approve farming contract](https://support.kyberswap.com/hc/article\_attachments/14231073638297)
 

@@ -35,9 +35,7 @@ For ease of understanding, the example below showcases how prices change accordi
 
 The example below assumes an existing ETH/USDT pool which has an exact 50:50 value ratio of tokens (1 ETH = 2000 USDT).
 
-| Liquidity Pool  | ETH amount | USDT amount | Constant   |
-| --------------- | ---------- | ----------- | ---------- |
-| ETH/USDT        | 100        | 200,000     | 20,000,000 |
+<table><thead><tr><th width="223.33333333333331">Liquidity Pool </th><th width="135">ETH amount</th><th>USDT amount</th><th>Constant</th></tr></thead><tbody><tr><td>ETH/USDT</td><td>100</td><td>200,000</td><td>20,000,000</td></tr></tbody></table>
 
 #### Swap
 
@@ -61,9 +59,7 @@ $$
 
 For a 1 ETH swap, the trader will receive 3,921.57 USDT. In effect, the average price per ETH is effectively 1,960.79 USDT. Notice that the final price differs from the initial pool price before the swap (i.e. 1 ETH = 2,000 USDT). This exponential price scaling ensures that the `20,000,000` constant is maintained as the supply of each token in the pool changes.
 
-| Liquidity Pool  | ETH amount | USDT amount | Constant   |
-| --------------- | ---------- | ----------- | ---------- |
-| ETH/USDT        | 102        | 196,078     | 20,000,000 |
+<table><thead><tr><th width="223.33333333333331">Liquidity Pool </th><th width="135">ETH amount</th><th>USDT amount</th><th>Constant</th></tr></thead><tbody><tr><td>ETH/USDT</td><td>102</td><td>196,078</td><td>20,000,000</td></tr></tbody></table>
 
 Based on the above, the price for the next ETH unit in the pool after the trade is `196,078/102 = 1,922.33`.
 
@@ -73,17 +69,13 @@ Critically, the changes in pool ratios have to be taken within the wider context
 
 For liquidity contributions and withdrawals, the ratio of the tokens in the pool must be maintained. Assuming we have the same ETH/USDT pool above:
 
-| Liquidity Pool  | ETH amount | USDT amount | Constant   |
-| --------------- | ---------- | ----------- | ---------- |
-| ETH/USDT        | 102        | 196,078     | 20,000,000 |
+<table><thead><tr><th width="223.33333333333331">Liquidity Pool </th><th width="135">ETH amount</th><th>USDT amount</th><th>Constant</th></tr></thead><tbody><tr><td>ETH/USDT</td><td>102</td><td>196,078</td><td>20,000,000</td></tr></tbody></table>
 
 Any liquidity additions or removals, will require a ratio of 1ETH:1,922USDT. This ensures that the price of the pool is unaffected by liquidity additions or removals. Consequently, note that the ratio will be dependent upon the exact ratio in the pool at the point of adding/removing liquidity.
 
 Assuming that a liquidity provider wants to remove exactly 2 ETH from the pool, the withdrawal will also result in 3,844 USDT being removed from the pool. Notice that the constant has also been updated but the price ratio remains the same (192,234/100=1,922).
 
-| Liquidity Pool  | ETH amount | USDT amount | Constant   |
-| --------------- | ---------- | ----------- | ---------- |
-| ETH/USDT        | 100        | 192,234     | 19,223,400 |
+<table><thead><tr><th width="223.33333333333331">Liquidity Pool </th><th width="135">ETH amount</th><th>USDT amount</th><th>Constant</th></tr></thead><tbody><tr><td>ETH/USDT</td><td>100</td><td>192,234</td><td>19,223,400</td></tr></tbody></table>
 
 ## Trade and earn at the best rates
 

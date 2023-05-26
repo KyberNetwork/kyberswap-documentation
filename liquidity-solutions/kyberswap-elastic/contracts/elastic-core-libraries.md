@@ -301,12 +301,7 @@ Calculates the amount needed to reach `targetSqrtP` from `currentSqrtP`. Note th
 
 The mathematical formulas are provided below for reference.&#x20;
 
-| isExactInput | isToken0 | Formula                                                                                            |
-| ------------ | -------- | -------------------------------------------------------------------------------------------------- |
-| `true`       | `true`   |  $$\frac{2*BPS*L(\sqrt{p_c} - \sqrt{p_n})}{\sqrt{p_c}(2*BPS*\sqrt{p_n} - fee\sqrt{p_c})}$$ (>0)    |
-| `true`       | `false`  |   $$\frac{2*BPS*\sqrt{p_c}*L(\sqrt{p_n} - \sqrt{p_c})}{(2*BPS*\sqrt{p_c} - fee\sqrt{p_n})}$$ (>0)  |
-| `false`      | `true`   |  $$-\frac{2*BPS*L(\sqrt{p_n} - \sqrt{p_c})}{\sqrt{p_c}(2*BPS*\sqrt{p_n} - fee\sqrt{p_c})}$$ (<0)   |
-| `false`      | `false`  |   $$-\frac{2*BPS*\sqrt{p_c}*L(\sqrt{p_c} - \sqrt{p_n})}{(2*BPS*\sqrt{p_c} - fee\sqrt{p_n})}$$ (<0) |
+<table><thead><tr><th width="192">isExactInput</th><th width="184.33333333333331">isToken0</th><th>Formula</th></tr></thead><tbody><tr><td><code>true</code></td><td><code>true</code></td><td> <span class="math">\frac{2*BPS*L(\sqrt{p_c} - \sqrt{p_n})}{\sqrt{p_c}(2*BPS*\sqrt{p_n} - fee\sqrt{p_c})}</span> (>0)</td></tr><tr><td><code>true</code></td><td><code>false</code></td><td>  <span class="math">\frac{2*BPS*\sqrt{p_c}*L(\sqrt{p_n} - \sqrt{p_c})}{(2*BPS*\sqrt{p_c} - fee\sqrt{p_n})}</span> (>0) </td></tr><tr><td><code>false</code></td><td><code>true</code></td><td> <span class="math">-\frac{2*BPS*L(\sqrt{p_n} - \sqrt{p_c})}{\sqrt{p_c}(2*BPS*\sqrt{p_n} - fee\sqrt{p_c})}</span> (&#x3C;0)</td></tr><tr><td><code>false</code></td><td><code>false</code></td><td>  <span class="math">-\frac{2*BPS*\sqrt{p_c}*L(\sqrt{p_c} - \sqrt{p_n})}{(2*BPS*\sqrt{p_c} - fee\sqrt{p_n})}</span> (&#x3C;0)</td></tr></tbody></table>
 
 Note that while cases 1 and 3 and cases 2 and 4 are mathematically equivalent, the implementation differs by performing a double negation for the exact output cases. It takes the difference of $$\sqrt{p_n}$$ and $$\sqrt{p_c}$$ in the numerator (>0), then performing a second negation.
 
@@ -325,26 +320,13 @@ Estimates `deltaL`, the swap fee to be collected based on amountSpecified. This 
 
 In the case where exact input is specified, the formula is rather straightforward.&#x20;
 
-| isToken0 | Formula                                 |
-| -------- | --------------------------------------- |
-| `true`   | $$\frac{delta*fee*\sqrt{p_c}}{2*BPS}$$  |
-| `false`  | $$\frac{delta*fee}{2*BPS*\sqrt{p_c}}$$  |
+<table><thead><tr><th width="185">isToken0</th><th>Formula</th></tr></thead><tbody><tr><td><code>true</code></td><td><span class="math">\frac{delta*fee*\sqrt{p_c}}{2*BPS}</span> </td></tr><tr><td><code>false</code></td><td><span class="math">\frac{delta*fee}{2*BPS*\sqrt{p_c}}</span> </td></tr></tbody></table>
 
 In the case where exact output is specified, a quadratic equation has to be solved. The desired result is the smaller root of the quadratic equation.
 
-| isToken0 | Formula                                                                                                     |
-| -------- | ----------------------------------------------------------------------------------------------------------- |
-| `true`   | $$fee*(\Delta{L})^2-2[(BPS-fee)*L-BPS*delta*\sqrt{p_c}]\Delta{L}+fee*L*delta*\sqrt{p_c}=0$$                 |
-| `false`  | $$fee*(\Delta{L})^2-2[(BPS-fee)*L-\frac{BPS*delta}{\sqrt{p_c}}]\Delta{L}+\frac{fee*L*delta}{\sqrt{p_c}}=0$$ |
+<table><thead><tr><th width="182">isToken0</th><th>Formula</th></tr></thead><tbody><tr><td><code>true</code></td><td><span class="math">fee*(\Delta{L})^2-2[(BPS-fee)*L-BPS*delta*\sqrt{p_c}]\Delta{L}+fee*L*delta*\sqrt{p_c}=0</span></td></tr><tr><td><code>false</code></td><td><span class="math">fee*(\Delta{L})^2-2[(BPS-fee)*L-\frac{BPS*delta}{\sqrt{p_c}}]\Delta{L}+\frac{fee*L*delta}{\sqrt{p_c}}=0</span></td></tr></tbody></table>
 
-| Input Field    | Type      | Formula Variable | Explanation                                                                            |
-| -------------- | --------- | ---------------- | -------------------------------------------------------------------------------------- |
-| `absDelta`     | `uint256` | $$delta$$        | $$∥∥$$`usedAmount`$$∥∥$$, absolute value of `usedAmount` (actual amount used for swap) |
-| `liquidity`    | `uint256` | $$L$$            | active base liquidity + reinvestment liquidity                                         |
-| `currentSqrtP` | `uint160` | $$\sqrt{p_c}$$   | current sqrt price                                                                     |
-| `feeInBps`     | `uint256` | $$fee$$          | swap fee in basis points                                                               |
-| `isExactInput` | `bool`    | N.A.             | true / false if specified swap amount refers to input / output amount respectively     |
-| `isToken0`     | `bool`    | N.A.             | true / false if specified swap amount is in token0 / token1 respectively               |
+<table><thead><tr><th width="190">Input Field</th><th width="126">Type</th><th>Formula Variable</th><th>Explanation</th></tr></thead><tbody><tr><td><code>absDelta</code></td><td><code>uint256</code></td><td><span class="math">delta</span></td><td><span class="math">∥∥</span><code>usedAmount</code><span class="math">∥∥</span>, absolute value of <code>usedAmount</code> (actual amount used for swap)</td></tr><tr><td><code>liquidity</code></td><td><code>uint256</code></td><td><span class="math">L</span></td><td>active base liquidity + reinvestment liquidity</td></tr><tr><td><code>currentSqrtP</code></td><td><code>uint160</code></td><td><span class="math">\sqrt{p_c}</span></td><td>current sqrt price</td></tr><tr><td><code>feeInBps</code></td><td><code>uint256</code></td><td><span class="math">fee</span></td><td>swap fee in basis points</td></tr><tr><td><code>isExactInput</code></td><td><code>bool</code></td><td>N.A.</td><td>true / false if specified swap amount refers to input / output amount respectively</td></tr><tr><td><code>isToken0</code></td><td><code>bool</code></td><td>N.A.</td><td>true / false if specified swap amount is in token0 / token1 respectively</td></tr></tbody></table>
 
 ### `calcIncrementalLiquidity()`[​](https://docs.kyberswap.com/explanation/core-libraries#calcincrementalliquidity) <a href="#calcincrementalliquidity" id="calcincrementalliquidity"></a>
 
@@ -352,23 +334,11 @@ Calculates `deltaL`, the swap fee to be collected based on amountSpecified. This
 
 The mathematical formulas are provided below for reference.&#x20;
 
-| isExactInput | isToken0 | Formula                                             |
-| ------------ | -------- | --------------------------------------------------- |
-| `true`       | `true`   |  $$\sqrt{p_n}*(\frac{L}{\sqrt{p_c}}+\|delta\|)-L$$  |
-| `true`       | `false`  |  $$\frac{(L*\sqrt{p_c})+\|delta\|}{\sqrt{p_n}}-L$$  |
-| `false`      | `true`   | $$\sqrt{p_n}*(\frac{L}{\sqrt{p_c}}-\|delta\|)-L$$   |
-| `false`      | `false`  |  $$\frac{(L*\sqrt{p_c})-\|delta\|}{\sqrt{p_n}}-L$$  |
+<table><thead><tr><th width="192">isExactInput</th><th width="184.33333333333331">isToken0</th><th>Formula</th></tr></thead><tbody><tr><td><code>true</code></td><td><code>true</code></td><td> <span class="math">\sqrt{p_n}*(\frac{L}{\sqrt{p_c}}+\|delta\|)-L</span> </td></tr><tr><td><code>true</code></td><td><code>false</code></td><td> <span class="math">\frac{(L*\sqrt{p_c})+\|delta\|}{\sqrt{p_n}}-L</span> </td></tr><tr><td><code>false</code></td><td><code>true</code></td><td><span class="math">\sqrt{p_n}*(\frac{L}{\sqrt{p_c}}-\|delta\|)-L</span> </td></tr><tr><td><code>false</code></td><td><code>false</code></td><td> <span class="math">\frac{(L*\sqrt{p_c})-\|delta\|}{\sqrt{p_n}}-L</span> </td></tr></tbody></table>
 
 **Inputs**
 
-| Input Field    | Type      | Formula Variable | Explanation                                                                            |
-| -------------- | --------- | ---------------- | -------------------------------------------------------------------------------------- |
-| `absDelta`     | `uint256` | \|$$delta$$\|    | $$∥∥$$`usedAmount`$$∥∥$$, absolute value of `usedAmount` (actual amount used for swap) |
-| `liquidity`    | `uint256` | $$L$$            | active base liquidity + reinvestment liquidity                                         |
-| `currentSqrtP` | `uint160` | $$\sqrt{p_c}$$   | current sqrt price                                                                     |
-| `nextSqrtP`    | `uint160` | $$\sqrt{p_n}$$   | next sqrt price                                                                        |
-| `isExactInput` | `bool`    | N.A.             | true / false if specified swap amount refers to input / output amount respectively     |
-| `isToken0`     | `bool`    | N.A.             | true / false if specified swap amount is in token0 / token1 respectively               |
+<table><thead><tr><th width="190">Input Field</th><th width="149">Type</th><th width="178">Formula Variable</th><th>Explanation</th></tr></thead><tbody><tr><td><code>absDelta</code></td><td><code>uint256</code></td><td>|<span class="math">delta</span>|</td><td><span class="math">∥∥</span><code>usedAmount</code><span class="math">∥∥</span>, absolute value of <code>usedAmount</code> (actual amount used for swap)</td></tr><tr><td><code>liquidity</code></td><td><code>uint256</code></td><td><span class="math">L</span></td><td>active base liquidity + reinvestment liquidity</td></tr><tr><td><code>currentSqrtP</code></td><td><code>uint160</code></td><td><span class="math">\sqrt{p_c}</span></td><td>current sqrt price</td></tr><tr><td><code>nextSqrtP</code></td><td><code>uint160</code></td><td><span class="math">\sqrt{p_n}</span></td><td>next sqrt price</td></tr><tr><td><code>isExactInput</code></td><td><code>bool</code></td><td>N.A.</td><td>true / false if specified swap amount refers to input / output amount respectively</td></tr><tr><td><code>isToken0</code></td><td><code>bool</code></td><td>N.A.</td><td>true / false if specified swap amount is in token0 / token1 respectively</td></tr></tbody></table>
 
 ### `calcFinalPrice()`[​](https://docs.kyberswap.com/explanation/core-libraries#calcfinalprice) <a href="#calcfinalprice" id="calcfinalprice"></a>
 
@@ -376,12 +346,7 @@ Calculates the sqrt price of the final swap step where the next (temporary) tick
 
 The mathematical formulas are provided below for reference.&#x20;
 
-| isExactInput | isToken0 | Formula                                                     |
-| ------------ | -------- | ----------------------------------------------------------- |
-| `true`       | `true`   |  $$\frac{(L+\Delta{L})\sqrt{p_c}}{L+\|delta\|\sqrt{p_c}}$$  |
-| `true`       | `false`  |  $$\frac{L\sqrt{p_c}+\|delta\|}{L+\Delta{L}}$$              |
-| `false`      | `true`   | $$\frac{(L+\Delta{L})\sqrt{p_c}}{L-\|delta\|\sqrt{p_c}}$$   |
-| `false`      | `false`  |  $$\frac{L\sqrt{p_c}-\|delta\|}{L+\Delta{L}}$$              |
+<table><thead><tr><th width="192">isExactInput</th><th width="184.33333333333331">isToken0</th><th>Formula</th></tr></thead><tbody><tr><td><code>true</code></td><td><code>true</code></td><td> <span class="math">\frac{(L+\Delta{L})\sqrt{p_c}}{L+\|delta\|\sqrt{p_c}}</span> </td></tr><tr><td><code>true</code></td><td><code>false</code></td><td> <span class="math">\frac{L\sqrt{p_c}+\|delta\|}{L+\Delta{L}}</span> </td></tr><tr><td><code>false</code></td><td><code>true</code></td><td><span class="math">\frac{(L+\Delta{L})\sqrt{p_c}}{L-\|delta\|\sqrt{p_c}}</span> </td></tr><tr><td><code>false</code></td><td><code>false</code></td><td> <span class="math">\frac{L\sqrt{p_c}-\|delta\|}{L+\Delta{L}}</span> </td></tr></tbody></table>
 
 **Input**
 
@@ -413,14 +378,7 @@ The formula is actually the same, with the difference being made to the operands
 
 $$\frac{L+\Delta{L}}{\sqrt{p_n}} - \frac{L}{\sqrt{p_c}}$$
 
-| Input Field    | Type      | Formula Variable | Explanation                                                                        |
-| -------------- | --------- | ---------------- | ---------------------------------------------------------------------------------- |
-| `liquidity`    | `uint256` | $$L$$            | active base liquidity + reinvestment liquidity                                     |
-| `currentSqrtP` | `uint160` | $$\sqrt{p_c}$$   | current sqrt price                                                                 |
-| `nextSqrtP`    | `uint160` | $$\sqrt{p_n}$$   | next sqrt price                                                                    |
-| `deltaL`       | `uint256` | $$ΔL$$           | collected swap fee                                                                 |
-| `isExactInput` | `bool`    | N.A.             | true / false if specified swap amount refers to input / output amount respectively |
-| `isToken0`     | `bool`    | N.A.             | true / false if specified swap amount is in token0 / token1 respectively           |
+<table><thead><tr><th width="198">Input Field</th><th width="157">Type</th><th width="168">Formula Variable</th><th>Explanation</th></tr></thead><tbody><tr><td><code>liquidity</code></td><td><code>uint256</code></td><td><span class="math">L</span></td><td>active base liquidity + reinvestment liquidity</td></tr><tr><td><code>currentSqrtP</code></td><td><code>uint160</code></td><td><span class="math">\sqrt{p_c}</span></td><td>current sqrt price</td></tr><tr><td><code>nextSqrtP</code></td><td><code>uint160</code></td><td><span class="math">\sqrt{p_n}</span></td><td>next sqrt price</td></tr><tr><td><code>deltaL</code></td><td><code>uint256</code></td><td><span class="math">ΔL</span></td><td>collected swap fee</td></tr><tr><td><code>isExactInput</code></td><td><code>bool</code></td><td>N.A.</td><td>true / false if specified swap amount refers to input / output amount respectively</td></tr><tr><td><code>isToken0</code></td><td><code>bool</code></td><td>N.A.</td><td>true / false if specified swap amount is in token0 / token1 respectively</td></tr></tbody></table>
 
 ## TickMath[​](https://docs.kyberswap.com/explanation/core-libraries#tickmath) <a href="#tickmath" id="tickmath"></a>
 
@@ -428,12 +386,7 @@ Contains functions for computing square root prices from ticks and vice versa. A
 
 ### Constants[​](https://docs.kyberswap.com/explanation/core-libraries#constants) <a href="#constants" id="constants"></a>
 
-| Field            | Type      | Value                                               | Explanation                                        |
-| ---------------- | --------- | --------------------------------------------------- | -------------------------------------------------- |
-| `MIN_TICK`       | `int24`   | `-887272`                                           | Minimum possible tick = $${log_{1.0001}2^{-128}}$$ |
-| `MAX_TICK`       | `int24`   | `887272`                                            | Minimum possible tick = $${log_{1.0001}2^{128}}$$  |
-| `MIN_SQRT_RATIO` | `uint160` | `4295128739`                                        | `getSqrtRatioAtTick(MIN_TICK)`                     |
-| `MAX_SQRT_RATIO` | `uint160` | `1461446703485210103287273052203988822378723970342` | `getSqrtRatioAtTick(MAX_TICK)`                     |
+<table><thead><tr><th>Field</th><th width="154">Type</th><th>Value</th><th>Explanation</th></tr></thead><tbody><tr><td><code>MIN_TICK</code></td><td><code>int24</code></td><td><code>-887272</code></td><td>Minimum possible tick = <span class="math">{log_{1.0001}2^{-128}}</span></td></tr><tr><td><code>MAX_TICK</code></td><td><code>int24</code></td><td><code>887272</code></td><td>Minimum possible tick = <span class="math">{log_{1.0001}2^{128}}</span></td></tr><tr><td><code>MIN_SQRT_RATIO</code></td><td><code>uint160</code></td><td><code>4295128739</code></td><td><code>getSqrtRatioAtTick(MIN_TICK)</code></td></tr><tr><td><code>MAX_SQRT_RATIO</code></td><td><code>uint160</code></td><td><code>1461446703485210103287273052203988822378723970342</code></td><td><code>getSqrtRatioAtTick(MAX_TICK)</code></td></tr></tbody></table>
 
 ### `getSqrtRatioAtTick()`[​](https://docs.kyberswap.com/explanation/core-libraries#getsqrtratioattick) <a href="#getsqrtratioattick" id="getsqrtratioattick"></a>
 

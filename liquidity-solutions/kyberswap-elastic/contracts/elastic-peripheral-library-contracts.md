@@ -38,15 +38,7 @@ $$t_{unlock} = \frac{(t_{lock} + t_{target}) * (BPS - claimBps_{new}) * fee_{col
 
 **Input**[**​**](https://docs.kyberswap.com/explanation/peripheral-library-contracts#input)
 
-| Field                 | Type                                                          | Formula Variable  | Explanation                                                                       |
-| --------------------- | ------------------------------------------------------------- | ----------------- | --------------------------------------------------------------------------------- |
-| `self`                | [`Data`](elastic-peripheral-library-contracts.md#struct-data) | N.A.              | stored data values for an existing position                                       |
-| `currentLiquidity`    | `uint128`                                                     | $$L$$             | current position liquidity                                                        |
-| `liquidityDelta`      | `uint128`                                                     | $$\Delta{L}$$     | quantity change to be applied                                                     |
-| `currentTime`         | `uint32`                                                      | $$t_{now}$$       | current block timestamp                                                           |
-| `isAddLiquidity`      | `bool`                                                        | N.A.              | true = add liquidity, false = remove liquidity                                    |
-| `feesSinceLastAction` | `uint256`                                                     | $$fee_{collect}$$ | fees accrued since last action                                                    |
-| `vestingPeriod`       | `uint256`                                                     | $$t_{target}$$    | maximum time duration for which LP fees are proportionally burnt upon LP removals |
+<table><thead><tr><th>Field</th><th width="156">Type</th><th width="171">Formula Variable</th><th>Explanation</th></tr></thead><tbody><tr><td><code>self</code></td><td><a href="elastic-peripheral-library-contracts.md#struct-data"><code>Data</code></a></td><td>N.A.</td><td>stored data values for an existing position</td></tr><tr><td><code>currentLiquidity</code></td><td><code>uint128</code></td><td><span class="math">L</span></td><td>current position liquidity</td></tr><tr><td><code>liquidityDelta</code></td><td><code>uint128</code></td><td><span class="math">\Delta{L}</span></td><td>quantity change to be applied</td></tr><tr><td><code>currentTime</code></td><td><code>uint32</code></td><td><span class="math">t_{now}</span></td><td>current block timestamp</td></tr><tr><td><code>isAddLiquidity</code></td><td><code>bool</code></td><td>N.A.</td><td>true = add liquidity, false = remove liquidity</td></tr><tr><td><code>feesSinceLastAction</code></td><td><code>uint256</code></td><td><span class="math">fee_{collect}</span></td><td>fees accrued since last action</td></tr><tr><td><code>vestingPeriod</code></td><td><code>uint256</code></td><td><span class="math">t_{target}</span></td><td>maximum time duration for which LP fees are proportionally burnt upon LP removals</td></tr></tbody></table>
 
 **Output**[**​**](https://docs.kyberswap.com/explanation/peripheral-library-contracts#output)
 
@@ -65,19 +57,11 @@ $$fee_{harvest} = \frac{claimBps_{current}}{BPS} * fee_{locked} + \frac{claimBps
 
 **Input**[**​**](https://docs.kyberswap.com/explanation/peripheral-library-contracts#input-1)
 
-| Field                 | Type      | Formula Variable       | Explanation                                                      |
-| --------------------- | --------- | ---------------------- | ---------------------------------------------------------------- |
-| `currentFees`         | `uint256` | $$fee_{locked}$$       | currently locked fees                                            |
-| `nextFees`            | `uint256` | $$fee_{collect}$$      | fees since last action                                           |
-| `currentClaimableBps` | `uint256` | $$claimBps_{current}$$ | proportion of claimable / unlocked `currentFees` in basis points |
-| `nextClaimableBps`    | `uint256` | $$claimBps_{new}$$     | proportion of claimable `nextFees` in basis points               |
+<table><thead><tr><th width="217">Field</th><th width="158">Type</th><th width="170">Formula Variable</th><th>Explanation</th></tr></thead><tbody><tr><td><code>currentFees</code></td><td><code>uint256</code></td><td><span class="math">fee_{locked}</span></td><td>currently locked fees</td></tr><tr><td><code>nextFees</code></td><td><code>uint256</code></td><td><span class="math">fee_{collect}</span></td><td>fees since last action</td></tr><tr><td><code>currentClaimableBps</code></td><td><code>uint256</code></td><td><span class="math">claimBps_{current}</span></td><td>proportion of claimable / unlocked <code>currentFees</code> in basis points</td></tr><tr><td><code>nextClaimableBps</code></td><td><code>uint256</code></td><td><span class="math">claimBps_{new}</span></td><td>proportion of claimable <code>nextFees</code> in basis points</td></tr></tbody></table>
 
 **Output**[**​**](https://docs.kyberswap.com/explanation/peripheral-library-contracts#output-1)
 
-| Field           | Type      | Formula Variable  | Explanation                       |
-| --------------- | --------- | ----------------- | --------------------------------- |
-| `feesLockedNew` | `uint256` | $$fee_{lock}$$    | new fee amount to be locked       |
-| `feesClaimable` | `uint256` | $$fee_{harvest}$$ | claimable fees to be sent to user |
+<table><thead><tr><th width="187">Field</th><th width="112">Type</th><th width="157">Formula Variable</th><th>Explanation</th></tr></thead><tbody><tr><td><code>feesLockedNew</code></td><td><code>uint256</code></td><td><span class="math">fee_{lock}</span></td><td>new fee amount to be locked</td></tr><tr><td><code>feesClaimable</code></td><td><code>uint256</code></td><td><span class="math">fee_{harvest}</span></td><td>claimable fees to be sent to user</td></tr></tbody></table>
 
 ## BytesLib[​](https://docs.kyberswap.com/explanation/peripheral-library-contracts#byteslib) <a href="#byteslib" id="byteslib"></a>
 

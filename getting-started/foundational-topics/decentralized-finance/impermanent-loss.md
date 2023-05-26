@@ -26,36 +26,23 @@ For ease of understanding, the example below builds upon the [AMM example](autom
 
 1. Assume there is an existing 50:50 ETH/USDT pool with the following amount of tokens:
 
-| Liquidity Pool  | ETH amount | USDT amount | Constant   |
-| --------------- | ---------- | ----------- | ---------- |
-| ETH/USDT        | 100        | 200,000     | 20,000,000 |
+<table><thead><tr><th width="223.33333333333331">Liquidity Pool </th><th width="135">ETH amount</th><th>USDT amount</th><th>Constant</th></tr></thead><tbody><tr><td>ETH/USDT</td><td>100</td><td>200,000</td><td>20,000,000</td></tr></tbody></table>
 
 2. The LP decides to add 5 ETH and the corresponding amount of 10,000 USDT (i.e. 1 ETH = 2,000 USDT). With this addition, the LP owns 4.76% of the pool's liquidity (5/105 or 10,000/210000). The ETH/USDT pool changes as follows:
 
-| Liquidity Pool  | ETH amount | USDT amount | Constant   |
-| --------------- | ---------- | ----------- | ---------- |
-| ETH/USDT        | 105        | 210,000     | 22,050,000 |
+<table><thead><tr><th width="223.33333333333331">Liquidity Pool </th><th width="135">ETH amount</th><th>USDT amount</th><th>Constant</th></tr></thead><tbody><tr><td>ETH/USDT</td><td>105</td><td>210,000</td><td>22,050,000</td></tr></tbody></table>
 
 3. Following the LP's liquidity contribution, a trader buys 5 ETH from the pool. Using our [constant product formula](automated-market-maker.md#example), the trader sends 10,500 USDT to the pool in exchange for the 5 ETH. This swap results in the pool balance below:
 
-| Liquidity Pool  | ETH amount | USDT amount | Constant   |
-| --------------- | ---------- | ----------- | ---------- |
-| ETH/USDT        | 100        | 220,500     | 22,050,000 |
+<table><thead><tr><th width="223.33333333333331">Liquidity Pool </th><th width="135">ETH amount</th><th>USDT amount</th><th>Constant</th></tr></thead><tbody><tr><td>ETH/USDT</td><td>100</td><td>220,500</td><td>22,050,000</td></tr></tbody></table>
 
 4. As the pool ratio has changed due to the trade, we can then compare the total value of the LP's position (4.76% of pool per step 2) before and after the trade.
 
-| Position                | ETH amount | USDT amount | USD value |
-| ----------------------- | ---------- | ----------- | --------- |
-| Before (1ETH:2,000USDT) | 5          | 10,000      | 20,000.00 |
-| After (1ETH:2,205USDT)  | 4.76       | 10,500      | 20,995.80 |
+<table><thead><tr><th width="194.33333333333331">Position</th><th width="194">ETH amount</th><th>USDT amount</th><th>USD value</th></tr></thead><tbody><tr><td>Before (1ETH:2,000USDT)</td><td>5</td><td>10,000</td><td>20,000.00</td></tr><tr><td>After (1ETH:2,205USDT)</td><td>4.76</td><td>10,500</td><td>20,995.80</td></tr></tbody></table>
 
 5. To see the impermanent loss, we will have to compare the value after the trade to the value of the position if the LP had just held on to the initial 5 ETH and 10,000 USDT. Notice that if the LP had just held onto both tokens, the total value of his tokens would be 29.2 USD more (21,025.00-20,995.80) than if his tokens were provided to the liquidity pool. This 29.2 USD is what is known as impermanent loss.
 
-| Position                | ETH amount | USDT amount | USD value |
-| ----------------------- | ---------- | ----------- | --------- |
-| Before (1ETH:2,000USDT) | 5          | 10,000      | 20,000.00 |
-| After (1ETH:2,205USDT)  | 4.76       | 10,500      | 20,995.80 |
-| Hold (1ETH:2,205USDT)   | 5          | 10,000      | 21,025.00 |
+<table><thead><tr><th width="194.33333333333331">Position</th><th width="194">ETH amount</th><th>USDT amount</th><th>USD value</th></tr></thead><tbody><tr><td>Before (1ETH:2,000USDT)</td><td>5</td><td>10,000</td><td>20,000.00</td></tr><tr><td>After (1ETH:2,205USDT)</td><td>4.76</td><td>10,500</td><td>20,995.80</td></tr><tr><td>Hold (1ETH:2,205USDT)</td><td>5</td><td>10,000</td><td>21,025.00</td></tr></tbody></table>
 
 ## Why provide liquidity then?
 
