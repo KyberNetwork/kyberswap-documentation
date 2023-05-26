@@ -10,6 +10,14 @@ As the AMM space matured, increasingly sophisticated yield generation strategies
 
 Through these improved LP incentives, KyberSwap Elastic is also able to further reduce slippage for traders as market forces will incentivize liquidity to be concentrated within the most actively traded price ranges. LPs are able to compound their finely tuned risk-adjusted returns while simultaneously encouraging greater market stability through reduced slippage risks for traders.
 
+{% hint style="info" %}
+#### Elastic Legacy
+
+On 17 April 2023, KyberSwap validated a vulnerability reported by a whitehat hacker which could result in double-counting of liquidity deposits under a specific condition. Elastic pools and farms were paused with all user funds being safely withdrawn from the identified contracts.
+
+As of 25 May 2023, this has now been fixed with all the relevant Elastic protocol and farm contracts updated. Please refer to [Elastic Legacy](../../reference/legacy/elastic-legacy/) for more details.
+{% endhint %}
+
 ## Next Steps
 
 <details>
