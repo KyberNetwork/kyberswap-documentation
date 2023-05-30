@@ -1,19 +1,25 @@
 ---
-description: Change Your Mind Freely
+description: Manage Your Positions Effortlessly
 ---
 
 # Update Limit Orders
 
 ## Introduction
 
-We understand that DeFi markets are volatile and users need to quickly react to such changes without incurring additional fees. KyberSwap Limit Orders enables you to modify your orders at any time without incurring any gas fees. As long as the order is still active (not expired or fully filled), you can easily modify your order on the KyberSwap Interface.&#x20;
+We understand that DeFi markets are volatile and users need to quickly react to such changes. As such, KyberSwap Limit Orders enables you to modify your orders at any time. As long as the order is still active (not expired or fully filled), you can easily modify your order on the KyberSwap Interface.&#x20;
 
 ## How to update a limit order
 
-If you have an open order that you would like to amend, you can update it through the Active Orders interface, but please note that this functionally is the same as performing the following two steps combined into a single onchain transaction:
+If you have an open order that you would like to amend, you can update it through the Active Orders interface, but please note that this functionally is the same as performing the following two steps combined into a single transaction:
 
 * Canceling the open order
 * Creating a new open order with new parameters
+
+{% hint style="info" %}
+#### Limit Order modification gas fees
+
+Note that limit order update is an on-chain transaction which requires gas fees to be processed. This is because the signed maker transaction is distributed across our network of off-chain takers. As all potential takers now have a copy of the maker transaction, the only way to guarantee cancellation is to send a cancellation transaction to the chain so that if any other takers match and execute the maker transaction on-chain, the limit order will fail.
+{% endhint %}
 
 ### **Step 1**: Select active order
 
@@ -37,7 +43,7 @@ Click on “Review Order” to proceed.
 
 ### **Step 3**: Review your modified order
 
-Review the details of the order in the “Review your order” screen that appears. Once you are satisfied, click on the “Place Order” button. This is an onchain transaction that requires an approval and gas.
+Review the details of the order in the “Review your order” screen that appears. Once you are satisfied, click on the “Place Order” button. This is an [on-chain transaction](../concepts/off-chain-relay.md) that requires an approval and gas.
 
 ![Review order](https://support.kyberswap.com/hc/article\_attachments/14668227961881)
 

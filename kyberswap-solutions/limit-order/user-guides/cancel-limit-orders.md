@@ -1,18 +1,24 @@
 ---
-description: Change Your Mind Freely
+description: Manage Your Positions Effortlessly
 ---
 
 # Cancel Limit Orders
 
 ## Introduction
 
-We understand that DeFi markets are volatile and users need to quickly react to such changes without incurring additional fees. KyberSwap Limit Orders enables you to cancel your orders at any time without incurring any gas fees. As long as the order is still active (not expired or fully filled), you can easily cancel your order on the KyberSwap Interface.&#x20;
+We understand that DeFi markets are volatile and users need to quickly react to such changes. KyberSwap Limit Orders enables you to cancel your orders at any time. As long as the order is still active (not expired or fully filled), you can easily cancel your order on the KyberSwap Interface.&#x20;
 
 For convenience, KyberSwap offers the option to cancel a single order or all active orders.
 
 ## How to cancel a specific limit order
 
 You can manually cancel your order (or any unfilled portion of your order) before it expires.
+
+{% hint style="info" %}
+#### Limit Order modification gas fees
+
+Note that limit order cancelation is an on-chain transaction which requires gas fees to be processed. This is because the signed maker transaction is distributed across our network of off-chain takers. As all potential takers now have a copy of the maker transaction, the only way to guarantee cancellation is to send a cancellation transaction to the chain so that if any other takers match and execute the maker transaction on-chain, the limit order will fail.
+{% endhint %}
 
 ### **Step 1**: Select active order
 
@@ -22,7 +28,7 @@ Find the active order you would like to update and click on its red Cancel butto
 
 ### **Step 2**: Review cancellation
 
-Review the information presented on the Cancel Order screen then click “Cancel” once you are satisfied. This is an onchain transaction that will require approval and gas.
+Review the information presented on the Cancel Order screen then click “Cancel” once you are satisfied. This is an [on-chain transaction](../concepts/off-chain-relay.md) that will require approval and gas.
 
 ![Confirm cancellation](https://support.kyberswap.com/hc/article\_attachments/14668245165337)
 
@@ -40,7 +46,7 @@ Click on the red “Cancel All” button. This will bring up a Cancel Order scre
 
 ### **Step 2**: Confirm cancellation
 
-Click “Cancel” to confirm the Cancel All action. This is an onchain transaction that will require approval and gas.
+Click “Cancel” to confirm the Cancel All action. This is an [on-chain transaction](../concepts/off-chain-relay.md) that will require approval and gas.
 
 ![Confirm cancellation of all orders](https://support.kyberswap.com/hc/article\_attachments/14668245165337)
 

@@ -88,3 +88,11 @@ Once the order has been confirmed you should see it appear in the Active Orders 
 ![Active orders](https://support.kyberswap.com/hc/article\_attachments/14668186560537)
 
 Note: When your order is _completely_ filled it will be moved to the Order History tab of this interface.
+
+{% hint style="info" %}
+#### Limit order and wallet balances
+
+Tokens which have been comitted to the limit order will only be deducted from the maker's wallet when a matching taker order is settled on-chain. This means that, up until the point when the limit order is executed the tokens remain available in your wallet and can be used in any of the usual ways. During execution, if there are insufficient tokens in your wallet, the limit order will not fill and therefore result in a failed transaction.
+
+Limit orders can only be created if the user has sufficient token balances in their wallet at the point of placing the maker order.
+{% endhint %}

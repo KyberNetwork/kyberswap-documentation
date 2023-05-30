@@ -80,4 +80,14 @@ There are several factors that can make you not see your order:
 
 </details>
 
+<details>
+
+<summary>Why does modifying or canceling my limit order incur gas fees?</summary>
+
+When a limit order is created, the signed maker transaction is distributed to our network of off-chain takers. As all potential takers now have a copy of the maker transaction, the only way to guarantee cancellation is to send a cancellation transaction to the chain so that if any other takers match and execute the maker transaction on-chain, the limit order will fail.
+
+Please refer to [Off-Chain Relay, On-Chain Settlement](concepts/off-chain-relay.md) for further details on the Limit Order mechanism.
+
+</details>
+
 Still can't find what you're looking for? Check out the [KyberSwap Help Center](https://support.kyberswap.com/hc/en-us).
