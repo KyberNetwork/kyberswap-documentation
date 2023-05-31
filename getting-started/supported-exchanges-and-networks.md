@@ -88,6 +88,7 @@ Decentralized Exchanges:
 * [KyberSwap](https://kyberswap.com/)
 * [Balancer](https://app.balancer.fi/#/)
 * [Camelot](https://app.camelot.exchange/)
+* [Chronos](https://app.chronos.exchange/)
 * [Curve ](https://curve.fi/)
 * [DODO (v2)](https://app.dodoex.io/)
 * [Fraxswap](https://app.frax.finance/swap/main)
