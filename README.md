@@ -6,17 +6,17 @@ coverY: 0
 
 # Introduction to KyberSwap
 
-Kyber Network is building a world to make DeFi accessible, safe and rewarding for users. Our flagship product, [KyberSwap](http://www.kyberswap.com), is a next-gen DEX aggregator providing the best rates for traders and maximizing returns for liquidity providers in DeFi.&#x20;
+Kyber Network is building a world to make DeFi accessible, safe and rewarding for users. Our flagship product, [KyberSwap](http://www.kyberswap.com), is a next-gen [DEX aggregator](getting-started/foundational-topics/decentralized-finance/dex-aggregator.md) providing the best rates for traders and maximizing returns for liquidity providers in DeFi.&#x20;
 
 {% hint style="info" %}
 For more information on Kyber Network, the organization, please visit the official [Kyber Network page](https://kyber.network/).&#x20;
 {% endhint %}
 
-For liquidity providers, KyberSwap has a suite of capital efficient protocols designed to optimize rewards. KyberSwap Classic’s protocol is DeFi’s first market maker protocol that dynamically adjusts liquidity provider (LP) fees based on market conditions, while KyberSwap Elastic is a tick-based AMM with concentrated liquidity, customizable fee tiers, reinvestment curve and other advanced features specially designed to give LPs the flexibility and tools to take your earning strategy to the next level without compromising on security.
+For liquidity providers, KyberSwap has a suite of capital efficient protocols designed to optimize rewards. KyberSwap [Classic’s](liquidity-solutions/kyberswap-classic/) protocol is DeFi’s first market maker protocol that [dynamically adjusts liquidity provider (LP) fees based on market conditions](liquidity-solutions/kyberswap-classic/concepts/flexible-fee-adjustment.md), while KyberSwap [Elastic](liquidity-solutions/kyberswap-elastic/) is a tick-based AMM with [concentrated liquidity](liquidity-solutions/kyberswap-elastic/concepts/concentrated-liquidity.md), customizable fee tiers, [reinvestment curve](liquidity-solutions/kyberswap-elastic/concepts/reinvestment-curve.md) and other advanced features specially designed to give LPs the flexibility and tools to take your earning strategy to the next level without compromising on security.
 
 KyberSwap powers 100+ integrated projects and has facilitated over US$17 billion worth of transactions for thousands of users since its inception.
 
-Currently deployed on 13 chains, including Ethereum, Polygon, BNB Chain, Avalanche, Fantom, Cronos, Arbitrum, BitTorrent, Velas, Aurora, Oasis, Optimism, and Solana. KyberSwap aggregates liquidity from over 80 DEXs to give users the best rates possible for their swaps.
+Currently deployed on 13 chains, including Ethereum, Polygon, BNB Chain, Avalanche, Fantom, Cronos, Arbitrum, BitTorrent, Velas, Aurora, Oasis, Optimism, and Solana. KyberSwap aggregates liquidity from over 80 DEXs and multiple Aggregators to give users the best rates possible for their swaps.
 
 <figure><img src=".gitbook/assets/160323_ecosystem-stats.png" alt=""><figcaption><p>The KyberSwap Ecosystem</p></figcaption></figure>
 
@@ -30,7 +30,8 @@ KyberSwap's solution suite was conceived with the goal of creating an open and d
 * [**KyberSwap Aggregator**](kyberswap-solutions/kyberswap-aggregator/) enables traders to swap at the best rates by seamlessly connecting users and applications to siloed liquidity across various decentralized exchanges and multiple chains. Through splitting and optimizing trade routes, KyberSwap Aggregator is able to objectively discover the most capital efficient liquidity sources thereby ensuring the best swap rates while encouraging greater market stability. Unlike other protocols, we do not charge any fees to our traders for our aggregator - 0% fee forever.
 * [**KyberSwap Widget**](kyberswap-solutions/kyberswap-widget/) enables developer teams to easily integrate swap functionality into their application with just a few lines of code. Seamlessly blend the best swap rates into your app with practically unlimited widget customization options.
 * [**Limit Order**](kyberswap-solutions/limit-order/) provides traders the ability to predefine their preferred swap rates which are automatically settled on-chain by KyberSwap smart contracts when market conditions favor the trader. Define your preferred trade parameters and have complete ownership of your assets while KyberSwap sources a matching counter-party.
-* [**KyberSwap Bridge**](kyberswap-solutions/kyberswap-interface/user-guides/bridge-your-assets-across-multiple-chains.md) solution allows users to conveniently bridge tokens between multiple supported chains. KyberSwap has integrated with the [Multichain](https://multichain.org/) cross-chain router protocol hence enabling users to bridge their assets straight from the [KyberSwap Interface](https://kyberswap.com/bridge).
+* [**KyberSwap Bridge**](kyberswap-solutions/kyberswap-interface/user-guides/bridge-your-assets-across-multiple-chains.md) solution allows users to conveniently bridge tokens between multiple supported chains. KyberSwap has integrated with the [Multichain](broken-reference) cross-chain router protocol hence enabling users to bridge their assets straight from the [KyberSwap Interface](https://kyberswap.com/bridge).
+* [**KyberAI**](kyberswap-solutions/kyberai/) democratizes trading data by surfacing valuable trading insights in easily digestible formats that can be conveniently accessed directly on the KyberSwap Interface. KyberAI also incorporates the power of machine learning to deliver [KyberScore](kyberswap-solutions/kyberai/kyberscore.md), a single number indicating the extent of a token's bullishness or bearishness over the next 24 hours.
 
 ### Liquidity Solutions
 

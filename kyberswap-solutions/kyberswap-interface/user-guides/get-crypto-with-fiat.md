@@ -116,7 +116,7 @@ You will then be prompted to enter personally identifiable information (personal
 
 Do note that as this transaction involves transaction in fiat, **KYC is required for the transaction to be processed by Transak**. **The handling of KYC is exclusively performed by Transak, and KyberSwap does not retain any KYC information.**
 
-<figure><img src="../../../.gitbook/assets/image (39) (1).png" alt=""><figcaption><p>Fill in your details</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (39).png" alt=""><figcaption><p>Fill in your details</p></figcaption></figure>
 
 If this is your first time using Transak, there might be some processing time required for the KYC process.
 
@@ -134,7 +134,7 @@ Upon receiving the verification success email, an "Order Now" button will then b
 
 Following successful KYC, you will then be prompted for your payment details. In this case, the payment method selected is via credit/debit card.
 
-<figure><img src="../../../.gitbook/assets/image (11) (1).png" alt=""><figcaption><p>Payment details</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (11).png" alt=""><figcaption><p>Payment details</p></figcaption></figure>
 
 ### Step 9: Confirm your order
 

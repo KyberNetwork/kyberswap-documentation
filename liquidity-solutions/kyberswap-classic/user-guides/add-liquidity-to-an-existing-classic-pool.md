@@ -55,11 +55,11 @@ From here you have two options: either deposit double-sided liquidity or single-
 
 For the safety of our LPs, KyberSwap Classic will highlight pools which are out of range with the caution icon on the pool card.
 
-![](<../../../.gitbook/assets/image (18).png>)
+![](<../../../.gitbook/assets/image (18) (1).png>)
 
 This is because any liquidity additions that significantly deviates from the market price would immediately result in [impermanent loss](../../../getting-started/foundational-topics/decentralized-finance/impermanent-loss.md) as arbitrageurs sweep up the significantly discounted token from the position.
 
-![](<../../../.gitbook/assets/image (23) (1).png>)
+![](<../../../.gitbook/assets/image (23) (2).png>)
 {% endhint %}
 
 ### **Step 3**: Configure token amounts for liquidity provision

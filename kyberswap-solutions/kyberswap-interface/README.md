@@ -21,7 +21,7 @@ As a window into the world of DeFi liquidity, KyberSwap Interface enables you to
 * [Earn amplified yields on KyberSwap Classic](../../liquidity-solutions/kyberswap-elastic/user-guides/add-liquidity-to-an-existing-elastic-pool.md)
 * [Customize liquidity positions with auto-compounding yields on KyberSwap Elastic](../../liquidity-solutions/kyberswap-classic/user-guides/add-liquidity-to-an-existing-classic-pool.md)
 * [Participate in KyberDAO governance](../../governance/kyberdao/user-guides/participating-in-kyberdao.md)
-* [Discover the latest DeFi trends and tokens](../truesight/)
+* [Discover the latest DeFi trends and tokens](../kyberai/)
 * [Participate in KyberSwap's multiple trading campaigns](https://kyberswap.com/campaigns/)
 
 This list is constantly growing as we continue to rollout new features for our users. Do keep a lookout for our latest announcements which are served to you via the notification centre.
