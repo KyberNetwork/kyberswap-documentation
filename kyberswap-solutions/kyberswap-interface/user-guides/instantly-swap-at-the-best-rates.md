@@ -43,6 +43,23 @@ or by searching for your desired swap pair using the search field. (The keyboard
 
 <figure><img src="../../../.gitbook/assets/Screenshot 2023-04-12 at 12.28.37 PM.png" alt=""><figcaption><p>Swap via smart search</p></figcaption></figure>
 
+{% hint style="warning" %}
+#### Fee-on-transfer tokens
+
+Note that certain ERC20 token smart contracts implement a fee-on-transfer (FOT) mechanism whereby for every token transfer, a percentage of the tokens are burned or distributed to various wallets. As a permissionless dapp, KyberSwap enables users to [Add Their Favourite Tokens](add-your-favourite-tokens.md) and hence do not limit the type of tokens traded as long as the token follows the [ERC20 standard](https://docs.openzeppelin.com/contracts/4.x/erc20).
+
+Specific to swaps against [AMM DEXs](../../../getting-started/foundational-topics/decentralized-finance/automated-market-maker.md), tokens undergo multiple hops between various smart contracts during the course of a single swap. Multiple contracts are required to ensure the security of the swap as well as the accountability that accompanies clear functional separation between different smart contract teams. Given that FOT tokens are designed to charge a tax on every transfer, each token hop will incur a tax which is usually a percentage of the transfer amount.
+
+For standard AMM swaps, the FOT tax will be charged twice as tokens are transferred from the pool contract to the executor contract to the recipient. If the swap involves a commission fee (configured by integrators or referees), an additional hop to the router contract is required to collect the fees.
+
+For swaps, the token transfer happens after the swap logic has been processed based on the market price (i.e. calculating input/output amount). As such, the party that incurs the FOT tax will be dependent on the direction of the swap:
+
+* For standard token to FOT token trades, the trader will receive FOT token minus the FOT tax.
+* For FOT token to standard token trades, the pool will receive FOT token minus the FOT tax. Traders will not incur the FOT tax in this case.
+
+Note that the FOT tax is specified in the FOT token's smart contract (i.e. the FOT token team) hence KyberSwap does not have any control over the FOT mechanism. Users are advised to trade such tokens at their own risk as KyberSwap was optimized to handle the standard ERC20 implementation.
+{% endhint %}
+
 ### **Step 3**: Configure swap amount
 
 Specify the amount you would like to swap by either typing in an amount manually or by using the “Max” and “Half” buttons to swap pre-set proportions of your wallet balance. An estimate of the amount returned should appear in the quote field.
@@ -133,7 +150,7 @@ Hovering your mouse above the options will also bring up the helpers for your co
 
 <figure><img src="../../../.gitbook/assets/image (85).png" alt=""><figcaption><p>Infinite allowance helper</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (25) (1).png" alt=""><figcaption><p>Custom allowance helper</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (25) (2).png" alt=""><figcaption><p>Custom allowance helper</p></figcaption></figure>
 
 Note that setting a custom allowance limit via the KyberSwap UI will be available for all wallets except for MetaMask and Trust Wallet. For these, users will be prompted to set the allowance limit directly in their wallet UI. This avoids any tx failures caused by amount mismatch.
 
@@ -236,15 +253,15 @@ Please refer to the [Price Impact](../../../getting-started/foundational-topics/
 
 Click the “Confirm Swap” button to proceed. You should see the Transaction Submitted screen appear. You can click on "View Transaction" to see your transaction on the blockchain explorer. Additionally, you can add the token to MetaMask if you haven't already done so.
 
-<figure><img src="../../../.gitbook/assets/image (5) (3).png" alt=""><figcaption><p>Transaction broadcasted confirmation</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5) (1).png" alt=""><figcaption><p>Transaction broadcasted confirmation</p></figcaption></figure>
 
 You should also see the transaction appear in your account’s transaction history.
 
-<figure><img src="../../../.gitbook/assets/Screenshot 2023-04-12 at 12.58.30 PM.png" alt=""><figcaption><p>Transaction history in the KyberSwap wallet UI</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Screenshot 2023-04-12 at 12.58.30 PM (1).png" alt=""><figcaption><p>Transaction history in the KyberSwap wallet UI</p></figcaption></figure>
 
 ## Customizing trade parameters
 
-<figure><img src="../../../.gitbook/assets/image (6) (3).png" alt=""><figcaption><p>Advanced swap settings</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (6) (2).png" alt=""><figcaption><p>Advanced swap settings</p></figcaption></figure>
 
 The KyberSwap Interface also provides additional features for more advanced traders that allow customisation of the following trade parameters:
 
@@ -294,10 +311,10 @@ Tread carefully when turning on Degen Mode as [slippage](../../../getting-starte
 
 Degen Mode can be toggled on via the "[Advanced Settings](instantly-swap-at-the-best-rates.md#customizing-trade-parameters)" pop-up covered in the previous section.
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption><p>Degen Mode toggle</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (5).png" alt=""><figcaption><p>Degen Mode toggle</p></figcaption></figure>
 
 Upon toggling the Degen Mode switch, you will be prompted to manually confirm the switch.
 
-<figure><img src="../../../.gitbook/assets/image (21) (2).png" alt=""><figcaption><p>Confirm Degen Mode</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (20) (1).png" alt=""><figcaption><p>Confirm Degen Mode</p></figcaption></figure>
 
 As a safety precaution, Degen Mode will be auto-disabled after 30 minutes of being switched on.

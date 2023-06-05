@@ -46,7 +46,7 @@ Note: If you choose to remove 100% of the liquidity in this position, that is ta
 
 {% tabs %}
 {% tab title="Token Pair" %}
-<figure><img src="../../../.gitbook/assets/image (13).png" alt=""><figcaption><p>Token pair removal</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (13) (1).png" alt=""><figcaption><p>Token pair removal</p></figcaption></figure>
 
 Specify the amount of liquidity to remove. You can do this either by using the pre-set percentage buttons or the percentage slider, or by manually typing in the amount for either leg of the pair.&#x20;
 {% endtab %}
@@ -60,11 +60,21 @@ You can also switch the output token by selecting the token under the "Output" s
 {% endtab %}
 {% endtabs %}
 
+{% hint style="warning" %}
+#### Fee-on-transfer tokens
+
+Certain ERC20 token smart contracts implement a fee-on-transfer (FOT) mechanism whereby for every token transfer, a percentage of the tokens are burned or distributed to various wallets. As a permissionless dapp, KyberSwap enables users to [Add Their Favourite Tokens](../../../kyberswap-solutions/kyberswap-interface/user-guides/add-your-favourite-tokens.md) and hence do not limit the type of tokens traded as long as the token follows the [ERC20 standard](https://docs.openzeppelin.com/contracts/4.x/erc20).
+
+When adding or removing FOT tokens from an AMM pool, tokens will be transferred to and from the pool contract. Given that FOT tokens are designed to charge a tax on every transfer, each addition or removal of FOT tokens from a pool will incur a FOT tax which is usually a fixed percentage of the transfer amount.
+
+Note that the FOT tax is specified in the FOT token's smart contract (i.e. the FOT token team) hence KyberSwap does not have any control over the FOT mechanism. Users are advised to trade such tokens at their own risk as KyberSwap was optimized to handle the standard ERC20 implementation.
+{% endhint %}
+
 ### Step 3: Authorize contract
 
 If you haven't done so, you will need to permit the pool contract to remove your position from the pool. Note that this signature request does not require any gas.
 
-<figure><img src="../../../.gitbook/assets/image (7).png" alt=""><figcaption><p>Metamask permit signature</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (7) (1).png" alt=""><figcaption><p>Metamask permit signature</p></figcaption></figure>
 
 Once you have authorized the contract, the previously disabled "Remove" button will now be available.
 

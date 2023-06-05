@@ -38,7 +38,7 @@ Ensure you are on the correct network, and then click the “Create Pool” butt
 
 This will bring up the Create a new pool screen, but it will be fairly empty until the parameters of the pool are properly specified.
 
-<figure><img src="../../../.gitbook/assets/image (22) (1).png" alt=""><figcaption><p>Pool creation screen</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (22) (2).png" alt=""><figcaption><p>Pool creation screen</p></figcaption></figure>
 
 ### **Step 2**: Select tokens to add
 
@@ -46,20 +46,30 @@ Select the pair of tokens you would like to create the pool with. You can choose
 
 <figure><img src="../../../.gitbook/assets/image (10) (1).png" alt=""><figcaption><p>Select token pair</p></figcaption></figure>
 
+{% hint style="warning" %}
+#### Fee-on-transfer tokens
+
+Certain ERC20 token smart contracts implement a fee-on-transfer (FOT) mechanism whereby for every token transfer, a percentage of the tokens are burned or distributed to various wallets. As a permissionless dapp, KyberSwap enables users to [Add Their Favourite Tokens](../../../kyberswap-solutions/kyberswap-interface/user-guides/add-your-favourite-tokens.md) and hence do not limit the type of tokens traded as long as the token follows the [ERC20 standard](https://docs.openzeppelin.com/contracts/4.x/erc20).
+
+When adding or removing FOT tokens from an AMM pool, tokens will be transferred to and from the pool contract. Given that FOT tokens are designed to charge a tax on every transfer, each addition or removal of FOT tokens from a pool will incur a FOT tax which is usually a fixed percentage of the transfer amount.
+
+Note that the FOT tax is specified in the FOT token's smart contract (i.e. the FOT token team) hence KyberSwap does not have any control over the FOT mechanism. Users are advised to trade such tokens at their own risk as KyberSwap was optimized to handle the standard ERC20 implementation.
+{% endhint %}
+
 ### Step 3: Enter token amounts
 
 Specify the token amounts to contribute as liquidity to the new pool. Upon entering the two token amounts, the price ratio of the tokens are also displayed at the bottom left of the screen.
 
 Do note that KyberSwap Classic enables users to configure their pool according to their preferred price ranges hence LPs are able to define the starting price of their pool.
 
-<figure><img src="../../../.gitbook/assets/image (26) (1).png" alt=""><figcaption><p>Token amounts and price ratio</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (26).png" alt=""><figcaption><p>Token amounts and price ratio</p></figcaption></figure>
 
 {% hint style="danger" %}
 #### Price deviations
 
 As a safety precaution, KyberSwap Classic will prompt the LP if the specified pool price deviates significantly from the market price.This is because any liquidity additions that significantly deviates from the market price would immediately result in [impermanent loss](../../../getting-started/foundational-topics/decentralized-finance/impermanent-loss.md) as arbitrageurs sweep up the significantly discounted token from the position.
 
-![](<../../../.gitbook/assets/image (11) (2) (1).png>)
+![](<../../../.gitbook/assets/image (22) (1).png>)
 {% endhint %}
 
 ### Step 4: Select AMP value
@@ -111,9 +121,9 @@ Click on the "Create" button to bring up the preview screen. Once you have revie
 
 You will need to confirm this transaction in your wallet
 
-<figure><img src="../../../.gitbook/assets/image (35).png" alt=""><figcaption><p>KyberSwap pending confirmation from wallet</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (35) (1).png" alt=""><figcaption><p>KyberSwap pending confirmation from wallet</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (6) (1).png" alt=""><figcaption><p>Metamask confirmation</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (6) (3).png" alt=""><figcaption><p>Metamask confirmation</p></figcaption></figure>
 
 Once you’ve confirmed the transaction you will see a screen informing you that the transaction has been submitted. You can click on “View Transaction” to view your transaction on the appropriate blockchain explorer.
 

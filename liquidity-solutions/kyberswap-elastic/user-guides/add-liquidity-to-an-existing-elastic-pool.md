@@ -55,7 +55,17 @@ Select the pool youâ€™d like to participate in by clicking on the appropriate â€
 
 For the safety of our LPs, KyberSwap Elastic will notify LPs when adding liquidity to a pool that is out of range. This is because any liquidity additions that significantly deviates from the market price would immediately result in [impermanent loss](../../../getting-started/foundational-topics/decentralized-finance/impermanent-loss.md) as arbitrageurs sweep up the significantly discounted token from the position.
 
-![](<../../../.gitbook/assets/image (4) (3).png>)
+![](<../../../.gitbook/assets/image (4).png>)
+{% endhint %}
+
+{% hint style="warning" %}
+#### Fee-on-transfer tokens
+
+Certain ERC20 token smart contracts implement a fee-on-transfer (FOT) mechanism whereby for every token transfer, a percentage of the tokens are burned or distributed to various wallets. As a permissionless dapp, KyberSwap enables users to [Add Their Favourite Tokens](../../../kyberswap-solutions/kyberswap-interface/user-guides/add-your-favourite-tokens.md) and hence do not limit the type of tokens traded as long as the token follows the [ERC20 standard](https://docs.openzeppelin.com/contracts/4.x/erc20).
+
+When adding or removing FOT tokens from an AMM pool, tokens will be transferred to and from the pool contract. Given that FOT tokens are designed to charge a tax on every transfer, each addition or removal of FOT tokens from a pool will incur a FOT tax which is usually a fixed percentage of the transfer amount.
+
+Note that the FOT tax is specified in the FOT token's smart contract (i.e. the FOT token team) hence KyberSwap does not have any control over the FOT mechanism. Users are advised to trade such tokens at their own risk as KyberSwap was optimized to handle the standard ERC20 implementation.
 {% endhint %}
 
 ### **Step 3**: Select fee tier&#x20;
@@ -81,7 +91,7 @@ For the safety of our LPs, KyberSwap Elastic only allows single-sided liquidity 
 
 Whenever a position outside the market price is created, the deposit amount for the corresponding token that is prone to immediate impermanent loss is disabled.
 
-![](<../../../.gitbook/assets/image (8) (2).png>)
+![](<../../../.gitbook/assets/image (8).png>)
 {% endhint %}
 
 ### **Step 5**: Configure token amounts

@@ -48,6 +48,16 @@ Specify the amount of liquidity to remove. You can do this either by using the p
 
 Note: If you choose to remove 100% of the liquidity in this position, that is tantamount to closing the position. Once this operation is complete, you will only see this position if you toggle the “Show closed positions” button on your My Positions page.
 
+{% hint style="warning" %}
+#### Fee-on-transfer tokens
+
+Certain ERC20 token smart contracts implement a fee-on-transfer (FOT) mechanism whereby for every token transfer, a percentage of the tokens are burned or distributed to various wallets. As a permissionless dapp, KyberSwap enables users to [Add Their Favourite Tokens](../../../kyberswap-solutions/kyberswap-interface/user-guides/add-your-favourite-tokens.md) and hence do not limit the type of tokens traded as long as the token follows the [ERC20 standard](https://docs.openzeppelin.com/contracts/4.x/erc20).
+
+When adding or removing FOT tokens from an AMM pool, tokens will be transferred to and from the pool contract. Given that FOT tokens are designed to charge a tax on every transfer, each addition or removal of FOT tokens from a pool will incur a FOT tax which is usually a fixed percentage of the transfer amount.
+
+Note that the FOT tax is specified in the FOT token's smart contract (i.e. the FOT token team) hence KyberSwap does not have any control over the FOT mechanism. Users are advised to trade such tokens at their own risk as KyberSwap was optimized to handle the standard ERC20 implementation.
+{% endhint %}
+
 ### **Step 3**: Review liquidity removal
 
 Click the “Preview” button to bring up a preview screen. Once you are satisfied with the transaction details, click the “Remove” button and then confirm this transaction on your wallet.

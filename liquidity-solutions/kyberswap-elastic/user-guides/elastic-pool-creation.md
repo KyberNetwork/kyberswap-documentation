@@ -56,11 +56,21 @@ As an open and permissionless protocol, KyberSwap Elastic allows any ERC20 token
 
 This is due to a small portion of the provided liquidity being allocated to meet the minimum liquidity requirements when creating a new [reinvestment curve](../concepts/reinvestment-curve.md). While care has been taken when designing this anti-spam mechanism to suit the vast majority of tokens, token teams are still free to define their own tokens. Please refer to [Pool Initialization](../concepts/pool-process-flows.md#pool-unlocking--initialization) for further details.
 
-<figure><img src="../../../.gitbook/assets/image (10) (2).png" alt=""><figcaption><p>Select token pair</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (10).png" alt=""><figcaption><p>Select token pair</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (1) (4).png" alt=""><figcaption><p>Token pair selected</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (6).png" alt=""><figcaption><p>Token pair selected</p></figcaption></figure>
 
 Notice that upon selecting the token pair, the current market price is also displayed for reference. Additionally, when creating a new pool, a small amount of liquidity will be needed to seed the pool's liquidity in order to [prevent spam](../concepts/pool-process-flows.md#pool-unlocking--initialization).
+
+{% hint style="warning" %}
+#### Fee-on-transfer tokens
+
+Certain ERC20 token smart contracts implement a fee-on-transfer (FOT) mechanism whereby for every token transfer, a percentage of the tokens are burned or distributed to various wallets. As a permissionless dapp, KyberSwap enables users to [Add Their Favourite Tokens](../../../kyberswap-solutions/kyberswap-interface/user-guides/add-your-favourite-tokens.md) and hence do not limit the type of tokens traded as long as the token follows the [ERC20 standard](https://docs.openzeppelin.com/contracts/4.x/erc20).
+
+When adding or removing FOT tokens from an AMM pool, tokens will be transferred to and from the pool contract. Given that FOT tokens are designed to charge a tax on every transfer, each addition or removal of FOT tokens from a pool will incur a FOT tax which is usually a fixed percentage of the transfer amount.
+
+Note that the FOT tax is specified in the FOT token's smart contract (i.e. the FOT token team) hence KyberSwap does not have any control over the FOT mechanism. Users are advised to trade such tokens at their own risk as KyberSwap was optimized to handle the standard ERC20 implementation.
+{% endhint %}
 
 ### **Step 3:** Select fee tier
 
@@ -101,14 +111,14 @@ Selecting a fee tier with existing liquidity will result in your position being 
 
 Upon selecting a new fee tier, you will then need to specify the starting price for the pool. For reference, the current market price of the token pair selected is also displayed. The starting price will determine the specific [price curve](../../../getting-started/foundational-topics/decentralized-finance/automated-market-maker.md#price-curves) that is implemented for the pool.
 
-<figure><img src="../../../.gitbook/assets/image (28) (2).png" alt=""><figcaption><p>Set starting price</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (28).png" alt=""><figcaption><p>Set starting price</p></figcaption></figure>
 
 {% hint style="danger" %}
 #### Price deviations
 
 As a safety precaution, KyberSwap Elastic will prompt the LP if the specified pool price deviates significantly from the market price.This is because any liquidity additions that significantly deviates from the market price would immediately result in [impermanent loss](../../../getting-started/foundational-topics/decentralized-finance/impermanent-loss.md) as arbitrageurs sweep up the significantly discounted token from the position.
 
-![](<../../../.gitbook/assets/image (39) (1).png>)
+![](<../../../.gitbook/assets/image (35).png>)
 {% endhint %}
 
 ### **Step 5**: Set price range
@@ -177,7 +187,7 @@ Specify the deposit amounts, or how much liquidity you would like to add to open
 
 Note: The proportion of liquidity deposited for each leg of the pair is determined by your price range, so it is helpful to set the price range before specifying your deposit amounts.
 
-<figure><img src="../../../.gitbook/assets/image (5) (4).png" alt=""><figcaption><p>Specify deposit amount</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5) (2).png" alt=""><figcaption><p>Specify deposit amount</p></figcaption></figure>
 
 ### **Step 6**: Authorize contract
 
@@ -191,11 +201,11 @@ Once the approval is confirmed, the previously-greyed-out “Preview” button w
 
 Click on the “Preview” button to bring up the preview screen. Once you have reviewed the information on this screen, click on the “Supply” button to proceed.
 
-<figure><img src="../../../.gitbook/assets/image (17) (1).png" alt=""><figcaption><p>Add liquidity preview for confirmation</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (17).png" alt=""><figcaption><p>Add liquidity preview for confirmation</p></figcaption></figure>
 
 You will need to confirm this transaction in your wallet.
 
-<figure><img src="../../../.gitbook/assets/image (13) (1).png" alt=""><figcaption><p>Add liquidity confirmation</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (13) (2).png" alt=""><figcaption><p>Add liquidity confirmation</p></figcaption></figure>
 
 Once you’ve confirmed the transaction you will see a screen informing you that the transaction has been submitted. You can click on “View Transaction” to view your transaction on the appropriate blockchain explorer.
 
@@ -203,4 +213,4 @@ Once you’ve confirmed the transaction you will see a screen informing you that
 
 Your new position should now be visible on the My Pools page on KyberSwap.
 
-<figure><img src="../../../.gitbook/assets/image (12) (2).png" alt=""><figcaption><p>My pools</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (12).png" alt=""><figcaption><p>My pools</p></figcaption></figure>
