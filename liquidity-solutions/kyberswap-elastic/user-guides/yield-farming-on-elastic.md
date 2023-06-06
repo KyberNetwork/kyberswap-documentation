@@ -80,11 +80,41 @@ Click on the “+” button to stake your NFT position. Select the appropriate N
 
 ![Select liquidity position](https://support.kyberswap.com/hc/article\_attachments/14231090132889)
 
-Your position is now staked and is now eligible to accumulate rewards for the duration of the farming phase. You should now also be able to see your farming pool under the “My Farms” tab. This page will also display ended phases for the farms that you are currently participating in.
+Your position is staked and is now eligible to accumulate rewards for the duration of the farming phase. You should now also be able to see your farming pool under the “My Farms” tab. This page will also display ended phases for the farms that you are currently participating in.
 
 Note: Depending on the [farming mechanism](https://support.kyberswap.com/hc/en-us/articles/14227778525209) associated with your farm, your rewards will be calculated depending on the value of your liquidity position staked in the farm relative to other farmers, how long your liquidity position has been active in the pool (i.e. in range), and the trading volume utilizing your active liquidity position in the pool.
 
-![My farms](https://support.kyberswap.com/hc/article\_attachments/14231090279577)
+### Step 5: View your staked positions
+
+<figure><img src="../../../.gitbook/assets/ElasticFarm_ViewToggle.png" alt=""><figcaption><p>Toggle farm view</p></figcaption></figure>
+
+KyberSwap Elastic farms provides you two options when viewing your staked positions. This can be toggled using the view option in the filter bar located at the top of the page.
+
+{% tabs %}
+{% tab title="List view" %}
+In the list view, all active farms will be displayed as individual rows within a list. Your staked farms will be prioritized at the top of the list. Note that in the list overview page, you will be able to see how many of your positions are in or out of range under the "My Deposit" row.&#x20;
+
+<figure><img src="../../../.gitbook/assets/ElasticeFarm_List_Overview.png" alt=""><figcaption><p>Farm list overview</p></figcaption></figure>
+
+To expose further details, you can select on the dropdown icon at the right of each farm entry.
+
+<figure><img src="../../../.gitbook/assets/ElasticFarm_List_Details.png" alt=""><figcaption><p>Farm list details</p></figcaption></figure>
+
+By expanding the farm rows where you have a staked position, you will be able to view all the staked positions within the particular farm as well as the active price relative to the range of your staked positions.
+{% endtab %}
+
+{% tab title="Grid view" %}
+In the grid view, all active farms will be displayed as individual cards in a grid. Your staked farms will be prioritized at the beginning of the grid. Note that in the grid overview page, you will be able to see how many of your positions are in or out of range by referring to the top right of each card.
+
+<figure><img src="../../../.gitbook/assets/ElasticFarm_Grid_Overview.png" alt=""><figcaption><p>Farm grid overview</p></figcaption></figure>
+
+To expose further details, you can select on the "View Positions" button at the bottom of each farm card.
+
+<figure><img src="../../../.gitbook/assets/ElasticFarm_Grid_Details.png" alt=""><figcaption><p>Farm grid details</p></figcaption></figure>
+
+By viewing the positions in farms where you have a staked position, you will be able to view all the staked positions within the particular farm as well as the active price relative to the range of your staked positions.
+{% endtab %}
+{% endtabs %}
 
 ## Harvesting and claiming rewards
 
