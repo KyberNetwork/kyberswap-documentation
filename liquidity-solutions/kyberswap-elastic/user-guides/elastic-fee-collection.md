@@ -8,6 +8,14 @@ description: Reaping Your Auto-Compounded Yields
 
 Whenever your active position goes into supporting trades, the market making fees are automatically reinvested into the pool. Consequently, fees are automatically compounded and accrued to your position. KyberSwap Elastic provides LPs the option to independently collect their accrued fees without affecting the underlying liquidity position. This means that LPs are able to reap the benefits of their auto-compounded yields at any time.
 
+{% hint style="success" %}
+#### Fee collection for positions staked in farms
+
+KyberSwap Elastic enables you to continue [earning farming rewards](yield-farming-on-elastic.md) while collecting the trading fees accrued to your position. If your liquidity position has been staked to a farm, you do not need to unstake your position in order to collect the accrued fees. You can proceed with the fee collection as per normal while your farming position remains unchanged.
+
+This means that fees can be collected at anytime without having to worry about missing out on farming rewards nor the gas fees that accompanies a staking and unstaking of an underlying liquidity position.
+{% endhint %}
+
 <details>
 
 <summary>Liquidity Provider Flow</summary>
@@ -34,15 +42,15 @@ Still deciding on which solution suits you best?&#x20;
 
 ### Step 1: Select position&#x20;
 
-From the My Pools page, choose the position from which to collect fees. You will be able to view the total fees which your position has earned on the position card.
+From the My Pools page, choose the position from which to collect fees. You will be able to view the total fees which your position has earned on the position card. Note that the "Collect Fees" button will only be enabled in green if trading fees have been accrued to your liquidity position.
 
-<figure><img src="../../../.gitbook/assets/image (73).png" alt=""><figcaption><p>Elastic pools dashboard</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Elastic_CollectFees_MyPositions.png" alt=""><figcaption><p>Elastic pools dashboard</p></figcaption></figure>
 
 ### Step 2: Collect the fees
 
 Click on the "Collect Fees" button and you will prompted to confirm this action in Metamask. Note that this will remove 100% of the accrued fees.
 
-<figure><img src="../../../.gitbook/assets/image (75).png" alt=""><figcaption><p>Confirm fee collection</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Elastic_CollectFees_MetaMaskConfirmation.png" alt=""><figcaption><p>Confirm fee collection</p></figcaption></figure>
 
 {% hint style="warning" %}
 #### Fee-on-transfer tokens
@@ -56,10 +64,10 @@ Note that the FOT tax is specified in the FOT token's smart contract (i.e. the F
 
 #### Step 3: Fees collected
 
-KyberSwap will notify you of the fee collection success upon confirmation of the trnasction.
+KyberSwap will notify you of the fee collection success upon confirmation of the transaction.
 
-<figure><img src="../../../.gitbook/assets/image (83).png" alt=""><figcaption><p>KyberSwap notification</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Elastic_CollectFees_SuccessNotification.png" alt=""><figcaption><p>KyberSwap fee collection success notification</p></figcaption></figure>
 
 Notice that the fees have also been removed from your position.
 
-<figure><img src="../../../.gitbook/assets/image (86) (1).png" alt=""><figcaption><p>Position summary</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Elastic_CollectFees_FeesRemoved.png" alt=""><figcaption><p>Fees removed</p></figcaption></figure>
