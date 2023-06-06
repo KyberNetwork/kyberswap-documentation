@@ -13,7 +13,7 @@ Through these improved LP incentives, KyberSwap Elastic is also able to further 
 {% hint style="info" %}
 #### Elastic Legacy
 
-On 17 April 2023, KyberSwap validated a vulnerability reported by a whitehat hacker which could result in double-counting of liquidity deposits under a specific condition. Elastic pools and farms were paused with all user funds being safely withdrawn from the identified contracts.
+On 17 April 2023, KyberSwap validated a vulnerability reported by a whitehat hacker which could result in double-counting of liquidity deposits under a specific condition. Elastic pools and farms were paused with all user funds being safely withdrawn from the identified contracts. If you still have funds in Elastic Legacy, please refer to [Remove Elastic Legacy Liquidity](../../reference/legacy/elastic-legacy/remove-elastic-legacy-liquidity.md) for a guide on how to retrieve your funds.
 
 As of 25 May 2023, this has now been fixed with all the relevant Elastic protocol and farm contracts updated. Please refer to [Elastic Legacy](../../reference/legacy/elastic-legacy/) for more details.
 {% endhint %}

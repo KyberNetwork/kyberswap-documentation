@@ -182,6 +182,7 @@
     * [Elastic Legacy Contract Repo](reference/legacy/elastic-legacy/elastic-contract-repo.md)
     * [Elastic Legacy Contract Addresses](reference/legacy/elastic-legacy/elastic-contract-addresses.md)
     * [Elastic Legacy Farming Contract Addresses](reference/legacy/elastic-legacy/elastic-farming-contract-addresses.md)
+    * [Remove Elastic Legacy Liquidity](reference/legacy/elastic-legacy/remove-elastic-legacy-liquidity.md)
   * [Getting Started](reference/legacy/getting-started.md)
   * [Protocol](reference/legacy/protocol/README.md)
     * [Overview](reference/legacy/protocol/overview.md)
