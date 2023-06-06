@@ -93,6 +93,7 @@ Decentralized Exchanges:
 * [DODO (v2)](https://app.dodoex.io/)
 * [Fraxswap](https://app.frax.finance/swap/main)
 * [GMX ](https://app.gmx.io/#/trade)
+* [Ramses](https://app.ramses.exchange/)
 * [Saddle ](https://saddle.exchange/#/)
 * [SushiSwap](https://www.sushi.com/swap)
 * [Swapr ](https://swapr.eth.link/#/swap?chainId=1)
