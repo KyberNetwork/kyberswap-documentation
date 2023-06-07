@@ -45,7 +45,7 @@
   * [Concepts](kyberswap-solutions/kyberswap-aggregator/concepts/README.md)
     * [Dynamic Trade Routing](kyberswap-solutions/kyberswap-aggregator/concepts/dynamic-trade-routing.md)
   * [User Guides](kyberswap-solutions/kyberswap-aggregator/user-guides/README.md)
-    * [Instantly Swap At The Best Rates](kyberswap-solutions/kyberswap-interface/user-guides/instantly-swap-at-the-best-rates.md)
+    *
   * [Developer Guides](kyberswap-solutions/kyberswap-aggregator/developer-guides/README.md)
     * [Execute A Swap With The Aggregator API](kyberswap-solutions/kyberswap-aggregator/developer-guides/execute-a-swap-with-the-aggregator-api.md)
     * [Upgrading From APIv1 To APIv2](kyberswap-solutions/kyberswap-aggregator/developer-guides/upgrading-from-apiv1-to-apiv2.md)
@@ -64,7 +64,7 @@
   * [Concepts](kyberswap-solutions/limit-order/concepts/README.md)
     * [Off-Chain Relay, On-Chain Settlement](kyberswap-solutions/limit-order/concepts/off-chain-relay.md)
   * [User Guides](kyberswap-solutions/limit-order/user-guides/README.md)
-    * [Swap At Your Preferred Rates](kyberswap-solutions/kyberswap-interface/user-guides/trade-at-your-preferred-rates.md)
+    *
     * [Update Limit Orders](kyberswap-solutions/limit-order/user-guides/update-limit-orders.md)
     * [Cancel Limit Orders](kyberswap-solutions/limit-order/user-guides/cancel-limit-orders.md)
   * [Developer Guides](kyberswap-solutions/limit-order/developer-guides/README.md)
@@ -79,7 +79,7 @@
 * [KyberAI](kyberswap-solutions/kyberai/README.md)
   * [KyberScore](kyberswap-solutions/kyberai/kyberscore.md)
   * [Concepts](kyberswap-solutions/kyberai/concepts/README.md)
-    * [On-Chain vs Off-Chain Data](getting-started/foundational-topics/decentralized-technologies/on-chain-vs-off-chain-data.md)
+    *
   * [On-Chain Indicators](kyberswap-solutions/kyberai/on-chain-indicators/README.md)
     * [Number Of Trades](kyberswap-solutions/kyberai/on-chain-indicators/number-of-trades.md)
     * [Trading Volume](kyberswap-solutions/kyberai/on-chain-indicators/trading-volume.md)
@@ -101,8 +101,8 @@
     * [Deep Dive Into Token Data](kyberswap-solutions/kyberai/user-guides/deep-dive-into-token-data.md)
     * [Add Tokens To Watchlist](kyberswap-solutions/kyberai/user-guides/add-tokens-to-watchlist.md)
     * [Get Notifications For Your Favourite Tokens](kyberswap-solutions/kyberai/user-guides/get-notifications-for-your-favourite-tokens.md)
-    * [Instantly Swap At The Best Rates](kyberswap-solutions/kyberswap-interface/user-guides/instantly-swap-at-the-best-rates.md)
-    * [Swap At Your Preferred Rates](kyberswap-solutions/kyberswap-interface/user-guides/trade-at-your-preferred-rates.md)
+    *
+    *
   * [FAQ](kyberswap-solutions/kyberai/faq.md)
 
 ## Liquidity Solutions

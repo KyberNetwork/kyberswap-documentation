@@ -69,7 +69,7 @@ Do note that KyberSwap Classic enables users to configure their pool according t
 
 As a safety precaution, KyberSwap Classic will prompt the LP if the specified pool price deviates significantly from the market price.This is because any liquidity additions that significantly deviates from the market price would immediately result in [impermanent loss](../../../getting-started/foundational-topics/decentralized-finance/impermanent-loss.md) as arbitrageurs sweep up the significantly discounted token from the position.
 
-![](<../../../.gitbook/assets/image (22) (1).png>)
+![](<../../../.gitbook/assets/image (11) (1) (1).png>)
 {% endhint %}
 
 ### Step 4: Select AMP value
