@@ -102,7 +102,19 @@ Once the approvals are confirmed, the previously-greyed-out “Supply” button 
 
 ### **Step 5**: Review liquidity provision
 
-Click on the “Supply” button to bring up the preview screen. Once you have reviewed the information on this screen, click on the “Supply” button to proceed.
+Click on the “Supply” button to bring up the preview screen.&#x20;
+
+{% hint style="warning" %}
+#### Slippage: Protecting your liquidity
+
+As an AMM protocol, any addition of liquidity to the pool might result in slippage whereby the final amount deposited differs from the expected amount. To minimize the effects of slippage, KyberSwap Classic enables you to configure a slippage tolerance that caps the amount of slippage above which your transaction will be reverted (i.e. failed and cancelled).
+
+![](../../../.gitbook/assets/Classic\_AddLiquidity\_SlippageToleranceSetting.png)
+
+Please refer to [AMM Slippage](../../../getting-started/foundational-topics/decentralized-finance/slippage.md#amm-slippage) for further details on why slippage occurs and how to protect your liquidity additions or removals.
+{% endhint %}
+
+Once you have reviewed the information on this screen, click on the “Supply” button to proceed.
 
 ![Supply preview](https://support.kyberswap.com/hc/article\_attachments/14431128463257)
 

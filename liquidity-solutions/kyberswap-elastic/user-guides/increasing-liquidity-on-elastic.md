@@ -70,7 +70,19 @@ Once the approval is confirmed, the previously-greyed-out “Preview” button w
 
 ### **Step 4**: Review increase liquidity
 
-Click on the “Preview” button to bring up the preview screen. Once you have reviewed the information on this screen, click on the “Supply” button to proceed.
+Click on the “Preview” button to bring up the preview screen.&#x20;
+
+{% hint style="warning" %}
+#### Slippage: Protecting your liquidity
+
+As an AMM protocol, any additions of liquidity to the pool might result in slippage whereby the final amount deposited differs from the expected amount. To minimize the effects of slippage, KyberSwap Elastic enables you to configure a slippage tolerance that caps the amount of slippage above which your transaction will be reverted (i.e. failed and cancelled).
+
+![](../../../.gitbook/assets/Elastic\_IncreaseLiquidity\_SlippageToleranceSetting.png)
+
+Please refer to [AMM Slippage](../../../getting-started/foundational-topics/decentralized-finance/slippage.md#amm-slippage) for further details on why slippage occurs and how to protect your liquidity additions or removals.
+{% endhint %}
+
+Once you have reviewed the information on this screen, click on the “Supply” button to proceed.
 
 ![Increas liquidity preview](https://support.kyberswap.com/hc/article\_attachments/14196871104409)
 

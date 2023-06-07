@@ -32,6 +32,10 @@ Due to how orders are prioritized on the blockchain (see above), it is not possi
 
 While it is always recommended to keep the slippage setting as low as possible to ensure trades are executed at the best rates, such transactions might face a higher failure rate in times of extreme market volatility. Setting a higher slippage increases the likelihood of transaction success but comes with greater risks of worse rates due to market volatility as well as the presence of front-running opportunities.&#x20;
 
+#### Slippage tolerance for liquidity provision
+
+Note that slippage also applies whenever liquidity is added or removed from an AMM pool due to the way transactions are ordered into blocks. Whenever a position is added to a liquidity pool, the protocol will try to match the token ratio required for liquidity additions to the current ratio of the pool. This also applies in the other direction whenever a position is removed from the pool.
+
 ## Order book slippage
 
 For [order book DEXs](order-book.md), trades are executed when a pending order is filled by a counterparty with a matching order. In the case of limit orders where trades are only executed if the market price matches the expected price, hence slippage only happens in the direction favouring the trader. As such, limit orders are a great way to ensure that there are no negative trade outcomes based on the predefined parameters of the trade.

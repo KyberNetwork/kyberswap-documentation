@@ -89,6 +89,16 @@ Click the "Remove" button to bring up the preview screen. The preview screen dis
 * **LP Tokens Removed:** The number of LP tokens, which represents your position, that will be removed
 * **Minimum Received:** This is the minimum amount of output tokens that you will receive from the removal. The removal will only be completed if this minimum amount threshold is achieved else the transaction will revert.
 
+{% hint style="warning" %}
+#### Slippage: Protecting your liquidity
+
+As an AMM protocol, any removal of liquidity from the pool might result in slippage whereby the final amount withdrawn differs from the expected amount. To minimize the effects of slippage, KyberSwap Classic enables you to configure a slippage tolerance that caps the amount of slippage above which your transaction will be reverted (i.e. failed and cancelled).
+
+![](../../../.gitbook/assets/Classic\_RemoveLiquidity\_SlippageToleranceSetting.png)
+
+Please refer to [AMM Slippage](../../../getting-started/foundational-topics/decentralized-finance/slippage.md#amm-slippage) for further details on why slippage occurs and how to protect your liquidity additions or removals.
+{% endhint %}
+
 Click the “Confirm” button to proceed. You should be prompted to confirm the transaction in your wallet.
 
 <figure><img src="../../../.gitbook/assets/image (66).png" alt=""><figcaption><p>KyberSwap pending confirmation</p></figcaption></figure>

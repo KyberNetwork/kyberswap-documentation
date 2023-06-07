@@ -60,7 +60,19 @@ Note that the FOT tax is specified in the FOT token's smart contract (i.e. the F
 
 ### **Step 3**: Review liquidity removal
 
-Click the “Preview” button to bring up a preview screen. Once you are satisfied with the transaction details, click the “Remove” button and then confirm this transaction on your wallet.
+Click the “Preview” button to bring up a preview screen.&#x20;
+
+{% hint style="warning" %}
+#### Slippage: Protecting your liquidity
+
+As an AMM protocol, any removal of liquidity from the pool might result in slippage whereby the final amount withdrawn differs from the expected amount. To minimize the effects of slippage, KyberSwap Elastic enables you to configure a slippage tolerance that caps the amount of slippage above which your transaction will be reverted (i.e. failed and cancelled).
+
+![](../../../.gitbook/assets/Elastic\_RemoveLiquidity\_SlippageToleranceSetting.png)
+
+Please refer to [AMM Slippage](../../../getting-started/foundational-topics/decentralized-finance/slippage.md#amm-slippage) for further details on why slippage occurs and how to protect your liquidity additions or removals.
+{% endhint %}
+
+Once you are satisfied with the transaction details, click the “Remove” button and then confirm this transaction on your wallet.
 
 ![Conform removal](https://support.kyberswap.com/hc/article\_attachments/14005916048153)
 
