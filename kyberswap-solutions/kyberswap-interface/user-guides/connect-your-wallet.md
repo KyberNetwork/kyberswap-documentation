@@ -48,6 +48,7 @@ Still deciding on which solution suits you best?&#x20;
 4. Swap Tokens
    * [Instantly Swap At The Best Rates](instantly-swap-at-the-best-rates.md)
    * [Swap At Your Preferred Rates](trade-at-your-preferred-rates.md)
+   * [Swap Between Different Tokens Across Chains](swap-between-different-tokens-across-chains.md)
 
 </details>
 
@@ -71,7 +72,7 @@ For the example below, we are connecting to KyberSwap with MetaMask.
 
 Once confirmed, you should be able to see the same wallet account being reflected on the top right of the KyberSwap app. You can even click on the connected account to bring up a handy account summary.
 
-<figure><img src="../../../.gitbook/assets/image (4) (1).png" alt=""><figcaption><p>KyberSwap Wallet Helper</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4) (1) (1).png" alt=""><figcaption><p>KyberSwap Wallet Helper</p></figcaption></figure>
 
 ## Funding your wallet
 

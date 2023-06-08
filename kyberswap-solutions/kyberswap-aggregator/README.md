@@ -20,7 +20,7 @@ For the full list of DEXs which have been integrated across KyberSwap Aggregator
 
 To ensure the best rates, KyberSwap Aggregator has integrated KyberSwap [Limit Orders](../limit-order/) as an additional liquidity source. This means that swaps via the Aggregator will also be routed through active limit orders which effectively increases the pool of potential liquidity sources for an Aggregator swap. By combining solutions, KyberSwap ensures the best rates for our users by sourcing the most capital efficient liquidity for a swap.
 
-<figure><img src="../../.gitbook/assets/image (1) (3).png" alt=""><figcaption><p>Swap routed via KyberSwap Limit Order</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (4).png" alt=""><figcaption><p>Swap routed via KyberSwap Limit Order</p></figcaption></figure>
 
 For more info on configuring liquidity sources for your swap, please visit [Customizing Trade Parameters](../kyberswap-interface/user-guides/instantly-swap-at-the-best-rates.md#customizing-trade-parameters).
 

@@ -22,6 +22,7 @@ Please refer to [Supported Exchanges and Networks](../../../getting-started/supp
 4. Swap Tokens
    * **Instantly Swap At The Best Rates** **<-**
    * [Swap At Your Preferred Rates](trade-at-your-preferred-rates.md)
+   * [Swap Between Different Tokens Across Chains](swap-between-different-tokens-across-chains.md)
 
 </details>
 
@@ -150,7 +151,7 @@ Hovering your mouse above the options will also bring up the helpers for your co
 
 <figure><img src="../../../.gitbook/assets/image (85).png" alt=""><figcaption><p>Infinite allowance helper</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (25).png" alt=""><figcaption><p>Custom allowance helper</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (25) (2).png" alt=""><figcaption><p>Custom allowance helper</p></figcaption></figure>
 
 Note that setting a custom allowance limit via the KyberSwap UI will be available for all wallets except for MetaMask and Trust Wallet. For these, users will be prompted to set the allowance limit directly in their wallet UI. This avoids any tx failures caused by amount mismatch.
 
@@ -253,7 +254,7 @@ Please refer to the [Price Impact](../../../getting-started/foundational-topics/
 
 Click the “Confirm Swap” button to proceed. You should see the Transaction Submitted screen appear. You can click on "View Transaction" to see your transaction on the blockchain explorer. Additionally, you can add the token to MetaMask if you haven't already done so.
 
-<figure><img src="../../../.gitbook/assets/image (5) (1) (1).png" alt=""><figcaption><p>Transaction broadcasted confirmation</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5) (1).png" alt=""><figcaption><p>Transaction broadcasted confirmation</p></figcaption></figure>
 
 You should also see the transaction appear in your account’s transaction history.
 
@@ -261,7 +262,7 @@ You should also see the transaction appear in your account’s transaction histo
 
 ## Customizing trade parameters
 
-<figure><img src="../../../.gitbook/assets/image (6) (2) (1).png" alt=""><figcaption><p>Advanced swap settings</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (6) (2).png" alt=""><figcaption><p>Advanced swap settings</p></figcaption></figure>
 
 The KyberSwap Interface also provides additional features for more advanced traders that allow customisation of the following trade parameters:
 
@@ -315,6 +316,6 @@ Degen Mode can be toggled on via the "[Advanced Settings](instantly-swap-at-the-
 
 Upon toggling the Degen Mode switch, you will be prompted to manually confirm the switch.
 
-<figure><img src="../../../.gitbook/assets/image (20) (3).png" alt=""><figcaption><p>Confirm Degen Mode</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (20).png" alt=""><figcaption><p>Confirm Degen Mode</p></figcaption></figure>
 
 As a safety precaution, Degen Mode will be auto-disabled after 30 minutes of being switched on.

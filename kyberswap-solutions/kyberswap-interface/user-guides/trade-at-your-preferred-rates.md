@@ -20,6 +20,7 @@ A [**Limit Order** ](../../limit-order/)is a way for KyberSwap traders to swap t
 4. Swap Tokens
    * [Instantly Swap At The Best Rates ](instantly-swap-at-the-best-rates.md)
    * **Swap At Your Preferred Rates <-**
+   * [Swap Between Different Tokens Across Chains](swap-between-different-tokens-across-chains.md)
 
 </details>
 

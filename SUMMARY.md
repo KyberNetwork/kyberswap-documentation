@@ -40,6 +40,7 @@
     * [Add Your Favourite Tokens](kyberswap-solutions/kyberswap-interface/user-guides/add-your-favourite-tokens.md)
     * [Get Crypto With Fiat](kyberswap-solutions/kyberswap-interface/user-guides/get-crypto-with-fiat.md)
     * [Bridge Your Assets Across Multiple Chains](kyberswap-solutions/kyberswap-interface/user-guides/bridge-your-assets-across-multiple-chains.md)
+    * [Swap Between Different Tokens Across Chains](kyberswap-solutions/kyberswap-interface/user-guides/swap-between-different-tokens-across-chains.md)
   * [Notifications](kyberswap-solutions/kyberswap-interface/notifications/README.md)
     * [Notification Center](kyberswap-solutions/kyberswap-interface/notifications/notification-center.md)
 * [KyberSwap Aggregator](kyberswap-solutions/kyberswap-aggregator/README.md)

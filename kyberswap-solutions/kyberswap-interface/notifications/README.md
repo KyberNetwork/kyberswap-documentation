@@ -33,32 +33,32 @@ KyberSwap users are able to subscribe to up to 5 active notifications across the
 
 ### Price alerts
 
-<figure><img src="../../../.gitbook/assets/image (9).png" alt=""><figcaption><p>Create a price alert</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (86).png" alt=""><figcaption><p>Create a price alert</p></figcaption></figure>
 
 Setup your target price and receive a notification whenever the market price for the token pair specified meets your target. Price alerts can be configured for any token pair that have been [imported](../user-guides/add-your-favourite-tokens.md) on the KyberSwap Interface. Alerts can be created with a cooldown across all KyberSwap [supported chains](../../../getting-started/supported-exchanges-and-networks.md).
 
 Users can also toggle their active alerts via the Notification Center.
 
-<figure><img src="../../../.gitbook/assets/image (20) (4).png" alt=""><figcaption><p>Toggle active alerts</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (40).png" alt=""><figcaption><p>Toggle active alerts</p></figcaption></figure>
 
 With price alerts, users are able to monitor price actions and adjust their trade strategy accordingly be it [updating existing limit orders](../../limit-order/user-guides/update-limit-orders.md) or [executing an immediate swap](../user-guides/instantly-swap-at-the-best-rates.md).
 
-<figure><img src="../../../.gitbook/assets/image (10).png" alt=""><figcaption><p>Price alerts history</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (6).png" alt=""><figcaption><p>Price alerts history</p></figcaption></figure>
 
 ### Elastic active range alerts
 
-<figure><img src="../../../.gitbook/assets/image (14).png" alt=""><figcaption><p>Liquidity position notifications</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (13).png" alt=""><figcaption><p>Liquidity position notifications</p></figcaption></figure>
 
 [Create an Elastic pool position](../../../liquidity-solutions/kyberswap-elastic/user-guides/elastic-pool-creation.md) and receive notifications whenever your position goes in or out of range. Maximize your yields by timing your liquidity [removals](../../../liquidity-solutions/kyberswap-elastic/user-guides/removing-liquidity-on-elastic.md) and [additions](../../../liquidity-solutions/kyberswap-elastic/user-guides/add-liquidity-to-an-existing-elastic-pool.md) according to the markets.
 
 ### Limit order alerts
 
-<figure><img src="../../../.gitbook/assets/image (6).png" alt=""><figcaption><p>Limit order notification</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (45).png" alt=""><figcaption><p>Limit order notification</p></figcaption></figure>
 
 [Create a limit order ](../user-guides/trade-at-your-preferred-rates.md)and receive a notification whenever your order gets fully or partially filled. KyberSwap will also send out notifications if any of your active orders has expired. Predefine your trades and receive updates whenever there's a matching trade or change in status.
 
 ### Bridge asset
 
-<figure><img src="../../../.gitbook/assets/image (3).png" alt=""><figcaption><p>Cross-chain bridge notifications</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (33).png" alt=""><figcaption><p>Cross-chain bridge notifications</p></figcaption></figure>
 
 [Bridge your assets across multiple chains](../user-guides/bridge-your-assets-across-multiple-chains.md) and receive a notification on the status of your transaction. No more needing to switch between networks to check balances or toggling between chain scanners to view the transaction status.

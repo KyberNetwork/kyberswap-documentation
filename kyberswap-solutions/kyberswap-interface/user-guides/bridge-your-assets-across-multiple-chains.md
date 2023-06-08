@@ -24,6 +24,7 @@ More information can be found on our third-party integration [page](../../../ref
 4. Swap Tokens
    * [Instantly Swap At The Best Rates ](instantly-swap-at-the-best-rates.md)
    * [Swap At Your Preferred Rates ](trade-at-your-preferred-rates.md)
+   * [Swap Between Different Tokens Across Chains](swap-between-different-tokens-across-chains.md)
 
 </details>
 
@@ -55,11 +56,11 @@ Multichain is the ultimate Router for web3. It is an infrastructure developed fo
 
 Click [**here**](https://docs.multichain.org/getting-started/introduction) for more information on Multichain Bridge.
 
-## KyberSwap Integration:
+## KyberSwap Integration
 
 Multichain is integrated on KyberSwap through API front end functionality to provide users with an option to easily bridge tokens across chains.
 
-<figure><img src="../../../.gitbook/assets/image (40).png" alt=""><figcaption><p>Bridge assets across chains on KyberSwap with Multichain</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (40) (1).png" alt=""><figcaption><p>Bridge assets across chains on KyberSwap with Multichain</p></figcaption></figure>
 
 Click [**here**](https://docs.multichain.org/getting-started/introduction)[ ](https://blog.kyber.network/kyberswap-launches-multichain-integration-39e12c42fb73)for the official announcement.
 
@@ -69,7 +70,7 @@ Click [**here**](https://docs.multichain.org/getting-started/introduction)[ ](ht
 
 The link to the bridge interface can be found within the "Swap" dropdown of the KyberSwap landing page. Alternatively, you can go directly to [https://kyberswap.com/bridge](https://kyberswap.com/bridge).
 
-<figure><img src="../../../.gitbook/assets/image (16) (1) (1).png" alt=""><figcaption><p>Bridge navigation</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (16) (1).png" alt=""><figcaption><p>Bridge navigation</p></figcaption></figure>
 
 ### **Step 2**: Select token and chains
 
