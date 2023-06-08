@@ -18,7 +18,7 @@ For developers integrating with the [KyberSwap Aggregator](../kyberswap-solution
 
 <details>
 
-<summary><img src="../.gitbook/assets/Ethereum_Chain_Negative (1).png" alt="" data-size="line">   Ethereum (ChainID: 1)</summary>
+<summary><img src="../.gitbook/assets/Ethereum_Chain_Negative.png" alt="" data-size="line">   Ethereum (ChainID: 1)</summary>
 
 Decentralized Exchanges:
 

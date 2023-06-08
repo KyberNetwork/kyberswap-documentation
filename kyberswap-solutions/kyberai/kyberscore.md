@@ -84,7 +84,7 @@ Based on our extensive testing, KyberScore has consistently managed to anticipat
 
 <figure><img src="../../.gitbook/assets/image (20).png" alt=""><figcaption><p>Comparing KyberScore with BTC historical price movements for Oct 2022</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (17) (2).png" alt=""><figcaption><p>Comparing KyberScore with BTC historical price movements for Nov 2022 - 15 Dec 2022</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (17) (2) (1).png" alt=""><figcaption><p>Comparing KyberScore with BTC historical price movements for Nov 2022 - 15 Dec 2022</p></figcaption></figure>
 
 Notice the correlation between the KyberScore (green dots) with BTC price (blue line) at times when the KyberScore diverges significantly from the neutral 0.5 baseline (note that the KyberScore displayed in the UI adjusts the KyberScore by a factor of 100 for improved readability, that is KyberScore of 0.5 in the test is equivalent to 50 in the UI). The direction of BTC price movement correlates strongly with the extent of this KyberScore divergence therefore validating the effectiveness of KyberScore as a predictor of a token's price movement in the next 24 hours.
 
