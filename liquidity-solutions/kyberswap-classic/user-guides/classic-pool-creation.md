@@ -121,9 +121,9 @@ Click on the "Create" button to bring up the preview screen. Once you have revie
 
 You will need to confirm this transaction in your wallet
 
-<figure><img src="../../../.gitbook/assets/image (35) (1).png" alt=""><figcaption><p>KyberSwap pending confirmation from wallet</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (35).png" alt=""><figcaption><p>KyberSwap pending confirmation from wallet</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (6) (3).png" alt=""><figcaption><p>Metamask confirmation</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (6) (2).png" alt=""><figcaption><p>Metamask confirmation</p></figcaption></figure>
 
 Once you’ve confirmed the transaction you will see a screen informing you that the transaction has been submitted. You can click on “View Transaction” to view your transaction on the appropriate blockchain explorer.
 
