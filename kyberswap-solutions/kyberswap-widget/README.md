@@ -6,9 +6,9 @@ description: Plug And Play The Best Rates Straight From Your App
 
 ## Overview
 
-![The KyberSwap Widget](https://docs.kyberswap.com/assets/images/widget\_powered\_by\_kyberswap-c8e301050927f11aac9f414ded1c88b6.gif)
+<figure><img src="../../.gitbook/assets/Widget_Intro.gif" alt=""><figcaption><p>The KyberSwap Widget</p></figcaption></figure>
 
-KyberSwap Widget provides users of your website with a handy tool for swap tokens at the best rate. The KyberSwap Widget supports swaps across all Aggregator EVM chains. Please refer to [Supported Exchanges and Networks ](../../getting-started/supported-exchanges-and-networks.md)for the full list of supported chains.
+KyberSwap Widget provides users of your website with a handy tool for token swaps at the best rate. The KyberSwap Widget supports swaps across all Aggregator EVM chains. Please refer to [Supported Exchanges and Networks ](../../getting-started/supported-exchanges-and-networks.md)for the full list of supported chains.
 
 For guides on how to integrate the KyberSwap Widget into your app, you can refer to [Integrating The KyberSwap Widget](developer-guides/integrating-the-kyberswap-widget.md).
 
@@ -21,7 +21,7 @@ For guides on how to integrate the KyberSwap Widget into your app, you can refer
 
 You can customize the colors, font, and token list to match your app theme.. Alternatively, you can use our slightly modified sample `theme` to create your own look and feel.
 
-![Sample 1](https://docs.kyberswap.com/assets/images/widget-customize-6327c3a7c7454fd6f2104e6a6a0d058b.png)
+<figure><img src="../../.gitbook/assets/Widget_Customize.gif" alt="" width="375"><figcaption><p>Customize KyberSwap Widget</p></figcaption></figure>
 
 ```javascript
 const theme: Theme = {
