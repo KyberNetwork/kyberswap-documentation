@@ -6,24 +6,30 @@ description: Interacting With KyberSwap Aggregator Router Contract
 
 ## Overview
 
-As the KyberSwap Aggregator has been deployed on Solana, KyberSwap maintains 2 different API specifications:
+As the KyberSwap Aggregator has been deployed on Solana, KyberSwap maintains 2 different [API specifications](../aggregator-api-specification/):
 
-* [Swap API for EVM chains](../aggregator-api-specification/evm-swaps.md)
-* [Swap API for Solana](../aggregator-api-specification/solana-swaps.md)
+* [Swap API specs for EVM chains](../aggregator-api-specification/evm-swaps.md)
+* [Swap API specs for Solana](../aggregator-api-specification/solana-swaps.md)
 
 This guide focuses on calling the Aggregator APIs for [EVM chains](../aggregator-api-specification/evm-swaps.md) but the same principles apply to the [Solana](../aggregator-api-specification/solana-swaps.md) variant.&#x20;
 
-To execute a swap, the router (`MetaAggregationRouterV2`) contract requires the encoded swap data to be included as part of the transaction. This encoded swap data as well as other swap metadata is returned as part of the API response. As such, developers are expected to call the swap API prior to sending a transaction to the router contract.
-
 {% hint style="info" %}
-#### Backwards compatibility
+#### KyberSwap Aggregator APIv2
 
 Following feedback on the initial `[V1]` API, KyberSwap has implemented a more performant `[V2]` API which improves the response time for getting a route via offloading encoding requirements to the post method.
 
-**Please refer to** [**Upgrading From APIv1 To APIv2**](upgrading-from-apiv1-to-apiv2.md) **for further details on the motivation behind the upgrade as well as the relevant changes to swap flow and parameters.**
+For integrators who have previously integrated with APIv2, please refer to [Upgrading From APIv1 To APIv2](upgrading-from-apiv1-to-apiv2.md) for further details on the motivation behind the upgrade as well as the relevant changes to swap flow and parameters.&#x20;
 
-Please use the `[V2]GET` API for more efficient route queries. The returned route can then be reused in the `[V2]POST` body to get the encoded swap data. The `[V1]GET` and `[V2]GET` remains backwards compatible with the main change being the queried path.
+Please use the `[V2]GET` API for more efficient route queries. The returned route can then be reused in the `[V2]POST` body to get the encoded swap data. The `[V1]GET` and `[V2]GET` remains backwards compatible with the main change being the queried path.&#x20;
+
+**While both versions of the API remains backwards compatible, only the `[V2]` APIs will continue to receive updates and hence developers are highly encouraged to implement the latest `[V2]` APIs to avoid any disruptions as the `[V1]` API is eventually deprecated.**
 {% endhint %}
+
+## Sequence diagram
+
+<figure><img src="../../../.gitbook/assets/Aggregator APIv2-APIv2.png" alt=""><figcaption><p>APIv2 sequence diagram</p></figcaption></figure>
+
+To execute a swap, the router (`MetaAggregationRouterV2`) contract requires the encoded swap data to be included as part of the transaction. This encoded swap data as well as other swap metadata are returned as part of the API response. As such, developers are expected to call the swap API prior to sending a transaction to the router contract.
 
 ## Web3.js example
 

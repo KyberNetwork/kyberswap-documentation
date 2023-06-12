@@ -8,13 +8,13 @@ The guides in the following section are targeted at application developers as we
 
 ## Overview
 
-KyberSwap Aggregator offers developers 2 options for integration:
+To cater for varying integration complexities, KyberSwap Aggregator offers developers 2 options for integration:
 
-* [**KyberSwap Widget**](../../kyberswap-widget/): An endlessly customizable widget that can be seamlessly integrated with a few lines of code.
-* [**Aggregator API**](../aggregator-api-specification/): For developers that require more fine-tuned control when integrating swap functionality within their app.&#x20;
+* [**KyberSwap Widget**](../../kyberswap-widget/): An endlessly customizable widget that can be seamlessly integrated with a few lines of code. Refer to [Integrating The KyberSwap Widget](../../kyberswap-widget/developer-guides/integrating-the-kyberswap-widget.md) for instructions on how to install and add the widget to your frontend.
+* [**Aggregator API**](../aggregator-api-specification/): For developers that require more fine-tuned control when integrating swap functionality within their app. If you're just getting started with the KyberSwap Aggregator, you can refer to our [Execute A Swap With The Aggregator API](execute-a-swap-with-the-aggregator-api.md) dev guide for information and code samples on how to query and execute swaps at the best rates.
 
 {% hint style="info" %}
-#### Aggregator APIv2
+#### KyberSwap Aggregator APIv2 Upgrades
 
 The [EVM swap](../aggregator-api-specification/evm-swaps.md) API has been upgraded for more performant queries and the details behind the enhancement as well as the updated swap flows can be viewed on [Upgrading From APIv1 To APIv2](upgrading-from-apiv1-to-apiv2.md).
 {% endhint %}
