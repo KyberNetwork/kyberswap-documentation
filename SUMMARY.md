@@ -57,6 +57,7 @@
   * [Contracts](kyberswap-solutions/kyberswap-aggregator/contracts/README.md)
     * [Aggregator Contract Addresses](kyberswap-solutions/kyberswap-aggregator/contracts/aggregator-contract-addresses.md)
   * [DEX IDs](kyberswap-solutions/kyberswap-aggregator/dex-ids.md)
+  * [Subgraphs](kyberswap-solutions/kyberswap-aggregator/subgraphs.md)
   * [FAQ](kyberswap-solutions/kyberswap-aggregator/faq.md)
 * [KyberSwap Widget](kyberswap-solutions/kyberswap-widget/README.md)
   * [Developer Guides](kyberswap-solutions/kyberswap-widget/developer-guides/README.md)

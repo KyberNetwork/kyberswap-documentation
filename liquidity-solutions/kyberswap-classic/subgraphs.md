@@ -6,74 +6,74 @@ description: Indexing And Querying Blockchain Data
 
 KyberSwap Classic uses multiple [subgraphs](https://thegraph.com/docs/about/introduction#what-the-graph-is) for indexing and organizing data from the KyberSwap smart contracts. These subgraphs are available cross multi-chains that KyberSwap is operating in
 
-### Ethereum[​](https://docs.kyberswap.com/Classic/reference/subgraph-data#ethereum) <a href="#ethereum" id="ethereum"></a>
+### Ethereum[​](https://docs.kyberswap.com/Classic/reference/subgraph-data#ethereum) (ChainID: 1) <a href="#ethereum" id="ethereum"></a>
 
 ```
-- https://api.thegraph.com/subgraphs/name/kybernetwork/kyberswap-exchange-ethereum
+https://api.thegraph.com/subgraphs/name/kybernetwork/kyberswap-exchange-ethereum
 ```
 
-### Arbitrum[​](https://docs.kyberswap.com/Classic/reference/subgraph-data#arbitrum) <a href="#arbitrum" id="arbitrum"></a>
+### BSC (ChainID: 56) <a href="#bsc" id="bsc"></a>
 
 ```
-- https://arbitrum-graph.kyberengineering.io/subgraphs/name/kybernetwork/kyberswap-exchange-arbitrum
+https://api.thegraph.com/subgraphs/name/kybernetwork/kyberswap-exchange-bsc
 ```
 
-### Polygon[​](https://docs.kyberswap.com/Classic/reference/subgraph-data#polygon) <a href="#polygon" id="polygon"></a>
+### Arbitrum[​](https://docs.kyberswap.com/Classic/reference/subgraph-data#arbitrum) (ChainID: 42161) <a href="#arbitrum" id="arbitrum"></a>
 
 ```
-- https://api.thegraph.com/subgraphs/name/kybernetwork/kyberswap-exchange-polygon 
+https://arbitrum-graph.kyberengineering.io/subgraphs/name/kybernetwork/kyberswap-exchange-arbitrum
 ```
 
-### Avalanche[​](https://docs.kyberswap.com/Classic/reference/subgraph-data#avalanche) <a href="#avalanche" id="avalanche"></a>
+### Polygon[​](https://docs.kyberswap.com/Classic/reference/subgraph-data#polygon) (ChainID: 137) <a href="#polygon" id="polygon"></a>
 
 ```
-- https://api.thegraph.com/subgraphs/name/kybernetwork/kyberswap-exchange-avalanche
+https://api.thegraph.com/subgraphs/name/kybernetwork/kyberswap-exchange-polygon 
 ```
 
-### Bsc[​](https://docs.kyberswap.com/Classic/reference/subgraph-data#bsc) <a href="#bsc" id="bsc"></a>
+### Optimism[​](https://docs.kyberswap.com/Classic/reference/subgraph-data#optimism) (ChainID: 10) <a href="#optimism" id="optimism"></a>
 
 ```
-- https://api.thegraph.com/subgraphs/name/kybernetwork/kyberswap-exchange-bsc
+https://api.thegraph.com/subgraphs/name/kybernetwork/kyberswap-exchange-avalanche
 ```
 
-### Fantom[​](https://docs.kyberswap.com/Classic/reference/subgraph-data#fantom) <a href="#fantom" id="fantom"></a>
+### Fantom[​](https://docs.kyberswap.com/Classic/reference/subgraph-data#fantom) (ChainID: 250) <a href="#fantom" id="fantom"></a>
 
 ```
-- https://avalanche-graph.kyberengineering.io/subgraphs/name/kybernetwork/kyberswap-exchange-avalanche
+https://api.thegraph.com/subgraphs/name/kybernetwork/kyberswap-exchange-fantom
 ```
 
-### Cronos[​](https://docs.kyberswap.com/Classic/reference/subgraph-data#cronos) <a href="#cronos" id="cronos"></a>
+### Avalanche[​](https://docs.kyberswap.com/Classic/reference/subgraph-data#avalanche) (ChainID: 43114) <a href="#avalanche" id="avalanche"></a>
 
 ```
-- https://cronos-graph.kyberengineering.io/subgraphs/name/kybernetwork/kyberswap-exchange-cronos
+https://api.thegraph.com/subgraphs/name/kybernetwork/kyberswap-exchange-avalanche
 ```
 
-### Aurora[​](https://docs.kyberswap.com/Classic/reference/subgraph-data#aurora) <a href="#aurora" id="aurora"></a>
+### Cronos[​](https://docs.kyberswap.com/Classic/reference/subgraph-data#cronos) (ChainID: 25) <a href="#cronos" id="cronos"></a>
 
 ```
-- https://api.thegraph.com/subgraphs/name/kybernetwork/kyberswap-exchange-aurora
+https://cronos-graph.kyberengineering.io/subgraphs/name/kybernetwork/kyberswap-exchange-cronos
 ```
 
-### Velas[​](https://docs.kyberswap.com/Classic/reference/subgraph-data#velas) <a href="#velas" id="velas"></a>
+### Velas[​](https://docs.kyberswap.com/Classic/reference/subgraph-data#velas) (ChainID: 106) <a href="#velas" id="velas"></a>
 
 ```
-- https://api.thegraph.com/subgraphs/name/kybernetwork/kyberswap-exchange-aurora
+https://velas-graph.kyberengineering.io/subgraphs/name/kybernetwork/kyberswap-exchange-velas
 ```
 
-### Oasis[​](https://docs.kyberswap.com/Classic/reference/subgraph-data#oasis) <a href="#oasis" id="oasis"></a>
+### Aurora[​](https://docs.kyberswap.com/Classic/reference/subgraph-data#aurora) (ChainID: 1313161554) <a href="#aurora" id="aurora"></a>
 
 ```
-- https://api.thegraph.com/subgraphs/name/kybernetwork/kyberswap-exchange-aurora
+https://api.thegraph.com/subgraphs/name/kybernetwork/kyberswap-exchange-aurora
 ```
 
-### BitTorrent[​](https://docs.kyberswap.com/Classic/reference/subgraph-data#bittorrent) <a href="#bittorrent" id="bittorrent"></a>
+### Oasis[​](https://docs.kyberswap.com/Classic/reference/subgraph-data#oasis) (ChainID: 42262) <a href="#oasis" id="oasis"></a>
 
 ```
-- https://bttc-graph.kyberengineering.io/subgraphs/name/kybernetwork/kyberswap-exchange-bttc
+https://oasis-graph.kyberengineering.io/subgraphs/name/kybernetwork/kyberswap-exchange-oasis
 ```
 
-### Optimism[​](https://docs.kyberswap.com/Classic/reference/subgraph-data#optimism) <a href="#optimism" id="optimism"></a>
+### BitTorrent[​](https://docs.kyberswap.com/Classic/reference/subgraph-data#bittorrent) (ChainID: 199) <a href="#bittorrent" id="bittorrent"></a>
 
 ```
-- https://api.thegraph.com/subgraphs/name/kybernetwork/kyberswap-exchange-optimism
+https://bttc-graph.kyberengineering.io/subgraphs/name/kybernetwork/kyberswap-exchange-bttc
 ```
