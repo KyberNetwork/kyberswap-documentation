@@ -33,7 +33,7 @@ https://api.thegraph.com/subgraphs/name/kybernetwork/kyberswap-exchange-polygon
 ### Optimism[​](https://docs.kyberswap.com/Classic/reference/subgraph-data#optimism) (ChainID: 10) <a href="#optimism" id="optimism"></a>
 
 ```
-https://api.thegraph.com/subgraphs/name/kybernetwork/kyberswap-exchange-avalanche
+https://api.thegraph.com/subgraphs/name/kybernetwork/kyberswap-exchange-optimism
 ```
 
 ### Fantom[​](https://docs.kyberswap.com/Classic/reference/subgraph-data#fantom) (ChainID: 250) <a href="#fantom" id="fantom"></a>
