@@ -119,6 +119,16 @@ KyberSwap Interface allows users to customize trade parameters which enables gre
 
 <figure><img src="../../../.gitbook/assets/UserGuide_CrossChain_SwapAmount.png" alt=""><figcaption><p>Specify cross-chain swap amount</p></figcaption></figure>
 
+{% hint style="warning" %}
+#### Squid Slippage Handling
+
+As market conditions can change during processing of the cross-chain swap, Axelar implements a safeguard against excessive [slippage](../../../getting-started/foundational-topics/decentralized-finance/slippage.md) by transferring axlUSDC to the trader's wallet if the slippage for the last token swap exceeds the configured slippage. Please refer to [Squid Docs](https://docs.squidrouter.com/architecture/fallback-behaviour-on-failed-transactions) for more information about this fallback behaviour. In such cases, you can view your axlUSDC directly in the KyberSwap UI.
+
+![](../../../.gitbook/assets/CrossChain\_SquidFallback.png)
+
+You can refer to [Axelars Docs](https://docs.axelar.dev/dev/reference/mainnet-contract-addresses#assets) for the full list of axlUSDC contract addresses across the supported chains.
+{% endhint %}
+
 ### **Step 4**: Approve or permit contract to swap tokens
 
 Approve or Permit KyberSwap to swap the tokens on your behalf. Proceed to Step 5 if token approval/permit is not required.
