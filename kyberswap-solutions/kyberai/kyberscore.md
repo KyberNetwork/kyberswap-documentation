@@ -18,7 +18,7 @@ In keeping to the permissionless and transparent ethos of DeFi, KyberScore was a
 
 ## What is KyberScore?
 
-At its core, KyberScore reflects the probability that a token will enter into bullish or bearish territory over the next 24 hours. Ranging from 0-100, a KyberScore of 100 indicates that the model anticipates that token price will perform extremely well over the next day and vice versa. KyberScores are recomputed every 4 hours and hence comparing the historical KyberScores for a token could also indicate when a token might be starting to move or if the token is overbought or oversold.
+At its core, KyberScore reflects the probability that a token will enter into bullish or bearish territory over the next 24 hours. Ranging from 0-100, a KyberScore closer to 100 indicates that the model anticipates that the token price will very likely increase at anytime over the next 24 hours and vice versa. KyberScores are recomputed every 4 hours based on multiple on-chain and off-chain data points. Users can potentially gauge market directionality by examining relationships between the most recent set of KyberScores for a token (see [backtesting](kyberscore.md#backtesting-with-trading-strategies) for more details).
 
 Critically, by contrasting KyberScores across tokens, users are quickly able to deduce which token will likely outperform or underperform the mean. Moreover, KyberScore represents the token performance for a token across all the supported chains hence users can even compare tokens on different networks easily.
 
