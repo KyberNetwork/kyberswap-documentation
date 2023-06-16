@@ -35,6 +35,7 @@ Decentralized Exchanges:
 * [Synapse](https://synapseprotocol.com/)
 * [Uniswap (v2)](https://app.uniswap.org/#/swap)
 * [Uniswap (v3)](https://app.uniswap.org/#/swap)
+* [Verse](https://verse.bitcoin.com/)
 
 Aggregators:
 
