@@ -1,5 +1,5 @@
 ---
-description: 13+ Chains, 200+ DEXs, and we're just getting started...
+description: 14+ Chains, 70+ DEXs, and we're just getting started...
 ---
 
 # Supported Exchanges And Networks
@@ -231,6 +231,23 @@ Aggregators:
 * [0x](https://0x.org/docs/0x-swap-api/introduction)
 * [1inch](https://app.1inch.io/)
 * [Paraswap](https://app.paraswap.io/)
+
+</details>
+
+<details>
+
+<summary><img src="../.gitbook/assets/ZkSync_logo.png" alt="">   ZkSync Era* (ChainID: 324)</summary>
+
+Decentralized Exchanges:
+
+* [KyberSwap](https://kyberswap.com/)
+* [Mute.Switch](https://app.mute.io/swap)
+* [SyncSwap](https://syncswap.xyz/)
+* [Velocore](https://app.velocore.xyz/swap)
+
+Aggregators:
+
+* [KyberSwap](https://kyberswap.com/swap)
 
 </details>
 

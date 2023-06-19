@@ -1,5 +1,5 @@
 ---
-description: Supported across 13 chains and counting
+description: Supported across 14 chains and counting
 ---
 
 # Switching Networks

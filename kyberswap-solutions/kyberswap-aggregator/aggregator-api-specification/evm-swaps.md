@@ -6,7 +6,7 @@ description: KyberSwap Aggregator EVM APIs
 
 ## Download OpenAPI specification:
 
-{% file src="../../../.gitbook/assets/KyberSwapAggregator_EVMAPIs_v2.2 .yaml" %}
+{% file src="../../../.gitbook/assets/KyberSwapAggregator_EVMAPIs_v2.3.yaml" %}
 
 {% hint style="success" %}
 #### Note on integrations: clientID
@@ -27,18 +27,24 @@ If you're just getting started with the KyberSwap Aggregator, you can refer to o
 
 To support more performant queries, KyberSwap highly encourages all integrators to implement the latest API `[V2]` version. While both versions of the API remains backwards compatible, only the `[V2]` APIs will continue to receive updates and hence developers are highly encouraged to implement the latest `[V2]` APIs to avoid any disruptions as the `[V1]` API will eventually be deprecated.
 
+{% hint style="info" %}
+#### ZkSync Era support
+
+For integrators looking to build on top of the KyberSwap Aggregator on ZkSync Era (ChainID: 324), please note that only the `[V2]` API is supported.
+{% endhint %}
+
 ### API \[V2]: Latest
 
-{% swagger src="../../../.gitbook/assets/KyberSwapAggregator_EVMAPIs_v2.2 .yaml" path="/{chain}/api/v1/routes" method="get" %}
-[KyberSwapAggregator_EVMAPIs_v2.2 .yaml](<../../../.gitbook/assets/KyberSwapAggregator_EVMAPIs_v2.2 .yaml>)
+{% swagger src="../../../.gitbook/assets/KyberSwapAggregator_EVMAPIs_v2.3.yaml" path="/{chain}/api/v1/routes" method="get" %}
+[KyberSwapAggregator_EVMAPIs_v2.3.yaml](../../../.gitbook/assets/KyberSwapAggregator_EVMAPIs_v2.3.yaml)
 {% endswagger %}
 
-{% swagger src="../../../.gitbook/assets/KyberSwapAggregator_EVMAPIs_v2.2 .yaml" path="/{chain}/api/v1/route/build" method="post" %}
-[KyberSwapAggregator_EVMAPIs_v2.2 .yaml](<../../../.gitbook/assets/KyberSwapAggregator_EVMAPIs_v2.2 .yaml>)
+{% swagger src="../../../.gitbook/assets/KyberSwapAggregator_EVMAPIs_v2.3.yaml" path="/{chain}/api/v1/route/build" method="post" %}
+[KyberSwapAggregator_EVMAPIs_v2.3.yaml](../../../.gitbook/assets/KyberSwapAggregator_EVMAPIs_v2.3.yaml)
 {% endswagger %}
 
 ### API \[V1]: Sunset period
 
-{% swagger src="../../../.gitbook/assets/KyberSwapAggregator_EVMAPIs_v2.2 .yaml" path="/{chain}/route/encode" method="get" %}
-[KyberSwapAggregator_EVMAPIs_v2.2 .yaml](<../../../.gitbook/assets/KyberSwapAggregator_EVMAPIs_v2.2 .yaml>)
+{% swagger src="../../../.gitbook/assets/KyberSwapAggregator_EVMAPIs_v2.3.yaml" path="/{chain}/route/encode" method="get" %}
+[KyberSwapAggregator_EVMAPIs_v2.3.yaml](../../../.gitbook/assets/KyberSwapAggregator_EVMAPIs_v2.3.yaml)
 {% endswagger %}

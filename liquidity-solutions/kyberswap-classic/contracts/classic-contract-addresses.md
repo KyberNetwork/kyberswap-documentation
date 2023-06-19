@@ -171,6 +171,18 @@ description: Liquidity Mining Across Multiple Chains
 
 <details>
 
+<summary>ZkSync Era (ChainID: 324)</summary>
+
+#### Static Fee
+
+* **KSRouter02:** [`0x937f4f2FF1889b79dAa08debfCA5C237a07A5208`](https://explorer.zksync.io/address/0x937f4f2FF1889b79dAa08debfCA5C237a07A5208)
+* **KSFactory:** [`0x9017f5A42fbe5bCA3853400D2660a2Ee771b241e`](https://explorer.zksync.io/address/0x9017f5A42fbe5bCA3853400D2660a2Ee771b241e)
+* **KSZap:** [`0x35004774C6163bCEE66F815F59975606cC841c54`](https://explorer.zksync.io/address/0x35004774C6163bCEE66F815F59975606cC841c54)
+
+</details>
+
+<details>
+
 <summary>Cronos (ChainID: 25)</summary>
 
 #### Static Fee
