@@ -14,6 +14,6 @@ Note that as off-chain data is not determined by the network, all oracles requir
 
 {% tabs %}
 {% tab title="Developers" %}
-*
+* [Get Elastic Pool Price](../../../liquidity-solutions/kyberswap-elastic/developer-guides/get-elastic-pool-price.md)
 {% endtab %}
 {% endtabs %}
