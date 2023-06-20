@@ -60,7 +60,7 @@ All KyberSwap Aggregator contracts have been deployed at the same address across
 
 <details>
 
-<summary>ZkSync Era (ChainID: 324)</summary>
+<summary>zkSync Era (ChainID: 324)</summary>
 
 * **MetaAggregationRouterV2:** [`0x3F95eF3f2eAca871858dbE20A93c01daF6C2e923`](https://explorer.zksync.io/address/0x3F95eF3f2eAca871858dbE20A93c01daF6C2e923)
 

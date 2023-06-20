@@ -171,7 +171,7 @@ description: Liquidity Mining Across Multiple Chains
 
 <details>
 
-<summary>ZkSync Era (ChainID: 324)</summary>
+<summary>zkSync Era (ChainID: 324)</summary>
 
 #### Static Fee
 

@@ -236,7 +236,7 @@ Aggregators:
 
 <details>
 
-<summary><img src="../.gitbook/assets/ZkSync_logo.png" alt="">   ZkSync Era* (ChainID: 324)</summary>
+<summary><img src="../.gitbook/assets/ZkSync_logo.png" alt="">   zkSync Era* (ChainID: 324)</summary>
 
 Decentralized Exchanges:
 
