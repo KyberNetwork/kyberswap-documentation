@@ -61,7 +61,7 @@ KyberSwap understands that market conditions can change rapidly and we want to p
 {% endtab %}
 
 {% tab title="Traders" %}
-* [Instantly Swap At Superior Rates](../../../kyberswap-solutions/kyberswap-interface/user-guides/instantly-swap-at-the-best-rates.md)
+* [Instantly Swap At Superior Rates](broken-reference)
 * [Swap At Your Preferred Rates](../../../kyberswap-solutions/kyberswap-interface/user-guides/trade-at-your-preferred-rates.md)
 {% endtab %}
 

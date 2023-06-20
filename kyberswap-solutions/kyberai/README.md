@@ -13,7 +13,7 @@ With the introduction of KyberAI, users will be able to confidently answer the m
 
 * [**KyberAI's KyberScore**](kyberscore.md): Which token will likely be bullish or bearish in the short term? How do I identify tokens with the most trading potential?&#x20;
 * **KyberAI** [**On-Chain**](on-chain-indicators/) **and** [**Technical**](technical-indicators/) **Indicators**: What other data do I need to make an informed trade decision once I've shortlisted a token? How can these data points be combined to provide further insights?
-* [**KyberSwap Aggregator**](../kyberswap-aggregator/): How do I [get the best rates](../kyberswap-interface/user-guides/instantly-swap-at-the-best-rates.md) once I've made the decision to buy or sell a token?&#x20;
+* [**KyberSwap Aggregator**](../kyberswap-aggregator/): How do I [get the best rates](broken-reference) once I've made the decision to buy or sell a token?&#x20;
 * [**KyberSwap Limit Order**](../limit-order/): How do I [trade tokens based on my identified entry and exit price](../kyberswap-interface/user-guides/trade-at-your-preferred-rates.md)?&#x20;
 * **KyberSwap** [**Classic**](../../liquidity-solutions/kyberswap-classic/) **and** [**Elastic**](../../liquidity-solutions/kyberswap-elastic/): How do I [maximize yields](../kyberswap-interface/user-guides/earn-yield-by-contributing-liquidity.md) by taking advantage of market volatility?&#x20;
 {% endhint %}

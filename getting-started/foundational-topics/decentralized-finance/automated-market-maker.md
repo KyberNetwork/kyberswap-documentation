@@ -88,7 +88,7 @@ KyberSwap implements two AMM variants, [KyberSwap Classic](../../../liquidity-so
 {% endtab %}
 
 {% tab title="Traders" %}
-* [Instantly Swap At Superior Rates](../../../kyberswap-solutions/kyberswap-interface/user-guides/instantly-swap-at-the-best-rates.md)
+* [Instantly Swap At Superior Rates](broken-reference)
 {% endtab %}
 
 {% tab title="Developers" %}

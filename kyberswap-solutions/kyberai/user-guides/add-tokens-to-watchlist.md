@@ -32,7 +32,7 @@ Note that the watchlist will be saved to the address which was connected to Kybe
 4. **Add Tokens To Watchlist <-**
 5. [Get Notified On Your Favourite Tokens](get-notifications-for-your-favourite-tokens.md)
 6. Buy Or Sell Tokens
-   * [Instantly Swap At The Best Rates](../../kyberswap-interface/user-guides/instantly-swap-at-the-best-rates.md)
+   * [Instantly Swap At The Best Rates](broken-reference)
    * [Swap At Your Preferred Rates](../../kyberswap-interface/user-guides/trade-at-your-preferred-rates.md)
 
 </details>

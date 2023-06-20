@@ -84,7 +84,7 @@ The second point above is what is concerning as it is hard to argue that such un
 
 [KyberSwap Elastic](../../../liquidity-solutions/kyberswap-elastic/) comes with an [anti-sniping feature](../../../liquidity-solutions/kyberswap-elastic/concepts/anti-sniping-mechanism.md) to natively protect LPs from any potential front-runners. This lock based vested reward system eliminates any front-running opportunities brought about from liquidity additions or removals. Refer to [Anti-Sniping Mechanism](../../../liquidity-solutions/kyberswap-elastic/concepts/anti-sniping-mechanism.md) for more information on how Elastic keeps its LPs safe.
 
-For traders, the KyberSwap Aggregator allows you to [customize the maximum slippage](../../../kyberswap-solutions/kyberswap-interface/user-guides/instantly-swap-at-the-best-rates.md#customizing-trade-parameters) for each trade. This minimizes any front-running opportunities linked to your trade as your trade will only be executed if the final price is within the interval set.
+For traders, the KyberSwap Aggregator allows you to [customize the maximum slippage](broken-reference) for each trade. This minimizes any front-running opportunities linked to your trade as your trade will only be executed if the final price is within the interval set.
 
 {% tabs %}
 {% tab title="Liquidity Providers" %}
@@ -94,7 +94,7 @@ For traders, the KyberSwap Aggregator allows you to [customize the maximum slipp
 {% endtab %}
 
 {% tab title="Traders" %}
-* [Customize trade parameters](../../../kyberswap-solutions/kyberswap-interface/user-guides/instantly-swap-at-the-best-rates.md#customizing-trade-parameters)
-* [Instantly Swap At Superior Rates](../../../kyberswap-solutions/kyberswap-interface/user-guides/instantly-swap-at-the-best-rates.md)
+* [Customize trade parameters](broken-reference)
+* [Instantly Swap At Superior Rates](broken-reference)
 {% endtab %}
 {% endtabs %}

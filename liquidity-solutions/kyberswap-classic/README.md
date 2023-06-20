@@ -29,7 +29,7 @@ In order to maximize yields and encourage deeper market liquidity, KyberSwap Cla
 <summary>Traders</summary>
 
 * [Learn how to take advantage of lower fees](concepts/flexible-fee-adjustment.md)
-* [Get superior rates via the integrated KyberSwap Aggregator](../../kyberswap-solutions/kyberswap-interface/user-guides/instantly-swap-at-the-best-rates.md)
+* [Get superior rates via the integrated KyberSwap Aggregator](broken-reference)
 
 </details>
 

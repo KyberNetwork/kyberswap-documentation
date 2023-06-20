@@ -41,7 +41,7 @@ Users can also toggle their active alerts via the Notification Center.
 
 <figure><img src="../../../.gitbook/assets/image (20) (4).png" alt=""><figcaption><p>Toggle active alerts</p></figcaption></figure>
 
-With price alerts, users are able to monitor price actions and adjust their trade strategy accordingly be it [updating existing limit orders](../../limit-order/user-guides/update-limit-orders.md) or [executing an immediate swap](../user-guides/instantly-swap-at-the-best-rates.md).
+With price alerts, users are able to monitor price actions and adjust their trade strategy accordingly be it [updating existing limit orders](../../limit-order/user-guides/update-limit-orders.md) or [executing an immediate swap](broken-reference).
 
 <figure><img src="../../../.gitbook/assets/image (10).png" alt=""><figcaption><p>Price alerts history</p></figcaption></figure>
 

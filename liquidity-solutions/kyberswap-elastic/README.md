@@ -38,7 +38,7 @@ As of 25 May 2023, all the relevant Elastic protocol and farm contracts have bee
 <summary>Traders</summary>
 
 * [Learn how Elastic APR is calculated](concepts/apr-calculations.md)
-* [Get superior rates via the integrated KyberSwap Aggregator](../../kyberswap-solutions/kyberswap-interface/user-guides/instantly-swap-at-the-best-rates.md)
+* [Get superior rates via the integrated KyberSwap Aggregator](broken-reference)
 
 </details>
 

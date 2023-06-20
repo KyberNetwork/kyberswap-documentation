@@ -22,7 +22,7 @@ More information can be found on our third-party integration [page](../../../ref
    * [Get Crypto With Fiat](get-crypto-with-fiat.md)
    * [Bridge Your Assets Across Multiple Chains](bridge-your-assets-across-multiple-chains.md)
 4. Swap Tokens
-   * [Instantly Swap At Superior Rates ](instantly-swap-at-the-best-rates.md)
+   * [Instantly Swap At Superior Rates ](broken-reference)
    * [Swap At Your Preferred Rates ](trade-at-your-preferred-rates.md)
    * **Swap Between Tokens On Different Chains <-**
 
@@ -194,7 +194,7 @@ Click the “Swap” button to bring up the confirmation screen.&#x20;
 In the case of the standard flow where the cross-chain swap:
 
 * is not expected to result in significant [price impact](../../../getting-started/foundational-topics/decentralized-finance/price-impact.md) or;
-* has not been [configured](instantly-swap-at-the-best-rates.md#customizing-trade-parameters) with an aggressive max [slippage](../../../getting-started/foundational-topics/decentralized-finance/slippage.md);
+* has not been [configured](broken-reference) with an aggressive max [slippage](../../../getting-started/foundational-topics/decentralized-finance/slippage.md);
 
 the confirmation pop-up will be as follows:
 
@@ -218,7 +218,7 @@ Depending on the available liquidity for the tokens being swapped, the expected 
 
 <figure><img src="../../../.gitbook/assets/UserGuide_CrossChain_PriceImpactMoreThan10.png" alt=""><figcaption><p>Extremely high price impact</p></figcaption></figure>
 
-Note that to proceed with swaps with extremely high price impact, users must enable [Degen Mode](instantly-swap-at-the-best-rates.md#activating-degen-mode).
+Note that to proceed with swaps with extremely high price impact, users must enable [Degen Mode](broken-reference).
 {% endtab %}
 {% endtabs %}
 

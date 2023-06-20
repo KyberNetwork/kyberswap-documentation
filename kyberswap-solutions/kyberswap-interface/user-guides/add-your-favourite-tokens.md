@@ -31,7 +31,7 @@ Do note that KyberSwap will display a warning if you try to add less frequently 
 
 ![](<../../../.gitbook/assets/Screenshot 2023-04-11 at 4.38.51 PM (1).png>)
 
-Users are advised to proceed carefully when trading such exotic tokens as changing market conditions can significantly impact the outcome of a trade. It is highly recommended that users safeguard their transactions by using KyberSwap's [Max Slippage](instantly-swap-at-the-best-rates.md#customizing-trade-parameters) feature when trading exotic tokens.
+Users are advised to proceed carefully when trading such exotic tokens as changing market conditions can significantly impact the outcome of a trade. It is highly recommended that users safeguard their transactions by using KyberSwap's [Max Slippage](broken-reference) feature when trading exotic tokens.
 {% endhint %}
 
 ### Step 3: Import token

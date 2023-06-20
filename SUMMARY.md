@@ -34,7 +34,7 @@
     * [Supercharge Trades With AI Powered Insights](kyberswap-solutions/kyberswap-interface/user-guides/supercharge-trades-with-ai-powered-insights.md)
     * [Connect Your Wallet](kyberswap-solutions/kyberswap-interface/user-guides/connect-your-wallet.md)
     * [Switching Networks](kyberswap-solutions/kyberswap-interface/user-guides/selecting-preferred-network.md)
-    * [Instantly Swap At Superior Rates](kyberswap-solutions/kyberswap-interface/user-guides/instantly-swap-at-the-best-rates.md)
+    * [Instantly Swap At Superior Rates](kyberswap-solutions/kyberswap-interface/user-guides/instantly-swap-at-superior-rates.md)
     * [Swap At Your Preferred Rates](kyberswap-solutions/kyberswap-interface/user-guides/trade-at-your-preferred-rates.md)
     * [Earn Yield By Contributing Liquidity](kyberswap-solutions/kyberswap-interface/user-guides/earn-yield-by-contributing-liquidity.md)
     * [Add Your Favourite Tokens](kyberswap-solutions/kyberswap-interface/user-guides/add-your-favourite-tokens.md)
@@ -47,7 +47,7 @@
   * [Concepts](kyberswap-solutions/kyberswap-aggregator/concepts/README.md)
     * [Dynamic Trade Routing](kyberswap-solutions/kyberswap-aggregator/concepts/dynamic-trade-routing.md)
   * [User Guides](kyberswap-solutions/kyberswap-aggregator/user-guides/README.md)
-    * [Instantly Swap At Superior Rates](kyberswap-solutions/kyberswap-interface/user-guides/instantly-swap-at-the-best-rates.md)
+    *
   * [Developer Guides](kyberswap-solutions/kyberswap-aggregator/developer-guides/README.md)
     * [Execute A Swap With The Aggregator API](kyberswap-solutions/kyberswap-aggregator/developer-guides/execute-a-swap-with-the-aggregator-api.md)
     * [Upgrading From APIv1 To APIv2](kyberswap-solutions/kyberswap-aggregator/developer-guides/upgrading-from-apiv1-to-apiv2.md)

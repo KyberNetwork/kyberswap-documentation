@@ -28,7 +28,7 @@ Upon shortlisting tokens from the various rankings, traders can also add the tok
 4. [Add Tokens To Watchlist](add-tokens-to-watchlist.md)
 5. [Get Notified On Your Favourite Tokens](get-notifications-for-your-favourite-tokens.md)
 6. Buy Or Sell Tokens
-   * [Instantly Swap At The Best Rates](../../kyberswap-interface/user-guides/instantly-swap-at-the-best-rates.md)
+   * [Instantly Swap At The Best Rates](broken-reference)
    * [Swap At Your Preferred Rates](../../kyberswap-interface/user-guides/trade-at-your-preferred-rates.md)
 
 </details>
@@ -44,7 +44,7 @@ Upon loading the page, you will be provided a variety of ranking options to choo
 Note that for every token ranked, KyberSwap provides you the option to:
 
 * [Deep Dive Into Token Data](deep-dive-into-token-data.md) by clicking into the token entry or;&#x20;
-* [Instantly Swap At The Best Rates](../../kyberswap-interface/user-guides/instantly-swap-at-the-best-rates.md) for the selected token by clicking the swap action button
+* [Instantly Swap At The Best Rates](broken-reference) for the selected token by clicking the swap action button
 
 KyberSwap ensures that your trading journey can be completed all via a single interface.
 

@@ -22,7 +22,7 @@ KyberSwap has integrated the Transak toolkit to enable our customers to convenie
    * **Get Crypto With Fiat** **<-**
    * [Bridge Your Assets Across Multiple Chains](bridge-your-assets-across-multiple-chains.md)
 4. Swap Tokens
-   * [Instantly Swap At Superior Rates ](instantly-swap-at-the-best-rates.md)
+   * [Instantly Swap At Superior Rates ](broken-reference)
    * [Swap At Your Preferred Rates ](trade-at-your-preferred-rates.md)
    * [Swap Between Different Tokens Across Chains](swap-between-different-tokens-across-chains.md)
 

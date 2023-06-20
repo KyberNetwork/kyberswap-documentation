@@ -14,7 +14,7 @@ KyberSwap Interface is a one stop [web application](https://kyberswap.com/swap/e
 
 As a window into the world of DeFi liquidity, KyberSwap Interface enables you to:
 
-* [Trade at superior market rates via the KyberSwap Aggregator](user-guides/instantly-swap-at-the-best-rates.md)
+* [Trade at superior market rates via the KyberSwap Aggregator](broken-reference)
 * [Trade at your preferred rates by setting Limit Orders](user-guides/trade-at-your-preferred-rates.md)
 * [Swap between different tokens across chains](user-guides/swap-between-different-tokens-across-chains.md)
 * [Purchase crypto with a credit/debit card, mobile wallet, or bank account](broken-reference)

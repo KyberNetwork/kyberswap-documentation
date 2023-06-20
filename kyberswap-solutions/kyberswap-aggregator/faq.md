@@ -48,9 +48,9 @@ It should be noted that of these Trading Fees collected by LPs, 10% goes to Kybe
 
 <summary>How do I change slippage tolerance?</summary>
 
-Slippage tolerance for swaps defaults to a conservative 0.5%, but you can [change this in Swap settings](../kyberswap-interface/user-guides/instantly-swap-at-the-best-rates.md#customizing-trade-parameters).
+Slippage tolerance for swaps defaults to a conservative 0.5%, but you can [change this in Swap settings](broken-reference).
 
-For more information on completing a swap, you can refer to [Instantly Swap At The Best Rates](../kyberswap-interface/user-guides/instantly-swap-at-the-best-rates.md) for a step-by-step guide.
+For more information on completing a swap, you can refer to [Instantly Swap At The Best Rates](broken-reference) for a step-by-step guide.
 
 </details>
 
@@ -94,7 +94,7 @@ Here are links to instructions on how to perform this action on some of the more
 
 Before confirming a swap transaction, you will be shown an order confirmation screen that clearly displays the tokens you will receive after the swap. This screen helps to ensure that there are no unpleasant surprises; you will never receive fewer tokens than the minimum amount displayed on this screen if the swap is successful.
 
-Do pay particular attention to the [Price Impact](../../getting-started/foundational-topics/decentralized-finance/price-impact.md) and [Slippage](../../getting-started/foundational-topics/decentralized-finance/slippage.md) numbers. For further details, please refer to [Confirm the swap](../kyberswap-interface/user-guides/instantly-swap-at-the-best-rates.md#step-5-confirm-the-swap).
+Do pay particular attention to the [Price Impact](../../getting-started/foundational-topics/decentralized-finance/price-impact.md) and [Slippage](../../getting-started/foundational-topics/decentralized-finance/slippage.md) numbers. For further details, please refer to [Confirm the swap](broken-reference).
 
 ![](<../../.gitbook/assets/image (2) (4).png>)
 

@@ -70,15 +70,15 @@ Specify the amount you would like to swap by either typing in an amount manually
 
 Do note that the KyberSwap Interface will continuously update the swap rates in order to source superior rates for your swap given the changing market conditions. As such, you will always be able to see the latest proposed route and rates prior to clicking the "Swap" button.
 
-Upon clicking the "Swap" button, KyberSwap Aggregator will attempt to secure the final route that will be displayed on the "Confirm Swap" pop-up (see [Step 5](instantly-swap-at-the-best-rates.md#step-5-confirm-the-swap)).
+Upon clicking the "Swap" button, KyberSwap Aggregator will attempt to secure the final route that will be displayed on the "Confirm Swap" pop-up (see [Step 5](instantly-swap-at-superior-rates.md#step-5-confirm-the-swap)).
 {% endhint %}
 
-KyberSwap Interface allows users to customize trade parameters which enables greater trade security or even more advanced trade strategies. Refer to [Customizing trade parameters](instantly-swap-at-the-best-rates.md#customizing-trade-parameters) section for more details.
+KyberSwap Interface allows users to customize trade parameters which enables greater trade security or even more advanced trade strategies. Refer to [Customizing trade parameters](instantly-swap-at-superior-rates.md#customizing-trade-parameters) section for more details.
 
 {% hint style="danger" %}
 #### Max slippage: Protecting your trades
 
-KyberSwap enables you to avoid any negative trade outcomes by setting a Max Slippage. Please refer to [Customizing trade parameters](instantly-swap-at-the-best-rates.md#customizing-trade-parameters) below for further details or [Slippage](../../../getting-started/foundational-topics/decentralized-finance/slippage.md) if you would like to understand the concept better.
+KyberSwap enables you to avoid any negative trade outcomes by setting a Max Slippage. Please refer to [Customizing trade parameters](instantly-swap-at-superior-rates.md#customizing-trade-parameters) below for further details or [Slippage](../../../getting-started/foundational-topics/decentralized-finance/slippage.md) if you would like to understand the concept better.
 {% endhint %}
 
 <figure><img src="../../../.gitbook/assets/Screenshot 2023-04-12 at 12.30.23 PM.png" alt=""><figcaption><p>Specify swap amount</p></figcaption></figure>
@@ -136,7 +136,7 @@ Upon signing the permit, you will then be able to proceed with the swap.
 
 By permitting the swap, you are authorizing KyberSwap to swap the exact amount of tokens specified in the trade for the next 24 hours. This 24 hour deadline is implemented as a safety mechanism to ensure that the permit expires in case a corresponding swap order was not submitted or in the highly improbable event that an order was not filled. A new permit will be required upon the expiration of the current permit.&#x20;
 
-Note that the granting of a permit and the confirmation of a swap ([step 5](instantly-swap-at-the-best-rates.md#step-5-confirm-the-swap)) are separate transactions whereby the latter is unable to proceed without the completion of the former. More importantly, as opposed to permits, swaps will always require gas to be paid as token transfers have to be confirmed by the network. As such, in the case whereby a swap remains in a pending state, it is possible to cancel the swap transaction in your wallet while the permit remains valid until expiry. If a future swap requires more tokens than an existing permit, the user will be requested to sign a new permit.
+Note that the granting of a permit and the confirmation of a swap ([step 5](instantly-swap-at-superior-rates.md#step-5-confirm-the-swap)) are separate transactions whereby the latter is unable to proceed without the completion of the former. More importantly, as opposed to permits, swaps will always require gas to be paid as token transfers have to be confirmed by the network. As such, in the case whereby a swap remains in a pending state, it is possible to cancel the swap transaction in your wallet while the permit remains valid until expiry. If a future swap requires more tokens than an existing permit, the user will be requested to sign a new permit.
 {% endhint %}
 {% endtab %}
 
@@ -174,7 +174,7 @@ In times of volatility, the market conditions might have changed in-between clic
 
 **If there is a change in the price, to protect you, you will need to accept the new price before proceeding with the swap. Refer tabs below for the various scenarios.**
 
-Please review the swap information in full prior to confirmation as the final secured route might differ from the swap screen (see [Step 3](instantly-swap-at-the-best-rates.md#step-3-configure-swap-amount)). As an additional safeguard, KyberSwap highly recommends that users take advantage of our "Max Slippage" feature (refer to [Customizing trade parameters](instantly-swap-at-the-best-rates.md#customizing-trade-parameters)).
+Please review the swap information in full prior to confirmation as the final secured route might differ from the swap screen (see [Step 3](instantly-swap-at-superior-rates.md#step-3-configure-swap-amount)). As an additional safeguard, KyberSwap highly recommends that users take advantage of our "Max Slippage" feature (refer to [Customizing trade parameters](instantly-swap-at-superior-rates.md#customizing-trade-parameters)).
 {% endhint %}
 
 #### Price changes (==, ++, --)
@@ -230,7 +230,7 @@ In all the above cases, the confirmation screen will always display a few key pi
 {% hint style="info" %}
 #### KyberSwap positive slippage surplus collection
 
-For every swap executed by the KyberSwap Aggregator, users will be able to see an estimated output amount based on the current price as well as a minimum received that takes into account the [max slippage setting](instantly-swap-at-the-best-rates.md#customizing-trade-parameters). KyberSwap Aggregator will always strive to execute swaps at the estimated output amount and revert the transaction if the minimum received amount is not achieved.
+For every swap executed by the KyberSwap Aggregator, users will be able to see an estimated output amount based on the current price as well as a minimum received that takes into account the [max slippage setting](instantly-swap-at-superior-rates.md#customizing-trade-parameters). KyberSwap Aggregator will always strive to execute swaps at the estimated output amount and revert the transaction if the minimum received amount is not achieved.
 
 In the event that the market moves in favor of the trade which results in a surplus of tokens above the estimated output amount (i.e positive slippage), this surplus will initially accrue to KyberSwap. Surplus sharing programs will be explored as the KyberSwap ecosystem grows to be more self-sufficient. **Critically, traders will always get the estimated output amount as long as the swap is executed at or above the current rate**.&#x20;
 
@@ -277,7 +277,7 @@ Setting a higher Max slippage increases the likelihood of transaction success bu
 {% endhint %}
 
 * **Transaction Time Limit:** The amount of time from submission that the transaction is valid for. If the transaction is not executed within the specified time frame, the transaction will be cancelled.
-* **Degen Mode:** Refer to [Degen Mode](instantly-swap-at-the-best-rates.md#degen-mode-tread-carefully) section below.
+* **Degen Mode:** Refer to [Degen Mode](instantly-swap-at-superior-rates.md#degen-mode-tread-carefully) section below.
 * **Liquidity Sources:** Select the liquidity sources (i.e. DEXes) through which your trade will be routed. By default, all KyberSwap supported DEXes on the connected chain will be selected. You can view the list of supported DEXs on each chain on the [Supported Exchanges And Networks Page](../../../getting-started/supported-exchanges-and-networks.md).
 
 These settings can be accessed via selecting the slider icons on the main swap page:
@@ -291,7 +291,7 @@ KyberSwap implemented Degen Mode for our most "advanced" apes. While KyberSwap h
 {% hint style="info" %}
 #### Price deviations
 
-Note that even with Degen Mode turned on, any significant price deviations that occurs while the swap is being secured will still require user confirmation. Please refer to [Route confirmation and market volatility](instantly-swap-at-the-best-rates.md#step-5-confirm-the-swap) for more details.
+Note that even with Degen Mode turned on, any significant price deviations that occurs while the swap is being secured will still require user confirmation. Please refer to [Route confirmation and market volatility](instantly-swap-at-superior-rates.md#step-5-confirm-the-swap) for more details.
 {% endhint %}
 
 ### Overriding safeguards
@@ -310,7 +310,7 @@ By turning on Degen Mode, multiple safeguards will be overridden allowing users 
 Tread carefully when turning on Degen Mode as [slippage](../../../getting-started/foundational-topics/decentralized-finance/slippage.md) and [price impact](../../../getting-started/foundational-topics/decentralized-finance/price-impact.md) risks are not conservatively capped which could result in significant losses. **KyberSwap recommends that users only activate Degen Mode if you are fully aware of the risks of unprotected trades.**
 {% endhint %}
 
-Degen Mode can be toggled on via the "[Advanced Settings](instantly-swap-at-the-best-rates.md#customizing-trade-parameters)" pop-up covered in the previous section.
+Degen Mode can be toggled on via the "[Advanced Settings](instantly-swap-at-superior-rates.md#customizing-trade-parameters)" pop-up covered in the previous section.
 
 <figure><img src="../../../.gitbook/assets/image (1) (5).png" alt=""><figcaption><p>Degen Mode toggle</p></figcaption></figure>
 

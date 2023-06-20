@@ -14,7 +14,7 @@ KyberAI was created with the intention of empowering our users with the data ins
 
 Once you've [shortlisted some of the most promising tokens](discover-promising-tokens.md) that suits your particular trading strategy, KyberAI provides you with more fine-grained data insights that allows you to eventually settle on tokens which are worthy of further action. KyberAI does all the hard work of processing and configuring key market indicators into easily-digestible formats which can be accessed directly from the KyberSwap UI. Moreover, for the more advanced traders, KyberAI also exposes a full suite of interactive technical analysis tools that grants the user free-reign to mix-and-match any number of strategies.
 
-Once you've identified your next big opportunity, you can [instantly market buy tokens](../../kyberswap-interface/user-guides/instantly-swap-at-the-best-rates.md) using the [KyberSwap Aggregator](../../kyberswap-aggregator/) or [set up a limit order to enter at your preferred price](../../kyberswap-interface/user-guides/trade-at-your-preferred-rates.md) with [KyberSwap Limit Orders](../../limit-order/).
+Once you've identified your next big opportunity, you can [instantly market buy tokens](broken-reference) using the [KyberSwap Aggregator](../../kyberswap-aggregator/) or [set up a limit order to enter at your preferred price](../../kyberswap-interface/user-guides/trade-at-your-preferred-rates.md) with [KyberSwap Limit Orders](../../limit-order/).
 
 <details>
 
@@ -26,7 +26,7 @@ Once you've identified your next big opportunity, you can [instantly market buy 
 4. [Add Tokens To Watchlist](add-tokens-to-watchlist.md)
 5. [Get Notified On Your Favourite Tokens](get-notifications-for-your-favourite-tokens.md)
 6. Buy Or Sell Tokens
-   * [Instantly Swap At The Best Rates](../../kyberswap-interface/user-guides/instantly-swap-at-the-best-rates.md)
+   * [Instantly Swap At The Best Rates](broken-reference)
    * [Swap At Your Preferred Rates](../../kyberswap-interface/user-guides/trade-at-your-preferred-rates.md)
 
 </details>
@@ -64,7 +64,7 @@ The token overview section also allows you to take various actions based on your
 * [Add Tokens To Watchlist](add-tokens-to-watchlist.md)
 * [Get Notifications For Your Favourite Tokens](get-notifications-for-your-favourite-tokens.md)
 * Share promising tokens with the community
-* [Instantly Swap At The Best Rates](../../kyberswap-interface/user-guides/instantly-swap-at-the-best-rates.md)
+* [Instantly Swap At The Best Rates](broken-reference)
 
 ## Gain a comprehensive view of your shortlisted tokens
 

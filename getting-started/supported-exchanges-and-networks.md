@@ -11,7 +11,7 @@ The KyberSwap product suite has been deployed across the majority of the most es
 {% hint style="info" %}
 #### DEX filtering
 
-For traders, you can specify which DEXs are considered when computing your swap route by [Customizing Trade Parameters](../kyberswap-solutions/kyberswap-interface/user-guides/instantly-swap-at-the-best-rates.md#customizing-trade-parameters) directly on the [KyberSwap Interface](../kyberswap-solutions/kyberswap-interface/).
+For traders, you can specify which DEXs are considered when computing your swap route by [Customizing Trade Parameters](broken-reference) directly on the [KyberSwap Interface](../kyberswap-solutions/kyberswap-interface/).
 
 For developers integrating with the [KyberSwap Aggregator](../kyberswap-solutions/kyberswap-aggregator/), please refer to [DEX IDs](../kyberswap-solutions/kyberswap-aggregator/dex-ids.md) for internal mapping of DEXs used for filtering via the [API](../kyberswap-solutions/kyberswap-aggregator/aggregator-api-specification/).
 {% endhint %}

@@ -19,7 +19,7 @@ KyberSwap enables you to easily trade your favorite stablecoins by [adding them 
 {% tabs %}
 {% tab title="Traders" %}
 * [Add Your Favourite Tokens](../../../kyberswap-solutions/kyberswap-interface/user-guides/add-your-favourite-tokens.md)
-* [Instantly Swap At Superior Rates](../../../kyberswap-solutions/kyberswap-interface/user-guides/instantly-swap-at-the-best-rates.md)
+* [Instantly Swap At Superior Rates](broken-reference)
 * [Swap At Your Preferred Rates](../../../kyberswap-solutions/kyberswap-interface/user-guides/trade-at-your-preferred-rates.md)
 {% endtab %}
 

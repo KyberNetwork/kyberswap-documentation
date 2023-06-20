@@ -18,5 +18,5 @@ With KyberAI, you can get alpha before it happens.&#x20;
 4. [Add Tokens To Watchlist](../../kyberai/user-guides/add-tokens-to-watchlist.md)
 5. [Get Notified On Your Favourite Tokens](../../kyberai/user-guides/get-notifications-for-your-favourite-tokens.md)
 6. Buy Or Sell Tokens
-   * [Instantly Swap At Superior Rates](instantly-swap-at-the-best-rates.md)
+   * [Instantly Swap At Superior Rates](broken-reference)
    * [Swap At Your Preferred Rates](trade-at-your-preferred-rates.md)
