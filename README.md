@@ -1,6 +1,6 @@
 ---
 description: DeFi's Open and Permissionless Liquidity Backbone
-cover: .gitbook/assets/Banner.jpeg
+cover: .gitbook/assets/KyberSwap_Banner.png
 coverY: 0
 ---
 
