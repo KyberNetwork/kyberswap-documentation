@@ -46,7 +46,7 @@ Still deciding on which solution suits you best?&#x20;
    * [Get Crypto With Fiat](get-crypto-with-fiat.md)
    * [Bridge Your Assets Across Multiple Chains](bridge-your-assets-across-multiple-chains.md)
 4. Swap Tokens
-   * [Instantly Swap At The Best Rates](instantly-swap-at-the-best-rates.md)
+   * [Instantly Swap At Superior Rates](instantly-swap-at-the-best-rates.md)
    * [Swap At Your Preferred Rates](trade-at-your-preferred-rates.md)
    * [Swap Between Different Tokens Across Chains](swap-between-different-tokens-across-chains.md)
 
@@ -58,7 +58,7 @@ To connect your Web3 wallet, click on the **Connect Wallet button** at the top r
 
 <figure><img src="../../../.gitbook/assets/image (71).png" alt=""><figcaption></figcaption></figure>
 
-To proceed with the connection, check the  box if you agree to our Terms of Use and Privacy Policy. This will then allow you to select your preferred Web3 wallet that will be connected with the KyberSwap app. Authorise the connection in your chosen Web3 wallet's UI and&#x20;
+To proceed with the connection, check the box if you agree to our Terms of Use and Privacy Policy. This will then allow you to select your preferred Web3 wallet that will be connected with the KyberSwap app. Authorise the connection in your chosen Web3 wallet's UI.
 
 Next, select the Web3 wallet that you would like to use to connect to KyberSwap and authorize the connection to KyberSwap on your chosen Web3 wallet’s UI.&#x20;
 

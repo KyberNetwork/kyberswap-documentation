@@ -1,5 +1,5 @@
 ---
-description: The Best Rates With Minimal Code
+description: Superior Rates With Minimal Code
 ---
 
 # Integrating The KyberSwap Widget

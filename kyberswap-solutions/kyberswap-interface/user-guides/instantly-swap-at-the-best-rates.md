@@ -1,12 +1,12 @@
 ---
-description: Sourcing The Most Capitally Efficient Liquidity For Your Trade
+description: Sourcing Capitally Efficient Liquidity For Your Trade
 ---
 
-# Instantly Swap At The Best Rates
+# Instantly Swap At Superior Rates
 
 ## Introduction
 
-KyberSwap allows you to swap tokens easily at the best rates by aggregating liquidity from different DEXs and aggregators on the network. Through splitting and optimizing trade routes across various liquidity sources, KyberSwap is able to source the best rates for your swap.
+KyberSwap allows you to swap tokens easily at superior rates by aggregating liquidity from different DEXs and aggregators on the network. Through splitting and optimizing trade routes across various liquidity sources, KyberSwap is able to source favourable rates for your swap.
 
 Please refer to [Supported Exchanges and Networks](../../../getting-started/supported-exchanges-and-networks.md) for the full list of decentralized exchanges which have been integrated with KyberSwap.
 
@@ -20,13 +20,13 @@ Please refer to [Supported Exchanges and Networks](../../../getting-started/supp
    * [Get Crypto With Fiat](get-crypto-with-fiat.md)
    * [Bridge Your Assets Across Multiple Chains](bridge-your-assets-across-multiple-chains.md)
 4. Swap Tokens
-   * **Instantly Swap At The Best Rates** **<-**
+   * **Instantly Swap At Superior Rates** **<-**
    * [Swap At Your Preferred Rates](trade-at-your-preferred-rates.md)
    * [Swap Between Different Tokens Across Chains](swap-between-different-tokens-across-chains.md)
 
 </details>
 
-## Find the best rates for your swaps
+## Find superior rates for your swaps
 
 ### **Step 1: Connect your wallet**
 
@@ -66,9 +66,9 @@ Note that the FOT tax is specified in the FOT token's smart contract (i.e. the F
 Specify the amount you would like to swap by either typing in an amount manually or by using the “Max” and “Half” buttons to swap pre-set proportions of your wallet balance. An estimate of the amount returned should appear in the quote field.
 
 {% hint style="info" %}
-#### Route refresh: Ensuring the best rates
+#### Route refresh: Ensuring optimal rates
 
-Do note that the KyberSwap Interface will continuously update the swap rates in order to source the best rates for your swap given the changing market conditions. As such, you will always be able to see the latest proposed route and rates prior to clicking the "Swap" button.
+Do note that the KyberSwap Interface will continuously update the swap rates in order to source superior rates for your swap given the changing market conditions. As such, you will always be able to see the latest proposed route and rates prior to clicking the "Swap" button.
 
 Upon clicking the "Swap" button, KyberSwap Aggregator will attempt to secure the final route that will be displayed on the "Confirm Swap" pop-up (see [Step 5](instantly-swap-at-the-best-rates.md#step-5-confirm-the-swap)).
 {% endhint %}
@@ -271,7 +271,7 @@ The KyberSwap Interface also provides additional features for more advanced trad
 {% hint style="warning" %}
 #### Max Slippage setting
 
-While KyberSwap recommends keeping the Max Slippage as low as possible to ensure that trades are executed at the best rates, such transactions might face a higher failure rate in times of extreme market volatility.
+While KyberSwap recommends keeping the Max Slippage as low as possible to ensure that trades are executed at favourable rates, such transactions might face a higher failure rate in times of extreme market volatility.
 
 Setting a higher Max slippage increases the likelihood of transaction success but comes with greater risks of worse rates due to market volatility as well as the presence of frontrunning opportunities. **KyberSwap highly recommends setting a Max Slippage for all swaps to protect your trades.**
 {% endhint %}

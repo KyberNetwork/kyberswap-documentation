@@ -14,7 +14,7 @@ Due to the open and transparent nature of most dapps, one key benefit that arise
 
 ## KyberSwap: The liquidity backbone for dapps
 
-At KyberSwap, we are building the next generation of liquidity solutions that will enable our users to trade and earn at the best rates. Users can access our liquidity suite directly via [KyberSwap Interface](../../../kyberswap-solutions/kyberswap-interface/) or developers can integrate trade functionality directly in their dapp with the [KyberSwap Widget](../../../kyberswap-solutions/kyberswap-widget/) or [KyberSwap Aggregator](../../../kyberswap-solutions/kyberswap-aggregator/) and [KyberSwap Limit Order](../../../kyberswap-solutions/limit-order/) APIs.
+At KyberSwap, we are building the next generation of liquidity solutions that will enable our users to trade and earn at superior rates. Users can access our liquidity suite directly via [KyberSwap Interface](../../../kyberswap-solutions/kyberswap-interface/) or developers can integrate trade functionality directly in their dapp with the [KyberSwap Widget](../../../kyberswap-solutions/kyberswap-widget/) or [KyberSwap Aggregator](../../../kyberswap-solutions/kyberswap-aggregator/) and [KyberSwap Limit Order](../../../kyberswap-solutions/limit-order/) APIs.
 
 {% tabs %}
 {% tab title="Liquidity Providers" %}
@@ -22,7 +22,7 @@ At KyberSwap, we are building the next generation of liquidity solutions that wi
 {% endtab %}
 
 {% tab title="Traders" %}
-* [Instantly Swap At The Best Rates](../../../kyberswap-solutions/kyberswap-interface/user-guides/instantly-swap-at-the-best-rates.md)
+* [Instantly Swap At Superior Rates](../../../kyberswap-solutions/kyberswap-interface/user-guides/instantly-swap-at-the-best-rates.md)
 * [Swap At Your Preferred Rates](../../../kyberswap-solutions/kyberswap-interface/user-guides/trade-at-your-preferred-rates.md)
 {% endtab %}
 

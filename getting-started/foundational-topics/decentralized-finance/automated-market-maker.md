@@ -77,9 +77,9 @@ Assuming that a liquidity provider wants to remove exactly 2 ETH from the pool, 
 
 <table><thead><tr><th width="223.33333333333331">Liquidity Pool </th><th width="135">ETH amount</th><th>USDT amount</th><th>Constant</th></tr></thead><tbody><tr><td>ETH/USDT</td><td>100</td><td>192,234</td><td>19,223,400</td></tr></tbody></table>
 
-## Trade and earn at the best rates
+## Trade and earn at superior rates
 
-KyberSwap implements two AMM variants, [KyberSwap Classic](../../../liquidity-solutions/kyberswap-elastic/) and [KyberSwap Elastic](../../../liquidity-solutions/kyberswap-elastic/), which provides LPs multiple options for generating yield. For traders, [KyberSwap Aggregator](../../../kyberswap-solutions/kyberswap-aggregator/) abstracts the complexity of searching for the best pools by conveniently splitting and routing your trade across pools with the most optimal liquidity.
+KyberSwap implements two AMM variants, [KyberSwap Classic](../../../liquidity-solutions/kyberswap-elastic/) and [KyberSwap Elastic](../../../liquidity-solutions/kyberswap-elastic/), which provides LPs multiple options for generating yield. For traders, [KyberSwap Aggregator](../../../kyberswap-solutions/kyberswap-aggregator/) abstracts the complexity of searching for better pools by conveniently splitting and routing your trade across pools with the most optimal liquidity.
 
 {% tabs %}
 {% tab title="Liquidity Providers" %}
@@ -88,7 +88,7 @@ KyberSwap implements two AMM variants, [KyberSwap Classic](../../../liquidity-so
 {% endtab %}
 
 {% tab title="Traders" %}
-* [Instantly Swap At The Best Rates](../../../kyberswap-solutions/kyberswap-interface/user-guides/instantly-swap-at-the-best-rates.md)
+* [Instantly Swap At Superior Rates](../../../kyberswap-solutions/kyberswap-interface/user-guides/instantly-swap-at-the-best-rates.md)
 {% endtab %}
 
 {% tab title="Developers" %}

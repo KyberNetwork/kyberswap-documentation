@@ -18,9 +18,9 @@ Due to the above reasons, liquidity tends to be fractured across individual DEXs
 
 ## Connecting siloed liquidity
 
-DEX aggregators are a demand-side solution that was created with the purpose of connecting siloed liquidity across various DEXs (both AMM and order book). This is achieved through splitting and rerouting trades across various DEXs to achieve the best swap rates given the network conditions. By aggregating liquidity across DEXs, aggregators provide users with a convenient entry point to explore and compare rates in an objective manner.
+DEX aggregators are a demand-side solution that was created with the purpose of connecting siloed liquidity across various DEXs (both AMM and order book). This is achieved through splitting and rerouting trades across various DEXs to achieve optimal swap rates given the network conditions. By aggregating liquidity across DEXs, aggregators provide users with a convenient entry point to explore and compare rates in an objective manner.
 
-An aggregator’s competitive edge comes from its ability to efficiently calculate the best trade route taking into account swap rates, slippage, and gas fees. Critically, this trade route optimisation necessitates programmatically routing trades towards the most capitally efficient liquidity sources which encourages greater market stability through competition.
+An aggregator’s competitive edge comes from its ability to efficiently calculate the most efficient trade route taking into account swap rates, slippage, and gas fees. Critically, this trade route optimisation necessitates programmatically routing trades towards the most capitally efficient liquidity sources which encourages greater market stability through competition.
 
 ## How DEX Aggregators work
 
@@ -30,27 +30,27 @@ The basic concept behind aggregators is quite simple and consists of the followi
 
 1. User submits a swap request to the aggregator API endpoint.
 2. The aggregator queries the connected DEXs for liquidity data on the specified trading pair. _Note that token standards (i.e._ [_ERC20_](tokens.md#token-standards)_) ensures token interoperability across DEXs._
-3. Based on the trade volume, the aggregator will calculate the best route for the trade using the aggregated liquidity data. Trades might even be split if the potential slippage outweighs the gas costs.
+3. Based on the trade volume, the aggregator will calculate a more efficient route for the trade using the aggregated liquidity data. Trades might even be split if the potential slippage outweighs the gas costs.
 4. Bundle the trade route(s) as an unsigned transaction pending the user’s approval.
 5. User views the finalised trade route and submits a signed transaction to the network, using a network provider of their choice.
 6. An aggregator smart contract atomically executes the signed transaction, debiting the user’s input token.
 7. User receives the output token in their account.
 
-In keeping with DeFi composability, notice that aggregators do not specify a particular user interface implementation nor infrastructure communication channels (i.e. providers). While many aggregator teams have implemented their own user interface (eg. [Kyberswap Interface](../../../kyberswap-solutions/kyberswap-interface/)) for users to view and submit trades, the aggregator API endpoint can be easily triggered from any web application. Aggregators can therefore be seamlessly integrated with applications demanding the best token swap rates without the overhead of managing multiple liquidity sources.
+In keeping with DeFi composability, notice that aggregators do not specify a particular user interface implementation nor infrastructure communication channels (i.e. providers). While many aggregator teams have implemented their own user interface (eg. [Kyberswap Interface](../../../kyberswap-solutions/kyberswap-interface/)) for users to view and submit trades, the aggregator API endpoint can be easily triggered from any web application. Aggregators can therefore be seamlessly integrated with applications demanding superior token swap rates without the overhead of managing multiple liquidity sources.
 
 Note that the bundled transactions should also be atomically executed by the network. This ensures that trades with multiple routes do not get partially settled which could result in an overall disadvantageous position as the network condition dynamically changes. Transaction atomicity provides greater assurances around the final swap price which would always be within the user consented interval.
 
 A key aspect to this flow is that users are given the final option to consent to the suggested route as the bundled transaction requires their signature. While aggregators return all the details of the trade (ie. route, splits, final price), application developers are still responsible for displaying such information to the user in a way that best suites their target user. Nonetheless, having an application which provides transparent and easily understandable data will likely result in the application having a competitive edge as this aligns with the optimal user experience.
 
-## Trade at the best rates
+## Trade at superior rates
 
-The[ KyberSwap Aggregator ](../../../kyberswap-solutions/kyberswap-aggregator/)can be conveniently accessed via the [KyberSwap Interface](../../../kyberswap-solutions/kyberswap-interface/). By initiating a trade via the KyberSwap [UI](https://kyberswap.com/swap), users are able to view the best rates as well as the exact route which their trade will take.
+The[ KyberSwap Aggregator ](../../../kyberswap-solutions/kyberswap-aggregator/)can be conveniently accessed via the [KyberSwap Interface](../../../kyberswap-solutions/kyberswap-interface/). By initiating a trade via the KyberSwap [UI](https://kyberswap.com/swap), users are able to view optimal rates as well as the exact route which their trade will take.
 
-For developers, KyberSwap Aggregator exposes a set of [swap APIs ](../../../kyberswap-solutions/kyberswap-aggregator/aggregator-api-specification/)which enable the best rates to be queried and encoded to be sent to the [Aggregator smart contract](../../../kyberswap-solutions/kyberswap-aggregator/contracts/aggregator-contract-addresses.md).
+For developers, KyberSwap Aggregator exposes a set of [swap APIs ](../../../kyberswap-solutions/kyberswap-aggregator/aggregator-api-specification/)which enable favourable rates to be queried and encoded to be sent to the [Aggregator smart contract](../../../kyberswap-solutions/kyberswap-aggregator/contracts/aggregator-contract-addresses.md).
 
 {% tabs %}
 {% tab title="Traders" %}
-* [Instantly Swap At The Best Rates](../../../kyberswap-solutions/kyberswap-interface/user-guides/instantly-swap-at-the-best-rates.md)
+* [Instantly Swap At Superior Rates](../../../kyberswap-solutions/kyberswap-interface/user-guides/instantly-swap-at-the-best-rates.md)
 {% endtab %}
 
 {% tab title="Developers" %}

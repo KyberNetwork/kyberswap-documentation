@@ -22,7 +22,7 @@ More information can be found on our third-party integration [page](../../../ref
    * [Get Crypto With Fiat](get-crypto-with-fiat.md)
    * [Bridge Your Assets Across Multiple Chains](bridge-your-assets-across-multiple-chains.md)
 4. Swap Tokens
-   * [Instantly Swap At The Best Rates ](instantly-swap-at-the-best-rates.md)
+   * [Instantly Swap At Superior Rates ](instantly-swap-at-the-best-rates.md)
    * [Swap At Your Preferred Rates ](trade-at-your-preferred-rates.md)
    * **Swap Between Tokens On Different Chains <-**
 

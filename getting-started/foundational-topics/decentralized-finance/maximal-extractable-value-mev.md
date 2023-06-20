@@ -95,6 +95,6 @@ For traders, the KyberSwap Aggregator allows you to [customize the maximum slipp
 
 {% tab title="Traders" %}
 * [Customize trade parameters](../../../kyberswap-solutions/kyberswap-interface/user-guides/instantly-swap-at-the-best-rates.md#customizing-trade-parameters)
-* [Instantly Swap At The Best Rates](../../../kyberswap-solutions/kyberswap-interface/user-guides/instantly-swap-at-the-best-rates.md)
+* [Instantly Swap At Superior Rates](../../../kyberswap-solutions/kyberswap-interface/user-guides/instantly-swap-at-the-best-rates.md)
 {% endtab %}
 {% endtabs %}

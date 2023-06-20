@@ -49,7 +49,7 @@ Lastly,[ KyberSwap Limit Orders](../../../kyberswap-solutions/limit-order/) will
 {% tabs %}
 {% tab title="Traders" %}
 * [Customizing Trade Parameters](../../../kyberswap-solutions/kyberswap-interface/user-guides/instantly-swap-at-the-best-rates.md#customizing-trade-parameters)
-* [Instantly Swap At The Best Rates](../../../kyberswap-solutions/kyberswap-interface/user-guides/instantly-swap-at-the-best-rates.md)
+* [Instantly Swap At Superior Rates](../../../kyberswap-solutions/kyberswap-interface/user-guides/instantly-swap-at-the-best-rates.md)
 * [Swap At Your Preferred Rates](../../../kyberswap-solutions/kyberswap-interface/user-guides/trade-at-your-preferred-rates.md)
 {% endtab %}
 
