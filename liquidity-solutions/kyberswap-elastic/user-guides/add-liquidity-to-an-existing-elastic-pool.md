@@ -104,7 +104,7 @@ Note: The proportion of liquidity deposited for each leg of the pair is determin
 
 ### **Step 6**: Authorize contract
 
-If you haven’t already done so, you will need to need to authorize the KyberSwap smart contract to transact using your tokens on this network. Click the “Approve \[Token]” button to do so. This will open the approval dialog window on your wallet.
+If you haven’t already done so, you will need to authorize the KyberSwap smart contract to transact using your tokens on this network. Click the “Approve \[Token]” button to do so. This will open the approval dialog window on your wallet.
 
 ![Approve USDC](https://support.kyberswap.com/hc/article\_attachments/14197099433625)
 
