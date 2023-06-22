@@ -66,7 +66,6 @@
   * [Concepts](kyberswap-solutions/limit-order/concepts/README.md)
     * [Off-Chain Relay, On-Chain Settlement](kyberswap-solutions/limit-order/concepts/off-chain-relay.md)
   * [User Guides](kyberswap-solutions/limit-order/user-guides/README.md)
-    *
     * [Update Limit Orders](kyberswap-solutions/limit-order/user-guides/update-limit-orders.md)
     * [Cancel Limit Orders](kyberswap-solutions/limit-order/user-guides/cancel-limit-orders.md)
   * [Developer Guides](kyberswap-solutions/limit-order/developer-guides/README.md)
