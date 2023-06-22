@@ -151,4 +151,5 @@ redirects:
   Legacy/api-abi/misc/api_abi-permissionlessorderbookreservelister: reference/legacy/api-abi/misc-contracts/orderbookreservelister.md
   kyberswap-solutions/kyberai/concepts/kyberscore: kyberswap-solutions/kyberai/kyberscore.md
   kyberswap-solutions/kyberswap-interface/user-guides/instantly-swap-at-the-best-rates: kyberswap-solutions/kyberswap-interface/user-guides/instantly-swap-at-superior-rates.md
+  liquidity-solutions/kyberswap-elastic/user-guides/yield-farming-on-elastic: liquidity-solutions/kyberswap-elastic/user-guides/yield-farming-on-dynamic-farms.md
 
