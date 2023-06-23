@@ -87,12 +87,12 @@ Refer to the [Utils contract](https://github.com/KyberNetwork/smart-contracts/bl
 
 #### `calcRateFromQty`[​](https://docs.kyberswap.com/Legacy/api-abi/code-snippets/api\_abi-tokenquantityconversion#calcratefromqty) <a href="#calcratefromqty" id="calcratefromqty"></a>
 
-| Parameter     |  Type  |                        Description                        |
-| ------------- | :----: | :-------------------------------------------------------: |
-| `srcAmount`   | Number |         ERC20 source token amount in its decimals         |
-| `destAmount`  | Number |                ERC20 source token decimals                |
-| `srcDecimals` | Number |              ERC20 destination token decimals             |
-| `dstDecimals` | Number | src -> dst conversion rate, independent of token decimals |
+| Parameter     |  Type  |                   Description                  |
+| ------------- | :----: | :--------------------------------------------: |
+| `srcAmount`   | Number |    ERC20 source token amount in its decimals   |
+| `destAmount`  | Number | ERC20 destination token amount in its decimals |
+| `srcDecimals` | Number |           ERC20 source token decimals          |
+| `dstDecimals` | Number |        ERC20 destination token decimals        |
 
 **Returns:**\
 Token conversion rate independent of token decimals
