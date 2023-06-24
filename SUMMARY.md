@@ -47,6 +47,7 @@
   * [Concepts](kyberswap-solutions/kyberswap-aggregator/concepts/README.md)
     * [Dynamic Trade Routing](kyberswap-solutions/kyberswap-aggregator/concepts/dynamic-trade-routing.md)
   * [User Guides](kyberswap-solutions/kyberswap-aggregator/user-guides/README.md)
+    * [Instantly Swap At Superior Rates](kyberswap-solutions/kyberswap-interface/user-guides/instantly-swap-at-superior-rates.md)
   * [Developer Guides](kyberswap-solutions/kyberswap-aggregator/developer-guides/README.md)
     * [Execute A Swap With The Aggregator API](kyberswap-solutions/kyberswap-aggregator/developer-guides/execute-a-swap-with-the-aggregator-api.md)
     * [Upgrading From APIv1 To APIv2](kyberswap-solutions/kyberswap-aggregator/developer-guides/upgrading-from-apiv1-to-apiv2.md)
