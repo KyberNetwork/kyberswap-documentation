@@ -115,9 +115,17 @@ As this is a cross-chain swap (i.e. swapping tokens on an origin chain to a diff
 
 Specify the amount you would like to swap by either typing in an amount manually or by clicking the account balance in the input form to swap all tokens in your wallet. An estimate of the amount returned should appear in the quote field.
 
+{% hint style="info" %}
+#### Protecting against slippage
+
 KyberSwap Interface allows users to customize trade parameters which enables greater trade security or even more advanced trade strategies. Refer to [Customizing trade parameters](swap-between-different-tokens-across-chains.md#customizing-trade-parameters) section for more details.
+{% endhint %}
 
 <figure><img src="../../../.gitbook/assets/UserGuide_CrossChain_SwapAmount.png" alt=""><figcaption><p>Specify cross-chain swap amount</p></figcaption></figure>
+
+{% content-ref url="../../../liquidity-solutions/classic-vs-elastic/" %}
+[classic-vs-elastic](../../../liquidity-solutions/classic-vs-elastic/)
+{% endcontent-ref %}
 
 {% hint style="warning" %}
 #### Squid Slippage Handling
