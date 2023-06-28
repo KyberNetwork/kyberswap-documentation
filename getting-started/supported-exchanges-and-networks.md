@@ -236,7 +236,7 @@ Aggregators:
 
 <details>
 
-<summary><img src="../.gitbook/assets/ZkSync_logo.png" alt="">   zkSync Era* (ChainID: 324)</summary>
+<summary><img src="../.gitbook/assets/ZkSync_logo.png" alt="">   zkSync Era*` (ChainID: 324)</summary>
 
 Decentralized Exchanges:
 
@@ -368,3 +368,5 @@ Aggregators:
 _^ KyberSwap currently only supports trading on Solana via the KyberSwap Aggregator_
 
 _\* Denotes chains where KyberSwap Limit Order have yet to be deployed on_
+
+_\` KyberSwap Elastic will be deployed to zkSync Era soon_
