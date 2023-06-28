@@ -2,6 +2,8 @@
 
 All KyberSwap Aggregator contracts have been deployed at the same address across all supported chains. For your convenience, the full list of contracts and their respective explorers can be found below:
 
+## Mainnet
+
 <details>
 
 <summary>Ethereum (ChainID: 1)</summary>
@@ -103,5 +105,15 @@ All KyberSwap Aggregator contracts have been deployed at the same address across
 <summary>BitTorrent Chain (ChainID: 199)</summary>
 
 * **MetaAggregationRouterV2:** [`0x6131B5fae19EA4f9D964eAc0408E4408b66337b5`](https://bttcscan.com/address/0x6131B5fae19EA4f9D964eAc0408E4408b66337b5)
+
+</details>
+
+## Testnet
+
+<details>
+
+<summary>Linea Testnet (ChainID: 59140)</summary>
+
+* **MetaAggregationRouterV2:** [`0xcd9478E0533F6108A036389A4C24E11f191B54D8`](https://goerli.lineascan.build/address/0xcd9478E0533F6108A036389A4C24E11f191B54D8)
 
 </details>

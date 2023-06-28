@@ -301,6 +301,18 @@ description: Liquidity Mining Across Multiple Chains
 
 <details>
 
+<summary>Linea Testnet (ChainID: 59140)</summary>
+
+#### Static Fee
+
+* **KSRouter02:** [`0x179A3d2e958D185F47D1Db046b796C5242d68981`](https://goerli.lineascan.build/address/0x179A3d2e958D185F47D1Db046b796C5242d68981)
+* **KSFactory:** [`0x7d1EDa469a4b6BFe4DB07fABC75da65F2b90DE6E`](https://goerli.lineascan.build/address/0x7d1EDa469a4b6BFe4DB07fABC75da65F2b90DE6E)
+* **KSZap:** [`0x12731092dD6215872C5850b3782A07b6e3E15c9C`](https://goerli.lineascan.build/address/0x12731092dD6215872C5850b3782A07b6e3E15c9C)
+
+</details>
+
+<details>
+
 <summary>Goerli (ChainID: 5)</summary>
 
 #### Static Fee
