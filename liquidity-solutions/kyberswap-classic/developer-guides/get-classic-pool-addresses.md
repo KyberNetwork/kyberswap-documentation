@@ -50,7 +50,7 @@ for (uint i = 0; i < poolAddresses.length; i++) {
 if (highestKLast == 0) {
     bestPool = address(0);
 } else {
-    bestPool = poolAddresses[i];
+    bestPool = poolAddresses[bestIndex];
 }
 
 // use bestPool for rate queries, liquidity provision or swaps
