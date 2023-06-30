@@ -74,7 +74,7 @@ Note that the FOT tax is specified in the FOT token's smart contract (i.e. the F
 
 If you haven't done so, you will need to permit the pool contract to remove your position from the pool. Note that this signature request does not require any gas.
 
-<figure><img src="../../../.gitbook/assets/image (7) (2).png" alt=""><figcaption><p>Metamask permit signature</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (7) (1).png" alt=""><figcaption><p>Metamask permit signature</p></figcaption></figure>
 
 Once you have authorized the contract, the previously disabled "Remove" button will now be available.
 

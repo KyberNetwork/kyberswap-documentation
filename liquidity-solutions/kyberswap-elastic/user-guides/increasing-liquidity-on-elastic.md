@@ -27,7 +27,7 @@ Still deciding on which solution suits you best?&#x20;
 4. [Add Liquidity To An Existing Elastic Pool ](add-liquidity-to-an-existing-elastic-pool.md)
 5. **Increasing Liquidity On Elastic** **<-**
 6. [Elastic Fee Collection](elastic-fee-collection.md)
-7. [Yield Farming On Elastic](yield-farming-on-elastic.md)
+7. [Yield Farming On Elastic](broken-reference)
 8. [Removing Liquidity On Elastic](removing-liquidity-on-elastic.md)
 
 </details>

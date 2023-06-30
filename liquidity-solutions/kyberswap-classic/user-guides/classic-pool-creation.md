@@ -38,13 +38,13 @@ Ensure you are on the correct network, and then click the “Create Pool” butt
 
 This will bring up the Create a new pool screen, but it will be fairly empty until the parameters of the pool are properly specified.
 
-<figure><img src="../../../.gitbook/assets/image (22) (2).png" alt=""><figcaption><p>Pool creation screen</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (22) (1).png" alt=""><figcaption><p>Pool creation screen</p></figcaption></figure>
 
 ### **Step 2**: Select tokens to add
 
 Select the pair of tokens you would like to create the pool with. You can choose from already whitelisted tokens or [import any token](../../../kyberswap-solutions/kyberswap-interface/user-guides/add-your-favourite-tokens.md) on your chosen network.
 
-<figure><img src="../../../.gitbook/assets/image (10) (1).png" alt=""><figcaption><p>Select token pair</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (10).png" alt=""><figcaption><p>Select token pair</p></figcaption></figure>
 
 {% hint style="warning" %}
 #### Fee-on-transfer tokens
@@ -69,7 +69,7 @@ Do note that KyberSwap Classic enables users to configure their pool according t
 
 As a safety precaution, KyberSwap Classic will prompt the LP if the specified pool price deviates significantly from the market price.This is because any liquidity additions that significantly deviates from the market price would immediately result in [impermanent loss](../../../getting-started/foundational-topics/decentralized-finance/impermanent-loss.md) as arbitrageurs sweep up the significantly discounted token from the position.
 
-![](<../../../.gitbook/assets/image (22) (1).png>)
+![](<../../../.gitbook/assets/image (11) (1) (2).png>)
 {% endhint %}
 
 ### Step 4: Select AMP value
@@ -117,7 +117,7 @@ If you haven’t already done so, you will need to need to authorize the KyberSw
 
 Click on the "Create" button to bring up the preview screen. Once you have reviewed the information on this screen, click on the "Create Pool" button to proceed.
 
-<figure><img src="../../../.gitbook/assets/image (15) (2).png" alt=""><figcaption><p>Create pool preview</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (15) (1).png" alt=""><figcaption><p>Create pool preview</p></figcaption></figure>
 
 You will need to confirm this transaction in your wallet
 

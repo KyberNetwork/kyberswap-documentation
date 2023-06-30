@@ -29,7 +29,7 @@ As of 25 May 2023, all the relevant Elastic protocol and farm contracts have bee
 * [Understand how Elastic protects you from front runners](concepts/anti-sniping-mechanism.md)
 * [Create your own Elastic pool](user-guides/elastic-pool-creation.md)
 * [Contribute liquidity to an existing Elastic pool](../kyberswap-classic/user-guides/add-liquidity-to-an-existing-classic-pool.md)
-* [Receive additional rewards by yield farming on Elastic](user-guides/yield-farming-on-elastic.md)
+* [Receive additional rewards by yield farming on Elastic](broken-reference)
 
 </details>
 

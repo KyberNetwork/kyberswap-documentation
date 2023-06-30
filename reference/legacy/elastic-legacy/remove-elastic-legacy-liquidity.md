@@ -8,7 +8,7 @@ description: Retrieve Elastic Legacy Funds
 
 On 17 April 2023, KyberSwap validated a vulnerability reported by a whitehat hacker which could result in double-counting of liquidity deposits under a specific condition. Elastic pools and farms were paused with all user funds being safely withdrawn from the identified contracts. As of 25 May 2023, this has now been fixed with all the relevant Elastic protocol and farm contracts updated.&#x20;
 
-This guide is targeted at users who still have tokens in the old Elastic Legacy contracts. As trades against Elastic Legacy contracts have been disabled to ensure the safety of liquidity provider funds, it is highly recommended that such idle funds be removed from Elastic Legacy. Users always maintain control over their own funds and are free to decide how best to utilize their funds whether it is for [yield farming in the newly audited Elastic contracts](../../../liquidity-solutions/kyberswap-elastic/user-guides/yield-farming-on-elastic.md) or other purposes.
+This guide is targeted at users who still have tokens in the old Elastic Legacy contracts. As trades against Elastic Legacy contracts have been disabled to ensure the safety of liquidity provider funds, it is highly recommended that such idle funds be removed from Elastic Legacy. Users always maintain control over their own funds and are free to decide how best to utilize their funds whether it is for [yield farming in the newly audited Elastic contracts](broken-reference) or other purposes.
 
 ## Removing liquidity from Elastic Legacy
 

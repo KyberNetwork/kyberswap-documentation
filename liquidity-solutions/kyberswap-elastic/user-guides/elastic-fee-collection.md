@@ -11,7 +11,7 @@ Whenever your active position goes into supporting trades, the market making fee
 {% hint style="success" %}
 #### Fee collection for positions staked in farms
 
-KyberSwap Elastic enables you to continue [earning farming rewards](yield-farming-on-elastic.md) while collecting the trading fees accrued to your position. If your liquidity position has been staked to a farm, you do not need to unstake your position in order to collect the accrued fees. You can proceed with the fee collection as per normal while your farming position remains unchanged.
+KyberSwap Elastic enables you to continue [earning farming rewards](broken-reference) while collecting the trading fees accrued to your position. If your liquidity position has been staked to a farm, you do not need to unstake your position in order to collect the accrued fees. You can proceed with the fee collection as per normal while your farming position remains unchanged.
 
 This means that fees can be collected at anytime without having to worry about missing out on farming rewards nor the gas fees that accompanies a staking and unstaking of an underlying liquidity position.
 {% endhint %}
@@ -33,7 +33,7 @@ Still deciding on which solution suits you best?&#x20;
 4. [Add Liquidity To An Existing Elastic Pool ](add-liquidity-to-an-existing-elastic-pool.md)
 5. [Increasing Liquidity On Elastic](increasing-liquidity-on-elastic.md)&#x20;
 6. **Elastic Fee Collection <-**
-7. [Yield Farming On Elastic](yield-farming-on-elastic.md)
+7. [Yield Farming On Elastic](broken-reference)
 8. [Removing Liquidity On Elastic](removing-liquidity-on-elastic.md)
 
 </details>

@@ -39,3 +39,43 @@ With each LP having their own liquidity preference, it only made sense that this
 <figure><img src="https://i.imgur.com/I3Y57hd.png" alt=""><figcaption><p>Concentrated liquidity</p></figcaption></figure>
 
 As a consequence of this design, each LP position had to be uniquely tracked as liquidity within the pool became non-fungible (i.e. one LPs position differs from the next). This meant that LP fees could no longer be automatically reinvested into the pool at an infinite range as it had to be distributed proportionally to LPs who supported the active price range. As such, LP fees remained unutilized unless manually harvested and reinvested into the pool (which comes with additional gas fees). This is effectively the solution that KyberSwap Elastic solves with the introduction of the [Reinvestment Curve](reinvestment-curve.md).
+
+## Liquidity: Tracking LP contributions at a specific price
+
+In order to keep track of the relative contributions of each LP towards a specific price, concentrated liquidity protocols introduces a liquidity concept. The liquidity measures the proportion of liquidity which a position contributes to each price point within the selected price range. Note that this relationship is not linear but has been simplified here for ease of understanding.
+
+For the same total value locked (TVL), a position with a narrower range will have a higher liquidity value across the common price range. The example below illustrates this fact by running through 3 positions with varying ranges in the same pool.
+
+<figure><img src="../../../.gitbook/assets/LiquidityConceptDiagram.png" alt=""><figcaption><p>Liquidity concept</p></figcaption></figure>
+
+Taking an ETH-USDC pool with 3 positions with the same TVL, we can see that the proportion of tokens which each position contributes towards supporting the market price differs.&#x20;
+
+<table data-header-hidden><thead><tr><th width="126"></th><th width="162"></th><th></th><th></th></tr></thead><tbody><tr><td>Position</td><td>TVL (USD value)</td><td>Price Range</td><td>Liquidity Contributed</td></tr><tr><td>1</td><td>6,000</td><td>1,960-2,020 (Width: 60)</td><td>10</td></tr><tr><td>2</td><td>6,000</td><td>1,980-2,000 (Width: 20)</td><td>30</td></tr><tr><td>3</td><td>6,000</td><td>1,990-2,000 (Width: 10)</td><td>60</td></tr></tbody></table>
+
+Each of the positions above have a TVL of 6,000USD with the only difference being the specified price range. With a wider range, the liquidity is spread thinner across the selected price range. In the above example, the current market price is 1ETH:1,995USDC and hence all 3 positions are supporting the active market price. However, notice that for trades between the price range of 1,990-2,000, more of Position 3’s tokens are being utilized for the trades (i.e. 60% of the tokens being traded between 1,990-2,000 belong to Position 3). As such, it follows that each position should receive a cut of the trading fees based on the liquidity contributed towards a trade.
+
+When plotted on the above graph, a position is represented as follows:
+
+* The width on the position (i.e. x-axis) represents the LP's selected price range for the position. LPs will continue to earn a cut of the trading fees if their position's range supports the market price.
+* The height of the position (i.e. y-axis) measures the liquidity contributed to a specific price. For each trade, the trading fees will be distributed according to the positions supporting the trade as measured by their relative liquidity values.
+* The area of the position (i.e. width x height) is equivalent to the TVL of the position.&#x20;
+
+## Calculating liquidity
+
+If $$minPrice≤currentPrice≤maxPrice$$:
+
+$$
+\frac{TVL}{(\frac{1}{\sqrt{currentPrice}}-\frac{1}{\sqrt{maxPrice}})*token0_{price}}+(\sqrt{currentPrice}-\sqrt{minPrice})*token1_{price}
+$$
+
+if $$currentPrice≤minPrice$$:
+
+$$
+\frac{TVL}{(\frac{1}{\sqrt{minPrice}}-\frac{1}{\sqrt{maxPrice}})*token0_{price}}
+$$
+
+if $$currentPrice>maxPrice$$:
+
+$$
+\frac{TVL}{(\sqrt{currentPrice}-\sqrt{minPrice})*token1_{price}}
+$$

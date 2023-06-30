@@ -152,7 +152,7 @@ In the above graphic, the first farm is a Type 2 farm since it has a target volu
 
 There is no deadline for collecting (aka harvesting) your pool farm rewards. However please note that some farming pools have vesting periods: after harvesting, the rewards can only be withdrawn after a set vesting period. The vesting period counter starts at the point of collection.
 
-Please refer to [Harvesting and claiming rewards](user-guides/yield-farming-on-elastic.md#harvesting-and-claiming-rewards) for further details.
+Please refer to [Harvesting and claiming rewards](broken-reference) for further details.
 
 </details>
 

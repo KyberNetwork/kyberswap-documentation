@@ -27,7 +27,7 @@ Still deciding on which solution suits you best?&#x20;
 4. **Add Liquidity To An Existing Elastic Pool <-**
 5. [Increasing Liquidity On Elastic](increasing-liquidity-on-elastic.md)
 6. [Elastic Fee Collection](elastic-fee-collection.md)
-7. [Yield Farming On Elastic](yield-farming-on-elastic.md)
+7. [Yield Farming On Elastic](broken-reference)
 8. [Removing Liquidity On Elastic](removing-liquidity-on-elastic.md)
 
 </details>
@@ -55,7 +55,7 @@ Select the pool youâ€™d like to participate in by clicking on the appropriate â€
 
 For the safety of our LPs, KyberSwap Elastic will notify LPs when adding liquidity to a pool that is out of range. This is because any liquidity additions that significantly deviates from the market price would immediately result in [impermanent loss](../../../getting-started/foundational-topics/decentralized-finance/impermanent-loss.md) as arbitrageurs sweep up the significantly discounted token from the position.
 
-![](<../../../.gitbook/assets/image (4) (2).png>)
+![](<../../../.gitbook/assets/image (4) (3).png>)
 {% endhint %}
 
 {% hint style="warning" %}
