@@ -8,6 +8,14 @@ description: Another Opportunity Awaits
 
 Have you discovered an even better yield opportunity or maybe you just want to take a break from the markets. You can easily reduce the amount of liquidity within a position or exit the position completely through removing all your contributed liquidity. This guide describes the steps to remove all or part of your liquidity from a position.
 
+{% hint style="success" %}
+#### Removing liquidity for positions staked in farms
+
+KyberSwap Elastic enables LPs to conveniently remove liquidity while their positions are staked in a farm. Staked positions are automatically withdrawn from the farms with rewards being automatically harvested.&#x20;
+
+In a single transaction, users can unstake their position from the farm, withdraw their position from farming contract, and close their positions with tokens being directly debited to their wallet address. This time-saving feature ensures that LPs can easily readjust their positions while still maximizing their farming rewards.
+{% endhint %}
+
 <details>
 
 <summary>Liquidity Provider Flow</summary>

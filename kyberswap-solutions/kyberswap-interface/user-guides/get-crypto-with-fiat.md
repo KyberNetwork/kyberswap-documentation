@@ -55,7 +55,7 @@ Click here for more information on [**Transak**](https://docs.transak.com/docs/w
 
 Transak is integrated on KyberSwap through a browser integration that will redirect users to Transak to access their fiat on ramp services.
 
-<figure><img src="../../../.gitbook/assets/image (5) (1).png" alt=""><figcaption><p>Purchase crypto with fiat on KyberSwap with Transak</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5) (1) (1).png" alt=""><figcaption><p>Purchase crypto with fiat on KyberSwap with Transak</p></figcaption></figure>
 
 **\*All of the KYC, regulation & compliance, fiat payment methods, and crypto coverage are solely handled by Transak.**
 
