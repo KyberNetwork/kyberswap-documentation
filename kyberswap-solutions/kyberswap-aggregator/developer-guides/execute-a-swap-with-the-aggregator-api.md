@@ -18,7 +18,7 @@ This guide focuses on calling the Aggregator APIs for [EVM chains](../aggregator
 
 Following feedback on the initial non-versioned API, KyberSwap has implemented a more performant `[V1]` API which improves the response time for getting a route via offloading encoding requirements to the post method.
 
-For integrators who have previously integrated with the non-versioned API, please refer to [Upgrading To APIv1](broken-reference) for further details on the motivation behind the upgrade as well as the relevant changes to swap flow and parameters.&#x20;
+For integrators who have previously integrated with the non-versioned API, please refer to [Upgrading To APIv1](upgrading-to-apiv1.md) for further details on the motivation behind the upgrade as well as the relevant changes to swap flow and parameters.&#x20;
 
 Please use the `[V1]GET` API for more efficient route queries. The returned route can then be reused in the `[V1]POST` body to get the encoded swap data. The non-versioned`GET` and `[V1]GET` remains backwards compatible with the main change being the queried path.&#x20;
 

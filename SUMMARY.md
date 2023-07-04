@@ -51,7 +51,7 @@
     *
   * [Developer Guides](kyberswap-solutions/kyberswap-aggregator/developer-guides/README.md)
     * [Execute A Swap With The Aggregator API](kyberswap-solutions/kyberswap-aggregator/developer-guides/execute-a-swap-with-the-aggregator-api.md)
-    * [Upgrading From APIv1 To APIv2](kyberswap-solutions/kyberswap-aggregator/developer-guides/upgrading-from-apiv1-to-apiv2.md)
+    * [Upgrading To APIv1](kyberswap-solutions/kyberswap-aggregator/developer-guides/upgrading-to-apiv1.md)
   * [Aggregator API Specification](kyberswap-solutions/kyberswap-aggregator/aggregator-api-specification/README.md)
     * [EVM Swaps](kyberswap-solutions/kyberswap-aggregator/aggregator-api-specification/evm-swaps.md)
     * [Solana Swaps](kyberswap-solutions/kyberswap-aggregator/aggregator-api-specification/solana-swaps.md)
