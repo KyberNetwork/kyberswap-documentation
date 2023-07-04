@@ -8,7 +8,7 @@ description: Avoid The Pitfalls Of Low Liquidity
 
 Price impact refers to the change in the market price that is brought about due to the execution of a transaction. Price impact is determined by the trade size relative to the available liquidity. In general, as each token purchased results in less available supply, it follows that the price of each additional token unit increases accordingly. Put simply, the more tokens demanded by a trade, the higher the average price per token as tokens will have to be sourced further and further from the market price (i.e. the market price only indicates the price of the next available token).
 
-<figure><img src="../../../.gitbook/assets/image (3) (2) (1).png" alt=""><figcaption><p>KyberSwap price impact</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (100).png" alt=""><figcaption><p>KyberSwap price impact</p></figcaption></figure>
 
 As an example, the screenshot above taken from the KyberSwap [swap page](https://kyberswap.com/swap) indicates that a 10M USDC to USDT trade would result in a 14.65% price impact. This means that such a trade would result in the trader paying, on average, 14.65% more USDC per USDT token as compared to the current market price.
 

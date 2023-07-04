@@ -16,13 +16,13 @@ This guide focuses on calling the Aggregator APIs for [EVM chains](../aggregator
 {% hint style="info" %}
 #### KyberSwap Aggregator APIv2
 
-Following feedback on the initial `[V1]` API, KyberSwap has implemented a more performant `[V2]` API which improves the response time for getting a route via offloading encoding requirements to the post method.
+Following feedback on the initial non-versioned API, KyberSwap has implemented a more performant `[V1]` API which improves the response time for getting a route via offloading encoding requirements to the post method.
 
-For integrators who have previously integrated with APIv2, please refer to [Upgrading From APIv1 To APIv2](upgrading-from-apiv1-to-apiv2.md) for further details on the motivation behind the upgrade as well as the relevant changes to swap flow and parameters.&#x20;
+For integrators who have previously integrated with the non-versioned API, please refer to [Upgrading To APIv1](broken-reference) for further details on the motivation behind the upgrade as well as the relevant changes to swap flow and parameters.&#x20;
 
-Please use the `[V2]GET` API for more efficient route queries. The returned route can then be reused in the `[V2]POST` body to get the encoded swap data. The `[V1]GET` and `[V2]GET` remains backwards compatible with the main change being the queried path.&#x20;
+Please use the `[V1]GET` API for more efficient route queries. The returned route can then be reused in the `[V1]POST` body to get the encoded swap data. The non-versioned`GET` and `[V1]GET` remains backwards compatible with the main change being the queried path.&#x20;
 
-**While both versions of the API remains backwards compatible, only the `[V2]` APIs will continue to receive updates and hence developers are highly encouraged to implement the latest `[V2]` APIs to avoid any disruptions as the `[V1]` API is eventually deprecated.**
+**While both versions of the API remains backwards compatible, only the `[V1]` APIs will continue to receive updates and hence developers are highly encouraged to implement the latest `[V1]` APIs to avoid any disruptions as the non-versioned API is eventually deprecated.**
 {% endhint %}
 
 ## Sequence diagram
@@ -43,7 +43,7 @@ To execute a swap, the router (`MetaAggregationRouterV2`) contract requires the 
 | ...             |        |          |                                        |
 
 {% hint style="info" %}
-The response parameters have been slightly altered in the `[V2]POST` API. The relevant parameter keys are provided below (`[V1]` -> `[V2]`):
+The response parameters have been slightly altered in the `[V1]POST` API. The relevant parameter keys are provided below ( non-versioned -> `[V1]`):
 
 * `inputAmount` -> `amountIn`
 * `encodedSwapData` -> `data`

@@ -572,7 +572,8 @@ paths:
                   - code
                   - message
                   - data
-                example:
+              examples:
+                Example 1:
                   value:
                     code: 0
                     message: Successfully
@@ -613,7 +614,8 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/ErrorResponse'
-                example:
+              examples:
+                example-1:
                   value:
                     code: 4000
                     message: 'Missing requried fields: ChainID'
@@ -627,7 +629,8 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/ErrorResponse'
-                example:
+              examples:
+                example-1:
                   value:
                     code: 5000
                     message: Internal Server Error
@@ -944,7 +947,7 @@ paths:
                 - makingAmount
                 - takingAmount
                 - expiredAt
-      description: 'Get signing message to sign to create order. The response of this API will be used when signing order with [Sign Typed Data v4](https://docs.metamask.io/guide/signing-data.html#sign-typed-data-v4) before Creating New Order API.'
+      description: 'Get signing message to sign to create order. The response of this API will be used when signing order with [Sign Typed Data v4](https://docs.metamask.io/guide/signing-data.html#sign-typed-data-v4) before Creating New Order API'.
       tags:
         - APIs for makers
   /read-partner/api/v1/encode/fill-order-to:
@@ -974,7 +977,8 @@ paths:
                   - code
                   - message
                   - data
-                example:
+              examples:
+                Example 1:
                   value:
                     code: 0
                     message: Successfully
@@ -991,7 +995,8 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/ErrorResponse'
-                example:
+              examples:
+                Example 1:
                   value:
                     code: 4000
                     message: 'Missing reuiqred fields: OrderID'
@@ -1005,7 +1010,8 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/ErrorResponse'
-                example:
+              examples:
+                Example 1:
                   value:
                     code: 4040
                     message: 'Not found: order'
@@ -1017,7 +1023,8 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/ErrorResponse'
-                example:
+              examples:
+                Example 1:
                   value:
                     code: 5000
                     message: Internal Server Error
@@ -1084,7 +1091,8 @@ paths:
                   - code
                   - message
                   - data
-                example:
+              examples:
+                Example 1:
                   value:
                     code: 0
                     message: Successfully
@@ -1100,7 +1108,8 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/ErrorResponse'
-                example:
+              examples:
+                Example 1:
                   value:
                     code: 4000
                     message: 'Missing required fields: OrderIDs'
@@ -1114,7 +1123,8 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/ErrorResponse'
-                example:
+              examples:
+                Example 1:
                   value:
                     code: 4040
                     message: 'Not found: orderId: 1'
@@ -1128,7 +1138,8 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/ErrorResponse'
-                example:
+              examples:
+                Example 1:
                   value:
                     code: 4090
                     message: 'Duplicate data: OrderIDs'
@@ -1140,7 +1151,8 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/ErrorResponse'
-                example:
+              examples:
+                Example 1:
                   value:
                     code: 5000
                     message: Internal Server Error
@@ -1254,7 +1266,8 @@ paths:
                   - code
                   - message
                   - data
-                example:
+              examples:
+                Example 1:
                   value:
                     code: 0
                     message: Successfully
@@ -1269,7 +1282,8 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/ErrorResponse'
-                example:
+              examples:
+                Example 1:
                   value:
                     code: 4000
                     message: 'Missing required fields: OrderIDs'
@@ -1283,7 +1297,8 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/ErrorResponse'
-                example:
+              examples:
+                Example 1:
                   value:
                     code: 4040
                     message: 'Not found: orderId: 1'
@@ -1297,7 +1312,8 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/ErrorResponse'
-                example:
+              examples:
+                Example 1:
                   value:
                     code: 4090
                     message: 'Duplicate data: OrderIDs'
@@ -1309,7 +1325,8 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/ErrorResponse'
-                example:
+              examples:
+                Example 1:
                   value:
                     code: 5000
                     message: Internal Server Error
@@ -1328,7 +1345,8 @@ paths:
                     type: integer
               required:
                 - orderIds
-              example:
+            examples:
+              Example 1:
                 value:
                   orderIds:
                     - 1
@@ -1371,7 +1389,8 @@ paths:
                   - code
                   - message
                   - data
-                example:
+              examples:
+                Example 1:
                   value:
                     code: 0
                     message: Successfully
@@ -1388,7 +1407,8 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/ErrorResponse'
-                example:
+              examples:
+                Example 1:
                   value:
                     code: 4000
                     message: 'Missing required fields: ChainIDs'
@@ -1400,7 +1420,8 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/ErrorResponse'
-                example:
+              examples:
+                Example 1:
                   value:
                     code: 5000
                     message: Internal Server Error

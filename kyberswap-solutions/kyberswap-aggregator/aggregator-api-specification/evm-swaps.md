@@ -6,7 +6,7 @@ description: KyberSwap Aggregator EVM APIs
 
 ## Download OpenAPI specification:
 
-{% file src="../../../.gitbook/assets/KyberSwapAggregator_EVMAPIs_v2.3.yaml" %}
+{% file src="broken-reference" %}
 
 {% hint style="success" %}
 #### Note on integrations: clientID
@@ -17,34 +17,50 @@ For integrators who have previously specified your clientID under the `clientDat
 
 #### Example
 
-* \[V2]`GET/POST` Header
+* \[V1]`GET/POST` Header
   * x-client-id="yourCompanyNameHere"
 {% endhint %}
 
 ## EVM swap APIs
 
-If you're just getting started with the KyberSwap Aggregator, you can refer to our [Execute A Swap With The Aggregator API](../developer-guides/execute-a-swap-with-the-aggregator-api.md) dev guide for information and code samples on how to query and execute swaps at superior rates. Note that there is also a [KyberSwap Widget](../../kyberswap-widget/) option for integrators who require a simple minimal-code implementation. For existing integrators, please refer to [Upgrading From APIv1 To APIv2](../developer-guides/upgrading-from-apiv1-to-apiv2.md) for further details on the motivation behind the upgrade as well as the relevant changes to swap flow and parameters.&#x20;
+If you're just getting started with the KyberSwap Aggregator, you can refer to our [Execute A Swap With The Aggregator API](../developer-guides/execute-a-swap-with-the-aggregator-api.md) dev guide for information and code samples on how to query and execute swaps at superior rates. Note that there is also a [KyberSwap Widget](../../kyberswap-widget/) option for integrators who require a simple minimal-code implementation. For existing integrators, please refer to [Upgrading To APIv1](broken-reference) for further details on the motivation behind the upgrade as well as the relevant changes to swap flow and parameters.&#x20;
 
-To support more performant queries, KyberSwap highly encourages all integrators to implement the latest API `[V2]` version. While both versions of the API remains backwards compatible, only the `[V2]` APIs will continue to receive updates and hence developers are highly encouraged to implement the latest `[V2]` APIs to avoid any disruptions as the `[V1]` API will eventually be deprecated.
+To support more performant queries, KyberSwap highly encourages all integrators to implement the latest API `[V1]` version. While both versions of the API remains backwards compatible, only the `[V1]` APIs will continue to receive updates and hence developers are highly encouraged to implement the latest `[V1]` APIs to avoid any disruptions as the non-versioned API will eventually be deprecated.
 
 {% hint style="info" %}
 #### ZkSync Era support
 
-For integrators looking to build on top of the KyberSwap Aggregator on ZkSync Era (ChainID: 324), please note that only the `[V2]` API is supported.
+For integrators looking to build on top of the KyberSwap Aggregator on ZkSync Era (ChainID: 324), please note that only the `[V1]` API is supported.
 {% endhint %}
 
-### API \[V2]: Latest
+<details>
 
-{% swagger src="../../../.gitbook/assets/KyberSwapAggregator_EVMAPIs_v2.3.yaml" path="/{chain}/api/v1/routes" method="get" %}
-[KyberSwapAggregator_EVMAPIs_v2.3.yaml](../../../.gitbook/assets/KyberSwapAggregator_EVMAPIs_v2.3.yaml)
+<summary>API statuses and support</summary>
+
+KyberSwap APIs uses the following statuses to minimize version miscommunications and ensure an uninterrupted service for the end user:
+
+* `Latest`: API is functional and supported. This is the recommended version for all integrators (new and existing).
+* `Legacy`: API remains functional with support for bugs only. No new feature updates.
+* `Deprecated`: API is no longer functional and is not supported.
+
+For all developers, it is highly recommended that you refer to the API with the `Latest` tag to ensure access to the latest features as well as improved service quality and efficiency. APIs which are planned to be sunset will be tagged `Legacy` during the transition period and thereafter moved to `Deprecated`.
+
+The KyberSwap Docs will continue to maintain information regarding `Legacy` and `Deprecated` APIs.
+
+</details>
+
+### `Latest`
+
+{% swagger src="broken-reference" path="/{chain}/api/v1/routes" method="get" %}
+[Broken file](broken-reference)
 {% endswagger %}
 
-{% swagger src="../../../.gitbook/assets/KyberSwapAggregator_EVMAPIs_v2.3.yaml" path="/{chain}/api/v1/route/build" method="post" %}
-[KyberSwapAggregator_EVMAPIs_v2.3.yaml](../../../.gitbook/assets/KyberSwapAggregator_EVMAPIs_v2.3.yaml)
+{% swagger src="broken-reference" path="/{chain}/api/v1/route/build" method="post" %}
+[Broken file](broken-reference)
 {% endswagger %}
 
-### API \[V1]: Sunset period
+### `Legacy`
 
-{% swagger src="../../../.gitbook/assets/KyberSwapAggregator_EVMAPIs_v2.3.yaml" path="/{chain}/route/encode" method="get" %}
-[KyberSwapAggregator_EVMAPIs_v2.3.yaml](../../../.gitbook/assets/KyberSwapAggregator_EVMAPIs_v2.3.yaml)
+{% swagger src="broken-reference" path="/{chain}/route/encode" method="get" %}
+[Broken file](broken-reference)
 {% endswagger %}
