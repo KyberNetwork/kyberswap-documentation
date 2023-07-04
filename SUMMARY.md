@@ -22,6 +22,7 @@
   * [Decentralized Technologies](getting-started/foundational-topics/decentralized-technologies/README.md)
     * [Wallets](getting-started/foundational-topics/decentralized-technologies/wallets.md)
     * [Dapps](getting-started/foundational-topics/decentralized-technologies/draft-dapps.md)
+    * [RPC](getting-started/foundational-topics/decentralized-technologies/rpc.md)
     * [Oracles](getting-started/foundational-topics/decentralized-technologies/oracles.md)
     * [On-Chain vs Off-Chain Data](getting-started/foundational-topics/decentralized-technologies/on-chain-vs-off-chain-data.md)
   * [Other Valuable Resources](getting-started/foundational-topics/other-valuable-resources.md)

@@ -17,7 +17,7 @@ is [IEpochUtils](https://docs.kyberswap.com/Legacy/api-abi/core-smart-contracts/
 
 _Source_: [IKyberDao.sol](https://github.com/KyberNetwork/smart-contracts/blob/master/contracts/sol6/IKyberDao.sol)
 
-***
+
 
 ### INDEX[​](https://docs.kyberswap.com/Legacy/api-abi/core-smart-contracts/api\_abi-ikyberdao#index) <a href="#index" id="index"></a>
 
@@ -31,7 +31,7 @@ _Source_: [IKyberDao.sol](https://github.com/KyberNetwork/smart-contracts/blob/m
 
 Event logging the voting of a campaign at epoch.
 
-***
+
 
 event **Voted**(address staker, uint256 epoch, uint256 campaignID, uint256 option) | Parameter | Type | Description | | --------- |:-----:|:-----------:| | `staker` | address | staker's address | | `epoch` | uint256 | epoch number where campaign was voted | | `campaignID` | uint256 | campaign's ID | | `option` | uint256 | ID of option voted for | Signature: 0xc32b42768a47a585121e9b8d7a2ab9d3f34c326a192dee11ee1732e3d18313f3
 
@@ -44,7 +44,7 @@ event **Voted**(address staker, uint256 epoch, uint256 campaignID, uint256 optio
 
 Votes for an option of a campaign, where options are indexed from 1 to N number of options.
 
-***
+
 
 function **vote**(uint256 campaignID, uint256 option) external | Parameter | Type | Description | | --------- |:-----:|:-----------:| | `campaignID` | uint256 | ID of campaign | | `option` | uint256 | ID of option |
 

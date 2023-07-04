@@ -41,6 +41,12 @@ Still deciding on which solution suits you best?&#x20;
 
 </details>
 
+## MEV protection on Ethereum
+
+To protect transactions on Ethereum against [MEV strategies](../../../getting-started/foundational-topics/decentralized-finance/maximal-extractable-value-mev.md), KyberSwap provides users with the option to select MEV protected [RPCs](../../../getting-started/foundational-topics/decentralized-technologies/rpc.md) such as [Flashbots ](https://www.flashbots.net/)and [MEVBlocker](https://mevblocker.io/). Transactions via such RPCs will undergo a different transaction ordering process and therefore enjoy protection from multiple MEV strategies.&#x20;
+
+It is important that you understand the pros and cons of using MEV protected RPCs. This will help you make an informed decision as to the suitability of such RPCs with regards to your DeFi goals. MEV protected RPCs will be indicated with green shield icon.
+
 ## Switching your active network
 
 ### **Step 1: Connect your wallet**
@@ -55,9 +61,17 @@ In the example above, KyberSwap has connected to the Ethereum Mainnet as per the
 
 To change the network, you can select the dropdown which will display the full list of chain options for you to choose from. Please refer to [Supported Exchanges And Networks](../../../getting-started/supported-exchanges-and-networks.md) for the full details.
 
-<figure><img src="../../../.gitbook/assets/image (20).png" alt=""><figcaption><p>KyberSwap supported chains</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (20) (2).png" alt=""><figcaption><p>KyberSwap supported chains</p></figcaption></figure>
 
-Select your preferred chain and you should then be prompted by your wallet to confirm the network change. If this is your first time connecting to a chain, your wallet provider should display the details of the chain for your verification. The below is an example of adding the Polygon chain and confirming the chain switch using MetaMask.
+Select your preferred chain and you should then be prompted by your wallet to confirm the network change.&#x20;
+
+{% hint style="success" %}
+#### MEV protection
+
+KyberSwap enables users to select MEV protected RPCs. Please refer to [MEV protection on Ethereum](selecting-preferred-network.md#mev-protection-on-ethereum) for further details.
+{% endhint %}
+
+If this is your first time connecting to a chain, your wallet provider should display the details of the chain for your verification. The below is an example of adding the Polygon chain and confirming the chain switch using MetaMask.
 
 <figure><img src="../../../.gitbook/assets/image (65).png" alt=""><figcaption><p>Adding a Polygon chain to MetaMask</p></figcaption></figure>
 

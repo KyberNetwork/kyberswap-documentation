@@ -183,7 +183,7 @@ Hovering your mouse above the options will also bring up the helpers for your co
 
 <figure><img src="../../../.gitbook/assets/image (85).png" alt=""><figcaption><p>Infinite allowance helper</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (25) (2).png" alt=""><figcaption><p>Custom allowance helper</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (25).png" alt=""><figcaption><p>Custom allowance helper</p></figcaption></figure>
 
 Note that setting a custom allowance limit via the KyberSwap UI will be available for all wallets except for MetaMask and Trust Wallet. For these, users will be prompted to set the allowance limit directly in their wallet UI. This avoids any tx failures caused by amount mismatch.
 

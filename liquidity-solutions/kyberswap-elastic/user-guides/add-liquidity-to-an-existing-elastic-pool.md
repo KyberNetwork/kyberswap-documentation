@@ -55,7 +55,7 @@ Select the pool youâ€™d like to participate in by clicking on the appropriate â€
 
 For the safety of our LPs, KyberSwap Elastic will notify LPs when adding liquidity to a pool that is out of range. This is because any liquidity additions that significantly deviates from the market price would immediately result in [impermanent loss](../../../getting-started/foundational-topics/decentralized-finance/impermanent-loss.md) as arbitrageurs sweep up the significantly discounted token from the position.
 
-![](<../../../.gitbook/assets/image (4) (3).png>)
+![](<../../../.gitbook/assets/image (4) (2).png>)
 {% endhint %}
 
 {% hint style="warning" %}

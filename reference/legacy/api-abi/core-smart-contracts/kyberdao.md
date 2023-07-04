@@ -17,7 +17,7 @@ is [IKyberDao](https://docs.kyberswap.com/Legacy/api-abi/core-smart-contracts/ap
 
 _Source_: [KyberDao.sol](https://github.com/KyberNetwork/smart-contracts/blob/master/contracts/sol6/Dao/KyberDao.sol)
 
-***
+
 
 ### INDEX[​](https://docs.kyberswap.com/Legacy/api-abi/core-smart-contracts/api\_abi-kyberdao#index) <a href="#index" id="index"></a>
 
@@ -31,7 +31,7 @@ _Source_: [KyberDao.sol](https://github.com/KyberNetwork/smart-contracts/blob/ma
 
 Event for logging the creation of a new campaign.
 
-***
+
 
 event **NewCampaignCreated**(CampaignType campaignType, uint256 campaignID, uint256 startTimestamp, uint256 endTimestamp, uint256 minPercentageInPrecision, uint256 cInPrecision, uint256 tInPrecision, uint256\[] options, bytes link) | Parameter | Type | Description | | --------- |:-----:|:-----------:| | `campaignType` | CampaignType | type of campaign (General, NetworkFee, FeeHandlerBRR) | | `campaignID` | uint256 | ID of the campaign | | `startTimestamp` | uint256 | timestamp to start the new campaign | | `endTimestamp` | uint256 | timestamp to end the campaign | | `minPercentageInPrecision` | uint256 | min percentage (in precision) for formula to conclude campaign | | `cInPrecision` | uint256 | c value (in precision) for formula to conclude campaign | | `tInPrecision` | uint256 | t value (in precision) for formula to conclude campaign | | `options` | uint256\[] | list values of options to vote for the campaign | | `link` | bytes | additional data for the campaign | Signature: 0x16cd0674a0f54c4895f5973a1f8f1be4b653af6c2436052d529fd3d0e5def391
 
@@ -42,7 +42,7 @@ event **NewCampaignCreated**(CampaignType campaignType, uint256 campaignID, uint
 
 Event for logging the cancellation of a campaign.
 
-***
+
 
 event **CancelledCampaign**(uint256 campaignID) | Parameter | Type | Description | | --------- |:-----:|:-----------:| | `campaignID` | uint256 | ID of the campaign | Signature: 0xef29bb5bcfd2b2ff4bc50d710898467757ff87aad1031fc953907b65127f86fc
 
@@ -55,7 +55,7 @@ event **CancelledCampaign**(uint256 campaignID) | Parameter | Type | Description
 
 Votes for an option of a campaign, where options are indexed from 1 to N number of options.
 
-***
+
 
 function **vote**(uint256 campaignID, uint256 option) external override | Parameter | Type | Description | | --------- |:-----:|:-----------:| | `campaignID` | uint256 | ID of campaign | | `option` | uint256 | ID of option |
 

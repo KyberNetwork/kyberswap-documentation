@@ -15,7 +15,7 @@ For the most updated information, please refer to:
 
 _Source_: [IKyberHistory.sol](https://github.com/KyberNetwork/smart-contracts/blob/master/contracts/sol6/IKyberHistory.sol)
 
-***
+
 
 ### INDEX[​](https://docs.kyberswap.com/Legacy/api-abi/core-smart-contracts/api\_abi-ikyberhistory#index) <a href="#index" id="index"></a>
 
@@ -29,6 +29,6 @@ _Source_: [IKyberHistory.sol](https://github.com/KyberNetwork/smart-contracts/bl
 
 Returns list of historic addresses, where index 0 is the currently used contract address and indexes > 0 are older versions.
 
-***
+
 
 function **getContracts**() external view returns (address\[])\ **Returns:**\ List of history addresses

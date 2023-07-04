@@ -17,7 +17,7 @@ imports IERC20
 
 _Source_: [ISimpleKyberProxy.sol](https://github.com/KyberNetwork/smart-contracts/blob/master/contracts/sol6/ISimpleKyberProxy.sol)
 
-***
+
 
 ### INDEX[​](https://docs.kyberswap.com/Legacy/api-abi/core-smart-contracts/api\_abi-isimplekyberproxy#index) <a href="#index" id="index"></a>
 
@@ -31,7 +31,7 @@ _Source_: [ISimpleKyberProxy.sol](https://github.com/KyberNetwork/smart-contract
 
 Execute a simple ETH -> ERC20 token trade.
 
-***
+
 
 function **swapTokenToEther**(IERC20 token, uint256 srcAmount, uint256 minConversionRate) external returns (uint256 destAmount) | Parameter | Type | Description | | ------------------- |:-------:|:-------------------------------------------------------------------:| | `token` | IERC20 | destination ERC20 token contract address | | `srcAmount` | uint256 | source ERC20 token amount in its token decimals | | `minConversionRate` | uint256 | minimum conversion rate; trade is canceled if actual rate is lower | **Returns:**\ destAmount - Amount of actual destination ETH wei
 
@@ -42,7 +42,7 @@ function **swapTokenToEther**(IERC20 token, uint256 srcAmount, uint256 minConver
 
 Execute a simple ERC20 token -> ETH trade.
 
-***
+
 
 function **swapEtherToToken**(IERC20 token, uint256 minConversionRate) external returns (uint256 destAmount) | Parameter | Type | Description | | ------------------- |:-------:|:--------------------------------------------------------------------:| | `token` | IERC20 | destination ERC20 token contract address | | `minConversionRate` | uint256 | minimum conversion rate; trade is canceled if actual rate is lower | **Returns:**\ destAmount - Amount of actual destination tokens in twei
 
@@ -53,6 +53,6 @@ function **swapEtherToToken**(IERC20 token, uint256 minConversionRate) external 
 
 Makes a simple ERC20 -> ERC20 token trade.
 
-***
+
 
 function **swapTokenToToken**(IERC20 src, uint256 srcAmount, IERC20 dest, uint256 minConversionRate) external returns (uint256 destAmount) | Parameter | Type | Description | | ------------------- |:-------:|:--------------------------------------------------------------------:| | `src` | IERC20 | source ERC20 token contract address | | `srcAmount` | uint256 | wei amount of source ERC20 token | | `dest` | IERC20 | destination ERC20 token contract address | | `minConversionRate` | uint256 | minimum conversion rate; trade is canceled if actual rate is lower | **Returns:**\ destAmount - Amount of actual destination tokens in twei

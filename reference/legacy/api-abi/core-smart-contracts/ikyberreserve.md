@@ -17,7 +17,7 @@ imports IERC20
 
 _Source_: [IKyberReserve.sol](https://github.com/KyberNetwork/smart-contracts/blob/master/contracts/sol6/IKyberReserve.sol)
 
-***
+
 
 ### INDEX[​](https://docs.kyberswap.com/Legacy/api-abi/core-smart-contracts/api\_abi-ikyberreserve#index) <a href="#index" id="index"></a>
 
@@ -31,7 +31,7 @@ _Source_: [IKyberReserve.sol](https://github.com/KyberNetwork/smart-contracts/bl
 
 Executes a trade between the reserve and the KyberNetwork contract.
 
-***
+
 
 function **trade**(IERC20 srcToken, uint256 srcAmount, IERC20 destToken, address payable destAddress, uint256 conversionRate, bool validate) external payable returns (bool) | Parameter | Type | Description | | --------- |:-----:|:-----------:| | `srcToken` | IERC20 | source ERC20 token contract address | | `srcAmount` | uint256 | source ERC20 token amount in its token decimals | | `destToken` | IERC20 | destination ERC20 token contract address | | `destAddress` | address | recipient address for destination ERC20 tokens | | `conversionRate` | uint256 | actual conversion rate between srcToken and destToken | | `validate` | bool | Apply additional validations if `true` | **Returns:**\ `true` if the trade was successful, otherwise `false` if unsuccessful
 

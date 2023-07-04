@@ -19,7 +19,7 @@ _Source_: [SanityRates.sol](https://github.com/KyberNetwork/smart-contracts/blob
 
 The SanityRates contract's role is provide a safeguard for reserves whereby trades are disabled in the event exchange rates fall below the lower limit or rise above the upper limit of the sanity rates.
 
-***
+
 
 ### INDEX[​](https://docs.kyberswap.com/Legacy/api-abi/misc/api\_abi-sanityrates#index) <a href="#index" id="index"></a>
 
@@ -33,7 +33,7 @@ The SanityRates contract's role is provide a safeguard for reserves whereby trad
 
 Contract constructor. Note that constructor methods are called exactly once during contract instantiation and cannot be called again.
 
-***
+
 
 function **SanityRates**(address \_admin) public | Parameter | Type | Description | | ----------|:-------:|:--------------------:| | `_admin` | address | address of the admin |\
 
@@ -42,11 +42,11 @@ function **SanityRates**(address \_admin) public | Parameter | Type | Descriptio
 
 Gets the sanity rate for a pair of tokens.
 
-***
+
 
 function **getSanityRate**(ERC20 src, ERC20 dest) public view returns (uint) | Parameter | Type | Description | | --------- |:-----:|:----------------------------------------:| | `src` | ERC20 | source ERC20 token contract address | | `dest` | ERC20 | destination ERC20 token contract address | **Returns:**\ The sanity rate for the pair of tokens
 
-***
+
 
 Web3 Example:
 
@@ -70,13 +70,13 @@ let sanityRate = await SanityRates.methods
 
 Set reasonable conversion rate difference in percentage (any conversion rate outside of this range is considered unreasonable).
 
-***
+
 
 function **setReasonableDiff**(ERC20\[] srcs, uint\[] diff) public | Parameter | Type | Description | | --------- |:-----:|:-----------------------------------------------:| | `srcs` | ERC20\[] | list of source ERC20 token contract addresses | | `diff` | uint\[] | list of reasonableDiffs in basis points (bps)\
 `1 bps = 0.01%`\
 Modifiers: [onlyAdmin](https://docs.kyberswap.com/Legacy/api-abi/misc/api\_abi-permissiongroups.md#onlyadmin) |
 
-***
+
 
 Web3 Example:
 
@@ -108,11 +108,11 @@ SanityRates.methods
 
 Sets the sanity rate for a list of tokens.
 
-***
+
 
 function setSanityRates(ERC20\[] srcs, uint\[] rates) public | Parameter | Type | Description | | --------- |:-------:|:---------------------------------------------:| | `srcs` | ERC20\[] | list of source ERC20 token contract addresses | | `rates` | uint\[] | list of rates in ETH wei | Modifiers: [onlyOperator](https://docs.kyberswap.com/Legacy/api-abi/misc/api\_abi-permissiongroups.md#onlyoperator)
 
-***
+
 
 Web3 Example:
 

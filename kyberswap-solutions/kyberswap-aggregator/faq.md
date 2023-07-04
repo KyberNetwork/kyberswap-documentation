@@ -96,7 +96,7 @@ Before confirming a swap transaction, you will be shown an order confirmation sc
 
 Do pay particular attention to the [Price Impact](../../getting-started/foundational-topics/decentralized-finance/price-impact.md) and [Slippage](../../getting-started/foundational-topics/decentralized-finance/slippage.md) numbers. For further details, please refer to [Confirm the swap](broken-reference).
 
-![](<../../.gitbook/assets/image (2) (1).png>)
+![](<../../.gitbook/assets/image (2) (4).png>)
 
 </details>
 

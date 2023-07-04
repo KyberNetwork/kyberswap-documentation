@@ -62,14 +62,14 @@ paths:
           name: tokenIn
           required: true
           description: |
-            Address of the input token \
+            Address of the input token 
             `0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE` in case of native token
         - schema:
             type: string
           in: query
           name: tokenOut
           description: |
-            Address of the output token \
+            Address of the output token 
             `0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE` in case of native token
           required: true
         - schema:
@@ -83,15 +83,15 @@ paths:
           in: query
           name: saveGas
           description: |
-            `false`/`0` = route will be based on the maximum output token returned \
+            `false`/`0` = route will be based on the maximum output token returned 
             `true`/`1` = route will be based on the lowest gas cost (i.e. the least hops)      
         - schema:
             type: string
           in: query
           name: slippageTolerance
           description: |
-            This is the amount of slippage the user can accept for his trade. The unit is bip. \
-            The value is in ranges [0, 2000], 10 means 0.1%. \
+            This is the amount of slippage the user can accept for his trade. The unit is bip. 
+            The value is in ranges [0, 2000], 10 means 0.1%. 
             Default value is 50/10000 ~ 0.5%.
         - schema:
             type: boolean
@@ -108,7 +108,7 @@ paths:
           name: chargeFeeBy
           allowEmptyValue: true
           description: |
-            Indicates whether fee is charged by input token `currency_in` or output token `currency_out` \
+            Indicates whether fee is charged by input token `currency_in` or output token `currency_out` 
             Default is empty whereby no fee is charged
         - schema:
             type: string
@@ -121,7 +121,7 @@ paths:
           name: feeAmount
           description: |
             Fee amount to be collected \
-            if `isInBps` = `true`, `feeAmount` is the percentage of fees that we will take with base unit = 10000, i.e `feeAmount` = 10 and `isInBps` = `true` then fee = 0.1% \
+            if `isInBps` = `true`, `feeAmount` is the percentage of fees that we will take with base unit = 10000, i.e `feeAmount` = 10 and `isInBps` = `true` then fee = 0.1% 
             if `isInBps` = `false`, `feeAmount` is the amount of token that we will take as fee, i.e `feeAmount` = 10 and `isInBps` = 'false' then fee = 10 token weis
         - schema:
             type: string
@@ -193,14 +193,14 @@ paths:
           name: tokenIn
           required: true
           description: |
-            Address of the input token \
+            Address of the input token 
             `0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE` in case of native token
         - schema:
             type: string
           in: query
           name: tokenOut
           description: |
-            Address of the output token \
+            Address of the output token 
             `0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE` in case of native token
           required: true
         - schema:
@@ -214,7 +214,7 @@ paths:
           in: query
           name: saveGas
           description: |
-            `false`/`0` = route will be based on the maximum output token returned \
+            `false`/`0` = route will be based on the maximum output token returned 
             `true`/`1` = route will be based on the lowest gas cost (i.e. the least hops)         
         - schema:
             type: string
@@ -242,7 +242,7 @@ paths:
           name: feeAmount
           description: |
             Fee amount to be collected \
-            if `isInBps` = `true`, `feeAmount` is the percentage of fees that we will take with base unit = 10000, i.e `feeAmount` = 10 and `isInBps` = `true` then fee = 0.1% \
+            if `isInBps` = `true`, `feeAmount` is the percentage of fees that we will take with base unit = 10000, i.e `feeAmount` = 10 and `isInBps` = `true` then fee = 0.1% 
             if `isInBps` = `false`, `feeAmount` is the amount of token that we will take as fee, i.e `feeAmount` = 10 and `isInBps` = 'false' then fee = 10 token weis          
         - schema:
             type: string
@@ -253,7 +253,7 @@ paths:
           name: chargeFeeBy
           allowEmptyValue: true
           description: |
-            Indicates whether fee is charged by input token `currency_in` or output token `currency_out` \
+            Indicates whether fee is charged by input token `currency_in` or output token `currency_out` 
             Default is empty whereby no fee is charged
         - schema:
             type: boolean
@@ -447,7 +447,7 @@ components:
                         - currency_in
                         - currency_out
                       description: |
-                        Indicates whether fee is charged by input token `currency_in` or output token `currency_out` \
+                        Indicates whether fee is charged by input token `currency_in` or output token `currency_out` 
                         Default is empty whereby no fee is charged
                     isInBps:
                       type: string
@@ -563,7 +563,7 @@ components:
                     - currency_in
                     - currency_out
                   description: |
-                    Indicates whether fee is charged by input token `currency_in` or output token `currency_out` \
+                    Indicates whether fee is charged by input token `currency_in` or output token `currency_out` 
                     Default is empty whereby no fee is charged
                 isInBps:
                   type: string
@@ -742,7 +742,7 @@ components:
                     - currency_in
                     - currency_out
                   description: |
-                    Indicates whether fee is charged by input token `currency_in` or output token `currency_out` \
+                    Indicates whether fee is charged by input token `currency_in` or output token `currency_out` 
                     Default is empty whereby no fee is charged
                 isInBps:
                   type: string
@@ -805,8 +805,8 @@ components:
         slippageTolerance:
           type: integer
           description: |
-            This is the amount of slippage the user can accept for his trade. The unit is bip. \
-            The value is in ranges [0, 2000], 10 means 0.1%. \
+            This is the amount of slippage the user can accept for his trade. The unit is bip. 
+            The value is in ranges [0, 2000], 10 means 0.1%. 
             Default value is 50/10000 ~ 0.5%.
         sender:
           type: string
@@ -817,9 +817,6 @@ components:
         source:
           type: string
           description: String to present to your client (i.e. clientID)
-        skipSimulateTx:
-          type: boolean
-          description: Returns the encoded data without price impact checks. For advanced trades.
 
   examples:  
     SampleResponseSwapV1:

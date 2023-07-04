@@ -15,7 +15,7 @@ For the most updated information, please refer to:
 
 _Source_: [ConversionRatesInterface.sol](https://github.com/KyberNetwork/smart-contracts/blob/master/contracts/sol4/ConversionRatesInterface.sol)
 
-***
+
 
 ### INDEX[​](https://docs.kyberswap.com/Legacy/api-abi/misc/api\_abi-conversionratesinterface#index) <a href="#index" id="index"></a>
 
@@ -29,7 +29,7 @@ _Source_: [ConversionRatesInterface.sol](https://github.com/KyberNetwork/smart-c
 
 Gets the conversion rate of the ERC20 token depending on quantity at block height
 
-***
+
 
 function **getRate**(ERC20 token, uint currentBlockNumber, bool buy, uint qty) public view returns (uint) | Parameter | Type | Description | | -------------------- |:-----:|:------------------------------------------------------------------:| | `token` | ERC20 | ERC20 token contract address | | `currentBlockNumber` | uint | current block height or block number | | `buy` | bool | `true` if action is to buy, otherwise `false` if action is to sell | | `qty` | uint | wei amount of ERC20 tokens | **Returns:**\ Conversion rate of ERC20 token depending on quantity at block height\
 
@@ -38,6 +38,6 @@ function **getRate**(ERC20 token, uint currentBlockNumber, bool buy, uint qty) p
 
 Records the wei amount of net absolute (+/-) change for a token in a block
 
-***
+
 
 function **recordImbalance**(ERC20 token, int buyAmount, uint rateUpdateBlock, uint currentBlock) public | Parameter | Type | Description | | ----------------- |:-----:|:------------------------------------:| | `token` | ERC20 | ERC20 token contract address | | `buyAmount` | int | buy amount of ERC20 tokens in wei | | `rateUpdateBlock` | uint | **NOT SURE** | | `currentBlock` | uint | current block height or block number |

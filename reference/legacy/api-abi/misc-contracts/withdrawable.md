@@ -19,7 +19,7 @@ _Source_: [Withdrawable.sol](https://github.com/KyberNetwork/smart-contracts/blo
 
 The Withdrawable contract's role is to allow recovery of any ERC20 token or ETH received in a contract. This will prevent any accidental loss of tokens.
 
-***
+
 
 ### INDEX[​](https://docs.kyberswap.com/Legacy/api-abi/misc/api\_abi-withdrawable#index) <a href="#index" id="index"></a>
 
@@ -33,7 +33,7 @@ The Withdrawable contract's role is to allow recovery of any ERC20 token or ETH 
 
 Event for logging the withdrawal of ETH received in a contract.
 
-***
+
 
 event **EtherWithdraw**(uint amount, address sendTo) | Parameter | Type | Description | | --------- |:-------:|:--------------------:| | `amount` | uint | amount of ETH in wei | | `sendTo` | address | recipient's address |\
 
@@ -42,7 +42,7 @@ event **EtherWithdraw**(uint amount, address sendTo) | Parameter | Type | Descri
 
 Event for logging the withdrawal of a token received in a contract.
 
-***
+
 
 event **TokenWithdraw**(ERC20 token, uint amount, address sendTo) | Parameter | Type | Description | | --------- |:-------:|:-----------------------------:| | `token` | ERC20 | ERC20 token contract address | | `amount` | uint | amount of ERC20 tokens in wei | | `sendTo` | address | recipient's address |\
 
@@ -53,7 +53,7 @@ event **TokenWithdraw**(ERC20 token, uint amount, address sendTo) | Parameter | 
 
 Withdraws ETH from the contract.
 
-***
+
 
 function **withdrawEther**(uint amount, address sendTo) external onlyAdmin | Parameter | Type | Description | | --------- |:-------:|:---------------------:| | `amount` | uint | amount of ETH in wei | | `sendTo` | address | recipient's address | Modifiers: [onlyAdmin](https://docs.kyberswap.com/Legacy/api-abi/misc/api\_abi-permissiongroups.md#onlyadmin)\
 
@@ -62,6 +62,6 @@ function **withdrawEther**(uint amount, address sendTo) external onlyAdmin | Par
 
 Withdraws an ERC20 token from the contract.
 
-***
+
 
 function **withdrawToken**(ERC20 token, uint amount, address sendTo) external onlyAdmin | Parameter | Type | Description | | --------- |:-------:|:-----------------------------:| | `token` | ERC20 | ERC20 token contract address | | `amount` | uint | amount of ERC20 tokens in wei | | `sendTo` | address | recipient's address | Modifiers: [onlyAdmin](https://docs.kyberswap.com/Legacy/api-abi/misc/api\_abi-permissiongroups.md#onlyadmin)
