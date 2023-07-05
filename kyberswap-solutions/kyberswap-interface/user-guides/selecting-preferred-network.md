@@ -43,9 +43,69 @@ Still deciding on which solution suits you best?&#x20;
 
 ## MEV protection on Ethereum
 
+<figure><img src="../../../.gitbook/assets/SwitchNetwork_MEVProtection.png" alt=""><figcaption><p>MEV protected RPCs</p></figcaption></figure>
+
 To protect transactions on Ethereum against [MEV strategies](../../../getting-started/foundational-topics/decentralized-finance/maximal-extractable-value-mev.md), KyberSwap provides users with the option to select MEV protected [RPCs](../../../getting-started/foundational-topics/decentralized-technologies/rpc.md) such as [Flashbots ](https://www.flashbots.net/)and [MEVBlocker](https://mevblocker.io/). Transactions via such RPCs will undergo a different transaction ordering process and therefore enjoy protection from multiple MEV strategies.&#x20;
 
 It is important that you understand the pros and cons of using MEV protected RPCs. This will help you make an informed decision as to the suitability of such RPCs with regards to your DeFi goals. MEV protected RPCs will be indicated with green shield icon.
+
+<details>
+
+<summary>Flashbots</summary>
+
+**What is Flashbots?**
+
+Flashbots Protect [RPC](../../../getting-started/foundational-topics/decentralized-technologies/rpc.md) allows regular users to easily submit their transactions to the Flashbots Auction by using a custom RPC endpoint in their wallet. Everything should be the same for users, except transactions are sent to the Flashbots builder instead of the public mempool.
+
+Key benefits to using the Flashbots RPC endpoint:
+
+* **Frontrunning protection:** your transaction will not be seen by hungry sandwich bots in the public mempool.
+*   **No failed transactions:** your transaction will only be included if it doesn't include any reverts, so you don't pay for failed transactions.
+
+    > Note: your transaction could be uncled, emitted to the mempool, and then included on-chain.
+
+Privacy notice: **Flashbots Protect RPC does not track** any kind of user information (i.e. IP, location, etc.). No user information is ever stored or even logged.
+
+Click [here](https://docs.flashbots.net/flashbots-protect/overview) for more information on Flashbots Protect RPC.
+
+**Flashbots on** [**KyberSwap.com**](https://kyberswap.com/swap/ethereum)
+
+KyberSwap provides its user the option to conveniently connect to the Flashbots RPC when trading on the Ethereum mainnet.
+
+</details>
+
+<details>
+
+<summary>MEVBlocker</summary>
+
+**What is MEVBlocker?**
+
+MEV Blocker facilitates an auction between a network of “searchers” who are given the opportunity to backrun your transactions. In return, they protect you from frontrunning and sandwich attacks - the nasty types of MEV that exploit Ethereum users every day.
+
+Click [here](https://mevblocker.io/) for more information on MEVBlocker.
+
+**MEVBlocker on** [**KyberSwap.com**](https://kyberswap.com/swap/ethereum)
+
+KyberSwap provides its user the option to conveniently connect to the MEVBlocker RPC when trading on the Ethereum mainnet.
+
+</details>
+
+<details>
+
+<summary>Disclaimer on use of Third-party Integration/Service</summary>
+
+For ease of communication, KyberSwap is referred to as "we" in this disclaimer. Any natural persons or other entities who engages in any activities on KyberSwap shall be considered as the user of KyberSwap, and is referred to as "you" in the disclaimer. We hereby remind you of the risks involved in using third-party services (referred to herein as “third-party services”).
+
+1. Your use of any third-party services on KyberSwap is your personal decision and we have no control over it.
+2. We are not responsible for the audit of any third-party services, nor do we make any commitments or guarantees on the validity, accuracy, correctness, reliability, quality, stability, completeness and/or timeliness of the technology and information involved in such third-party services and their associated services.
+3. You are solely responsible for all outcomes arising from your choice to use the third-party services and their associated services.
+4. You shall make your own judgement and evaluation as to whether any third-party services and its associated services comply with the applicable laws, regulations and relevant policy requirements of your jurisdiction. We do not provide any recommendation and opinions on this subject apart from recommending you to strictly abide by the laws and regulations of your jurisdiction.
+5. Outcomes and occurrences which arise out of your use of any third-party services, including but not limited to legal issues, contract liability issues, and economic loss issues, shall be resolved between you and the relevant third-party services. We are not responsible for the resolution of any outcomes or disputes arising from your choice to use the third-party services.
+6. We will not share any information with any third-party services unless under your consent. Once we receive your consent, you shall be solely responsible for all legal liabilities and disputes resulting from any third-party services access to your personal information and such labilities and disputes shall be resolved between you and the relevant third-party services.
+
+**Our provision of access to third-party services on KyberSwap does not amount to any kind of recommendation, endorsement, or advice to use any third-party services or its associated services.**
+
+</details>
 
 ## Switching your active network
 

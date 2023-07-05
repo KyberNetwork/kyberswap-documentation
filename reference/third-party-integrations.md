@@ -92,6 +92,47 @@ Squid is integrated on KyberSwap through API front end functionality to provide 
 
 <details>
 
+<summary>Flashbots</summary>
+
+**What is Flashbots?**
+
+Flashbots Protect [RPC](../getting-started/foundational-topics/decentralized-technologies/rpc.md) allows regular users to easily submit their transactions to the Flashbots Auction by using a custom RPC endpoint in their wallet. Everything should be the same for users, except transactions are sent to the Flashbots builder instead of the public mempool.
+
+Key benefits to using the Flashbots RPC endpoint:
+
+* **Frontrunning protection:** your transaction will not be seen by hungry sandwich bots in the public mempool.
+*   **No failed transactions:** your transaction will only be included if it doesn't include any reverts, so you don't pay for failed transactions.
+
+    > Note: your transaction could be uncled, emitted to the mempool, and then included on-chain.
+
+Privacy notice: **Flashbots Protect RPC does not track** any kind of user information (i.e. IP, location, etc.). No user information is ever stored or even logged.
+
+Click [here](https://docs.flashbots.net/flashbots-protect/overview) for more information on Flashbots RPC.
+
+**Flashbots on** [**KyberSwap.com**](https://kyberswap.com/swap/ethereum)
+
+KyberSwap provides its user the option to conveniently connect to the Flashbots RPC when trading on the Ethereum mainnet.
+
+</details>
+
+<details>
+
+<summary>MEVBlocker</summary>
+
+**What is MEVBlocker?**
+
+MEV Blocker facilitates an auction between a network of “searchers” who are given the opportunity to backrun your transactions. In return, they protect you from frontrunning and sandwich attacks - the nasty types of MEV that exploit Ethereum users every day.
+
+Click [here](https://mevblocker.io/) for more information on MEVBlocker.
+
+**MEVBlocker on** [**KyberSwap.com**](https://kyberswap.com/swap/ethereum)
+
+KyberSwap provides its user the option to conveniently connect to the MEVBlocker RPC when trading on the Ethereum mainnet.
+
+</details>
+
+<details>
+
 <summary>Disclaimer on use of Third-party Integration/Service</summary>
 
 For ease of communication, KyberSwap is referred to as "we" in this disclaimer. Any natural persons or other entities who engages in any activities on KyberSwap shall be considered as the user of KyberSwap, and is referred to as "you" in the disclaimer. We hereby remind you of the risks involved in using third-party services (referred to herein as “third-party services”).
