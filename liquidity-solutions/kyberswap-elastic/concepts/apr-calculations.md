@@ -181,7 +181,7 @@ $$
 StaticFarmAPR=\frac{TotalFarmRewards}{TVL_{stakedPositions}}*\frac{365 \text{ days}}{Time_{totalFarm}}*100\%
 $$
 
-With the introduction of [weighted farm ranges](tick-based-farming.md#elastic-farming-v2) in Static Far, V2, the estimated APRs are heavily dependent on the specific farm range which a position is staked into. Moreover, as rewards are distributed based on the proportional share of the total farm rewards, the APR for a particular farm range is also affected by the total liquidity that has been contributed across all other farm ranges. Given this interdependence, the static farm range APR displayed is the optimal APR assuming that the staked positions have the exact same range as the operator defined farming range.
+With the introduction of [weighted farm ranges](tick-based-farming.md#elastic-farming-v2) in Static Farms, the estimated APRs are heavily dependent on the specific farm range which a position is staked into. Moreover, as rewards are distributed based on the proportional share of the total farm rewards, the APR for a particular farm range is also affected by the total liquidity that has been contributed across all other farm ranges. Given this interdependence, the static farm range APR displayed is the optimal APR assuming that the staked positions have the exact same range as the operator defined farming range.
 
 {% hint style="info" %}
 #### Getting the optimal APRs

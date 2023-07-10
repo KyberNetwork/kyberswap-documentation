@@ -54,7 +54,7 @@ Elastic Static Farms introduces a novel method for farming rewards to be distrib
 
 The introduction of farming ranges and range weights were key to achieving this feature and more details regarding the mechanisms as well as examples can be found on the [Tick-Based Farming](../concepts/tick-based-farming.md) concept walkthrough. For the purposes of this guide, you will just need to note that:
 
-* Each farm can consist of multiple overlapping farm ranges which is configured by the farm operator. The farm operator will also configure a weight for each range which determines the proportion of total rewards that will accrue to staked positions. Please refer to [Static Farms V2 APR calculation](../concepts/apr-calculations.md#elastic-farm-v2-apr-calculation) for exact details on how returns are calculated.
+* Each farm can consist of multiple overlapping farm ranges which is configured by the farm operator. The farm operator will also configure a weight for each range which determines the proportion of total rewards that will accrue to staked positions. Please refer to [Static Farms APR calculation](../concepts/apr-calculations.md#elastic-farm-v2-apr-calculation) for exact details on how returns are calculated.
 * Each liquidity position can only be staked to a single farm range. The range of the position must be greater or equal to the farming range. Note that the optimal rewards are received when the position range is equal to the farm range as this is when all contributed liquidity is staked to a specific range. Please refer to [My Static Farm APR calculation](../concepts/apr-calculations.md#elastic-farm-v2-apr-calculation) for exact details on how returns are calculated for a specific position.
 
 ## Staking liquidity positions
