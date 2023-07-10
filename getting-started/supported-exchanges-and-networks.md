@@ -64,7 +64,8 @@ Decentralized Exchanges:
 * [MDEX ](https://mdex.com/#/)
 * [Nerve](https://nerve.fi/)&#x20;
 * [OneSwap ](https://www.oneswap.net/)
-* [PancakeSwap ](https://pancakeswap.finance/)
+* [PancakeSwap](https://pancakeswap.finance/)
+* [PancakeSwap V3](https://pancakeswap.finance/swap)
 * [PancakeSwap (legacy) ](https://pancakeswap.finance/)
 * PantherSwap (!)
 * [SushiSwap](https://www.sushi.com/swap)
