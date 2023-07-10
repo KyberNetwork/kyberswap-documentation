@@ -82,7 +82,7 @@ description: Additional Rewards Across Multiple Chains
 
 <details>
 
-<summary>BSC (ChainID: 56)</summary>
+<summary>Polygon (ChainID: 137)</summary>
 
 * **KSElasticLMV2**: [`0xE44ec65521B85612fa7BC45d842645Fb4B690E4b`](https://polygonscan.com/address/0xE44ec65521B85612fa7BC45d842645Fb4B690E4b)&#x20;
 * **KSElasticLMHelper**: [`0x6AFeb9EDd6Cf44fA8E89b1eee28284e6dD7705C8`](https://polygonscan.com/address/0x6AFeb9EDd6Cf44fA8E89b1eee28284e6dD7705C8)
