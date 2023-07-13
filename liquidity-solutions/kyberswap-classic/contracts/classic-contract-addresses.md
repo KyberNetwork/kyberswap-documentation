@@ -50,7 +50,7 @@ description: Liquidity Mining Across Multiple Chains
 
 * **WBNB:** [`0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c`](https://bscscan.com/address/0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c)
 * **Multicall:** [`0xcf591ce5574258ac4550d96c545e4f3fd49a74ec`](https://bscscan.com/address/0xcf591ce5574258ac4550d96c545e4f3fd49a74ec)
-* **Multicall2:** [`0xed386Fe855C1EFf2f843B910923Dd8846E45C5A4`](https://bscscan.com/address/0xcf591ce5574258ac4550d96c545e4f3fd49a74ec)
+* **Multicall2:** [`0xed386Fe855C1EFf2f843B910923Dd8846E45C5A4`](https://bscscan.com/address/0xed386Fe855C1EFf2f843B910923Dd8846E45C5A4)
 
 </details>
 
@@ -101,7 +101,7 @@ description: Liquidity Mining Across Multiple Chains
 
 * **WMATIC:** [`0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270`](https://polygonscan.com/address/0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270)
 * **Multicall:** [`0x878dFE971d44e9122048308301F540910Bbd934c`](https://polygonscan.com/address/0x878dFE971d44e9122048308301F540910Bbd934c)
-* **Multicall2:** [`0xed386Fe855C1EFf2f843B910923Dd8846E45C5A4`](https://polygonscan.com/address/0x878dFE971d44e9122048308301F540910Bbd934c)
+* **Multicall2:** [`0xed386Fe855C1EFf2f843B910923Dd8846E45C5A4`](https://polygonscan.com/address/0xed386Fe855C1EFf2f843B910923Dd8846E45C5A4)
 
 </details>
 
