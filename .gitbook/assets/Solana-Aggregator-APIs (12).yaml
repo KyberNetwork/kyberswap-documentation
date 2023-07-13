@@ -15,51 +15,70 @@ paths:
         - route
       summary: route
       parameters:
-        - schema:
-            type: string
-          in: query
-          name: testParam
-          example: EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v
         - name: tokenIn
           in: query
           schema:
             type: string
-            example: EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v
-          description: EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v
+          example: EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v
+          description: |
+            Address of the input token.
+            Example: `EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v`
         - name: tokenOut
           in: query
           schema:
             type: string
-            example: Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB
+          example: Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB
+          description: |
+            Address of the output token.
+            Example: `Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB`
         - name: amountIn
           in: query
           schema:
             type: integer
             example: '10000000000000'
+          description: |
+            Amount of the input token (in wei).
+            Example: `10000000000000`
         - name: dexes
           in: query
           schema:
             type: string
+          description: |
+            DEX IDs included in the route, separated by comma.
+            Example: kyberswap, kybberswapv2
         - name: slippageTolerance
           in: query
           schema:
             type: integer
-          example: '200'
+            example: '200'
+          description: |
+            This is the amount of slippage the user can accept for his trade. The unit is bps.
+            The value is in ranges [0, 2000], 10 means 0.1%.
+            Default value is 50/10000 ~ 0.5%.
         - name: to
           in: query
           schema:
             type: string
-          example: 5Ba2nY9QuLVJ1Ct56k42tFJQQauujJPPPTXyC3kURV66
+            example: 5Ba2nY9QuLVJ1Ct56k42tFJQQauujJPPPTXyC3kURV66
+          description: |
+            Address to receive the output token
+            Example: `5Ba2nY9QuLVJ1Ct56k42tFJQQauujJPPPTXyC3kURV66`
         - name: programState
           in: query
           schema:
             type: string
-          example: 8Q9k9zEBQR8LwEFo77uWCe4HWU2xXGxjM7aecsf7FLMJ
+            example: 8Q9k9zEBQR8LwEFo77uWCe4HWU2xXGxjM7aecsf7FLMJ
+          description: |
+            Deployed program.
+            Example: `8Q9k9zEBQR8LwEFo77uWCe4HWU2xXGxjM7aecsf7FLMJ`
         - name: clientData
           in: query
           schema:
             type: string
-          example: '%7B%22source%22%3A%22kyberswap%22%7D'
+            example: '%7B%22source%22%3A%22kyberswap%22%7D'
+          description: |
+            String to present to your client.
+            Example: `yourCompanyNameHere`
       responses:
         '200':
           description: Successful response
@@ -168,68 +187,76 @@ paths:
           in: query
           schema:
             type: string
-          description: |-
-            Required. 
-            Base58 token address
+          description: |
+            Required.
+            Base58 token address of the input token.
+            Example: `EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v`
           example: EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v
         - name: tokenOut
           in: query
           schema:
             type: string
-          description: |-
+          description: |
             Required. 
-            Base58 token address
+            Base58 token address of the output token.
+            Example: `Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB`
           example: Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB
         - name: amountIn
           in: query
           schema:
             type: integer
-          description: |-
-            Required. 
-            amountIn * tokenDecimal
+          description: |
+            Required.
+            Amount of the input token (in wei): amountIn * tokenDecimal
+            Example: `10000000000000`
           example: '10000000000000'
         - name: dexes
           in: query
           schema:
             type: string
-          description: >-
+          description: |
             Optional. 
 
-            Dex array, split by ",". For example: 
-
-            OrcaV2, RaydiumV4
-
-
-            Allowed Dex value:
+            Dex array, split by ",". 
+            Example: `OrcaV2, RaydiumV4`
+            
+            Allowed DEX values:
             OrcaV2,Serum,RaydiumV5,WhirlPool,Saber,RaydiumV4,Mercurial,GooseFx
-
             Note: empty value is implicit as using all dexes.
         - name: slippageTolerance
           in: query
           schema:
             type: integer
-          description: in bps, 200 is equal 2%. Optional, default value = 50
+          description: |
+            This is the amount of slippage the user can accept for his trade. The unit is bps.
+            The value is in ranges [0, 2000], 10 means 0.1%.
+            Default value is 50/10000 ~ 0.5%.
           example: '200'
         - name: to
           in: query
           schema:
             type: string
-          description: |-
+          description: |
             Required. 
-            wallet to swap
+            Address to receive the output token
+            Example: `5Ba2nY9QuLVJ1Ct56k42tFJQQauujJPPPTXyC3kURV66`
           example: 5Ba2nY9QuLVJ1Ct56k42tFJQQauujJPPPTXyC3kURV66
         - name: programState
           in: query
           schema:
             type: string
-          description: |-
+          description: |
             Required. 
-            deployed program
+            Deployed program.
+            Example: `8Q9k9zEBQR8LwEFo77uWCe4HWU2xXGxjM7aecsf7FLMJ`
           example: 8Q9k9zEBQR8LwEFo77uWCe4HWU2xXGxjM7aecsf7FLMJ
         - name: clientData
           in: query
           schema:
             type: string
+          description: |
+            String to present to your client.
+            Example: `yourCompanyNameHere`
           example: '%7B%22source%22%3A%22kyberswap%22%7D'
       responses:
         undefined:

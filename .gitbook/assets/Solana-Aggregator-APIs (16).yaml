@@ -19,43 +19,65 @@ paths:
           in: query
           schema:
             type: string
-            example: EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v
+          example: EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v
           description: |
-            `Example`: `EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v`
+            Address of the input token
+            Example: `EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v`
         - name: tokenOut
           in: query
           schema:
             type: string
-            example: Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB
+          example: Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB
+          description: |
+            Address of the output token
+            Example: `Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB`
         - name: amountIn
           in: query
           schema:
             type: integer
             example: '10000000000000'
+          description: |
+            Amount of the input token (in wei)
+            Example: `10000000000000`
         - name: dexes
           in: query
           schema:
             type: string
+          description: |
+            DEX IDs included in the route, separated by comma
+            Example: kyberswap, kybberswapv2
         - name: slippageTolerance
           in: query
           schema:
             type: integer
-          example: '200'
+            example: '200'
+          description: |
+            This is the amount of slippage the user can accept for his trade. The unit is bip.
+            The value is in ranges [0, 2000], 10 means 0.1%.
+            Default value is 50/10000 ~ 0.5%.
         - name: to
           in: query
           schema:
             type: string
-          example: 5Ba2nY9QuLVJ1Ct56k42tFJQQauujJPPPTXyC3kURV66
+            example: 5Ba2nY9QuLVJ1Ct56k42tFJQQauujJPPPTXyC3kURV66
+          description: |
+            Address to receive the output token
+            Example: `5Ba2nY9QuLVJ1Ct56k42tFJQQauujJPPPTXyC3kURV66`
         - name: programState
           in: query
           schema:
             type: string
-          example: 8Q9k9zEBQR8LwEFo77uWCe4HWU2xXGxjM7aecsf7FLMJ
+            example: 8Q9k9zEBQR8LwEFo77uWCe4HWU2xXGxjM7aecsf7FLMJ
+          description: |
+            Example: `8Q9k9zEBQR8LwEFo77uWCe4HWU2xXGxjM7aecsf7FLMJ`
         - name: clientData
           in: query
           schema:
             type: string
-          example: '%7B%22source%22%3A%22kyberswap%22%7D'
+            example: '%7B%22source%22%3A%22kyberswap%22%7D'
+          description: |
+            String to present to your client
+            Example: `yourCompanyNameHere`
       responses:
         '200':
           description: Successful response

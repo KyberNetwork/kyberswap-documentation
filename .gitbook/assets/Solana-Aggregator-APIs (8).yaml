@@ -15,16 +15,12 @@ paths:
         - route
       summary: route
       parameters:
-        - schema:
-            type: string
-          in: query
-          name: testParam
-          example: EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v
         - name: tokenIn
           in: query
           schema:
             type: string
             example: EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v
+          description: '`Example`: `EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v`'
         - name: tokenOut
           in: query
           schema:

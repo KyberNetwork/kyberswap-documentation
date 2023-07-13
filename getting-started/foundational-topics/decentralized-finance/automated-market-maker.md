@@ -25,7 +25,7 @@ Taken as a whole, this solution came to be known as the **Automated Market Maker
 
 Price curves are key to ensuring the stability of the pool as well as the capital efficiency of the assets within a pool. Price curves are essentially constant product curves whose most basic form,   $$x * y =k$$, ensures that the price for each additional token purchased from the pool scales according to the relative ratio of tokens in the pool.&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (25).png" alt=""><figcaption><p>A constant price curve</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (15).png" alt=""><figcaption><p>A constant price curve</p></figcaption></figure>
 
 For AMM implementations, $$x$$ is the quantity of `TokenA` while $$y$$ is the quantity of `TokenB`. This means that the pool's token ratio always shifts according to the constant product, $$k$$,  of the token quantities. Any action against the pool (trades, deposits, or withdrawals), will always be executed based on the price curve.
 

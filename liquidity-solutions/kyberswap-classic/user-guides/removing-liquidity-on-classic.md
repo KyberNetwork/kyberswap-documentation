@@ -34,7 +34,7 @@ Still deciding on which solution suits you best?&#x20;
 
 From the My Pools page, choose the position from which you want to remove liquidity and click on its “Remove Liquidity” button.
 
-<figure><img src="../../../.gitbook/assets/image (137).png" alt=""><figcaption><p>Classic pools dashboard</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (41).png" alt=""><figcaption><p>Classic pools dashboard</p></figcaption></figure>
 
 This brings up the Remove Liquidity screen.
 
@@ -46,13 +46,13 @@ Note: If you choose to remove 100% of the liquidity in this position, that is ta
 
 {% tabs %}
 {% tab title="Token Pair" %}
-<figure><img src="../../../.gitbook/assets/image (166).png" alt=""><figcaption><p>Token pair removal</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (13).png" alt=""><figcaption><p>Token pair removal</p></figcaption></figure>
 
 Specify the amount of liquidity to remove. You can do this either by using the pre-set percentage buttons or the percentage slider, or by manually typing in the amount for either leg of the pair.&#x20;
 {% endtab %}
 
 {% tab title="Single Token" %}
-<figure><img src="../../../.gitbook/assets/image (47).png" alt=""><figcaption><p>Single token removal</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (57).png" alt=""><figcaption><p>Single token removal</p></figcaption></figure>
 
 For single token removals, you can specify the percentage or exact amount of LP tokens to remove. The corresponding output token amount can be seen under the "Output".
 
@@ -74,7 +74,7 @@ Note that the FOT tax is specified in the FOT token's smart contract (i.e. the F
 
 If you haven't done so, you will need to permit the pool contract to remove your position from the pool. Note that this signature request does not require any gas.
 
-<figure><img src="../../../.gitbook/assets/image (30).png" alt=""><figcaption><p>Metamask permit signature</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (7) (2) (1).png" alt=""><figcaption><p>Metamask permit signature</p></figcaption></figure>
 
 Once you have authorized the contract, the previously disabled "Remove" button will now be available.
 
@@ -82,7 +82,7 @@ Once you have authorized the contract, the previously disabled "Remove" button w
 
 Click the "Remove" button to bring up the preview screen. The preview screen displays a few key pieces of information for review.
 
-<figure><img src="../../../.gitbook/assets/image (146).png" alt=""><figcaption><p>Removal confirmation pop-up</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (43).png" alt=""><figcaption><p>Removal confirmation pop-up</p></figcaption></figure>
 
 * Amount of tokens that you will receive after removing the position
 * **Current price:** the rate at which the swap will happen (this can be inverted using the 🔁 button).
@@ -101,10 +101,10 @@ Please refer to [AMM Slippage](../../../getting-started/foundational-topics/dece
 
 Click the “Confirm” button to proceed. You should be prompted to confirm the transaction in your wallet.
 
-<figure><img src="../../../.gitbook/assets/image (92).png" alt=""><figcaption><p>KyberSwap pending confirmation</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (66).png" alt=""><figcaption><p>KyberSwap pending confirmation</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (153).png" alt=""><figcaption><p>Metamask confirmation</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (62).png" alt=""><figcaption><p>Metamask confirmation</p></figcaption></figure>
 
 Once confirmed, the Transaction Submitted screen will appear. You can click on "View Transaction" to see your transaction on the blockchain explorer.
 
-<figure><img src="../../../.gitbook/assets/image (35).png" alt=""><figcaption><p>Transaction submitted</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (69).png" alt=""><figcaption><p>Transaction submitted</p></figcaption></figure>

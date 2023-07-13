@@ -4,7 +4,7 @@ description: Sourcing Optimal Liquidity For Your Trade
 
 # Dynamic Trade Routing
 
-<figure><img src="../../../.gitbook/assets/image (75).png" alt=""><figcaption><p>Sourcing superior routes for your trade</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption><p>Sourcing superior routes for your trade</p></figcaption></figure>
 
 KyberSwap Aggregator has Dynamic Trade Routing, which aggregates fractured liquidity across DEXs thereby enabling users to source more capitally efficient liquidity to support their trades. Through integration with a myriad of DEX smart contracts, KyberSwap Aggregator is able to function as an optimisation layer between the DEX smart contract and incoming trade requests. This ensures that users always get more optimal rates for any token swap, on any of the KyberSwap Aggregator supported networks.
 
