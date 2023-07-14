@@ -11,7 +11,7 @@ description: Additional Rewards Across Multiple Chains
 <summary>Ethereum (ChainID: 1)</summary>
 
 * **KyberSwapElasticLM**: [`0x7D5ba536ab244aAA1EA42aB88428847F25E3E676`](https://etherscan.io/address/0x7D5ba536ab244aAA1EA42aB88428847F25E3E676)&#x20;
-* **KSElasticLMHelper**: [`0x35BE3F4fd8239A35a7F120756D4D69e5C5e10870`](https://bscscan.com/address/0x35BE3F4fd8239A35a7F120756D4D69e5C5e10870)
+* **KSElasticLMHelper**: [`0x35BE3F4fd8239A35a7F120756D4D69e5C5e10870`](https://etherscan.io/address/0x35BE3F4fd8239A35a7F120756D4D69e5C5e10870)
 
 </details>
 
@@ -37,8 +37,8 @@ description: Additional Rewards Across Multiple Chains
 
 <summary>Polygon (ChainID: 137)</summary>
 
-* **KyberSwapElasticLM**: [`0x7D5ba536ab244aAA1EA42aB88428847F25E3E676`](https://bscscan.com/address/0x7D5ba536ab244aAA1EA42aB88428847F25E3E676)&#x20;
-* **KSElasticLMHelper**: [`0x35BE3F4fd8239A35a7F120756D4D69e5C5e10870`](https://bscscan.com/address/0x35BE3F4fd8239A35a7F120756D4D69e5C5e10870)
+* **KyberSwapElasticLM**: [`0x7D5ba536ab244aAA1EA42aB88428847F25E3E676`](https://polygonscan.com/address/0x7D5ba536ab244aAA1EA42aB88428847F25E3E676)&#x20;
+* **KSElasticLMHelper**: [`0x35BE3F4fd8239A35a7F120756D4D69e5C5e10870`](https://polygonscan.com/address/0x35BE3F4fd8239A35a7F120756D4D69e5C5e10870)
 
 </details>
 
@@ -46,8 +46,8 @@ description: Additional Rewards Across Multiple Chains
 
 <summary>Optimism (ChainID: 10)</summary>
 
-* **KyberSwapElasticLM**: [`0x7D5ba536ab244aAA1EA42aB88428847F25E3E676`](https://bscscan.com/address/0x7D5ba536ab244aAA1EA42aB88428847F25E3E676)&#x20;
-* **KSElasticLMHelper**: [`0x35BE3F4fd8239A35a7F120756D4D69e5C5e10870`](https://bscscan.com/address/0x35BE3F4fd8239A35a7F120756D4D69e5C5e10870)
+* **KyberSwapElasticLM**: [`0x7D5ba536ab244aAA1EA42aB88428847F25E3E676`](https://optimistic.etherscan.io/address/0x7d5ba536ab244aaa1ea42ab88428847f25e3e676)&#x20;
+* **KSElasticLMHelper**: [`0x35BE3F4fd8239A35a7F120756D4D69e5C5e10870`](https://optimistic.etherscan.io/address/0x35BE3F4fd8239A35a7F120756D4D69e5C5e10870)
 
 </details>
 
@@ -75,7 +75,8 @@ description: Additional Rewards Across Multiple Chains
 
 <summary>Arbitrum (ChainID: 42161)</summary>
 
-* **KSElasticLMV2**: [`0xE44ec65521B85612fa7BC45d842645Fb4B690E4b`](https://arbiscan.io/address/0xE44ec65521B85612fa7BC45d842645Fb4B690E4b)&#x20;
+* **KSElasticLMV2 (Current phase)**: [`0xE44ec65521B85612fa7BC45d842645Fb4B690E4b`](https://arbiscan.io/address/0xE44ec65521B85612fa7BC45d842645Fb4B690E4b)&#x20;
+* **KSElasticLMV2**: [`0xA70a1Ad0F91c52c79e177c5A18a7C9E1C4360e0e`](https://arbiscan.io/address/0xA70a1Ad0F91c52c79e177c5A18a7C9E1C4360e0e)&#x20;
 * **KSElasticLMHelper**: [`0x6AFeb9EDd6Cf44fA8E89b1eee28284e6dD7705C8`](https://arbiscan.io/address/0x6AFeb9EDd6Cf44fA8E89b1eee28284e6dD7705C8)
 
 </details>
@@ -84,7 +85,25 @@ description: Additional Rewards Across Multiple Chains
 
 <summary>Polygon (ChainID: 137)</summary>
 
-* **KSElasticLMV2**: [`0xE44ec65521B85612fa7BC45d842645Fb4B690E4b`](https://polygonscan.com/address/0xE44ec65521B85612fa7BC45d842645Fb4B690E4b)&#x20;
+* **KSElasticLMV2**: [`0xA70a1Ad0F91c52c79e177c5A18a7C9E1C4360e0e`](https://polygonscan.com/address/0xA70a1Ad0F91c52c79e177c5A18a7C9E1C4360e0e)&#x20;
 * **KSElasticLMHelper**: [`0x6AFeb9EDd6Cf44fA8E89b1eee28284e6dD7705C8`](https://polygonscan.com/address/0x6AFeb9EDd6Cf44fA8E89b1eee28284e6dD7705C8)
+
+</details>
+
+<details>
+
+<summary>Optimism (ChainID: 10)</summary>
+
+* **KSElasticLMV2**: [`0xA70a1Ad0F91c52c79e177c5A18a7C9E1C4360e0e`](https://optimistic.etherscan.io/address/0xA70a1Ad0F91c52c79e177c5A18a7C9E1C4360e0e)&#x20;
+* **KSElasticLMHelper**: [`0x6AFeb9EDd6Cf44fA8E89b1eee28284e6dD7705C8`](https://optimistic.etherscan.io/address/0x6AFeb9EDd6Cf44fA8E89b1eee28284e6dD7705C8)
+
+</details>
+
+<details>
+
+<summary>Avalanche (ChainID: 43114)</summary>
+
+* **KSElasticLMV2**: [`0xA70a1Ad0F91c52c79e177c5A18a7C9E1C4360e0e`](https://snowtrace.io/address/0xA70a1Ad0F91c52c79e177c5A18a7C9E1C4360e0e)&#x20;
+* **KSElasticLMHelper**: [`0x6AFeb9EDd6Cf44fA8E89b1eee28284e6dD7705C8`](https://snowtrace.io/address/0x6AFeb9EDd6Cf44fA8E89b1eee28284e6dD7705C8)
 
 </details>
