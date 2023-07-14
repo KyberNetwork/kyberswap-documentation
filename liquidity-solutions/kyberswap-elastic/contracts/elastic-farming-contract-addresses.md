@@ -64,6 +64,15 @@ description: Additional Rewards Across Multiple Chains
 
 <details>
 
+<summary>Ethereum (ChainID: 1)</summary>
+
+* **KSElasticLMV2**: [`0xA70a1Ad0F91c52c79e177c5A18a7C9E1C4360e0e`](https://etherscan.io/address/0xA70a1Ad0F91c52c79e177c5A18a7C9E1C4360e0e)
+* **KSElasticLMHelper**: [`0x6AFeb9EDd6Cf44fA8E89b1eee28284e6dD7705C8`](https://etherscan.io/address/0x6AFeb9EDd6Cf44fA8E89b1eee28284e6dD7705C8)
+
+</details>
+
+<details>
+
 <summary>BSC (ChainID: 56)</summary>
 
 * **KSElasticLMV2**: [`0xE44ec65521B85612fa7BC45d842645Fb4B690E4b`](https://bscscan.com/address/0xE44ec65521B85612fa7BC45d842645Fb4B690E4b)
