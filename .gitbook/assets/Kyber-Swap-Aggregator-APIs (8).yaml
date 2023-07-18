@@ -51,13 +51,12 @@ paths:
           description: Swap Found
           content:
             application/json:
-              schema:
-                $ref: '#/components/schemas/Swap'
               examples:
                 example-1:
-                  $ref: '#/components/examples/SampleResponseSwapV1'
-                example-2:
-                  $ref: '#/components/examples/SampleResponseSwapV1'                  
+                  $ref: '#/components/examples/SampleResponseSwapV1'                
+              schema:
+                $ref: '#/components/schemas/Swap'
+
                 # example-1:
                 #   description: Example WETH to USDC swap on Polygon
                 #   value:

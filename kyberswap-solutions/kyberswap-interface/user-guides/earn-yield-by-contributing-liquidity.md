@@ -22,7 +22,7 @@ KyberSwap enables returns to be boosted through the following farming mechanisms
 * [**Elastic Dynamic Farms**](../../../liquidity-solutions/kyberswap-elastic/user-guides/yield-farming-on-dynamic-farms.md): Earn farming rewards as long as the market continues to trade within your position's price range.
 * [**Classic Farms**](../../../liquidity-solutions/kyberswap-classic/user-guides/yield-farming-on-classic.md): Earn farming rewards directly proportional to the relative liquidity staked in the farm.
 
-<figure><img src="../../../.gitbook/assets/image (79).png" alt=""><figcaption><p>KyberSwap Farms page</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (33).png" alt=""><figcaption><p>KyberSwap Farms page</p></figcaption></figure>
 
 ## Related user guides
 

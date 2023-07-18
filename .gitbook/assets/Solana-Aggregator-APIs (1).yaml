@@ -20,21 +20,16 @@ paths:
           schema:
             type: string
           example: EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v
-          description: |
-            Address of the input token
-            Example: `EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v`
         - name: tokenOut
           in: query
           schema:
             type: string
           example: Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB
-          description: 'Example: `Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB`'
         - name: amountIn
           in: query
           schema:
             type: integer
-            example: '10000000000000'
-          description: 'Example: `10000000000000`'
+          example: '10000000000000'
         - name: dexes
           in: query
           schema:

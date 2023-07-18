@@ -20,8 +20,7 @@ paths:
           schema:
             type: string
             example: EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v
-          description: |
-            `Example`: `EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v`
+          description: '`Example`: `EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v`'
         - name: tokenOut
           in: query
           schema:
