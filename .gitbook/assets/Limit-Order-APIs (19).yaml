@@ -1446,7 +1446,6 @@ paths:
           in: query
           name: chainId
           required: true
-
 components:
   schemas:
     CreateNewOrderBody:
@@ -1466,7 +1465,7 @@ components:
           description: 'The address of the maker, and signer, of this order.'
         receiver:
           type: string
-          description: |
+          description: |-
             Address which will receive takerAsset from taker.
             Default: equal to `maker`
         allowedSenders:
@@ -1476,12 +1475,12 @@ components:
             type: string
         makingAmount:
           type: string
-          description: |
+          description: |-
             The amount of makerToken being sold by the maker.
             Format: uint256
         takingAmount:
           type: string
-          description: |
+          description: |-
             The amount of takerToken being sold by the taker
             Format: uint256
         feeRecipient:
@@ -1489,7 +1488,7 @@ components:
           description: Recipient of maker token or taker token fees (if non-zero)
         makerTokenFeePercent:
           type: string
-          description: |
+          description: |-
             Amount of makerToken paid by the taker to the `feeRecipient`. For example, 20% = 0.2 -> makerTokenFeePercent = 0.2 * 10000 = 2000
             Format: uint32
         expiredAt:

@@ -113,7 +113,7 @@ For ease of communication, KyberSwap is referred to as "we" in this disclaimer. 
 
 Upon [connecting your wallet](connect-your-wallet.md), KyberSwap would have automatically defaulted to the network per your wallet's setting. You can view the active network on the top right of the KyberSwap app.
 
-<figure><img src="../../../.gitbook/assets/image (130).png" alt=""><figcaption><p>KyberSwap connected to Ethereum</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (91).png" alt=""><figcaption><p>KyberSwap connected to Ethereum</p></figcaption></figure>
 
 In the example above, KyberSwap has connected to the Ethereum Mainnet as per the MetaMask setting.&#x20;
 
@@ -121,7 +121,7 @@ In the example above, KyberSwap has connected to the Ethereum Mainnet as per the
 
 To change the network, you can select the dropdown which will display the full list of chain options for you to choose from. Please refer to [Supported Exchanges And Networks](../../../getting-started/supported-exchanges-and-networks.md) for the full details.
 
-<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption><p>KyberSwap supported chains</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (20) (2).png" alt=""><figcaption><p>KyberSwap supported chains</p></figcaption></figure>
 
 Select your preferred chain and you should then be prompted by your wallet to confirm the network change.&#x20;
 
@@ -133,10 +133,10 @@ KyberSwap enables users to select MEV protected RPCs. Please refer to [MEV prote
 
 If this is your first time connecting to a chain, your wallet provider should display the details of the chain for your verification. The below is an example of adding the Polygon chain and confirming the chain switch using MetaMask.
 
-<figure><img src="../../../.gitbook/assets/image (102).png" alt=""><figcaption><p>Adding a Polygon chain to MetaMask</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (65).png" alt=""><figcaption><p>Adding a Polygon chain to MetaMask</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (175).png" alt=""><figcaption><p>Switch to Polygon chain on Metamask</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (2) (1).png" alt=""><figcaption><p>Switch to Polygon chain on Metamask</p></figcaption></figure>
 
 Once the switch has been approved, KyberSwap would then be connected to your selected network as can be verified via the active chain displayed in the top right of the KyberSwap app.
 
-<figure><img src="../../../.gitbook/assets/image (28).png" alt=""><figcaption><p>KyberSwap connected to Polygon</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (74).png" alt=""><figcaption><p>KyberSwap connected to Polygon</p></figcaption></figure>

@@ -86,68 +86,66 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/CreateNewOrderBody'
-              # type: object
-              # properties:
-              #   chainId:
-              #     type: string
-              #     description: Support only EVM compatible blockchains. You can get the chainId from [HERE](https://docs.kyberswap.com/Limit%E2%81%9FOrder/smart-contracts/limit-order-protocol-smart-contract)
-              #   makerAsset:
-              #     type: string
-              #     description: 'The address of the token you want to sell.'
-              #   takerAsset:
-              #     type: string
-              #     description: 'The address of the token you want to buy'
-              #   maker:
-              #     type: string
-              #     description: 'The address of the maker, and signer, of this order.'
-              #   receiver:
-              #     type: string
-              #     description: |-
-              #       Address which will receive takerAsset from taker.
-              #       Default: equal to `maker`
-              #   allowedSenders:
-              #     type: array
-              #     description: Allowed addresses to call LimitOrder() function. These addresses is the same as taker
-              #     items:
-              #       type: string
-              #   makingAmount:
-              #     type: string
-              #     description: |-
-              #       The amount of makerToken being sold by the maker.
-              #       Format: uint256
-              #   takingAmount:
-              #     type: string
-              #     description: |-
-              #       The amount of takerToken being sold by the taker
-              #       Format: uint256
-              #   feeRecipient:
-              #     type: string
-              #     description: Recipient of maker token or taker token fees (if non-zero)
-              #   makerTokenFeePercent:
-              #     type: string
-              #     description: |-
-              #       Amount of makerToken paid by the taker to the `feeRecipient`. For example, 20% = 0.2 -> makerTokenFeePercent = 0.2 * 10000 = 2000
-              #       Format: uint32
-              #   expiredAt:
-              #     type: integer
-              #     description: Timestamp in seconds
-              #   salt:
-              #     type: string
-              #     description: The salt of order - returned from [Get signing order message API](https://docs.kyberswap.com/Limit%E2%81%9FOrder/limit-order-api#tag/APIs-for-makers/operation/post-write-api-v1-orders-sign-message)
-              #   signature:
-              #     type: string
-              #     description: Signed by maker
-              # required:
-              #   - chainId
-              #   - makerAsset
-              #   - takerAsset
-              #   - maker
-              #   - makingAmount
-              #   - takingAmount
-              #   - expiredAt
-              #   - salt
-              #   - signature
+              properties:
+                chainId:
+                  type: string
+                  description: Support only EVM compatible blockchains. You can get the chainId from [HERE](https://docs.kyberswap.com/Limit%E2%81%9FOrder/smart-contracts/limit-order-protocol-smart-contract)
+                makerAsset:
+                  type: string
+                  description: 'The address of the token you want to sell.'
+                takerAsset:
+                  type: string
+                  description: 'The address of the token you want to buy'
+                maker:
+                  type: string
+                  description: 'The address of the maker, and signer, of this order.'
+                receiver:
+                  type: string
+                  description: |-
+                    Address which will receive takerAsset from taker.
+                    Default: equal to `maker`
+                allowedSenders:
+                  type: array
+                  description: Allowed addresses to call LimitOrder() function. These addresses is the same as taker
+                  items:
+                    type: string
+                makingAmount:
+                  type: string
+                  description: |-
+                    The amount of makerToken being sold by the maker.
+                    Format: uint256
+                takingAmount:
+                  type: string
+                  description: |-
+                    The amount of takerToken being sold by the taker
+                    Format: uint256
+                feeRecipient:
+                  type: string
+                  description: Recipient of maker token or taker token fees (if non-zero)
+                makerTokenFeePercent:
+                  type: string
+                  description: |-
+                    Amount of makerToken paid by the taker to the `feeRecipient`. For example, 20% = 0.2 -> makerTokenFeePercent = 0.2 * 10000 = 2000
+                    Format: uint32
+                expiredAt:
+                  type: integer
+                  description: Timestamp in seconds
+                salt:
+                  type: string
+                  description: The salt of order - returned from [Get signing order message API](https://docs.kyberswap.com/Limit%E2%81%9FOrder/limit-order-api#tag/APIs-for-makers/operation/post-write-api-v1-orders-sign-message)
+                signature:
+                  type: string
+                  description: Signed by maker
+              required:
+                - chainId
+                - makerAsset
+                - takerAsset
+                - maker
+                - makingAmount
+                - takingAmount
+                - expiredAt
+                - salt
+                - signature
             examples:
               example-1:
                 value:
@@ -1448,69 +1446,6 @@ paths:
           required: true
 components:
   schemas:
-    CreateNewOrderBody:
-      type: object
-      properties:
-        chainId:
-          type: string
-          description: Support only EVM compatible blockchains. You can get the chainId from [HERE](https://docs.kyberswap.com/Limit%E2%81%9FOrder/smart-contracts/limit-order-protocol-smart-contract)
-        makerAsset:
-          type: string
-          description: 'The address of the token you want to sell.'
-        takerAsset:
-          type: string
-          description: 'The address of the token you want to buy'
-        maker:
-          type: string
-          description: 'The address of the maker, and signer, of this order.'
-        receiver:
-          type: string
-          description: |-
-            Address which will receive takerAsset from taker.
-            Default: equal to `maker`
-        allowedSenders:
-          type: array
-          description: Allowed addresses to call LimitOrder() function. These addresses is the same as taker
-          items:
-            type: string
-        makingAmount:
-          type: string
-          description: |-
-            The amount of makerToken being sold by the maker.
-            Format: uint256
-        takingAmount:
-          type: string
-          description: |-
-            The amount of takerToken being sold by the taker
-            Format: uint256
-        feeRecipient:
-          type: string
-          description: Recipient of maker token or taker token fees (if non-zero)
-        makerTokenFeePercent:
-          type: string
-          description: |-
-            Amount of makerToken paid by the taker to the `feeRecipient`. For example, 20% = 0.2 -> makerTokenFeePercent = 0.2 * 10000 = 2000
-            Format: uint32
-        expiredAt:
-          type: integer
-          description: Timestamp in seconds
-        salt:
-          type: string
-          description: The salt of order - returned from [Get signing order message API](https://docs.kyberswap.com/Limit%E2%81%9FOrder/limit-order-api#tag/APIs-for-makers/operation/post-write-api-v1-orders-sign-message)
-        signature:
-          type: string
-          description: Signed by maker
-      required:
-        - chainId
-        - makerAsset
-        - takerAsset
-        - maker
-        - makingAmount
-        - takingAmount
-        - expiredAt
-        - salt
-        - signature
-
     ErrorResponse:
       title: ErrorResponse
       x-stoplight:

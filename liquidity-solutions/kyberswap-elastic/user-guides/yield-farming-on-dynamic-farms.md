@@ -52,7 +52,7 @@ Still deciding on which solution suits you best?&#x20;
 
 ### Step 1: Select farm and open a position
 
-<figure><img src="../../../.gitbook/assets/DynamicFarms_AddLiquidity_SearchFarms.png" alt=""><figcaption><p>Select Dynamic Farm</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/DynamicFarms_SearchFarms.png" alt=""><figcaption><p>Select Dynamic Farm</p></figcaption></figure>
 
 You can view and filter the list of active farms on the [Farms page](https://kyberswap.com/farms/). For the purposes of this guide, we will use a KNC - LINK pool with a fee tier of 1% on Polygon.&#x20;
 
@@ -66,11 +66,11 @@ You can refer to [Dynamic Farms concept guide](../concepts/tick-based-farming.md
 
 Do note that an existing position will be required to be eligible for farming rewards. You can skip this section if you have an existing eligible position. For the complete guide on how to add liquidity to an Elastic pool, please refer to [Add Liquidity To An Existing Elastic Pool](add-liquidity-to-an-existing-elastic-pool.md).
 
-<figure><img src="../../../.gitbook/assets/DynamicFarms_AddLiquidity_CreatePosition.png" alt=""><figcaption><p>Open liquidity position</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/DynamicFarms_CreateUnderlying.png" alt=""><figcaption><p>Open liquidity position</p></figcaption></figure>
 
 ### Step 2: Approve the farming contract
 
-<figure><img src="../../../.gitbook/assets/ElasticFarms_ApproveContract.png" alt=""><figcaption><p>Approve farming contract</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/DynamicFarms_ApproveFarmingContract.png" alt=""><figcaption><p>Approve farming contract</p></figcaption></figure>
 
 If this is your first time interacting with Elastic Dynamic Farms on this particular network, you will need to give approval for the farming smart contract to manage your wallet and balances.
 
@@ -78,27 +78,19 @@ Click on the “Approve Farming Contract” button on the Farms page to begin. T
 
 Note: Be sure to check that the smart contract address is correct before authorizing the smart contract. KyberSwap Elastic farming smart contract addresses can be found [here](../contracts/elastic-farming-contract-addresses.md).
 
-### **Step 3**: Deposit LP liquidity into farming contract
+### **Step 3**: Stake your position in the farm
 
-<figure><img src="../../../.gitbook/assets/DynamicFarms_AddLiquidity_DepositButton.png" alt=""><figcaption><p>Deposit to farming contract</p></figcaption></figure>
+{% hint style="success" %}
+#### Stake directly into Dynamic Farms
 
-Deposit liquidity into the farming contract by clicking on the “Deposit” button on the Farms page.
+As an added convenience feature, Liquidity Providers are now able to directly stake their positions into their selected farm without first having to deposit their NFT positions into the Dynamic Farms contract. Positions are automatically deposited and staked into the farm hence LPs will only have to sign a single transaction to reap the farming rewards.
+{% endhint %}
 
-<figure><img src="../../../.gitbook/assets/DynamicFarms_AddLiquidity_DepositPreview.png" alt=""><figcaption><p>Select position to deposit</p></figcaption></figure>
-
-On the deposit helper, you can then select the positions to deposit into the farming contract. Note that you can select multiple options if you have more eligible positions opened. Click the “Deposit Selected” button to proceed. (This is an onchain transaction.)
-
-<figure><img src="../../../.gitbook/assets/DynamicFarms_AddLiquidity_Deposited.png" alt=""><figcaption><p>Position deposited to contract</p></figcaption></figure>
-
-You should now see that the amount of liquidity that you have deposited into the farming contract has changed. Some farming actions will also now be enabled for the pool that you have selected.
-
-### **Step 4**: Stake your position in the farm
-
-<figure><img src="../../../.gitbook/assets/DynamicFarms_AddLiquidity_StakeButton.png" alt=""><figcaption><p>Stake position</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/DynamicFarms_StakeButton.png" alt=""><figcaption><p>Stake position</p></figcaption></figure>
 
 Click on the “+ Stake” button to stake your NFT position.&#x20;
 
-<figure><img src="../../../.gitbook/assets/DynamicFarms_AddLiqudity_StakePreview.png" alt=""><figcaption><p>Select positions to be staked</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/DynamicFarms_StakeNFT.png" alt=""><figcaption><p>Select positions to be staked</p></figcaption></figure>
 
 Select the appropriate NFT from the list on the next screen and click the “Stake Selected” button to proceed. (This is an onchain transaction.)
 
@@ -106,7 +98,7 @@ Your position is staked and is now eligible to accumulate rewards for the durati
 
 Note: Depending on the [farming mechanism](../concepts/tick-based-farming.md) associated with your farm, your rewards will be calculated depending on the value of your liquidity position staked in the farm relative to other farmers, how long your liquidity position has been active in the pool (i.e. in range), and the trading volume utilizing your active liquidity position in the pool.
 
-### Step 5: View your staked positions
+### Step 4: View your staked positions
 
 <figure><img src="../../../.gitbook/assets/ElasticFarm_ViewToggle.png" alt=""><figcaption><p>Toggle farm view</p></figcaption></figure>
 
@@ -116,11 +108,11 @@ KyberSwap Elastic farms provides you two options when viewing your staked positi
 {% tab title="Grid view" %}
 In the grid view, all active farms will be displayed as individual cards in a grid. Your staked farms will be prioritized at the beginning of the grid. Note that in the grid overview page, you will be able to see how many of your positions are in or out of range by referring to the top right of each card.
 
-<figure><img src="../../../.gitbook/assets/ElasticFarm_Grid_Overview.png" alt=""><figcaption><p>Farm grid overview</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/DynamicFarms_GridView.png" alt=""><figcaption><p>Farm grid overview</p></figcaption></figure>
 
 To expose further details, you can select on the "View Positions" button at the bottom of each farm card.
 
-<figure><img src="../../../.gitbook/assets/ElasticFarm_Grid_Details.png" alt=""><figcaption><p>Farm grid details</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/DynamicFarms_GridView_Position.png" alt=""><figcaption><p>Farm grid details</p></figcaption></figure>
 
 By viewing the positions in farms where you have a staked position, you will be able to view all the staked positions within the particular farm as well as the active price relative to the range of your staked positions.
 {% endtab %}
@@ -128,11 +120,11 @@ By viewing the positions in farms where you have a staked position, you will be 
 {% tab title="List view" %}
 In the list view, all active farms will be displayed as individual rows within a list. Your staked farms will be prioritized at the top of the list. Note that in the list overview page, you will be able to see how many of your positions are in or out of range under the "My Deposit" row.&#x20;
 
-<figure><img src="../../../.gitbook/assets/ElasticeFarm_List_Overview.png" alt=""><figcaption><p>Farm list overview</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/DynamicFarms_ListView.png" alt=""><figcaption><p>Farm list overview</p></figcaption></figure>
 
 To expose further details, you can select on the dropdown icon at the right of each farm entry.
 
-<figure><img src="../../../.gitbook/assets/ElasticFarm_List_Details.png" alt=""><figcaption><p>Farm list details</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/DynamicFarms_ListView_Position.png" alt=""><figcaption><p>Farm list details</p></figcaption></figure>
 
 By expanding the farm rows where you have a staked position, you will be able to view all the staked positions within the particular farm as well as the active price relative to the range of your staked positions.
 {% endtab %}
@@ -152,7 +144,7 @@ From the Farms page, click on the small “pickaxe” button associated with you
 
 From the Harvest screen that appears, click on the “Harvest” or "Harvest All" button to proceed. This is an onchain transaction that will require wallet confirmation.
 
-<figure><img src="../../../.gitbook/assets/DynamicFarms_Harvest_HarvestPreview.png" alt=""><figcaption><p>Harvest all pop-up</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/DynamicFarms_ConfirmHarvest.png" alt=""><figcaption><p>Harvest all pop-up</p></figcaption></figure>
 
 If the pool does not have a rewards vesting schedule, your rewards will automatically be sent to your wallet. But if the pool has a vesting schedule, you will need to wait some time after harvesting for the rewards to vest before you can claim them.
 
@@ -172,13 +164,13 @@ If a farming phase ends and a new phase begins, you will first need to unstake y
 
 On the Farms page, click on the “- Unstake” button of the pool you would like to unstake from.
 
-<figure><img src="../../../.gitbook/assets/DynamicFarms_Unstake_UnstakeButton.png" alt=""><figcaption><p>Unstake position from farm</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/DynamicFarms_UnstakeButton.png" alt=""><figcaption><p>Unstake position from farm</p></figcaption></figure>
 
 ### Step 2: Confirm unstake
 
 On the unstake helper. select the liquidity position(s) that you would like to unstake and then click the “Unstake Selected” button. This is an onchain transaction.
 
-<figure><img src="../../../.gitbook/assets/DynamicFarms_Unstake_UnstakePreview.png" alt=""><figcaption><p>Select position to unstake</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/DynamicFarms_ConfirmUnstake.png" alt=""><figcaption><p>Select position to unstake</p></figcaption></figure>
 
 As part of this action, any as-yet unharvested rewards will also automatically be harvested.
 
@@ -186,11 +178,11 @@ From this point on, your liquidity position can either once again be staked into
 
 ### **Step 3**: Withdraw from farming contract&#x20;
 
-<figure><img src="../../../.gitbook/assets/DynamicFarms_Withdraw_WithdrawButton.png" alt=""><figcaption><p>Withdraw from farm</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/DynamicFarms_WithdrawButton.png" alt=""><figcaption><p>Withdraw from farm</p></figcaption></figure>
 
 If you no longer want to participate in the farm, you can withdraw your liquidity from the farming contract. Click the “Withdraw” button on the Farms page.&#x20;
 
-<figure><img src="../../../.gitbook/assets/DynamicFarms_Withdraw_WithdrawPreview.png" alt=""><figcaption><p>Select positions to withdraw from farming contract</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/DynamicFarms_ConfirmWithdraw.png" alt=""><figcaption><p>Select positions to withdraw from farming contract</p></figcaption></figure>
 
 From the helper that appears, select the liquidity positions to withdraw and click the “Withdraw Selected” button. This is an onchain transaction.
 
