@@ -285,7 +285,6 @@
 * [GitHub](https://github.com/KyberNetwork)
 * [KyberSwap Analytics](https://analytics.kyberswap.com/)
 * [KyberSwap Blog](https://blog.kyberswap.com/)
-* [KyberSwap Help Center](https://support.kyberswap.com/hc/en-us)
 * [Kyber Network Press Kit](https://kybernetwork.notion.site/Kyber-Network-Press-Kit-4ceaad9056d146aa83ef78dc49cfe72f)
 
 ## Socials
@@ -297,3 +296,8 @@
 * [Reddit](https://www.reddit.com/r/kybernetwork/)
 * [Instagram](https://www.instagram.com/kyberswap\_official/)
 * [Tik Tok](https://www.tiktok.com/@kyberswap\_official)
+
+## Support
+
+* [KyberSwap Help Center](https://support.kyberswap.com/hc/en-us)
+* [Complaints Handling Process](support/complaints-handling-process.md)
