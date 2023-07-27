@@ -15,11 +15,6 @@ paths:
         - route
       summary: route
       parameters:
-        - schema:
-            type: string
-          in: query
-          name: testParam
-          example: EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v
         - name: tokenIn
           in: query
           schema:
@@ -29,12 +24,12 @@ paths:
           in: query
           schema:
             type: string
-            example: Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB
+          example: Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB
         - name: amountIn
           in: query
           schema:
             type: integer
-            example: '10000000000000'
+          example: '10000000000000'
         - name: dexes
           in: query
           schema:

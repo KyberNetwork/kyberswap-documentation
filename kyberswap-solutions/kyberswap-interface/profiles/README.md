@@ -4,6 +4,8 @@ description: Secure Personalized Experiences Across All Devices
 
 # Profiles
 
+<figure><img src="https://lh4.googleusercontent.com/gdr9QvOjtxT7gSPfrTJ9-pifVzt3abd_LP-7Tyd-KRPU0S9B3pk1Kd0i0MQwcqYb5Y8RvbthHt_CPatr2ln2Rxzb5lfDWVC2AaDfYruAYry3yDpgjlwNUo2TqhJX_DsQv0nS7SUzBKgEGR3DGjW2BQQ" alt=""><figcaption><p>KyberSwap Profiles</p></figcaption></figure>
+
 ## Overview
 
 With the introduction of [Sign In With Ethereum](https://login.xyz/), users can now log into Web3 compatible services using just their Ethereum wallet. In other words, dapps can easily verify that users are "who they say they are" without the need of a centralized identity provider. Users always have total control over their own digital identities and how their personal data is shared.&#x20;

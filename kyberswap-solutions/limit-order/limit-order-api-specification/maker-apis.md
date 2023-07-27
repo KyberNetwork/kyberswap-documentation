@@ -6,7 +6,7 @@ description: KyberSwap Limit Order Maker APIs
 
 ## Download OpenAPI specification:
 
-{% file src="../../../.gitbook/assets/Limit-Order-APIs (14) (1).yaml" %}
+{% file src="../../../.gitbook/assets/Limit-Order-APIs (18).yaml" %}
 
 ## Maker APIs
 
@@ -28,26 +28,26 @@ The KyberSwap Docs will continue to maintain information regarding `Legacy` and 
 
 ### `Latest`
 
-{% swagger src="../../../.gitbook/assets/Limit-Order-APIs (24).yaml" path="/write/api/v1/orders" method="post" %}
-[Limit-Order-APIs (24).yaml](<../../../.gitbook/assets/Limit-Order-APIs (24).yaml>)
+{% swagger src="../../../.gitbook/assets/Limit-Order-APIs (1).yaml" path="/write/api/v1/orders" method="post" %}
+[Limit-Order-APIs (1).yaml](<../../../.gitbook/assets/Limit-Order-APIs (1).yaml>)
 {% endswagger %}
 
-{% swagger src="../../../.gitbook/assets/Limit-Order-APIs (6).yaml" path="/read-ks/api/v1/orders/active-making-amount" method="get" %}
-[Limit-Order-APIs (6).yaml](<../../../.gitbook/assets/Limit-Order-APIs (6).yaml>)
+{% swagger src="../../../.gitbook/assets/Limit-Order-APIs (26).yaml" path="/read-ks/api/v1/orders/active-making-amount" method="get" %}
+[Limit-Order-APIs (26).yaml](<../../../.gitbook/assets/Limit-Order-APIs (26).yaml>)
 {% endswagger %}
 
-{% swagger src="../../../.gitbook/assets/Limit-Order-APIs (4).yaml" path="/read-ks/api/v1/orders" method="get" %}
-[Limit-Order-APIs (4).yaml](<../../../.gitbook/assets/Limit-Order-APIs (4).yaml>)
+{% swagger src="../../../.gitbook/assets/Limit-Order-APIs (3).yaml" path="/read-ks/api/v1/orders" method="get" %}
+[Limit-Order-APIs (3).yaml](<../../../.gitbook/assets/Limit-Order-APIs (3).yaml>)
 {% endswagger %}
 
 {% swagger src="../../../.gitbook/assets/Limit-Order-APIs (25).yaml" path="/write/api/v1/orders/sign-message" method="post" %}
 [Limit-Order-APIs (25).yaml](<../../../.gitbook/assets/Limit-Order-APIs (25).yaml>)
 {% endswagger %}
 
-{% swagger src="../../../.gitbook/assets/Limit-Order-APIs (8).yaml" path="/write/api/v1/encode/increase-nonce" method="post" %}
-[Limit-Order-APIs (8).yaml](<../../../.gitbook/assets/Limit-Order-APIs (8).yaml>)
+{% swagger src="../../../.gitbook/assets/Limit-Order-APIs (13).yaml" path="/write/api/v1/encode/increase-nonce" method="post" %}
+[Limit-Order-APIs (13).yaml](<../../../.gitbook/assets/Limit-Order-APIs (13).yaml>)
 {% endswagger %}
 
-{% swagger src="../../../.gitbook/assets/Limit-Order-APIs (21).yaml" path="/write/api/v1/encode/cancel-batch-orders" method="post" %}
-[Limit-Order-APIs (21).yaml](<../../../.gitbook/assets/Limit-Order-APIs (21).yaml>)
+{% swagger src="../../../.gitbook/assets/Limit-Order-APIs (10).yaml" path="/write/api/v1/encode/cancel-batch-orders" method="post" %}
+[Limit-Order-APIs (10).yaml](<../../../.gitbook/assets/Limit-Order-APIs (10).yaml>)
 {% endswagger %}

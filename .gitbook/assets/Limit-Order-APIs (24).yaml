@@ -198,8 +198,7 @@ paths:
                   - code
                   - message
                   - data
-              examples:
-                example-1:
+                example:
                   value:
                     code: 0
                     message: Successfully
@@ -213,8 +212,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/ErrorResponse'
-              examples:
-                example-1:
+                example:
                   value:
                     code: 4000
                     message: 'Missing required fields: ChainID'
@@ -226,21 +224,20 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/ErrorResponse'
-              examples:
-                example-1:
+                example:
                   value:
                     code: 5000
                     message: Internal Server Error
                     errorEntities: []
       operationId: get-read-ks-api-v1-orders-active-making-amount
-      description: Get total making amount of a maker which is able to be selled to takers
+      description: Get total making amount of a maker which is able to be sold to takers
       parameters:
         - schema:
             type: string
           in: query
           name: chainId
           required: true
-          description: Support only EVM compatible blockchains. You can get the chainId from [HERE](https://docs.kyberswap.com/Limit%E2%81%9FOrder/smart-contracts/limit-order-protocol-smart-contract)
+          description: Support only EVM compatible blockchains.
         - schema:
             type: string
           in: query
@@ -365,8 +362,7 @@ paths:
                   - code
                   - message
                   - data
-              examples:
-                example-1:
+                example:
                   value:
                     code: 0
                     message: Successfully
@@ -409,8 +405,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/ErrorResponse'
-              examples:
-                example-1:
+                example:
                   value:
                     code: 4000
                     message: 'Missing required fields: ChainID'
@@ -422,8 +417,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/ErrorResponse'
-              examples:
-                example-1:
+                example:
                   value:
                     code: 5000
                     message: Internal Server Error
@@ -435,7 +429,7 @@ paths:
           in: query
           name: chainId
           required: true
-          description: Support only EVM compatible blockchains. You can get the chainId from [HERE](https://docs.kyberswap.com/Limit%E2%81%9FOrder/smart-contracts/limit-order-protocol-smart-contract)
+          description: Support only EVM compatible blockchains.
         - schema:
             type: string
           in: query
@@ -467,6 +461,7 @@ paths:
             default: 1
           in: query
           name: page
+          description: Number of pages to return. Minimum and default is set at `1`
         - schema:
             type: integer
             minimum: 1
@@ -474,6 +469,7 @@ paths:
             default: 10
           in: query
           name: pageSize
+          description: Number of results to display per page. Minimum is `1` and maximum is `50`. Default is `10`.
   /read-partner/api/v1/orders:
     get:
       summary: Get orders for taker
@@ -798,8 +794,7 @@ paths:
                   - code
                   - message
                   - data
-              examples:
-                Example 1:
+                example:
                   value:
                     code: 0
                     message: Successfully
@@ -888,8 +883,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/ErrorResponse'
-              examples:
-                Example 1:
+                example:
                   value:
                     code: 4000
                     message: 'Missing required fields: ChainID'
@@ -901,8 +895,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/ErrorResponse'
-              examples:
-                Example 1:
+                example:
                   value:
                     code: 5000
                     message: Internal Server Error
@@ -954,7 +947,7 @@ paths:
                 - makingAmount
                 - takingAmount
                 - expiredAt
-      description: 'Get signing message to sign to create order. The response of this API will be used when signing order with [Sign Typed Data v4](https://docs.metamask.io/guide/signing-data.html#sign-typed-data-v4) before [Creating an order](https://docs.kyberswap.com/Aggregator/limit-order/limit-order-api#tag/Write-APIs/operation/post-write-api-v1-orders-sign-message)'
+      description: 'Get signing message to sign to create order. The response of this API will be used when signing order with [Sign Typed Data v4](https://docs.metamask.io/guide/signing-data.html#sign-typed-data-v4) before Creating New Order API'.
       tags:
         - APIs for makers
   /read-partner/api/v1/encode/fill-order-to:
@@ -1226,8 +1219,7 @@ paths:
                   - code
                   - message
                   - data
-              examples:
-                Example 1:
+                example:
                   value:
                     code: 0
                     message: Successfully
@@ -1239,8 +1231,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/ErrorResponse'
-              examples:
-                Example 1:
+                example:
                   value:
                     code: 5000
                     message: Internal Server Error

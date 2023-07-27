@@ -817,9 +817,6 @@ components:
         source:
           type: string
           description: String to present to your client (i.e. clientID)
-        skipSimulateTx:
-          type: boolean
-          description: Returns the encoded data without price impact checks. For advanced trades.
 
   examples:  
     SampleResponseSwapV1:

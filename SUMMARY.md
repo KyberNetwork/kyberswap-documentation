@@ -42,6 +42,8 @@
     * [Get Crypto With Fiat](kyberswap-solutions/kyberswap-interface/user-guides/get-crypto-with-fiat.md)
     * [Bridge Your Assets Across Multiple Chains](kyberswap-solutions/kyberswap-interface/user-guides/bridge-your-assets-across-multiple-chains.md)
     * [Swap Between Different Tokens Across Chains](kyberswap-solutions/kyberswap-interface/user-guides/swap-between-different-tokens-across-chains.md)
+  * [My Earnings](kyberswap-solutions/kyberswap-interface/my-earnings/README.md)
+    * [One-Stop Earnings Dashboard](kyberswap-solutions/kyberswap-interface/my-earnings/one-stop-earnings-dashboard.md)
   * [Profiles](kyberswap-solutions/kyberswap-interface/profiles/README.md)
     * [Profile Creation](kyberswap-solutions/kyberswap-interface/profiles/profile-creation.md)
     * [Profile Customization](kyberswap-solutions/kyberswap-interface/profiles/profile-customization.md)

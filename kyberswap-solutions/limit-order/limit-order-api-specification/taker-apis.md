@@ -6,7 +6,7 @@ description: KyberSwap Limit Order Taker APIs
 
 ## Download OpenAPI specification:
 
-{% file src="../../../.gitbook/assets/Limit-Order-APIs (14).yaml" %}
+{% file src="../../../.gitbook/assets/Limit-Order-APIs (21).yaml" %}
 
 ## Taker APIs
 
@@ -28,18 +28,18 @@ The KyberSwap Docs will continue to maintain information regarding `Legacy` and 
 
 ### `Latest`
 
-{% swagger src="../../../.gitbook/assets/Limit-Order-APIs (7).yaml" path="/read-partner/api/v1/orders" method="get" %}
-[Limit-Order-APIs (7).yaml](<../../../.gitbook/assets/Limit-Order-APIs (7).yaml>)
+{% swagger src="../../../.gitbook/assets/Limit-Order-APIs (23).yaml" path="/read-partner/api/v1/orders" method="get" %}
+[Limit-Order-APIs (23).yaml](<../../../.gitbook/assets/Limit-Order-APIs (23).yaml>)
 {% endswagger %}
 
-{% swagger src="../../../.gitbook/assets/Limit-Order-APIs (15).yaml" path="/read-partner/api/v1/encode/fill-order-to" method="post" %}
-[Limit-Order-APIs (15).yaml](<../../../.gitbook/assets/Limit-Order-APIs (15).yaml>)
+{% swagger src="../../../.gitbook/assets/Limit-Order-APIs (16).yaml" path="/read-partner/api/v1/encode/fill-order-to" method="post" %}
+[Limit-Order-APIs (16).yaml](<../../../.gitbook/assets/Limit-Order-APIs (16).yaml>)
 {% endswagger %}
 
 {% swagger src="../../../.gitbook/assets/Limit-Order-APIs (20).yaml" path="/read-partner/api/v1/encode/fill-batch-orders-to" method="post" %}
 [Limit-Order-APIs (20).yaml](<../../../.gitbook/assets/Limit-Order-APIs (20).yaml>)
 {% endswagger %}
 
-{% swagger src="../../../.gitbook/assets/Limit-Order-APIs (17).yaml" path="/read-partner/api/v1/orders/pairs" method="get" %}
-[Limit-Order-APIs (17).yaml](<../../../.gitbook/assets/Limit-Order-APIs (17).yaml>)
+{% swagger src="../../../.gitbook/assets/Limit-Order-APIs (15).yaml" path="/read-partner/api/v1/orders/pairs" method="get" %}
+[Limit-Order-APIs (15).yaml](<../../../.gitbook/assets/Limit-Order-APIs (15).yaml>)
 {% endswagger %}
