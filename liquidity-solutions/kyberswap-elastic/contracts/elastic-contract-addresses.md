@@ -88,22 +88,6 @@ All KyberSwap Elastic contracts have been deployed at the same address across al
 
 <details>
 
-<summary>Fantom (ChainID: 250)</summary>
-
-* **Factory:** [`0xC7a590291e07B9fe9E64b86c58fD8fC764308C4A`](https://ftmscan.com/address/0xC7a590291e07B9fe9E64b86c58fD8fC764308C4A)
-* **AntiSnipAttackPositionManager:** [`0xe222fBE074A436145b255442D919E4E3A6c6a480`](https://ftmscan.com/address/0xe222fBE074A436145b255442D919E4E3A6c6a480)
-* **ERC1967Proxy (PoolOracle):** [`0xD8ac7f696Ae99CD7B689726Cf03c5711Dd8DcDb4`](https://ftmscan.com/address/0xd8ac7f696ae99cd7b689726cf03c5711dd8dcdb4)
-* **PoolOracle:** [`0x049BeffDB026D6D1D64cFc8fE29Bd12142967B09`](https://ftmscan.com/address/0x049BeffDB026D6D1D64cFc8fE29Bd12142967B09)
-* **ERC1967Proxy (TokenPositionDescriptor):** [`0x58f1d0F9bFf9D695010C92FB93d100CeF5113f3E`](https://ftmscan.com/address/0x58f1d0F9bFf9D695010C92FB93d100CeF5113f3E)
-* **TokenPositionDescriptor:** [`0x98565FcAD2080C5c19C3136fa367cE371cD40bD6`](https://ftmscan.com/address/0x98565FcAD2080C5c19C3136fa367cE371cD40bD6)
-* **Router:** [`0xF9c2b5746c946EF883ab2660BbbB1f10A5bdeAb4`](https://ftmscan.com/address/0xF9c2b5746c946EF883ab2660BbbB1f10A5bdeAb4)
-* **QouterV2:** [`0x4d47fd5a29904Dae0Ef51b1c450C9750F15D7856`](https://ftmscan.com/address/0x4d47fd5a29904Dae0Ef51b1c450C9750F15D7856)
-* **TicksFeesReader:** [`0x8Fd8Cb948965d9305999D767A02bf79833EADbB3`](https://ftmscan.com/address/0x8fd8cb948965d9305999d767a02bf79833eadbb3)
-
-</details>
-
-<details>
-
 <summary>Avalanche (ChainID: 43114)</summary>
 
 * **Factory:** [`0xC7a590291e07B9fe9E64b86c58fD8fC764308C4A`](https://snowtrace.io/address/0xC7a590291e07B9fe9E64b86c58fD8fC764308C4A)
@@ -136,17 +120,17 @@ All KyberSwap Elastic contracts have been deployed at the same address across al
 
 <details>
 
-<summary>Velas (ChainID: 106)</summary>
+<summary>Fantom (ChainID: 250)</summary>
 
-* **Factory:** [`0xC7a590291e07B9fe9E64b86c58fD8fC764308C4A`](https://evmexplorer.velas.com/address/0xC7a590291e07B9fe9E64b86c58fD8fC764308C4A)
-* **AntiSnipAttackPositionManager:** [`0xe222fBE074A436145b255442D919E4E3A6c6a480`](https://evmexplorer.velas.com/address/0xe222fBE074A436145b255442D919E4E3A6c6a480)
-* **ERC1967Proxy (PoolOracle):** [`0xD8ac7f696Ae99CD7B689726Cf03c5711Dd8DcDb4`](https://evmexplorer.velas.com/address/0xD8ac7f696Ae99CD7B689726Cf03c5711Dd8DcDb4)
-* **PoolOracle:** [`0x049BeffDB026D6D1D64cFc8fE29Bd12142967B09`](https://evmexplorer.velas.com/address/0x049BeffDB026D6D1D64cFc8fE29Bd12142967B09)
-* **ERC1967Proxy (TokenPositionDescriptor):** [`0x58f1d0F9bFf9D695010C92FB93d100CeF5113f3E`](https://evmexplorer.velas.com/address/0x58f1d0F9bFf9D695010C92FB93d100CeF5113f3E)
-* **TokenPositionDescriptor:** [`0x98565FcAD2080C5c19C3136fa367cE371cD40bD6`](https://evmexplorer.velas.com/address/0x98565FcAD2080C5c19C3136fa367cE371cD40bD6)
-* **Router:** [`0xF9c2b5746c946EF883ab2660BbbB1f10A5bdeAb4`](https://evmexplorer.velas.com/address/0xF9c2b5746c946EF883ab2660BbbB1f10A5bdeAb4)
-* **QouterV2:** [`0x4d47fd5a29904Dae0Ef51b1c450C9750F15D7856`](https://evmexplorer.velas.com/address/0x4d47fd5a29904Dae0Ef51b1c450C9750F15D7856)
-* **TicksFeesReader:** [`0x8Fd8Cb948965d9305999D767A02bf79833EADbB3`](https://evmexplorer.velas.com/address/0x8Fd8Cb948965d9305999D767A02bf79833EADbB3)
+* **Factory:** [`0xC7a590291e07B9fe9E64b86c58fD8fC764308C4A`](https://ftmscan.com/address/0xC7a590291e07B9fe9E64b86c58fD8fC764308C4A)
+* **AntiSnipAttackPositionManager:** [`0xe222fBE074A436145b255442D919E4E3A6c6a480`](https://ftmscan.com/address/0xe222fBE074A436145b255442D919E4E3A6c6a480)
+* **ERC1967Proxy (PoolOracle):** [`0xD8ac7f696Ae99CD7B689726Cf03c5711Dd8DcDb4`](https://ftmscan.com/address/0xd8ac7f696ae99cd7b689726cf03c5711dd8dcdb4)
+* **PoolOracle:** [`0x049BeffDB026D6D1D64cFc8fE29Bd12142967B09`](https://ftmscan.com/address/0x049BeffDB026D6D1D64cFc8fE29Bd12142967B09)
+* **ERC1967Proxy (TokenPositionDescriptor):** [`0x58f1d0F9bFf9D695010C92FB93d100CeF5113f3E`](https://ftmscan.com/address/0x58f1d0F9bFf9D695010C92FB93d100CeF5113f3E)
+* **TokenPositionDescriptor:** [`0x98565FcAD2080C5c19C3136fa367cE371cD40bD6`](https://ftmscan.com/address/0x98565FcAD2080C5c19C3136fa367cE371cD40bD6)
+* **Router:** [`0xF9c2b5746c946EF883ab2660BbbB1f10A5bdeAb4`](https://ftmscan.com/address/0xF9c2b5746c946EF883ab2660BbbB1f10A5bdeAb4)
+* **QouterV2:** [`0x4d47fd5a29904Dae0Ef51b1c450C9750F15D7856`](https://ftmscan.com/address/0x4d47fd5a29904Dae0Ef51b1c450C9750F15D7856)
+* **TicksFeesReader:** [`0x8Fd8Cb948965d9305999D767A02bf79833EADbB3`](https://ftmscan.com/address/0x8fd8cb948965d9305999d767a02bf79833eadbb3)
 
 </details>
 
@@ -166,17 +150,17 @@ All KyberSwap Elastic contracts have been deployed at the same address across al
 
 <details>
 
-<summary>Oasis (ChainID: 42262)</summary>
+<summary>Linea (ChainID: 59144)</summary>
 
-* **Factory:** [`0xC7a590291e07B9fe9E64b86c58fD8fC764308C4A`](https://explorer.emerald.oasis.dev/address/0xC7a590291e07B9fe9E64b86c58fD8fC764308C4A/transactions)
-* **AntiSnipAttackPositionManager:** [`0xe222fBE074A436145b255442D919E4E3A6c6a480`](https://explorer.emerald.oasis.dev/address/0xe222fBE074A436145b255442D919E4E3A6c6a480/transactions)
-* **ERC1967Proxy (PoolOracle):** [`0xD8ac7f696Ae99CD7B689726Cf03c5711Dd8DcDb4`](https://explorer.emerald.oasis.dev/address/0xD8ac7f696Ae99CD7B689726Cf03c5711Dd8DcDb4/transactions)
-* **PoolOracle:** [`0x049BeffDB026D6D1D64cFc8fE29Bd12142967B09`](https://explorer.emerald.oasis.dev/address/0x049BeffDB026D6D1D64cFc8fE29Bd12142967B09/transactions)
-* **ERC1967Proxy (TokenPositionDescriptor):** [`0x58f1d0F9bFf9D695010C92FB93d100CeF5113f3E`](https://explorer.emerald.oasis.dev/address/0x58f1d0F9bFf9D695010C92FB93d100CeF5113f3E/transactions)
-* **TokenPositionDescriptor:** [`0x98565FcAD2080C5c19C3136fa367cE371cD40bD6`](https://explorer.emerald.oasis.dev/address/0x98565FcAD2080C5c19C3136fa367cE371cD40bD6/transactions)
-* **Router:** [`0xF9c2b5746c946EF883ab2660BbbB1f10A5bdeAb4`](https://explorer.emerald.oasis.dev/address/0xF9c2b5746c946EF883ab2660BbbB1f10A5bdeAb4/transactions)
-* **QouterV2:** [`0x4d47fd5a29904Dae0Ef51b1c450C9750F15D7856`](https://explorer.emerald.oasis.dev/address/0x4d47fd5a29904Dae0Ef51b1c450C9750F15D7856/transactions)
-* **TicksFeesReader:** [`0x8Fd8Cb948965d9305999D767A02bf79833EADbB3`](https://explorer.emerald.oasis.dev/address/0x8Fd8Cb948965d9305999D767A02bf79833EADbB3/transactions)
+* **Factory:** [`0xC7a590291e07B9fe9E64b86c58fD8fC764308C4A`](https://explorer.linea.build/address/0xC7a590291e07B9fe9E64b86c58fD8fC764308C4A)
+* **AntiSnipAttackPositionManager:** [`0xe222fBE074A436145b255442D919E4E3A6c6a480`](https://explorer.linea.build/address/0xe222fBE074A436145b255442D919E4E3A6c6a480)
+* **ERC1967Proxy (PoolOracle):** [`0xD8ac7f696Ae99CD7B689726Cf03c5711Dd8DcDb4`](https://explorer.linea.build/address/0xD8ac7f696Ae99CD7B689726Cf03c5711Dd8DcDb4)
+* **PoolOracle:** [`0x049BeffDB026D6D1D64cFc8fE29Bd12142967B09`](https://explorer.linea.build/address/0x049BeffDB026D6D1D64cFc8fE29Bd12142967B09)
+* **ERC1967Proxy (TokenPositionDescriptor):** [`0x58f1d0F9bFf9D695010C92FB93d100CeF5113f3`](https://explorer.linea.build/address/0x58f1d0F9bFf9D695010C92FB93d100CeF5113f3E)
+* **TokenPositionDescriptor:** [`0x98565FcAD2080C5c19C3136fa367cE371cD40bD6`](https://explorer.linea.build/address/0x98565FcAD2080C5c19C3136fa367cE371cD40bD6)
+* **Router:** [`0xF9c2b5746c946EF883ab2660BbbB1f10A5bdeAb4`](https://explorer.linea.build/address/0xF9c2b5746c946EF883ab2660BbbB1f10A5bdeAb4)
+* **QouterV2:** [`0x4d47fd5a29904Dae0Ef51b1c450C9750F15D7856`](https://explorer.linea.build/address/0x4d47fd5a29904Dae0Ef51b1c450C9750F15D7856)
+* **TicksFeesReader:** [`0x8Fd8Cb948965d9305999D767A02bf79833EADbB3`](https://explorer.linea.build/address/0x8Fd8Cb948965d9305999D767A02bf79833EADbB3)
 
 </details>
 
@@ -193,5 +177,37 @@ All KyberSwap Elastic contracts have been deployed at the same address across al
 * **Router:** [`0xF9c2b5746c946EF883ab2660BbbB1f10A5bdeAb4`](https://bttcscan.com/address/0xF9c2b5746c946EF883ab2660BbbB1f10A5bdeAb4)
 * **QouterV2:** [`0x4d47fd5a29904Dae0Ef51b1c450C9750F15D7856`](https://bttcscan.com/address/0x4d47fd5a29904Dae0Ef51b1c450C9750F15D7856)
 * **TicksFeesReader:** [`0x8Fd8Cb948965d9305999D767A02bf79833EADbB3`](https://bttcscan.com/address/0x8Fd8Cb948965d9305999D767A02bf79833EADbB3)
+
+</details>
+
+<details>
+
+<summary>Velas (ChainID: 106)</summary>
+
+* **Factory:** [`0xC7a590291e07B9fe9E64b86c58fD8fC764308C4A`](https://evmexplorer.velas.com/address/0xC7a590291e07B9fe9E64b86c58fD8fC764308C4A)
+* **AntiSnipAttackPositionManager:** [`0xe222fBE074A436145b255442D919E4E3A6c6a480`](https://evmexplorer.velas.com/address/0xe222fBE074A436145b255442D919E4E3A6c6a480)
+* **ERC1967Proxy (PoolOracle):** [`0xD8ac7f696Ae99CD7B689726Cf03c5711Dd8DcDb4`](https://evmexplorer.velas.com/address/0xD8ac7f696Ae99CD7B689726Cf03c5711Dd8DcDb4)
+* **PoolOracle:** [`0x049BeffDB026D6D1D64cFc8fE29Bd12142967B09`](https://evmexplorer.velas.com/address/0x049BeffDB026D6D1D64cFc8fE29Bd12142967B09)
+* **ERC1967Proxy (TokenPositionDescriptor):** [`0x58f1d0F9bFf9D695010C92FB93d100CeF5113f3E`](https://evmexplorer.velas.com/address/0x58f1d0F9bFf9D695010C92FB93d100CeF5113f3E)
+* **TokenPositionDescriptor:** [`0x98565FcAD2080C5c19C3136fa367cE371cD40bD6`](https://evmexplorer.velas.com/address/0x98565FcAD2080C5c19C3136fa367cE371cD40bD6)
+* **Router:** [`0xF9c2b5746c946EF883ab2660BbbB1f10A5bdeAb4`](https://evmexplorer.velas.com/address/0xF9c2b5746c946EF883ab2660BbbB1f10A5bdeAb4)
+* **QouterV2:** [`0x4d47fd5a29904Dae0Ef51b1c450C9750F15D7856`](https://evmexplorer.velas.com/address/0x4d47fd5a29904Dae0Ef51b1c450C9750F15D7856)
+* **TicksFeesReader:** [`0x8Fd8Cb948965d9305999D767A02bf79833EADbB3`](https://evmexplorer.velas.com/address/0x8Fd8Cb948965d9305999D767A02bf79833EADbB3)
+
+</details>
+
+<details>
+
+<summary>Oasis (ChainID: 42262)</summary>
+
+* **Factory:** [`0xC7a590291e07B9fe9E64b86c58fD8fC764308C4A`](https://explorer.emerald.oasis.dev/address/0xC7a590291e07B9fe9E64b86c58fD8fC764308C4A/transactions)
+* **AntiSnipAttackPositionManager:** [`0xe222fBE074A436145b255442D919E4E3A6c6a480`](https://explorer.emerald.oasis.dev/address/0xe222fBE074A436145b255442D919E4E3A6c6a480/transactions)
+* **ERC1967Proxy (PoolOracle):** [`0xD8ac7f696Ae99CD7B689726Cf03c5711Dd8DcDb4`](https://explorer.emerald.oasis.dev/address/0xD8ac7f696Ae99CD7B689726Cf03c5711Dd8DcDb4/transactions)
+* **PoolOracle:** [`0x049BeffDB026D6D1D64cFc8fE29Bd12142967B09`](https://explorer.emerald.oasis.dev/address/0x049BeffDB026D6D1D64cFc8fE29Bd12142967B09/transactions)
+* **ERC1967Proxy (TokenPositionDescriptor):** [`0x58f1d0F9bFf9D695010C92FB93d100CeF5113f3E`](https://explorer.emerald.oasis.dev/address/0x58f1d0F9bFf9D695010C92FB93d100CeF5113f3E/transactions)
+* **TokenPositionDescriptor:** [`0x98565FcAD2080C5c19C3136fa367cE371cD40bD6`](https://explorer.emerald.oasis.dev/address/0x98565FcAD2080C5c19C3136fa367cE371cD40bD6/transactions)
+* **Router:** [`0xF9c2b5746c946EF883ab2660BbbB1f10A5bdeAb4`](https://explorer.emerald.oasis.dev/address/0xF9c2b5746c946EF883ab2660BbbB1f10A5bdeAb4/transactions)
+* **QouterV2:** [`0x4d47fd5a29904Dae0Ef51b1c450C9750F15D7856`](https://explorer.emerald.oasis.dev/address/0x4d47fd5a29904Dae0Ef51b1c450C9750F15D7856/transactions)
+* **TicksFeesReader:** [`0x8Fd8Cb948965d9305999D767A02bf79833EADbB3`](https://explorer.emerald.oasis.dev/address/0x8Fd8Cb948965d9305999D767A02bf79833EADbB3/transactions)
 
 </details>

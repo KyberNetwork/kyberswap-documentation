@@ -6,7 +6,7 @@ description: KyberSwap Aggregator EVM APIs
 
 ## Download OpenAPI specification:
 
-{% file src="../../../.gitbook/assets/KyberSwapAggregator_EVMAPIs_v2.4.yaml" %}
+{% file src="../../../.gitbook/assets/KyberSwapAggregator_EVMAPIs_v2.4.1.yaml" %}
 
 {% hint style="success" %}
 #### Note on integrations: clientID
@@ -27,12 +27,6 @@ If you're just getting started with the KyberSwap Aggregator, you can refer to o
 
 To support more performant queries, KyberSwap highly encourages all integrators to implement the latest API `[V1]` version. While both versions of the API remains backwards compatible, only the `[V1]` APIs will continue to receive updates and hence developers are highly encouraged to implement the latest `[V1]` APIs to avoid any disruptions as the non-versioned API will eventually be deprecated.
 
-{% hint style="info" %}
-#### ZkSync Era support
-
-For integrators looking to build on top of the KyberSwap Aggregator on ZkSync Era (ChainID: 324), please note that only the `[V1]` API is supported.
-{% endhint %}
-
 <details>
 
 <summary>API statuses and support</summary>
@@ -51,16 +45,16 @@ The KyberSwap Docs will continue to maintain information regarding `Legacy` and 
 
 ### `Latest`
 
-{% swagger src="../../../.gitbook/assets/KyberSwapAggregator_EVMAPIs_v2.4.yaml" path="/{chain}/api/v1/routes" method="get" %}
-[KyberSwapAggregator_EVMAPIs_v2.4.yaml](../../../.gitbook/assets/KyberSwapAggregator_EVMAPIs_v2.4.yaml)
+{% swagger src="../../../.gitbook/assets/KyberSwapAggregator_EVMAPIs_v2.4.1.yaml" path="/{chain}/api/v1/routes" method="get" %}
+[KyberSwapAggregator_EVMAPIs_v2.4.1.yaml](../../../.gitbook/assets/KyberSwapAggregator_EVMAPIs_v2.4.1.yaml)
 {% endswagger %}
 
-{% swagger src="../../../.gitbook/assets/KyberSwapAggregator_EVMAPIs_v2.4.yaml" path="/{chain}/api/v1/route/build" method="post" %}
-[KyberSwapAggregator_EVMAPIs_v2.4.yaml](../../../.gitbook/assets/KyberSwapAggregator_EVMAPIs_v2.4.yaml)
+{% swagger src="../../../.gitbook/assets/KyberSwapAggregator_EVMAPIs_v2.4.1.yaml" path="/{chain}/api/v1/route/build" method="post" %}
+[KyberSwapAggregator_EVMAPIs_v2.4.1.yaml](../../../.gitbook/assets/KyberSwapAggregator_EVMAPIs_v2.4.1.yaml)
 {% endswagger %}
 
 ### `Legacy`
 
-{% swagger src="../../../.gitbook/assets/KyberSwapAggregator_EVMAPIs_v2.4.yaml" path="/{chain}/route/encode" method="get" %}
-[KyberSwapAggregator_EVMAPIs_v2.4.yaml](../../../.gitbook/assets/KyberSwapAggregator_EVMAPIs_v2.4.yaml)
+{% swagger src="../../../.gitbook/assets/KyberSwapAggregator_EVMAPIs_v2.4.1.yaml" path="/{chain}/route/encode" method="get" %}
+[KyberSwapAggregator_EVMAPIs_v2.4.1.yaml](../../../.gitbook/assets/KyberSwapAggregator_EVMAPIs_v2.4.1.yaml)
 {% endswagger %}

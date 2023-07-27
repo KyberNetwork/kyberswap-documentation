@@ -123,30 +123,6 @@ description: Liquidity Mining Across Multiple Chains
 
 <details>
 
-<summary>Fantom (ChainID: 250)</summary>
-
-#### Static Fee
-
-* **KSRouter:** [`0x5649B4DD00780e99Bab7Abb4A3d581Ea1aEB23D0`](https://ftmscan.com/address/0x5649B4DD00780e99Bab7Abb4A3d581Ea1aEB23D0)
-* **KSFactory:** [`0x1c758aF0688502e49140230F6b0EBd376d429be5`](https://ftmscan.com/address/0x1c758aF0688502e49140230F6b0EBd376d429be5)
-* **ZapInV2:** [`0x2abE8750e4a65584d7452316356128C936273e0D`](https://ftmscan.com/address/0x2abE8750e4a65584d7452316356128C936273e0D)
-
-#### Dynamic Fee
-
-* **DMMRouter:** [`0x5d5A5a0a465129848c2549669e12cDC2f8DE039A`](https://ftmscan.com/address/0x5d5A5a0a465129848c2549669e12cDC2f8DE039A)
-* **DMMFactory:** [`0x78df70615ffc8066cc0887917f2Cd72092C86409`](https://ftmscan.com/address/0x78df70615ffc8066cc0887917f2Cd72092C86409)
-* **ZapIn:** [`0x83D4908c1B4F9Ca423BEE264163BC1d50F251c31`](https://ftmscan.com/address/0x83D4908c1B4F9Ca423BEE264163BC1d50F251c31)
-
-#### Common
-
-* **WFTM:** [`0x21be370d5312f44cb42ce377bc9b8a0cef1a4c83`](https://ftmscan.com/address/0x21be370d5312f44cb42ce377bc9b8a0cef1a4c83)
-* **Multicall:** [`0xcf591ce5574258aC4550D96c545e4F3fd49A74ec`](https://ftmscan.com/address/0xcf591ce5574258aC4550D96c545e4F3fd49A74ec)
-* **Multicall2:** [`0x878dFE971d44e9122048308301F540910Bbd934c`](https://ftmscan.com/address/0x878dfe971d44e9122048308301f540910bbd934c)
-
-</details>
-
-<details>
-
 <summary>Avalanche (ChainID: 43114)</summary>
 
 #### Static Fee
@@ -166,18 +142,6 @@ description: Liquidity Mining Across Multiple Chains
 * **WAVAX:** [`0xB31f66AA3C1e785363F0875A1B74E27b85FD66c7`](https://snowtrace.io/address/0xB31f66AA3C1e785363F0875A1B74E27b85FD66c7)
 * **Multicall:** [`0x878dFE971d44e9122048308301F540910Bbd934c`](https://snowtrace.io/address/0x878dFE971d44e9122048308301F540910Bbd934c)
 * **Multicall2:** [`0xF2FD8219609E28C61A998cc534681f95D2740f61`](https://snowtrace.io/address/0xF2FD8219609E28C61A998cc534681f95D2740f61)
-
-</details>
-
-<details>
-
-<summary>zkSync Era (ChainID: 324)</summary>
-
-#### Static Fee
-
-* **KSRouter02:** [`0x937f4f2FF1889b79dAa08debfCA5C237a07A5208`](https://explorer.zksync.io/address/0x937f4f2FF1889b79dAa08debfCA5C237a07A5208)
-* **KSFactory:** [`0x9017f5A42fbe5bCA3853400D2660a2Ee771b241e`](https://explorer.zksync.io/address/0x9017f5A42fbe5bCA3853400D2660a2Ee771b241e)
-* **KSZap:** [`0x35004774C6163bCEE66F815F59975606cC841c54`](https://explorer.zksync.io/address/0x35004774C6163bCEE66F815F59975606cC841c54)
 
 </details>
 
@@ -206,24 +170,37 @@ description: Liquidity Mining Across Multiple Chains
 
 <details>
 
-<summary>Velas (ChainID: 106)</summary>
+<summary>zkSync Era (ChainID: 324)</summary>
 
 #### Static Fee
 
-* **KSRouter:** [`0x5649B4DD00780e99Bab7Abb4A3d581Ea1aEB23D0`](https://evmexplorer.velas.com/address/0x5649B4DD00780e99Bab7Abb4A3d581Ea1aEB23D0)
-* **KSFactory:** [`0x1c758aF0688502e49140230F6b0EBd376d429be5`](https://evmexplorer.velas.com/address/0x1c758aF0688502e49140230F6b0EBd376d429be5)
-* **ZapInV2:** [`0x2abE8750e4a65584d7452316356128C936273e0D`](https://evmexplorer.velas.com/address/0x2abE8750e4a65584d7452316356128C936273e0D)
+* **KSRouter02:** [`0x937f4f2FF1889b79dAa08debfCA5C237a07A5208`](https://explorer.zksync.io/address/0x937f4f2FF1889b79dAa08debfCA5C237a07A5208)
+* **KSFactory:** [`0x9017f5A42fbe5bCA3853400D2660a2Ee771b241e`](https://explorer.zksync.io/address/0x9017f5A42fbe5bCA3853400D2660a2Ee771b241e)
+* **KSZap:** [`0x35004774C6163bCEE66F815F59975606cC841c54`](https://explorer.zksync.io/address/0x35004774C6163bCEE66F815F59975606cC841c54)
+
+</details>
+
+<details>
+
+<summary>Fantom (ChainID: 250)</summary>
+
+#### Static Fee
+
+* **KSRouter:** [`0x5649B4DD00780e99Bab7Abb4A3d581Ea1aEB23D0`](https://ftmscan.com/address/0x5649B4DD00780e99Bab7Abb4A3d581Ea1aEB23D0)
+* **KSFactory:** [`0x1c758aF0688502e49140230F6b0EBd376d429be5`](https://ftmscan.com/address/0x1c758aF0688502e49140230F6b0EBd376d429be5)
+* **ZapInV2:** [`0x2abE8750e4a65584d7452316356128C936273e0D`](https://ftmscan.com/address/0x2abE8750e4a65584d7452316356128C936273e0D)
 
 #### Dynamic Fee
 
-* **DMMRouter:** [`0xEaE47c5D99f7B31165a7f0c5f7E0D6afA25CFd55`](https://evmexplorer.velas.com/address/0xEaE47c5D99f7B31165a7f0c5f7E0D6afA25CFd55)
-* **DMMFactory:** [`0xD9bfE9979e9CA4b2fe84bA5d4Cf963bBcB376974`](https://evmexplorer.velas.com/address/0xD9bfE9979e9CA4b2fe84bA5d4Cf963bBcB376974)
-* **ZapIn:** [`0x83D4908c1B4F9Ca423BEE264163BC1d50F251c31`](https://evmexplorer.velas.com/address/0x83D4908c1B4F9Ca423BEE264163BC1d50F251c31)
+* **DMMRouter:** [`0x5d5A5a0a465129848c2549669e12cDC2f8DE039A`](https://ftmscan.com/address/0x5d5A5a0a465129848c2549669e12cDC2f8DE039A)
+* **DMMFactory:** [`0x78df70615ffc8066cc0887917f2Cd72092C86409`](https://ftmscan.com/address/0x78df70615ffc8066cc0887917f2Cd72092C86409)
+* **ZapIn:** [`0x83D4908c1B4F9Ca423BEE264163BC1d50F251c31`](https://ftmscan.com/address/0x83D4908c1B4F9Ca423BEE264163BC1d50F251c31)
 
 #### Common
 
-* **WVLX:** [`0xc579D1f3CF86749E05CD06f7ADe17856c2CE3126`](https://evmexplorer.velas.com/address/0xc579D1f3CF86749E05CD06f7ADe17856c2CE3126)
-* **Multicall2:** [`0x1877Ec0770901cc6886FDA7E7525a78c2Ed4e975`](https://evmexplorer.velas.com/address/0x1877Ec0770901cc6886FDA7E7525a78c2Ed4e975)
+* **WFTM:** [`0x21be370d5312f44cb42ce377bc9b8a0cef1a4c83`](https://ftmscan.com/address/0x21be370d5312f44cb42ce377bc9b8a0cef1a4c83)
+* **Multicall:** [`0xcf591ce5574258aC4550D96c545e4F3fd49A74ec`](https://ftmscan.com/address/0xcf591ce5574258aC4550D96c545e4F3fd49A74ec)
+* **Multicall2:** [`0x878dFE971d44e9122048308301F540910Bbd934c`](https://ftmscan.com/address/0x878dfe971d44e9122048308301f540910bbd934c)
 
 </details>
 
@@ -258,6 +235,47 @@ description: Liquidity Mining Across Multiple Chains
 
 <details>
 
+<summary>BitTorrent Chain (ChainID: 199)</summary>
+
+#### Static Fee
+
+* **KSRouter:** [`0x5649B4DD00780e99Bab7Abb4A3d581Ea1aEB23D0`](https://bttcscan.com/address/0x5649B4DD00780e99Bab7Abb4A3d581Ea1aEB23D0)
+* **KSFactory:** [`0x1c758aF0688502e49140230F6b0EBd376d429be5`](https://bttcscan.com/address/0x1c758aF0688502e49140230F6b0EBd376d429be5)
+* **ZapInV2:** [`0x2abE8750e4a65584d7452316356128C936273e0D`](https://bttcscan.com/address/0x2abE8750e4a65584d7452316356128C936273e0D)
+
+#### Dynamic Fee
+
+* **DMMRouter:** [`0xEaE47c5D99f7B31165a7f0c5f7E0D6afA25CFd55`](https://bttcscan.com/address/0xEaE47c5D99f7B31165a7f0c5f7E0D6afA25CFd55)
+* **DMMFactory:** [`0xD9bfE9979e9CA4b2fe84bA5d4Cf963bBcB376974`](https://bttcscan.com/address/0xEaE47c5D99f7B31165a7f0c5f7E0D6afA25CFd55)
+* **ZapIn:** [`0x83D4908c1B4F9Ca423BEE264163BC1d50F251c31`](https://bttcscan.com/address/0x83D4908c1B4F9Ca423BEE264163BC1d50F251c31)
+
+</details>
+
+<details>
+
+<summary>Velas (ChainID: 106)</summary>
+
+#### Static Fee
+
+* **KSRouter:** [`0x5649B4DD00780e99Bab7Abb4A3d581Ea1aEB23D0`](https://evmexplorer.velas.com/address/0x5649B4DD00780e99Bab7Abb4A3d581Ea1aEB23D0)
+* **KSFactory:** [`0x1c758aF0688502e49140230F6b0EBd376d429be5`](https://evmexplorer.velas.com/address/0x1c758aF0688502e49140230F6b0EBd376d429be5)
+* **ZapInV2:** [`0x2abE8750e4a65584d7452316356128C936273e0D`](https://evmexplorer.velas.com/address/0x2abE8750e4a65584d7452316356128C936273e0D)
+
+#### Dynamic Fee
+
+* **DMMRouter:** [`0xEaE47c5D99f7B31165a7f0c5f7E0D6afA25CFd55`](https://evmexplorer.velas.com/address/0xEaE47c5D99f7B31165a7f0c5f7E0D6afA25CFd55)
+* **DMMFactory:** [`0xD9bfE9979e9CA4b2fe84bA5d4Cf963bBcB376974`](https://evmexplorer.velas.com/address/0xD9bfE9979e9CA4b2fe84bA5d4Cf963bBcB376974)
+* **ZapIn:** [`0x83D4908c1B4F9Ca423BEE264163BC1d50F251c31`](https://evmexplorer.velas.com/address/0x83D4908c1B4F9Ca423BEE264163BC1d50F251c31)
+
+#### Common
+
+* **WVLX:** [`0xc579D1f3CF86749E05CD06f7ADe17856c2CE3126`](https://evmexplorer.velas.com/address/0xc579D1f3CF86749E05CD06f7ADe17856c2CE3126)
+* **Multicall2:** [`0x1877Ec0770901cc6886FDA7E7525a78c2Ed4e975`](https://evmexplorer.velas.com/address/0x1877Ec0770901cc6886FDA7E7525a78c2Ed4e975)
+
+</details>
+
+<details>
+
 <summary>Oasis (ChainID: 42262)</summary>
 
 #### Static Fee
@@ -279,37 +297,7 @@ description: Liquidity Mining Across Multiple Chains
 
 </details>
 
-<details>
-
-<summary>BitTorrent Chain (ChainID: 199)</summary>
-
-#### Static Fee
-
-* **KSRouter:** [`0x5649B4DD00780e99Bab7Abb4A3d581Ea1aEB23D0`](https://bttcscan.com/address/0x5649B4DD00780e99Bab7Abb4A3d581Ea1aEB23D0)
-* **KSFactory:** [`0x1c758aF0688502e49140230F6b0EBd376d429be5`](https://bttcscan.com/address/0x1c758aF0688502e49140230F6b0EBd376d429be5)
-* **ZapInV2:** [`0x2abE8750e4a65584d7452316356128C936273e0D`](https://bttcscan.com/address/0x2abE8750e4a65584d7452316356128C936273e0D)
-
-#### Dynamic Fee
-
-* **DMMRouter:** [`0xEaE47c5D99f7B31165a7f0c5f7E0D6afA25CFd55`](https://bttcscan.com/address/0xEaE47c5D99f7B31165a7f0c5f7E0D6afA25CFd55)
-* **DMMFactory:** [`0xD9bfE9979e9CA4b2fe84bA5d4Cf963bBcB376974`](https://bttcscan.com/address/0xEaE47c5D99f7B31165a7f0c5f7E0D6afA25CFd55)
-* **ZapIn:** [`0x83D4908c1B4F9Ca423BEE264163BC1d50F251c31`](https://bttcscan.com/address/0x83D4908c1B4F9Ca423BEE264163BC1d50F251c31)
-
-</details>
-
 ## Testnet
-
-<details>
-
-<summary>Linea Testnet (ChainID: 59140)</summary>
-
-#### Static Fee
-
-* **KSRouter02:** [`0x179A3d2e958D185F47D1Db046b796C5242d68981`](https://goerli.lineascan.build/address/0x179A3d2e958D185F47D1Db046b796C5242d68981)
-* **KSFactory:** [`0x7d1EDa469a4b6BFe4DB07fABC75da65F2b90DE6E`](https://goerli.lineascan.build/address/0x7d1EDa469a4b6BFe4DB07fABC75da65F2b90DE6E)
-* **KSZap:** [`0x12731092dD6215872C5850b3782A07b6e3E15c9C`](https://goerli.lineascan.build/address/0x12731092dD6215872C5850b3782A07b6e3E15c9C)
-
-</details>
 
 <details>
 

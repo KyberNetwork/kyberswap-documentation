@@ -1,5 +1,5 @@
 ---
-description: 14+ Chains, 70+ DEXs, and we're just getting started...
+description: 15+ Chains, 70+ DEXs, and we're just getting started...
 ---
 
 # Supported Exchanges And Networks
@@ -66,7 +66,7 @@ Decentralized Exchanges:
 * [MDEX ](https://mdex.com/#/)
 * [Nerve](https://nerve.fi/)&#x20;
 * [OneSwap ](https://www.oneswap.net/)
-* [PancakeSwap](https://pancakeswap.finance/)
+* [PancakeSwap V2](https://pancakeswap.finance/)
 * [PancakeSwap V3](https://pancakeswap.finance/swap)
 * [PancakeSwap (legacy) ](https://pancakeswap.finance/)
 * PantherSwap (!)
@@ -181,34 +181,6 @@ Aggregators:
 
 <details>
 
-<summary><img src="../.gitbook/assets/Fantom_Chain_Negative.png" alt="" data-size="line">   Fantom (ChainID: 250)</summary>
-
-Decentralized Exchanges:
-
-* [KyberSwap](https://kyberswap.com/)
-* [Beethoven X ](https://beets.fi/)
-* [Curve ](https://curve.fi/)
-* [Fraxswap](https://app.frax.finance/swap/main)
-* [JetSwap ](https://jetswap.finance/)
-* [Morpheus ](https://www.morpheusswap.app/)
-* [PaintSwap ](https://paintswap.finance/)
-* [Saddle ](https://saddle.exchange/#/)
-* [SpiritSwap ](https://www.spiritswap.finance/home)
-* [SpookySwap ](https://spooky.fi/#/)
-* [SushiSwap](https://www.sushi.com/swap)
-* [Synapse ](https://synapseprotocol.com/)
-
-Aggregators:
-
-* [KyberSwap](https://kyberswap.com/swap)
-* [0x](https://0x.org/docs/0x-swap-api/introduction)
-* [1inch](https://app.1inch.io/)
-* [Paraswap](https://app.paraswap.io/)
-
-</details>
-
-<details>
-
 <summary><img src="../.gitbook/assets/Avalanche_Chain_Negative.png" alt="" data-size="line">   Avalanche (ChainID: 43114)</summary>
 
 Decentralized Exchanges:
@@ -234,23 +206,6 @@ Aggregators:
 * [0x](https://0x.org/docs/0x-swap-api/introduction)
 * [1inch](https://app.1inch.io/)
 * [Paraswap](https://app.paraswap.io/)
-
-</details>
-
-<details>
-
-<summary><img src="../.gitbook/assets/ZkSync_logo.png" alt="">   zkSync Era*` (ChainID: 324)</summary>
-
-Decentralized Exchanges:
-
-* [KyberSwap](https://kyberswap.com/)
-* [Mute.Switch](https://app.mute.io/swap)
-* [SyncSwap](https://syncswap.xyz/)
-* [Velocore](https://app.velocore.xyz/swap)
-
-Aggregators:
-
-* [KyberSwap](https://kyberswap.com/swap)
 
 </details>
 
@@ -299,17 +254,45 @@ Decentralized Exchanges:
 
 <details>
 
-<summary><img src="../.gitbook/assets/Velas_Chain_Negative.png" alt="" data-size="line">   Velas* (ChainID: 106)</summary>
+<summary><img src="../.gitbook/assets/ZkSync_logo.png" alt="">   zkSync Era*` (ChainID: 324)</summary>
 
 Decentralized Exchanges:
 
 * [KyberSwap](https://kyberswap.com/)
-* [AstroSwap](https://exchange.astroswap.app/swap)
-* [WagyuSwap](https://exchange.wagyuswap.app/swap)
+* [Mute.Switch](https://app.mute.io/swap)
+* [SyncSwap](https://syncswap.xyz/)
+* [Velocore](https://app.velocore.xyz/swap)
 
 Aggregators:
 
 * [KyberSwap](https://kyberswap.com/swap)
+
+</details>
+
+<details>
+
+<summary><img src="../.gitbook/assets/Fantom_Chain_Negative.png" alt="" data-size="line">   Fantom (ChainID: 250)</summary>
+
+Decentralized Exchanges:
+
+* [KyberSwap](https://kyberswap.com/)
+* [Beethoven X ](https://beets.fi/)
+* [Curve ](https://curve.fi/)
+* [Fraxswap](https://app.frax.finance/swap/main)
+* [JetSwap ](https://jetswap.finance/)
+* [Morpheus ](https://www.morpheusswap.app/)
+* [PaintSwap ](https://paintswap.finance/)
+* [Saddle ](https://saddle.exchange/#/)
+* [SpiritSwap ](https://www.spiritswap.finance/home)
+* [SpookySwap ](https://spooky.fi/#/)
+* [SushiSwap](https://www.sushi.com/swap)
+* [Synapse ](https://synapseprotocol.com/)
+
+Aggregators:
+
+* [KyberSwap](https://kyberswap.com/swap)
+* [0x](https://0x.org/docs/0x-swap-api/introduction)
+* [1inch](https://app.1inch.io/)
 * [Paraswap](https://app.paraswap.io/)
 
 </details>
@@ -336,6 +319,53 @@ Aggregators:
 
 <details>
 
+<summary><img src="../.gitbook/assets/Linea.png" alt="" data-size="line">   Linea* (ChainID: 59144)</summary>
+
+Decentralized Exchanges:
+
+* [EchoDEX](https://www.echodex.io/swap)
+* [PancakeSwap V2](https://pancakeswap.finance/)
+* [SyncSwap](https://syncswap.xyz/)
+
+Aggregators:
+
+* [KyberSwap](https://kyberswap.com/swap)
+
+</details>
+
+<details>
+
+<summary><img src="../.gitbook/assets/BitTorrentChain_Chain_Negative.png" alt="" data-size="line">   BitTorrent Chain* (ChainID: 199)</summary>
+
+Decentralized Exchanges:
+
+* [KyberSwap](https://kyberswap.com/)
+
+Aggregators:
+
+* [KyberSwap](https://kyberswap.com/swap)
+
+</details>
+
+<details>
+
+<summary><img src="../.gitbook/assets/Velas_Chain_Negative.png" alt="" data-size="line">   Velas* (ChainID: 106)</summary>
+
+Decentralized Exchanges:
+
+* [KyberSwap](https://kyberswap.com/)
+* [AstroSwap](https://exchange.astroswap.app/swap)
+* [WagyuSwap](https://exchange.wagyuswap.app/swap)
+
+Aggregators:
+
+* [KyberSwap](https://kyberswap.com/swap)
+* [Paraswap](https://app.paraswap.io/)
+
+</details>
+
+<details>
+
 <summary><img src="../.gitbook/assets/Oasis_Chain_Negative.png" alt="" data-size="line">   Oasis* (ChainID: 42262)</summary>
 
 Decentralized Exchanges:
@@ -351,20 +381,6 @@ Aggregators:
 
 * [KyberSwap](https://kyberswap.com/swap)
 * [Paraswap](https://app.paraswap.io/)
-
-</details>
-
-<details>
-
-<summary><img src="../.gitbook/assets/BitTorrentChain_Chain_Negative.png" alt="" data-size="line">   BitTorrent Chain* (ChainID: 199)</summary>
-
-Decentralized Exchanges:
-
-* [KyberSwap](https://kyberswap.com/)
-
-Aggregators:
-
-* [KyberSwap](https://kyberswap.com/swap)
 
 </details>
 

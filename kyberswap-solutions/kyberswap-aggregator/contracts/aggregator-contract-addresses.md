@@ -46,25 +46,9 @@ All KyberSwap Aggregator contracts have been deployed at the same address across
 
 <details>
 
-<summary>Fantom (ChainID: 250)</summary>
-
-* **MetaAggregationRouterV2:** [`0x6131B5fae19EA4f9D964eAc0408E4408b66337b5`](https://ftmscan.com/address/0x6131B5fae19EA4f9D964eAc0408E4408b66337b5)
-
-</details>
-
-<details>
-
 <summary>Avalanche (ChainID: 43114)</summary>
 
 * **MetaAggregationRouterV2:** [`0x6131B5fae19EA4f9D964eAc0408E4408b66337b5`](https://snowtrace.io/address/0x6131B5fae19EA4f9D964eAc0408E4408b66337b5)
-
-</details>
-
-<details>
-
-<summary>zkSync Era (ChainID: 324)</summary>
-
-* **MetaAggregationRouterV2:** [`0x3F95eF3f2eAca871858dbE20A93c01daF6C2e923`](https://explorer.zksync.io/address/0x3F95eF3f2eAca871858dbE20A93c01daF6C2e923)
 
 </details>
 
@@ -78,9 +62,17 @@ All KyberSwap Aggregator contracts have been deployed at the same address across
 
 <details>
 
-<summary>Velas (ChainID: 106)</summary>
+<summary>zkSync Era (ChainID: 324)</summary>
 
-* **MetaAggregationRouterV2:** [`0x6131B5fae19EA4f9D964eAc0408E4408b66337b5`](https://evmexplorer.velas.com/address/0x6131B5fae19EA4f9D964eAc0408E4408b66337b5)
+* **MetaAggregationRouterV2:** [`0x3F95eF3f2eAca871858dbE20A93c01daF6C2e923`](https://explorer.zksync.io/address/0x3F95eF3f2eAca871858dbE20A93c01daF6C2e923)
+
+</details>
+
+<details>
+
+<summary>Fantom (ChainID: 250)</summary>
+
+* **MetaAggregationRouterV2:** [`0x6131B5fae19EA4f9D964eAc0408E4408b66337b5`](https://ftmscan.com/address/0x6131B5fae19EA4f9D964eAc0408E4408b66337b5)
 
 </details>
 
@@ -94,9 +86,9 @@ All KyberSwap Aggregator contracts have been deployed at the same address across
 
 <details>
 
-<summary>Oasis (ChainID: 42262)</summary>
+<summary>Linea (ChainID: 59144)</summary>
 
-* **MetaAggregationRouterV2:** [`0x6131B5fae19EA4f9D964eAc0408E4408b66337b5`](https://explorer.emerald.oasis.dev/address/0x6131B5fae19EA4f9D964eAc0408E4408b66337b5/transactions)
+* **MetaAggregationRouterV2:** [`0x6131B5fae19EA4f9D964eAc0408E4408b66337b5`](https://explorer.linea.build/address/0x6131B5fae19EA4f9D964eAc0408E4408b66337b5)
 
 </details>
 
@@ -108,12 +100,18 @@ All KyberSwap Aggregator contracts have been deployed at the same address across
 
 </details>
 
-## Testnet
+<details>
+
+<summary>Velas (ChainID: 106)</summary>
+
+* **MetaAggregationRouterV2:** [`0x6131B5fae19EA4f9D964eAc0408E4408b66337b5`](https://evmexplorer.velas.com/address/0x6131B5fae19EA4f9D964eAc0408E4408b66337b5)
+
+</details>
 
 <details>
 
-<summary>Linea Testnet (ChainID: 59140)</summary>
+<summary>Oasis (ChainID: 42262)</summary>
 
-* **MetaAggregationRouterV2:** [`0xcd9478E0533F6108A036389A4C24E11f191B54D8`](https://goerli.lineascan.build/address/0xcd9478E0533F6108A036389A4C24E11f191B54D8)
+* **MetaAggregationRouterV2:** [`0x6131B5fae19EA4f9D964eAc0408E4408b66337b5`](https://explorer.emerald.oasis.dev/address/0x6131B5fae19EA4f9D964eAc0408E4408b66337b5/transactions)
 
 </details>
