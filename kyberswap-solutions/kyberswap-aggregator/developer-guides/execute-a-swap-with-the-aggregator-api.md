@@ -6,12 +6,9 @@ description: Interacting With KyberSwap Aggregator Router Contract
 
 ## Overview
 
-As the KyberSwap Aggregator has been deployed on Solana, KyberSwap maintains 2 different [API specifications](../aggregator-api-specification/):
+KyberSwap maintains a single API specification for all EVM chains:
 
 * [Swap API specs for EVM chains](../aggregator-api-specification/evm-swaps.md)
-* [Swap API specs for Solana](../aggregator-api-specification/solana-swaps.md)
-
-This guide focuses on calling the Aggregator APIs for [EVM chains](../aggregator-api-specification/evm-swaps.md) but the same principles apply to the [Solana](../aggregator-api-specification/solana-swaps.md) variant.&#x20;
 
 {% hint style="info" %}
 #### KyberSwap Aggregator APIv2

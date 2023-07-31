@@ -1,5 +1,5 @@
 ---
-description: 15+ Chains, 70+ DEXs, and we're just getting started...
+description: 14+ Chains, 70+ DEXs, and we're just getting started...
 ---
 
 # Supported Exchanges And Networks
@@ -233,27 +233,6 @@ Aggregators:
 
 <details>
 
-<summary><img src="../.gitbook/assets/Solana_Chain_Negative.png" alt="" data-size="line">   Solana^*</summary>
-
-Decentralized Exchanges:
-
-* [KyberSwap](https://kyberswap.com/)
-* [Dooar](https://beta.dooar.com/swap/solana)&#x20;
-* [GooseFX ](https://app.goosefx.io/swap)
-* [Lifinity (v1) ](https://lifinity.io/swap/)
-* [Lifinity (v2) ](https://lifinity.io/swap/)
-* Mercurial (Renamed to [Meteora](https://app.meteora.ag/))
-* [Openbook](https://www.openbook-solana.com/)
-* [Orca (v2)](https://www.orca.so/pools)
-* [Orca Whirlpool ](https://www.orca.so/whirlpools/browse)
-* [Raydium ](https://raydium.io/swap?inputCurrency=sol\&outputCurrency=4k3Dyjzvzp8eMZWUXbBCjEvwSkkk59S5iCNLY3QrkX6R\&fixed=in)
-* [Raydium CLMM ](https://raydium.io/clmm/pools)
-* [Saber](https://app.saber.so/swap)
-
-</details>
-
-<details>
-
 <summary><img src="../.gitbook/assets/ZkSync_logo.png" alt="">   zkSync Era*` (ChainID: 324)</summary>
 
 Decentralized Exchanges:
@@ -383,8 +362,6 @@ Aggregators:
 * [Paraswap](https://app.paraswap.io/)
 
 </details>
-
-_^ KyberSwap currently only supports trading on Solana via the KyberSwap Aggregator_
 
 _\* Denotes chains where KyberSwap Limit Order have yet to be deployed on_
 

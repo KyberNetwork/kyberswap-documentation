@@ -76,6 +76,6 @@ Once confirmed, you should be able to see the same wallet account being reflecte
 
 ## Funding your wallet
 
-To ensure the security of the network, all transactions on a public blockchain (i.e. Ethereum, Polygon, Solana, etc.) requires a small fee to be paid in return for being processed by the network. Fees are paid in the selected chain's [native currency](../../../getting-started/foundational-topics/decentralized-finance/tokens.md#coins-vs-tokens) (i.e. ETH on Ethereum, Matic on Polygon, SOL on Solana, etc.) and does not go towards KyberSwap.&#x20;
+To ensure the security of the network, all transactions on a public blockchain (i.e. Ethereum, Polygon, etc.) requires a small fee to be paid in return for being processed by the network. Fees are paid in the selected chain's [native currency](../../../getting-started/foundational-topics/decentralized-finance/tokens.md#coins-vs-tokens) (i.e. ETH on Ethereum, MATIC on Polygon, etc.) and does not go towards KyberSwap.&#x20;
 
 If you do not have the required funds, you will first need to purchase some from a centralised exchange before sending it to your wallet address. Feel free to reach out to the KyberSwap team on [Discord](https://discord.gg/NB3vc8J9uv) if you have further questions.&#x20;

@@ -60,7 +60,6 @@
     * [Upgrading To APIv1](kyberswap-solutions/kyberswap-aggregator/developer-guides/upgrading-to-apiv1.md)
   * [Aggregator API Specification](kyberswap-solutions/kyberswap-aggregator/aggregator-api-specification/README.md)
     * [EVM Swaps](kyberswap-solutions/kyberswap-aggregator/aggregator-api-specification/evm-swaps.md)
-    * [Solana Swaps](kyberswap-solutions/kyberswap-aggregator/aggregator-api-specification/solana-swaps.md)
   * [Contracts](kyberswap-solutions/kyberswap-aggregator/contracts/README.md)
     * [Aggregator Contract Addresses](kyberswap-solutions/kyberswap-aggregator/contracts/aggregator-contract-addresses.md)
   * [DEX IDs](kyberswap-solutions/kyberswap-aggregator/dex-ids.md)
