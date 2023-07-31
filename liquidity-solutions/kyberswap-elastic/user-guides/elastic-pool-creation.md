@@ -63,13 +63,17 @@ This is due to a small portion of the provided liquidity being allocated to meet
 Notice that upon selecting the token pair, the current market price is also displayed for reference. Additionally, when creating a new pool, a small amount of liquidity will be needed to seed the pool's liquidity in order to [prevent spam](../concepts/pool-process-flows.md#pool-unlocking--initialization).
 
 {% hint style="warning" %}
-#### Fee-on-transfer tokens
+#### Non-standard tokens
 
-Certain ERC20 token smart contracts implement a fee-on-transfer (FOT) mechanism whereby for every token transfer, a percentage of the tokens are burned or distributed to various wallets.&#x20;
+As a permissionless protocol, KyberSwap enables users to provide liquidity and market make for any token implementing the [ERC20](https://docs.openzeppelin.com/contracts/4.x/erc20) interface. While this standard interface enables interoperability between various DeFi protocols (including KyberSwap), token teams are still able to specify customized token mechanics (i.e. supply/demand, tokenomics, etc.) which could result in unexpected outcomes.
 
-To ensure the safety of our user's funds as well as avoid any unexpected outcomes, KyberSwap Elastic does not support FOT tokens. All KyberSwap Elastic transactions involving any FOT token will be failed as a safety precaution.
+Note that the token mechanics are specified as part of the token's smart contract hence KyberSwap does not have any control over specific token implementations. Some examples of non-standard tokens are:
 
-Note that the FOT tax is specified in the FOT token's smart contract (i.e. the FOT token team) hence KyberSwap does not have any control over the FOT mechanism. Users are advised to trade such tokens at their own risk as KyberSwap was optimized to handle the standard ERC20 implementation.
+* **Fee-on-transfer (FOT)**: For every token transfer, a percentage of the tokens are burned or distributed to various wallets.&#x20;
+* **Rebase**: Token supply is adjusted periodically to maintain price stability.
+* **LP**: Tokens representing a proportional claim of a liquidity pool's assets.
+
+To ensure the safety of our user's funds, KyberSwap Elastic does not support non-standard tokens. Please do your own research before providing liquidity using such tokens as KyberSwap was optimized to handle the standard ERC20 implementation.
 {% endhint %}
 
 ### **Step 3:** Select fee tier
