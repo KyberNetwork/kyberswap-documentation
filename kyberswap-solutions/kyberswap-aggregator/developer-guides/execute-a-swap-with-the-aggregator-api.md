@@ -11,7 +11,7 @@ KyberSwap maintains a single API specification for all EVM chains:
 * [Swap API specs for EVM chains](../aggregator-api-specification/evm-swaps.md)
 
 {% hint style="info" %}
-#### KyberSwap Aggregator APIv2
+#### KyberSwap Aggregator APIv1
 
 Following feedback on the initial non-versioned API, KyberSwap has implemented a more performant `[V1]` API which improves the response time for getting a route via offloading encoding requirements to the post method.
 
@@ -24,7 +24,7 @@ Please use the `[V1]GET` API for more efficient route queries. The returned rout
 
 ## Sequence diagram
 
-<figure><img src="../../../.gitbook/assets/Aggregator APIv2-APIv2.png" alt=""><figcaption><p>APIv2 sequence diagram</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Aggregator APIv1.jpg" alt=""><figcaption><p>APIv1 sequence diagram</p></figcaption></figure>
 
 To execute a swap, the router (`MetaAggregationRouterV2`) contract requires the encoded swap data to be included as part of the transaction. This encoded swap data as well as other swap metadata are returned as part of the API response. As such, developers are expected to call the swap API prior to sending a transaction to the router contract.
 
