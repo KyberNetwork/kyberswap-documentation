@@ -18,19 +18,19 @@ As part of the APIv1 upgrade, querying of the route data and the encoded data ha
 
 Due to this functional separation, applications have more flexibility when handling route refreshes prior to user confirming the swap route. For example, if rates need to be refreshed, the application will just have to query the APIv1 [`GET`](../aggregator-api-specification/evm-swaps.md#chain-api-v1-routes) endpoint which will return just the route summary. As the encoded data does not have to be processed at this stage, responses are much faster and redundant encodings are avoided.
 
-Moreover, given the reduced latency for each call in APIv2, this reduces the likelihood that the returned data will be stale hence mitigating transaction failure risks. Routes are secured (i.e. "locked-in") via the APIv1 [`POST`](../aggregator-api-specification/evm-swaps.md#chain-api-v1-route-build) which returns the encoded data to be sent to the [`MetaAggregationRouterV2`](../contracts/aggregator-contract-addresses.md) contract.
+Moreover, given the reduced latency for each call in APIv1, this reduces the likelihood that the returned data will be stale hence mitigating transaction failure risks. Routes are secured (i.e. "locked-in") via the APIv1 [`POST`](../aggregator-api-specification/evm-swaps.md#chain-api-v1-route-build) which returns the encoded data to be sent to the [`MetaAggregationRouterV2`](../contracts/aggregator-contract-addresses.md) contract.
 
 ### Non-versioned API swap flow
 
 Route and encoded data returned in single `GET` call.
 
-<figure><img src="../../../.gitbook/assets/Aggregator APIv2-APIv1.drawio (3).png" alt=""><figcaption><p>APIv1 sequence diagram</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/AggregatorAPI_NV.jpg" alt=""><figcaption><p>Non-Versioned API sequence diagram</p></figcaption></figure>
 
 ### APIv1 swap flow
 
 Route summary returned in `GET` response and encoded data returned in `POST` response.
 
-<figure><img src="../../../.gitbook/assets/Aggregator APIv2-APIv2.drawio.png" alt=""><figcaption><p>APIv2 sequence diagram</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Aggregator APIv1.jpg" alt=""><figcaption><p>APIv1 sequence diagram</p></figcaption></figure>
 
 ## Field mappings
 
