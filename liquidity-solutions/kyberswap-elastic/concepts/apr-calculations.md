@@ -17,6 +17,16 @@ As each liquidity position in Elastic is non-fungible, different formulas are re
 * [**My Static Farm APR**](apr-calculations.md#my-static-farm-apr-calculation): The expected APR of a position staked in the Static Farm. Rewards are distributed based on the farming shares which the position has accumulated.
 {% endhint %}
 
+{% hint style="success" %}
+#### Choosing The Best Range To Maximize LP Returns
+
+<img src="../../../.gitbook/assets/PositionRangesAndAPR_Tease.jpg" alt="" data-size="original">
+
+A LPs returns are heavily dependent on the [position range selected](../user-guides/add-liquidity-to-an-existing-elastic-pool.md#step-4-set-your-price-range) for [concentrated liquidity](concentrated-liquidity.md) protocols such as KyberSwap Elastic. To help you maximize your potential returns, [KyberSwap Insights](https://blog.kyberswap.com/learn/insights-en/) has created a simple flow diagram which walks you through each of the key decision points when determining a position range which best suites your risk-adjusted return preferences.
+
+View and interact with the full diagram in greater detail [here](https://blog.kyberswap.com/choosing-the-best-range-to-maximize-lp-returns-flow-chart/).&#x20;
+{% endhint %}
+
 ## Elastic Pool Annual Percentage Rate (APR) calculation[​](https://docs.kyberswap.com/overview/elastic-pool-apr-calculation#annual-percentage-rate-apr-calculation) <a href="#annual-percentage-rate-apr-calculation" id="annual-percentage-rate-apr-calculation"></a>
 
 To demonstrate the practicality of the [reinvestment curve design](https://docs.kyberswap.com/overview/elastic-walkthrough), KyberSwap also displays an average APR for each Elastic pool. In order to provide a more accurate estimate of potential APR, the average APR calculation will have to prioritize active liquidity positions which were accumulating fees during a selected time interval. As such, APR calculations are based on the historical data for the selected pool. KyberSwap Elastic APR calculations are based on 30 minute intervals whereby the return per interval is:

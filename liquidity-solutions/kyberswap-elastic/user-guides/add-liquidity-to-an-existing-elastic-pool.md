@@ -82,6 +82,16 @@ For a list of fee tiers and their recommended applications, please refer to [Fee
 
 This is the range at which your capital will be used in the pool. If the market price moves outside the range your capital will not be used and will not earn any fees.
 
+{% hint style="success" %}
+#### Choosing The Best Range To Maximize LP Returns
+
+<img src="../../../.gitbook/assets/PositionRangesAndAPR_Tease.jpg" alt="" data-size="original">
+
+A LPs returns are heavily dependent on the [position range selected](add-liquidity-to-an-existing-elastic-pool.md#step-4-set-your-price-range) for [concentrated liquidity](../concepts/concentrated-liquidity.md) protocols such as KyberSwap Elastic. To help you maximize your potential returns, [KyberSwap Insights](https://blog.kyberswap.com/learn/insights-en/) has created a simple flow diagram which walks you through each of the key decision points when determining a position range which best suites your risk-adjusted return preferences.
+
+View and interact with the full diagram in greater detail [here](https://blog.kyberswap.com/choosing-the-best-range-to-maximize-lp-returns-flow-chart/).&#x20;
+{% endhint %}
+
 You can set your price range either using the sliders or by typing in prices manually.
 
 ![Select price range](https://support.kyberswap.com/hc/article\_attachments/14197115971993)

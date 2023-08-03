@@ -10,6 +10,16 @@ Concentrated liquidity enables LPs to allocate liquidity towards customized pric
 
 Concentrated liquidity is the next step in AMM advancement which enables LPs to engage in more fine-tuned liquidity provisioning strategies. To see why this is the case, it is crucial to understand how the AMM space has evolved in accordance to capital efficiency demands.
 
+{% hint style="success" %}
+#### Choosing The Best Range To Maximize LP Returns
+
+<img src="../../../.gitbook/assets/PositionRangesAndAPR_Tease.jpg" alt="" data-size="original">
+
+A LPs returns are heavily dependent on the [position range selected](../user-guides/add-liquidity-to-an-existing-elastic-pool.md#step-4-set-your-price-range) for [concentrated liquidity](concentrated-liquidity.md) protocols such as KyberSwap Elastic. To help you maximize your potential returns, [KyberSwap Insights](https://blog.kyberswap.com/learn/insights-en/) has created a simple flow diagram which walks you through each of the key decision points when determining a position range which best suites your risk-adjusted return preferences.
+
+View and interact with the full diagram in greater detail [here](https://blog.kyberswap.com/choosing-the-best-range-to-maximize-lp-returns-flow-chart/).&#x20;
+{% endhint %}
+
 ## The evolution of AMMs
 
 ### Basic price curve with infinite price range&#x20;
