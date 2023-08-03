@@ -24,6 +24,7 @@ Decentralized Exchanges:
 
 * [KyberSwap](https://kyberswap.com/)
 * [Balancer](https://app.balancer.fi/#/)
+* [Balancer Composable](https://app.balancer.fi/#/)&#x20;
 * [Curve (3pool, aave, saave, hbtc, ren, sbtc, eurs, link)](https://curve.fi/#/ethereum/swap)
 * [DefiSwap](https://defiswap.io/en/swap)
 * [DODO (v2)](https://app.dodoex.io/)
@@ -91,8 +92,10 @@ Decentralized Exchanges:
 
 * [KyberSwap](https://kyberswap.com/)
 * [Balancer](https://app.balancer.fi/#/)
+* [Balancer Composable](https://app.balancer.fi/#/)&#x20;
 * [Camelot](https://app.camelot.exchange/)
 * [Chronos](https://app.chronos.exchange/)
+* [Chronos (v3)](https://app.chronos.exchange/?\_ga=2.47683175.1996768785.1691101109-2022647424.1691101109&\_gl=1\*126av9l\*\_ga\*MjAyMjY0NzQyNC4xNjkxMTAxMTA5\*\_ga\_ZZMYQC3ZN0\*MTY5MTEwMTEwOS4xLjEuMTY5MTEwMTExNi4wLjAuMA..\*\_ga\_12W2RDY62R\*MTY5MTEwMTEwOS4xLjEuMTY5MTEwMTExNi4wLjAuMA..)
 * [Curve ](https://curve.fi/)
 * [DODO (v2)](https://app.dodoex.io/)
 * [Fraxswap](https://app.frax.finance/swap/main)
@@ -122,6 +125,7 @@ Decentralized Exchanges:
 * [KyberSwap](https://kyberswap.com/)
 * [ApeSwap](https://apeswap.finance/)
 * [Balancer](https://app.balancer.fi/#/)
+* [Balancer Composable](https://app.balancer.fi/#/)&#x20;
 * [Balancer MetaStable](https://dev.balancer.fi/resources/deploy-pools-from-factory/creation/metastable-pool)
 * [Cometh ](https://swap.cometh.io/#/swap)
 * [Curve ](https://curve.fi/)
@@ -302,7 +306,9 @@ Aggregators:
 
 Decentralized Exchanges:
 
+* [KyberSwap](https://kyberswap.com/swap)
 * [EchoDEX](https://www.echodex.io/swap)
+* [HorizonDEX](https://app.horizondex.io/swap)
 * [PancakeSwap V2](https://pancakeswap.finance/)
 * [SyncSwap](https://syncswap.xyz/)
 
