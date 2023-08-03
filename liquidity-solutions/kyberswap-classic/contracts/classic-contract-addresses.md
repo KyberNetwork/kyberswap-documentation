@@ -206,6 +206,18 @@ description: Liquidity Mining Across Multiple Chains
 
 <details>
 
+<summary>Linea (ChainID: 59144)</summary>
+
+**Static Fee**
+
+* **KSRouter**: [`0x5649B4DD00780e99Bab7Abb4A3d581Ea1aEB23D0`](https://explorer.linea.build/address/0x5649B4DD00780e99Bab7Abb4A3d581Ea1aEB23D0)
+* **KSFactory**: [`0x1c758aF0688502e49140230F6b0EBd376d429be5`](https://explorer.linea.build/address/0x1c758aF0688502e49140230F6b0EBd376d429be5)
+* **ZapInV2**: [`0x2abE8750e4a65584d7452316356128C936273e0D`](https://explorer.linea.build/address/0x5649B4DD00780e99Bab7Abb4A3d581Ea1aEB23D0)
+
+</details>
+
+<details>
+
 <summary>Aurora (ChainID: 1313161554)</summary>
 
 #### Static Fee

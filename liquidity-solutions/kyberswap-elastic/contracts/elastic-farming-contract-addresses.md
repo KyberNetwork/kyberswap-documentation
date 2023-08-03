@@ -60,6 +60,15 @@ description: Additional Rewards Across Multiple Chains
 
 </details>
 
+<details>
+
+<summary>Linea (ChainID: 59144)</summary>
+
+* **KyberSwapElasticLM**: [`0x7D5ba536ab244aAA1EA42aB88428847F25E3E676`](https://explorer.linea.build/address/0x7D5ba536ab244aAA1EA42aB88428847F25E3E676)
+* **KSElasticLMHelper**: [`0x6AFeb9EDd6Cf44fA8E89b1eee28284e6dD7705C8`](https://explorer.linea.build/address/0x6AFeb9EDd6Cf44fA8E89b1eee28284e6dD7705C8)
+
+</details>
+
 ## Static Farms
 
 <details>
@@ -118,5 +127,14 @@ description: Additional Rewards Across Multiple Chains
 * **KSElasticLMV2 (v1.1.1):** [`0x3D6AfE2fB73fFEd2E3dD00c501A174554e147a43`](https://snowtrace.io/address/0x3D6AfE2fB73fFEd2E3dD00c501A174554e147a43)
 * **KSElasticLMV2 (v1.1.0)**: [`0xA70a1Ad0F91c52c79e177c5A18a7C9E1C4360e0e`](https://snowtrace.io/address/0xA70a1Ad0F91c52c79e177c5A18a7C9E1C4360e0e)&#x20;
 * **KSElasticLMHelper**: [`0x6AFeb9EDd6Cf44fA8E89b1eee28284e6dD7705C8`](https://snowtrace.io/address/0x6AFeb9EDd6Cf44fA8E89b1eee28284e6dD7705C8)
+
+</details>
+
+<details>
+
+<summary>Linea (ChainID: 59144)</summary>
+
+* **KSElasticLMV2 (v1.1.1):** [`0x3D6AfE2fB73fFEd2E3dD00c501A174554e147a43`](https://explorer.linea.build/address/0x3D6AfE2fB73fFEd2E3dD00c501A174554e147a43)
+* **KSElasticLMHelper**: [`0x6AFeb9EDd6Cf44fA8E89b1eee28284e6dD7705C8`](https://explorer.linea.build/address/0x6AFeb9EDd6Cf44fA8E89b1eee28284e6dD7705C8)
 
 </details>
