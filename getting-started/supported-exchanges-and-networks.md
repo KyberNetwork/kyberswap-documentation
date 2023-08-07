@@ -23,13 +23,14 @@ For developers integrating with the [KyberSwap Aggregator](../kyberswap-solution
 Decentralized Exchanges:
 
 * [KyberSwap](https://kyberswap.com/)
-* [Balancer](https://app.balancer.fi/#/)
+* [Balancer Weighted](https://app.balancer.fi/#/)
 * [Balancer Composable](https://app.balancer.fi/#/)&#x20;
 * [Curve (3pool, aave, saave, hbtc, ren, sbtc, eurs, link)](https://curve.fi/#/ethereum/swap)
 * [DefiSwap](https://defiswap.io/en/swap)
 * [DODO (v2)](https://app.dodoex.io/)
 * [Fraxswap](https://app.frax.finance/swap/main)
 * [Lido stETH](https://stake.lido.fi/)
+* [Lido wstETH](https://stake.lido.fi/)
 * [Maker PSM](https://mips.makerdao.com/mips/details/MIP29)
 * [PancakeSwap V3](https://pancakeswap.finance/swap)
 * [Saddle](https://saddle.exchange/#/)
@@ -91,8 +92,7 @@ Aggregators:
 Decentralized Exchanges:
 
 * [KyberSwap](https://kyberswap.com/)
-* [Balancer](https://app.balancer.fi/#/)
-* [Balancer Composable](https://app.balancer.fi/#/)&#x20;
+* [Balancer Weighted](https://app.balancer.fi/#/)
 * [Camelot](https://app.camelot.exchange/)
 * [Chronos](https://app.chronos.exchange/)
 * [Chronos (v3)](https://app.chronos.exchange/?\_ga=2.47683175.1996768785.1691101109-2022647424.1691101109&\_gl=1\*126av9l\*\_ga\*MjAyMjY0NzQyNC4xNjkxMTAxMTA5\*\_ga\_ZZMYQC3ZN0\*MTY5MTEwMTEwOS4xLjEuMTY5MTEwMTExNi4wLjAuMA..\*\_ga\_12W2RDY62R\*MTY5MTEwMTEwOS4xLjEuMTY5MTEwMTExNi4wLjAuMA..)
@@ -124,10 +124,9 @@ Decentralized Exchanges:
 
 * [KyberSwap](https://kyberswap.com/)
 * [ApeSwap](https://apeswap.finance/)
-* [Balancer](https://app.balancer.fi/#/)
+* [Balancer Weighted](https://app.balancer.fi/#/)
 * [Balancer Composable](https://app.balancer.fi/#/)&#x20;
-* [Balancer MetaStable](https://dev.balancer.fi/resources/deploy-pools-from-factory/creation/metastable-pool)
-* [Cometh ](https://swap.cometh.io/#/swap)
+* [ComethSwap ](https://swap.cometh.io/#/swap)
 * [Curve ](https://curve.fi/)
 * [DFYN ](https://exchange.dfyn.network/#/swap)
 * [DinoSwap ](https://dinoswap.exchange/)
@@ -138,7 +137,8 @@ Decentralized Exchanges:
 * [Gravity](https://gravityfinance.io/dashboard)&#x20;
 * [Iron-stable](https://app.iron.finance/) (!)
 * [JetSwap ](https://jetswap.finance/)
-* [MadMex ](https://madmex.io/#/trade)
+* [MadMex](https://madmex.io/#/trade)
+* [MMF](https://mm.finance/swap)[ ](https://madmex.io/#/trade)
 * [MetaVault ](https://app.metavault.trade/#/trade)
 * [OneSwap ](https://www.oneswap.net/)
 * [Polycat ](https://polycat.finance/)
@@ -262,10 +262,11 @@ Decentralized Exchanges:
 
 * [KyberSwap](https://kyberswap.com/)
 * [Beethoven X ](https://beets.fi/)
-* [Curve ](https://curve.fi/)
+* [Curve](https://curve.fi/)
 * [Fraxswap](https://app.frax.finance/swap/main)
+* [FVM](https://www.fvm.exchange/swap)
 * [JetSwap ](https://jetswap.finance/)
-* [Morpheus ](https://www.morpheusswap.app/)
+* [MorpheusSwap ](https://www.morpheusswap.app/)
 * [PaintSwap ](https://paintswap.finance/)
 * [Saddle ](https://saddle.exchange/#/)
 * [SpiritSwap ](https://www.spiritswap.finance/home)
