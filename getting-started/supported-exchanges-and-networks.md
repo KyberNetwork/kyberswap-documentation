@@ -1,5 +1,5 @@
 ---
-description: 14+ Chains, 70+ DEXs, and we're just getting started...
+description: 14 Chains, 80+ DEXs, and we're just getting started...
 ---
 
 # Supported Exchanges And Networks
@@ -143,7 +143,9 @@ Decentralized Exchanges:
 * [OneSwap ](https://www.oneswap.net/)
 * [Polycat ](https://polycat.finance/)
 * [PolyDex](https://www.polydex.fi/)&#x20;
-* [QuickSwap ](https://quickswap.exchange/#/)
+* [QuickSwap](https://quickswap.exchange/#/)
+* [Retro](https://retro.finance/swap)
+* [Retro (v3)](https://retro.finance/swap)
 * [SushiSwap](https://www.sushi.com/swap)
 * [Synapse ](https://synapseprotocol.com/)
 * [Uniswap (v3)](https://app.uniswap.org/#/swap)
