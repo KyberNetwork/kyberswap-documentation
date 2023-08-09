@@ -141,6 +141,8 @@ Decentralized Exchanges:
 * [MMF](https://mm.finance/swap)[ ](https://madmex.io/#/trade)
 * [MetaVault ](https://app.metavault.trade/#/trade)
 * [OneSwap ](https://www.oneswap.net/)
+* [Pearl](https://www.pearl.exchange/swap)
+* [Pearl (v2)](https://www.pearl.exchange/swap)
 * [Polycat ](https://polycat.finance/)
 * [PolyDex](https://www.polydex.fi/)&#x20;
 * [QuickSwap](https://quickswap.exchange/#/)
