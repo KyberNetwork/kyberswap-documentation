@@ -71,6 +71,18 @@ Set the price by manually entering a price at the “Sell \[token] at rate”. T
 
 ![Specify price](https://support.kyberswap.com/hc/article\_attachments/14668151102489)
 
+{% hint style="info" %}
+#### Taker gas fees and filling of orders
+
+KyberSwap LO uses an [off-chain relay, on-chain settlement](../../limit-order/concepts/off-chain-relay.md) mechanism which enables makers to create orders without requiring gas fees to be paid. However, takers of an order will have to incur a gas fee to settle the order on-chain. Depending on the chain where the LO is taking place, these gas fees could result in smaller trades being unprofitable.
+
+For example, if it costs a taker 40USD in gas fees to settle an Ethereum LO on-chain, takers will unlikely execute smaller volume trades due to the transaction costs. As such, maker LOs with lower volumes will likely not be filled unless the price diverges significantly enough to justify a taker's gas fees. This effect is less pronounced on other chains where gas fees tend to be negligible.
+
+To increase the likelihood that your LO will be filled, KyberSwap UI provides a handy helper whenever it detects that the current LO volume would likely result in unfilled orders.
+
+![](../../../.gitbook/assets/LO\_UserGuide\_TakerGasFeesFillRate.png)
+{% endhint %}
+
 ### **Step 6**: Specify the time limit of your order
 
 If your order is not filled by the end of this time limit, it will be automatically cancelled. You can either select from a list of set times or specify a custom expiry time and date. Note that you can still manually cancel your order (or any unfilled portion of your order) before it expires.
