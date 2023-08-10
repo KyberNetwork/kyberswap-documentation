@@ -74,6 +74,7 @@ Decentralized Exchanges:
 * PantherSwap (!)
 * [SushiSwap](https://www.sushi.com/swap)
 * [Synapse](https://synapseprotocol.com/)
+* [Thena](https://www.thena.fi/swap)
 * Wault (!)
 
 Aggregators:
