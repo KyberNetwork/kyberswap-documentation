@@ -187,7 +187,7 @@
   * [FAQ - Others](governance/kyberdao/faq.md)
 * [KNC Token](governance/knc-token/README.md)
   * [Gas Refund Program](governance/knc-token/gas-refund-program.md)
-  * [KNC Contract Addresses](governance/kyberdao/contracts/kyberdao-contract-addresses.md)
+  * [KNC Contract Addresses](governance/knc-token/knc-contract-addresses.md)
 
 ## Reference
 
