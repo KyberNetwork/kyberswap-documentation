@@ -65,6 +65,12 @@ You can check out examples of the swap widget, and the [Figma](https://www.figma
 
 <table><thead><tr><th width="206">Properties</th><th width="161">Prop Type</th><th width="149">Example</th><th>Description</th></tr></thead><tbody><tr><td><code>primary</code></td><td><code>string</code></td><td><code>#F1FFEE</code></td><td>primary background color of swap form</td></tr><tr><td><code>secondary</code></td><td><code>string</code></td><td><code>#F1FFEE</code></td><td>secondary background color of swap form</td></tr><tr><td><code>dialog</code></td><td><code>string</code></td><td><code>#F1FFEE</code></td><td>color of dialog</td></tr><tr><td><code>borderRadius</code></td><td><code>string</code></td><td><code>30px</code></td><td>border-radius of swap form and swap button (same border-radius)</td></tr><tr><td><code>buttonRadius</code></td><td><code>string</code></td><td><code>5px</code></td><td>border-radius of swap button</td></tr><tr><td><code>stroke</code></td><td><code>string</code></td><td><code>#F1FFEE</code></td><td>color of the stroke</td></tr><tr><td><code>interactive</code></td><td><code>string</code></td><td><code>#F1FFEE</code></td><td>color of interactive button(Swap icon and token picker)</td></tr><tr><td><code>accent</code></td><td><code>string</code></td><td><code>#F1FFEE</code></td><td>swap button and link color</td></tr><tr><td><code>success</code></td><td><code>string</code></td><td><code>#F1FFEE</code></td><td>success color</td></tr><tr><td><code>warning</code></td><td><code>string</code></td><td><code>#F1FFEE</code></td><td>warning color</td></tr><tr><td><code>error</code></td><td><code>string</code></td><td><code>#F1FFEE</code></td><td>error color</td></tr><tr><td><code>text</code></td><td><code>string</code></td><td><code>#F1FFEE</code></td><td>primary text color</td></tr><tr><td><code>subtext</code></td><td><code>string</code></td><td><code>#F1FFEE</code></td><td>secondary text color</td></tr><tr><td><code>fontFamily</code></td><td><code>string</code></td><td><code>Roboto</code></td><td>font-family of Swap form</td></tr></tbody></table>
 
+## Customizing the Trade Route
+
+The KyberSwap Widget can be configured to also return the trade route by setting the `enableRoute` parameter to `true`.
+
+Moreover, you can also specify the list of DEXs which trades via the widget will be routed to using the `enableDexes` parameter. The full list of DEX IDs can be found [here](../../kyberswap-aggregator/dex-ids.md).
+
 ## Customizing the Token Lists
 
 ```javascript

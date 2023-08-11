@@ -37,6 +37,8 @@ import { Widget } from "@kyberswap/widgets";
     client="yourCompanyNameHere"
     theme={theme}
     tokenList={[]}
+    enableRoute = true
+    enableDexes="kyberswap-elastic,uniswapv3,uniswap"
     provider={ethersProvider}
     defaultTokenOut={defaultTokenOut[chainId]}
 />
