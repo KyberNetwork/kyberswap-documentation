@@ -94,7 +94,8 @@ description: Additional Rewards Across Multiple Chains
 
 <summary>Arbitrum (ChainID: 42161)</summary>
 
-* **KSElasticLMV2 (v1.1.1):** [`0x3D6AfE2fB73fFEd2E3dD00c501A174554e147a43`](https://arbiscan.io/address/0x3D6AfE2fB73fFEd2E3dD00c501A174554e147a43)
+* **KSElasticLMV2 (v1.1.1):** [`0xf2BcDf38baA52F6b0C1Db5B025DfFf01Ae1d6dBd`](https://arbiscan.io/address/0xf2BcDf38baA52F6b0C1Db5B025DfFf01Ae1d6dBd)
+* **KSElasticLMV2 (v1.1.1 - FRAX Farms):** [`0x3D6AfE2fB73fFEd2E3dD00c501A174554e147a43`](https://arbiscan.io/address/0x3D6AfE2fB73fFEd2E3dD00c501A174554e147a43)
 * **KSElasticLMV2 (v1.1.0)**: [`0xA70a1Ad0F91c52c79e177c5A18a7C9E1C4360e0e`](https://arbiscan.io/address/0xA70a1Ad0F91c52c79e177c5A18a7C9E1C4360e0e)&#x20;
 * **KSElasticLMV2 (v1.0.0)**: [`0xE44ec65521B85612fa7BC45d842645Fb4B690E4b`](https://arbiscan.io/address/0xE44ec65521B85612fa7BC45d842645Fb4B690E4b)&#x20;
 * **KSElasticLMHelper**: [`0x6AFeb9EDd6Cf44fA8E89b1eee28284e6dD7705C8`](https://arbiscan.io/address/0x6AFeb9EDd6Cf44fA8E89b1eee28284e6dD7705C8)
@@ -105,7 +106,8 @@ description: Additional Rewards Across Multiple Chains
 
 <summary>Polygon (ChainID: 137)</summary>
 
-* **KSElasticLMV2 (v1.1.1):** [`0x3D6AfE2fB73fFEd2E3dD00c501A174554e147a43`](https://polygonscan.com/address/0x3D6AfE2fB73fFEd2E3dD00c501A174554e147a43)
+* **KSElasticLMV2 (v1.1.1):** [`0xf2BcDf38baA52F6b0C1Db5B025DfFf01Ae1d6dBd`](https://polygonscan.com/address/0xf2BcDf38baA52F6b0C1Db5B025DfFf01Ae1d6dBd)
+* **KSElasticLMV2 (v1.1.1 - FRAX Farms):** [`0x3D6AfE2fB73fFEd2E3dD00c501A174554e147a43`](https://polygonscan.com/address/0x3D6AfE2fB73fFEd2E3dD00c501A174554e147a43)
 * **KSElasticLMV2 (v1.1.0)**: [`0xA70a1Ad0F91c52c79e177c5A18a7C9E1C4360e0e`](https://polygonscan.com/address/0xA70a1Ad0F91c52c79e177c5A18a7C9E1C4360e0e)&#x20;
 * **KSElasticLMHelper**: [`0x6AFeb9EDd6Cf44fA8E89b1eee28284e6dD7705C8`](https://polygonscan.com/address/0x6AFeb9EDd6Cf44fA8E89b1eee28284e6dD7705C8)
 
@@ -115,7 +117,8 @@ description: Additional Rewards Across Multiple Chains
 
 <summary>Optimism (ChainID: 10)</summary>
 
-* **KSElasticLMV2 (v1.1.1):** [`0x3D6AfE2fB73fFEd2E3dD00c501A174554e147a43`](https://optimistic.etherscan.io/address/0x3D6AfE2fB73fFEd2E3dD00c501A174554e147a43)
+* **KSElasticLMV2 (v1.1.1):** [`0xf2BcDf38baA52F6b0C1Db5B025DfFf01Ae1d6dBd`](https://optimistic.etherscan.io/address/0xf2bcdf38baa52f6b0c1db5b025dfff01ae1d6dbd)
+* **KSElasticLMV2 (v1.1.1 - FRAX Farms):** [`0x3D6AfE2fB73fFEd2E3dD00c501A174554e147a43`](https://optimistic.etherscan.io/address/0x3D6AfE2fB73fFEd2E3dD00c501A174554e147a43)
 * **KSElasticLMV2 (v1.1.0)**: [`0xA70a1Ad0F91c52c79e177c5A18a7C9E1C4360e0e`](https://optimistic.etherscan.io/address/0xA70a1Ad0F91c52c79e177c5A18a7C9E1C4360e0e)&#x20;
 * **KSElasticLMHelper**: [`0x6AFeb9EDd6Cf44fA8E89b1eee28284e6dD7705C8`](https://optimistic.etherscan.io/address/0x6AFeb9EDd6Cf44fA8E89b1eee28284e6dD7705C8)
 
@@ -125,7 +128,8 @@ description: Additional Rewards Across Multiple Chains
 
 <summary>Avalanche (ChainID: 43114)</summary>
 
-* **KSElasticLMV2 (v1.1.1):** [`0x3D6AfE2fB73fFEd2E3dD00c501A174554e147a43`](https://snowtrace.io/address/0x3D6AfE2fB73fFEd2E3dD00c501A174554e147a43)
+* **KSElasticLMV2 (v1.1.1):** [`0xf2BcDf38baA52F6b0C1Db5B025DfFf01Ae1d6dBd`](https://snowtrace.io/address/0xf2BcDf38baA52F6b0C1Db5B025DfFf01Ae1d6dBd)
+* **KSElasticLMV2 (v1.1.1 - FRAX Farms):** [`0x3D6AfE2fB73fFEd2E3dD00c501A174554e147a43`](https://snowtrace.io/address/0x3D6AfE2fB73fFEd2E3dD00c501A174554e147a43)
 * **KSElasticLMV2 (v1.1.0)**: [`0xA70a1Ad0F91c52c79e177c5A18a7C9E1C4360e0e`](https://snowtrace.io/address/0xA70a1Ad0F91c52c79e177c5A18a7C9E1C4360e0e)&#x20;
 * **KSElasticLMHelper**: [`0x6AFeb9EDd6Cf44fA8E89b1eee28284e6dD7705C8`](https://snowtrace.io/address/0x6AFeb9EDd6Cf44fA8E89b1eee28284e6dD7705C8)
 
