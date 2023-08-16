@@ -288,6 +288,23 @@ Aggregators:
 
 <details>
 
+<summary><img src="../.gitbook/assets/Polygon_Chain_Negative.png" alt="" data-size="line">   Polygon zkEVM* (ChainID: 1101)</summary>
+
+Decentralized Exchanges:
+
+* [KyberSwap Elastic](https://kyberswap.com/)
+* [Balancer Weighted](https://app.balancer.fi/#/)
+* [Balancer Composable](https://app.balancer.fi/#/)&#x20;
+* [Doveswap V3](https://swap.dovish.finance/#/swap)
+* [PancakeSwap V2](https://pancakeswap.finance/)
+* [PancakeSwap V3](https://pancakeswap.finance/swap)
+* [QuickSwap V3](https://quickswap.exchange/#/)
+* [SushiSwap V3](https://www.sushi.com/swap)
+
+</details>
+
+<details>
+
 <summary><img src="../.gitbook/assets/Aurora_Chain_Negative.png" alt="" data-size="line">   Aurora* (ChainID: 1313161554)</summary>
 
 Decentralized Exchanges:
