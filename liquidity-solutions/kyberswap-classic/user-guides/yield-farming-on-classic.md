@@ -38,7 +38,7 @@ Still deciding on which solution suits you best?&#x20;
 
 ### **Step 1**: Create a Classic liquidity position
 
-Approve and add liquidity to the farm of your choice. A guide on how to do this can be found [here](add-liquidity-to-an-existing-classic-pool.md). For the purposes of this guide, we will use the following USDC-miMATIC pool on Polygon.
+Approve and add liquidity to the farm of your choice. A guide on how to do this can be found [here](add-liquidity-to-an-existing-classic-pool.md). For the purposes of this guide, we will use the following USDC-miMATIC pool on Polygon PoS.
 
 ![Add liquidity popup](https://support.kyberswap.com/hc/article\_attachments/14434517571737)
 

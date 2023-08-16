@@ -16,7 +16,7 @@ For liquidity providers, KyberSwap has a suite of capital efficient protocols de
 
 KyberSwap powers 100+ integrated projects and has facilitated over US$17 billion worth of transactions for thousands of users since its inception.
 
-Currently deployed on 15 chains, including Ethereum, BSC, Arbitrum, Polygon, Optimism, Avalanche, Cronos, ZkSync Era, Fantom, Polygon zkEVM, Aurora, Linea, BitTorrent, Velas, and Oasis. KyberSwap aggregates liquidity from over 80 DEXs and multiple Aggregators to enable users to swap at superior rates.
+Currently deployed on 15 chains, including Ethereum, BSC, Arbitrum, Polygon PoS, Optimism, Avalanche, Cronos, ZkSync Era, Fantom, Polygon zkEVM, Aurora, Linea, BitTorrent, Velas, and Oasis. KyberSwap aggregates liquidity from over 80 DEXs and multiple Aggregators to enable users to swap at superior rates.
 
 <figure><img src=".gitbook/assets/KyberSwap_EcosystemStats_310723.png" alt=""><figcaption><p>The KyberSwap Ecosystem</p></figcaption></figure>
 

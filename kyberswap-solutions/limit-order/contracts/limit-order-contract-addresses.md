@@ -32,7 +32,7 @@ All KyberSwap Limit Order contracts have been deployed at the same address acros
 
 <details>
 
-<summary>Polygon (ChainID: 137)</summary>
+<summary>Polygon PoS (ChainID: 137)</summary>
 
 * **LimitOrderProtocol:** [`0x227B0c196eA8db17A665EA6824D972A64202E936`](https://polygonscan.com/address/0x227B0c196eA8db17A665EA6824D972A64202E936)
 

@@ -14,7 +14,7 @@ Limit Orders are a new feature that we are gradually releasing to various chains
 
 * Ethereum
 * BNB Chain
-* Polygon
+* Polygon PoS
 * Avalanche
 * Arbitrum
 * Optimism

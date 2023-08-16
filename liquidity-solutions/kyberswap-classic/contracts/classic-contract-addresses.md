@@ -83,7 +83,7 @@ description: Liquidity Mining Across Multiple Chains
 
 <details>
 
-<summary>Polygon (ChainID: 137)</summary>
+<summary>Polygon PoS (ChainID: 137)</summary>
 
 #### Static Fee
 
@@ -201,6 +201,18 @@ description: Liquidity Mining Across Multiple Chains
 * **WFTM:** [`0x21be370d5312f44cb42ce377bc9b8a0cef1a4c83`](https://ftmscan.com/address/0x21be370d5312f44cb42ce377bc9b8a0cef1a4c83)
 * **Multicall:** [`0xcf591ce5574258aC4550D96c545e4F3fd49A74ec`](https://ftmscan.com/address/0xcf591ce5574258aC4550D96c545e4F3fd49A74ec)
 * **Multicall2:** [`0x878dFE971d44e9122048308301F540910Bbd934c`](https://ftmscan.com/address/0x878dfe971d44e9122048308301f540910bbd934c)
+
+</details>
+
+<details>
+
+<summary>Polygon zkEVM (ChainID: 1101)</summary>
+
+#### Static Fee
+
+* **KSRouter02:** [`0x5649B4DD00780e99Bab7Abb4A3d581Ea1aEB23D0`](https://zkevm.polygonscan.com/address/0x5649B4DD00780e99Bab7Abb4A3d581Ea1aEB23D0)
+* **KSFactory:** [`0x1c758aF0688502e49140230F6b0EBd376d429be5`](https://zkevm.polygonscan.com/address/0x1c758af0688502e49140230f6b0ebd376d429be5)
+* **KSZap:** [`0x2abE8750e4a65584d7452316356128C936273e0D`](https://zkevm.polygonscan.com/address/0x2abE8750e4a65584d7452316356128C936273e0D)
 
 </details>
 

@@ -30,7 +30,7 @@ All KyberSwap Aggregator contracts have been deployed at the same address across
 
 <details>
 
-<summary>Polygon (ChainID: 137)</summary>
+<summary>Polygon PoS (ChainID: 137)</summary>
 
 * **MetaAggregationRouterV2:** [`0x6131B5fae19EA4f9D964eAc0408E4408b66337b5`](https://polygonscan.com/address/0x6131B5fae19EA4f9D964eAc0408E4408b66337b5)
 
@@ -73,6 +73,14 @@ All KyberSwap Aggregator contracts have been deployed at the same address across
 <summary>Fantom (ChainID: 250)</summary>
 
 * **MetaAggregationRouterV2:** [`0x6131B5fae19EA4f9D964eAc0408E4408b66337b5`](https://ftmscan.com/address/0x6131B5fae19EA4f9D964eAc0408E4408b66337b5)
+
+</details>
+
+<details>
+
+<summary>Polygon zkEVM (ChainID: 1101)</summary>
+
+* **MetaAggregationRouterV2:** [`0x6131B5fae19EA4f9D964eAc0408E4408b66337b5`](https://zkevm.polygonscan.com/address/0x6131B5fae19EA4f9D964eAc0408E4408b66337b5)
 
 </details>
 

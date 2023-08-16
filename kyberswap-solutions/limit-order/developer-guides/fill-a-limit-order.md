@@ -28,7 +28,7 @@ To support the continued development of the Limit Orders feature, KyberSwap will
 * Ethereum (ChainID: 1)
 * BSC (ChainID: 56)
 * Arbitrum (ChainID: 42161)
-* Polygon (ChainID: 137)
+* Polygon PoS (ChainID: 137)
 * Optimism (ChainID: 10)
 * Avalanche (ChainID: 43114)
 * Fantom (ChainID: 250)

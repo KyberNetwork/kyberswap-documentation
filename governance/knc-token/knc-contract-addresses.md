@@ -43,7 +43,7 @@ For avoidance of doubt, KNC refers to the current version of the token while KNC
 
 <details>
 
-<summary>Polygon (ChainID: 137)</summary>
+<summary>Polygon PoS (ChainID: 137)</summary>
 
 * UChildERC20Proxy (KNC): [`0x1C954E8fe737F99f68Fa1CCda3e51ebDB291948C`](https://polygonscan.com/address/0x1C954E8fe737F99f68Fa1CCda3e51ebDB291948C)
 
@@ -78,7 +78,7 @@ For avoidance of doubt, KNC refers to the current version of the token while KNC
 
 <details>
 
-<summary>Polygon (ChainID: 137)</summary>
+<summary>Polygon PoS (ChainID: 137)</summary>
 
 * BurnableMintableCappedERC20 (axlKNC): [`0x46371C90fcCE4D7367a61CB43eA7922406bC707a`](https://polygonscan.com/token/0x46371C90fcCE4D7367a61CB43eA7922406bC707a)
 

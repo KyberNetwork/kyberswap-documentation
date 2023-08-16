@@ -35,7 +35,7 @@ description: Additional Rewards Across Multiple Chains
 
 <details>
 
-<summary>Polygon (ChainID: 137)</summary>
+<summary>Polygon PoS (ChainID: 137)</summary>
 
 * **KyberSwapElasticLM**: [`0x7D5ba536ab244aAA1EA42aB88428847F25E3E676`](https://polygonscan.com/address/0x7D5ba536ab244aAA1EA42aB88428847F25E3E676)&#x20;
 * **KSElasticLMHelper**: [`0x35BE3F4fd8239A35a7F120756D4D69e5C5e10870`](https://polygonscan.com/address/0x35BE3F4fd8239A35a7F120756D4D69e5C5e10870)

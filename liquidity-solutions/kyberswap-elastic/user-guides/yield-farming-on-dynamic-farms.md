@@ -54,7 +54,7 @@ Still deciding on which solution suits you best?&#x20;
 
 <figure><img src="../../../.gitbook/assets/DynamicFarms_SearchFarms.png" alt=""><figcaption><p>Select Dynamic Farm</p></figcaption></figure>
 
-You can view and filter the list of active farms on the [Farms page](https://kyberswap.com/farms/). For the purposes of this guide, we will use a KNC - LINK pool with a fee tier of 1% on Polygon.&#x20;
+You can view and filter the list of active farms on the [Farms page](https://kyberswap.com/farms/). For the purposes of this guide, we will use a KNC - LINK pool with a fee tier of 1% on Polygon PoS.&#x20;
 
 {% hint style="success" %}
 #### Dynamic Farms reward eligibility

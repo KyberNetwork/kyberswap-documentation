@@ -65,7 +65,7 @@ To be eligible to earn rewards, you will first need to stake some liquidity posi
 
 <figure><img src="../../../.gitbook/assets/StaticFarms_AddLiquidity_SearchPools.png" alt=""><figcaption><p>Select Static Farm</p></figcaption></figure>
 
-You can view and filter the list of active farms on the [Farms page](https://kyberswap.com/farms/). For the purposes of this guide, we will use a MATIC - USDC pool with a fee tier of 1% on Polygon.&#x20;
+You can view and filter the list of active farms on the [Farms page](https://kyberswap.com/farms/). For the purposes of this guide, we will use a MATIC - USDC pool with a fee tier of 1% on Polygon PoS.&#x20;
 
 {% hint style="success" %}
 #### Static Farms rewards eligibility

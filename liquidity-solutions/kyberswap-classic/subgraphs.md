@@ -24,7 +24,7 @@ https://api.thegraph.com/subgraphs/name/kybernetwork/kyberswap-exchange-bsc
 https://arbitrum-graph.kyberengineering.io/subgraphs/name/kybernetwork/kyberswap-exchange-arbitrum
 ```
 
-### Polygon[​](https://docs.kyberswap.com/Classic/reference/subgraph-data#polygon) (ChainID: 137) <a href="#polygon" id="polygon"></a>
+### Polygon[​](https://docs.kyberswap.com/Classic/reference/subgraph-data#polygon) PoS (ChainID: 137) <a href="#polygon" id="polygon"></a>
 
 ```
 https://api.thegraph.com/subgraphs/name/kybernetwork/kyberswap-exchange-polygon 

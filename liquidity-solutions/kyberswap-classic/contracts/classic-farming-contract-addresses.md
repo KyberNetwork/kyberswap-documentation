@@ -167,7 +167,7 @@ description: Additional Rewards Across Multiple Chains
 
 <details>
 
-<summary>Polygon (ChainID: 137)</summary>
+<summary>Polygon PoS (ChainID: 137)</summary>
 
 #### RewardLocker: 0x063DD8b5a42AaE93a014ce5FAbB5B70474667961
 

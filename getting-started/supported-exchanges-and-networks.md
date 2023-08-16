@@ -119,7 +119,7 @@ Aggregators:
 
 <details>
 
-<summary><img src="../.gitbook/assets/Polygon_Chain_Negative.png" alt="" data-size="line">   Polygon (ChainID: 137)</summary>
+<summary><img src="../.gitbook/assets/Polygon_Chain_Negative.png" alt="" data-size="line">   Polygon PoS (ChainID: 137)</summary>
 
 Decentralized Exchanges:
 
@@ -292,7 +292,7 @@ Aggregators:
 
 Decentralized Exchanges:
 
-* [KyberSwap Elastic](https://kyberswap.com/)
+* [KyberSwap](https://kyberswap.com/)
 * [Balancer Weighted](https://app.balancer.fi/#/)
 * [Balancer Composable](https://app.balancer.fi/#/)&#x20;
 * [Doveswap V3](https://swap.dovish.finance/#/swap)
