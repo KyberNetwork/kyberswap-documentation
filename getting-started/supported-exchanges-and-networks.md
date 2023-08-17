@@ -288,7 +288,7 @@ Aggregators:
 
 <details>
 
-<summary><img src="../.gitbook/assets/Polygon_Chain_Negative.png" alt="" data-size="line">   Polygon zkEVM* (ChainID: 1101)</summary>
+<summary><img src="../.gitbook/assets/PolygonzkEVM_Chain_Negative.png" alt="" data-size="line">   Polygon zkEVM* (ChainID: 1101)</summary>
 
 Decentralized Exchanges:
 
