@@ -290,7 +290,7 @@
 
 ## Socials
 
-* [Twitter](https://twitter.com/kybernetwork/)
+* [X](https://twitter.com/KyberNetwork)
 * [Discord](https://discord.com/invite/kyberswap)
 * [Telegram](https://t.me/kybernetwork)
 * [LinkedIn](https://www.linkedin.com/company/kybernetwork/)
