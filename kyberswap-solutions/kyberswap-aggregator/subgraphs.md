@@ -9,43 +9,61 @@ KyberSwap Aggregator uses multiple [subgraphs](https://thegraph.com/docs/about/i
 ### Ethereum[​](https://docs.kyberswap.com/reference/subgraph-data#ethereum) (ChainID: 1) <a href="#ethereum" id="ethereum"></a>
 
 ```
-https://api.thegraph.com/subgraphs/name/kybernetwork/kyberswap-aggregator-ethereum/graphql
+https://api.thegraph.com/subgraphs/name/kybernetwork/kyberswap-aggregator-ethereum
+```
+
+```
+https://ethereum-graph.kyberengineering.io/subgraphs/name/kybernetwork/kyberswap-aggregator-ethereum
 ```
 
 ### BSC (ChainID: 56)[​](https://docs.kyberswap.com/reference/subgraph-data#bsc) <a href="#bsc" id="bsc"></a>
 
 ```
-https://api.thegraph.com/subgraphs/name/kybernetwork/kyberswap-aggregator-bsc/graphql
+https://api.thegraph.com/subgraphs/name/kybernetwork/kyberswap-aggregator-bsc
+```
+
+```
+https://bsc-graph.kyberengineering.io/subgraphs/name/kybernetwork/kyberswap-aggregator-bsc
 ```
 
 ### Arbitrum[​](https://docs.kyberswap.com/reference/subgraph-data#arbitrum) (ChainID: 42161) <a href="#arbitrum" id="arbitrum"></a>
 
 ```
-https://api.thegraph.com/subgraphs/name/kybernetwork/kyberswap-aggregator-arbitrum/graphql
+https://api.thegraph.com/subgraphs/name/kybernetwork/kyberswap-aggregator-arbitrum
 ```
 
-### Polygon[​](https://docs.kyberswap.com/reference/subgraph-data#polygon) (ChainID: 137) <a href="#polygon" id="polygon"></a>
+```
+https://arbitrum-graph.kyberengineering.io/subgraphs/name/kybernetwork/kyberswap-aggregator-arbitrum
+```
+
+### Polygon[​](https://docs.kyberswap.com/reference/subgraph-data#polygon) PoS (ChainID: 137) <a href="#polygon" id="polygon"></a>
 
 ```
-https://api.thegraph.com/subgraphs/name/kybernetwork/kyberswap-aggregator-polygon/graphql
+https://api.thegraph.com/subgraphs/name/kybernetwork/kyberswap-aggregator-polygon
+```
+
+```
+https://polygon-graph.kyberengineering.io/subgraphs/name/kybernetwork/kyberswap-aggregator-polygon
 ```
 
 ### Optimism[​](https://docs.kyberswap.com/reference/subgraph-data#optimism) (ChainID: 10) <a href="#optimism" id="optimism"></a>
 
 ```
-https://api.thegraph.com/subgraphs/name/kybernetwork/kyberswap-aggregator-optimism/graphql
+https://api.thegraph.com/subgraphs/name/kybernetwork/kyberswap-aggregator-optimism
 ```
 
-### Fantom[​](https://docs.kyberswap.com/reference/subgraph-data#fantom) (ChainID: 250) <a href="#fantom" id="fantom"></a>
-
 ```
-https://api.thegraph.com/subgraphs/name/kybernetwork/kyberswap-aggregator-fantom/graphql
+https://optimism-graph.kyberengineering.io/subgraphs/name/kybernetwork/kyberswap-aggregator-optimism
 ```
 
 ### Avalanche[​](https://docs.kyberswap.com/reference/subgraph-data#avalanche) (ChainID: 43114)  <a href="#avalanche" id="avalanche"></a>
 
 ```
-https://api.thegraph.com/subgraphs/name/kybernetwork/kyberswap-aggregator-avalanche/graphql
+https://api.thegraph.com/subgraphs/name/kybernetwork/kyberswap-aggregator-avalanche
+```
+
+```
+https://avalanche-graph.kyberengineering.io/subgraphs/name/kybernetwork/kyberswap-aggregator-avalanche
 ```
 
 ### Cronos[​](https://docs.kyberswap.com/reference/subgraph-data#cronos) (ChainID: 25) <a href="#cronos" id="cronos"></a>
@@ -54,10 +72,26 @@ https://api.thegraph.com/subgraphs/name/kybernetwork/kyberswap-aggregator-avalan
 https://cronos-graph.kyberengineering.io/subgraphs/name/kybernetwork/kyberswap-aggregator-cronos
 ```
 
-### Velas[​](https://docs.kyberswap.com/reference/subgraph-data#velas) (ChainID: 106) <a href="#velas" id="velas"></a>
+### zkSync Era (ChainID: 324)
 
 ```
-Subgraph not supported on this chain
+https://zksync-graph.kyberengineering.io/subgraphs/name/kybernetwork/kyberswap-aggregator-zksync
+```
+
+### Fantom[​](https://docs.kyberswap.com/reference/subgraph-data#fantom) (ChainID: 250) <a href="#fantom" id="fantom"></a>
+
+```
+https://api.thegraph.com/subgraphs/name/kybernetwork/kyberswap-aggregator-fantom
+```
+
+```
+https://fantom-graph.kyberengineering.io/subgraphs/name/kybernetwork/kyberswap-aggregator-fantom
+```
+
+### Polygon zkEVM (ChainID: 1101)
+
+```
+https://polygon-zkevm-graph.kyberengineering.io/subgraphs/name/kybernetwork/kyberswap-aggregator-polygon-zkevm
 ```
 
 ### Aurora[​](https://docs.kyberswap.com/reference/subgraph-data#aurora) (ChainID: 1313161554) <a href="#aurora" id="aurora"></a>
@@ -66,14 +100,30 @@ Subgraph not supported on this chain
 https://api.thegraph.com/subgraphs/name/kybernetwork/kyberswap-aggregator-aurora/graphql
 ```
 
+```
+https://aurora-graph.kyberengineering.io/subgraphs/name/kybernetwork/kyberswap-aggregator-aurora
+```
+
+### Linea (ChainID: 59144)
+
+```
+https://graph-query.linea.build/subgraphs/name/kybernetwork/kyberswap-aggregator-linea
+```
+
+### BitTorrent Chain[​](https://docs.kyberswap.com/reference/subgraph-data#bittorrent) (ChainID: 199) <a href="#bittorrent" id="bittorrent"></a>
+
+```
+https://bttc-graph.kyberengineering.io/subgraphs/name/kybernetwork/kyberswap-aggregator-bttc
+```
+
+### Velas[​](https://docs.kyberswap.com/reference/subgraph-data#velas) (ChainID: 106) <a href="#velas" id="velas"></a>
+
+```
+Subgraph not supported on this chain
+```
+
 ### Oasis[​](https://docs.kyberswap.com/reference/subgraph-data#oasis) (ChainID: 42262) <a href="#oasis" id="oasis"></a>
 
 ```
 https://oasis-graph.kyberengineering.io/subgraphs/name/kybernetwork/kyberswap-aggregator-oasis
-```
-
-### BitTorrent[​](https://docs.kyberswap.com/reference/subgraph-data#bittorrent) (ChainID: 199) <a href="#bittorrent" id="bittorrent"></a>
-
-```
-https://bttc-graph.kyberengineering.io/subgraphs/name/kybernetwork/kyberswap-aggregator-bttc
 ```
