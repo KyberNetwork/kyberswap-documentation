@@ -6,7 +6,7 @@ description: Easily Monitor All Your KyberSwap Earnings
 
 ## Introduction
 
-<figure><img src="../../../.gitbook/assets/MyEarnings_Nav.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/MyEarnings_Overview (1).png" alt=""><figcaption><p>My Earnings Overview</p></figcaption></figure>
 
 The My Earnings page functions as a one-stop dashboard for LPs to monitor their KyberSwap earnings across all supported chains. This includes all fees and farming rewards that were previously claimed as well as the earnings which have yet to be claimed.&#x20;
 
@@ -59,7 +59,7 @@ Note that as the chart reflects the earning's dollar value, it can also fluctuat
 
 ## My Pools
 
-<figure><img src="../../../.gitbook/assets/MyEarnings_Pools.png" alt=""><figcaption><p>My active pools</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/MyEarnings_Pools_Classic.png" alt=""><figcaption><p>My Earnings Pools</p></figcaption></figure>
 
 Based on the liquidity protocol selected, LPs will be able to view all pools where they have an open position. This includes the pool's fee tier, market data, as well as farming eligibility. LPs can expand each pool to view position data. Moreover, LPs also have the option to open the analytics page for the pool or add liquidity to the pools via the action buttons.
 
