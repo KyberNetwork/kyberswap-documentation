@@ -6,19 +6,34 @@ description: KyberSwap Aggregator EVM APIs
 
 ## Download OpenAPI specification:
 
-{% file src="../../../.gitbook/assets/KyberSwapAggregator_EVMAPIs_v2.5.0.yaml" %}
+{% file src="../../../.gitbook/assets/KyberSwapAggregator_EVMAPIs_v2.6.0.yaml" %}
 
 {% hint style="success" %}
 #### Note on integrations: clientID
 
-In order to continuously improve the KyberSwap Aggregator, our APIs implement a client identifier field that enables us to understand how the APIs are being utilized. As a developer integrating with our APIs, **please add your clientID (i.e. company name) to the `x-client-id` field in the API header** to enable us to serve you better.
+In order to continuously improve the KyberSwap Aggregator, our APIs implement a client identifier field that enables us to understand how the APIs are being utilized. As a developer integrating with our APIs, **please use the same clientID (i.e. company name)** for:
 
-For integrators who have previously specified your clientID under the `clientData`/`source` fields in the query params, we highly encourage using the `x-client-id` in the headers instead. As KyberSwap continues to optimize our Aggregator API,  support for reading clientID from the query params will be deprecated.
+* **\[V1] Get Swap Route**
+  * **Header:** `x-client-id`
+  * **Parameters:** `source`
+* **\[V1] Post Swap Route For Encoded Data**
+  * **Header:** `x-client-id`
+  * **Body:** `source`
+
+This will enable us to serve you better as we continuously strive to improve our Aggregator API. For integrators who have previously integrated with our `Legacy` API, we highly encourage migrating to the `Latest` APIs to ensure access to the latest features as well as improved service quality and efficiency.
 
 #### Example
 
-* \[V1]`GET/POST` Header
-  * x-client-id="yourCompanyNameHere"
+* \[V1]`GET`
+  * Header
+    * x-client-id="yourCompanyNameHere"
+  * Parameter
+    * source="yourCompanyNameHere"
+* \[V1] POST
+  * Header
+    * x-client-id="yourCompanyNameHere"
+  * Body
+    * source="yourCompanyNameHere"
 {% endhint %}
 
 ## EVM swap APIs
@@ -45,12 +60,12 @@ The KyberSwap Docs will continue to maintain information regarding `Legacy` and 
 
 ### `Latest`
 
-{% swagger src="../../../.gitbook/assets/KyberSwapAggregator_EVMAPIs_v2.5.0.yaml" path="/{chain}/api/v1/routes" method="get" %}
-[KyberSwapAggregator_EVMAPIs_v2.5.0.yaml](../../../.gitbook/assets/KyberSwapAggregator_EVMAPIs_v2.5.0.yaml)
+{% swagger src="../../../.gitbook/assets/KyberSwapAggregator_EVMAPIs_v2.6.0.yaml" path="/{chain}/api/v1/routes" method="get" %}
+[KyberSwapAggregator_EVMAPIs_v2.6.0.yaml](../../../.gitbook/assets/KyberSwapAggregator_EVMAPIs_v2.6.0.yaml)
 {% endswagger %}
 
-{% swagger src="../../../.gitbook/assets/KyberSwapAggregator_EVMAPIs_v2.5.0.yaml" path="/{chain}/api/v1/route/build" method="post" %}
-[KyberSwapAggregator_EVMAPIs_v2.5.0.yaml](../../../.gitbook/assets/KyberSwapAggregator_EVMAPIs_v2.5.0.yaml)
+{% swagger src="../../../.gitbook/assets/KyberSwapAggregator_EVMAPIs_v2.6.0.yaml" path="/{chain}/api/v1/route/build" method="post" %}
+[KyberSwapAggregator_EVMAPIs_v2.6.0.yaml](../../../.gitbook/assets/KyberSwapAggregator_EVMAPIs_v2.6.0.yaml)
 {% endswagger %}
 
 ### `Legacy`
