@@ -77,6 +77,7 @@ Decentralized Exchanges:
 * [PancakeSwap (legacy) ](https://pancakeswap.finance/)
 * PantherSwap (!)
 * [SushiSwap](https://www.sushi.com/swap)
+* [SushiSwap V3](https://www.sushi.com/swap)
 * [Synapse](https://synapseprotocol.com/)
 * [Thena](https://www.thena.fi/swap)
 * Wault (!)
@@ -183,6 +184,7 @@ Decentralized Exchanges:
 * [Fraxswap](https://app.frax.finance/swap/main)
 * [Synapse ](https://synapseprotocol.com/)
 * [Synthetix ](https://staking.synthetix.io/)
+* [SushiSwap V3](https://www.sushi.com/swap)
 * [Uniswap (v3)](https://app.uniswap.org/#/swap)
 * [Velodrome ](https://app.velodrome.finance/swap)
 * [ZipSwap](https://ipfs.zipswap.fi/#/swap)
@@ -213,6 +215,7 @@ Decentralized Exchanges:
 * [Pangolin ](https://app.pangolin.exchange/#/dashboard)
 * [Platypus ](https://app.platypus.finance/swap)
 * [SushiSwap](https://www.sushi.com/swap)
+* [SushiSwap V3](https://www.sushi.com/swap)
 * [Synapse ](https://synapseprotocol.com/)
 * [TraderJoe ](https://traderjoexyz.com/avalanche)
 * [YetiSwap](https://exchange.yetiswap.app/#/swap)
@@ -284,6 +287,7 @@ Decentralized Exchanges:
 * [SpiritSwap ](https://www.spiritswap.finance/home)
 * [SpookySwap ](https://spooky.fi/#/)
 * [SushiSwap](https://www.sushi.com/swap)
+* [SushiSwap V3](https://www.sushi.com/swap)
 * [Synapse ](https://synapseprotocol.com/)
 
 Aggregators:
