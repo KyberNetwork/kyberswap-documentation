@@ -72,6 +72,12 @@ https://avalanche-graph.kyberengineering.io/subgraphs/name/kybernetwork/kyberswa
 https://cronos-graph.kyberengineering.io/subgraphs/name/kybernetwork/kyberswap-elastic-cronos
 ```
 
+### Base (ChainID: 8453) <a href="#fantom" id="fantom"></a>
+
+```
+https://base-graph.kyberengineering.io/subgraphs/name/kybernetwork/kyberswap-elastic-base
+```
+
 ### Fantom[​](https://docs.kyberswap.com/reference/subgraph-data#fantom) (ChainID: 250) <a href="#fantom" id="fantom"></a>
 
 ```

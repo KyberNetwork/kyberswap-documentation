@@ -72,6 +72,12 @@ https://avalanche-graph.kyberengineering.io/subgraphs/name/kybernetwork/kyberswa
 https://cronos-graph.kyberengineering.io/subgraphs/name/kybernetwork/kyberswap-aggregator-cronos
 ```
 
+### Base (ChainID: 8453) <a href="#fantom" id="fantom"></a>
+
+```
+https://base-graph.kyberengineering.io/subgraphs/name/kybernetwork/kyberswap-aggregator-base
+```
+
 ### zkSync Era (ChainID: 324)
 
 ```

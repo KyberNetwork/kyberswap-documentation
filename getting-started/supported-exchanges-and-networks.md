@@ -1,5 +1,5 @@
 ---
-description: 15 Chains, 80+ DEXs, and we're just getting started...
+description: 16 Chains, 100+ DEXs, and we're just getting started...
 ---
 
 # Supported Exchanges And Networks
@@ -243,6 +243,35 @@ Decentralized Exchanges:
 * [MMF ](https://cronosmm.finance/)
 * [PhotonSwap ](https://photonswap.finance/#/swap)
 * [VVS Finance](https://vvs.finance/)
+
+Aggregators:
+
+* [KyberSwap](https://kyberswap.com/swap)
+* [Paraswap](https://app.paraswap.io/)
+
+</details>
+
+<details>
+
+<summary><img src="../.gitbook/assets/Base_Negative.svg" alt="" data-size="line">   Base* (ChainID: 8453)</summary>
+
+Decentralized Exchanges:
+
+* [KyberSwap](https://kyberswap.com/)
+* [Alien Base](https://app.alienbase.xyz/)
+* [Balancer Weighted](https://app.balancer.fi/#/)
+* [Balancer Composable](https://app.balancer.fi/#/)
+* [BaseSwap](https://baseswap.fi/swap)
+* [BasoFinance](https://www.baso.finance/)
+* [BVM](https://base.velocimeter.xyz/home)
+* [HorizonDEX](https://app.horizondex.io/swap)
+* [Maverick](https://app.mav.xyz/)
+* [SushiSwap V3](https://www.sushi.com/swap)
+* [SwapBased](https://swapbased.finance/#/swap)
+* [Synapse](https://www.synapseprotocol.com/swap)
+* [SynthSwap V2](https://app.horizondex.io/swap)
+* [SynthSwap V3](https://app.horizondex.io/swap)
+* [Uniswap V3 ](https://app.uniswap.org/#/swap)
 
 Aggregators:
 
