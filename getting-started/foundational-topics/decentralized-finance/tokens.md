@@ -16,7 +16,7 @@ While everything can be tokenized on the blockchain, it is important to differen
   \
   Coins facilitate activity on the chain by creating a market for on-chain computing resources. The easiest method to identify a coin is if a blockchain requires you to pay transaction fees denominated in their native coin. \
   \
-  Below are the list of blockchains and their respective coins which are supported by KyberSwap. Do note that each chain has control over their coin symbol and as such some chains have opted to keep the ETH symbol. The ETH coin is specific to each chain and are not interoperable. You can refer to [Bridge Your Assets Across Multiple Chains](../../../kyberswap-solutions/kyberswap-interface/user-guides/bridge-your-assets-across-multiple-chains.md) if you would like to transfer coin value form one chain to the next.
+  Below are the list of blockchains and their respective coins which are supported by KyberSwap. Do note that each chain has control over their coin symbol and as such some chains have opted to keep the ETH symbol. The ETH coin is specific to each chain and are not interoperable. You can refer to [Bridge Your Assets Across Multiple Chains](broken-reference) if you would like to transfer coin value form one chain to the next.
 
 | Blockchain       | Coin Symbol |
 | ---------------- | ----------- |
@@ -37,7 +37,7 @@ While everything can be tokenized on the blockchain, it is important to differen
   \
   The use cases for tokens are only limited by code. As such, token applications are virtually unlimited. Some popular use cases are: utility tokens to use a particular service, governance tokens that enable holders to participate in project governance, non-fungible tokens to prove exclusive ownership.\
   \
-  The same token ticker can exist on multiple chains depending on which chains the token smart contract has been deployed on. While the token conceptually represents the same asset across chains, you will still need to [bridge](../../../kyberswap-solutions/kyberswap-interface/user-guides/bridge-your-assets-across-multiple-chains.md) the token to your selected chain if you are performing any actions on that chain.
+  The same token ticker can exist on multiple chains depending on which chains the token smart contract has been deployed on. While the token conceptually represents the same asset across chains, you will still need to [bridge](broken-reference) the token to your selected chain if you are performing any actions on that chain.
 
 ## Token standards
 

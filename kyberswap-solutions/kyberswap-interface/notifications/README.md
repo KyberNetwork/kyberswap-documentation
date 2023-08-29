@@ -56,9 +56,3 @@ With price alerts, users are able to monitor price actions and adjust their trad
 <figure><img src="../../../.gitbook/assets/image (136).png" alt=""><figcaption><p>Limit order notification</p></figcaption></figure>
 
 [Create a limit order ](../user-guides/trade-at-your-preferred-rates.md)and receive a notification whenever your order gets fully or partially filled. KyberSwap will also send out notifications if any of your active orders has expired. Predefine your trades and receive updates whenever there's a matching trade or change in status.
-
-### Bridge asset
-
-<figure><img src="../../../.gitbook/assets/image (69).png" alt=""><figcaption><p>Cross-chain bridge notifications</p></figcaption></figure>
-
-[Bridge your assets across multiple chains](../user-guides/bridge-your-assets-across-multiple-chains.md) and receive a notification on the status of your transaction. No more needing to switch between networks to check balances or toggling between chain scanners to view the transaction status.

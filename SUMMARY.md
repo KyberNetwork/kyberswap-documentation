@@ -40,7 +40,6 @@
     * [Earn Yield By Contributing Liquidity](kyberswap-solutions/kyberswap-interface/user-guides/earn-yield-by-contributing-liquidity.md)
     * [Add Your Favourite Tokens](kyberswap-solutions/kyberswap-interface/user-guides/add-your-favourite-tokens.md)
     * [Get Crypto With Fiat](kyberswap-solutions/kyberswap-interface/user-guides/get-crypto-with-fiat.md)
-    * [Bridge Your Assets Across Multiple Chains](kyberswap-solutions/kyberswap-interface/user-guides/bridge-your-assets-across-multiple-chains.md)
     * [Swap Between Different Tokens Across Chains](kyberswap-solutions/kyberswap-interface/user-guides/swap-between-different-tokens-across-chains.md)
   * [My Earnings](kyberswap-solutions/kyberswap-interface/my-earnings/README.md)
     * [One-Stop Earnings Dashboard](kyberswap-solutions/kyberswap-interface/my-earnings/one-stop-earnings-dashboard.md)

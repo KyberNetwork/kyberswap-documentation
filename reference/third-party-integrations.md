@@ -24,27 +24,6 @@ Click here for more information on [**Transak**](https://docs.transak.com/docs/w
 
 <details>
 
-<summary>Multichain Bridge</summary>
-
-#### What is Multichain Bridge?
-
-Multichain is the ultimate Router for web3. It is an infrastructure developed for arbitrary cross-chain interactions.
-
-* It enables asset transfers between any two or more chains.
-* It can work with pre-existing assets on blockchains, by using liquidity pools for those assets.
-* It can also work with Bridged assets smart contract, where Multichain is responsible for minting assets on chains. This allows a generalisation of Bridges, so that assets are not restricted to having to return to their source chain before being sent to another chain. This makes for a cost effective solution for users, especially if the asset originated on Ethereum.
-* The Router can include both native and Bridged assets. This allows inclusion of assets that might have been generated with a third party bridge (though we would need to understand what bridges were originally used).
-
-#### Multichain on [KyberSwap.com](http://kyberswap.com/)
-
-Multichain is integrated on KyberSwap through API front end functionality to provide users with an option to easily bridge tokens across chains.
-
-Click [**here**](https://docs.multichain.org/getting-started/introduction) for more information on Multichain Bridge.
-
-</details>
-
-<details>
-
 <summary>Axelar x Squid</summary>
 
 #### What is Axelar?

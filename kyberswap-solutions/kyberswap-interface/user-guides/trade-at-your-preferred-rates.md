@@ -16,7 +16,6 @@ A [**Limit Order** ](../../limit-order/)is a way for KyberSwap traders to swap t
 2. [Switching Networks ](selecting-preferred-network.md)
 3. Get Tokens
    * [Get Crypto With Fiat](get-crypto-with-fiat.md)
-   * [Bridge Your Assets Across Multiple Chains](bridge-your-assets-across-multiple-chains.md)
 4. Swap Tokens
    * [Instantly Swap At Superior Rates ](broken-reference)
    * **Swap At Your Preferred Rates <-**

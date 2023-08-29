@@ -18,7 +18,6 @@ Please refer to [Supported Exchanges and Networks](../../../getting-started/supp
 2. [Switching Networks ](selecting-preferred-network.md)
 3. Get Tokens
    * [Get Crypto With Fiat](get-crypto-with-fiat.md)
-   * [Bridge Your Assets Across Multiple Chains](bridge-your-assets-across-multiple-chains.md)
 4. Swap Tokens
    * **Instantly Swap At Superior Rates** **<-**
    * [Swap At Your Preferred Rates](trade-at-your-preferred-rates.md)
