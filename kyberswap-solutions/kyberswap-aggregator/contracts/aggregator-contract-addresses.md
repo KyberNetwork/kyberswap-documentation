@@ -54,6 +54,14 @@ All KyberSwap Aggregator contracts have been deployed at the same address across
 
 <details>
 
+<summary>Base (ChainID: 8453)</summary>
+
+* **MetaAggregationRouterV2:** [`0x6131B5fae19EA4f9D964eAc0408E4408b66337b5`](https://basescan.org/address/0x6131B5fae19EA4f9D964eAc0408E4408b66337b5)
+
+</details>
+
+<details>
+
 <summary>Cronos (ChainID: 25)</summary>
 
 * **MetaAggregationRouterV2:** [`0x6131B5fae19EA4f9D964eAc0408E4408b66337b5`](https://cronoscan.com/address/0x6131B5fae19EA4f9D964eAc0408E4408b66337b5)
