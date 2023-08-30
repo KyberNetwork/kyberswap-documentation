@@ -29,11 +29,15 @@ Wallets generally fall into two overarching categories which are differentiated 
 
 [KyberSwap Interface](../../../kyberswap-solutions/kyberswap-interface/) has been integrated with the leading wallet providers allowing you to select your favourite wallet:
 
-* [Metamask](https://metamask.io/)
-* [WalletConnect](https://walletconnect.com/)
-* [Coinbase](https://www.coinbase.com/wallet)
+* [Blocto](https://blocto.io/)
 * [Brave Wallet](https://brave.com/wallet/)
 * [Coin98](https://coin98.com/)
+* [Coinbase](https://www.coinbase.com/wallet)
+* [Krystal](https://linktr.ee/krystalwallet)
+* [Metamask](https://metamask.io/)
+* [Rabby](https://rabby.io/)
+* [Safe](https://safe.global/wallet)
 * [Trust Wallet](https://trustwallet.com/)
+* [WalletConnect](https://walletconnect.com/)
 
 Please refer to the respective wallet provider resources on how to setup your wallet. Refer to [Connect Your Wallet](../../../kyberswap-solutions/kyberswap-interface/user-guides/connect-your-wallet.md) for a step-by-step guide on how to link your new wallet to the KyberSwap UI.

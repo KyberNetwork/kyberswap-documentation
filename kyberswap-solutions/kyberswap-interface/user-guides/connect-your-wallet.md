@@ -10,12 +10,16 @@ As a Decentralized platform, KyberSwap does not offer users “accounts” in th
 
 KyberSwap has integrated with the leading wallet providers allowing you to select your favourite wallet:
 
-* [Metamask](https://metamask.io/)
-* [WalletConnect](https://walletconnect.com/)
-* [Coinbase](https://www.coinbase.com/wallet)
+* [Blocto](https://blocto.io/)
 * [Brave Wallet](https://brave.com/wallet/)
 * [Coin98](https://coin98.com/)
+* [Coinbase](https://www.coinbase.com/wallet)
+* [Krystal](https://linktr.ee/krystalwallet)
+* [Metamask](https://metamask.io/)
+* [Rabby](https://rabby.io/)
+* [Safe](https://safe.global/wallet)
 * [Trust Wallet](https://trustwallet.com/)
+* [WalletConnect](https://walletconnect.com/)
 
 Please refer to the respective wallet provider resources on how to setup your wallet.
 
@@ -55,7 +59,7 @@ Still deciding on which solution suits you best?&#x20;
 
 To connect your Web3 wallet, click on the **Connect Wallet button** at the top right of the page. This will bring up the wallet selection pop-up where the various wallet connection options will be displayed.
 
-<figure><img src="../../../.gitbook/assets/image (53).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/ConnectWallet_WalletsOverview.png" alt=""><figcaption></figcaption></figure>
 
 To proceed with the connection, check the box if you agree to our Terms of Use and Privacy Policy. This will then allow you to select your preferred Web3 wallet that will be connected with the KyberSwap app. Authorise the connection in your chosen Web3 wallet's UI.
 
