@@ -187,6 +187,7 @@ Decentralized Exchanges:
 * [SushiSwap V3](https://www.sushi.com/swap)
 * [Uniswap (v3)](https://app.uniswap.org/#/swap)
 * [Velodrome ](https://app.velodrome.finance/swap)
+* [Velodrome V2](https://velodrome.finance/)
 * [ZipSwap](https://ipfs.zipswap.fi/#/swap)
 
 Aggregators:
@@ -258,14 +259,17 @@ Aggregators:
 Decentralized Exchanges:
 
 * [KyberSwap](https://kyberswap.com/)
+* [Aerodrome](https://aerodrome.finance/swap)
 * [Alien Base](https://app.alienbase.xyz/)
 * [Balancer Weighted](https://app.balancer.fi/#/)
 * [Balancer Composable](https://app.balancer.fi/#/)
 * [BaseSwap](https://baseswap.fi/swap)
 * [BasoFinance](https://www.baso.finance/)
 * [BVM](https://base.velocimeter.xyz/home)
+* [DackieSwap V3](https://www.dackieswap.xyz/swap)
 * [HorizonDEX](https://app.horizondex.io/swap)
 * [Maverick](https://app.mav.xyz/)
+* [RocketSwap V2](https://app.rocketswap.cc/exchange/swap)
 * [SushiSwap V3](https://www.sushi.com/swap)
 * [SwapBased](https://swapbased.finance/#/swap)
 * [Synapse](https://www.synapseprotocol.com/swap)
