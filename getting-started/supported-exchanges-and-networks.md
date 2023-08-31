@@ -272,6 +272,7 @@ Decentralized Exchanges:
 * [RocketSwap V2](https://app.rocketswap.cc/exchange/swap)
 * [SushiSwap V3](https://www.sushi.com/swap)
 * [SwapBased](https://swapbased.finance/#/swap)
+* [SwapBased V3](https://swapbased.finance/#/swap)
 * [Synapse](https://www.synapseprotocol.com/swap)
 * [SynthSwap V2](https://app.horizondex.io/swap)
 * [SynthSwap V3](https://app.horizondex.io/swap)
