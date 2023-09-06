@@ -269,6 +269,8 @@ Decentralized Exchanges:
 * [DackieSwap V3](https://www.dackieswap.xyz/swap)
 * [HorizonDEX](https://app.horizondex.io/swap)
 * [Maverick](https://app.mav.xyz/)
+* [PancakeSwap V2](https://pancakeswap.finance/swap)
+* [PancakeSwap V3](https://pancakeswap.finance/swap)
 * [RocketSwap V2](https://app.rocketswap.cc/exchange/swap)
 * [SushiSwap V3](https://www.sushi.com/swap)
 * [SwapBased](https://swapbased.finance/#/swap)
@@ -294,6 +296,8 @@ Decentralized Exchanges:
 * [KyberSwap](https://kyberswap.com/)
 * [Maverick](https://app.mav.xyz/)
 * [Mute.Switch](https://app.mute.io/swap)
+* [PancakeSwap V2](https://pancakeswap.finance/swap)
+* [PancakeSwap V3](https://pancakeswap.finance/swap)
 * [SyncSwap](https://syncswap.xyz/)
 * [Velocore](https://app.velocore.xyz/swap)
 
