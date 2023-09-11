@@ -107,15 +107,3 @@ https://graph-query.linea.build/subgraphs/name/kybernetwork/kyberswap-classic-li
 ```
 https://bttc-graph.kyberengineering.io/subgraphs/name/kybernetwork/kyberswap-exchange-bttc
 ```
-
-### Velas[​](https://docs.kyberswap.com/Classic/reference/subgraph-data#velas) (ChainID: 106) <a href="#velas" id="velas"></a>
-
-```
-https://velas-graph.kyberengineering.io/subgraphs/name/kybernetwork/kyberswap-exchange-velas
-```
-
-### Oasis[​](https://docs.kyberswap.com/Classic/reference/subgraph-data#oasis) (ChainID: 42262) <a href="#oasis" id="oasis"></a>
-
-```
-https://oasis-graph.kyberengineering.io/subgraphs/name/kybernetwork/kyberswap-exchange-oasis
-```

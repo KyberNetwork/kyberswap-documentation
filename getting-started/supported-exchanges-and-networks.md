@@ -1,5 +1,5 @@
 ---
-description: 16 Chains, 100+ DEXs, and we're just getting started...
+description: 14 Chains, 100+ DEXs, and we're just getting started...
 ---
 
 # Supported Exchanges And Networks
@@ -403,43 +403,6 @@ Decentralized Exchanges:
 Aggregators:
 
 * [KyberSwap](https://kyberswap.com/swap)
-
-</details>
-
-<details>
-
-<summary><img src="../.gitbook/assets/Velas_Chain_Negative.png" alt="" data-size="line">   Velas* (ChainID: 106)</summary>
-
-Decentralized Exchanges:
-
-* [KyberSwap](https://kyberswap.com/)
-* [AstroSwap](https://exchange.astroswap.app/swap)
-* [WagyuSwap](https://exchange.wagyuswap.app/swap)
-
-Aggregators:
-
-* [KyberSwap](https://kyberswap.com/swap)
-* [Paraswap](https://app.paraswap.io/)
-
-</details>
-
-<details>
-
-<summary><img src="../.gitbook/assets/Oasis_Chain_Negative.png" alt="" data-size="line">   Oasis* (ChainID: 42262)</summary>
-
-Decentralized Exchanges:
-
-* [KyberSwap](https://kyberswap.com/)
-* [GemKeeper](https://twitter.com/gemkeeperdefi?lang=en) (!)
-* [Lizard](https://app.lizard.exchange/swap)
-* [Valleyswap](https://twitter.com/ValleySwap) (!)
-* [Valleyswap (v2)](https://twitter.com/ValleySwap) (!)
-* [YuzuSwap](https://app.yuzu-swap.com/#/)
-
-Aggregators:
-
-* [KyberSwap](https://kyberswap.com/swap)
-* [Paraswap](https://app.paraswap.io/)
 
 </details>
 

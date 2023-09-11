@@ -115,19 +115,3 @@ All KyberSwap Aggregator contracts have been deployed at the same address across
 * **MetaAggregationRouterV2:** [`0x6131B5fae19EA4f9D964eAc0408E4408b66337b5`](https://bttcscan.com/address/0x6131B5fae19EA4f9D964eAc0408E4408b66337b5)
 
 </details>
-
-<details>
-
-<summary>Velas (ChainID: 106)</summary>
-
-* **MetaAggregationRouterV2:** [`0x6131B5fae19EA4f9D964eAc0408E4408b66337b5`](https://evmexplorer.velas.com/address/0x6131B5fae19EA4f9D964eAc0408E4408b66337b5)
-
-</details>
-
-<details>
-
-<summary>Oasis (ChainID: 42262)</summary>
-
-* **MetaAggregationRouterV2:** [`0x6131B5fae19EA4f9D964eAc0408E4408b66337b5`](https://explorer.emerald.oasis.dev/address/0x6131B5fae19EA4f9D964eAc0408E4408b66337b5/transactions)
-
-</details>

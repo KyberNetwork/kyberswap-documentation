@@ -275,52 +275,6 @@ description: Liquidity Mining Across Multiple Chains
 
 </details>
 
-<details>
-
-<summary>Velas (ChainID: 106)</summary>
-
-#### Static Fee
-
-* **KSRouter:** [`0x5649B4DD00780e99Bab7Abb4A3d581Ea1aEB23D0`](https://evmexplorer.velas.com/address/0x5649B4DD00780e99Bab7Abb4A3d581Ea1aEB23D0)
-* **KSFactory:** [`0x1c758aF0688502e49140230F6b0EBd376d429be5`](https://evmexplorer.velas.com/address/0x1c758aF0688502e49140230F6b0EBd376d429be5)
-* **ZapInV2:** [`0x2abE8750e4a65584d7452316356128C936273e0D`](https://evmexplorer.velas.com/address/0x2abE8750e4a65584d7452316356128C936273e0D)
-
-#### Dynamic Fee
-
-* **DMMRouter:** [`0xEaE47c5D99f7B31165a7f0c5f7E0D6afA25CFd55`](https://evmexplorer.velas.com/address/0xEaE47c5D99f7B31165a7f0c5f7E0D6afA25CFd55)
-* **DMMFactory:** [`0xD9bfE9979e9CA4b2fe84bA5d4Cf963bBcB376974`](https://evmexplorer.velas.com/address/0xD9bfE9979e9CA4b2fe84bA5d4Cf963bBcB376974)
-* **ZapIn:** [`0x83D4908c1B4F9Ca423BEE264163BC1d50F251c31`](https://evmexplorer.velas.com/address/0x83D4908c1B4F9Ca423BEE264163BC1d50F251c31)
-
-#### Common
-
-* **WVLX:** [`0xc579D1f3CF86749E05CD06f7ADe17856c2CE3126`](https://evmexplorer.velas.com/address/0xc579D1f3CF86749E05CD06f7ADe17856c2CE3126)
-* **Multicall2:** [`0x1877Ec0770901cc6886FDA7E7525a78c2Ed4e975`](https://evmexplorer.velas.com/address/0x1877Ec0770901cc6886FDA7E7525a78c2Ed4e975)
-
-</details>
-
-<details>
-
-<summary>Oasis (ChainID: 42262)</summary>
-
-#### Static Fee
-
-* **KSRouter:** [`0x5649B4DD00780e99Bab7Abb4A3d581Ea1aEB23D0`](https://explorer.emerald.oasis.dev/address/0x5649B4DD00780e99Bab7Abb4A3d581Ea1aEB23D0/transactions)
-* **KSFactory:** [`0x1c758aF0688502e49140230F6b0EBd376d429be5`](https://explorer.emerald.oasis.dev/address/0x1c758aF0688502e49140230F6b0EBd376d429be5/transactions)
-* **ZapInV2:** [`0x2abE8750e4a65584d7452316356128C936273e0D`](https://explorer.emerald.oasis.dev/address/0x2abE8750e4a65584d7452316356128C936273e0D/transactions)
-
-#### Dynamic Fee
-
-* **DMMRouter:** [`0xEaE47c5D99f7B31165a7f0c5f7E0D6afA25CFd55`](https://explorer.emerald.oasis.dev/address/0xEaE47c5D99f7B31165a7f0c5f7E0D6afA25CFd55/transactions)
-* **DMMFactory:** [`0xD9bfE9979e9CA4b2fe84bA5d4Cf963bBcB376974`](https://explorer.emerald.oasis.dev/address/0xD9bfE9979e9CA4b2fe84bA5d4Cf963bBcB376974/transactions)
-* **ZapIn:** [`0x83D4908c1B4F9Ca423BEE264163BC1d50F251c31`](https://explorer.emerald.oasis.dev/address/0x83D4908c1B4F9Ca423BEE264163BC1d50F251c31/transactions)
-
-#### Common
-
-* **wROSE:** [`0x21C718C22D52d0F3a789b752D4c2fD5908a8A733`](https://explorer.emerald.oasis.dev/address/0x21C718C22D52d0F3a789b752D4c2fD5908a8A733/transactions)
-* **Multicall2:** [`0xBF69a56D35B8d6f5A8e0e96B245a72F735751e54`](https://explorer.emerald.oasis.dev/address/0xBF69a56D35B8d6f5A8e0e96B245a72F735751e54/transactions)
-
-</details>
-
 ## Testnet
 
 <details>

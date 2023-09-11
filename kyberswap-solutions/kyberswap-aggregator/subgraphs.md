@@ -121,15 +121,3 @@ https://graph-query.linea.build/subgraphs/name/kybernetwork/kyberswap-aggregator
 ```
 https://bttc-graph.kyberengineering.io/subgraphs/name/kybernetwork/kyberswap-aggregator-bttc
 ```
-
-### Velas[​](https://docs.kyberswap.com/reference/subgraph-data#velas) (ChainID: 106) <a href="#velas" id="velas"></a>
-
-```
-Subgraph not supported on this chain
-```
-
-### Oasis[​](https://docs.kyberswap.com/reference/subgraph-data#oasis) (ChainID: 42262) <a href="#oasis" id="oasis"></a>
-
-```
-https://oasis-graph.kyberengineering.io/subgraphs/name/kybernetwork/kyberswap-aggregator-oasis
-```
