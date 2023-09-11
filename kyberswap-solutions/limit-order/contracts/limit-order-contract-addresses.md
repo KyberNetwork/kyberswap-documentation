@@ -48,14 +48,6 @@ All KyberSwap Limit Order contracts have been deployed at the same address acros
 
 <details>
 
-<summary>Fantom (ChainID: 250)</summary>
-
-* **LimitOrderProtocol:** [`0x227B0c196eA8db17A665EA6824D972A64202E936`](https://ftmscan.com/address/0x227B0c196eA8db17A665EA6824D972A64202E936)
-
-</details>
-
-<details>
-
 <summary>Avalanche (ChainID: 43114)</summary>
 
 * **LimitOrderProtocol:** [`0x227B0c196eA8db17A665EA6824D972A64202E936`](https://snowtrace.io/address/0x227B0c196eA8db17A665EA6824D972A64202E936)
@@ -72,9 +64,9 @@ All KyberSwap Limit Order contracts have been deployed at the same address acros
 
 <details>
 
-<summary>Velas (ChainID: 106)</summary>
+<summary>Fantom (ChainID: 250)</summary>
 
-* **LimitOrderProtocol:** [`0x227B0c196eA8db17A665EA6824D972A64202E936`](https://evmexplorer.velas.com/address/0x227B0c196eA8db17A665EA6824D972A64202E936)
+* **LimitOrderProtocol:** [`0x227B0c196eA8db17A665EA6824D972A64202E936`](https://ftmscan.com/address/0x227B0c196eA8db17A665EA6824D972A64202E936)
 
 </details>
 
@@ -83,14 +75,6 @@ All KyberSwap Limit Order contracts have been deployed at the same address acros
 <summary>Aurora (ChainID: 1313161554)</summary>
 
 * **LimitOrderProtocol:** [`0x227B0c196eA8db17A665EA6824D972A64202E936`](https://explorer.mainnet.aurora.dev/address/0x227B0c196eA8db17A665EA6824D972A64202E936)
-
-</details>
-
-<details>
-
-<summary>Oasis (ChainID: 42262)</summary>
-
-* **LimitOrderProtocol:** [`0x227B0c196eA8db17A665EA6824D972A64202E936`](https://explorer.emerald.oasis.dev/address/0x227B0c196eA8db17A665EA6824D972A64202E936/transactions)
 
 </details>
 
