@@ -20,8 +20,9 @@ More information can be found on our third-party integration [page](../../../ref
 2. [Switching Networks ](selecting-preferred-network.md)
 3. Get Tokens
    * [Get Crypto With Fiat](get-crypto-with-fiat.md)
+   * [Bridge Your Tokens](bridge-your-assets-across-multiple-chains.md)
 4. Swap Tokens
-   * [Instantly Swap At Superior Rates ](broken-reference)
+   * [Instantly Swap At Superior Rates](instantly-swap-at-superior-rates.md)&#x20;
    * [Swap At Your Preferred Rates ](trade-at-your-preferred-rates.md)
    * **Swap Between Tokens On Different Chains <-**
 
