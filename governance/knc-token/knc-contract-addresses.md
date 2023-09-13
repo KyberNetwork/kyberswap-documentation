@@ -27,14 +27,6 @@ For avoidance of doubt, KNC refers to the current version of the token while KNC
 
 <details>
 
-<summary>BSC (ChainID: 56)</summary>
-
-* BEP20UpgradeableProxy (KNC): [`0xfe56d5892bdffc7bf58f2e84be1b2c32d21c308b`](https://bscscan.com/address/0xfe56d5892bdffc7bf58f2e84be1b2c32d21c308b)
-
-</details>
-
-<details>
-
 <summary>Arbitrum (ChainID: 42161)</summary>
 
 * CloneableBeaconProxy (KNC): [`0xe4dddfe67e7164b0fe14e218d80dc4c08edc01cb`](https://arbiscan.io/address/0xe4dddfe67e7164b0fe14e218d80dc4c08edc01cb)
@@ -59,10 +51,44 @@ For avoidance of doubt, KNC refers to the current version of the token while KNC
 
 <details>
 
+<summary>zkSync Era (ChainID: 324)</summary>
+
+* KNC: [`0x6ee46Cb7cD2f15Ee1ec9534cf29a5b51C83283e6`](https://explorer.zksync.io/address/0x6ee46Cb7cD2f15Ee1ec9534cf29a5b51C83283e6)
+
+</details>
+
+<details>
+
+<summary>Polygon zkEVM (ChainID: 1101)</summary>
+
+* TokenWrapped (KNC): [`0x6A80A465409ce8D36C513129C0FEEa61BEd579ba`](https://zkevm.polygonscan.com/token/0x6a80a465409ce8d36c513129c0feea61bed579ba)
+
+</details>
+
+<details>
+
+<summary>Linea (ChainID: 59144)</summary>
+
+* BeaconProxy (KNC): [`0x3b2F62d42DB19B30588648bf1c184865D4C3B1D6`](https://lineascan.build/token/0x3b2f62d42db19b30588648bf1c184865d4c3b1d6)
+
+</details>
+
+<details>
+
 <summary>BitTorrent Chain (ChainID: 199)</summary>
 
 * KNC\_e (bridged from Ethereum): [`0xe467f79e9869757dd818dfb8535068120f6bcb97`](https://bttcscan.com/address/0xe467f79e9869757dd818dfb8535068120f6bcb97)
 * KNC\_b (bridged from BSC): [`0x18fa72e0ee4c580a129b0ce5bd0694d716c7443e`](https://bttcscan.com/address/0x18fa72e0ee4c580a129b0ce5bd0694d716c7443e)
+
+</details>
+
+## Third Party Bridge
+
+<details>
+
+<summary>BSC (ChainID: 56)</summary>
+
+* BEP20UpgradeableProxy (KNC): [`0xfe56d5892bdffc7bf58f2e84be1b2c32d21c308b`](https://bscscan.com/address/0xfe56d5892bdffc7bf58f2e84be1b2c32d21c308b)
 
 </details>
 
