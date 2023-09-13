@@ -138,10 +138,9 @@ You can view their official announcement [here](https://twitter.com/MultichainOr
 
 <details>
 
-<summary>Fantom (ChainID: 250)</summary>
+<summary>Arbitrum (ChainID: 42161)</summary>
 
-* AnyswapV5ERC20 (KNCv2 Token): [0x1e1085eFaA63EDFE74aaD7C05a28EAE4ef917C3F](https://ftmscan.com/address/0x1e1085efaa63edfe74aad7c05a28eae4ef917c3f)
-* MultiSigWalletWithDailyLimit (DAO Multisig - Treasury): [`0x91c9D4373B077eF8082F468C7c97f2c499e36F5b`](https://ftmscan.com/address/0x91c9D4373B077eF8082F468C7c97f2c499e36F5b)
+* AnyswapV6ERC20: [`0x316772cFEc9A3E976FDE42C3Ba21F5A13aAaFf12`](https://arbiscan.io/address/0x316772cFEc9A3E976FDE42C3Ba21F5A13aAaFf12)
 
 </details>
 
@@ -151,6 +150,15 @@ You can view their official announcement [here](https://twitter.com/MultichainOr
 
 * AnyswapV5ERC20: [0x39fc9e94caeacb435842fadedecb783589f50f5f](https://snowtrace.io/address/0x39fc9e94caeacb435842fadedecb783589f50f5f)
 * MultiSigWalletWithDailyLimit (DAO Multisig - Treasury): [`0x91c9D4373B077eF8082F468C7c97f2c499e36F5b`](https://snowtrace.io/address/0x91c9D4373B077eF8082F468C7c97f2c499e36F5b)
+
+</details>
+
+<details>
+
+<summary>Fantom (ChainID: 250)</summary>
+
+* AnyswapV5ERC20 (KNCv2 Token): [0x1e1085eFaA63EDFE74aaD7C05a28EAE4ef917C3F](https://ftmscan.com/address/0x1e1085efaa63edfe74aad7c05a28eae4ef917c3f)
+* MultiSigWalletWithDailyLimit (DAO Multisig - Treasury): [`0x91c9D4373B077eF8082F468C7c97f2c499e36F5b`](https://ftmscan.com/address/0x91c9D4373B077eF8082F468C7c97f2c499e36F5b)
 
 </details>
 
