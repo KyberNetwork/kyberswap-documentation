@@ -110,6 +110,7 @@ Decentralized Exchanges:
 * [Ramses](https://app.ramses.exchange/)
 * [Ramses CL](https://app.ramses.exchange/swap)
 * [Saddle ](https://saddle.exchange/#/)
+* [Sparta Dex](https://app.spartadex.io/)
 * [SushiSwap](https://www.sushi.com/swap)
 * [SushiSwap V3](https://www.sushi.com/swap)
 * [Swapr ](https://swapr.eth.link/#/swap?chainId=1)
