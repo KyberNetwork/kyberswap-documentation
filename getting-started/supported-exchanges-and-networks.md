@@ -207,6 +207,8 @@ Decentralized Exchanges:
 
 * [KyberSwap](https://kyberswap.com/)
 * Axial (!)
+* [Balancer Weighted](https://app.balancer.fi/#/)
+* [Balancer Composable](https://app.balancer.fi/#/)&#x20;
 * [Curve ](https://curve.fi/)
 * [DODO (v2)](https://app.dodoex.io/)
 * [Fraxswap](https://app.frax.finance/swap/main)
@@ -384,6 +386,7 @@ Decentralized Exchanges:
 * [EchoDEX](https://www.echodex.io/swap)
 * [HorizonDEX](https://app.horizondex.io/swap)
 * [PancakeSwap V2](https://pancakeswap.finance/)
+* [SushiSwap V3](https://www.sushi.com/swap)
 * [SyncSwap](https://syncswap.xyz/)
 
 Aggregators:
