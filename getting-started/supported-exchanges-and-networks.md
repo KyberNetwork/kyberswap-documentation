@@ -257,7 +257,7 @@ Aggregators:
 
 <details>
 
-<summary><img src="../.gitbook/assets/Base_Negative.svg" alt="" data-size="line">   Base* (ChainID: 8453)</summary>
+<summary><img src="../.gitbook/assets/Base_Negative.svg" alt="" data-size="line">   Base*' (ChainID: 8453)</summary>
 
 Decentralized Exchanges:
 
@@ -361,7 +361,7 @@ Decentralized Exchanges:
 
 <details>
 
-<summary><img src="../.gitbook/assets/Aurora_Chain_Negative.png" alt="" data-size="line">   Aurora* (ChainID: 1313161554)</summary>
+<summary><img src="../.gitbook/assets/Aurora_Chain_Negative.png" alt="" data-size="line">   Aurora*` (ChainID: 1313161554)</summary>
 
 Decentralized Exchanges:
 
@@ -414,4 +414,6 @@ Aggregators:
 
 _\* Denotes chains where KyberSwap Limit Order have yet to be deployed on_
 
-_\` KyberSwap Elastic will be deployed to zkSync Era soon_
+' _Denotes chains where KyberSwap Classic has yet to be deployed on_
+
+_\` Denotes chains where KyberSwap Elastic has yet to be deployed on_
