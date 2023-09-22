@@ -80,6 +80,7 @@ Decentralized Exchanges:
 * [SushiSwap V3](https://www.sushi.com/swap)
 * [Synapse](https://synapseprotocol.com/)
 * [Thena](https://www.thena.fi/swap)
+* [Uniswap (v3)](https://app.uniswap.org/#/swap)
 * Wault (!)
 
 Aggregators:
@@ -222,6 +223,7 @@ Decentralized Exchanges:
 * [SushiSwap V3](https://www.sushi.com/swap)
 * [Synapse ](https://synapseprotocol.com/)
 * [TraderJoe ](https://traderjoexyz.com/avalanche)
+* [Uniswap (v3)](https://app.uniswap.org/#/swap)
 * [YetiSwap](https://exchange.yetiswap.app/#/swap)
 
 Aggregators:
