@@ -389,6 +389,7 @@ Decentralized Exchanges:
 
 * [KyberSwap](https://kyberswap.com/swap)
 * [EchoDEX](https://www.echodex.io/swap)
+* [EchoDEX V3](https://www.echodex.io/swap)
 * [HorizonDEX](https://app.horizondex.io/swap)
 * [PancakeSwap V2](https://pancakeswap.finance/)
 * [SushiSwap V3](https://www.sushi.com/swap)
