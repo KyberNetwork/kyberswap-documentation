@@ -24,6 +24,12 @@ To ensure superior rates, KyberSwap Aggregator has integrated KyberSwap [Limit O
 
 For more info on configuring liquidity sources for your swap, please visit [Customizing Trade Parameters](broken-reference).
 
+## Professional Market Maker Integration
+
+In addition to the liquidity sources above, KyberSwap Aggregator has also been integrated with Professional Market Makers (PMMs) enabling Aggregator swaps on Ethereum Mainnet to access real time quotes from our network of PMMS. PMM quotes are gathered off-chain and only settled on-chain if the PMM quotes offer more favourable rates. KyberSwap's PMM network adds greater market depth to what is already an [extensive list of liquidity sources](../../getting-started/supported-exchanges-and-networks.md) ensuring superior rates for KyberSwap traders and integrators.
+
+PMMs actively quote two sides of the markets and generate a profit based on the difference in the bid-ask spread. As a result of this market making role, PMMs are able to more efficiently deploy liquidity and consequently aid in the price discovery of an asset without the added volatility. By connecting multiple on-chain ([DEXs](../../getting-started/foundational-topics/decentralized-finance/decentralised-exchange-dex.md), [Aggregators](../../getting-started/foundational-topics/decentralized-finance/dex-aggregator.md)) and off-chain ([KyberSwap Limit Order](../limit-order/), PMMs) liquidity sources, KyberSwap not only guarantees more equitable access to capital but also actively contributes towards a more efficient market.
+
 ## Next steps
 
 <details>
