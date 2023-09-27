@@ -41,7 +41,7 @@ To aid with readability, the KNC token addresses can be found on a separate page
 
 <summary>Arbitrum (ChainID: 42161)</summary>
 
-* MultiSigWalletWithDailyLimit (DAO Multisig - Treasury): [`0x91c9D4373B077eF8082F468C7c97f2c499e36F5b`](https://arbiscan.io/address/0x5649B4DD00780e99Bab7Abb4A3d581Ea1aEB23D0)
+* MultiSigWalletWithDailyLimit (DAO Multisig - Treasury): [`0x91c9D4373B077eF8082F468C7c97f2c499e36F5b`](https://arbiscan.io/address/0x91c9D4373B077eF8082F468C7c97f2c499e36F5b)
 
 </details>
 
