@@ -6,7 +6,7 @@ description: 14 Chains, 100+ DEXs, and we're just getting started...
 
 ## Chains and DEXs
 
-The KyberSwap product suite has been deployed across the majority of the most established DeFi chains. Whichever your preferred chain, the [KyberSwap Aggregator](../kyberswap-solutions/kyberswap-aggregator/) ensures the best swap rates by aggregating liquidity across the most established [DEXs](foundational-topics/decentralized-finance/decentralised-exchange-dex.md) as well as [aggregators](foundational-topics/decentralized-finance/dex-aggregator.md) deployed on that chain.
+The KyberSwap product suite has been deployed across the majority of the most established DeFi chains. Whichever your preferred chain, the [KyberSwap Aggregator](../kyberswap-solutions/kyberswap-aggregator/) ensures the best swap rates by aggregating liquidity across the most established [DEXs](foundational-topics/decentralized-finance/decentralised-exchange-dex.md) deployed on that chain.
 
 {% hint style="info" %}
 #### DEX filtering
@@ -44,13 +44,6 @@ Decentralized Exchanges:
 * [Uniswap (v3)](https://app.uniswap.org/#/swap)
 * [Verse](https://verse.bitcoin.com/)
 
-Aggregators:
-
-* [KyberSwap](https://kyberswap.com/swap)
-* [0x](https://0x.org/docs/0x-swap-api/introduction)
-* [1inch](https://app.1inch.io/)
-* [Paraswap](https://app.paraswap.io/)
-
 </details>
 
 <details>
@@ -83,13 +76,6 @@ Decentralized Exchanges:
 * [Uniswap (v3)](https://app.uniswap.org/#/swap)
 * Wault (!)
 
-Aggregators:
-
-* [KyberSwap](https://kyberswap.com/swap)
-* [0x](https://0x.org/docs/0x-swap-api/introduction)
-* [1inch](https://app.1inch.io/)
-* [Paraswap](https://app.paraswap.io/)
-
 </details>
 
 <details>
@@ -118,13 +104,6 @@ Decentralized Exchanges:
 * [Swapr ](https://swapr.eth.link/#/swap?chainId=1)
 * [Synapse ](https://synapseprotocol.com/)
 * [Uniswap (v3)](https://app.uniswap.org/#/swap)
-
-Aggregators:
-
-* [KyberSwap](https://kyberswap.com/swap)
-* [0x](https://0x.org/docs/0x-swap-api/introduction)
-* [1inch](https://app.1inch.io/)
-* [Paraswap](https://app.paraswap.io/)
 
 </details>
 
@@ -166,13 +145,6 @@ Decentralized Exchanges:
 * [Uniswap V3 ](https://app.uniswap.org/#/swap)
 * Wault (!)
 
-Aggregators:
-
-* [KyberSwap](https://kyberswap.com/swap)
-* [0x](https://0x.org/docs/0x-swap-api/introduction)
-* [1inch](https://app.1inch.io/)
-* [Paraswap](https://app.paraswap.io/)
-
 </details>
 
 <details>
@@ -192,13 +164,6 @@ Decentralized Exchanges:
 * [Velodrome ](https://app.velodrome.finance/swap)
 * [Velodrome V2](https://velodrome.finance/)
 * [ZipSwap](https://ipfs.zipswap.fi/#/swap)
-
-Aggregators:
-
-* [KyberSwap](https://kyberswap.com/swap)
-* [0x](https://0x.org/docs/0x-swap-api/introduction)
-* [1inch](https://app.1inch.io/)
-* [Paraswap](https://app.paraswap.io/)
 
 </details>
 
@@ -227,13 +192,6 @@ Decentralized Exchanges:
 * [Uniswap (v3)](https://app.uniswap.org/#/swap)
 * [YetiSwap](https://exchange.yetiswap.app/#/swap)
 
-Aggregators:
-
-* [KyberSwap](https://kyberswap.com/swap)
-* [0x](https://0x.org/docs/0x-swap-api/introduction)
-* [1inch](https://app.1inch.io/)
-* [Paraswap](https://app.paraswap.io/)
-
 </details>
 
 <details>
@@ -250,11 +208,6 @@ Decentralized Exchanges:
 * [MMF ](https://cronosmm.finance/)
 * [PhotonSwap ](https://photonswap.finance/#/swap)
 * [VVS Finance](https://vvs.finance/)
-
-Aggregators:
-
-* [KyberSwap](https://kyberswap.com/swap)
-* [Paraswap](https://app.paraswap.io/)
 
 </details>
 
@@ -286,12 +239,7 @@ Decentralized Exchanges:
 * [Synapse](https://www.synapseprotocol.com/swap)
 * [SynthSwap V2](https://app.horizondex.io/swap)
 * [SynthSwap V3](https://app.horizondex.io/swap)
-* [Uniswap V3 ](https://app.uniswap.org/#/swap)
-
-Aggregators:
-
-* [KyberSwap](https://kyberswap.com/swap)
-* [Paraswap](https://app.paraswap.io/)
+* [Uniswap V3](https://app.uniswap.org/#/swap)
 
 </details>
 
@@ -308,10 +256,6 @@ Decentralized Exchanges:
 * [PancakeSwap V3](https://pancakeswap.finance/swap)
 * [SyncSwap](https://syncswap.xyz/)
 * [Velocore](https://app.velocore.xyz/swap)
-
-Aggregators:
-
-* [KyberSwap](https://kyberswap.com/swap)
 
 </details>
 
@@ -334,14 +278,7 @@ Decentralized Exchanges:
 * [SpookySwap ](https://spooky.fi/#/)
 * [SushiSwap](https://www.sushi.com/swap)
 * [SushiSwap V3](https://www.sushi.com/swap)
-* [Synapse ](https://synapseprotocol.com/)
-
-Aggregators:
-
-* [KyberSwap](https://kyberswap.com/swap)
-* [0x](https://0x.org/docs/0x-swap-api/introduction)
-* [1inch](https://app.1inch.io/)
-* [Paraswap](https://app.paraswap.io/)
+* [Synapse](https://synapseprotocol.com/)
 
 </details>
 
@@ -374,12 +311,6 @@ Decentralized Exchanges:
 * [Trisolaris](https://www.trisolaris.io/#/swap)
 * [WannaSwap](https://wannaswap.finance/farm)
 
-Aggregators:
-
-* [KyberSwap](https://kyberswap.com/swap)
-* [1inch](https://app.1inch.io/)
-* [Paraswap](https://app.paraswap.io/)
-
 </details>
 
 <details>
@@ -396,10 +327,6 @@ Decentralized Exchanges:
 * [SushiSwap V3](https://www.sushi.com/swap)
 * [SyncSwap](https://syncswap.xyz/)
 
-Aggregators:
-
-* [KyberSwap](https://kyberswap.com/swap)
-
 </details>
 
 <details>
@@ -409,10 +336,6 @@ Aggregators:
 Decentralized Exchanges:
 
 * [KyberSwap](https://kyberswap.com/)
-
-Aggregators:
-
-* [KyberSwap](https://kyberswap.com/swap)
 
 </details>
 
