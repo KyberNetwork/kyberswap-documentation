@@ -4,8 +4,7 @@ description: Understanding KyberSwap Elastic APRs
 
 # Elastic APR Calculations
 
-{% hint style="info" %}
-#### KyberSwap Elastic APRs
+## KyberSwap Elastic APRs
 
 As each liquidity position in Elastic is non-fungible, different formulas are required in order to provide users with a best estimate of the expected returns. To this end, KyberSwap computes the following APRs for Elastic LPs:
 
@@ -15,7 +14,8 @@ As each liquidity position in Elastic is non-fungible, different formulas are re
 * [**My Dynamic Farm APR**](apr-calculations.md#my-dynamic-farm-apr-calculation): The estimated APR of a position staked in the Dynamic Farm. Dynamic Farming rewards received by the position are extrapolated and compared against the position's TVL.&#x20;
 * [**Static Farm Range APR**](apr-calculations.md#static-farm-range-apr-calculation): The optimal APR for a Static Farm position whose range is exactly the same as the operator defined farm range. Farming range rewards are calculated based on the [farming shares](tick-based-farming.md#static-farms) which the range has accumulated.
 * [**My Static Farm APR**](apr-calculations.md#my-static-farm-apr-calculation): The expected APR of a position staked in the Static Farm. Rewards are distributed based on the farming shares which the position has accumulated.
-{% endhint %}
+
+For pools where trades occur infrequently, the APR calculations adopts a last available data approach. For example, if there is no available data in the last 24 hours, KyberSwap Elastic will display the last available 24H timeframe with APR data. This ensures that the APR displayed is more representative of actual returns especially for exotic pools where the majority of trading fees take place in short bursts.
 
 {% hint style="success" %}
 #### Choosing The Best Range To Maximize LP Returns
