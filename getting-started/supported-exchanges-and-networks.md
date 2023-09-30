@@ -94,6 +94,7 @@ Decentralized Exchanges:
 * [DODO (v2)](https://app.dodoex.io/)
 * [Fraxswap](https://app.frax.finance/swap/main)
 * [GMX ](https://app.gmx.io/#/trade)
+* [Horiza](https://app.horiza.io/)
 * [PancakeSwap V3](https://pancakeswap.finance/swap)
 * [Ramses](https://app.ramses.exchange/)
 * [Ramses CL](https://app.ramses.exchange/swap)
