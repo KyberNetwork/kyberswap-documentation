@@ -325,6 +325,8 @@ Decentralized Exchanges:
 * [EchoDEX](https://www.echodex.io/swap)
 * [EchoDEX V3](https://www.echodex.io/swap)
 * [HorizonDEX](https://app.horizondex.io/swap)
+* [Lynex](https://app.lynex.fi/)
+* [Lyve](https://www.lyvefi.xyz/swap)
 * [PancakeSwap V2](https://pancakeswap.finance/)
 * [SushiSwap V3](https://www.sushi.com/swap)
 * [SyncSwap](https://syncswap.xyz/)
