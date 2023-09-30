@@ -254,6 +254,7 @@ Decentralized Exchanges:
 * [Mute.Switch](https://app.mute.io/swap)
 * [PancakeSwap V2](https://pancakeswap.finance/swap)
 * [PancakeSwap V3](https://pancakeswap.finance/swap)
+* [SpaceFi](https://swap-zksync.spacefi.io/#/swap)
 * [SyncSwap](https://syncswap.xyz/)
 * [Velocore](https://app.velocore.xyz/swap)
 
