@@ -51,6 +51,14 @@ For avoidance of doubt, KNC refers to the current version of the token while KNC
 
 <details>
 
+<summary>Base (ChainID: 8453)</summary>
+
+* OptimismMintableERC20 (KNC): [`0x28fe69Ff6864C1C218878BDCA01482D36B9D57b1`](https://basescan.org/token/0x28fe69Ff6864C1C218878BDCA01482D36B9D57b1)
+
+</details>
+
+<details>
+
 <summary>zkSync Era (ChainID: 324)</summary>
 
 * KNC: [`0x6ee46Cb7cD2f15Ee1ec9534cf29a5b51C83283e6`](https://explorer.zksync.io/address/0x6ee46Cb7cD2f15Ee1ec9534cf29a5b51C83283e6)
