@@ -146,6 +146,14 @@ You can view their official announcement [here](https://twitter.com/MultichainOr
 
 <details>
 
+<summary>Optimism (ChainID: 10)</summary>
+
+* AnyswapV6ERC20: [`0x4518231a8FDF6ac553B9BBD51Bbb86825B583263`](https://optimistic.etherscan.io/token/0x4518231a8FDF6ac553B9BBD51Bbb86825B583263)
+
+</details>
+
+<details>
+
 <summary>Avalanche (ChainID: 43114)</summary>
 
 * AnyswapV5ERC20: [0x39fc9e94caeacb435842fadedecb783589f50f5f](https://snowtrace.io/address/0x39fc9e94caeacb435842fadedecb783589f50f5f)
