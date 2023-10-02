@@ -2,7 +2,7 @@
 
 ## Overview
 
-The following section describes the main Classes which are commonly used for the purposes of liquidity provision.
+The following section describes the main Classes which are commonly used for the purposes of trade and liquidity provision.
 
 ### Asset
 
