@@ -50,7 +50,7 @@ Returns a new currency amount instance with a denominator that is not equal to 1
 
 #### Parameters
 
-<table><thead><tr><th width="151">Params</th><th width="199">Type</th><th>Description</th></tr></thead><tbody><tr><td>currency</td><td>T</td><td>The currency.</td></tr><tr><td>rawAmount</td><td><a href="https://github.com/KyberNetwork/ks-sdk-core/blob/c265d1b09784660bb9aca6f0d080aace334c0ac4/src/constants.ts#L4C16-L4C16">BigintIsh</a> | <a href="https://www.npmjs.com/package/bn.js">BN</a></td><td>The unitless amount of tokens.</td></tr></tbody></table>
+<table><thead><tr><th width="151">Params</th><th width="143">Type</th><th>Description</th></tr></thead><tbody><tr><td>currency</td><td>T</td><td>The currency.</td></tr><tr><td>numerator</td><td><a href="https://github.com/KyberNetwork/ks-sdk-core/blob/c265d1b09784660bb9aca6f0d080aace334c0ac4/src/constants.ts#L4C16-L4C16">BigintIsh</a></td><td>The numerator of the fractional token amount.</td></tr><tr><td>denominator</td><td><a href="https://github.com/KyberNetwork/ks-sdk-core/blob/c265d1b09784660bb9aca6f0d080aace334c0ac4/src/constants.ts#L4C16-L4C16">BigintIsh</a> </td><td>The denominator of the fractional token amount.</td></tr></tbody></table>
 
 #### Returns
 
