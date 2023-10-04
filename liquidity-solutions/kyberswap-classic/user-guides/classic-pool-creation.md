@@ -66,7 +66,7 @@ Specify the token amounts to contribute as liquidity to the new pool. Upon enter
 
 Do note that KyberSwap Classic enables users to configure their pool according to their preferred price ranges hence LPs are able to define the starting price of their pool.
 
-<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption><p>Token amounts and price ratio</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5).png" alt=""><figcaption><p>Token amounts and price ratio</p></figcaption></figure>
 
 {% hint style="danger" %}
 #### Price deviations
