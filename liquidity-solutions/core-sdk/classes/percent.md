@@ -16,7 +16,7 @@ Enables the safe handling of percentages.
 
 ### Public
 
-<table><thead><tr><th width="149">Property</th><th width="115">Type</th><th width="101">Modifier</th><th>Description</th></tr></thead><tbody><tr><td>isPercent</td><td>true</td><td>readonly</td><td>Boolean if the Percent instance is a percentagre value. Prevents fractions form being iterpreted as a Percent.</td></tr></tbody></table>
+<table><thead><tr><th width="149">Property</th><th width="115">Type</th><th width="101">Modifier</th><th>Description</th></tr></thead><tbody><tr><td>isPercent</td><td>true</td><td>readonly</td><td>Boolean if the Percent instance is a percentage value. Prevents fractions from being interpreted as a Percent.</td></tr></tbody></table>
 
 ## Constructor
 
