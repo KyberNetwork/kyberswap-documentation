@@ -24,7 +24,7 @@ The notification centre can be accessed on all devices via the [KyberSwap Interf
 
 Upon opening the notification center, users will be able to configure their preferred [notification types](./#types-of-notifications) as well as the [channels](./#notification-channels) through which the selected notifications will be delivered.
 
-<figure><img src="../../../.gitbook/assets/image (122).png" alt=""><figcaption><p>Notification Center</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/NotificationCentre_Overview.png" alt=""><figcaption><p>Notification Center</p></figcaption></figure>
 
 ## Notifications
 
