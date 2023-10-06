@@ -73,6 +73,7 @@ Decentralized Exchanges:
 * [SushiSwap V3](https://www.sushi.com/swap)
 * [Synapse](https://synapseprotocol.com/)
 * [Thena](https://www.thena.fi/swap)
+* [Thena Fusion](https://www.thena.fi/swap)
 * [Uniswap (v3)](https://app.uniswap.org/#/swap)
 * Wault (!)
 
