@@ -182,6 +182,7 @@
   * [Developer Guides](liquidity-solutions/elastic-sdk/developer-guides/README.md)
     * [Environment Setup](liquidity-solutions/elastic-sdk/developer-guides/environment-setup.md)
     * [Get A Quote](liquidity-solutions/elastic-sdk/developer-guides/get-a-quote.md)
+    * [Execute A Trade](liquidity-solutions/elastic-sdk/developer-guides/execute-a-trade.md)
   * [Classes](liquidity-solutions/elastic-sdk/classes/README.md)
     * [FullMath](liquidity-solutions/elastic-sdk/classes/fullmath.md)
     * [LiquidityMath](liquidity-solutions/elastic-sdk/classes/liquiditymath.md)

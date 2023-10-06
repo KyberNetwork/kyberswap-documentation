@@ -15,6 +15,32 @@ npm run start // Run once
 npm run start:dev // Run on save (Nodemon)
 ```
 
+## Provider And Signer Setup
+
+In order for our application to communicate with the blockchain, we will first need to specify a [provider](https://docs.ethers.org/v6/api/providers/#Provider) as well as a [signer](https://docs.ethers.org/v6/api/providers/#Signer).
+
+From [Ethers.js Docs](https://docs.ethers.org/v6/getting-started/):
+
+{% tabs %}
+{% tab title="Provider" %}
+A [Provider](https://docs.ethers.org/v6/api/providers/#Provider) is a read-only connection to the blockchain, which allows querying the blockchain state, such as account, block or transaction details, querying event logs or evaluating read-only code using call.
+
+If you are coming from Web3.js, you are used to a Provider offering both read and write access. In Ethers, all write operations are further abstracted into another Object, the Signer.
+{% endtab %}
+{% endtabs %}
+
+The examples utilize KyberSwap's own [RPC provider](https://polygon.kyberengineering.io/) for Polygon PoS but you configure your preferred provider in the [`provider.ts`](https://github.com/KyberNetwork/ks-sdk-elastic-demo/blob/main/src/libs/provider.ts) file. For simplicity, the Ethers [Wallet](https://docs.ethers.org/v6/api/wallet/) instance was used to directly sign outgoing transactions using an imported private key specified in [`signer.ts`](https://github.com/KyberNetwork/ks-sdk-elastic-demo/blob/main/src/libs/signer.ts).
+
+{% hint style="warning" %}
+**Importing private keys**
+
+Your private keys are required for signing transactions which will result in changes to the blockchain state (i.e. token transfers, swaps, etc.). To avoid the complexity of frontend interfaces, the examples implements the Elastic operations in a pure Node.js environment thereby requiring your private keys to be imported.
+
+You will need to replace the `MATIC_PRIVATE_KEY` constant with your own private key in order to execute trade and liquidity management operations. To export your private key from Metamask, open Metamask and go to Account Details > Export Private Key.
+
+**NEVER EXPOSE YOU PRIVATE KEYS (i.e. gommit to a public repo) AS ANYONE WITH YOUR KEYS WILL BE ABLE TO ACCESS YOUR ASSETS.**
+{% endhint %}
+
 ## Important Folders And Files
 
 ### /src/index.ts
@@ -35,6 +61,10 @@ Specifies various constants that are required for the operation:
 ### /src/libs/provider.ts
 
 Ethers.js provider configuration which specifies the chain as well as [provider](https://docs.ethers.org/v5/api/providers/).
+
+### /src/libs/signer.ts
+
+Ethers.js provider configuration which specifies the wallet which contains the [signer methods](https://docs.ethers.org/v5/api/signer/) required to execute a write operation.
 
 ### /src/libs/abis/
 
