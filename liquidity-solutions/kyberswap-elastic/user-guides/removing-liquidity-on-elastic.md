@@ -88,4 +88,4 @@ Once you are satisfied with the transaction details, click the “Remove” butt
 
 ![Conform removal](https://support.kyberswap.com/hc/article\_attachments/14005916048153)
 
-Note: If you have any uncollected fees, these will all be automatically collected as part of the liquidity removal transaction regardless of the amount of liquidity removed.
+Note: If you have any uncollected fees and/or farming rewards, these will all be automatically collected as part of the liquidity removal transaction regardless of the amount of liquidity removed.
