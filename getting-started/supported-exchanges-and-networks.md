@@ -67,6 +67,7 @@ Decentralized Exchanges:
 * [OneSwap ](https://www.oneswap.net/)
 * [PancakeSwap V2](https://pancakeswap.finance/)
 * [PancakeSwap V3](https://pancakeswap.finance/swap)
+* [PancakeSwap Stable](https://pancakeswap.finance/)
 * [PancakeSwap (legacy) ](https://pancakeswap.finance/)
 * PantherSwap (!)
 * [SushiSwap](https://www.sushi.com/swap)
