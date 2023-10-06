@@ -2,6 +2,14 @@
 
 ## Introduction
 
+{% hint style="info" %}
+**Optimized rates via the** [**KyberSwap Aggregator**](../../../kyberswap-solutions/kyberswap-aggregator/)
+
+Note that the following demo routes trades via a specific Elastic pool. As such, the trade will be executed based on the pool price which can and will likely deviate from the market price.&#x20;
+
+For more optimized trade routes, please use our [KyberSwap Aggregator API](../../../kyberswap-solutions/kyberswap-aggregator/aggregator-api-specification/) which scans multiple DEXs and pools for superior rates. This guide is meant for developers who would like to programmatically execute a trade against an Elastic pool.
+{% endhint %}
+
 This guide builds upon the quote that was obtained from the [Get A Quote](get-a-quote.md) sample. To execute the swap via the [Elastic Router contract](../../kyberswap-elastic/contracts/elastic-contract-addresses.md), we will first need to construct the trade call using the returned quote parameters. Additionally, the Router contract must also be able to spend the specified amount of input tokens from the owner's wallet hence requiring approval ([ERC20 Approve](https://docs.openzeppelin.com/contracts/4.x/api/token/erc20#IERC20-approve-address-uint256-)) to be provided.
 
 The logic for executing a trade can be found in the `trade.ts` file linked below:
