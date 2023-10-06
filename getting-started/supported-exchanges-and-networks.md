@@ -104,7 +104,8 @@ Decentralized Exchanges:
 * [SushiSwap V3](https://www.sushi.com/swap)
 * [Swapr ](https://swapr.eth.link/#/swap?chainId=1)
 * [Synapse ](https://synapseprotocol.com/)
-* [Uniswap (v3)](https://app.uniswap.org/#/swap)
+* [Uniswap V3 ](https://app.uniswap.org/#/swap)
+* [ZyberSwap V3](https://app.zyberswap.io/exchange/besttrade)
 
 </details>
 
@@ -165,6 +166,7 @@ Decentralized Exchanges:
 * [Velodrome ](https://app.velodrome.finance/swap)
 * [Velodrome V2](https://velodrome.finance/)
 * [ZipSwap](https://ipfs.zipswap.fi/#/swap)
+* [ZyberSwap V3](https://app.zyberswap.io/exchange/besttrade)
 
 </details>
 
