@@ -27,6 +27,12 @@ A [Provider](https://docs.ethers.org/v6/api/providers/#Provider) is a read-only 
 
 If you are coming from Web3.js, you are used to a Provider offering both read and write access. In Ethers, all write operations are further abstracted into another Object, the Signer.
 {% endtab %}
+
+{% tab title="Signer" %}
+A [Signer](https://docs.ethers.org/v6/api/providers/#Signer) wraps all operations that interact with an account. An account generally has a private key located somewhere, which can be used to sign a variety of types of payloads.
+
+The private key may be located in memory (using a [Wallet](https://docs.ethers.org/v6/api/wallet/#Wallet)) or protected via some IPC layer, such as MetaMask which proxies interaction from a website to a browser plug-in, which keeps the private key out of the reach of the website and only permits interaction after requesting permission from the user and receiving authorization.
+{% endtab %}
 {% endtabs %}
 
 The examples utilize KyberSwap's own [RPC provider](https://polygon.kyberengineering.io/) for Polygon PoS but you configure your preferred provider in the [`provider.ts`](https://github.com/KyberNetwork/ks-sdk-elastic-demo/blob/main/src/libs/provider.ts) file. For simplicity, the Ethers [Wallet](https://docs.ethers.org/v6/api/wallet/) instance was used to directly sign outgoing transactions using an imported private key specified in [`signer.ts`](https://github.com/KyberNetwork/ks-sdk-elastic-demo/blob/main/src/libs/signer.ts).

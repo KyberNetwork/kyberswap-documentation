@@ -105,6 +105,14 @@ const swapMethodParams = SwapRouter.swapCallParameters([uncheckedTrade], swapOpt
 
 ### Step 4: Execute the swap
 
+{% hint style="info" %}
+**Real tokens involved**
+
+By executing the trade below, you will be trading tokens on your configured network. In this case, this example is trading tokens on Polygon PoS (ChainId: 137) which have a corresponding **monetary value**.&#x20;
+
+Please refer to [Provider And Signer Setup](environment-setup.md#provider-and-signer-setup) for more info.
+{% endhint %}
+
 Finally, we can execute the trade by sending the transaction to the network with our Signer instance:
 
 ```typescript
