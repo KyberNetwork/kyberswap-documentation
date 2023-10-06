@@ -18,7 +18,7 @@ The logic for getting a quote can be found in the `quote.ts` file linked below:
 
 ## Trade Parameters
 
-For our trade example, we will be swapping **10 USDC -> KNC** via the [KNC-USDC 1% Fee Tier pool](https://analytics.kyberswap.com/elastic/polygon/pool/0x4b440a7de0ab7041934d0c171849a76cc33234fa).
+For our trade example, we will be swapping **1 USDC -> KNC** via the [KNC-USDC 1% Fee Tier pool](https://analytics.kyberswap.com/elastic/polygon/pool/0x4b440a7de0ab7041934d0c171849a76cc33234fa).
 
 ## Getting A Quote
 
@@ -44,7 +44,7 @@ const poolAddress = computePoolAddress({
 });
 ```
 
-<table><thead><tr><th width="180">Params</th><th>Remarks</th></tr></thead><tbody><tr><td>factoryAddress</td><td>The Elastic Factory address. Specified in <a href="https://github.com/KyberNetwork/ks-sdk-elastic-demo/blob/main/src/libs/constants.ts"><code>constant.ts</code></a>.<br><br>Please refer to <a href="../../kyberswap-elastic/contracts/elastic-contract-addresses.md">Elastic Contract Addresses</a> for the full list of Factory addresses across various chains.</td></tr><tr><td>tokenA</td><td>Input token for the swap. Specified in <a href="https://github.com/KyberNetwork/ks-sdk-elastic-demo/blob/main/src/libs/constants.ts"><code>constant.ts</code></a>.</td></tr><tr><td>tokenB</td><td>Output token for the swap. Specified in <a href="https://github.com/KyberNetwork/ks-sdk-elastic-demo/blob/main/src/libs/constants.ts"><code>constant.ts</code></a>.</td></tr><tr><td>fee</td><td>Fee configuration as per <a href="https://github.com/KyberNetwork/ks-sdk-elastic/blob/ef95bce57f9eeebf7de7814e38022126bdc1269e/src/constants.ts#L10">FeeAmount</a> enum.</td></tr><tr><td>initCodeHashManualOverride</td><td>In order to create contracts with a known address, KyberSwap Elastic pools utilizes an <code>initCodeHash</code> value. This <code>initCodeHash</code> must be passed in whenever computing the address of such pools. More info <a href="https://ethereum.stackexchange.com/questions/76334/what-is-the-difference-between-bytecode-init-code-deployed-bytecode-creation/76335#76335">here</a>.<br><br>Elastic Pools iniCodeHash:<br><code>0x00e263aaa3a2c06a89b53217a9e7aad7e15613490a72e0f95f303c4de2dc7045</code></td></tr></tbody></table>
+<table><thead><tr><th width="180">Params</th><th>Remarks</th></tr></thead><tbody><tr><td>factoryAddress</td><td>The Elastic Factory address. Specified in <a href="https://github.com/KyberNetwork/ks-sdk-elastic-demo/blob/main/src/libs/constants.ts"><code>constant.ts</code></a>.<br><br>Please refer to <a href="../../kyberswap-elastic/contracts/elastic-contract-addresses.md">Elastic Contract Addresses</a> for the full list of Factory addresses across various chains.</td></tr><tr><td>tokenA</td><td>Input token for the swap. Specified in <a href="https://github.com/KyberNetwork/ks-sdk-elastic-demo/blob/main/src/libs/constants.ts"><code>constant.ts</code></a>.</td></tr><tr><td>tokenB</td><td>Output token for the swap. Specified in <a href="https://github.com/KyberNetwork/ks-sdk-elastic-demo/blob/main/src/libs/constants.ts"><code>constant.ts</code></a>.</td></tr><tr><td>fee</td><td>Fee configuration as per <a href="https://github.com/KyberNetwork/ks-sdk-elastic/blob/ef95bce57f9eeebf7de7814e38022126bdc1269e/src/constants.ts#L10">FeeAmount</a> enum.</td></tr><tr><td>initCodeHashManualOverride</td><td>In order to create contracts with a known address, KyberSwap Elastic pools utilizes an <code>initCodeHash</code> value. This <code>initCodeHash</code> must be passed in whenever computing the address of such pools. More info <a href="https://ethereum.stackexchange.com/questions/76334/what-is-the-difference-between-bytecode-init-code-deployed-bytecode-creation/76335#76335">here</a>.<br><br>Elastic Pools initCodeHash:<br><code>0x00e263aaa3a2c06a89b53217a9e7aad7e15613490a72e0f95f303c4de2dc7045</code></td></tr></tbody></table>
 
 Based on the inputs above, you should be able to see the target pool address printed in your console. You can choose different tokens/fees and validate the result against [KyberSwap Analytics](https://analytics.kyberswap.com/elastic/polygon/pools).&#x20;
 
@@ -117,4 +117,4 @@ const returnedQuote = SwapQuoter.INTERFACE.decodeFunctionResult('quoteExactInput
 
 After reformatting the above object, we are able to view the details of our quote printed in the console:
 
-<figure><img src="../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/ElasticSDK_QuoteTranslation.png" alt=""><figcaption></figcaption></figure>
