@@ -202,23 +202,6 @@ Decentralized Exchanges:
 
 <details>
 
-<summary><img src="../.gitbook/assets/Cronos_Chain_Negative.png" alt="" data-size="line">   Cronos* (ChainID: 25)</summary>
-
-Decentralized Exchanges:
-
-* [KyberSwap](https://kyberswap.com/)
-* [Crodex ](https://swap.crodex.app/#/swap)
-* [CronaSwap ](https://app.cronaswap.org/swap)
-* [EmpireDex ](https://app.empiredex.org/farm)
-* [KryptoDex ](https://www.kryptodex.org/)
-* [MMF ](https://cronosmm.finance/)
-* [PhotonSwap ](https://photonswap.finance/#/swap)
-* [VVS Finance](https://vvs.finance/)
-
-</details>
-
-<details>
-
 <summary><img src="../.gitbook/assets/Base_Negative.svg" alt="" data-size="line">   Base*' (ChainID: 8453)</summary>
 
 Decentralized Exchanges:
@@ -248,6 +231,23 @@ Decentralized Exchanges:
 * [SynthSwap V2](https://app.horizondex.io/swap)
 * [SynthSwap V3](https://app.horizondex.io/swap)
 * [Uniswap V3](https://app.uniswap.org/#/swap)
+
+</details>
+
+<details>
+
+<summary><img src="../.gitbook/assets/Cronos_Chain_Negative.png" alt="" data-size="line">   Cronos* (ChainID: 25)</summary>
+
+Decentralized Exchanges:
+
+* [KyberSwap](https://kyberswap.com/)
+* [Crodex ](https://swap.crodex.app/#/swap)
+* [CronaSwap ](https://app.cronaswap.org/swap)
+* [EmpireDex ](https://app.empiredex.org/farm)
+* [KryptoDex ](https://www.kryptodex.org/)
+* [MMF ](https://cronosmm.finance/)
+* [PhotonSwap ](https://photonswap.finance/#/swap)
+* [VVS Finance](https://vvs.finance/)
 
 </details>
 
@@ -294,6 +294,24 @@ Decentralized Exchanges:
 
 <details>
 
+<summary><img src="../.gitbook/assets/Linea.png" alt="" data-size="line">   Linea* (ChainID: 59144)</summary>
+
+Decentralized Exchanges:
+
+* [KyberSwap](https://kyberswap.com/swap)
+* [EchoDEX](https://www.echodex.io/swap)
+* [EchoDEX V3](https://www.echodex.io/swap)
+* [HorizonDEX](https://app.horizondex.io/swap)
+* [Lynex](https://app.lynex.fi/)
+* [Lyve](https://www.lyvefi.xyz/swap)
+* [PancakeSwap V2](https://pancakeswap.finance/)
+* [SushiSwap V3](https://www.sushi.com/swap)
+* [SyncSwap](https://syncswap.xyz/)
+
+</details>
+
+<details>
+
 <summary><img src="../.gitbook/assets/PolygonzkEVM_Chain_Negative.png" alt="" data-size="line">   Polygon zkEVM* (ChainID: 1101)</summary>
 
 Decentralized Exchanges:
@@ -320,24 +338,6 @@ Decentralized Exchanges:
 * [NearPad](https://pad.fi/dex/swap)
 * [Trisolaris](https://www.trisolaris.io/#/swap)
 * [WannaSwap](https://wannaswap.finance/farm)
-
-</details>
-
-<details>
-
-<summary><img src="../.gitbook/assets/Linea.png" alt="" data-size="line">   Linea* (ChainID: 59144)</summary>
-
-Decentralized Exchanges:
-
-* [KyberSwap](https://kyberswap.com/swap)
-* [EchoDEX](https://www.echodex.io/swap)
-* [EchoDEX V3](https://www.echodex.io/swap)
-* [HorizonDEX](https://app.horizondex.io/swap)
-* [Lynex](https://app.lynex.fi/)
-* [Lyve](https://www.lyvefi.xyz/swap)
-* [PancakeSwap V2](https://pancakeswap.finance/)
-* [SushiSwap V3](https://www.sushi.com/swap)
-* [SyncSwap](https://syncswap.xyz/)
 
 </details>
 
