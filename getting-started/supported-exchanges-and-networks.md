@@ -230,6 +230,7 @@ Decentralized Exchanges:
 * [Balancer Weighted](https://app.balancer.fi/#/)
 * [Balancer Composable](https://app.balancer.fi/#/)
 * [BaseSwap](https://baseswap.fi/swap)
+* [BaseSwap V3](https://baseswap.fi/swap)
 * [BasoFinance](https://www.baso.finance/)
 * [BMX](https://bmx.morphex.trade/)
 * [BVM](https://base.velocimeter.xyz/home)
