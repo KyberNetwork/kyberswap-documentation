@@ -265,6 +265,7 @@ Decentralized Exchanges:
 * [SpaceFi](https://swap-zksync.spacefi.io/#/swap)
 * [SyncSwap](https://syncswap.xyz/)
 * [Velocore](https://app.velocore.xyz/swap)
+* [veSync](https://app.vesync.finance/swap)
 
 </details>
 
