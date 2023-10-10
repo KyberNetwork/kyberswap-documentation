@@ -222,6 +222,7 @@ Decentralized Exchanges:
 * [BMX](https://bmx.morphex.trade/)
 * [BVM](https://base.velocimeter.xyz/home)
 * [Curve](https://curve.fi/)
+* [DackieSwap V2](https://www.dackieswap.xyz/swap)
 * [DackieSwap V3](https://www.dackieswap.xyz/swap)
 * [HorizonDEX](https://app.horizondex.io/swap)
 * [iZiSwap](https://izumi.finance/trade/swap)
