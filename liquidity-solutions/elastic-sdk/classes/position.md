@@ -154,7 +154,7 @@ Note that the function uses the full precision to calculate the liquidity amount
 
 #### Parameters
 
-<table><thead><tr><th width="107">Params</th><th width="81">Type</th><th>Description</th></tr></thead><tbody><tr><td>{}</td><td>object</td><td>An object consisting of:<br><br><code>pool:</code><a href="pool.md"><code>Pool</code></a> = The pool on which to create the position.<br><br><code>tickLower: number</code> = The lower tick of the position to be created.<br><br><code>tickUpper: number</code> =The upper tick of the position to be created.<br><br><code>amount0:</code><a href="https://github.com/KyberNetwork/ks-sdk-core/blob/c265d1b09784660bb9aca6f0d080aace334c0ac4/src/constants.ts#L4C16-L4C16"><code>BigintIsh</code></a> = The token0 amount that is being provided.<br><br><code>useFullPrecision: boolean</code> = <code>true</code> -> Calculates theoretical max liquidity; <code>false</code> -> Calculates max liquidity according to what the router can support</td></tr></tbody></table>
+<table><thead><tr><th width="107">Params</th><th width="81">Type</th><th>Description</th></tr></thead><tbody><tr><td>{}</td><td>object</td><td>An object consisting of:<br><br><code>pool:</code><a href="pool.md"><code>Pool</code></a> = The pool on which to create the position.<br><br><code>tickLower: number</code> = The lower tick of the position to be created.<br><br><code>tickUpper: number</code> =The upper tick of the position to be created.<br><br><code>amount1:</code><a href="https://github.com/KyberNetwork/ks-sdk-core/blob/c265d1b09784660bb9aca6f0d080aace334c0ac4/src/constants.ts#L4C16-L4C16"><code>BigintIsh</code></a> = The token0 amount that is being provided.</td></tr></tbody></table>
 
 #### Returns
 
