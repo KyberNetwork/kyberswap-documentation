@@ -29,9 +29,9 @@ KyberSwap currently supports notifications via:
 
 ## Types of notifications
 
-KyberSwap users are able to subscribe to up to 5 active notifications across the following:
+KyberSwap users are able to subscribe to active notifications across the following:
 
-### Price alerts
+### Price Alerts
 
 <figure><img src="../../../.gitbook/assets/image (67).png" alt=""><figcaption><p>Create a price alert</p></figcaption></figure>
 
@@ -45,14 +45,20 @@ With price alerts, users are able to monitor price actions and adjust their trad
 
 <figure><img src="../../../.gitbook/assets/image (55).png" alt=""><figcaption><p>Price alerts history</p></figcaption></figure>
 
-### Elastic active range alerts
+### Elastic Active Range Alerts
 
 <figure><img src="../../../.gitbook/assets/image (135).png" alt=""><figcaption><p>Liquidity position notifications</p></figcaption></figure>
 
 [Create an Elastic pool position](../../../liquidity-solutions/kyberswap-elastic/user-guides/elastic-pool-creation.md) and receive notifications whenever your position goes in or out of range. Maximize your yields by timing your liquidity [removals](../../../liquidity-solutions/kyberswap-elastic/user-guides/removing-liquidity-on-elastic.md) and [additions](../../../liquidity-solutions/kyberswap-elastic/user-guides/add-liquidity-to-an-existing-elastic-pool.md) according to the markets.
 
-### Limit order alerts
+### Limit Order Alerts
 
 <figure><img src="../../../.gitbook/assets/image (136).png" alt=""><figcaption><p>Limit order notification</p></figcaption></figure>
 
 [Create a limit order ](../user-guides/trade-at-your-preferred-rates.md)and receive a notification whenever your order gets fully or partially filled. KyberSwap will also send out notifications if any of your active orders has expired. Predefine your trades and receive updates whenever there's a matching trade or change in status.
+
+### KyberAI Watchlist
+
+<figure><img src="../../../.gitbook/assets/Notifications_KyberAIWatchlist.png" alt=""><figcaption><p>KyberAI watchlist</p></figcaption></figure>
+
+[Add your favourite tokens to your KyberAI watchlist](../../kyberai/user-guides/add-tokens-to-watchlist.md) and get notified of their latest [KyberScores](../../kyberai/kyberscore.md) and prices.
