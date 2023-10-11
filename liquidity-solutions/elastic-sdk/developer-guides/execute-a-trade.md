@@ -126,6 +126,6 @@ const swapTx = await getSigner().sendTransaction({
 });
 ```
 
-A transaction has will be returned once the trade has been executed. You can copy this hash into a scanner (i.e. [PolygonScan](https://polygonscan.com/)) and see that your transaction has been successfully completed by the network.
+A transaction hash will be returned once the trade has been executed. You can copy this hash into a scanner (i.e. [PolygonScan](https://polygonscan.com/)) and see that your transaction has been successfully completed by the network.
 
 <figure><img src="../../../.gitbook/assets/ElasticSDK_Trade_Executed.png" alt=""><figcaption><p><a href="https://polygonscan.com/tx/0x21884a7efd746ef7003ba60a69a8e37ac2669ee57af746eae4f8b552b0989200">Sample trade executed on Polygon</a></p></figcaption></figure>
