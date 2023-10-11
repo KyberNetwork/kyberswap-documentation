@@ -8,7 +8,9 @@ description: Trade On Your Own Terms
 
 <figure><img src="../../.gitbook/assets/KyberSwap-Launches-Limit-Order.gif" alt=""><figcaption><p>KyberSwap Limit Order</p></figcaption></figure>
 
-KyberSwap Limit Order was created to enable our users to trade on their own terms. This means users are able to predefine their preferred swap rates which are automatically settled on-chain by KyberSwap smart contracts when market conditions favor the trader. No more having to monitor the markets around the clock waiting for your target price. Trades are always settled when prices favor the trader, meaning that users might actually receive more tokens than expected. Critically, users have complete ownership of their assets until a matching trade has been found.
+KyberSwap Limit Order was created to enable our users to trade on their own terms. This means users are able to predefine their preferred swap rates which are automatically settled on-chain by KyberSwap's network of takers. Create, modify, and cancel limit orders for free with KyberSwap Limit Order.
+
+No more having to monitor the markets around the clock waiting for your target price to be reached. Trades are always settled when prices favor the trader, meaning that users might actually receive more tokens than expected. Critically, users have complete ownership of their assets until a matching trade has been found.
 
 {% hint style="info" %}
 #### Supported tokens and chains

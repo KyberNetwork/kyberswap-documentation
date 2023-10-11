@@ -25,26 +25,40 @@ Note that limit order update is an on-chain transaction which requires gas fees 
 
 Find the active order you would like to update and click on its green Edit button. The button icon looks like a pen. This will bring up the Edit Order screen.
 
-![Edit active order](https://support.kyberswap.com/hc/article\_attachments/14668227864473)
+![Edit active order](../../../.gitbook/assets/LO\_Edit\_Button.png)
 
 ### **Step 2**: Modify the order parameters
 
 Amend the parameters of your limit order in the Edit Order screen. You can change one or more of the following parameters:
 
-* The amount of token being offered (”You Pay”)
+* The amount of token being offered (”You Sell”)
 * The price (”Sell \[token] at rate”)
 * The time limit (”Expires In”)
+* The edit option (See [Gasless Cancellation](../concepts/gasless-cancellation.md) for more info)
+
+{% hint style="info" %}
+**Gasless Cancel Chains**
+
+Currently, gasless cancels are only supported on the following chains:
+
+* Polygon PoS (ChainId: 137)
+
+For chains where gasless cancellation is not supported, the option will not be shown and users will have to default to hard cancel (i.e. cancel with a fee).
+{% endhint %}
 
 You cannot amend the token swap pair.
 
-![Edit order pop-up](https://support.kyberswap.com/hc/article\_attachments/14668227865241)
+![Edit order pop-up](../../../.gitbook/assets/LO\_Edit\_Preview.png)
 
-Click on “Review Order” to proceed.
+Click on “Edit Order” to proceed.
 
 ### **Step 3**: Review your modified order
 
-Review the details of the order in the “Review your order” screen that appears. Once you are satisfied, click on the “Place Order” button. This is an [on-chain transaction](../concepts/off-chain-relay.md) that requires an approval and gas.
+Review the details of the order in the “Review your order” screen that appears. Once you are satisfied, click on the “Place Order” button.&#x20;
 
-![Review order](https://support.kyberswap.com/hc/article\_attachments/14668227961881)
+* If you chose the "Gasles Edit" option, this will be an [off-chain transaction](../../../getting-started/foundational-topics/decentralized-technologies/on-chain-vs-off-chain-data.md) which requires 2 signatures for cancellation and creating a new order.
+* If you chose the "Hard Edit" option, this will be an [on-chain transaction](../concepts/off-chain-relay.md) that requires an approval and gas.
+
+![Review order](../../../.gitbook/assets/LO\_Edit\_Confirmation.png)
 
 The new limit order with updated parameters should now appear on your Active Orders list, and the old limit order will now be listed under your Cancelled Orders in your Order History.

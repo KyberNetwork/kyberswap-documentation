@@ -6,7 +6,7 @@ description: KyberSwap Limit Order Maker APIs
 
 ## Download OpenAPI specification:
 
-{% file src="../../../.gitbook/assets/Limit-Order-APIs (18).yaml" %}
+{% file src="../../../.gitbook/assets/LimitOrderAPIs_v1.1.yaml" %}
 
 ## Maker APIs
 
@@ -50,4 +50,8 @@ The KyberSwap Docs will continue to maintain information regarding `Legacy` and 
 
 {% swagger src="../../../.gitbook/assets/Limit-Order-APIs (10).yaml" path="/write/api/v1/encode/cancel-batch-orders" method="post" %}
 [Limit-Order-APIs (10).yaml](<../../../.gitbook/assets/Limit-Order-APIs (10).yaml>)
+{% endswagger %}
+
+{% swagger src="../../../.gitbook/assets/LimitOrderAPIs_v1.1.yaml" path="/write/api/v1/orders/cancel" method="post" %}
+[LimitOrderAPIs_v1.1.yaml](../../../.gitbook/assets/LimitOrderAPIs_v1.1.yaml)
 {% endswagger %}

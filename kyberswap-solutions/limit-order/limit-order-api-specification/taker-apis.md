@@ -6,7 +6,7 @@ description: KyberSwap Limit Order Taker APIs
 
 ## Download OpenAPI specification:
 
-{% file src="../../../.gitbook/assets/Limit-Order-APIs (21).yaml" %}
+{% file src="../../../.gitbook/assets/LimitOrderAPIs_v1.1.yaml" %}
 
 ## Taker APIs
 
@@ -122,6 +122,10 @@ The fees charged will be according to the most exotic token in the trading pair.
 
 {% swagger src="../../../.gitbook/assets/Limit-Order-APIs (23).yaml" path="/read-partner/api/v1/orders" method="get" %}
 [Limit-Order-APIs (23).yaml](<../../../.gitbook/assets/Limit-Order-APIs (23).yaml>)
+{% endswagger %}
+
+{% swagger src="../../../.gitbook/assets/LimitOrderAPIs_v1.1.yaml" path="/read-partner/api/v1/orders/op-signature" method="post" %}
+[LimitOrderAPIs_v1.1.yaml](../../../.gitbook/assets/LimitOrderAPIs_v1.1.yaml)
 {% endswagger %}
 
 {% swagger src="../../../.gitbook/assets/Limit-Order-APIs (16).yaml" path="/read-partner/api/v1/encode/fill-order-to" method="post" %}
