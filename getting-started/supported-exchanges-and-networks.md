@@ -89,6 +89,7 @@ Decentralized Exchanges:
 
 * [KyberSwap](https://kyberswap.com/)
 * [ArbiDEX](https://arbidex.fi/swap/)
+* [ArbiDEX V3](https://arbidex.fi/swap/)
 * [Balancer Weighted](https://app.balancer.fi/#/)
 * [Camelot](https://app.camelot.exchange/)
 * [Camelot V3](https://app.camelot.exchange/)
