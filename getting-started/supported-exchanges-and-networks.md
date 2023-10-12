@@ -76,7 +76,7 @@ Decentralized Exchanges:
 * [Synapse](https://synapseprotocol.com/)
 * [Thena](https://www.thena.fi/swap)
 * [Thena Fusion](https://www.thena.fi/swap)
-* [Uniswap (v3)](https://app.uniswap.org/#/swap)
+* [Uniswap V3](https://app.uniswap.org/#/swap)
 * Wault (!)
 
 </details>
@@ -271,6 +271,7 @@ Decentralized Exchanges:
 * [PancakeSwap V3](https://pancakeswap.finance/swap)
 * [SpaceFi](https://swap-zksync.spacefi.io/#/swap)
 * [SyncSwap](https://syncswap.xyz/)
+* [Uniswap V3](https://app.uniswap.org/#/swap)
 * [Velocore](https://app.velocore.xyz/swap)
 * [veSync](https://app.vesync.finance/swap)
 
