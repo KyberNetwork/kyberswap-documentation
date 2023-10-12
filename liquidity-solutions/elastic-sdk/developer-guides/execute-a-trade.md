@@ -19,7 +19,7 @@ The logic for executing a trade can be found in the `trade.ts` file linked below
 {% hint style="info" %}
 **Signer configuration**
 
-In order to sign the transaction to be processed by the network, this example requires an [Ethers Signer](https://docs.ethers.org/v6/api/providers/#Signer) to be configured. Please view [Provider and Signer](environment-setup.md#provider-and-signer-setup) Setup for more information.
+In order to sign the transaction to be processed by the network, this example requires an [Ethers Signer](https://docs.ethers.org/v6/api/providers/#Signer) to be configured. Please view [Provider and Signer Setup](environment-setup.md#provider-and-signer-setup) for more information.
 {% endhint %}
 
 ## Flow
@@ -102,6 +102,8 @@ With the trade parameters in place, we can then use the [SwapRouter](../classes/
 ```typescript
 const swapMethodParams = SwapRouter.swapCallParameters([uncheckedTrade], swapOptions);
 ```
+
+This will return the encoded calldata that will be sent to the network.
 
 ### Step 4: Execute the swap
 

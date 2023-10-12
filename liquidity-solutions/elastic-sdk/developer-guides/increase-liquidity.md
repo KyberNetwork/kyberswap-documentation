@@ -4,14 +4,14 @@
 
 Once you have [created a new Elastic position](create-a-new-position.md), you can add additional liquidity to the existing position. Position liquidity addition is handled by the [AntiSnipAttackPositionManager](../../kyberswap-elastic/contracts/elastic-periphery-core-contracts.md#antisnipattackpositionmanager) contract which extends the base position manager contract by adding an anti-sniping feature for liquidity additions and removals.
 
-The logic for creating a new position can be found in the `increaseLiquidity.ts` file linked below
+The logic for creating a new position can be found in the `increaseLiquidity.ts` file linked below:
 
 {% embed url="https://github.com/KyberNetwork/ks-sdk-elastic-demo/blob/main/src/operations/increaseLiquidity.ts" %}
 
 {% hint style="info" %}
 **Signer configuration**
 
-In order to sign the transaction to be processed by the network, this example requires an [Ethers Signer](https://docs.ethers.org/v6/api/providers/#Signer) to be configured. Please view [Provider and Signer](environment-setup.md#provider-and-signer-setup) Setup for more information.
+In order to sign the transaction to be processed by the network, this example requires an [Ethers Signer](https://docs.ethers.org/v6/api/providers/#Signer) to be configured. Please view [Provider and Signer Setup](environment-setup.md#provider-and-signer-setup) for more information.
 {% endhint %}
 
 ## Flow
@@ -35,7 +35,7 @@ Please refer to [Create A New Position](create-a-new-position.md) for the develo
 
 ### Step 1: Get the position data
 
-In order to add liquidity to an exiting position, we must first get the position data which includes its `positionId` (the positions unique identifier).&#x20;
+In order to add liquidity to an existing position, we must first get the position data which includes its `positionId` (the positions unique identifier).&#x20;
 
 Due to gas considerations, the `ownerAddress` -> `positionId` mapping is not stored on-chain. Nonetheless, to aid with Elastic integrations, KyberSwap exposes a [subgraph](https://thegraph.com/docs/en/developing/creating-a-subgraph/) for Elastic protocols across all supported chains. The addresses for each subgraph can be found on [Elastic Subgraphs](../../kyberswap-elastic/subgraphs.md).
 
@@ -176,6 +176,8 @@ const addLiquidityParams = NonfungiblePositionManager.addCallParameters(
     increaseLiquidityOptions
 );
 ```
+
+This will return the encoded calldata that will be sent to the network.
 
 ### Step 6: Execute the add liquidity transaction
 

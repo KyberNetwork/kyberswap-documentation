@@ -4,14 +4,14 @@
 
 The creation/minting of a new position is the very first step in contributing liquidity to Elastic contracts in exchange for market maker fees and rewards. Elastic positions are managed via the [AntiSnipAttackPositionManager](../../kyberswap-elastic/contracts/elastic-periphery-core-contracts.md#antisnipattackpositionmanager) contract which extends the base position manager contract by adding an anti-sniping feature for liquidity additions and removals.
 
-The logic for creating a new position can be found in the `createPosition.ts` file linked below
+The logic for creating a new position can be found in the `createPosition.ts` file linked below:
 
 {% embed url="https://github.com/KyberNetwork/ks-sdk-elastic-demo/blob/main/src/operations/createPosition.ts" %}
 
 {% hint style="info" %}
 **Signer configuration**
 
-In order to sign the transaction to be processed by the network, this example requires an [Ethers Signer](https://docs.ethers.org/v6/api/providers/#Signer) to be configured. Please view [Provider and Signer](environment-setup.md#provider-and-signer-setup) Setup for more information.
+In order to sign the transaction to be processed by the network, this example requires an [Ethers Signer](https://docs.ethers.org/v6/api/providers/#Signer) to be configured. Please view [Provider and Signer Setup](environment-setup.md#provider-and-signer-setup) for more information.
 {% endhint %}
 
 ## Flow
@@ -166,6 +166,8 @@ const mintMethodParams = NonfungiblePositionManager.addCallParameters(
     mintOptions
 );
 ```
+
+This will return the encoded calldata that will be sent to the network.
 
 ### Step 7: Execute the mint transaction
 
