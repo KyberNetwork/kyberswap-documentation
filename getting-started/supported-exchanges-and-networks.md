@@ -264,6 +264,7 @@ Decentralized Exchanges:
 Decentralized Exchanges:
 
 * [KyberSwap](https://kyberswap.com/)
+* [eZKalibur](https://dapp.ezkalibur.com/)
 * [iZiSwap](https://izumi.finance/trade/swap)
 * [Maverick](https://app.mav.xyz/)
 * [Mute.Switch](https://app.mute.io/swap)
