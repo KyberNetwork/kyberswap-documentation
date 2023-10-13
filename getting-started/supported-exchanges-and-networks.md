@@ -274,6 +274,7 @@ Decentralized Exchanges:
 * [SpaceFi](https://swap-zksync.spacefi.io/#/swap)
 * [SyncSwap](https://syncswap.xyz/)
 * [Uniswap V3](https://app.uniswap.org/#/swap)
+* [Wagmi](https://app.wagmi.com/#/trade/swap)
 * [Velocore](https://app.velocore.xyz/swap)
 * [veSync](https://app.vesync.finance/swap)
 
