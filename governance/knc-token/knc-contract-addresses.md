@@ -90,6 +90,14 @@ For avoidance of doubt, KNC refers to the current version of the token while KNC
 
 </details>
 
+<details>
+
+<summary>Scroll (ChainID: 534352)</summary>
+
+* KNC: [`0x608ef9A3BffE206B86c3108218003b3cfBf99c84`](https://blockscout.scroll.io/address/0x608ef9A3BffE206B86c3108218003b3cfBf99c84)
+
+</details>
+
 ## Third Party Bridge
 
 <details>
