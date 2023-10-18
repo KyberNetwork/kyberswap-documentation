@@ -371,6 +371,8 @@ Decentralized Exchanges:
 
 * [KyberSwap](https://kyberswap.com/)
 * [iZiSwap](https://izumi.finance/trade/swap)
+* [SpaceFi](https://swap-zksync.spacefi.io/#/swap)
+* [PunkSwap](https://zkscroll.punkswap.exchange/swap/)
 
 </details>
 
