@@ -78,10 +78,24 @@ For the latest governance parameters, please read [https://github.com/KyberNetwo
 
 <summary>How are voting and rewards linked?</summary>
 
+
+
 2 simple rules: \
 (A) You MUST VOTE to get the reward, and (B) You must vote in ALL the ongoing proposals to get your full reward for that particular epoch.
 
 If the epoch has 2 proposals, but you voted in only 1 proposal, you will get only half of your rewards.
+
+</details>
+
+<details>
+
+<summary>How are voting rewards APR calculated?</summary>
+
+The voting rewards APR % is calculated based on the following formula:
+
+$$VoteAPR = \frac{\text{Total KNC Rewards}}{\text{Average KNC Voted In KIPs}}*\frac{365}{\text{TimePeriod}_\text{days}}$$
+
+Note that the time period used starts from the beginning of the epoch when the KIP was proposed to the reward distribution date.
 
 </details>
 
