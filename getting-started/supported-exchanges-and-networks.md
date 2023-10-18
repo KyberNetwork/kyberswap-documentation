@@ -1,5 +1,5 @@
 ---
-description: 14 Chains, 100+ DEXs, and we're just getting started...
+description: 15 Chains, 100+ DEXs, and we're just getting started...
 ---
 
 # Supported Exchanges And Networks
@@ -356,6 +356,16 @@ Decentralized Exchanges:
 <details>
 
 <summary><img src="../.gitbook/assets/BitTorrentChain_Chain_Negative.png" alt="" data-size="line">   BitTorrent Chain* (ChainID: 199)</summary>
+
+Decentralized Exchanges:
+
+* [KyberSwap](https://kyberswap.com/)
+
+</details>
+
+<details>
+
+<summary><img src="../.gitbook/assets/Scroll_Negative.png" alt="" data-size="line">   Scroll* (ChainID: 534352)</summary>
 
 Decentralized Exchanges:
 

@@ -69,6 +69,15 @@ description: Additional Rewards Across Multiple Chains
 
 </details>
 
+<details>
+
+<summary>Scroll (ChainID: 534352)</summary>
+
+* **KyberSwapElasticLM**: [`0x7D5ba536ab244aAA1EA42aB88428847F25E3E676`](https://scrollscan.com/address/0x7D5ba536ab244aAA1EA42aB88428847F25E3E676)&#x20;
+* **KSElasticLMHelper**: [`0x35BE3F4fd8239A35a7F120756D4D69e5C5e10870`](https://scrollscan.com/address/0x6AFeb9EDd6Cf44fA8E89b1eee28284e6dD7705C8)
+
+</details>
+
 ## Static Farms
 
 <details>
@@ -142,5 +151,14 @@ description: Additional Rewards Across Multiple Chains
 
 * **KSElasticLMV2 (v1.1.1):** [`0x3D6AfE2fB73fFEd2E3dD00c501A174554e147a43`](https://explorer.linea.build/address/0x3D6AfE2fB73fFEd2E3dD00c501A174554e147a43)
 * **KSElasticLMHelper**: [`0x6AFeb9EDd6Cf44fA8E89b1eee28284e6dD7705C8`](https://explorer.linea.build/address/0x6AFeb9EDd6Cf44fA8E89b1eee28284e6dD7705C8)
+
+</details>
+
+<details>
+
+<summary>Scroll (ChainID: 534352)</summary>
+
+* **KSElasticLMV2 (v1.1.1 ):** [`0x3D6AfE2fB73fFEd2E3dD00c501A174554e147a43`](https://scrollscan.com/address/0x3D6AfE2fB73fFEd2E3dD00c501A174554e147a43)
+* **KSElasticLMHelper**: [`0x6AFeb9EDd6Cf44fA8E89b1eee28284e6dD7705C8`](https://scrollscan.com/address/0x6AFeb9EDd6Cf44fA8E89b1eee28284e6dD7705C8)
 
 </details>

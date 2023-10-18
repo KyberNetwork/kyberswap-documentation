@@ -115,3 +115,11 @@ All KyberSwap Aggregator contracts have been deployed at the same address across
 * **MetaAggregationRouterV2:** [`0x6131B5fae19EA4f9D964eAc0408E4408b66337b5`](https://bttcscan.com/address/0x6131B5fae19EA4f9D964eAc0408E4408b66337b5)
 
 </details>
+
+<details>
+
+<summary>Scroll (ChainID: 534352)</summary>
+
+* **MetaAggregationRouterV2:** [`0x6131B5fae19EA4f9D964eAc0408E4408b66337b5`](https://scrollscan.com/address/0x6131B5fae19EA4f9D964eAc0408E4408b66337b5)
+
+</details>

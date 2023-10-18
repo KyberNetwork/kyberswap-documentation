@@ -275,6 +275,18 @@ description: Liquidity Mining Across Multiple Chains
 
 </details>
 
+<details>
+
+<summary>Scroll (ChainID: 534352)</summary>
+
+#### Static Fee
+
+* **KSRouter:** [`0x5649B4DD00780e99Bab7Abb4A3d581Ea1aEB23D0`](https://scrollscan.com/address/0x5649B4DD00780e99Bab7Abb4A3d581Ea1aEB23D0)
+* **KSFactory:** [`0x1c758aF0688502e49140230F6b0EBd376d429be5`](https://scrollscan.com/address/0x1c758af0688502e49140230f6b0ebd376d429be5)
+* **ZapInV2:** [`0x2abE8750e4a65584d7452316356128C936273e0D`](https://scrollscan.com/address/0x2abE8750e4a65584d7452316356128C936273e0D)
+
+</details>
+
 ## Testnet
 
 <details>
