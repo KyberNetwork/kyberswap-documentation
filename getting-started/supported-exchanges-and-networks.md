@@ -370,6 +370,7 @@ Decentralized Exchanges:
 Decentralized Exchanges:
 
 * [KyberSwap](https://kyberswap.com/)
+* [iZiSwap](https://izumi.finance/trade/swap)
 
 </details>
 
