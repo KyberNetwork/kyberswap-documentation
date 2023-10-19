@@ -41,7 +41,11 @@ Amend the parameters of your limit order in the Edit Order screen. You can chang
 
 Currently, gasless cancels are only supported on the following chains:
 
+* Ethereum (ChainID: 1)
+* BSC (ChainID: 56)
 * Polygon PoS (ChainId: 137)
+* Avalanche (ChainID: 43114)
+* Fantom (ChainID: 250)
 
 For chains where gasless cancellation is not supported, the option will not be shown and users will have to default to hard cancel (i.e. cancel with a fee).
 {% endhint %}
