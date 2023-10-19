@@ -56,7 +56,7 @@ Click on “Edit Order” to proceed.
 
 Review the details of the order in the “Review your order” screen that appears. Once you are satisfied, click on the “Place Order” button.&#x20;
 
-* If you chose the "Gasles Edit" option, this will be an [off-chain transaction](../../../getting-started/foundational-topics/decentralized-technologies/on-chain-vs-off-chain-data.md) which requires 2 signatures for cancellation and creating a new order.
+* If you chose the "Gasless Edit" option, this will be an [off-chain transaction](../../../getting-started/foundational-topics/decentralized-technologies/on-chain-vs-off-chain-data.md) which requires 2 signatures for cancellation and creating a new order.
 * If you chose the "Hard Edit" option, this will be an [on-chain transaction](../concepts/off-chain-relay.md) that requires an approval and gas.
 
 ![Review order](../../../.gitbook/assets/LO\_Edit\_Confirmation.png)
