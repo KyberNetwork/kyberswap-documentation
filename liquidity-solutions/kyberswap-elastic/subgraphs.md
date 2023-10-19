@@ -121,3 +121,9 @@ https://linea-graph.kyberengineering.io/subgraphs/name/kybernetwork/kyberswap-el
 ```
 https://bttc-graph.kyberengineering.io/subgraphs/name/kybernetwork/kyberswap-elastic-bttc
 ```
+
+### Scroll (ChainID: 534352)
+
+```
+https://scroll-graph.kyberengineering.io/subgraphs/name/kybernetwork/kyberswap-elastic-scroll
+```

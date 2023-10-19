@@ -107,3 +107,9 @@ https://graph-query.linea.build/subgraphs/name/kybernetwork/kyberswap-classic-li
 ```
 https://bttc-graph.kyberengineering.io/subgraphs/name/kybernetwork/kyberswap-exchange-bttc
 ```
+
+### Scroll (ChainID: 534352)
+
+```
+https://scroll-graph.kyberengineering.io/subgraphs/name/kybernetwork/kyberswap-classic-scroll/graphql
+```
