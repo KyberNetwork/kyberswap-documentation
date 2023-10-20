@@ -222,6 +222,7 @@ Decentralized Exchanges:
 * [BaseSwap V3](https://baseswap.fi/swap)
 * [BasoFinance](https://www.baso.finance/)
 * [BMX](https://bmx.morphex.trade/)
+* [BMX GMX-Liquidity Pool](https://bmx.morphex.trade/)
 * [BVM](https://base.velocimeter.xyz/home)
 * [Curve](https://curve.fi/)
 * [DackieSwap V2](https://www.dackieswap.xyz/swap)
