@@ -227,6 +227,7 @@ Decentralized Exchanges:
 * [Curve](https://curve.fi/)
 * [DackieSwap V2](https://www.dackieswap.xyz/swap)
 * [DackieSwap V3](https://www.dackieswap.xyz/swap)
+* [Equalizer](https://base.equalizer.exchange/)
 * [HorizonDEX](https://app.horizondex.io/swap)
 * [iZiSwap](https://izumi.finance/trade/swap)
 * [Maverick](https://app.mav.xyz/)
