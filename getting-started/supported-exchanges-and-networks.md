@@ -233,6 +233,7 @@ Decentralized Exchanges:
 * [PancakeSwap V2](https://pancakeswap.finance/swap)
 * [PancakeSwap V3](https://pancakeswap.finance/swap)
 * [RocketSwap V2](https://app.rocketswap.cc/exchange/swap)
+* [SushiSwap](https://www.sushi.com/swap)
 * [SushiSwap V3](https://www.sushi.com/swap)
 * [SwapBased](https://swapbased.finance/#/swap)
 * [SwapBased V3](https://swapbased.finance/#/swap)
