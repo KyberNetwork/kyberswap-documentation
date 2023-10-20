@@ -6,7 +6,7 @@ description: KyberSwap Limit Order Taker APIs
 
 ## Download OpenAPI specification:
 
-{% file src="../../../.gitbook/assets/LimitOrderAPIs_v1.1.yaml" %}
+{% file src="../../../.gitbook/assets/LimitOrderAPIs_v1.2.yaml" %}
 
 ## Taker APIs
 
@@ -48,6 +48,7 @@ The fees charged will be according to the most exotic token in the trading pair.
   * USDC: [`0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48`](https://etherscan.io/address/0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48)
   * USDT: [`0xdac17f958d2ee523a2206206994597c13d831ec7`](https://etherscan.io/address/0xdac17f958d2ee523a2206206994597c13d831ec7)
   * DAI: [`0x6b175474e89094c44da98b954eedeac495271d0f`](https://etherscan.io/address/0x6b175474e89094c44da98b954eedeac495271d0f)
+* #### Fill Order(s)
 * BSC (ChainID: 56)
   * USDT: [`0x55d398326f99059ff775485246999027b3197955`](https://bscscan.com/address/0x55d398326f99059ff775485246999027b3197955)
   * USDC: [`0x8ac76a51cc950d9822d68b83fe1ad97b32cd580d`](https://bscscan.com/address/0x8ac76a51cc950d9822d68b83fe1ad97b32cd580d)
@@ -118,24 +119,34 @@ The fees charged will be according to the most exotic token in the trading pair.
 
 </details>
 
+<details>
+
+<summary>Rates calculation</summary>
+
+$$rate =\frac{(\text{makingAmount}-\text{makingAmountFilled})*(1-\text{makerTokenFee%})*(\text{makerAssetPriceUSD}-\text{gasPriceUSD})}{(\text{takingAmount}-\text{takingAmountFilled})*\text{takerAssetPriceUSD}}$$
+
+</details>
+
 ### `Latest`
 
-{% swagger src="../../../.gitbook/assets/Limit-Order-APIs (23).yaml" path="/read-partner/api/v1/orders" method="get" %}
-[Limit-Order-APIs (23).yaml](<../../../.gitbook/assets/Limit-Order-APIs (23).yaml>)
+#### Query Order(s)
+
+{% swagger src="../../../.gitbook/assets/LimitOrderAPIs_v1.2.yaml" path="/read-partner/api/v1/orders" method="get" %}
+[LimitOrderAPIs_v1.2.yaml](../../../.gitbook/assets/LimitOrderAPIs_v1.2.yaml)
 {% endswagger %}
 
-{% swagger src="../../../.gitbook/assets/LimitOrderAPIs_v1.1.yaml" path="/read-partner/api/v1/orders/op-signature" method="post" %}
-[LimitOrderAPIs_v1.1.yaml](../../../.gitbook/assets/LimitOrderAPIs_v1.1.yaml)
+#### Get Operator Signature
+
+{% swagger src="../../../.gitbook/assets/LimitOrderAPIs_v1.2.yaml" path="/read-partner/api/v1/orders/operator-signature" method="get" %}
+[LimitOrderAPIs_v1.2.yaml](../../../.gitbook/assets/LimitOrderAPIs_v1.2.yaml)
 {% endswagger %}
 
-{% swagger src="../../../.gitbook/assets/Limit-Order-APIs (16).yaml" path="/read-partner/api/v1/encode/fill-order-to" method="post" %}
-[Limit-Order-APIs (16).yaml](<../../../.gitbook/assets/Limit-Order-APIs (16).yaml>)
+#### Fill Order(s)
+
+{% swagger src="../../../.gitbook/assets/LimitOrderAPIs_v1.2.yaml" path="/read-ks/api/v1/encode/fill-order-to" method="post" %}
+[LimitOrderAPIs_v1.2.yaml](../../../.gitbook/assets/LimitOrderAPIs_v1.2.yaml)
 {% endswagger %}
 
-{% swagger src="../../../.gitbook/assets/Limit-Order-APIs (20).yaml" path="/read-partner/api/v1/encode/fill-batch-orders-to" method="post" %}
-[Limit-Order-APIs (20).yaml](<../../../.gitbook/assets/Limit-Order-APIs (20).yaml>)
-{% endswagger %}
-
-{% swagger src="../../../.gitbook/assets/Limit-Order-APIs (15).yaml" path="/read-partner/api/v1/orders/pairs" method="get" %}
-[Limit-Order-APIs (15).yaml](<../../../.gitbook/assets/Limit-Order-APIs (15).yaml>)
+{% swagger src="../../../.gitbook/assets/LimitOrderAPIs_v1.2.yaml" path="/read-ks/api/v1/encode/fill-batch-orders-to" method="post" %}
+[LimitOrderAPIs_v1.2.yaml](../../../.gitbook/assets/LimitOrderAPIs_v1.2.yaml)
 {% endswagger %}

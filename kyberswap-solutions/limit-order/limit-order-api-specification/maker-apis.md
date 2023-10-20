@@ -2,13 +2,13 @@
 description: KyberSwap Limit Order Maker APIs
 ---
 
-# Maker APIs
+# General APIs
 
 ## Download OpenAPI specification:
 
-{% file src="../../../.gitbook/assets/LimitOrderAPIs_v1.1.yaml" %}
+{% file src="../../../.gitbook/assets/LimitOrderAPIs_v1.2.yaml" %}
 
-## Maker APIs
+## General APIs
 
 <details>
 
@@ -28,30 +28,12 @@ The KyberSwap Docs will continue to maintain information regarding `Legacy` and 
 
 ### `Latest`
 
-{% swagger src="../../../.gitbook/assets/Limit-Order-APIs (1).yaml" path="/write/api/v1/orders" method="post" %}
-[Limit-Order-APIs (1).yaml](<../../../.gitbook/assets/Limit-Order-APIs (1).yaml>)
+{% swagger src="../../../.gitbook/assets/LimitOrderAPIs_v1.2.yaml" path="/read-partner/api/v1/orders/pairs" method="get" %}
+[LimitOrderAPIs_v1.2.yaml](../../../.gitbook/assets/LimitOrderAPIs_v1.2.yaml)
 {% endswagger %}
 
-{% swagger src="../../../.gitbook/assets/Limit-Order-APIs (26).yaml" path="/read-ks/api/v1/orders/active-making-amount" method="get" %}
-[Limit-Order-APIs (26).yaml](<../../../.gitbook/assets/Limit-Order-APIs (26).yaml>)
+{% swagger src="../../../.gitbook/assets/LimitOrderAPIs_v1.2.yaml" path="/read-ks/api/v1/configs/contract-address" method="get" %}
+[LimitOrderAPIs_v1.2.yaml](../../../.gitbook/assets/LimitOrderAPIs_v1.2.yaml)
 {% endswagger %}
 
-{% swagger src="../../../.gitbook/assets/Limit-Order-APIs (3).yaml" path="/read-ks/api/v1/orders" method="get" %}
-[Limit-Order-APIs (3).yaml](<../../../.gitbook/assets/Limit-Order-APIs (3).yaml>)
-{% endswagger %}
-
-{% swagger src="../../../.gitbook/assets/Limit-Order-APIs (25).yaml" path="/write/api/v1/orders/sign-message" method="post" %}
-[Limit-Order-APIs (25).yaml](<../../../.gitbook/assets/Limit-Order-APIs (25).yaml>)
-{% endswagger %}
-
-{% swagger src="../../../.gitbook/assets/Limit-Order-APIs (13).yaml" path="/write/api/v1/encode/increase-nonce" method="post" %}
-[Limit-Order-APIs (13).yaml](<../../../.gitbook/assets/Limit-Order-APIs (13).yaml>)
-{% endswagger %}
-
-{% swagger src="../../../.gitbook/assets/Limit-Order-APIs (10).yaml" path="/write/api/v1/encode/cancel-batch-orders" method="post" %}
-[Limit-Order-APIs (10).yaml](<../../../.gitbook/assets/Limit-Order-APIs (10).yaml>)
-{% endswagger %}
-
-{% swagger src="../../../.gitbook/assets/LimitOrderAPIs_v1.1.yaml" path="/write/api/v1/orders/cancel" method="post" %}
-[LimitOrderAPIs_v1.1.yaml](../../../.gitbook/assets/LimitOrderAPIs_v1.1.yaml)
-{% endswagger %}
+_\*For `/read-ks/api/v1/configs/contract-address`, please refer to the `.yaml` file for the full return object as GitBook has limited support for OpenAPI's `additionalProperties` definition._
