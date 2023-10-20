@@ -380,6 +380,7 @@ Decentralized Exchanges:
 * [Scroll\_Swap](https://dex.scrollswap.app/#/swap)
 * [SkyDrome Finance](https://app.skydrome.finance/swap)
 * [SpaceFi](https://swap-zksync.spacefi.io/#/swap)
+* [SyncSwap](https://syncswap.xyz/)
 * [PunkSwap](https://zkscroll.punkswap.exchange/swap/)
 
 </details>
