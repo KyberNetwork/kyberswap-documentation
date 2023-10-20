@@ -228,6 +228,7 @@ Decentralized Exchanges:
 * [HorizonDEX](https://app.horizondex.io/swap)
 * [iZiSwap](https://izumi.finance/trade/swap)
 * [Maverick](https://app.mav.xyz/)
+* [MoonBase](https://www.moonbase.fi/swap)
 * [PancakeSwap V2](https://pancakeswap.finance/swap)
 * [PancakeSwap V3](https://pancakeswap.finance/swap)
 * [RocketSwap V2](https://app.rocketswap.cc/exchange/swap)
