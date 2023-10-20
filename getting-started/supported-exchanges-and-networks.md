@@ -217,6 +217,7 @@ Decentralized Exchanges:
 * [Alien Base Stableswap](https://app.alienbase.xyz/)
 * [Balancer Weighted](https://app.balancer.fi/#/)
 * [Balancer Composable](https://app.balancer.fi/#/)
+* [Baldex](https://app.baldex.hair/swap)
 * [BaseSwap](https://baseswap.fi/swap)
 * [BaseSwap V3](https://baseswap.fi/swap)
 * [BasoFinance](https://www.baso.finance/)
