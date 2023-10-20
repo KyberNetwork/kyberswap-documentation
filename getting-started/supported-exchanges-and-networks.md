@@ -234,6 +234,7 @@ Decentralized Exchanges:
 * [SushiSwap V3](https://www.sushi.com/swap)
 * [SwapBased](https://swapbased.finance/#/swap)
 * [SwapBased V3](https://swapbased.finance/#/swap)
+* [SwapBased Perps](https://perps.swapbased.finance/trade)
 * [Synapse](https://www.synapseprotocol.com/swap)
 * [SynthSwap V2](https://app.horizondex.io/swap)
 * [SynthSwap V3](https://app.horizondex.io/swap)
