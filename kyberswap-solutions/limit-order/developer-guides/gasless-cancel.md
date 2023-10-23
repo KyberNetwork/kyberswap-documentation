@@ -136,7 +136,15 @@ const {data} = await axios.post(
 
 Note that we have included an `Origin` header parameter as a means to authenticate the request.
 
-Once the KyberSwap LO Service receives the gasless cancel order, the KyberSwap Operator will no longer sign the orderIds that were requested to be gaslessly cancelled. In cases where the KyberSwap Operator had recently signed the target orderId (i.e. when target order is close to the market price), Makers might need to wait up till a maximum of 5 minutes for the Operator signature to lapse before their order is cancelled.
+Once the KyberSwap LO Service receives the gasless cancel order, the KyberSwap Operator will no longer sign the orderIds that were requested to be gaslessly cancelled. In rare cases where the KyberSwap Operator had recently signed the target orderId (i.e. when target order is close to the market price), Makers might need to wait up till a maximum of 5 minutes for the Operator signature to lapse before their order is cancelled.
+
+{% hint style="info" %}
+**Hard Cancel**
+
+For Makers who would like to immediately cancel their orders without waiting for the Operator signature to lapse, KyberSwap Limit Orders also offers a Hard Cancel option. By paying a small prioritization gas fee, Makers can cancel their orders immediately on-chain.
+
+Please refer to [Hard Cancel](hard-cancel.md) for more info.
+{% endhint %}
 
 The cancelled `orderId` as well as any operator signature expiry timestamp will be returned as part of the response values from the `/write/api/v1/orders/cancel` API.
 
