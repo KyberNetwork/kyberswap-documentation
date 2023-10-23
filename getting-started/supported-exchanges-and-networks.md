@@ -104,6 +104,7 @@ Decentralized Exchanges:
 * [GMX ](https://app.gmx.io/#/trade)
 * [Horiza](https://app.horiza.io/)
 * [iZiSwap](https://izumi.finance/trade/swap)
+* [MMF](https://mm.finance/swap)
 * [MMF V3](https://mm.finance/swap)
 * [PancakeSwap V3](https://pancakeswap.finance/swap)
 * [Ramses](https://app.ramses.exchange/)
