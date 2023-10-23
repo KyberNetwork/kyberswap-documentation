@@ -129,7 +129,7 @@ const signature = await signer.signTypedData(
 
 [EIP712 ](https://eips.ethereum.org/EIPS/eip-712)exposes human-readable data for user's to view prior to signing the transaction.
 
-Note that our example assumes a pure Node.js implementation and therefore uses the ethers.js [`signTypedData()`](https://docs.ethers.org/v6/api/providers/#Signer-signTypedData) function to sign the EIP712 message. **Note that the `type` object used is per the `primaryType` that is returned by the KyberSwap LO Service.**
+Our example assumes a pure Node.js implementation and therefore uses the ethers.js [`signTypedData()`](https://docs.ethers.org/v6/api/providers/#Signer-signTypedData) function to sign the EIP712 message. **Note that the `type` object used is per the `primaryType` that is returned by the KyberSwap LO Service.**
 
 For further information on how to implement this from the browser UI, you can also take reference from MetaMask's [SignTypedData V4](https://docs.metamask.io/guide/signing-data.html#signtypeddata-v4).
 {% endhint %}
@@ -165,6 +165,6 @@ const {data} = await axios.post(
 
 Note that the KyberSwap Limit Order domain is stored under [`constants.ts`](https://github.com/KyberNetwork/ks-limit-order-API-demo/blob/main/src/libs/constants.ts) for easy retrieval across various API operations.
 
-Once the KyberSwap service receives the creation order, a new off-chain order will be created in it's orderbook from which our network of Takers will be able to query. The created `orderId` will also be returned as part of the response values from the `/write/api/v1/orders` API.
+Once the KyberSwap LO service receives the creation order, a new off-chain order will be created in it's orderbook from which our network of Takers will be able to query. The created `orderId` will also be returned as part of the response values from the `/write/api/v1/orders` API.
 
 <figure><img src="../../../.gitbook/assets/LO_DevGuide_CreateOrderSuccess.png" alt=""><figcaption><p>Create order success response</p></figcaption></figure>
