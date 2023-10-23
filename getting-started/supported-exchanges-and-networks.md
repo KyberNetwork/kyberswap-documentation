@@ -80,6 +80,7 @@ Decentralized Exchanges:
 * [Uniswap V3](https://app.uniswap.org/#/swap)
 * Wault (!)
 * [Wombat](https://app.wombat.exchange/swap)
+* [WOOFi V2](https://fi.woo.org/swap/)
 
 </details>
 
@@ -114,6 +115,7 @@ Decentralized Exchanges:
 * [Synapse ](https://synapseprotocol.com/)
 * [Uniswap V3 ](https://app.uniswap.org/#/swap)
 * [Wombat](https://app.wombat.exchange/swap)
+* [WOOFi V2](https://fi.woo.org/swap/)
 * [ZyberSwap V3](https://app.zyberswap.io/exchange/besttrade)
 
 </details>
@@ -156,6 +158,7 @@ Decentralized Exchanges:
 * [Synapse ](https://synapseprotocol.com/)
 * [Uniswap V3 ](https://app.uniswap.org/#/swap)
 * Wault (!)
+* [WOOFi V2](https://fi.woo.org/swap/)
 
 </details>
 
@@ -176,6 +179,7 @@ Decentralized Exchanges:
 * [Uniswap (v3)](https://app.uniswap.org/#/swap)
 * [Velodrome ](https://app.velodrome.finance/swap)
 * [Velodrome V2](https://velodrome.finance/)
+* [WOOFi V2](https://fi.woo.org/swap/)
 * [ZipSwap](https://ipfs.zipswap.fi/#/swap)
 * [ZyberSwap V3](https://app.zyberswap.io/exchange/besttrade)
 
@@ -204,6 +208,7 @@ Decentralized Exchanges:
 * [Synapse ](https://synapseprotocol.com/)
 * [TraderJoe ](https://traderjoexyz.com/avalanche)
 * [Uniswap (v3)](https://app.uniswap.org/#/swap)
+* [WOOFi V2](https://fi.woo.org/swap/)
 * [YetiSwap](https://exchange.yetiswap.app/#/swap)
 
 </details>
@@ -247,6 +252,7 @@ Decentralized Exchanges:
 * [SynthSwap V2](https://app.horizondex.io/swap)
 * [SynthSwap V3](https://app.horizondex.io/swap)
 * [Uniswap V3](https://app.uniswap.org/#/swap)
+* [WOOFi V2](https://fi.woo.org/swap/)
 
 </details>
 
@@ -284,6 +290,7 @@ Decentralized Exchanges:
 * [SyncSwap](https://syncswap.xyz/)
 * [Uniswap V3](https://app.uniswap.org/#/swap)
 * [Wagmi](https://app.wagmi.com/#/trade/swap)
+* [WOOFi V2](https://fi.woo.org/swap/)
 * [Velocore](https://app.velocore.xyz/swap)
 * [veSync](https://app.vesync.finance/swap)
 
@@ -309,6 +316,7 @@ Decentralized Exchanges:
 * [SushiSwap](https://www.sushi.com/swap)
 * [SushiSwap V3](https://www.sushi.com/swap)
 * [Synapse](https://synapseprotocol.com/)
+* [WOOFi V2](https://fi.woo.org/swap/)
 
 </details>
 
@@ -328,6 +336,7 @@ Decentralized Exchanges:
 * [PancakeSwap V2](https://pancakeswap.finance/)
 * [SushiSwap V3](https://www.sushi.com/swap)
 * [SyncSwap](https://syncswap.xyz/)
+* [WOOFi V2](https://fi.woo.org/swap/)
 
 </details>
 
@@ -345,6 +354,7 @@ Decentralized Exchanges:
 * [PancakeSwap V3](https://pancakeswap.finance/swap)
 * [QuickSwap V3](https://quickswap.exchange/#/)
 * [SushiSwap V3](https://www.sushi.com/swap)
+* [WOOFi V2](https://fi.woo.org/swap/)
 
 </details>
 
