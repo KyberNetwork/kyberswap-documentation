@@ -19,7 +19,7 @@ _Source_: [LiquidityConversionRates.sol](https://github.com/KyberNetwork/smart-c
 
 The LiquidityConversionRates contract's role is to allow reserve operators to set liquidity parameters to the automated reserve for automated rate adjustment based on trades.
 
-
+***
 
 ### INDEX[​](https://docs.kyberswap.com/Legacy/api-abi/core-smart-contracts/api\_abi-liquidityconversionrates#index) <a href="#index" id="index"></a>
 
@@ -33,7 +33,7 @@ The LiquidityConversionRates contract's role is to allow reserve operators to se
 
 Event for logging the setting of liquidity parameters.
 
-
+***
 
 event **LiquidityParamsSet**(uint rInFp, uint pMinInFp, uint numFpBits, uint maxCapBuyInFp, uint maxEthCapSellInFp, uint feeInBps, uint formulaPrecision, uint maxQtyInFp, uint maxBuyRateInPrecision, uint minBuyRateInPrecision, uint maxSellRateInPrecision, uint minSellRateInPrecision) | Parameter | Type | Description | | --------- |:----------------------:|:---------------------------:| | `uint` | rInFp | price move per 1 ETH inventory change in formula precision | | `uint` | pMinInFp | pMin boundary in formula precision | | `uint` | numFpBits | formula precision (currently 40 is recommended) | | `uint` | maxCapBuyInFp | allowed ETH quantity for a single buy trade in ETH | | `uint` | maxEthCapSellInFp | allowed ETH quantity for a single sell trade in ETH | | `uint` | feeInBps | fees in base points | | `uint` | formulaPrecision | formula precision | | `uint` | maxQtyInFp | max quantity in formula precision | | `uint` | maxBuyRateInPrecision | maximum buy rate in formula precision | | `uint` | minBuyRateInPrecision | minimum buy rate in formula precision | | `uint` | maxSellRateInPrecision | maximum sell rate in formula precision | | `uint` | minSellRateInPrecision | minimum sell rate in formula precision |\
 
@@ -42,7 +42,7 @@ event **LiquidityParamsSet**(uint rInFp, uint pMinInFp, uint numFpBits, uint max
 
 Event for logging the setting of the reserve contract address.
 
-
+***
 
 event **ReserveAddressSet**(address reserve) | Parameter | Type | Description | | --------- |:--------:|:---------------------------:| | `address` | reserve | reserve's contract address |\
 
@@ -51,7 +51,7 @@ event **ReserveAddressSet**(address reserve) | Parameter | Type | Description | 
 
 Event for logging of the resetting of the fees collected.
 
-
+***
 
 event **CollectedFeesReset**(address reserve) | Parameter | Type | Description | | --------- |:----------------:|:---------------------------:| | `uint` | resetFeesInTwei | resetted fees in token wei |\
 
@@ -62,11 +62,11 @@ event **CollectedFeesReset**(address reserve) | Parameter | Type | Description |
 
 Contract constructor. Note that constructor methods are called exactly once during contract instantiation and cannot be called again.
 
-
+***
 
 function **LiquidityConversionRates**(address \_admin, ERC20 \_token) public | Parameter | Type | Description | | ---------- |:-------:|:----------------------------:| | `_admin` | address | admin's wallet address | | `_token` | ERC20 | ERC20 token contract address |
 
-
+***
 
 Web3 Example:
 
@@ -106,7 +106,7 @@ Code snippet reference: [broadcastTx()](https://docs.kyberswap.com/Legacy/api-ab
 
 Gets the conversion rate of the token to swap.
 
-
+***
 
 function **getRate**(ERC20 conversionToken, uint currentBlockNumber, bool buy, uint qtyInSrcWei) public view returns(uint) | Parameter | Type | Description | | --------- |:------------------:|:------------------------------------------------------------------:| | `ERC20` | conversionToken | source ERC20 token contract address | | `uint` | currentBlockNumber | current block number | | `bool` | buy | `true` to get the buy rate, otherwise `false` to get the sell rate | | `uint` | qtyInSrcWei | quantity in wei for the source token | **Returns:**\ Conversion rate of the source token and reserve token
 
@@ -117,7 +117,7 @@ function **getRate**(ERC20 conversionToken, uint currentBlockNumber, bool buy, u
 
 Reset the amount of collected fees. Collected fees can be read through the state variable `collectedFeesInTwei`. Only admin can invoke.
 
-
+***
 
 function **resetCollectedFees**() public onlyAdmin Modifiers: [onlyAdmin](https://docs.kyberswap.com/Legacy/api-abi/core-smart-contracts/api\_abi-permissiongroups.md#onlyadmin)
 
@@ -128,7 +128,7 @@ function **resetCollectedFees**() public onlyAdmin Modifiers: [onlyAdmin](https:
 
 Sets the liquidity parameters of the automated reserve. Only admin can invoke.
 
-
+***
 
 function **setLiquidityParams**(uint \_rInFp, uint \_pMinInFp, uint \_numFpBits, uint \_maxCapBuyInWei, uint \_maxCapSellInWei, uint \_feeInBps, uint \_maxTokenToEthRateInPrecision, uint \_minTokenToEthRateInPrecision) public onlyAdmin | Parameter | Type | Description | | --------- |:-----------------------------:|:---------------------------:| | `uint` | \_rInFp | price move per 1 ETH inventory change in formula precision | | `uint` | \_pMinInFp | pMin boundary in formula precision | | `uint` | \_numFpBits | formula precision (currently 40 is recommended) | | `uint` | \_maxCapBuyInWei | maximum token quantity in wei for a single buy trade | | `uint` | \_maxCapSellInWei | maximum token quantity in wei for a single sell trade | | `uint` | \_feeInBps | fees in base points | | `uint` | \_maxTokenToEthRateInPrecision | maximum allowed token to ETH rate in formula precision | | `uint` | \_minTokenToEthRateInPrecision | minimum allowed token to ETH rate in formula precision | Modifiers: [onlyAdmin](https://docs.kyberswap.com/Legacy/api-abi/core-smart-contracts/api\_abi-permissiongroups.md#onlyadmin)
 
@@ -139,6 +139,6 @@ function **setLiquidityParams**(uint \_rInFp, uint \_pMinInFp, uint \_numFpBits,
 
 Sets the reserve contract address. Only admin can invoke.
 
-
+***
 
 function **setReserveAddress**(address reserve) public onlyAdmin | Parameter | Type | Description | | --------- |:-------:|:---------------------------:| | `address` | reserve | reserve's contract address | Modifiers: [onlyAdmin](https://docs.kyberswap.com/Legacy/api-abi/core-smart-contracts/api\_abi-permissiongroups.md#onlyadmin)

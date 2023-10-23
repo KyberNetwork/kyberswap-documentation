@@ -111,7 +111,7 @@ Lastly, [KyberSwap Limit Order](../../../kyberswap-solutions/limit-order/) allow
 
 {% tab title="Developers" %}
 * [Execute A Swap With The Aggregator API](../../../kyberswap-solutions/kyberswap-aggregator/developer-guides/execute-a-swap-with-the-aggregator-api.md)
-* [Place A Limit Order](../../../kyberswap-solutions/limit-order/developer-guides/place-a-limit-order.md)
-* [Fill A Limit Order](../../../kyberswap-solutions/limit-order/developer-guides/fill-a-limit-order.md)
+* [Place A Limit Order](broken-reference)
+* [Fill A Limit Order](broken-reference)
 {% endtab %}
 {% endtabs %}

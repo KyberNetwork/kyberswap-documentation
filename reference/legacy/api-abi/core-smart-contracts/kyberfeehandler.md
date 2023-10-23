@@ -17,7 +17,7 @@ is [IKyberFeeHandler](https://docs.kyberswap.com/Legacy/api-abi/core-smart-contr
 
 _Source_: [KyberFeeHandler.sol](https://github.com/KyberNetwork/smart-contracts/blob/master/contracts/sol6/Dao/KyberFeeHandler.sol)
 
-
+***
 
 ### INDEX[​](https://docs.kyberswap.com/Legacy/api-abi/core-smart-contracts/api\_abi-kyberfeehandler#index) <a href="#index" id="index"></a>
 
@@ -31,7 +31,7 @@ _Source_: [KyberFeeHandler.sol](https://github.com/KyberNetwork/smart-contracts/
 
 Event for logging the rewards paid.
 
-
+***
 
 event **FeeDistributed**(IERC20 token, address platformWallet, uint256 platformFeeWei, uint256 rewardWei, uint256 rebateWei, address\[] rebateWallets, uint256\[] rebatePercentBpsPerWallet, uint256 burnAmtWei) | Parameter | Type | Description | | --------- |:-----:|:-----------:| | `token` | contract IERC20 | ERC20 token address | | `platformWallet` | address | address receiving the platform fee | | `platformFeeWei` | uint256 | platform fees distributed in wei | | `rewardWei` | uint256 | rewards distributed in wei | | `rebateWei` | uint256 | rebates distributed in wei | | `rebateWallets` | address\[] | address receiving the reabtes | | `rebatePercentBpsPerWallet` | uint256\[] | rebate percentage in BPS per wallet | | `burnAmtWei` | uint256 | burned amount in wei | Signature: `0x53e2e1b5ab64e0a76fcc6a932558eba265d4e58c512401a7d776ae0f8fc08994`
 
@@ -42,7 +42,7 @@ event **FeeDistributed**(IERC20 token, address platformWallet, uint256 platformF
 
 Event for logging the update of the BRR values.
 
-
+***
 
 event **BRRUpdated**(uint256 rewardBps, uint256 rebateBps, uint256 burnBps, uint256 expiryTimestamp, uint256 epoch) | Parameter | Type | Description | | --------- |:-----:|:-----------:| | `rewardBps` | uint256 | reward settings in BPS | | `rebateBps` | uint256 | rebate settings in BPS | | `burnBps` | uint256 | burn settings in BPS | | `expiryTimestamp` | uint256 | timestamp when the settings will expire | | `epoch` | uint256 | epoch when the settings was set | Signature: 0x4b3150a36b957ed95a132721c7412af319174861da7c8c7a55ef6e1a2794528d
 
@@ -53,7 +53,7 @@ event **BRRUpdated**(uint256 rewardBps, uint256 rebateBps, uint256 burnBps, uint
 
 Event logging the receiving of ETH to the FeeHandler.
 
-
+***
 
 event **EthReceived**(uint256 amount) | Parameter | Type | Description | | --------- |:-----:|:-----------:| | `amount` | uint256 | amount of ETH received in wei | Signature: 0x353bcaaf167a6add95a753d39727e3d3beb865129a69a10ed774b0b899671403
 
@@ -64,7 +64,7 @@ event **EthReceived**(uint256 amount) | Parameter | Type | Description | | -----
 
 Event logging the setting of the KyberDao address.
 
-
+***
 
 event **KyberDaoAddressSet**(IKyberDao kyberDao) | Parameter | Type | Description | | --------- |:-----:|:-----------:| | `kyberDao` | IKyberDao | KyberDao contract address | Signature: 0x6792eb8fe9de88d4eaaee7128e99aede17da98cd391520d3ec51a365804722c4
 
@@ -75,7 +75,7 @@ event **KyberDaoAddressSet**(IKyberDao kyberDao) | Parameter | Type | Descriptio
 
 Event logging the setting of the burn configuration.
 
-
+***
 
 event **BurnConfigSet**(ISanityRate sanityRate, uint256 weiToBurn) | Parameter | Type | Description | | --------- |:-----:|:-----------:| | `sanityRate` | ISanityRate | SanityRates contract address | | `weiToBurn` | uint256 | amount of wei to burn | Signature: 0xe40f97f23269c4682610e9b2522d6d4272ee56f115906d71fcb3da82a860f755
 
@@ -86,7 +86,7 @@ event **BurnConfigSet**(ISanityRate sanityRate, uint256 weiToBurn) | Parameter |
 
 Event logging the removed rewards for burning.
 
-
+***
 
 event **RewardsRemovedToBurn**(uint256 epoch, uint256 rewardsWei) | Parameter | Type | Description | | --------- |:-----:|:-----------:| | `epoch` | uin256 | epoch number when event was emitted | | `rewardsWei` | uint256 | removed rewards in wei to burn | Signature: 0x11c852d8be537f120b8d4b4d5c3c211870522fd96a8bd9fa51d102774077a51b
 
@@ -97,7 +97,7 @@ event **RewardsRemovedToBurn**(uint256 epoch, uint256 rewardsWei) | Parameter | 
 
 Event logging the the setting of the network contract address.
 
-
+***
 
 event **KyberNetworkUpdated**(address kyberNetwork) | Parameter | Type | Description | | --------- |:-----:|:-----------:| | `kyberNetwork` | address | KyberNetwork contract address | Signature: 0x18970d46ac8a7d7e0da90e1bebb0be3e87ffc7705fc09d3bba5373d59b7a12aa
 
@@ -108,7 +108,7 @@ event **KyberNetworkUpdated**(address kyberNetwork) | Parameter | Type | Descrip
 
 event logging the updating of the proxy contract address.
 
-
+***
 
 event **KyberProxyUpdated**(IKyberProxy kyberProxy) | Parameter | Type | Description | | --------- |:-----:|:-----------:| | `kyberProxy` | IKyberProxy | IKyberProxy contract address | Signature: 0x8457f9bd0d13488a6c265af376d291f3c6bd2311d9e8dee5671d4169ca6e0ae0
 
@@ -121,7 +121,7 @@ event **KyberProxyUpdated**(IKyberProxy kyberProxy) | Parameter | Type | Descrip
 
 Emits EthReceived event when ETH is received in the contract.
 
-
+***
 
 ### function **receive**() external payable[​](https://docs.kyberswap.com/Legacy/api-abi/core-smart-contracts/api\_abi-kyberfeehandler#function-receive-external-payable) <a href="#function-receive-external-payable" id="function-receive-external-payable"></a>
 

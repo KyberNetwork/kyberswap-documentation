@@ -19,7 +19,7 @@ _Source_: [KyberReserve.sol](https://github.com/KyberNetwork/smart-contracts/blo
 
 The KyberReserve contract's role is to execute exchanges and provide rates for Kyber Network. The contract has no direct interaction with the end users (the only interaction with them is via the network platform). Its main interaction is with the reserve operator who manages the token inventory and feeds exchange rates every few minutes.
 
-
+***
 
 ### INDEX[​](https://docs.kyberswap.com/Legacy/api-abi/core-smart-contracts/api\_abi-kyberreserve#index) <a href="#index" id="index"></a>
 
@@ -33,7 +33,7 @@ The KyberReserve contract's role is to execute exchanges and provide rates for K
 
 Event for logging of ERC20 token deposits.
 
-
+***
 
 event **DepositToken**(ERC20 token, uint amount) | Parameter | Type | Description | | --------- |:-----:|:----------------------------:| | `token` | ERC20 | ERC20 token contract address | | `amount` | uint | ERC20 token amount in wei |
 
@@ -44,7 +44,7 @@ event **DepositToken**(ERC20 token, uint amount) | Parameter | Type | Descriptio
 
 Event for logging new token wallet address
 
-
+***
 
 event **NewTokenWallet**(ERC20 token, address wallet) | Parameter | Type | Description | | --------- |:-----:|:-----------------------------------------------------------:| | `token` | ERC20 | ERC20 token contract address | | `wallet` | address | token wallet address |
 
@@ -55,7 +55,7 @@ event **NewTokenWallet**(ERC20 token, address wallet) | Parameter | Type | Descr
 
 Event for logging the setting of contract addresses.
 
-
+***
 
 event **SetContractAddresses**(address network, address rate, address sanity) | Parameter | Type | Description | | --------- |:-------:|:--------------------------------:| | `network` | address | KyberNetwork contract address | | `rate` | address | ConversionRates contract address | | `sanity` | address | SanityRates contract address |
 
@@ -66,7 +66,7 @@ event **SetContractAddresses**(address network, address rate, address sanity) | 
 
 Event for logging if trade is enabled for the reserve.
 
-
+***
 
 event **TradeEnabled**(bool enable) | Parameter | Type | Description | | --------- |:-----:|:-----------------------------------------------------------:| | `enable` | bool | `true` if reserve is enabled, otherwise `false` if disabled |
 
@@ -77,7 +77,7 @@ event **TradeEnabled**(bool enable) | Parameter | Type | Description | | -------
 
 Event for logging of executed trades.
 
-
+***
 
 event **TradeExecute**(address indexed origin, address src, uint srcAmount, address destToken, uint destAmount, address destAddress) | Parameter | Type | Description | | --------------|:-------:|:----------------------------------------------:| | `origin` | address | sender's address | | `src` | address | source ERC20 token contract address | | `srcAmount` | uint | wei amount of source ERC20 tokens | | `destToken` | address | destination ERC20 token contract address | | `destAmount` | uint | wei amount of destination ERC20 tokens | | `destAddress` | address | recipient address for destination ERC20 tokens |
 
@@ -88,7 +88,7 @@ event **TradeExecute**(address indexed origin, address src, uint srcAmount, addr
 
 Event for logging of enabling or disabling of withdrawal address for token.
 
-
+***
 
 event **WithdrawAddressApproved**(ERC20 token, address addr, bool approve) | Parameter | Type | Description | | ----------|:-------:|:----------------------------------------------------------------------:| | `token` | ERC20 | ERC20 token contract address | | `addr` | address | withdrawal address | | `approve` | bool | `true` if address is enabled, otherwise `false` if address is disabled |
 
@@ -99,7 +99,7 @@ event **WithdrawAddressApproved**(ERC20 token, address addr, bool approve) | Par
 
 Event for logging of withdrawn funds when withdraw function is invoked.
 
-
+***
 
 event **WithdrawFunds**(ERC20 token, uint amount, address destination) | Parameter | Type | Description | | --------------|:-------:|:---------------------------------------:| | `token` | ERC20 | ERC20 token contract address | | `amount` | uint | wei amount of tokens that was withdrawn | | `destination` | address | recipient address of withdrawn funds |\
 
@@ -110,7 +110,7 @@ event **WithdrawFunds**(ERC20 token, uint amount, address destination) | Paramet
 
 Contract constructor. Note that constructor methods are called exactly once during contract instantiation and cannot be called again.
 
-
+***
 
 function **KyberReserve**(address \_kyberNetwork, ConversionRatesInterface \_ratesContract, address \_admin) public | Parameter | Type | Description | | -----------------|:------------------------:|:--------------------------------:| | `_kyberNetwork` | address | KyberNetwork contract address | | `_ratesContract` | ConversionRatesInterface | ConversionRates contract address | | `_admin` | address | admin's wallet address |
 
@@ -121,7 +121,7 @@ function **KyberReserve**(address \_kyberNetwork, ConversionRatesInterface \_rat
 
 Adds or deletes a reserve's withdrawal address to or from the network. Only admin can invoke.
 
-
+***
 
 function **approveWithdrawAddress**(ERC20 token, address addr, bool approve) public onlyAdmin | Parameter | Type | Description | | ----------|:-------:|:----------------------------------------------------------------------:| | `token` | ERC20 | ERC20 token contract address | | `addr` | address | withdrawal address | | `approve` | bool | `true` if address is enabled, otherwise `false` if address is disabled |
 
@@ -132,7 +132,7 @@ function **approveWithdrawAddress**(ERC20 token, address addr, bool approve) pub
 
 Disable trading for the reserve. Only alerter can invoke.
 
-
+***
 
 function **disableTrade**() public onlyAlerter returns (bool)\ **Returns:**\ `true` if trade is successfully disabled, otherwise `false`
 
@@ -143,7 +143,7 @@ function **disableTrade**() public onlyAlerter returns (bool)\ **Returns:**\ `tr
 
 Enables trading in the reserve. Only admin can invoke.
 
-
+***
 
 function **enableTrade**() public onlyAdmin returns (bool)\ **Returns:**\ `true` if trading is enabled, otherwise `false`\
 
@@ -152,7 +152,7 @@ function **enableTrade**() public onlyAdmin returns (bool)\ **Returns:**\ `true`
 
 Get the token balance of the reserve.
 
-
+***
 
 function **getBalance**(ERC20 token) public view returns (uint) | Parameter | Type | Description | | --------- |:-------:|:----------------------------:| | `token` | ERC20 | ERC20 token contract address | **Returns:**\ ERC20 token balance of the reserve in wei
 
@@ -163,7 +163,7 @@ function **getBalance**(ERC20 token) public view returns (uint) | Parameter | Ty
 
 Gets the conversion rate for a pair of tokens at block number.
 
-
+***
 
 function **getConversionRate**(ERC20 src, ERC20 dest, uint srcQty, uint blockNumber) public view returns (uint) | Parameter | Type | Description | | ------------- |:------:|:----------------------------------------:| | `src` | ERC20 | source ERC20 token contract address | | `dest` | ERC20 | destination ERC20 token contract address | | `srcQty` | uint | wei amount of source ERC20 token | | `blockNumber` | uint | current block height or block number | **Returns:**\ Current conversion rate of token pairs at block number
 
@@ -174,7 +174,7 @@ function **getConversionRate**(ERC20 src, ERC20 dest, uint srcQty, uint blockNum
 
 Get the calculated ERC20 token quantity in the destination wallet address.
 
-
+***
 
 function **getDestQty**(ERC20 src, ERC20 dest, uint srcQty, uint rate) public view returns (uint) | Parameter | Type | Description | | --------- |:-----:|:----------------------------------------:| | `src` | ERC20 | source ERC20 token contract address | | `dest` | ERC20 | destination ERC20 token contract address | | `srcQty` | uint | wei amount of source ERC20 token | | `rate` | uint | the conversion rate between src and dest | **Returns:**\ Calculated destination ERC20 token quantity in wei
 
@@ -185,7 +185,7 @@ function **getDestQty**(ERC20 src, ERC20 dest, uint srcQty, uint rate) public vi
 
 Get the calculated ERC20 token quantity in the source wallet address.
 
-
+***
 
 function **getSrcQty**(ERC20 src, ERC20 dest, uint dstQty, uint rate) public view returns (uint) | Parameter | Type | Description | | --------- |:-----:|:----------------------------------------:| | `src` | ERC20 | source ERC20 token contract address | | `dest` | ERC20 | destination ERC20 token contract address | | `dstQty` | uint | wei amount of source ERC20 token | | `rate` | uint | the conversion rate between src and dest | **Returns:**\ Calculated source ERC20 token quantity in wei
 
@@ -196,7 +196,7 @@ function **getSrcQty**(ERC20 src, ERC20 dest, uint dstQty, uint rate) public vie
 
 Sets the contract addresses. Only admin can invoke.
 
-
+***
 
 function **setContracts**(address \_kyberNetwork, ConversionRatesInterface \_conversionRates, SanityRatesInterface \_sanity) public onlyAdmin | Parameter | Type | Description | | -------------------|:------------------------:|:----------------------------------------------:| | `_kyberNetwork` | address | KyberNetwork contract address | | `_conversionRates` | ConversionRatesInterface | ConversionRates contract address | | `_sanity` | SanityRatesInterface | SanityRates contract address | Modifiers: [onlyAdmin](https://docs.kyberswap.com/Legacy/api-abi/core-smart-contracts/api\_abi-permissiongroups.md#onlyadmin)
 
@@ -207,7 +207,7 @@ function **setContracts**(address \_kyberNetwork, ConversionRatesInterface \_con
 
 Set the token wallet address to deposit / withdraw the specified token from / to. Only admin can invoke.
 
-
+***
 
 function **setTokenWallet**(ERC20 token, address wallet) public onlyAdmin | Parameter | Type | Description | | -------------------|:------------------------:|:----------------------------------------------:| | `token` | ERC20 | ERC20 token contract address | | `wallet` | address | wallet address |
 
@@ -218,6 +218,6 @@ function **setTokenWallet**(ERC20 token, address wallet) public onlyAdmin | Para
 
 Withdraw an ERC20 token from the reserve to the destination address. Only operator can invoke.
 
-
+***
 
 function **withdraw**(ERC20 token, uint amount, address destination) public onlyOperator returns (bool) | Parameter | Type | Description | | ------------- |:-------:|:----------------------------------------------:| | `token` | ERC20 | ERC20 token contract address | | `amount` | uint | ERC20 token amount in wei | | `destination` | address | recipient address for destination ERC20 tokens | **Returns:**\ `true` if the withdrawal was successful, otherwise `false` if unsuccessful

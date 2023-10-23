@@ -17,7 +17,7 @@ is [IKyberHint](https://docs.kyberswap.com/Legacy/api-abi/core-smart-contracts/a
 
 _Source_: [KyberHintHandler.sol](https://github.com/KyberNetwork/smart-contracts/blob/master/contracts/sol6/KyberHintHandler.sol)
 
-
+***
 
 ### INDEX[​](https://docs.kyberswap.com/Legacy/api-abi/core-smart-contracts/api\_abi-kyberhinthandler#index) <a href="#index" id="index"></a>
 
@@ -31,7 +31,7 @@ _Source_: [KyberHintHandler.sol](https://github.com/KyberNetwork/smart-contracts
 
 Parses the hint for a token -> eth trade.
 
-
+***
 
 function **parseTokenToEthHint**(IERC20 tokenSrc, bytes hint) public view override returns (TradeType tokenToEthType, bytes32\[] tokenToEthReserveIds, IKyberReserve\[] tokenToEthAddresses, uint256\[] tokenToEthSplits) | Parameter | Type | Description | | --------- |:-----:|:-----------:| | `tokenSrc` | IERC20 | source token to trade | | `hint` | bytes | the ABI encoded hint, built using the build hint functions |
 

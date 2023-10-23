@@ -26,8 +26,8 @@ For developers, KyberSwap Limit Order exposes a [set of APIs](../../../kyberswap
 {% endtab %}
 
 {% tab title="Developers" %}
-* [Place A Limit Order](../../../kyberswap-solutions/limit-order/developer-guides/place-a-limit-order.md)
-* [Fill A Limit Order](../../../kyberswap-solutions/limit-order/developer-guides/fill-a-limit-order.md)
+* [Place A Limit Order](broken-reference)
+* [Fill A Limit Order](broken-reference)
 * [Limit Order API Specification](../../../kyberswap-solutions/limit-order/limit-order-api-specification/)
 * [Limit Order Contract Addresses](../../../kyberswap-solutions/limit-order/contracts/limit-order-contract-addresses.md)
 {% endtab %}

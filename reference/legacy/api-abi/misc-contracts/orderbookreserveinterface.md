@@ -17,7 +17,7 @@ imports OrderListInterface
 
 _Source_: [OrderbookReserveInterface.sol](https://github.com/KyberNetwork/smart-contracts/blob/master/contracts/reserves/orderBookReserve/permissionless/OrderbookReserveInterface.sol)
 
-
+***
 
 ### INDEX[​](https://docs.kyberswap.com/Legacy/api-abi/misc/api\_abi-orderbookreserveinterface#index) <a href="#index" id="index"></a>
 
@@ -31,7 +31,7 @@ _Source_: [OrderbookReserveInterface.sol](https://github.com/KyberNetwork/smart-
 
 Initialisation of an orderbook reserve.
 
-
+***
 
 function **init**() public returns (bool) **Returns:**\ True if orderbook reserve has successfully initialised.\
 
@@ -40,6 +40,6 @@ function **init**() public returns (bool) **Returns:**\ True if orderbook reserv
 
 If KNC depreciates too much, trades are blocked because the staked KNC tokens for active orders are insufficient.
 
-
+***
 
 function **kncRateBlocksTrade**() public view returns (bool) **Returns:**\ True if orderbook reserve's trades are blocked due to KNC depreciation.
