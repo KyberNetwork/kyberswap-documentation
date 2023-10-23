@@ -1412,7 +1412,7 @@ paths:
       tags:
         - Maker
       operationId: post-read-ks-api-v1-encode-increase-nonce
-      description: Request for the cancel all encoded data from KyberSwap. By increasing the LO contract nonce tied to the Maker, the LO contract is able to nullify all exisitng orders. This data can then be executed on-chain from the Maker's wallet.    
+      description: Request for the cancel all encoded data from KyberSwap. By increasing the LO contract nonce tied to the Maker, the LO contract is able to nullify all existing orders. This data can then be executed on-chain from the Maker's wallet.    
       responses:
         '200':
           description: OK
