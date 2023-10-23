@@ -15,7 +15,7 @@ KyberSwap exposes 2 API options for Makers who wish to cancel their orders on-ch
 * [**`/read-ks/api/v1/encode/cancel-batch-orders`**](../limit-order-api-specification/maker-apis.md#read-ks-api-v1-encode-cancel-batch-orders): Encode the batch cancellation data to be sent on-chain. This API can be used to cancel a single `orderId` or multiple orders by specifying the target `orderIds`.
 * [**`/read-ks/api/v1/encode/increase-nonce`**](../limit-order-api-specification/maker-apis.md#read-ks-api-v1-encode-increase-nonce): Encode the increase nonce data to be sent on-chain. By increasing the LO contract nonce tied to the Maker, the LO contract is able to nullify all existing orders.
 
-In addition to the above, Maker's are also able to query their active order(s) to aid with filtering orders to cancel:
+In addition to the above, Makers are also able to query their active order(s) to aid with filtering orders to cancel:
 
 * [**`/read-ks/api/v1/orders`**](../limit-order-api-specification/maker-apis.md#read-ks-api-v1-orders): Get all orders created by a Maker address filtered by the order status.
 
@@ -105,7 +105,7 @@ This will return the batch cancel encoded data which will be used as the calldat
 
 ### Step 5: Execute the batch cancel transaction on-chain
 
-To execute the transaction, we can use our ethers.js signer instance to send the transaction with the required gas fees:
+To execute the transaction, we can use our [ethers.js signer instance](https://docs.ethers.org/v6/api/providers/#ContractRunner-sendTransaction) to send the transaction with the required gas fees:
 
 ```typescript
 const cancelOrderTx = await signer.sendTransaction({

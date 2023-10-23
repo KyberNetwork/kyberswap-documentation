@@ -15,7 +15,7 @@ KyberSwap exposes 2 APIs which Makers will need to call to gaslessly cancel thei
 * [**`/write/api/v1/orders/cancel-sign`**](../limit-order-api-specification/maker-apis.md#write-api-v1-orders-cancel-sign): Get the EIP712 cancel order message to be signed. The response of this API will need to be signed with [Sign Typed Data v4](https://eips.ethereum.org/EIPS/eip-712) before submitting cancel order request below.
 * [**`/write/api/v1/orders/cancel`**](../limit-order-api-specification/maker-apis.md#write-api-v1-orders-cancel): Cancel order(s) by sending in order params which includes the signed EIP712 message.
 
-In addition to the above, Maker's are also able to query their active order(s) to aid with filtering orders to cancel:
+In addition to the above, Makers are also able to query their active order(s) to aid with filtering orders to cancel:
 
 * [**`/read-ks/api/v1/orders`**](../limit-order-api-specification/maker-apis.md#read-ks-api-v1-orders): Get all orders created by a Maker address filtered by the order status.
 

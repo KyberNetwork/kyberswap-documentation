@@ -13,7 +13,7 @@ KyberSwap exposes 2 APIs which Makers will need to call to create a new order:
 * [**`/write/api/v1/orders/sign-message`**](../limit-order-api-specification/maker-apis.md#create-order-s): Get the EIP712 create order message to be signed. The response of this API will need to be signed with [Sign Typed Data v4](https://eips.ethereum.org/EIPS/eip-712) before submitting create order request below.
 * [**`/write/api/v1/orders`**](../limit-order-api-specification/maker-apis.md#create-order-s): Create new order(s) by sending in order params which includes the signed EIP712 message.
 
-In addition to the above, Maker's are also able to query their active making amount to aid with token approvals:
+In addition to the above, Makers are also able to query their active making amount to aid with token approvals:
 
 * [**`/read-ks/api/v1/orders/active-making-amount`**](../limit-order-api-specification/maker-apis.md#read-ks-api-v1-orders-active-making-amount): The aggregated making amount for the Maker given a specific token.
 
@@ -52,7 +52,7 @@ The `makerAsset` and `takerAsset` are defined in the [`constants.ts`](https://gi
 
 Full details for each parameter can be found via the [Get Unsigned Create Order Message API specification](../limit-order-api-specification/maker-apis.md#write-api-v1-orders-sign-message). Upon posting the above request body to `/write/api/v1/orders/sign-message`, the KyberSwap LO Service will return an unsigned [EIP712](https://eips.ethereum.org/EIPS/eip-712) Create Order message.
 
-### Step 2: Check Limit Order Contract Spending Allowance
+### Step 2: Check Limit Order contract spending allowance
 
 Before signing the order creation message, we will first need to ensure that the LO smart contract has sufficient [allowance to spend the Maker's ERC20 token](https://docs.openzeppelin.com/contracts/2.x/api/token/erc20#IERC20-allowance-address-address-). This ensures that when a Taker fills the order, the LO smart contract has the necessary approvals to transfer the specified `makerAsset` amount from the Maker's wallet.&#x20;
 

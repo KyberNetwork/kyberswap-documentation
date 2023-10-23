@@ -1,15 +1,10 @@
 # Fill Limit Order
 
-## Sequence Diagram
+## Overview
 
-<figure><img src="../../../.gitbook/assets/LO_Taker_FillOrder.png" alt=""><figcaption></figcaption></figure>
+Takers are able to fill any signed Maker order within the KyberSwap Limit Order order books by executing the fill order on-chain. By utilizing KyberSwap Limit Order APIs, Takers gain access to slippage-free liquidity sources which are secured via on-chain settlement.
 
-{% hint style="info" %}
-Note
-
-* Trades buyer and seller should approve their tokens to be used by KyberSwap limit order contract
-* Please refer to [Limit Order Contract Addresses](../contracts/limit-order-contract-addresses.md) for the latest contract addresses
-{% endhint %}
+Please refer to [Off-Chain Relay, On-Chain Settlement](../concepts/off-chain-relay.md) for more detail on this design.
 
 <details>
 
@@ -102,3 +97,171 @@ The fees charged will be according to the most exotic token in the trading pair.
 * Trades to and from KNC will be charged a flat 0.05% fee.
 
 </details>
+
+## Sequence Diagram
+
+<figure><img src="../../../.gitbook/assets/LO_Taker_FillOrder.png" alt=""><figcaption></figcaption></figure>
+
+KyberSwap exposes 2 API options for Takers looking to fill orders on-chain:
+
+* [**`/read-ks/api/v1/encode/fill-order-to`**](../limit-order-api-specification/taker-apis.md#read-ks-api-v1-encode-fill-order-to): Encode the fill order data to be sent on-chain. This API can be used to fill a single order.
+* [**`/read-ks/api/v1/encode/fill-batch-orders-to`**](../limit-order-api-specification/taker-apis.md#read-ks-api-v1-encode-fill-batch-orders-to): Encode the fill batch order data to be sent on-chain. This API can be used to fill multiple orders.
+
+In order to fill an order, Takers will first have to request an Operator signature via:
+
+* [**`/read-partner/api/v1/orders/operator-signature`**](../limit-order-api-specification/taker-apis.md#read-partner-api-v1-orders-operator-signature): Get the KyberSwap Operator to sign the target orders so that it can be filled.
+
+In addition to the above, Takers are also able to query active or open order(s) to aid with filtering orders to fill:
+
+* [**`/read-partner/api/v1/orders`**](../limit-order-api-specification/taker-apis.md#read-partner-api-v1-orders): Returns orders for the queried token pair sorted by best rates in descending order.
+
+## TypeScript Example
+
+{% hint style="success" %}
+**Limit Order API Demo**
+
+The code snippets in the guide below have been extracted from our demo GitHub repo which showcases the full end-to-end Limit Order operations in a TypeScript environment.
+{% endhint %}
+
+{% embed url="https://github.com/KyberNetwork/ks-limit-order-API-demo" %}
+
+### Step 1: Get orders by best rates
+
+{% hint style="info" %}
+**Active/Open Orders**
+
+To proceed with this guide, users must have created an Active or Open Limit Order. Please refer to the [Create Limit Order developer guide](create-limit-order.md) for instructions on how to achieve this programmatically.
+{% endhint %}
+
+We can use the `/read-partner/api/v1/orders` to get the list of "active" or "open" orders by token pair:
+
+```typescript
+const targetPathConfig = {
+    params: {
+        chainId: ChainId.MATIC,
+        makerAsset: makerAsset.address, // USDC
+        takerAsset: takerAsset.address  // KNC  
+    }
+};
+```
+
+[getOrders.ts](https://github.com/KyberNetwork/ks-limit-order-API-demo/blob/e34660faf165d6c6b5763327b6e8e34bf8bc9e01/src/operations/taker/getOrders.ts#L9)
+
+Note that the returned orders will be sorted according to the [best rates](../limit-order-api-specification/taker-apis.md#rates-calculation) in descending order. The `makerAsset` and `takerAsset` are defined in the [`constants.ts`](https://github.com/KyberNetwork/ks-limit-order-API-demo/blob/main/src/libs/constants.ts) file to enable convenient reuse across various operations.
+
+### Step 2: Get the Operator signature for the target order
+
+For the purposes of this guide, we will be taking the first returned order to fill:
+
+```typescript
+const orders = await getOrders();
+const targetOrders = orders.filter(order => 
+    order.maker.toLowerCase() == signerAddress.toLowerCase() &&
+    order.makerAsset.toLowerCase() == makerAsset.address.toLowerCase() &&
+    order.takerAsset.toLowerCase() == takerAsset.address.toLowerCase()
+);
+const targetOrderId = Number(targetOrders[0].id);
+```
+
+[getOperatorSignature.ts](https://github.com/KyberNetwork/ks-limit-order-API-demo/blob/e34660faf165d6c6b5763327b6e8e34bf8bc9e01/src/operations/taker/getOperatorSignature.ts#L20)
+
+With our target `orderId`, we can then request for the Operator signature by calling `/read-partner/api/v1/orders/operator-signature` with the following parameters:
+
+```typescript
+const targetPathConfig = {
+    params: {
+        chainId: ChainId.MATIC.toString(),
+        orderIds: targetOrderId
+    }
+};
+```
+
+[getOperatorSignature.ts](https://github.com/KyberNetwork/ks-limit-order-API-demo/blob/e34660faf165d6c6b5763327b6e8e34bf8bc9e01/src/operations/taker/getOperatorSignature.ts#L29)
+
+For each `orderId` requested, the KyberSwap LO Service will return an `operatorSignature` which will be required as part of the fill order transaction.
+
+### Step 3: Check Limit Order contract spending allowance
+
+Before executing the fill order, we will first need to ensure that the LO smart contract has sufficient [allowance to spend the taker's ERC20 token](https://docs.openzeppelin.com/contracts/2.x/api/token/erc20#IERC20-allowance-address-address-). In this example, we will be filling half of the Maker order requested `takingAmount`:
+
+```typescript
+const orders = await getOrders();
+const targetOrder = orders.filter(order => order.id == targetOrderId.toString());
+const takingAmount = Number(targetOrder[0].takingAmount)/2;
+```
+
+[postFillOrder.ts](https://github.com/KyberNetwork/ks-limit-order-API-demo/blob/e34660faf165d6c6b5763327b6e8e34bf8bc9e01/src/operations/taker/postFillOrder.ts#L29)
+
+If there is insufficient spending allowance, we can then request for a higher allowance via the `takerAsset` ERC20 token contract using our `getTokenApproval()` helper function:
+
+```typescript
+if (Number(limitOrderContractAllowance) < spendingAmount) {
+    console.log(`Insufficient allowance, getting approval for ${await tokenContract.symbol()}...`);
+    try {
+        // Call the ERC20 approve method
+        const approvalTx = await tokenContract.approve(
+            spenderAddress, 
+            BigInt(spendingAmount), 
+            {maxFeePerGas: 100000000000, maxPriorityFeePerGas: 100000000000}
+            );
+
+        // Wait for the approve tx to be executed
+        const approvalTxReceipt = await approvalTx.wait();
+        console.log(`Approve tx executed with hash: ${approvalTxReceipt?.hash}`);
+
+    } catch(error) {
+        console.log(error);
+    }
+};    
+```
+
+[approval.ts](https://github.com/KyberNetwork/ks-limit-order-API-demo/blob/e34660faf165d6c6b5763327b6e8e34bf8bc9e01/src/libs/approval.ts#L21)
+
+### Step 4: Format the fill order request body
+
+To get the encoded data, we will then need to format the `/read-ks/api/v1/encode/fill-order-to` request body. Note the `operatorSignature` that was returned in step 2:
+
+```typescript
+const requestBody: FillOrderBody = {
+    orderId: Number(targetOrderId),
+    takingAmount: takingAmount.toString(),
+    thresholdAmount: '0',
+    target: signerAddress,
+    operatorSignature: operatorSignature[0].operatorSignature
+};
+```
+
+[postFillOrder.ts](https://github.com/KyberNetwork/ks-limit-order-API-demo/blob/e34660faf165d6c6b5763327b6e8e34bf8bc9e01/src/operations/taker/postFillOrder.ts#L46)
+
+### Step 5: Post the encode data request
+
+With the fill order prepared, we can then request the encoded data via `/read-ks/api/v1/encode/fill-order-to`:
+
+```typescript
+const {data} = await axios.post(
+    LimitOrderDomain+targetPath,
+    requestBody
+);
+```
+
+This will return the fill order encoded data which will be used as the calldata when executing the transaction on-chain.
+
+### Step 6: Execute the fill order transaction on-chain
+
+To execute the transaction, we can use our [ethers.js signer instance](https://docs.ethers.org/v6/api/providers/#ContractRunner-sendTransaction) to send the transaction with the required gas fees:
+
+```typescript
+const fillOrderTx = await signer.sendTransaction({
+    data: data.data.encodedData,
+    to: limitOrderContract,
+    from: signerAddress,
+    maxFeePerGas: 100000000000,
+    maxPriorityFeePerGas: 100000000000
+});
+```
+
+[postFillOrder.ts](https://github.com/KyberNetwork/ks-limit-order-API-demo/blob/e34660faf165d6c6b5763327b6e8e34bf8bc9e01/src/operations/taker/postFillOrder.ts#L63)
+
+A transaction hash will be returned once the cancel order has been executed. You can copy this hash into a scanner (i.e. [PolygonScan](https://polygonscan.com/)) and see that your transaction has been successfully completed by the network.
+
+<figure><img src="../../../.gitbook/assets/LO_DevGuide_FillOrderSuccess.png" alt=""><figcaption><p><a href="https://polygonscan.com/tx/0xfe1e8d32f6311a2ce1e864863d1cd6d49b05634b255ec85c5a7386c7753af197">Sample fill order on Polygon</a></p></figcaption></figure>
