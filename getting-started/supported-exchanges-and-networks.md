@@ -43,6 +43,7 @@ Decentralized Exchanges:
 * [Uniswap (v2)](https://app.uniswap.org/#/swap)
 * [Uniswap (v3)](https://app.uniswap.org/#/swap)
 * [Verse](https://verse.bitcoin.com/)
+* [Wombat](https://app.wombat.exchange/swap)
 
 </details>
 
@@ -78,6 +79,7 @@ Decentralized Exchanges:
 * [Thena Fusion](https://www.thena.fi/swap)
 * [Uniswap V3](https://app.uniswap.org/#/swap)
 * Wault (!)
+* [Wombat](https://app.wombat.exchange/swap)
 
 </details>
 
@@ -111,6 +113,7 @@ Decentralized Exchanges:
 * [Swapr ](https://swapr.eth.link/#/swap?chainId=1)
 * [Synapse ](https://synapseprotocol.com/)
 * [Uniswap V3 ](https://app.uniswap.org/#/swap)
+* [Wombat](https://app.wombat.exchange/swap)
 * [ZyberSwap V3](https://app.zyberswap.io/exchange/besttrade)
 
 </details>
