@@ -2,7 +2,9 @@
 
 ## Overview
 
-In addition to [gasless order creation](create-limit-order.md), KyberSwap Limit Order Makers have the option to cancel their orders without incurring gas. As Taker order fulfilment requires both a Maker and KyberSwap Operator signature, Makers are able to cancel their orders gaslessly by instructing the KyberSwap Operator to cancel their orders. Please refer to [Gasless Cancellation](../concepts/gasless-cancellation.md) for more details on this design.
+In addition to [gasless order creation](create-limit-order.md), KyberSwap Limit Order Makers have the option to cancel their orders without incurring gas. As Taker order fulfilment requires both a Maker and KyberSwap Operator signature, Makers are able to cancel their orders gaslessly by instructing the KyberSwap Operator to cancel their orders.&#x20;
+
+Please refer to [Gasless Cancellation](../concepts/gasless-cancellation.md) for more details on this design.
 
 ## Sequence Diagram
 
