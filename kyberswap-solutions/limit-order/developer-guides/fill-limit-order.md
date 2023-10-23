@@ -1,5 +1,9 @@
 # Fill Limit Order
 
+## Sequence Diagram
+
+<figure><img src="../../../.gitbook/assets/LO_Taker_FillOrder.png" alt=""><figcaption></figcaption></figure>
+
 {% hint style="info" %}
 Note
 
