@@ -396,6 +396,7 @@ Decentralized Exchanges:
 * [KyberSwap](https://kyberswap.com/)
 * [iZiSwap](https://izumi.finance/trade/swap)
 * [MetaVault V2](https://app.metavault.trade/)
+* [MetaVault V3](https://app.metavault.trade/)
 * [Scroll\_Swap](https://dex.scrollswap.app/#/swap)
 * [SkyDrome Finance](https://app.skydrome.finance/swap)
 * [SpaceFi](https://swap-zksync.spacefi.io/#/swap)
