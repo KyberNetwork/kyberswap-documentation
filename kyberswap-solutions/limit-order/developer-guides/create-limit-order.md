@@ -13,6 +13,10 @@ KyberSwap exposes 2 APIs which Makers will need to call to create a new order:
 * [**`/write/api/v1/orders/sign-message`**](../limit-order-api-specification/maker-apis.md#create-order-s): Get the EIP712 create order message to be signed. The response of this API will need to be signed with [Sign Typed Data v4](https://eips.ethereum.org/EIPS/eip-712) before submitting create order request below.
 * [**`/write/api/v1/orders`**](../limit-order-api-specification/maker-apis.md#create-order-s): Create new order(s) by sending in order params which includes the signed EIP712 message.
 
+In addition to the above, Maker's are also able to query their active making amount to aid with token approvals:
+
+* [**`/read-ks/api/v1/orders/active-making-amount`**](../limit-order-api-specification/maker-apis.md#read-ks-api-v1-orders-active-making-amount): The aggregated making amount for the Maker given a specific token.
+
 ## TypeScript Example
 
 {% hint style="success" %}
