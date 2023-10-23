@@ -80,6 +80,7 @@
   * [Developer Guides](kyberswap-solutions/limit-order/developer-guides/README.md)
     * [Create Limit Order](kyberswap-solutions/limit-order/developer-guides/create-limit-order.md)
     * [Gasless Cancel](kyberswap-solutions/limit-order/developer-guides/gasless-cancel.md)
+    * [Hard Cancel](kyberswap-solutions/limit-order/developer-guides/hard-cancel.md)
     * [Fill Limit Order](kyberswap-solutions/limit-order/developer-guides/fill-limit-order.md)
   * [Contracts](kyberswap-solutions/limit-order/contracts/README.md)
     * [Limit Order Contract Addresses](kyberswap-solutions/limit-order/contracts/limit-order-contract-addresses.md)
