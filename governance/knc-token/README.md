@@ -10,4 +10,8 @@ In 2021, in order to evolve with the DeFi landscape, [KNC was upgraded](https://
 
 KNC is dynamic and can be upgraded, minted, or burned by KyberDAO to better support liquidity and growth. Holding KNC means having a stake in all the important innovation and liquidity protocols created for DeFi. KNC is supported on and can be bridged to other EVM-compatible networks whose full list can be found on the [KNC Contract Addresses page](knc-contract-addresses.md).
 
-You can read more about KNC [here](https://kyberswap.com/about/knc).
+{% hint style="success" %}
+**KNC Fundamentals**
+
+Interested to learn more about KNC? View our [Fundamentals of KNC](https://blog.kyberswap.com/exploring-knc-kyber-network-crystal-fundamentals/) blog post!
+{% endhint %}
