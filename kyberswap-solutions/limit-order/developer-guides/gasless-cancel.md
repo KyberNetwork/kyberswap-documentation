@@ -6,6 +6,20 @@ In addition to [gasless order creation](create-limit-order.md), KyberSwap Limit 
 
 Please refer to [Gasless Cancellation](../concepts/gasless-cancellation.md) for more details on this design.
 
+{% hint style="info" %}
+**Gasless Cancel Chains**
+
+Currently, gasless cancels are only supported on the following chains:
+
+* Ethereum (ChainID: 1)
+* BSC (ChainID: 56)
+* Polygon PoS (ChainId: 137)
+* Avalanche (ChainID: 43114)
+* Fantom (ChainID: 250)
+
+You can use the [`/read-ks/api/v1/configs/contract-address`](../limit-order-api-specification/general-apis.md#read-ks-api-v1-configs-contract-address) API to check whether the KyberSwap Limit Order contracts on a particular chain supports gasless cancellations by looking at the returned `supportDoubleSignature` field.
+{% endhint %}
+
 ## Sequence Diagram
 
 <figure><img src="../../../.gitbook/assets/LO_Maker_GaslessCancel.png" alt=""><figcaption></figcaption></figure>
