@@ -18,11 +18,11 @@ While this provides the best learning environment without the overhead of settin
 
 ### Trade
 
-<table data-view="cards"><thead><tr><th></th><th data-hidden></th><th data-hidden></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><a href="get-a-quote.md"><strong>Get A Quote</strong></a></td><td></td><td></td><td><a href="get-a-quote.md">get-a-quote.md</a></td></tr><tr><td><strong>Execute A Trade</strong></td><td></td><td></td><td></td></tr></tbody></table>
+<table data-view="cards"><thead><tr><th></th><th data-hidden></th><th data-hidden></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><a href="get-a-quote.md"><strong>Get A Quote</strong></a></td><td></td><td></td><td><a href="get-a-quote.md">get-a-quote.md</a></td></tr><tr><td><a href="execute-a-trade.md"><strong>Execute A Trade</strong></a></td><td></td><td></td><td><a href="execute-a-trade.md">execute-a-trade.md</a></td></tr></tbody></table>
 
 ### Liquidity Management
 
-<table data-view="cards"><thead><tr><th></th><th data-hidden></th><th data-hidden></th></tr></thead><tbody><tr><td><strong>Create New Position</strong></td><td></td><td></td></tr><tr><td><strong>Increase Liquidity</strong></td><td></td><td></td></tr><tr><td><strong>Remove Liquidity</strong></td><td></td><td></td></tr><tr><td><strong>Collect Trading Fees</strong></td><td></td><td></td></tr></tbody></table>
+<table data-view="cards"><thead><tr><th></th><th data-hidden></th><th data-hidden></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><a href="create-a-new-position.md"><strong>Create A New Position</strong></a></td><td></td><td></td><td><a href="create-a-new-position.md">create-a-new-position.md</a></td></tr><tr><td><a href="increase-liquidity.md"><strong>Increase Liquidity</strong></a></td><td></td><td></td><td><a href="increase-liquidity.md">increase-liquidity.md</a></td></tr><tr><td><a href="remove-liquidity.md"><strong>Remove Liquidity</strong></a></td><td></td><td></td><td><a href="remove-liquidity.md">remove-liquidity.md</a></td></tr><tr><td><a href="remove-liquidity.md#step-4-configure-the-fee-removal-options"><strong>Collect Fees</strong></a></td><td></td><td></td><td><a href="remove-liquidity.md#step-4-configure-the-fee-removal-options">#step-4-configure-the-fee-removal-options</a></td></tr></tbody></table>
 
 ## NPM Packages
 
