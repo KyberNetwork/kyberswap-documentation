@@ -121,7 +121,7 @@ In the example above, KyberSwap has connected to the Ethereum Mainnet as per the
 
 To change the network, you can select the dropdown which will display the full list of chain options for you to choose from. Please refer to [Supported Exchanges And Networks](../../../getting-started/supported-exchanges-and-networks.md) for the full details.
 
-<figure><img src="../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption><p>KyberSwap supported chains</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/UserGuide_SwitchNetwork_SelectChain.png" alt=""><figcaption><p>KyberSwap supported chains</p></figcaption></figure>
 
 Select your preferred chain and you should then be prompted by your wallet to confirm the network change.&#x20;
 
@@ -140,3 +140,8 @@ If this is your first time connecting to a chain, your wallet provider should di
 Once the switch has been approved, KyberSwap would then be connected to your selected network as can be verified via the active chain displayed in the top right of the KyberSwap app.
 
 <figure><img src="../../../.gitbook/assets/image (28).png" alt=""><figcaption><p>KyberSwap connected to Polygon</p></figcaption></figure>
+
+## Bonus: Favourite your most used networks
+
+You can drag-and-drop your most used networks into your favourite chains section for easy access:
+
