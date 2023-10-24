@@ -6,6 +6,12 @@ description: Code Samples To Get You Started
 
 The guides in the following section are targeted at application developers as well as smart contract integrators that are interested in building on top of the KyberSwap Elastic ecosystem.
 
+{% hint style="success" %}
+**Elastic SDK**
+
+KyberSwap has created an [Elastic SDK](https://github.com/KyberNetwork/ks-sdk-elastic) to make interacting with our Elastic smart contracts easier. You can refer to our [Elastic SDK Developer Guides](../../elastic-sdk/developer-guides/) for step-by-step walkthroughs on how to achieve various Elastic operations in a TypeScript environment.
+{% endhint %}
+
 ## Project bootstrapping
 
 Given the composability of DeFi protocols, we recommend using Hardhat's [mainnet forking feature](https://hardhat.org/guides/mainnet-forking.html) to best stimulate mainnet conditions. This will enable integrations to be conveniently tested against existing protocols without having to bootstrap each and every protocol individually.

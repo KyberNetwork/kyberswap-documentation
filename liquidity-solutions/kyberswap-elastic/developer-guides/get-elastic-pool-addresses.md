@@ -8,6 +8,12 @@ description: Uncover The Best Pools
 
 For each token pair, there are possibly many multiple pools with different configurations. As such, it is necessary to specify which pools are to be used for fetching token rates, trade execution and liquidity provision.
 
+{% hint style="success" %}
+**Elastic SDK**
+
+KyberSwap has created an [Elastic SDK](https://github.com/KyberNetwork/ks-sdk-elastic) to make interacting with our Elastic smart contracts easier. You can refer to our [Elastic SDK Developer Guides](../../elastic-sdk/developer-guides/) for step-by-step walkthroughs on how to achieve various Elastic operations in a TypeScript environment.
+{% endhint %}
+
 ## Selecting the right pool
 
 KyberSwap Elastic contract provides a function to get a specific pool. For each inputs including `tokenIn`, `tokenOut`, `fee` there will be an exact pool.

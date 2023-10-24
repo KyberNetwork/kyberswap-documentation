@@ -8,6 +8,12 @@ description: Trade Directly Against An Elastic Pool
 
 It is necessary to specify which pools are to be used for the token swap. Read more about [fetching pool addresses](get-elastic-pool-addresses.md) before proceeding.
 
+{% hint style="success" %}
+**Elastic SDK**
+
+KyberSwap has created an [Elastic SDK](https://github.com/KyberNetwork/ks-sdk-elastic) to make interacting with our Elastic smart contracts easier. You can refer to our [Elastic SDK Developer Guides](../../elastic-sdk/developer-guides/) for step-by-step walkthroughs on how to achieve various Elastic operations in a TypeScript environment.
+{% endhint %}
+
 ## Executing a swap
 
 After getting a pool address from [getPool()](https://docs.kyberswap.com/integration/contract/get-pool), you can call `swap()` function to execute a swap.

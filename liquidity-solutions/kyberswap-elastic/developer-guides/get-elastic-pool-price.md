@@ -8,6 +8,12 @@ description: Query Historical Price Data
 
 KyberSwap Elastic enables integrators to trustlessly query the time-weighted average price of an Elastic pool via the [`poolOracle`](https://github.com/KyberNetwork/ks-elastic-sc/blob/main/contracts/oracle/PoolOracle.sol) contract. Integrators can then derive the geometric mean to get an accurate representation of the pool's price data. For more information on the variable definitions, concepts, and implementation details, please refer to [TWAP Oracle](../concepts/twap-oracle.md).
 
+{% hint style="success" %}
+**Elastic SDK**
+
+KyberSwap has created an [Elastic SDK](https://github.com/KyberNetwork/ks-sdk-elastic) to make interacting with our Elastic smart contracts easier. You can refer to our [Elastic SDK Developer Guides](../../elastic-sdk/developer-guides/) for step-by-step walkthroughs on how to achieve various Elastic operations in a TypeScript environment.
+{% endhint %}
+
 ## Getting the pool price
 
 ### Retrieve the accumulated tick
