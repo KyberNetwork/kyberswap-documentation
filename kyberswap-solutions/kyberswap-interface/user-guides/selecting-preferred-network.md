@@ -1,5 +1,5 @@
 ---
-description: Supported across 16 chains and counting
+description: Supported across 15 chains and counting
 ---
 
 # Switching Networks
@@ -145,3 +145,4 @@ Once the switch has been approved, KyberSwap would then be connected to your sel
 
 You can drag-and-drop your most used networks into your favourite chains section for easy access:
 
+<figure><img src="../../../.gitbook/assets/UserGuide_SwitchNetwork_FavChain.gif" alt=""><figcaption><p>Save your favourite chains</p></figcaption></figure>
