@@ -219,6 +219,16 @@ if (Number(limitOrderContractAllowance) < spendingAmount) {
 
 ### Step 4: Format the fill order request body
 
+{% hint style="info" %}
+**Filling Batch Orders**
+
+For simplicity, the example below fills a single order using `/read-ks/api/v1/encode/fill-order-to`. KyberSwap Limit Orders exposes another `/read-ks/api/v1/encode/fill-batch-orders-to` API which enables Takers to get the encoded data to batch fill orders.&#x20;
+
+By filling multiple orders in a single on-chain tx, batch fill orders are more efficient. The only difference between the 2 APIs is the formatting of `orderIds` and `operatorSignatures` when preparing the requestBody for the respective API.
+
+The Fill Batch Orders API requires the order of the `orderIds` array to match their corresponding `operatorSignatures`. Full code example can be found on [postFillBatchOrders.ts](https://github.com/KyberNetwork/ks-limit-order-API-demo/blob/main/src/operations/taker/postFillBatchOrders.ts).
+{% endhint %}
+
 To get the encoded data, we will then need to format the `/read-ks/api/v1/encode/fill-order-to` request body. Note the `operatorSignature` that was returned in step 2:
 
 ```typescript
