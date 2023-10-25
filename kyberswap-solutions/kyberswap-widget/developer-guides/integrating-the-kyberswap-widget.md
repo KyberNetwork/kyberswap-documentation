@@ -14,6 +14,8 @@ To get started, install the widgets library using npm or Yarn.
 npm i @kyberswap/widgets
 ```
 
+{% embed url="https://www.npmjs.com/package/@kyberswap/widgets" %}
+
 #### yarn:[​](https://docs.kyberswap.com/Aggregator/swap-widget/getting-started#yarn) <a href="#yarn" id="yarn"></a>
 
 ```
