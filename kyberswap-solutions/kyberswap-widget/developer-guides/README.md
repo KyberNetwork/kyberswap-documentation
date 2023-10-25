@@ -10,7 +10,9 @@ The guides in the following section are targeted at application developers that 
 
 The KyberSwap Widget can be easily integrated into your app with a few lines of code. Once integrated, the widget offers an endless amount of customization options that allows the widget to seamlessly blend with your application theme.
 
-{% embed url="https://www.npmjs.com/package/@kyberswap/widgets" %}
+## GitHub Repo
+
+{% embed url="https://github.com/KyberNetwork/kyberswap-widgets" %}
 
 ## Next steps
 
