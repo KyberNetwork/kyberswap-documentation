@@ -43,6 +43,7 @@ import { Widget } from "@kyberswap/widgets";
     enableDexes="kyberswap-elastic,uniswapv3,uniswap"
     provider={ethersProvider}
     defaultTokenOut={defaultTokenOut[chainId]}
+    title={<div>Custom Title</div>}
 />
 ```
 

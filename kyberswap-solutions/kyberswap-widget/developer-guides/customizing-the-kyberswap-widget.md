@@ -24,6 +24,20 @@ const theme: Theme = {
 />
 ```
 
+## Customizing the title
+
+Integrators are free to set their own widget title using ReactNode or just a `string` value.
+
+```javascript
+  import { Widget } from "@kyberswap/widgets";
+
+  <Widget
+    title={
+      <div>Custom Title</div>
+    }
+  />
+```
+
 ## Customizing the width
 
 Widget has a fixed height of 360px and a default width of 360px. You cannot modify the height of the widget. You can modify the width up to a minimum width of 300px.
@@ -34,7 +48,7 @@ You can customize the width by passing a valid CSS number or width to the widget
   import { Widget } from "@kyberswap/widgets";
 
   <Widget
-  width={360}
+    width={360}
   />
 ```
 
@@ -45,12 +59,12 @@ The KyberSwap Widget makes it easy to configure a transaction facilitation fee b
 ```javascript
 import { Widget } from "@kyberswap/widgets";
 
-<Widget  feeSetting={{
+<Widget  feeSetting={
     feeAmount: 100,
     feeReceiver: "0xDcFCD5dD752492b95ac8C1964C83F992e7e39FA9",
     chargeFeeBy: "currency_in",
     isInBps: true,
-}} />
+} />
 ```
 
 ## Customizing the themes
