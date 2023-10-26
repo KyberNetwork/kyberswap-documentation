@@ -111,7 +111,7 @@ You will need to confirm this onchain transaction in your web3 wallet.
 
 ![Transaction pending confirmation](https://support.kyberswap.com/hc/article\_attachments/14668151529369)
 
-Once the order has been confirmed you should see it appear in the Active Orders screen of the swap interface.
+Once the order has been confirmed you should see it appear in the Active Orders screen of the swap interface. You can select individual orders to view the price history for the order pair.
 
 ![Active orders](https://support.kyberswap.com/hc/article\_attachments/14668186560537)
 

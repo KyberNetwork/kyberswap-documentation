@@ -29,7 +29,7 @@ You can manually cancel your order (or any unfilled portion of your order) befor
 
 ### **Step 1**: Select active order
 
-Find the active order you would like to update and click on its red Cancel button. The button icon looks like a trash can. This will bring up the Cancel Order screen.
+Find the active order you would like to update and click on its red Cancel button. The button icon looks like a trash can. This will bring up the Cancel Order screen:
 
 ![Cancel order](../../../.gitbook/assets/LO\_Cancellation\_Button.png)
 

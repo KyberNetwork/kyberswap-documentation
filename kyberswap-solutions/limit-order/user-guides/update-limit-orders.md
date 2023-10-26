@@ -23,7 +23,7 @@ Note that limit order update is an on-chain transaction which requires gas fees 
 
 ### **Step 1**: Select active order
 
-Find the active order you would like to update and click on its green Edit button. The button icon looks like a pen. This will bring up the Edit Order screen.
+Find the active order you would like to update and click on its green Edit button. The button icon looks like a pen. This will bring up the Edit Order screen:
 
 ![Edit active order](../../../.gitbook/assets/LO\_Edit\_Button.png)
 
