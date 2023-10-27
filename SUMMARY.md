@@ -228,6 +228,7 @@
     * [KyberDAO Contract Addresses](governance/kyberdao/contracts/kyberdao-contract-addresses.md)
   * [FAQ - Others](governance/kyberdao/faq.md)
 * [KNC Token](governance/knc-token/README.md)
+  * [KNC Tokenomics](governance/knc-token/knc-tokenomics.md)
   * [Gas Refund Program](governance/knc-token/gas-refund-program.md)
   * [KNC Contract Addresses](governance/knc-token/knc-contract-addresses.md)
 
