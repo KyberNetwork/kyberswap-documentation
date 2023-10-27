@@ -35,6 +35,7 @@ Decentralized Exchanges:
 * [Maverick](https://app.mav.xyz/)
 * [PancakeSwap V2](https://pancakeswap.finance/swap)
 * [PancakeSwap V3](https://pancakeswap.finance/swap)
+* [POL](https://polygon.technology/blog/polygon-2-0-milestone-pol-contracts-are-live-on-ethereum-mainnet)
 * [Saddle](https://saddle.exchange/#/)
 * [ShibaSwap](https://shibaswap.com/#/)
 * [SushiSwap](https://www.sushi.com/swap)
