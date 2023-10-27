@@ -341,6 +341,7 @@ Decentralized Exchanges:
 * [PancakeSwap V2](https://pancakeswap.finance/)
 * [SushiSwap V3](https://www.sushi.com/swap)
 * [SyncSwap](https://syncswap.xyz/)
+* [vooi](https://vooi.io/)
 * [WOOFi V2](https://fi.woo.org/swap/)
 
 </details>
