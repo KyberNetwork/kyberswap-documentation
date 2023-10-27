@@ -49,7 +49,9 @@ Currently, gasless cancels are only supported on the following chains:
 
 * Ethereum (ChainID: 1)
 * BSC (ChainID: 56)
+* Arbitrum (ChainID: 42161)
 * Polygon PoS (ChainId: 137)
+* Optimism (ChainID: 10)
 * Avalanche (ChainID: 43114)
 * Fantom (ChainID: 250)
 
