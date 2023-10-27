@@ -14,6 +14,30 @@ In 2021, [KNC was upgraded](https://blog.kyber.network/knc-token-migration-guide
 For avoidance of doubt, KNC refers to the current version of the token while KNCL refers to the token version prior to the upgrade.
 {% endhint %}
 
+<details>
+
+<summary>KNC Token Contract Governance</summary>
+
+**Token Contract:** [https://etherscan.io/token/0xdeFA4e8a7bcBA345F687a2f1456F5Edd9CE97202](https://etherscan.io/token/0xdeFA4e8a7bcBA345F687a2f1456F5Edd9CE97202)
+
+**Roles:**
+
+1. **Owner:** Kyber Multisig [https://etherscan.io/address/0x3EB01B3391EA15CE752d01Cf3D3F09deC596F650](https://etherscan.io/address/0x3EB01B3391EA15CE752d01Cf3D3F09deC596F650)\
+   \
+   Only has the ability to withdraw tokens transferred wrongly to its address.
+2. **Minter:** Kyber Governance Long Executor [https://etherscan.io/address/0x6758a66cd25fef7767a44895041678fc4ae9afd0](https://etherscan.io/address/0x6758a66cd25fef7767a44895041678fc4ae9afd0)\
+   \
+   Can only mint KNC after a successful DAO vote
+3. **Proxy admin control:** Kyber Governance Long Executor [https://etherscan.io/address/0x6758a66cd25fef7767a44895041678fc4ae9afd0](https://etherscan.io/address/0x6758a66cd25fef7767a44895041678fc4ae9afd0)\
+   \
+   Can only upgrade the KNC token implementation after a successful DAO vote
+
+**Governance Implementation:**&#x20;
+
+Kyber Network: Governance (Voting Contract - submitVote) [https://etherscan.io/address/0x7Ec8FcC26bE7e9E85B57E73083E5Fe0550d8A7fE](https://etherscan.io/address/0x7Ec8FcC26bE7e9E85B57E73083E5Fe0550d8A7fE)
+
+</details>
+
 ## Native (KNC)
 
 <details>

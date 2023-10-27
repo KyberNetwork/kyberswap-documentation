@@ -8,7 +8,7 @@ Launched on Ethereum in 2017, [KNC](https://etherscan.io/token/0xdeFA4e8a7bcBA34
 
 In 2021, in order to evolve with the DeFi landscape, [KNC was upgraded](https://blog.kyberswap.com/knc-token-migration-guide-2/) with additional functionality and flexibility, and the old token version was renamed KNCL (Kyber Network Crystal Legacy). Old KNCL holders can migrate to the current KNC version [here](https://kyberswap.com/kyberdao/stake-knc) at a 1:1 ratio.
 
-KNC is dynamic and can be upgraded, minted, or burned by KyberDAO to better support liquidity and growth. Holding KNC means having a stake in all the important innovation and liquidity protocols created for DeFi. KNC is supported on and can be bridged to other EVM-compatible networks whose full list can be found on the [KNC Contract Addresses page](knc-contract-addresses.md).
+KNC is dynamic and can be upgraded or minted by KyberDAO to better support liquidity and growth. Holding KNC means having a stake in all the important innovation and liquidity protocols created for DeFi. KNC is supported on and can be bridged to other EVM-compatible networks whose full list can be found on the [KNC Contract Addresses page](knc-contract-addresses.md).
 
 {% hint style="success" %}
 **KNC Fundamentals**
