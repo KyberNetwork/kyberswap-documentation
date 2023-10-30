@@ -69,6 +69,7 @@
   * [Developer Guides](kyberswap-solutions/kyberswap-widget/developer-guides/README.md)
     * [Integrating The KyberSwap Widget](kyberswap-solutions/kyberswap-widget/developer-guides/integrating-the-kyberswap-widget.md)
     * [Customizing The KyberSwap Widget](kyberswap-solutions/kyberswap-widget/developer-guides/customizing-the-kyberswap-widget.md)
+  * [Widget iFrame](kyberswap-solutions/kyberswap-widget/widget-iframe.md)
 * [Limit Order](kyberswap-solutions/limit-order/README.md)
   * [Concepts](kyberswap-solutions/limit-order/concepts/README.md)
     * [Off-Chain Relay, On-Chain Settlement](kyberswap-solutions/limit-order/concepts/off-chain-relay.md)
