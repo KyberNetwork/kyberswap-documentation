@@ -58,6 +58,27 @@ The KyberSwap Docs will continue to maintain information regarding `Legacy` and 
 
 </details>
 
+{% hint style="info" %}
+**Chain identifiers**
+
+The Aggregator APIs require a chain name to be included in the path when calling the APIs:&#x20;
+
+* Ethereum (ChainID: 1) -> `ethereum`
+* BSC (ChainID: 56) -> `bsc`
+* Arbitrum (ChainID: 42161) -> `arbitrum`
+* Polygon PoS (ChainID: 137) -> `polygon`
+* Optimism (ChainID: 10) -> `optimism`
+* Avalanche (ChainID: 43114) -> `avalanche`
+* Base (ChainID: 8453) -> `base`
+* Cronos (ChainID: 25) -> `cronos`
+* zkSync Era (ChainID: 324) -> `zksync`
+* Fantom (ChainID: 250) -> `fantom`
+* Linea (ChainID: 59144) -> `linea`
+* Polygon zkEVM (ChainID: 1101) -> `polygon-zkevm`
+* Aurora (ChainID: 1313161554) -> `aurora`
+* BitTorrent Chain\* (ChainID: 199) -> `bittorrent`
+{% endhint %}
+
 ### `Latest`
 
 {% swagger src="../../../.gitbook/assets/KyberSwapAggregator_EVMAPIs_v2.8.1.yaml" path="/{chain}/api/v1/routes" method="get" %}
