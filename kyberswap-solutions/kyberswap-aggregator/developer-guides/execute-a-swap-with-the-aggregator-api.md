@@ -28,6 +28,14 @@ Please use the `[V1]GET` API for more efficient route queries. The returned rout
 
 To execute a swap, the router (`MetaAggregationRouterV2`) contract requires the encoded swap data to be included as part of the transaction. This encoded swap data as well as other swap metadata are returned as part of the API response. As such, developers are expected to call the swap API prior to sending a transaction to the router contract.
 
+{% hint style="info" %}
+**Single Request Model**
+
+While the `[V1]` APIs provide more performant queries, we understand that some integrators might prioritize a single request model over the dual request required in `[V1]`. For example, instead of querying rates and requesting for encoded data separately, both functions can be completed in a single request with slightly longer response times via our non-versioned API.
+
+In such cases, integrators can still use our [non-versioned API](../aggregator-api-specification/evm-swaps.md#chain-route-encode) whose call parameters are similar except for an additional required `to` field that denotes the recipient of the swapped tokens. Please see [Non-versioned API swap flow](upgrading-to-apiv1.md#non-versioned-api-swap-flow) for more details.
+{% endhint %}
+
 ## Web3.js example
 
 ### Swap Params Response[​](https://docs.kyberswap.com/Aggregator/implement-a-swap#swap-params-response) <a href="#swap-params-response" id="swap-params-response"></a>
