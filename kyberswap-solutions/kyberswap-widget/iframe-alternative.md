@@ -1,8 +1,8 @@
-# Widget iFrame
+# iFrame Alternative
 
 ## Overview
 
-KyberSwap provides an Iframe option for integrators that require swap functionality to be embedded directly into their website or dApp.&#x20;
+KyberSwap provides an iFrame option for integrators that require swap functionality to be embedded directly into their website or dApp.&#x20;
 
 {% hint style="success" %}
 #### Note on integrations: clientID and domain whitelisting
