@@ -108,6 +108,7 @@
     * [Live Trades](kyberswap-solutions/kyberai/technical-indicators/live-trades.md)
     * [Funding Rate On CEX](kyberswap-solutions/kyberai/technical-indicators/funding-rate-on-cex.md)
     * [Liquidations On CEX](kyberswap-solutions/kyberai/technical-indicators/liquidations-on-cex.md)
+  * [Liquidity Analysis](kyberswap-solutions/kyberai/liquidity-analysis.md)
   * [User Guides](kyberswap-solutions/kyberai/user-guides/README.md)
     * [Sign In To KyberAI With Ethereum](kyberswap-solutions/kyberai/user-guides/sign-in-to-kyberai-with-ethereum.md)
     * [Discover Promising Tokens](kyberswap-solutions/kyberai/user-guides/discover-promising-tokens.md)
