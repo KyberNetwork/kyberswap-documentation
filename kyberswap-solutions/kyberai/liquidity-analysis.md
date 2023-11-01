@@ -1,5 +1,5 @@
 ---
-description: All The Markets In One Page
+description: All The Markets In A Single Page
 ---
 
 # Liquidity Analysis
