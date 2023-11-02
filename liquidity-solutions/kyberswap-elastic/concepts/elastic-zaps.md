@@ -8,7 +8,7 @@ For a conceptual overview of zapping, please refer to our primer on [Zaps](../..
 
 ## Concentrated Liquidity Zaps
 
-KyberSwap is bringing an even more convenient LP experience by enabling zaps on KyberSwap Elastic. Unlike zaps on UniV2 pools where all pool liquidity is fungible (i.e. distributed equally across the whole price curve), zaps on UniV3 pools need to take into account liquidity distribution across customized position ranges (see [Tick-Range Mechanism](tick-range-mechanism.md) for more info). This adds significantly more complexity when implementing zaps on CLMM-type pools such as KyberSwap Elastic.
+KyberSwap is bringing an even more convenient LP experience by enabling zaps on KyberSwap Elastic. Unlike zaps on constant product pools where all pool liquidity is fungible (i.e. distributed equally across the whole price curve), zaps on concentrated liquidity pools need to take into account liquidity distribution across customized position ranges (see [Tick-Range Mechanism](tick-range-mechanism.md) for more info). This adds significantly more complexity when implementing zaps on CLMM-type pools such as KyberSwap Elastic.
 
 To enable LPs the option to zap into Elastic, KyberSwap has codified all the above complexities into zap-specific contracts which extends upon the core functionalities of the Elastic pool contracts. By functionally separating core and convenience operations, this paves the way for even more innovation based on contract modularity. The full list of Elastic Zap contract addresses can be found [here](../contracts/elastic-zap-contract-addresses.md).
 
@@ -20,7 +20,7 @@ Aside from a much simpler LP experience, Elastic Zaps is also primed to maximize
 
 When sourcing the token ratio for a zap in, swaps can be executed via the target pool itself or via other liquidity sources. In the latter case, LPs do not have to worry about the target pool price changing as a result of the swap transaction. That is, the pool which the LP is adding liquidity to will not experience a state change as the swap occurs external to the pool.&#x20;
 
-As a consequence of the [AMM](../../../getting-started/foundational-topics/decentralized-finance/automated-market-maker.md) design, swapping against the pool prior to liquidity addition introduces additional technical complexities when computing the token ratio to be added (because the swap will change the pool price before addition). Critically, while the above can be solved mathematically, such LPs could also be exposed to further IL risks as a result of the zap in direction. This is especially  so in cases where the pool price varies significantly from the market price.
+As a consequence of the [AMM](../../../getting-started/foundational-topics/decentralized-finance/automated-market-maker.md) design, swapping against the pool prior to liquidity addition introduces additional technical complexities when computing the token ratio to be added (because the swap will change the pool price before addition). Critically, while the above can be solved mathematically, such LPs could also be exposed to further IL risks as a result of the zap in direction. This is especially so in cases where the pool price varies significantly from the market price.
 
 The example below highlights this fact conceptually when swapping against the target pool:
 
