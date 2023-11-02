@@ -1,8 +1,8 @@
 ---
-description: KNC Protocol Tokenomics
+description: Kyber Network Crystal
 ---
 
-# KNC Tokenomics
+# KNC Tokenomics & Utility
 
 {% hint style="info" %}
 **KNC Token**
@@ -10,21 +10,43 @@ description: KNC Protocol Tokenomics
 For an overview of KNC, please visit the [KNC Token overview page](./).
 {% endhint %}
 
-## KNC Supply & Distribution
+## KNC Distribution
 
-Launched on Ethereum in 2017, KNC adheres to the ERC-20 standard, meaning seamless compatibility with EVM-based smart contracts. Since September 2019, all vested KNC tokens for founders and advisors have been unlocked and distributed.
+### KNC Initial Coin Offering
 
-In 2021, in order to evolve with the DeFi landscape, [KNC was upgraded](https://blog.kyberswap.com/knc-token-migration-guide-2/) with additional functionality and flexibility, and the old token version was renamed KNCL (Kyber Network Crystal Legacy). Old KNCL holders can migrate to the current KNC version [here](https://kyberswap.com/kyberdao/stake-knc) at a 1:1 ratio. The KIP for the upgrade can be found [here](https://github.com/KyberNetwork/KIPs/blob/master/KIPs/kip-9.md).
+On 16th September 2017, Kyber concluded its KNC [ICO token sale](https://medium.com/kybernetwork/kybernetworks-token-sale-terms-overview-de031ce9738e) raising 200,000ETH on the Ethereum Mainnet. A total of 21,309 unique addresses participated in the token sale which was a significant proportion of [Ethereum users at the time](https://bitinfocharts.com/comparison/ethereum-activeaddresses.html#alltime). 226,000,000 KNC was minted and distributed accordingly:
 
-In our docs, you can also find more information about our KNC [token contracts](https://docs.kyberswap.com/governance/knc-token/knc-contract-addresses#knc-token-contract-governance) and the relevant [audits](https://docs.kyberswap.com/reference/audits).
+* Community investors and participants: 61.06% (137,995,600 KNC)
+* Company operational reserves: 19.47% (44,002,200 KNC)
+* Founders, advisors, early investors (2-year vesting, 1-year lock-up): 19.47% (44,002,200 KNC)
 
-As of 27/10/23:
+Following the claim period for community and investors, a total of 10,374,651.16 KNC was [burned](https://medium.com/kybernetwork/burning-of-excess-knc-tokens-6f777595561b). This brought the KNC max supply down to 215,625,348.84 KNC following the completion of the ICO.
 
-* KNC Max Supply (KNC + KNCL): 252,301,550
+By the end of September 2019, all vested KNC tokens for founders, advisors, and early investors was unlocked and distributed.&#x20;
+
+### KNC Token Migration
+
+With ongoing advancements in token designs, the Kyber team proposed a KNC token upgrade and migration to make KNC much more dynamic and flexible with the ability to support more efficient upgrades, while amplifying KyberDAO’s governance power. This was approved by the KyberDAO in [KIP-6](https://github.com/KyberNetwork/KIPs/blob/master/KIPs/kip-6.md) and the migration process began on [20th April 2021](https://medium.com/kybernetwork/knc-token-migration-guide-fda08bfe62c2).&#x20;
+
+The previous KNC token was renamed KNCL ([KNC Legacy](https://www.coingecko.com/en/coins/kyber-network-legacy)) with the newly created token maintaining the KNC ticker. Previously, from ICO date through to the migration date, a total of  [5,374,386.84 KNCL was burned](https://twitter.com/KyberNetwork/status/1273794807458959360) as part of the initial design whereby KNCL gets burned whenever trades go through the protocol. Consequently, the new KNC was allocated a max supply of 210,250,962 KNC.
+
+[KNCL](https://etherscan.io/token/0xdd974d5c2e2928dea5f71b9825b8b646686bd200) remains convertible to [KNC](https://etherscan.io/token/0xdeFA4e8a7bcBA345F687a2f1456F5Edd9CE97202) at a 1:1 rate [here](https://kyberswap.com/kyberdao/stake-knc).
+
+### KyberDAO Ecosystem Growth Fund
+
+To increase active liquidity for KNC, the KyberDAO voted to mint an additional 42,050,588 KNC (16.67% of new KNC supply) which would be distributed via the KyberDAO Ecosystem Growth Fund ([KIP-8](https://github.com/KyberNetwork/KIPs/blob/master/KIPs/kip-8.md) and [KIP-9](https://github.com/KyberNetwork/KIPs/blob/master/KIPs/kip-9.md)). This mint was completed on 15 June 2021 resulting in a new max supply of 252,301,550 KNC.
+
+### Present Day
+
+As of 27 October 2023:
+
+* KNC Max Supply (KNC + KNCL): 252,301,550 KNC
 * KNC Total Supply: [228,782,331 KNC](https://www.coingecko.com/en/coins/kyber-network-crystal)
 * KNC Circulating Supply: [170,542,470 KNC](https://www.coingecko.com/en/coins/kyber-network-crystal)
 * KyberDAO Operator MultiSig (Signatories can be found [here](https://docs.kyberswap.com/governance/kyberdao/kyberdao-operator-multisig)): [\~12,243,146 KNC](https://etherscan.io/address/0xe6a7338cba0a1070adfb22c07115299605454713) (4.85%)
 * KyberDAO Staking Contract: [\~45,996,714 KNC](https://etherscan.io/address/0xeadb96f1623176144eba2b24e35325220972b3bd) (18.2%)
+
+You can also find more information about our KNC [token contracts](https://docs.kyberswap.com/governance/knc-token/knc-contract-addresses#knc-token-contract-governance) and the relevant [audits](https://docs.kyberswap.com/reference/audits) on our Docs.
 
 ***
 
