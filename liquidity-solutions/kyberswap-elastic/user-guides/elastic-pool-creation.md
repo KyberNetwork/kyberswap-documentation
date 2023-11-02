@@ -40,11 +40,11 @@ Here are the steps to create a new pool and by definition, to open a new positio
 
 Ensure you are on the correct network, and then click the “Create Pool” button at the top right of the screen.
 
-<figure><img src="../../../.gitbook/assets/Screenshot 2023-02-22 at 5.29.01 PM (1).png" alt=""><figcaption><p>Elastic Pool page</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Elastic_UserGuide_CreatePool_Nav.png" alt=""><figcaption><p>Elastic Pool page</p></figcaption></figure>
 
 This will bring up the Add Liquidity screen, but it will be fairly empty until the parameters of the pool are properly specified.
 
-<figure><img src="../../../.gitbook/assets/image (110).png" alt=""><figcaption><p>Pool creation screen</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Elastic_UserGuide_CreatePool_Popup.png" alt=""><figcaption><p>Pool creation screen</p></figcaption></figure>
 
 ### **Step 2**: Select tokens to add
 
@@ -56,9 +56,11 @@ As an open and permissionless protocol, KyberSwap Elastic allows any ERC20 token
 
 This is due to a small portion of the provided liquidity being allocated to meet the minimum liquidity requirements when creating a new [reinvestment curve](../concepts/reinvestment-curve.md). While care has been taken when designing this anti-spam mechanism to suit the vast majority of tokens, token teams are still free to define their own tokens. Please refer to [Pool Initialization](../concepts/pool-process-flows.md#pool-unlocking--initialization) for further details.
 
-<figure><img src="../../../.gitbook/assets/image (86).png" alt=""><figcaption><p>Select token pair</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Elastic_UserGuide_CreatePool_SelectToken.png" alt=""><figcaption><p>Select token pair</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (129).png" alt=""><figcaption><p>Token pair selected</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Elastic_UserGuide_CreatePool_TokenSelected.png" alt=""><figcaption><p>Token pair selected</p></figcaption></figure>
+
+If the token pair selected already has an existing pool, the corresponding pool data will be displayed. The interface above will only be shown If you're creating a new pool with a unique fee tier (see below) for the token pair.
 
 Notice that upon selecting the token pair, the current market price is also displayed for reference. Additionally, when creating a new pool, a small amount of liquidity will be needed to seed the pool's liquidity in order to [prevent spam](../concepts/pool-process-flows.md#pool-unlocking--initialization).
 

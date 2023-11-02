@@ -34,21 +34,74 @@ Still deciding on which solution suits you best?&#x20;
 
 ## Increasing the liquidity of an existing position
 
+{% hint style="success" %}
+:zap: **Elastic Zaps** :zap:
+
+LPs can now zap into Elastic pools! This means adding liquidity with just a single token without the complexities of sourcing the exact token ratios.
+
+Please visit the [Elastic Zaps](../concepts/elastic-zaps.md) explainer on how KyberSwap is making the LP experience more convenient while minimizing position management costs and risks.
+
+Supported on:
+
+* Arbitrum (ChainID: 42161)
+* Polygon PoS (ChainID: 137)
+* Optimism (ChainID: 10)
+* Avalanche (ChainID: 43114)
+* Base (ChainID: 8453)
+* Scroll (ChainID: 534352)
+{% endhint %}
+
 ### **Step 1**: Select position
 
-From the My Positions page, look for the position you’d like to increase and click its corresponding “Increase Liquidity” button.
+From the [My Positions page](https://scrollscan.com/address/0xf0096e5B4AAfeEA1DF557264091569ba125c1172), look for the position you’d like to increase and click its corresponding “Increase Liquidity”  of :zap:"Zap In" button.
 
-![Position details](https://support.kyberswap.com/hc/article\_attachments/14196870890137)
+![Position details](../../../.gitbook/assets/Elastic\_UserGuide\_IncLiq\_SelectPosition.png)
 
-This opens the “Increase Liquidity” screen.
+This opens up the relevant page/popup depending on whether you want to add a single token (i.e. [zap](../../../getting-started/foundational-topics/decentralized-finance/zaps.md)) or two tokens.
+
+{% tabs %}
+{% tab title="Zap In" %}
+<figure><img src="../../../.gitbook/assets/Elastic_UserGuide_IncLiq_ZapInPage.png" alt=""><figcaption><p>Zap In Page</p></figcaption></figure>
+{% endtab %}
+
+{% tab title="Token Pair" %}
+<figure><img src="../../../.gitbook/assets/Elastic_UserGuide_IncLiq_TokenPairPage.png" alt=""><figcaption><p>Token Pair Page</p></figcaption></figure>
+{% endtab %}
+
+{% tab title="Quick Zap" %}
+<figure><img src="../../../.gitbook/assets/Elastic_UserGuide_IncLiq_QuickZapPopup.png" alt=""><figcaption><p>Quick Zap Popup</p></figcaption></figure>
+{% endtab %}
+{% endtabs %}
 
 ### **Step 2:** Configure additional liquidity amounts
 
-Specify the deposit amounts, or the magnitude of the position size increase. You can either manually type in amounts or use the “Max” and “Half” buttons. Once you specify the deposit amount for one leg of the pair, the corresponding leg’s amount will be automatically calculated and populated for you.
+Specify the deposit amounts, or the magnitude of the position size increase. You can either manually type in amounts or use the “Max” and “Half” buttons.&#x20;
 
 Note: The proportion of liquidity deposited for each leg of the pair is determined by the price range associated with the position.
 
-![Increase liquidity pop-up](https://support.kyberswap.com/hc/article\_attachments/14196870884889)
+{% tabs %}
+{% tab title="Zap In" %}
+<figure><img src="../../../.gitbook/assets/Elastic_UserGuide_IncLiq_ZapInAmount.png" alt=""><figcaption><p>Zap In Increment Amount</p></figcaption></figure>
+
+You can switch which pool token that you will be zapping in with by selecting the token toggle. Once an amount has been set, you will be able to see the estimated token ratios for increment amount.
+
+Additionally, do take note of the corresponding [slippage](../../../getting-started/foundational-topics/decentralized-finance/slippage.md) and [price impact](../../../getting-started/foundational-topics/decentralized-finance/price-impact.md) as well. The slippage for the zap can be set in the dropdown menu bar on the top right.
+{% endtab %}
+
+{% tab title="Token Pair" %}
+<figure><img src="../../../.gitbook/assets/Elastic_UserGuide_IncLiq_TokenPairAmount.png" alt=""><figcaption><p>Token Pair Increment Amount</p></figcaption></figure>
+
+Once you specify the deposit amount for one leg of the pair, the corresponding leg’s amount will be automatically calculated and populated for you.
+{% endtab %}
+
+{% tab title="Quick Zap" %}
+<figure><img src="../../../.gitbook/assets/Elastic_UserGuide_IncLiq_QuickZapAmount.png" alt=""><figcaption><p>Quick Zap Increment Amount</p></figcaption></figure>
+
+You can switch which pool token that you will be zapping in with by selecting the token toggle. Once an amount has been set, you will be able to see the estimated token ratios for increment amount.
+
+Additionally, do take note of the corresponding [slippage](../../../getting-started/foundational-topics/decentralized-finance/slippage.md) and [price impact](../../../getting-started/foundational-topics/decentralized-finance/price-impact.md) as well. The slippage for the zap can be set in the dropdown menu bar on the top right.
+{% endtab %}
+{% endtabs %}
 
 {% hint style="warning" %}
 #### Non-standard tokens

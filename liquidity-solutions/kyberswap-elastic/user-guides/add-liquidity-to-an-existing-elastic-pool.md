@@ -40,23 +40,9 @@ Here are the steps for opening a new position using an existing liquidity pool.
 
 Ensure you are on the correct network, and then choose the tokens to provide as liquidity. You can do this through the token selectors at the top of the Elastic Pools interface. Once you’ve selected your pair of tokens, a filtered list of pools that use that pair will be displayed on the interface.
 
-![View available pools](https://support.kyberswap.com/hc/article\_attachments/14197115708185)
+![View available pools](../../../.gitbook/assets/Elastic\_UserGuide\_AddLiquidity\_SearchPools.png)
 
 Note: If you know the contract address of the pool you want, you can also filter the list for the pool you want by inputting the address in the search bar.
-
-### **Step 2**: Select pool
-
-Select the pool you’d like to participate in by clicking on the appropriate “Add Liquidity” button. This will open the Add Liquidity screen.
-
-![Add liquidity pop-up](https://support.kyberswap.com/hc/article\_attachments/14197098964249)
-
-{% hint style="danger" %}
-#### Adding liquidity to an out of range pool
-
-For the safety of our LPs, KyberSwap Elastic will notify LPs when adding liquidity to a pool that is out of range. This is because any liquidity additions that significantly deviates from the market price would immediately result in [impermanent loss](../../../getting-started/foundational-topics/decentralized-finance/impermanent-loss.md) as arbitrageurs sweep up the significantly discounted token from the position.
-
-![](<../../../.gitbook/assets/image (126).png>)
-{% endhint %}
 
 {% hint style="warning" %}
 #### Non-standard tokens
@@ -70,6 +56,53 @@ Note that the token mechanics are specified as part of the token's smart contrac
 * **LP**: Tokens representing a proportional claim of a liquidity pool's assets.
 
 To ensure the safety of our user's funds, KyberSwap Elastic does not support non-standard tokens. Please do your own research before providing liquidity using such tokens as KyberSwap was optimized to handle the standard ERC20 implementation.
+{% endhint %}
+
+### **Step 2**: Select pool
+
+Select the pool you’d like to participate in by clicking on the appropriate “Add Liquidity” or "Zap In" :zap: button. This will open the Add Liquidity screen.&#x20;
+
+LPs that would like to add liquidity to predefined ranges can also take advantage of our Quick Zap option.
+
+{% hint style="success" %}
+:zap: **Elastic Zaps** :zap:
+
+LPs can now zap into Elastic pools! This means adding liquidity with just a single token without the complexities of sourcing the exact token ratios.
+
+Please visit the [Elastic Zaps](../concepts/elastic-zaps.md) explainer on how KyberSwap is making the LP experience more convenient while minimizing position management costs and risks.
+
+Supported on:
+
+* Arbitrum (ChainID: 42161)
+* Polygon PoS (ChainID: 137)
+* Optimism (ChainID: 10)
+* Avalanche (ChainID: 43114)
+* Base (ChainID: 8453)
+* Scroll (ChainID: 534352)
+{% endhint %}
+
+{% tabs %}
+{% tab title="Zap In" %}
+![Zap In Page](<../../../.gitbook/assets/Elastic\_UserGuide\_AddLiquidity\_ZapPopup (1).png>)
+{% endtab %}
+
+{% tab title="Token Pair" %}
+<figure><img src="../../../.gitbook/assets/Elastic_UserGuide_AddLiquidity_Popup.png" alt=""><figcaption><p>Add Token Pair Page</p></figcaption></figure>
+{% endtab %}
+
+{% tab title="Quick Zap" %}
+<figure><img src="../../../.gitbook/assets/Elastic_UserGuide_AddLiquidity_QuickZap.png" alt=""><figcaption><p>Quick Zap Popup</p></figcaption></figure>
+
+Quick Zap enables LPs to skip the complexities of choosing their position ranges by selecting a preset range configuration. You can skip straight to [Step 5](add-liquidity-to-an-existing-elastic-pool.md#step-5-configure-token-amounts) if you are using the Quick Zap option.
+{% endtab %}
+{% endtabs %}
+
+{% hint style="danger" %}
+#### Adding liquidity to an out of range pool
+
+For the safety of our LPs, KyberSwap Elastic will notify LPs when adding liquidity to a pool that is out of range. This is because any liquidity additions that significantly deviates from the market price would immediately result in [impermanent loss](../../../getting-started/foundational-topics/decentralized-finance/impermanent-loss.md) as arbitrageurs sweep up the significantly discounted token from the position.
+
+![](<../../../.gitbook/assets/image (126).png>)
 {% endhint %}
 
 ### **Step 3**: Select fee tier&#x20;
@@ -99,7 +132,7 @@ You can set your price range either using the sliders or by typing in prices man
 Note: You can also choose to click on the “Full Price Range” option, but that will set your range to be between 0 and infinity, and your liquidity will be very thinly spread out, greatly impairing its fee-earning potential.
 
 {% hint style="warning" %}
-#### Single-sided liquidity
+#### Single-sided liquidity for Token Pair additions
 
 For the safety of our LPs, KyberSwap Elastic only allows single-sided liquidity to be added if the selected price range does not support the current market price. This is because the addition of double-sided liquidity outside the market price would immediately result in [impermanent loss](../../../getting-started/foundational-topics/decentralized-finance/impermanent-loss.md) as arbitrageurs sweep up the significantly discounted token from the position.
 
@@ -110,11 +143,35 @@ Whenever a position outside the market price is created, the deposit amount for 
 
 ### **Step 5**: Configure token amounts
 
-Specify the deposit amounts, or how much liquidity you would like to add to open this position. You can either manually type in amounts or use the “Max” and “Half” buttons. Once you specify the deposit amount for one leg of the pair, the corresponding leg’s amount will be automatically calculated and populated for you.
+Specify the deposit amount(s), or how much liquidity you would like to add to open this position. With the "Zap In" option, you can easily specify a single token amount which will automatically be converted into a position of the same value. See [Elastic Zaps](../concepts/elastic-zaps.md) for more details.
+
+You can either manually type in amounts or use the “Max” and “Half” buttons.&#x20;
 
 Note: The proportion of liquidity deposited for each leg of the pair is determined by your price range, so it is helpful to set the price range before specifying your deposit amounts.
 
-![Deposit amounts](https://support.kyberswap.com/hc/article\_attachments/14197116099097)
+{% tabs %}
+{% tab title="Zap In" %}
+<figure><img src="../../../.gitbook/assets/Elastic_UserGuide_AddLiquidity_ZapInAmount.png" alt=""><figcaption><p>Zap In Deposit Amount</p></figcaption></figure>
+
+You can switch which pool token that you will be zapping in with by selecting the token toggle. Once an amount has been set, you will be able to see the estimated token ratios for the position to be created.
+
+Additionally, do take note of the corresponding [slippage](../../../getting-started/foundational-topics/decentralized-finance/slippage.md) and [price impact](../../../getting-started/foundational-topics/decentralized-finance/price-impact.md) as well. The slippage for the zap can be set in the dropdown menu bar on the top right.
+{% endtab %}
+
+{% tab title="Token Pair" %}
+![Token Pair Deposit Amounts](../../../.gitbook/assets/Elastic\_UserGuide\_AddLiquidity\_TokenPairAmount.png)
+
+Once you specify the deposit amount for one leg of the pair, the corresponding leg’s amount will be automatically calculated and populated for you.
+{% endtab %}
+
+{% tab title="Quick Zap" %}
+<figure><img src="../../../.gitbook/assets/Elastic_UserGuide_AddLiquidity_QuickZapAmount.png" alt=""><figcaption><p>Quick Zap Deposit Amount</p></figcaption></figure>
+
+You can switch which pool token that you will be zapping in with by selecting the token toggle. Once an amount has been set, you will be able to see the estimated token ratios for the position to be created.
+
+Additionally, do take note of the corresponding [slippage](../../../getting-started/foundational-topics/decentralized-finance/slippage.md) and [price impact](../../../getting-started/foundational-topics/decentralized-finance/price-impact.md) as well. The slippage for the zap can be set in the dropdown menu bar on the top right.
+{% endtab %}
+{% endtabs %}
 
 ### **Step 6**: Authorize contract
 
@@ -138,9 +195,17 @@ As an AMM protocol, any additions of liquidity to the pool might result in slipp
 Please refer to [AMM Slippage](../../../getting-started/foundational-topics/decentralized-finance/slippage.md#amm-slippage) for further details on why slippage occurs and how to protect your liquidity additions or removals.
 {% endhint %}
 
-Once you have reviewed the information on this screen, click on the “Supply” button to proceed.
+{% tabs %}
+{% tab title="Zap In" %}
+<figure><img src="../../../.gitbook/assets/Elastic_UserGuide_AddLiquidity_ZapPreview.png" alt=""><figcaption><p>Zap In Preview</p></figcaption></figure>
+{% endtab %}
 
+{% tab title="Token Pair" %}
 ![Preview pop-up](https://support.kyberswap.com/hc/article\_attachments/14197099595545)
+{% endtab %}
+{% endtabs %}
+
+Once you have reviewed the information on this screen, click on the “Supply” button to proceed.
 
 You will need to confirm this transaction in your wallet.
 
