@@ -1,5 +1,5 @@
 ---
-description: 15 Chains, 100+ DEXs, and we're just getting started...
+description: 15 Chains, 280+ DEXs, and we're just getting started...
 ---
 
 # Supported Exchanges And Networks
@@ -22,7 +22,11 @@ For developers integrating with the [KyberSwap Aggregator](../kyberswap-solution
 
 Decentralized Exchanges:
 
-* [KyberSwap](https://kyberswap.com/)
+* [KyberSwap Classic](https://kyberswap.com/)
+* [KyberSwap Elastic](https://kyberswap.com/)
+* [KyberSwap Limit Order](https://kyberswap.com/)
+* [KyberSwap Limit Order V2](https://kyberswap.com/)
+* [KyberSwap Professional Market Maker](https://kyberswap.com/)
 * [Balancer Weighted](https://app.balancer.fi/#/)
 * [Balancer Composable](https://app.balancer.fi/#/)&#x20;
 * [Curve (3pool, aave, saave, hbtc, ren, sbtc, eurs, link)](https://curve.fi/#/ethereum/swap)
@@ -54,7 +58,10 @@ Decentralized Exchanges:
 
 Decentralized Exchanges:
 
-* [KyberSwap](https://kyberswap.com/)
+* [KyberSwap Classic](https://kyberswap.com/)
+* [KyberSwap Elastic](https://kyberswap.com/)
+* [KyberSwap Limit Order](https://kyberswap.com/)
+* [KyberSwap Limit Order V2](https://kyberswap.com/)
 * [ApeSwap](https://apeswap.finance/)
 * [Biswap](https://biswap.org/)
 * [Curve ](https://curve.fi/)
@@ -91,7 +98,10 @@ Decentralized Exchanges:
 
 Decentralized Exchanges:
 
-* [KyberSwap](https://kyberswap.com/)
+* [KyberSwap Classic](https://kyberswap.com/)
+* [KyberSwap Elastic](https://kyberswap.com/)
+* [KyberSwap Limit Order](https://kyberswap.com/)
+* [KyberSwap Limit Order V2](https://kyberswap.com/)
 * [ArbiDEX](https://arbidex.fi/swap/)
 * [ArbiDEX V3](https://arbidex.fi/swap/)
 * [Balancer Weighted](https://app.balancer.fi/#/)
@@ -129,7 +139,10 @@ Decentralized Exchanges:
 
 Decentralized Exchanges:
 
-* [KyberSwap](https://kyberswap.com/)
+* [KyberSwap Classic](https://kyberswap.com/)
+* [KyberSwap Elastic](https://kyberswap.com/)
+* [KyberSwap Limit Order](https://kyberswap.com/)
+* [KyberSwap Limit Order V2](https://kyberswap.com/)
 * [ApeSwap](https://apeswap.finance/)
 * [Balancer Weighted](https://app.balancer.fi/#/)
 * [Balancer Composable](https://app.balancer.fi/#/)&#x20;
@@ -171,7 +184,10 @@ Decentralized Exchanges:
 
 Decentralized Exchanges:
 
-* [KyberSwap](https://kyberswap.com/)
+* [KyberSwap Classic](https://kyberswap.com/)
+* [KyberSwap Elastic](https://kyberswap.com/)
+* [KyberSwap Limit Order](https://kyberswap.com/)
+* [KyberSwap Limit Order V2](https://kyberswap.com/)
 * [Beethoven X ](https://beets.fi/)
 * [Curve ](https://curve.fi/)
 * [Fraxswap](https://app.frax.finance/swap/main)
@@ -194,7 +210,10 @@ Decentralized Exchanges:
 
 Decentralized Exchanges:
 
-* [KyberSwap](https://kyberswap.com/)
+* [KyberSwap Classic](https://kyberswap.com/)
+* [KyberSwap Elastic](https://kyberswap.com/)
+* [KyberSwap Limit Order](https://kyberswap.com/)
+* [KyberSwap Limit Order V2](https://kyberswap.com/)
 * Axial (!)
 * [Balancer Weighted](https://app.balancer.fi/#/)
 * [Balancer Composable](https://app.balancer.fi/#/)&#x20;
@@ -222,7 +241,7 @@ Decentralized Exchanges:
 
 Decentralized Exchanges:
 
-* [KyberSwap](https://kyberswap.com/)
+* [KyberSwap Elastic](https://kyberswap.com/)
 * [Aerodrome](https://aerodrome.finance/swap)
 * [Alien Base](https://app.alienbase.xyz/)
 * [Alien Base Stableswap](https://app.alienbase.xyz/)
@@ -265,7 +284,8 @@ Decentralized Exchanges:
 
 Decentralized Exchanges:
 
-* [KyberSwap](https://kyberswap.com/)
+* [KyberSwap Classic](https://kyberswap.com/)
+* [KyberSwap Elastic](https://kyberswap.com/)
 * [Crodex ](https://swap.crodex.app/#/swap)
 * [CronaSwap ](https://app.cronaswap.org/swap)
 * [EmpireDex ](https://app.empiredex.org/farm)
@@ -282,7 +302,7 @@ Decentralized Exchanges:
 
 Decentralized Exchanges:
 
-* [KyberSwap](https://kyberswap.com/)
+* [KyberSwap Classic](https://kyberswap.com/)
 * [eZKalibur](https://dapp.ezkalibur.com/)
 * [iZiSwap](https://izumi.finance/trade/swap)
 * [Maverick](https://app.mav.xyz/)
@@ -306,7 +326,10 @@ Decentralized Exchanges:
 
 Decentralized Exchanges:
 
-* [KyberSwap](https://kyberswap.com/)
+* [KyberSwap Classic](https://kyberswap.com/)
+* [KyberSwap Elastic](https://kyberswap.com/)
+* [KyberSwap Limit Order](https://kyberswap.com/)
+* [KyberSwap Limit Order V2](https://kyberswap.com/)
 * [Beethoven X ](https://beets.fi/)
 * [Curve](https://curve.fi/)
 * [Fraxswap](https://app.frax.finance/swap/main)
@@ -330,7 +353,8 @@ Decentralized Exchanges:
 
 Decentralized Exchanges:
 
-* [KyberSwap](https://kyberswap.com/swap)
+* [KyberSwap Classic](https://kyberswap.com/)
+* [KyberSwap Elastic](https://kyberswap.com/)
 * [EchoDEX](https://www.echodex.io/swap)
 * [EchoDEX V3](https://www.echodex.io/swap)
 * [HorizonDEX](https://app.horizondex.io/swap)
@@ -353,7 +377,8 @@ Decentralized Exchanges:
 
 Decentralized Exchanges:
 
-* [KyberSwap](https://kyberswap.com/)
+* [KyberSwap Classic](https://kyberswap.com/)
+* [KyberSwap Elastic](https://kyberswap.com/)
 * [Balancer Weighted](https://app.balancer.fi/#/)
 * [Balancer Composable](https://app.balancer.fi/#/)&#x20;
 * [Doveswap V3](https://swap.dovish.finance/#/swap)
@@ -371,7 +396,7 @@ Decentralized Exchanges:
 
 Decentralized Exchanges:
 
-* [KyberSwap](https://kyberswap.com/)
+* [KyberSwap Classic](https://kyberswap.com/)
 * [DODO (v2)](https://app.dodoex.io/)
 * [NearPad](https://pad.fi/dex/swap)
 * [Trisolaris](https://www.trisolaris.io/#/swap)
@@ -385,7 +410,8 @@ Decentralized Exchanges:
 
 Decentralized Exchanges:
 
-* [KyberSwap](https://kyberswap.com/)
+* [KyberSwap Classic](https://kyberswap.com/)
+* [KyberSwap Elastic](https://kyberswap.com/)
 
 </details>
 
@@ -395,7 +421,8 @@ Decentralized Exchanges:
 
 Decentralized Exchanges:
 
-* [KyberSwap](https://kyberswap.com/)
+* [KyberSwap Classic](https://kyberswap.com/)
+* [KyberSwap Elastic](https://kyberswap.com/)
 * [iZiSwap](https://izumi.finance/trade/swap)
 * [MetaVault V2](https://app.metavault.trade/)
 * [MetaVault V3](https://app.metavault.trade/)
