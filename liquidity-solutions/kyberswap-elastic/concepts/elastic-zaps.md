@@ -16,6 +16,24 @@ To enable LPs the option to zap into Elastic, KyberSwap has codified all the abo
 
 Aside from a much simpler LP experience, Elastic Zaps is also primed to maximize LP yields through its integration with the [KyberSwap Aggregator](../../../kyberswap-solutions/kyberswap-aggregator/). By taking the additional step of scanning for more optimal rates across [multiple DEXs](../../../getting-started/supported-exchanges-and-networks.md), Elastic Zaps greatly reduces LPs exposure to price impact and the resulting IL risks.
 
+{% hint style="info" %}
+**A Note On Gas Costs**
+
+Due to the complexity and multitude of steps required to achieve CLMM zaps with aggregator integration, zap transactions tend to consume more gas.
+
+Nonetheless this has to be baselined against multiple swap + add transactions if the liquidity addition were to happen manually. In most cases when adding liquidity with a single token, this entails:
+
+* Initial swap from `tokenA` -> `tokenB` (requires manually calculating token ratio requirement)
+* Based on token ratio requirements, add the lower of `tokenA`:`tokenB` amounts
+* If the pool price moved between swap and add liquidity, repeat the process above for the remaining amount of `tokenA` or `tokenB`
+
+For more active pools (or those with lower fee tiers), the pool price is more likely to move between the initial swap and liquidity addition. Critically, the narrower the position range selected and the closer the range boundaries are to the pool price, the larger the shift in token ratios required if the pool price changes.
+
+Furthermore, the market for actively traded pairs will make sourcing the exact amounts from a market order extremely difficult. This is compounded for large trades where price impact considerations come into play.
+
+Consequently, LPs would usually have to swap + add liquidity multiple times before their initial capital value has been fully added to CLMM pools. As DeFi users ourselves, we are also wary of this gas costs and are constantly exploring new ways to optimize gas usage. Expect cheaper Elastic Zaps as we continue to iterate upon our code base across multiple chains.
+{% endhint %}
+
 ### Aggregator Integration
 
 When sourcing the token ratio for a zap in, swaps can be executed via the target pool itself or via other liquidity sources. In the latter case, LPs do not have to worry about the target pool price changing as a result of the swap transaction. That is, the pool which the LP is adding liquidity to will not experience a state change as the swap occurs external to the pool.&#x20;
