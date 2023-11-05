@@ -74,6 +74,7 @@ Decentralized Exchanges:
 * [Maverick](https://app.mav.xyz/)
 * [MDEX ](https://mdex.com/#/)
 * [Nerve](https://nerve.fi/)&#x20;
+* [Nomiswap](https://nomiswap.io/)
 * [OneSwap ](https://www.oneswap.net/)
 * [PancakeSwap V2](https://pancakeswap.finance/)
 * [PancakeSwap V3](https://pancakeswap.finance/swap)
