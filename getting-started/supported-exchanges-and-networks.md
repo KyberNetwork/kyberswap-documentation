@@ -106,6 +106,7 @@ Decentralized Exchanges:
 * [KyberSwap Limit Order V2](https://kyberswap.com/)
 * [ArbiDEX](https://arbidex.fi/swap/)
 * [ArbiDEX V3](https://arbidex.fi/swap/)
+* [Arbswap](https://arbswap.io/)
 * [Balancer Weighted](https://app.balancer.fi/#/)
 * [Camelot](https://app.camelot.exchange/)
 * [Camelot V3](https://app.camelot.exchange/)
