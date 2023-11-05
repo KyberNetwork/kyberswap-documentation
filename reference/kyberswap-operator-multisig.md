@@ -88,14 +88,6 @@ The KyberSwap Operator MultiSig has been deployed at the same address across all
 
 <details>
 
-<summary>Base (ChainID: 8453)</summary>
-
-* **MultiSigWalletWithDailyLimit:** [`0x2475039bF2ECDCe2EE4C82954e64bE9674f43546`](https://basescan.org/address/0x2475039bF2ECDCe2EE4C82954e64bE9674f43546)
-
-</details>
-
-<details>
-
 <summary>Scroll (ChainID: 534352)</summary>
 
 * **MultiSigWalletWithDailyLimit:** [`0x2475039bF2ECDCe2EE4C82954e64bE9674f43546`](https://scrollscan.com/address/0x2475039bF2ECDCe2EE4C82954e64bE9674f43546)
