@@ -162,6 +162,7 @@ Decentralized Exchanges:
 * [iZiSwap](https://izumi.finance/trade/swap)
 * [JetSwap ](https://jetswap.finance/)
 * [MadMex](https://madmex.io/#/trade)
+* [MantisSwap](https://app.mantissa.finance/#/swap)
 * [MMF](https://mm.finance/swap)[ ](https://madmex.io/#/trade)
 * [MetaVault ](https://app.metavault.trade/#/trade)
 * [OneSwap ](https://www.oneswap.net/)
