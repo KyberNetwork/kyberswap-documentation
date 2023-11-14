@@ -30,6 +30,12 @@ The KyberSwap Docs will continue to maintain information regarding `Legacy` and 
 
 #### Create Order(s)
 
+{% hint style="success" %}
+**Developer Guide**
+
+Please refer to [**Create Limit Order** ](../developer-guides/create-limit-order.md)for the relevant sequence diagram as well as a TypeScript example.
+{% endhint %}
+
 {% swagger src="../../../.gitbook/assets/LimitOrderAPIs_v1.2.yaml" path="/write/api/v1/orders/sign-message" method="post" %}
 [LimitOrderAPIs_v1.2.yaml](../../../.gitbook/assets/LimitOrderAPIs_v1.2.yaml)
 {% endswagger %}
@@ -50,6 +56,12 @@ The KyberSwap Docs will continue to maintain information regarding `Legacy` and 
 
 #### Gasless Cancel Order(s)
 
+{% hint style="success" %}
+**Developer Guide**
+
+Please refer to [**Gasless Cancel**](../developer-guides/gasless-cancel.md) for the relevant sequence diagram as well as a TypeScript example.
+{% endhint %}
+
 {% swagger src="../../../.gitbook/assets/LimitOrderAPIs_v1.2.yaml" path="/write/api/v1/orders/cancel-sign" method="post" %}
 [LimitOrderAPIs_v1.2.yaml](../../../.gitbook/assets/LimitOrderAPIs_v1.2.yaml)
 {% endswagger %}
@@ -59,6 +71,12 @@ The KyberSwap Docs will continue to maintain information regarding `Legacy` and 
 {% endswagger %}
 
 #### Hard Cancel Order(s)
+
+{% hint style="success" %}
+**Developer Guide**
+
+Please refer to [**Hard Cancel**](../developer-guides/hard-cancel.md) for the relevant sequence diagram as well as a TypeScript example.
+{% endhint %}
 
 {% swagger src="../../../.gitbook/assets/LimitOrderAPIs_v1.2.yaml" path="/read-ks/api/v1/encode/cancel-batch-orders" method="post" %}
 [LimitOrderAPIs_v1.2.yaml](../../../.gitbook/assets/LimitOrderAPIs_v1.2.yaml)

@@ -128,6 +128,12 @@ $$rate =\frac{(\text{makingAmount}-\text{makingAmountFilled})*(1-\text{makerToke
 
 ### `Latest`
 
+{% hint style="success" %}
+**Developer Guide**
+
+Please refer to [**Fill Limit Order**](../developer-guides/fill-limit-order.md) for the relevant sequence diagram as well as a TypeScript example.
+{% endhint %}
+
 #### Query Order(s)
 
 {% swagger src="../../../.gitbook/assets/LimitOrderAPIs_v1.2.yaml" path="/read-partner/api/v1/orders" method="get" %}
