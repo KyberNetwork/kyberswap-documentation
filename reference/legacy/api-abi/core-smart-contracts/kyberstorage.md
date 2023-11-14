@@ -17,7 +17,7 @@ is [IKyberStorage](https://docs.kyberswap.com/Legacy/api-abi/core-smart-contract
 
 _Source_: [KyberStorage.sol](https://github.com/KyberNetwork/smart-contracts/blob/master/contracts/sol6/KyberStorage.sol)
 
-***
+
 
 ### INDEX[​](https://docs.kyberswap.com/Legacy/api-abi/core-smart-contracts/api\_abi-kyberstorage#index) <a href="#index" id="index"></a>
 
@@ -31,7 +31,7 @@ _Source_: [KyberStorage.sol](https://github.com/KyberNetwork/smart-contracts/blo
 
 Event logging the setting of the new KyberNetwork contract address.
 
-***
+
 
 event **KyberNetworkUpdated**(IKyberNetwork newKyberNetwork) | Parameter | Type | Description | | --------- |:-----:|:-----------:| | `newKyberNetwork` | IKyberNetwork | new contract address | Signature: 0x18970d46ac8a7d7e0da90e1bebb0be3e87ffc7705fc09d3bba5373d59b7a12aa
 
@@ -42,7 +42,7 @@ event **KyberNetworkUpdated**(IKyberNetwork newKyberNetwork) | Parameter | Type 
 
 Event logging the removal of a reserve address and its corresponding reserve ID from storage.
 
-***
+
 
 event **RemoveReserveFromStorage**(address reserve, bytes32 reserveId) | Parameter | Type | Description | | --------- |:-----:|:-----------:| | `reserve` | address | address of the reserve | | `reserveId` | bytes32 | reserve ID of the reserve | Signature: 0xa5cd88a226efb041d6bdc0ac32964affd749b8a7c4d9e0c4ffba575e7180b1c9
 
@@ -53,7 +53,7 @@ event **RemoveReserveFromStorage**(address reserve, bytes32 reserveId) | Paramet
 
 Event logging the addition of a reserve address and its corresponding reserve ID to storage.
 
-***
+
 
 event **AddReserveToStorage**(address reserve, bytes32 reserveId, ReserveType reserveType, address rebateWallet) | Parameter | Type | Description | | --------- |:-----:|:-----------:| | `reserve` | address | address of the reserve | | `reserveId` | bytes32 | resereserve ID of the reserverve ID | | `reserveType` | ReserveType | the reserve type, where 0 - none, 1 - FPR, 2 - APR, 3 - Bridge, 4 - Utility, 5 - Custom, 6 - Orderbook, 7 - Last | | `rebateWallet` | address | rebate wallet address of the reserve | Signature: 0x15ae42ec2557dbe988b80500b4faab3c4b8cc095753df46cdc860050d994dcae
 
@@ -64,7 +64,7 @@ event **AddReserveToStorage**(address reserve, bytes32 reserveId, ReserveType re
 
 Event logging the setting of the rebate wallet address of the reserve.
 
-***
+
 
 event **ReserveRebateWalletSet**(bytes32 reserveId, address rebateWallet) | Parameter | Type | Description | | --------- |:-----:|:-----------:| | `reserveId` | bytes32 | reserve ID of the reserve | | `rebateWallet` | address | rebate wallet address of the reserve | Signature: 0x42cac9e63e37f62d5689493d04887a67fe3c68e1d3763c3f0890e1620a0465b3
 
@@ -75,7 +75,7 @@ event **ReserveRebateWalletSet**(bytes32 reserveId, address rebateWallet) | Para
 
 Event logging the listing of a token pair for a reserve.
 
-***
+
 
 event **ListReservePairs**(bytes32 reserveId, address reserve, IERC20 src, IERC20 dest, bool add) | Parameter | Type | Description | | --------- |:-----:|:-----------:| | `reserveId` | bytes32 | reserve ID of the reserve | | `reserve` | address | address of the reserve | | `src` | IERC20 | source token | | `dest` | IERC20 | destination token | | `add` | bool | `true` if listing the token, otherwise `false` | Signature: 0xfcdbd685961328a43b4aa133de257d3769cc01891b4ee00fd5058e5aa3564ca5
 
@@ -88,7 +88,7 @@ event **ListReservePairs**(bytes32 reserveId, address reserve, IERC20 src, IERC2
 
 Returns all the listed reserve addresses in the network.
 
-***
+
 
 function **getReserves**() external view returns (IKyberReserve\[]) **Returns:**\ An array of all reserves
 

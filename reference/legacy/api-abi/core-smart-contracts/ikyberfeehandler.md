@@ -15,7 +15,7 @@ For the most updated information, please refer to:
 
 _Source_: [IKyberFeeHandler.sol](https://github.com/KyberNetwork/smart-contracts/blob/master/contracts/sol6/IKyberFeeHandler.sol)
 
-***
+
 
 ### INDEX[​](https://docs.kyberswap.com/Legacy/api-abi/core-smart-contracts/api\_abi-ikyberfeehandler#index) <a href="#index" id="index"></a>
 
@@ -29,7 +29,7 @@ _Source_: [IKyberFeeHandler.sol](https://github.com/KyberNetwork/smart-contracts
 
 Event for logging the rewards paid.
 
-***
+
 
 event **RewardPaid**(address indexed staker, uint256 indexed epoch, IERC20 indexed token, uint256 amount) | Parameter | Type | Description | | --------- |:-------:|:-------------------------:| | `staker` | address | staker's address | | `epoch` | uint256 | epoch number | | `token` | address | ERC20 token address | | `amount` | uint256 | ERC20 token amount in wei | Signature: `0xaf206e736916d38b56e2d559931a189bc3119b8fc6d6850bd34e382f09030587`
 
@@ -40,7 +40,7 @@ event **RewardPaid**(address indexed staker, uint256 indexed epoch, IERC20 index
 
 Event for logging the rebates paid.
 
-***
+
 
 event **RebatePaid**(address indexed rebateWallet, IERC20 indexed token, uint256 amount) | Parameter | Type | Description | | -------------- |:-------:|:----------------------------:| | `rebateWallet` | address | address receiving the rebate | | `token` | address | ERC20 token address | | `amount` | uint256 | ERC20 token amount in wei | Signature: `0xb5ec5e03662403108373ab6431d3e834cb1011fca164541aef315fc7dea7b3b6`
 
@@ -51,7 +51,7 @@ event **RebatePaid**(address indexed rebateWallet, IERC20 indexed token, uint256
 
 Event for logging the platform fees paid.
 
-***
+
 
 event **PlatformFeePaid**(address indexed platformWallet, IERC20 indexed token, uint256 amount) | Parameter | Type | Description | | ---------------- |:-------:|:----------------------------------:| | `platformWallet` | address | address receiving the platform fee | | `token` | address | ERC20 token address | | `amount` | uint256 | ERC20 token amount in wei | Signature: `0xebe3db09f5650582b4782506e0d272262129183570e55fcf8768dd6e91f8c0f6`
 
@@ -62,7 +62,7 @@ event **PlatformFeePaid**(address indexed platformWallet, IERC20 indexed token, 
 
 Event for logging the amount of KNC burned.
 
-***
+
 
 event **KncBurned**(uint256 kncTWei, IERC20 indexed token, uint256 amount) | Parameter | Type | Description | | --------- |:-------:|:----------------------------------:| | `kncTwei` | address | address receiving the platform fee | | `token` | address | ERC20 quote token address | | `amount` | uint256 | ERC20 quote token amount in wei | Signature: `0xa0fcef56e2b45fcbeb91d5e629ef6b2b6e982d0768f02d1232610315cd23ea10`
 
@@ -75,7 +75,7 @@ event **KncBurned**(uint256 kncTWei, IERC20 indexed token, uint256 amount) | Par
 
 Handles the fees when a trade happens in the network, unless the trade is not involving any fees.
 
-***
+
 
 function **handleFees**(contract IERC20 token, address\[] eligibleWallets, uint256\[] rebatePercentages, address platformWallet, uint256 platformFee, uint256 networkFee) external payable | Parameter | Type | Description | | ------------------- |:---------:|:----------------------------------------------------:| | `token` | address | ERC20 quote token address | | `eligibleWallets` | address\[] | array of eligible wallet addresses | | `rebatePercentages` | uint256\[] | array of rebate percentages to rebate wallets | | `platformWallet` | address | wallet address receiving the platform fee | | `platformFee` | uin256 | fee amount in wei the platfrom wallet is entitled to | | `networkFee` | uin256 | fee amount in wei to be allocated for BRR |\
 
@@ -84,7 +84,7 @@ function **handleFees**(contract IERC20 token, address\[] eligibleWallets, uint2
 
 Claim the rebates for the rebate wallet from KyberFeeHandler.
 
-***
+
 
 function **claimReserveRebate**(address rebateWallet) external returns (uint256) | Parameter | Type | Description | | -------------- |:-------:|:----------------------------:| | `rebateWallet` | address | address receiving the rebate | **Returns:**\ The rebate amount claimed in wei.\
 
@@ -93,7 +93,7 @@ function **claimReserveRebate**(address rebateWallet) external returns (uint256)
 
 Claim the platform fees for the platform wallet from KyberFeeHandler.
 
-***
+
 
 function **claimPlatformFee**(address platformWallet) external returns (uint256) | Parameter | Type | Description | | ---------------- |:-------:|:----------------------------------:| | `platformWallet` | address | address receiving the platform fee | **Returns:**\ The platform fee amount claimed in wei.\
 
@@ -102,7 +102,7 @@ function **claimPlatformFee**(address platformWallet) external returns (uint256)
 
 Claim the staking rewards from KyberFeeHandler.
 
-***
+
 
 function **claimStakerReward**(address staker, uint256 epoch) external returns (uint256 amount) | Parameter | Type | Description | | --------- |:-------:|:---------------------------------------------:| | `staker` | address | staker's address | | `epoch` | uin256 | which epoch is the staker claiming the reward | **Returns:**\ The staking reward amount claimed in wei.\
 

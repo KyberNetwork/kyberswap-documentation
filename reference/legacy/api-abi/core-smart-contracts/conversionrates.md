@@ -19,7 +19,7 @@ _Source_: [ConversionRates.sol](https://github.com/KyberNetwork/smart-contracts/
 
 The ConversionRates contract's role is to allow reserve operators to make simple on-chain adjustment to the prices and is an optimized cheap (w.r.t gas consumption) interface to enter rate feeds.
 
-***
+
 
 ### INDEX[​](https://docs.kyberswap.com/Legacy/api-abi/core-smart-contracts/api\_abi-conversionrates#index) <a href="#index" id="index"></a>
 
@@ -63,11 +63,11 @@ The ConversionRates contract's role is to allow reserve operators to make simple
 
 Contract constructor. Note that constructor methods are called exactly once during contract instantiation and cannot be called again.
 
-***
+
 
 function **ConversionRates**(address \_admin) public | Parameter | Type | Description | | ----------|:-------:|:----------------------:| | `_admin` | address | admin's wallet address |
 
-***
+
 
 Web3 Example:
 
@@ -104,11 +104,11 @@ Code snippet reference: [broadcastTx()](https://docs.kyberswap.com/Legacy/api-ab
 
 Adding an ERC20 token which the reserve will support. Only admin can invoke.
 
-***
+
 
 function **addToken**(ERC20 token) public onlyAdmin | Parameter | Type | Description | | ----------|:-----:|:----------------------------:| | `token` | ERC20 | ERC20 token contract address | Modifiers: [onlyAdmin](https://docs.kyberswap.com/Legacy/api-abi/core-smart-contracts/api\_abi-permissiongroups.md#onlyadmin)
 
-***
+
 
 Web3 Example:
 
@@ -134,11 +134,11 @@ txReceipt = await web3.eth.sendTransaction({
 
 Disables the reserve token from trades. Only alerter can invoke.
 
-***
+
 
 function **disableTokenTrade**(ERC20 token) public onlyAlerter | Parameter | Type | Description | | ----------|:-----:|:-------------------------------------------:| | `token` | ERC20 | ERC20 token contract address to be disabled | Modifiers: [onlyAlerter](https://docs.kyberswap.com/Legacy/api-abi/core-smart-contracts/api\_abi-permissiongroups.md#onlyalerter)
 
-***
+
 
 Web3 Example:
 
@@ -164,11 +164,11 @@ txReceipt = await web3.eth.sendTransaction({
 
 Enables the reserve token to be traded. Only admin can invoke.
 
-***
+
 
 function **enableTokenTrade**(ERC20 token) public onlyAdmin | Parameter | Type | Description | | ----------|:-----:|:------------------------------------------:| | `token` | ERC20 | ERC20 token contract address to be enabled | Modifiers: [onlyAdmin](https://docs.kyberswap.com/Legacy/api-abi/core-smart-contracts/api\_abi-permissiongroups.md#onlyadmin)
 
-***
+
 
 Web3 Example:
 
@@ -194,11 +194,11 @@ txReceipt = await web3.eth.sendTransaction({
 
 To obtain the base buy or sell rate of a token.
 
-***
+
 
 function **getBasicRate**(ERC20 token, bool buy) public view returns (uint) | Parameter | Type | Description | | ----------|:-----:|:-------------------------------------------------------------------:| | `token` | ERC20 | ERC20 token contract address | | `buy` | bool | `true` to get the buy rate, otherwise `false` to get the sell rate | **Returns:**\ Base buy or sell rate of a token in wei amount
 
-***
+
 
 Web3 Example:
 
@@ -219,7 +219,7 @@ result = await ConversionRates.methods.getBasicRate(token, buy).call();
 
 To obtain the basis points (bps) adjustments of a token.
 
-***
+
 
 function **getCompactData**(ERC20 token) public view returns (uint, uint, byte, byte) | Parameter | Type | Description | | ----------|:-----:|:----------------------------:| | `token` | ERC20 | ERC20 token contract address | **Returns:**
 
@@ -228,7 +228,7 @@ function **getCompactData**(ERC20 token) public view returns (uint, uint, byte, 
 3. bps adjustment to base buy rate of token
 4. bps adjustment to base sell rate of token
 
-***
+
 
 Web3 Example:
 
@@ -253,11 +253,11 @@ let sellRateBPS = result[3];
 
 Obtain a list of supported reserve tokens.
 
-***
+
 
 function **getListedTokens**() public view returns (ERC20\[])
 
-***
+
 
 Web3 Example:
 
@@ -276,11 +276,11 @@ result = await ConversionRates.methods.getListedTokens().call();
 
 To obtain the adjusted buy or sell rate of a token.
 
-***
+
 
 function **getRate**(ERC20 token, uint currentBlockNumber, bool buy, uint qty) public view returns (uint) | Parameter | Type | Description | | ---------------------|:-----:|:--------------------------------------------------------------------:| | `token` | ERC20 | ERC20 token contract address | | `currentBlockNumber` | uint | to see if rates' adjustments are applicable on this ETH block number | | `buy` | bool | `true` to get the buy rate, otherwise `false` to get the sell rate | | `qty` | uint | token quantity | **Returns:**\ Adjusted buy or sell rate of a token in wei amount
 
-***
+
 
 Web3 Example:
 
@@ -305,11 +305,11 @@ result = await ConversionRates.methods
 
 To obtain the block number for which the basis points (bps) adjustments are valid from.
 
-***
+
 
 function **getRateUpdateBlock**(ERC20 token) public view returns (uint) | Parameter | Type | Description | | ----------|:-----:|:----------------------------:| | `token` | ERC20 | ERC20 token contract address | **Returns:**\ Block number for which the basis points (bps) adjustments are valid from
 
-***
+
 
 Web3 Example:
 
@@ -329,7 +329,7 @@ blockNumber = await ConversionRates.methods.getRateUpdateBlock(token).call();
 
 To obtain data of the step function of a token.
 
-***
+
 
 function **getStepFunctionData**(ERC20 token, uint command, uint param) public view returns (int) | Parameter | Type | Description | | ----------|:-----:|:-------------------------------------:| | `token` | ERC20 | ERC20 token contract address | | `command` | uint | number within `0` to `15` inclusive | | `param` | uint | index of step function data to obtain |
 
@@ -363,7 +363,7 @@ function getStepFunctionData(ERC20 token, uint command, uint param) public view 
     }
 ```
 
-***
+
 
 Web3 Example:
 
@@ -390,14 +390,14 @@ let buyRateQtyStepFunctionLength = result[0];
 
 To obtain the basic information of a token
 
-***
+
 
 function **getTokenBasicData**(ERC20 token) public view returns (bool, bool) | Parameter | Type | Description | | -----------------|:------------------------:|:--------------------------------:| | `token` | ERC20 | Token contract address | **Returns:**
 
 1. Whether a token is listed
 2. Whether a token is enabled
 
-***
+
 
 Web3 Example:
 
@@ -423,7 +423,7 @@ let tokenEnabled = result[1];
 
 To record the imbalance of a reserve token after a trade was executed. The reserve contract usually invokes this.
 
-***
+
 
 function **recordImbalance**(ERC20 token, int buyAmount, uint rateUpdateBlock, uint currentBlock) public | Parameter | Type | Description | | ------------------|:------:|:-----------------------------------------------:| | `token` | ERC20 | Token contract address | | `buyAmount` | int | Token wei amount bought or sold | | `rateUpdateBlock` | uint | block number for which the rates are valid from | | `currentBlock` | uint | block number for which trade was executed |\
 
@@ -432,11 +432,11 @@ function **recordImbalance**(ERC20 token, int buyAmount, uint rateUpdateBlock, u
 
 Set tokens' base buy and sell rates, and optional adjustments to these rates. Only operator can invoke. Refer to [this guide](https://docs.kyberswap.com/Legacy/api-abi/core-smart-contracts/reserves-fedpricereserve.md#how-to-programmatically-call-setbaserate-setcompactdata) on how to use this function.
 
-***
+
 
 function **setBaseRate**(ERC20\[] tokens, uint\[] baseBuy, uint\[] baseSell, bytes14\[] buy, bytes14\[] sell, uint blockNumber, uint\[] indices) public onlyOperator | Parameter | Type | Description | | --------------|:---------:|:-----------------------------------------------------------:| | `tokens` | ERC20\[] | array of token contract addresses to set the base rates for | | `baseBuy` | uint\[] | array of token buy rates in wei amount | | `baseSell` | uint\[] | array of token sell rates in wei amount | | `buy` | bytes14\[] | compact data representation of basis points (bps) to adjust tokens' buy rates. `1bps = 0.01%` | | `sell` | bytes14\[] | Compact data representation of basis points (bps) to adjust tokens' sell rates. `1bps = 0.01%` | | `blockNumber` | uint | ETH block number for which the adjustments are valid from | | `indices` | uint\[] | array of indexes to apply bps adjustments on | Modifiers: [onlyOperator](https://docs.kyberswap.com/Legacy/api-abi/core-smart-contracts/api\_abi-permissiongroups.md#onlyoperator)
 
-***
+
 
 Web3 Example:
 
@@ -474,11 +474,11 @@ txReceipt = await web3.eth.sendTransaction({
 
 Setting minor adjustments in basis points (bps) to tokens' buy and sell rates. `1bps = 0.01%`. Only operator can invoke. Refer to [this guide](https://docs.kyberswap.com/Legacy/api-abi/core-smart-contracts/reserves-fedpricereserve.md#how-to-programmatically-call-setbaserate-setcompactdata) on how to use this function.
 
-***
+
 
 function **setCompactData**(bytes14\[] buy, bytes14\[] sell, uint blockNumber, uint\[] indices) public onlyOperator | Parameter | Type | Description | | --------------|:---------:|:--------------------------------------------------------------:| | `buy` | bytes14\[] | basis points to adjust tokens' buy rates | | `sell` | bytes14\[] | basis points to adjust tokens' sell rates | | `blockNumber` | uint | ETH block number for which the adjustment rates are valid from | | `indices` | uint\[] | array of indexes to apply the buy / sell rate adjustments on | Modifiers: [onlyOperator](https://docs.kyberswap.com/Legacy/api-abi/core-smart-contracts/api\_abi-permissiongroups.md#onlyoperator)
 
-***
+
 
 Web3 Example:
 
@@ -510,14 +510,14 @@ txReceipt = await web3.eth.sendTransaction({
 
 Set adjustments for tokens' buy and sell rates depending on the size of a buy / sell order. Only operator can invoke.
 
-***
+
 
 function **setQtyStepFunction**(ERC20 token, int\[] xBuy, int\[] yBuy, int\[] xSell, int\[] ySell) public onlyOperator | Parameter | Type | Description | | -----------------|:------------------------:|:--------------------------------:| | `token` | ERC20 | token contract address to set the base rates for | | `xBuy` | int\[] | array of buy steps in wei amount | | `yBuy` | int\[] | impact on buy rate in basis points (bps). `1 bps = 0.01%` Eg. `-30 = -0.3%` | | `xSell` | int\[] | array of sell steps in wei amount | | `ySell` | int\[] | impact on sell rate in basis points (bps). `1 bps = 0.01%` Eg. `-30 = -0.3%` | Modifiers: [onlyOperator](https://docs.kyberswap.com/Legacy/api-abi/core-smart-contracts/api\_abi-permissiongroups.md#onlyoperator)
 
 * Buy steps (`xBuy`) are used to change ASK prices, sell steps (`xSell`) are used to change BID prices
 * When `yBuy` and `ySell` numbers are non-positive (`< 0`) they will modify the rate to be lower, meaning the rate will be **reduced** by the Y-value set in each step. So negative steps mean worse rates for the user. Setting positive step values will give user better rates and could be considered as an advanced method to encourage users to "re balance" the inventory.
 
-***
+
 
 Web3 Example:
 
@@ -558,7 +558,7 @@ ConversionRates.methods
 
 Set the `minimalRecordResolution`, `maxPerBlockImbalance` and `maxTotalImbalance` of an ERC20 token
 
-***
+
 
 function **setTokenControlInfo**(ERC20 token, uint minimalRecordResolution, uint maxPerBlockImbalance, uint maxTotalImbalance) public onlyAdmin | Parameter | Type | Description | | ------------------------- |:-----:|:----------------------------:| | `token` | ERC20 | ERC20 token contract address | | `minimalRecordResolution` | uint | minimum denominator in token wei that can be changed | | `maxPerBlockImbalance` | uint | maximum wei amount of net absolute (+/-) change for a token in an ethereum block | | `maxTotalImbalance` | uint | wei amount of the maximum net token change allowable that happens between 2 price updates | Modifiers: [onlyAdmin](https://docs.kyberswap.com/Legacy/api-abi/core-smart-contracts/api\_abi-permissiongroups.md#onlyadmin)\ **Returns:**\ Data comprising minimalRecordResolution, maxPerBlockImbalance, and maxTotalImbalance
 
@@ -569,14 +569,14 @@ function **setTokenControlInfo**(ERC20 token, uint minimalRecordResolution, uint
 
 Set adjustments for tokens' buy and sell rates depending on the net traded amounts. Only operator can invoke.
 
-***
+
 
 function **setImbalanceStepFunction**(ERC20 token, int\[] xBuy, int\[] yBuy, int\[] xSell, int\[] ySell) public onlyOperator | Parameter | Type | Description | | -----------------|:------------------------:|:--------------------------------:| | `token` | ERC20 | token contract address to set the base rates for | | `xBuy` | int\[] | array of buy steps in wei amount | | `yBuy` | int\[] | impact on buy rate in basis points (bps). `1 bps = 0.01%` Eg. `-30 = -0.3%` | | `xSell` | int\[] | array of sell steps in wei amount | | `ySell` | int\[] | impact on sell rate in basis points (bps). `1 bps = 0.01%` Eg. `-30 = -0.3%` | Modifiers: [onlyOperator](https://docs.kyberswap.com/Legacy/api-abi/core-smart-contracts/api\_abi-permissiongroups.md#onlyoperator)
 
 * Buy steps (`xBuy`) are used to change ASK prices, sell steps (`xSell`) are used to change BID prices
 * `yBuy` and `ySell` numbers should always be non-positive (`<=0`) because the smart contract **reduces** the output amount by the Y-value set in each step.
 
-***
+
 
 Web3 Example:
 
@@ -614,11 +614,11 @@ ConversionRates.methods
 
 Set the duration (in blocks) for which the rates will be valid for. Only admin can invoke.
 
-***
+
 
 function **setValidRateDurationInBlocks**(uint duration) public onlyAdmin | Parameter | Type | Description | | -----------------|:------------------------:|:--------------------------------:| | `duration` | uint | Number of blocks for which the rates will be valid | Modifiers: [onlyAdmin](https://docs.kyberswap.com/Legacy/api-abi/core-smart-contracts/api\_abi-permissiongroups.md#onlyadmin)
 
-***
+
 
 Web3 Example:
 
@@ -649,11 +649,11 @@ ConversionRates.methods
 
 Set / change the reserve contract address. Only admin can invoke.
 
-***
+
 
 function **setReserveAddress**(address reserve) public onlyAdmin | Parameter | Type | Description | | -----------------|:------------------------:|:--------------------------------:| | `reserve` | address | reserve contract address | Modifiers: [onlyAdmin](https://docs.kyberswap.com/Legacy/api-abi/core-smart-contracts/api\_abi-permissiongroups.md#onlyadmin)
 
-***
+
 
 Web3 Example:
 

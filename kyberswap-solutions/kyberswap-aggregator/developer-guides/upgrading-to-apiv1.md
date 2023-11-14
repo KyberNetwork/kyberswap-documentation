@@ -66,6 +66,13 @@ As part of this upgrade, some of the parameters have also been modified to make 
 
 ### Response
 
+{% hint style="info" %}
+The response parameters have been slightly altered in the `[V1]POST` API. The relevant parameter keys are provided below ( non-versioned -> `[V1]`):
+
+* `inputAmount` -> `amountIn`
+* `encodedSwapData` -> `data`
+{% endhint %}
+
 | API GET           | APIv1 GET         | APIv1 POST    |
 | ----------------- | ----------------- | ------------- |
 | inputAmount       | amountIn          | amountIn      |

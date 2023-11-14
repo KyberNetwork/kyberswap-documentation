@@ -17,7 +17,7 @@ imports [IKyberNetworkProxy](https://docs.kyberswap.com/Legacy/api-abi/core-smar
 
 _Source_: [IKyberStorage.sol](https://github.com/KyberNetwork/smart-contracts/blob/master/contracts/sol6/IKyberStorage.sol)
 
-***
+
 
 ### INDEX[​](https://docs.kyberswap.com/Legacy/api-abi/core-smart-contracts/api\_abi-ikyberstorage#index) <a href="#index" id="index"></a>
 
@@ -31,7 +31,7 @@ _Source_: [IKyberStorage.sol](https://github.com/KyberNetwork/smart-contracts/bl
 
 Returns the reserveID of the reserve given the address.
 
-***
+
 
 function **getReserveId**(address reserve) external view returns (bytes32 reserveId) | Parameter | Type | Description | | --------- |:-----:|:-----------:| | `reserve` | address | reserve address | **Returns:**\ reserveId - 32-byte reserve ID
 

@@ -17,7 +17,7 @@ imports [IKyberReserve](https://docs.kyberswap.com/Legacy/api-abi/core-smart-con
 
 _Source_: [IKyberHint.sol](https://github.com/KyberNetwork/smart-contracts/blob/master/contracts/sol6/IKyberHint.sol)
 
-***
+
 
 ### INDEX[​](https://docs.kyberswap.com/Legacy/api-abi/core-smart-contracts/api\_abi-ikyberhint#index) <a href="#index" id="index"></a>
 
@@ -31,7 +31,7 @@ _Source_: [IKyberHint.sol](https://github.com/KyberNetwork/smart-contracts/blob/
 
 Builds the hint for a token -> eth trade.
 
-***
+
 
 function **buildTokenToEthHint**(IERC20 tokenSrc, TradeType tokenToEthType, bytes32\[] tokenToEthReserveIds, uint256\[] tokenToEthSplits) external view returns (bytes hint) | Parameter | Type | Description | | --------- |:-----:|:-----------:| | `tokenSrc` | IERC20 | source token to trade | | `tokenToEthType` | TradeType | token -> eth trade hint type | | `tokenToEthReserveIds` | bytes32\[] | token -> eth reserve IDs | | `tokenToEthSplits` | uint256\[] | token -> eth reserve splits | **Returns:**\ hint - the ABI encoded hint
 

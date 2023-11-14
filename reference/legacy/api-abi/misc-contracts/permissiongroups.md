@@ -17,7 +17,7 @@ _Source_: [PermissionGroups.sol](https://github.com/KyberNetwork/smart-contracts
 
 The PermissionGroups contract's maintains function modifiers that makes sure permission conditions are met before executing any proceeding body of code.
 
-***
+
 
 ### INDEX[​](https://docs.kyberswap.com/Legacy/api-abi/misc/api\_abi-permissiongroups#index) <a href="#index" id="index"></a>
 
@@ -31,7 +31,7 @@ The PermissionGroups contract's maintains function modifiers that makes sure per
 
 Event for logging of the change of admin address.
 
-***
+
 
 event **AdminClaimed**(address newAdmin, address previousAdmin) | Parameter | Type | Description | | --------------- |:-------:|:------------------------------:| | `newAdmin` | address | address of the new admin | | `previousAdmin` | address | address of the previous admin |\
 
@@ -40,7 +40,7 @@ event **AdminClaimed**(address newAdmin, address previousAdmin) | Parameter | Ty
 
 Event for logging the addition of an address with alerter role.
 
-***
+
 
 event **AlerterAdded**(address newAlerter, bool isAdd) | Parameter | Type | Description | | ------------ |:-------:|:--------------------------------------------------------------------------:| | `newAlerter` | address | address of the new alerter | | `isAdd` | bool | if `true`, new alerter was added, otherwise `false` if alerter was removed |\
 
@@ -49,7 +49,7 @@ event **AlerterAdded**(address newAlerter, bool isAdd) | Parameter | Type | Desc
 
 Event for logging the addition of an address with operator role.
 
-***
+
 
 event **OperatorAdded**(address newOperator, bool isAdd) | Parameter | Type | Description | | ------------- |:-------:|:----------------------------------------------------------------------------:| | `newOperator` | address | address of the new operator | | `isAdd` | bool | if `true`, new operator was added, otherwise `false` if operator was removed |
 

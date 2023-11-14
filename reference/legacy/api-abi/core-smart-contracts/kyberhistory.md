@@ -17,7 +17,7 @@ is [IKyberHistory](https://docs.kyberswap.com/Legacy/api-abi/core-smart-contract
 
 _Source_: [KyberHistory.sol](https://github.com/KyberNetwork/smart-contracts/blob/master/contracts/sol6/KyberHistory.sol)
 
-***
+
 
 ### INDEX[​](https://docs.kyberswap.com/Legacy/api-abi/core-smart-contracts/api\_abi-kyberhistory#index) <a href="#index" id="index"></a>
 
@@ -31,7 +31,7 @@ _Source_: [KyberHistory.sol](https://github.com/KyberNetwork/smart-contracts/blo
 
 Event logging the setting of the new KyberStorage contract address.
 
-***
+
 
 event **KyberStorageUpdated**(address newStorage) | Parameter | Type | Description | | --------- |:-----:|:-----------:| | `newStorage` | address | new contract address | Signature: 0xed8c790db7ddf303f576c18e6644ec19e7b39356088eeeeac11c95212c61f49a
 
@@ -44,6 +44,6 @@ event **KyberStorageUpdated**(address newStorage) | Parameter | Type | Descripti
 
 Returns list of historic addresses, where index 0 is the currently used contract address and indexes > 0 are older versions.
 
-***
+
 
 function **getContracts**() external override view returns (address\[])\ **Returns:**\ List of history addresses

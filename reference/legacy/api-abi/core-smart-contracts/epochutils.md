@@ -17,7 +17,7 @@ is [IEpochUtils](https://docs.kyberswap.com/Legacy/api-abi/core-smart-contracts/
 
 _Source_: [EpochUtils.sol](https://github.com/KyberNetwork/smart-contracts/blob/master/contracts/sol6/Dao/EpochUtils.sol)
 
-***
+
 
 ### INDEX[​](https://docs.kyberswap.com/Legacy/api-abi/core-smart-contracts/api\_abi-epochutils#index) <a href="#index" id="index"></a>
 
@@ -31,7 +31,7 @@ _Source_: [EpochUtils.sol](https://github.com/KyberNetwork/smart-contracts/blob/
 
 Returns the current epoch number.
 
-***
+
 
 function **getCurrentEpochNumber**() public view override returns (uint256)\ **Returns:**\ Current epoch number
 

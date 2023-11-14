@@ -19,7 +19,7 @@ _Source_: [PermissionlessOrderbookReserveLister.sol](https://github.com/KyberNet
 
 The Permissionless Orderbook Reserve Lister is used for creating, initialising and listing new Permissionless Orderbook Reserves.
 
-***
+
 
 ### INDEX[​](https://docs.kyberswap.com/Legacy/api-abi/misc/api\_abi-permissionlessorderbookreservelister#index) <a href="#index" id="index"></a>
 
@@ -33,7 +33,7 @@ The Permissionless Orderbook Reserve Lister is used for creating, initialising a
 
 Event for logging of the listing stage of an orderbook reserve for a particular ERC20 token.
 
-***
+
 
 event **TokenOrderbookListingStage**(ERC20 token, ListingStage stage) | Parameter | Type | Description | | --------- |:-----:|:----------------------------:| | `token` | ERC20 | ERC20 token contract address | | `stage` | enum ListingStage | Takes 1 of the following values: {NO\_RESERVE, RESERVE\_ADDED, RESERVE\_INIT, RESERVE\_LISTED} |\
 
@@ -44,11 +44,11 @@ event **TokenOrderbookListingStage**(ERC20 token, ListingStage stage) | Paramete
 
 Contract constructor. Note that constructor methods are called exactly once during contract instantiation and cannot be called again.
 
-***
+
 
 function **PermissionlessOrderbookReserveLister**(InternalNetworkInterface kyber, OrderListFactoryInterface factory, MedianizerInterface medianizer, ERC20 knc, uint maxOrders, uint minOrderValueUsd) public | Parameter | Type | Description | | -----------------|:------------------------:|:--------------------------------:| | `kyber` | InternalNetworkInterface | KyberNetwork contract address | | `factory` | OrderListFactoryInterface | OrderListFactory contract address | | `medianizer` | MedianizerInterface | Medianizer contract address | | `knc` | ERC20 | KNC token contract address | | `maxOrders` | uint | Maximum number of orders to traverse for 1 trade | | `minOrderValueUsd` | uint | Minimum USD amount needed to create a new order on a permissionless orderbook reserve |
 
-***
+
 
 \
 
@@ -57,11 +57,11 @@ function **PermissionlessOrderbookReserveLister**(InternalNetworkInterface kyber
 
 The first step for creating an orderbook reserve for a specified ERC20 token.
 
-***
+
 
 function **addOrderbookContract**(ERC20 token) public returns (bool) | Parameter | Type | Description | | ----------|:-----:|:------------------------------------------:| | `token` | ERC20 | ERC20 token contract address | **Returns:**\ True if the function was executed successfully.
 
-***
+
 
 Web3 Example:
 
@@ -88,13 +88,13 @@ txReceipt = await web3.eth.sendTransaction({
 
 Get the current listing stage for a specified ERC20 token.
 
-***
+
 
 function **getOrderbookListingStage**(ERC20 token) public view returns (address, ListingStage) | Parameter | Type | Description | | ----------|:-----:|:------------------------------------------:| | `token` | ERC20 | ERC20 token contract address |
 
 **Returns:**\ | Parameter | Type | Description | | ----------|:-----:|:------------------------------------------:| | `address` | address | Orderbook reserve contract address for specified ERC20 token | | `ListingStage` | ListingStage | Latest successful stage |
 
-***
+
 
 Web3 Example:
 
@@ -114,11 +114,11 @@ result = await OrderbookReserve.methods.getOrderbookListingStage(token).call();
 
 The second step for creating an orderbook reserve for a specified ERC20 token.
 
-***
+
 
 function **initOrderbookContract**(ERC20 token) public returns (bool) | Parameter | Type | Description | | ----------|:-----:|:------------------------------------------:| | `token` | ERC20 | ERC20 token contract address | **Returns:**\ True if the function was executed successfully.
 
-***
+
 
 Web3 Example:
 
@@ -145,11 +145,11 @@ txReceipt = await web3.eth.sendTransaction({
 
 The third and final step for creating an orderbook reserve for a specified ERC20 token.
 
-***
+
 
 function **listOrderbookContract**(ERC20 token) public returns (bool) | Parameter | Type | Description | | ----------|:-----:|:------------------------------------------:| | `token` | ERC20 | ERC20 token contract address | **Returns:**\ True if the function was executed successfully.
 
-***
+
 
 Web3 Example:
 
@@ -176,11 +176,11 @@ txReceipt = await web3.eth.sendTransaction({
 
 Unlist an orderbook reserve for a specified ERC20 token.
 
-***
+
 
 function **unlistOrderbookContract**(ERC20 token, uint hintReserveIndex) public returns (bool) | Parameter | Type | Description | | ----------|:-----:|:------------------------------------------:| | `token` | ERC20 | ERC20 token contract address | | `hintReserveIndex` | uint | index in Kyber Network reserve array | **Returns:**\ True if the reserve was successfully removed.
 
-***
+
 
 Web3 Example:
 

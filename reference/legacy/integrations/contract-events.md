@@ -140,7 +140,7 @@ _Source_: [KyberFeeHandler.sol](https://github.com/KyberNetwork/smart-contracts/
 
 Emitted when there are fees to be given to various parties, based on the BRR distribution determined by the KyberDAO.
 
-***
+
 
 event **FeeDistributed**(IERC20 indexed token, address indexed platformWallet, uint256 platformFeeWei, uint256 rewardWei, uint256 rebateWei, address\[] rebateWallets, uint256\[] rebatePercentBpsPerWallet, uint256 burnAmtWei)
 
@@ -161,7 +161,7 @@ Event Signature: `0xd66a6cfa04148d5e34fd3da6bbabc8a7e6c9ebffb1638f00e9c35d67b51c
 
 Emitted when there is a change made to the BRR distribution, as determined by the KyberDAO.
 
-***
+
 
 event **BRRUpdated**(uint256 rewardBps, uint256 rebateBps, uint256 burnBps, uint256 expiryTimestamp, uint256 indexed epoch)
 
@@ -179,7 +179,7 @@ Event Signature: `0x90da252e8e1873b40c0a15bba09620de70b1550bcd36e796175beb6f259c
 
 Emitted when KNC has been burnt.
 
-***
+
 
 event **KncBurned**(uint256 kncTWei, IERC20 indexed token, uint256 amount)
 
@@ -195,7 +195,7 @@ Event Signature: `0xd66a6cfa04148d5e34fd3da6bbabc8a7e6c9ebffb1638f00e9c35d67b51c
 
 Emitted when an entire epoch's reward has been allocated for burning KNC (Eg. epoch 0).
 
-***
+
 
 event **RewardsRemovedToBurn**(uint256 indexed epoch, uint256 rewardsWei)
 

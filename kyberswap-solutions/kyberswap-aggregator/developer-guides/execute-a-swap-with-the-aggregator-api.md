@@ -36,79 +36,78 @@ While the `[V1]` APIs provide more performant queries, we understand that some i
 In such cases, integrators can still use our [non-versioned API](../aggregator-api-specification/evm-swaps.md#chain-route-encode) whose call parameters are similar except for an additional required `to` field that denotes the recipient of the swapped tokens. Please see [Non-versioned API swap flow](upgrading-to-apiv1.md#non-versioned-api-swap-flow) for more details.
 {% endhint %}
 
-## Web3.js example
+## TypeScript Example
 
-### Swap Params Response[​](https://docs.kyberswap.com/Aggregator/implement-a-swap#swap-params-response) <a href="#swap-params-response" id="swap-params-response"></a>
+{% hint style="success" %}
+**Aggregator API Demo**
 
-| Parameter Name  | Type   | Required | Description                            |
-| --------------- | ------ | -------- | -------------------------------------- |
-| inputAmount     | string |          | hex string represents the input amount |
-| routerAddress   | string |          | ERC20 contract address of the router   |
-| encodedSwapData | string |          | hex data to be used in transaction     |
-| ...             |        |          |                                        |
-
-{% hint style="info" %}
-The response parameters have been slightly altered in the `[V1]POST` API. The relevant parameter keys are provided below ( non-versioned -> `[V1]`):
-
-* `inputAmount` -> `amountIn`
-* `encodedSwapData` -> `data`
+The code snippets in the guide below have been extracted from our demo GitHub repo which showcases the full end-to-end Aggregator operations in a TypeScript environment.
 {% endhint %}
 
-The Encoded Swap API response includes `inputAmount` and `encodedSwapData` above to be used as data to interact with our smart contract. By using the `encodedSwapData`, you don't have to care about the logic behind the encoding process. The next section will explain client usage
+{% embed url="https://github.com/KyberNetwork/ks-aggregator-api-demo/tree/master" %}
 
-### Web3js Client Integration[​](https://docs.kyberswap.com/Aggregator/implement-a-swap#web3js-client-integration) <a href="#web3js-client-integration" id="web3js-client-integration"></a>
+### Step 1: Query Swap Route
 
-Web3.js integration is relatively straightforward but to avoid transaction failure due to gas, we recommend performing a gas estimation call.
+Integrators can easily query for superior rates by passing in the following required parameters into the [`[V1] Get Swap Route`](../aggregator-api-specification/evm-swaps.md#chain-api-v1-routes) API:
 
-#### Initial web3 context[​](https://docs.kyberswap.com/Aggregator/implement-a-swap#initial-web3-context) <a href="#initial-web3-context" id="initial-web3-context"></a>
-
-```javascript
-const { account, chainId, library } = useActiveWeb3React()
+```typescript
+const targetPathConfig = {
+    params: {
+        tokenIn: tokenIn.address,
+        tokenOut: tokenOut.address,
+        amountIn: Number(1*10**tokenIn.decimals).toString()
+    }
+};
 ```
 
-#### Estimate gas[​](https://docs.kyberswap.com/Aggregator/implement-a-swap#estimate-gas) <a href="#estimate-gas" id="estimate-gas"></a>
+[V1Get.ts](https://github.com/KyberNetwork/ks-aggregator-api-demo/blob/209a2d358fa3a47b50f87660c474d5592a155a13/src/apis/V1Get.ts#L10)
 
-_Note: The value of the transaction is the `inputAmount` if the input token is a native token, and 0 otherwise_
+Note that the full list of available parameters as well as their usage can be found on the [specification page](../aggregator-api-specification/evm-swaps.md).
 
-```javascript
-const amountIn = tokenIn == ETHER ? response.InputAmount : 0
+For each of the token swaps queried, the `[V1] GET` API will return a data object consisting of:
 
-const estimateGasOption = {
-        from: account,
-        to: trade.routerAddress,
-        data: trade.encodedSwapData,
-        value: BigNumber.from(amountIn),
-      }
-      
-const gasEstimate = await library
-        .getSigner()
-        .estimateGas(estimateGasOption)
-        .then(response => {
-          return response
-        })
-```
+* `routeSummary` ->  An object containing the routing data in human readable format. The API will only return the route with the best rate as determined by the KyberSwap Aggregator algorithm.
+* `routerAddress` -> The address of the router contract which facilitates the swap
 
-#### Execute transaction call[​](https://docs.kyberswap.com/Aggregator/implement-a-swap#execute-transaction-call) <a href="#execute-transaction-call" id="execute-transaction-call"></a>
+### Step 2: Encode Preferred Swap Route
 
-Using the `gasEstimate` function above to combine with the transaction object
+Upon finding a favourable route, we can then go ahead and encode the selected route by including the `routeSummary` in the request body of [`[V1] Post Swap Route For Encoded Data`](../aggregator-api-specification/evm-swaps.md#chain-api-v1-route-build). Encoding the swap route via the API abstracts away the complexity of interacting with the contract directly.
 
-_Note: The value of the transaction is the `inputAmount` if the input token is a native token, and 0 otherwise_
-
-```javascript
-const amountIn = tokenIn == ETHER ? response.InputAmount : 0
-
-const sendTransactionOption = {
-    from: account,
-    to: api.routerAddress,
-    data: api.encodedSwapData,
-    gasLimit: gasEstimate,
-    gasPrice: gasPrice,
-    ...(trade.inputAmount.currency instanceof Token
-          ? {}
-          : { value: BigNumber.from(inputAmount) }),
+```typescript
+const requestBody = {
+    routeSummary: routeSummary,
+    sender: signerAddress,
+    recipient: signerAddress,
+    slippageTolerance: 10 //0.1%
 }
-
-library
-    .getSigner()
-    .sendTransaction(sendTransactionOption)
 ```
+
+[V1Post.ts](https://github.com/KyberNetwork/ks-aggregator-api-demo/blob/209a2d358fa3a47b50f87660c474d5592a155a13/src/apis/V1Post.ts#L21C1-L21C1)
+
+Note that the `[V1] POST` API requires the `sender` and `recipient` to be appended to the `routeSummary` in order to configure the parties to the swap. In most cases, these would usually be the address that is executing the swap.
+
+It is highly recommended that a `slippageTolerance` (in bips) is set to ensure that the swap proceeds smoothly within the boundaries set. Refer to [slippage](../../../getting-started/foundational-topics/decentralized-finance/slippage.md) for more info regarding it's causes and effects on swap rates.
+
+The encoded data for the selected swap route will be returned as a hexstring under the `data` object.
+
+### Step 3: Execute Swap Transaction On-Chain
+
+To execute the swap, we will leverage the [ethers.js](https://docs.ethers.org/v6/) library. For simplicity, we will hard code a private key under `/src/libs/signer.ts` that will allow us to programatically interact with the EVM from the backend.
+
+With a configured signer, we can then execute the transaction on-chain by paying the necessary gas fees:
+
+```typescript
+const executeSwapTx = await signer.sendTransaction({
+    data: encodedSwapData,
+    from: signerAddress,
+    to: routerContract,
+    maxFeePerGas: 1000000000000,
+    maxPriorityFeePerGas: 1000000000000        
+});
+```
+
+[V1Swap.ts](https://github.com/KyberNetwork/ks-aggregator-api-demo/blob/209a2d358fa3a47b50f87660c474d5592a155a13/src/operations/V1Swap.ts#L28)
+
+A tx hash will be returned once the swap tx has been successfully executed:
+
+<figure><img src="../../../.gitbook/assets/Aggregator_DevGuide_SwapSuccess.png" alt=""><figcaption><p><a href="https://polygonscan.com/tx/0x149002bd7c5b290ecf31dc7d395cd3c0f97b19c1c8aeaf511541e9191dd29c7a">Sample swap on Polygon</a></p></figcaption></figure>
