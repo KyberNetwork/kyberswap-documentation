@@ -76,7 +76,8 @@ The Aggregator APIs require a chain name to be included in the path when calling
 * Linea (ChainID: 59144) -> `linea`
 * Polygon zkEVM (ChainID: 1101) -> `polygon-zkevm`
 * Aurora (ChainID: 1313161554) -> `aurora`
-* BitTorrent Chain\* (ChainID: 199) -> `bittorrent`
+* BitTorrent Chain (ChainID: 199) -> `bittorrent`
+* Scroll (ChainID: 534352) -> `scroll`
 {% endhint %}
 
 ### `Latest`
