@@ -97,6 +97,8 @@ $$VoteAPR = \frac{\text{Total KNC Rewards}}{\text{Average KNC Voted In KIPs}}*\f
 
 Note that the time period used starts from the beginning of the epoch when the KIP was proposed to the reward distribution date.
 
+Calculation is based on rewards distributed to KNC voters since KIP21.
+
 </details>
 
 <details>
