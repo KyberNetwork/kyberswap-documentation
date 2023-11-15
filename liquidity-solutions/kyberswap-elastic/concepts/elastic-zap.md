@@ -1,9 +1,9 @@
-# Elastic Zaps
+# Elastic Zap
 
 {% hint style="info" %}
 **Introduction To Zaps**
 
-For a conceptual overview of zapping, please refer to our primer on [Zaps](../../../getting-started/foundational-topics/decentralized-finance/zaps.md).
+For a conceptual overview of zapping, please refer to our primer on [Zap](../../../getting-started/foundational-topics/decentralized-finance/zap.md).
 {% endhint %}
 
 ## Concentrated Liquidity Zaps
@@ -14,7 +14,7 @@ To enable LPs the option to zap into Elastic, KyberSwap has codified all the abo
 
 ## Minimizing Price Impact & Impermanent Loss
 
-Aside from a much simpler LP experience, Elastic Zaps is also primed to maximize LP yields through its integration with the [KyberSwap Aggregator](../../../kyberswap-solutions/kyberswap-aggregator/). By taking the additional step of scanning for more optimal rates across [multiple DEXs](../../../getting-started/supported-exchanges-and-networks.md), Elastic Zaps greatly reduces LPs exposure to price impact and the resulting IL risks.
+Aside from a much simpler LP experience, Elastic Zap is also primed to maximize LP yields through its integration with the [KyberSwap Aggregator](../../../kyberswap-solutions/kyberswap-aggregator/). By taking the additional step of scanning for more optimal rates across [multiple DEXs](../../../getting-started/supported-exchanges-and-networks.md), Elastic Zap greatly reduces LPs exposure to price impact and the resulting IL risks.
 
 {% hint style="info" %}
 **A Note On Gas Costs**
@@ -52,4 +52,4 @@ The example below highlights this fact conceptually when swapping against the ta
 
 In short, **the** [**price impact**](../../../getting-started/foundational-topics/decentralized-finance/price-impact.md) **of the intermediate swap will result in the newly created zap position being added further away from the market price** (assuming pool price before swap = market price). Depending on the market direction, this might result in immediate IL upon creation of the position. This is compounded in cases where the target pool TVL is low relative to the trade volume.
 
-To minimize such risks, [KyberSwap Elastic Zaps](elastic-zaps.md) leverages the [KyberSwap Aggregator](../../../kyberswap-solutions/kyberswap-aggregator/) to ensure that LPs always get superior rates when sourcing the intermediate swap. The Aggregator will compare rates across [all integrated DEX liquidity sources](../../../getting-started/supported-exchanges-and-networks.md) against the resulting target pool price (if intermediate swap was against the pool) and optimize the zap route accordingly. This minimizes the potential IL risks that LPs face when zapping into Elastic pools.
+To minimize such risks, [KyberSwap Elastic Zap](elastic-zap.md) leverages the [KyberSwap Aggregator](../../../kyberswap-solutions/kyberswap-aggregator/) to ensure that LPs always get superior rates when sourcing the intermediate swap. The Aggregator will compare rates across [all integrated DEX liquidity sources](../../../getting-started/supported-exchanges-and-networks.md) against the resulting target pool price (if intermediate swap was against the pool) and optimize the zap route accordingly. This minimizes the potential IL risks that LPs face when zapping into Elastic pools.

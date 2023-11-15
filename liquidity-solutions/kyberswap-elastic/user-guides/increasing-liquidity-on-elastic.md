@@ -35,11 +35,11 @@ Still deciding on which solution suits you best?&#x20;
 ## Increasing the liquidity of an existing position
 
 {% hint style="success" %}
-:zap: **Elastic Zaps** :zap:
+:zap: **Elastic Zap** :zap:
 
 LPs can now zap into Elastic pools! This means adding liquidity with just a single token without the complexities of sourcing the exact token ratios.
 
-Please visit the [Elastic Zaps](../concepts/elastic-zaps.md) explainer on how KyberSwap is making the LP experience more convenient while minimizing position management costs and risks.
+Please visit the [Elastic Zap](../concepts/elastic-zap.md) explainer on how KyberSwap is making the LP experience more convenient while minimizing position management costs and risks.
 
 Supported on:
 
@@ -57,7 +57,7 @@ From the [My Positions page](https://scrollscan.com/address/0xf0096e5B4AAfeEA1DF
 
 ![Position details](../../../.gitbook/assets/Elastic\_UserGuide\_IncLiq\_SelectPosition.png)
 
-This opens up the relevant page/popup depending on whether you want to add a single token (i.e. [zap](../../../getting-started/foundational-topics/decentralized-finance/zaps.md)) or two tokens.
+This opens up the relevant page/popup depending on whether you want to add a single token (i.e. [zap](../../../getting-started/foundational-topics/decentralized-finance/zap.md)) or two tokens.
 
 {% tabs %}
 {% tab title="Zap In" %}

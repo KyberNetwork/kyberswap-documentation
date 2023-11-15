@@ -65,11 +65,11 @@ Select the pool you’d like to participate in by clicking on the appropriate �
 LPs that would like to add liquidity to predefined ranges can also take advantage of our Quick Zap option.
 
 {% hint style="success" %}
-:zap: **Elastic Zaps** :zap:
+:zap: **Elastic Zap** :zap:
 
 LPs can now zap into Elastic pools! This means adding liquidity with just a single token without the complexities of sourcing the exact token ratios.
 
-Please visit the [Elastic Zaps](../concepts/elastic-zaps.md) explainer on how KyberSwap is making the LP experience more convenient while minimizing position management costs and risks.
+Please visit the [Elastic Zap](../concepts/elastic-zap.md) explainer on how KyberSwap is making the LP experience more convenient while minimizing position management costs and risks.
 
 Supported on:
 
@@ -143,7 +143,7 @@ Whenever a position outside the market price is created, the deposit amount for 
 
 ### **Step 5**: Configure token amounts
 
-Specify the deposit amount(s), or how much liquidity you would like to add to open this position. With the "Zap In" option, you can easily specify a single token amount which will automatically be converted into a position of the same value. See [Elastic Zaps](../concepts/elastic-zaps.md) for more details.
+Specify the deposit amount(s), or how much liquidity you would like to add to open this position. With the "Zap In" option, you can easily specify a single token amount which will automatically be converted into a position of the same value. See [Elastic Zap](../concepts/elastic-zap.md) for more details.
 
 You can either manually type in amounts or use the “Max” and “Half” buttons.&#x20;
 

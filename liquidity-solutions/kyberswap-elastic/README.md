@@ -15,7 +15,7 @@ Through these improved LP incentives, KyberSwap Elastic is also able to further 
 
 LPs can now zap into Elastic pools! This means adding liquidity with just a single token without the complexities of sourcing the exact token ratios.
 
-Please visit the [Elastic Zaps](concepts/elastic-zaps.md) explainer on how KyberSwap is making the LP experience more convenient while minimizing position management costs and risks.
+Please visit the [Elastic Zaps](concepts/elastic-zap.md) explainer on how KyberSwap is making the LP experience more convenient while minimizing position management costs and risks.
 
 Supported on:
 
