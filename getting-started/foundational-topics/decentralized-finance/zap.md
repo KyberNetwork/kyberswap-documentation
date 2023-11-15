@@ -22,7 +22,7 @@ Following on the example above, there are 2 directions for zaps:
 In both the above cases, LPs are less likely to face any slippage risks as the whole process is completed within a single transaction. Consequently, there is also no longer a need to conduct additional transactions which incur both more gas fees and manual management.
 
 {% hint style="success" %}
-**Maximizing Returns With Elastic Zaps**
+**Maximizing Returns With Elastic Zap**
 
 KyberSwap has iterated upon the zap concept, enabling LPs to zap into Elastic pools! Please refer to [Elastic Zap](../../../liquidity-solutions/kyberswap-elastic/concepts/elastic-zap.md) for more information on how this innovation could maximize your LP returns.
 {% endhint %}
