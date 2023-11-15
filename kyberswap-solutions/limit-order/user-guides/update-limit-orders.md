@@ -36,22 +36,6 @@ Amend the parameters of your limit order in the Edit Order screen. You can chang
 * The time limit (”Expires In”)
 * The edit option (See [Gasless Cancellation](../concepts/gasless-cancellation.md) for more info)
 
-{% hint style="info" %}
-**Gasless Cancel Chains**
-
-Currently, gasless cancels are only supported on the following chains:
-
-* Ethereum (ChainID: 1)
-* BSC (ChainID: 56)
-* Arbitrum (ChainID: 42161)
-* Polygon PoS (ChainId: 137)
-* Optimism (ChainID: 10)
-* Avalanche (ChainID: 43114)
-* Fantom (ChainID: 250)
-
-For chains where gasless cancellation is not supported, the option will not be shown and users will have to default to hard cancel (i.e. cancel with a fee).
-{% endhint %}
-
 You cannot amend the token swap pair.
 
 ![Edit order pop-up](../../../.gitbook/assets/LO\_Edit\_Preview.png)

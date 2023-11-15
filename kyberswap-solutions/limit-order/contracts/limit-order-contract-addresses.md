@@ -28,6 +28,7 @@ All KyberSwap Limit Order contracts have been deployed at the same address acros
 
 <summary>Arbitrum (ChainID: 42161)</summary>
 
+* **DSLOProtocol:** [`0xcab2FA2eeab7065B45CBcF6E3936dDE2506b4f6C`](https://arbiscan.io/address/0xcab2FA2eeab7065B45CBcF6E3936dDE2506b4f6C)
 * **LimitOrderProtocol:** [`0x227B0c196eA8db17A665EA6824D972A64202E936`](https://arbiscan.io/address/0x227B0c196eA8db17A665EA6824D972A64202E936)
 
 </details>
@@ -45,6 +46,7 @@ All KyberSwap Limit Order contracts have been deployed at the same address acros
 
 <summary>Optimism (ChainID: 10)</summary>
 
+* **DSLOProtocol:** [`0xcab2FA2eeab7065B45CBcF6E3936dDE2506b4f6C`](https://optimistic.etherscan.io/address/0xcab2FA2eeab7065B45CBcF6E3936dDE2506b4f6C)
 * **LimitOrderProtocol:** [`0x227B0c196eA8db17A665EA6824D972A64202E936`](https://optimistic.etherscan.io/address/0x227B0c196eA8db17A665EA6824D972A64202E936)
 
 </details>
@@ -60,9 +62,9 @@ All KyberSwap Limit Order contracts have been deployed at the same address acros
 
 <details>
 
-<summary>Cronos (ChainID: 25)</summary>
+<summary>Base (ChainID: 8453)</summary>
 
-* **LimitOrderProtocol:** [`0x227B0c196eA8db17A665EA6824D972A64202E936`](https://cronoscan.com/address/0x227B0c196eA8db17A665EA6824D972A64202E936)
+* **DSLOProtocol**: [`0xcab2FA2eeab7065B45CBcF6E3936dDE2506b4f6C`](https://basescan.org/address/0xcab2FA2eeab7065B45CBcF6E3936dDE2506b4f6C)
 
 </details>
 
@@ -77,16 +79,8 @@ All KyberSwap Limit Order contracts have been deployed at the same address acros
 
 <details>
 
-<summary>Aurora (ChainID: 1313161554)</summary>
+<summary>Linea (ChainID: 59144)</summary>
 
-* **LimitOrderProtocol:** [`0x227B0c196eA8db17A665EA6824D972A64202E936`](https://explorer.mainnet.aurora.dev/address/0x227B0c196eA8db17A665EA6824D972A64202E936)
-
-</details>
-
-<details>
-
-<summary>BitTorrent Chain (ChainID: 199)</summary>
-
-* **LimitOrderProtocol:** [`0x227B0c196eA8db17A665EA6824D972A64202E936`](https://bttcscan.com/address/0x5649B4DD00780e99Bab7Abb4A3d581Ea1aEB23D0)
+* **DSLOProtocol**: [`0xcab2FA2eeab7065B45CBcF6E3936dDE2506b4f6C`](https://explorer.linea.build/address/0xcab2FA2eeab7065B45CBcF6E3936dDE2506b4f6C)
 
 </details>

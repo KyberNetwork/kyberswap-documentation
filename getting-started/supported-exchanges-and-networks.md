@@ -241,11 +241,13 @@ Decentralized Exchanges:
 
 <details>
 
-<summary><img src="../.gitbook/assets/Base_Negative.svg" alt="" data-size="line">   Base*' (ChainID: 8453)</summary>
+<summary><img src="../.gitbook/assets/Base_Negative.svg" alt="" data-size="line">   Base (ChainID: 8453)</summary>
 
 Decentralized Exchanges:
 
 * [KyberSwap Elastic](https://kyberswap.com/)
+* [KyberSwap Limit Order](https://kyberswap.com/)
+* [KyberSwap Limit Order V2](https://kyberswap.com/)
 * [Aerodrome](https://aerodrome.finance/swap)
 * [Alien Base](https://app.alienbase.xyz/)
 * [Alien Base Stableswap](https://app.alienbase.xyz/)
@@ -285,7 +287,7 @@ Decentralized Exchanges:
 
 <details>
 
-<summary><img src="../.gitbook/assets/Cronos_Chain_Negative.png" alt="" data-size="line">   Cronos* (ChainID: 25)</summary>
+<summary><img src="../.gitbook/assets/Cronos_Chain_Negative.png" alt="" data-size="line">   Cronos (ChainID: 25)</summary>
 
 Decentralized Exchanges:
 
@@ -303,7 +305,7 @@ Decentralized Exchanges:
 
 <details>
 
-<summary><img src="../.gitbook/assets/ZkSync_logo.png" alt="">   zkSync Era*` (ChainID: 324)</summary>
+<summary><img src="../.gitbook/assets/ZkSync_logo.png" alt="">   zkSync Era (ChainID: 324)</summary>
 
 Decentralized Exchanges:
 
@@ -354,12 +356,14 @@ Decentralized Exchanges:
 
 <details>
 
-<summary><img src="../.gitbook/assets/Linea.png" alt="" data-size="line">   Linea* (ChainID: 59144)</summary>
+<summary><img src="../.gitbook/assets/Linea.png" alt="" data-size="line">   Linea (ChainID: 59144)</summary>
 
 Decentralized Exchanges:
 
 * [KyberSwap Classic](https://kyberswap.com/)
 * [KyberSwap Elastic](https://kyberswap.com/)
+* [KyberSwap Limit Order](https://kyberswap.com/)
+* [KyberSwap Limit Order V2](https://kyberswap.com/)
 * [EchoDEX](https://www.echodex.io/swap)
 * [EchoDEX V3](https://www.echodex.io/swap)
 * [HorizonDEX](https://app.horizondex.io/swap)
@@ -379,7 +383,7 @@ Decentralized Exchanges:
 
 <details>
 
-<summary><img src="../.gitbook/assets/PolygonzkEVM_Chain_Negative.png" alt="" data-size="line">   Polygon zkEVM* (ChainID: 1101)</summary>
+<summary><img src="../.gitbook/assets/PolygonzkEVM_Chain_Negative.png" alt="" data-size="line">   Polygon zkEVM (ChainID: 1101)</summary>
 
 Decentralized Exchanges:
 
@@ -399,7 +403,7 @@ Decentralized Exchanges:
 
 <details>
 
-<summary><img src="../.gitbook/assets/Aurora_Chain_Negative.png" alt="" data-size="line">   Aurora*` (ChainID: 1313161554)</summary>
+<summary><img src="../.gitbook/assets/Aurora_Chain_Negative.png" alt="" data-size="line">   Aurora (ChainID: 1313161554)</summary>
 
 Decentralized Exchanges:
 
@@ -413,7 +417,7 @@ Decentralized Exchanges:
 
 <details>
 
-<summary><img src="../.gitbook/assets/BitTorrentChain_Chain_Negative.png" alt="" data-size="line">   BitTorrent Chain* (ChainID: 199)</summary>
+<summary><img src="../.gitbook/assets/BitTorrentChain_Chain_Negative.png" alt="" data-size="line">   BitTorrent Chain (ChainID: 199)</summary>
 
 Decentralized Exchanges:
 
@@ -424,7 +428,7 @@ Decentralized Exchanges:
 
 <details>
 
-<summary><img src="../.gitbook/assets/Scroll_Negative.png" alt="" data-size="line">   Scroll* (ChainID: 534352)</summary>
+<summary><img src="../.gitbook/assets/Scroll_Negative.png" alt="" data-size="line">   Scroll (ChainID: 534352)</summary>
 
 Decentralized Exchanges:
 
@@ -440,9 +444,3 @@ Decentralized Exchanges:
 * [PunkSwap](https://zkscroll.punkswap.exchange/swap/)
 
 </details>
-
-_\* Denotes chains where KyberSwap Limit Order have yet to be deployed on_
-
-' _Denotes chains where KyberSwap Classic has yet to be deployed on_
-
-_\` Denotes chains where KyberSwap Elastic has yet to be deployed on_

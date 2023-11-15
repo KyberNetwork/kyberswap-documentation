@@ -42,22 +42,6 @@ On the cancellation pop-up, you will be provided with 2 options for cancellation
 
 Please refer to our [Gasless Cancellation](../concepts/gasless-cancellation.md) page for more details on how KyberSwap Limit Orders enable trades without gas.
 
-{% hint style="info" %}
-**Gasless Cancel Chains**
-
-Currently, gasless cancels are only supported on the following chains:
-
-* Ethereum (ChainID: 1)
-* BSC (ChainID: 56)
-* Arbitrum (ChainID: 42161)
-* Polygon PoS (ChainId: 137)
-* Optimism (ChainID: 10)
-* Avalanche (ChainID: 43114)
-* Fantom (ChainID: 250)
-
-For chains where gasless cancellation is not supported, the option will not be shown and users will have to default to hard cancel (i.e. cancel with a fee).
-{% endhint %}
-
 ![Confirm cancellation](../../../.gitbook/assets/LO\_Cancellation\_Preview.png)
 
 Review the information presented on the Cancel Order screen and select your cancellation option. You can then proceed by clicking the "Cancel Order" once you are satisfied.
