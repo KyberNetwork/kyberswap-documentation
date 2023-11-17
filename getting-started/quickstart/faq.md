@@ -272,3 +272,11 @@ If you would like to help us keep our community safe, you can contribute by repo
 <img src="https://support.kyberswap.com/hc/article_attachments/14607024442521" alt="004_ReasonSubmit.png" data-size="original">
 
 </details>
+
+{% hint style="success" %}
+**KyberSwap Help Center**
+
+Can't find what you're looking for? Our dedicated team of experts are available 24 hours a day to assist you with any queries, concerns, or technical issues you might encounter.
+
+Please visit the [KyberSwap Help Center](https://support.kyberswap.com/hc/en-us) for further details.
+{% endhint %}
