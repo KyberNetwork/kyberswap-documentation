@@ -11,11 +11,11 @@ As the AMM space matured, increasingly sophisticated yield generation strategies
 Through these improved LP incentives, KyberSwap Elastic is also able to further reduce slippage for traders as market forces will incentivize liquidity to be concentrated within the most actively traded price ranges. LPs are able to compound their finely tuned risk-adjusted returns while simultaneously encouraging greater market stability through reduced slippage risks for traders.
 
 {% hint style="success" %}
-:zap: **Elastic Zaps** :zap:
+:zap: **Elastic Zap** :zap:
 
 LPs can now zap into Elastic pools! This means adding liquidity with just a single token without the complexities of sourcing the exact token ratios.
 
-Please visit the [Elastic Zaps](concepts/elastic-zap.md) explainer on how KyberSwap is making the LP experience more convenient while minimizing position management costs and risks.
+Please visit the [Elastic Zap](concepts/elastic-zap.md) explainer on how KyberSwap is making the LP experience more convenient while minimizing position management costs and risks.
 
 Supported on:
 
