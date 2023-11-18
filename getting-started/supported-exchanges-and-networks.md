@@ -45,6 +45,7 @@ Decentralized Exchanges:
 * [SushiSwap](https://www.sushi.com/swap)
 * [SushiSwap V3](https://www.sushi.com/swap)
 * [Synapse](https://synapseprotocol.com/)
+* [TraderJoe V21](https://traderjoexyz.com/)
 * [Uniswap (v2)](https://app.uniswap.org/#/swap)
 * [Uniswap (v3)](https://app.uniswap.org/#/swap)
 * [Verse](https://verse.bitcoin.com/)
