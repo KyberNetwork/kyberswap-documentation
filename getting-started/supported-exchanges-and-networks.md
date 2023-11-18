@@ -399,6 +399,7 @@ Decentralized Exchanges:
 * [Balancer Weighted](https://app.balancer.fi/#/)
 * [Balancer Composable](https://app.balancer.fi/#/)&#x20;
 * [Doveswap V3](https://swap.dovish.finance/#/swap)
+* [Kokonut Swap Crypto Pools](https://kokonutswap.finance/)
 * [MantisSwap](https://app.mantissa.finance/#/swap)
 * [PancakeSwap V2](https://pancakeswap.finance/)
 * [PancakeSwap V3](https://pancakeswap.finance/swap)
