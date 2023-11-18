@@ -234,6 +234,7 @@ Decentralized Exchanges:
 * [SushiSwap V3](https://www.sushi.com/swap)
 * [Synapse ](https://synapseprotocol.com/)
 * [TraderJoe ](https://traderjoexyz.com/avalanche)
+* [TraderJoe V20](https://traderjoexyz.com/)
 * [Uniswap (v3)](https://app.uniswap.org/#/swap)
 * [WOOFi V2](https://fi.woo.org/swap/)
 * [YetiSwap](https://exchange.yetiswap.app/#/swap)
