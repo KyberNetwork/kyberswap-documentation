@@ -199,6 +199,7 @@ Decentralized Exchanges:
 * [Beethoven X ](https://beets.fi/)
 * [Curve ](https://curve.fi/)
 * [Fraxswap](https://app.frax.finance/swap/main)
+* [FXDX](https://app.fxdx.exchange/trade)
 * [iZiSwap](https://izumi.finance/trade/swap)
 * [Synapse ](https://synapseprotocol.com/)
 * [Synthetix ](https://staking.synthetix.io/)
