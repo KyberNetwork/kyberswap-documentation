@@ -273,6 +273,7 @@ Decentralized Exchanges:
 * [HorizonDEX](https://app.horizondex.io/swap)
 * [iZiSwap](https://izumi.finance/trade/swap)
 * [Kokonut Swap Crypto Pools](https://kokonutswap.finance/)
+* [Kokonut Swap CPMM](https://kokonutswap.finance/)
 * [Maverick](https://app.mav.xyz/)
 * [MoonBase](https://www.moonbase.fi/swap)
 * [PancakeSwap V2](https://pancakeswap.finance/swap)
