@@ -129,6 +129,7 @@ Decentralized Exchanges:
 * [SushiSwap V3](https://www.sushi.com/swap)
 * [Swapr ](https://swapr.eth.link/#/swap?chainId=1)
 * [Synapse ](https://synapseprotocol.com/)
+* [TraderJoe V20](https://traderjoexyz.com/)
 * [Uniswap V3 ](https://app.uniswap.org/#/swap)
 * [Wombat](https://app.wombat.exchange/swap)
 * [WOOFi V2](https://fi.woo.org/swap/)
