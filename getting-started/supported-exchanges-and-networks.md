@@ -87,6 +87,7 @@ Decentralized Exchanges:
 * [Synapse](https://synapseprotocol.com/)
 * [Thena](https://www.thena.fi/swap)
 * [Thena Fusion](https://www.thena.fi/swap)
+* [TraderJoe V21](https://traderjoexyz.com/)
 * [USDFI](https://usdfi.com/)
 * [Uniswap V3](https://app.uniswap.org/#/swap)
 * Wault (!)
