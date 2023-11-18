@@ -270,6 +270,7 @@ Decentralized Exchanges:
 * [DackieSwap V2](https://www.dackieswap.xyz/swap)
 * [DackieSwap V3](https://www.dackieswap.xyz/swap)
 * [Equalizer](https://base.equalizer.exchange/)
+* [FXDX](https://app.fxdx.exchange/trade)
 * [HorizonDEX](https://app.horizondex.io/swap)
 * [iZiSwap](https://izumi.finance/trade/swap)
 * [Kokonut Swap Crypto Pools](https://kokonutswap.finance/)
