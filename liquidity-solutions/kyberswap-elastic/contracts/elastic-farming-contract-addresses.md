@@ -55,8 +55,8 @@ description: Additional Rewards Across Multiple Chains
 
 <summary>Avalanche (ChainID: 43114)</summary>
 
-* **KyberSwapElasticLM**: [`0x7D5ba536ab244aAA1EA42aB88428847F25E3E676`](https://snowtrace.io/address/0x7D5ba536ab244aAA1EA42aB88428847F25E3E676)&#x20;
-* **KSElasticLMHelper**: [`0x35BE3F4fd8239A35a7F120756D4D69e5C5e10870`](https://snowtrace.io/address/0x35BE3F4fd8239A35a7F120756D4D69e5C5e10870)
+* **KyberSwapElasticLM**: [`0x7D5ba536ab244aAA1EA42aB88428847F25E3E676`](https://avascan.info/blockchain/all/address/0x7D5ba536ab244aAA1EA42aB88428847F25E3E676)&#x20;
+* **KSElasticLMHelper**: [`0x35BE3F4fd8239A35a7F120756D4D69e5C5e10870`](https://avascan.info/blockchain/all/address/0x35BE3F4fd8239A35a7F120756D4D69e5C5e10870)
 
 </details>
 
@@ -138,10 +138,10 @@ description: Additional Rewards Across Multiple Chains
 
 <summary>Avalanche (ChainID: 43114)</summary>
 
-* **KSElasticLMV2 (v1.1.1):** [`0xf2BcDf38baA52F6b0C1Db5B025DfFf01Ae1d6dBd`](https://snowtrace.io/address/0xf2BcDf38baA52F6b0C1Db5B025DfFf01Ae1d6dBd)
-* **KSElasticLMV2 (v1.1.1 - FRAX Farms):** [`0x3D6AfE2fB73fFEd2E3dD00c501A174554e147a43`](https://snowtrace.io/address/0x3D6AfE2fB73fFEd2E3dD00c501A174554e147a43)
-* **KSElasticLMV2 (v1.1.0)**: [`0xA70a1Ad0F91c52c79e177c5A18a7C9E1C4360e0e`](https://snowtrace.io/address/0xA70a1Ad0F91c52c79e177c5A18a7C9E1C4360e0e)&#x20;
-* **KSElasticLMHelper**: [`0x6AFeb9EDd6Cf44fA8E89b1eee28284e6dD7705C8`](https://snowtrace.io/address/0x6AFeb9EDd6Cf44fA8E89b1eee28284e6dD7705C8)
+* **KSElasticLMV2 (v1.1.1):** [`0xf2BcDf38baA52F6b0C1Db5B025DfFf01Ae1d6dBd`](https://avascan.info/blockchain/all/address/0xf2BcDf38baA52F6b0C1Db5B025DfFf01Ae1d6dBd)
+* **KSElasticLMV2 (v1.1.1 - FRAX Farms):** [`0x3D6AfE2fB73fFEd2E3dD00c501A174554e147a43`](https://avascan.info/blockchain/all/address/0x3D6AfE2fB73fFEd2E3dD00c501A174554e147a43)
+* **KSElasticLMV2 (v1.1.0)**: [`0xA70a1Ad0F91c52c79e177c5A18a7C9E1C4360e0e`](https://avascan.info/blockchain/all/address/0xA70a1Ad0F91c52c79e177c5A18a7C9E1C4360e0e)&#x20;
+* **KSElasticLMHelper**: [`0x6AFeb9EDd6Cf44fA8E89b1eee28284e6dD7705C8`](https://avascan.info/blockchain/all/address/0x6AFeb9EDd6Cf44fA8E89b1eee28284e6dD7705C8)
 
 </details>
 

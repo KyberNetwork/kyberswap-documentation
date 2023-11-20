@@ -31,8 +31,8 @@
 
 <summary>Avalanche (ChainID: 43114)</summary>
 
-* **KSZapRouter**: [`0x30C5322E4e08AD500c348007f92f120ab4E2b79e`](https://snowtrace.io/address/0x30c5322e4e08ad500c348007f92f120ab4e2b79e)
-* **KSZapValidator**: [`0xf0096e5B4AAfeEA1DF557264091569ba125c1172`](https://snowtrace.io/address/0xf0096e5B4AAfeEA1DF557264091569ba125c1172)
+* **KSZapRouter**: [`0x30C5322E4e08AD500c348007f92f120ab4E2b79e`](https://avascan.info/blockchain/all/address/0x30C5322E4e08AD500c348007f92f120ab4E2b79e)
+* **KSZapValidator**: [`0xf0096e5B4AAfeEA1DF557264091569ba125c1172`](https://avascan.info/blockchain/all/address/0xf0096e5B4AAfeEA1DF557264091569ba125c1172)
 
 </details>
 

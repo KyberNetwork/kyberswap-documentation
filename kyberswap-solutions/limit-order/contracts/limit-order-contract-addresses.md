@@ -55,8 +55,8 @@ All KyberSwap Limit Order contracts have been deployed at the same address acros
 
 <summary>Avalanche (ChainID: 43114)</summary>
 
-* **DSLOProtocol:** [`0xcab2FA2eeab7065B45CBcF6E3936dDE2506b4f6C`](https://snowtrace.io/address/0xcab2FA2eeab7065B45CBcF6E3936dDE2506b4f6C)
-* **LimitOrderProtocol:** [`0x227B0c196eA8db17A665EA6824D972A64202E936`](https://snowtrace.io/address/0x227B0c196eA8db17A665EA6824D972A64202E936)
+* **DSLOProtocol:** [`0xcab2FA2eeab7065B45CBcF6E3936dDE2506b4f6C`](https://avascan.info/blockchain/all/address/0xcab2FA2eeab7065B45CBcF6E3936dDE2506b4f6C)
+* **LimitOrderProtocol:** [`0x227B0c196eA8db17A665EA6824D972A64202E936`](https://avascan.info/blockchain/all/address/0x227B0c196eA8db17A665EA6824D972A64202E936)
 
 </details>
 
