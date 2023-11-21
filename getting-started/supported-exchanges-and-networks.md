@@ -457,5 +457,6 @@ Decentralized Exchanges:
 * [SpaceFi](https://swap-zksync.spacefi.io/#/swap)
 * [SyncSwap](https://syncswap.xyz/)
 * [PunkSwap](https://zkscroll.punkswap.exchange/swap/)
+* [Zebra](https://zebra.xyz/#/swap)
 
 </details>
