@@ -83,6 +83,7 @@ Decentralized Exchanges:
 * [PancakeSwap Stable](https://pancakeswap.finance/)
 * [PancakeSwap (legacy) ](https://pancakeswap.finance/)
 * PantherSwap (!)
+* [SmarDex](https://smardex.io/swap)
 * [SushiSwap](https://www.sushi.com/swap)
 * [SushiSwap V3](https://www.sushi.com/swap)
 * [Synapse](https://synapseprotocol.com/)
