@@ -42,6 +42,7 @@ Decentralized Exchanges:
 * [POL](https://polygon.technology/blog/polygon-2-0-milestone-pol-contracts-are-live-on-ethereum-mainnet)
 * [Saddle](https://saddle.exchange/#/)
 * [ShibaSwap](https://shibaswap.com/#/)
+* [SmarDex](https://smardex.io/swap)
 * [SushiSwap](https://www.sushi.com/swap)
 * [SushiSwap V3](https://www.sushi.com/swap)
 * [Synapse](https://synapseprotocol.com/)
