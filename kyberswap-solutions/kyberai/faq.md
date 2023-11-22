@@ -63,7 +63,7 @@ KyberAI always strives to display the most updated data for our users. Given the
 You can refer to the Data Sources section of each indicator for the refresh rate used for the specific indicator. For your convenience, below is a summary of KyberAI refresh rates across various data sets:
 
 * [**Token Rankings**](user-guides/discover-promising-tokens.md): Every 4 hours
-* [**KyberScore**](kyberscore.md): Every 4 hours
+* [**KyberScore**](kyberscore.md): Every hour
 * [**Number Of Trades**](on-chain-indicators/number-of-trades.md): Every hour
 * [**Trading Volume**](on-chain-indicators/trading-volume.md): Every hour
 * [**Netflow To Whale Wallets**](on-chain-indicators/netflow-to-whale-wallets.md): Every hour
