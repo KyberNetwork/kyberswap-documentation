@@ -337,6 +337,7 @@ Decentralized Exchanges:
 * [WOOFi V2](https://fi.woo.org/swap/)
 * [Velocore](https://app.velocore.xyz/swap)
 * [veSync](https://app.vesync.finance/swap)
+* [ZKSwap](https://zks.app/)
 * [zkSwap Finance](https://zkswap.finance/swap)
 
 </details>
