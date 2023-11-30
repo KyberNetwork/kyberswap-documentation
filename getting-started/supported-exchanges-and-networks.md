@@ -411,6 +411,7 @@ Decentralized Exchanges:
 * [MantisSwap](https://app.mantissa.finance/#/swap)
 * [PancakeSwap V2](https://pancakeswap.finance/)
 * [PancakeSwap V3](https://pancakeswap.finance/swap)
+* [QuickPerps](https://perps.quickswap.exchange/)
 * [QuickSwap V3](https://quickswap.exchange/#/)
 * [SushiSwap V3](https://www.sushi.com/swap)
 * [WOOFi V2](https://fi.woo.org/swap/)
