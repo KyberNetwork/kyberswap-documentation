@@ -90,15 +90,15 @@ All KyberSwap Elastic contracts have been deployed at the same address across al
 
 <summary>Avalanche (ChainID: 43114)</summary>
 
-* **Factory:** [`0xC7a590291e07B9fe9E64b86c58fD8fC764308C4A`](https://avascan.info/blockchain/all/address/0xC7a590291e07B9fe9E64b86c58fD8fC764308C4A)
-* **AntiSnipAttackPositionManager:** [`0xe222fBE074A436145b255442D919E4E3A6c6a480`](https://avascan.info/blockchain/all/address/0xe222fBE074A436145b255442D919E4E3A6c6a480)
-* **ERC1967Proxy (PoolOracle):** [`0xD8ac7f696Ae99CD7B689726Cf03c5711Dd8DcDb4`](https://avascan.info/blockchain/all/address/0xD8ac7f696Ae99CD7B689726Cf03c5711Dd8DcDb4)
-* **PoolOracle:** [`0x049BeffDB026D6D1D64cFc8fE29Bd12142967B09`](https://avascan.info/blockchain/all/address/0x049BeffDB026D6D1D64cFc8fE29Bd12142967B09)
-* **ERC1967Proxy (TokenPositionDescriptor):** [`0x58f1d0F9bFf9D695010C92FB93d100CeF5113f3E`](https://avascan.info/blockchain/all/address/0x58f1d0F9bFf9D695010C92FB93d100CeF5113f3E)
-* **TokenPositionDescriptor:** [`0x98565FcAD2080C5c19C3136fa367cE371cD40bD6`](https://avascan.info/blockchain/all/address/0x98565FcAD2080C5c19C3136fa367cE371cD40bD6)
-* **Router:** [`0xF9c2b5746c946EF883ab2660BbbB1f10A5bdeAb4`](https://avascan.info/blockchain/all/address/0xF9c2b5746c946EF883ab2660BbbB1f10A5bdeAb4)
-* **QouterV2:** [`0x4d47fd5a29904Dae0Ef51b1c450C9750F15D7856`](https://avascan.info/blockchain/all/address/0x4d47fd5a29904Dae0Ef51b1c450C9750F15D7856)
-* **TicksFeesReader:** [`0x8Fd8Cb948965d9305999D767A02bf79833EADbB3`](https://avascan.info/blockchain/all/address/0x8Fd8Cb948965d9305999D767A02bf79833EADbB3)
+* **Factory:** [`0xC7a590291e07B9fe9E64b86c58fD8fC764308C4A`](https://snowtrace.io/address/0xC7a590291e07B9fe9E64b86c58fD8fC764308C4A)
+* **AntiSnipAttackPositionManager:** [`0xe222fBE074A436145b255442D919E4E3A6c6a480`](https://snowtrace.io/address/0xe222fBE074A436145b255442D919E4E3A6c6a480)
+* **ERC1967Proxy (PoolOracle):** [`0xD8ac7f696Ae99CD7B689726Cf03c5711Dd8DcDb4`](https://snowtrace.io/address/0xD8ac7f696Ae99CD7B689726Cf03c5711Dd8DcDb4)
+* **PoolOracle:** [`0x049BeffDB026D6D1D64cFc8fE29Bd12142967B09`](https://snowtrace.io/address/0x049BeffDB026D6D1D64cFc8fE29Bd12142967B09)
+* **ERC1967Proxy (TokenPositionDescriptor):** [`0x58f1d0F9bFf9D695010C92FB93d100CeF5113f3E`](https://snowtrace.io/address/0x58f1d0F9bFf9D695010C92FB93d100CeF5113f3E)
+* **TokenPositionDescriptor:** [`0x98565FcAD2080C5c19C3136fa367cE371cD40bD6`](https://snowtrace.io/address/0x98565FcAD2080C5c19C3136fa367cE371cD40bD6)
+* **Router:** [`0xF9c2b5746c946EF883ab2660BbbB1f10A5bdeAb4`](https://snowtrace.io/address/0xF9c2b5746c946EF883ab2660BbbB1f10A5bdeAb4)
+* **QouterV2:** [`0x4d47fd5a29904Dae0Ef51b1c450C9750F15D7856`](https://snowtrace.io/address/0x4d47fd5a29904Dae0Ef51b1c450C9750F15D7856)
+* **TicksFeesReader:** [`0x8Fd8Cb948965d9305999D767A02bf79833EADbB3`](https://snowtrace.io/address/0x8Fd8Cb948965d9305999D767A02bf79833EADbB3)
 
 </details>
 

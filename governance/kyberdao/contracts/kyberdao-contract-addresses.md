@@ -73,7 +73,7 @@ To aid with readability, the KNC token addresses can be found on a separate page
 
 <summary>Avalanche (ChainID: 43114)</summary>
 
-* MultiSigWalletWithDailyLimit (DAO Multisig - Treasury): [`0x91c9D4373B077eF8082F468C7c97f2c499e36F5b`](https://avascan.info/blockchain/all/address/0x91c9D4373B077eF8082F468C7c97f2c499e36F5b)
+* MultiSigWalletWithDailyLimit (DAO Multisig - Treasury): [`0x91c9D4373B077eF8082F468C7c97f2c499e36F5b`](https://snowtrace.io/address/0x91c9D4373B077eF8082F468C7c97f2c499e36F5b)
 
 </details>
 

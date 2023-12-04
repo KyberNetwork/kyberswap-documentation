@@ -196,8 +196,8 @@ You can view their official announcement [here](https://twitter.com/MultichainOr
 
 <summary>Avalanche (ChainID: 43114)</summary>
 
-* AnyswapV5ERC20: [0x39fc9e94caeacb435842fadedecb783589f50f5f](https://avascan.info/blockchain/all/address/0x39fc9e94caeacb435842fadedecb783589f50f5f)
-* MultiSigWalletWithDailyLimit (DAO Multisig - Treasury): [`0x91c9D4373B077eF8082F468C7c97f2c499e36F5b`](https://avascan.info/blockchain/all/address/0x91c9D4373B077eF8082F468C7c97f2c499e36F5b)
+* AnyswapV5ERC20: [0x39fc9e94caeacb435842fadedecb783589f50f5f](https://snowtrace.io/address/0x39fc9e94caeacb435842fadedecb783589f50f5f)
+* MultiSigWalletWithDailyLimit (DAO Multisig - Treasury): [`0x91c9D4373B077eF8082F468C7c97f2c499e36F5b`](https://snowtrace.io/address/0x91c9D4373B077eF8082F468C7c97f2c499e36F5b)
 
 </details>
 

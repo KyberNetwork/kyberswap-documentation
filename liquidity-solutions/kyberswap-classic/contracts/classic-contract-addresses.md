@@ -127,21 +127,21 @@ description: Liquidity Mining Across Multiple Chains
 
 #### Static Fee
 
-* **KSRouter:** [`0x5649B4DD00780e99Bab7Abb4A3d581Ea1aEB23D0`](https://avascan.info/blockchain/all/address/0x5649B4DD00780e99Bab7Abb4A3d581Ea1aEB23D0)
-* **KSFactory:** [`0x1c758aF0688502e49140230F6b0EBd376d429be5`](https://avascan.info/blockchain/all/address/0x1c758aF0688502e49140230F6b0EBd376d429be5)
-* **ZapInV2:** [`0x2abE8750e4a65584d7452316356128C936273e0D`](https://avascan.info/blockchain/all/address/0x2abE8750e4a65584d7452316356128C936273e0D)
+* **KSRouter:** [`0x5649B4DD00780e99Bab7Abb4A3d581Ea1aEB23D0`](https://snowtrace.io/address/0x5649B4DD00780e99Bab7Abb4A3d581Ea1aEB23D0)
+* **KSFactory:** [`0x1c758aF0688502e49140230F6b0EBd376d429be5`](https://snowtrace.io/address/0x1c758aF0688502e49140230F6b0EBd376d429be5)
+* **ZapInV2:** [`0x2abE8750e4a65584d7452316356128C936273e0D`](https://snowtrace.io/address/0x2abE8750e4a65584d7452316356128C936273e0D)
 
 #### Dynamic Fee
 
-* **DMMRouter:** [`0x8Efa5A9AD6D594Cf76830267077B78cE0Bc5A5F8`](https://avascan.info/blockchain/all/address/0x8Efa5A9AD6D594Cf76830267077B78cE0Bc5A5F8)
-* **DMMFactory:** [`0x10908C875D865C66f271F5d3949848971c9595C9`](https://avascan.info/blockchain/all/address/0x10908C875D865C66f271F5d3949848971c9595C9)
-* **ZapIn:** [`0x83D4908c1B4F9Ca423BEE264163BC1d50F251c31`](https://avascan.info/blockchain/all/address/0x83D4908c1B4F9Ca423BEE264163BC1d50F251c31)
+* **DMMRouter:** [`0x8Efa5A9AD6D594Cf76830267077B78cE0Bc5A5F8`](https://snowtrace.io/address/0x8Efa5A9AD6D594Cf76830267077B78cE0Bc5A5F8)
+* **DMMFactory:** [`0x10908C875D865C66f271F5d3949848971c9595C9`](https://snowtrace.io/address/0x10908C875D865C66f271F5d3949848971c9595C9)
+* **ZapIn:** [`0x83D4908c1B4F9Ca423BEE264163BC1d50F251c31`](https://snowtrace.io/address/0x83D4908c1B4F9Ca423BEE264163BC1d50F251c31)
 
 #### Common
 
-* **WAVAX:** [`0xB31f66AA3C1e785363F0875A1B74E27b85FD66c7`](https://avascan.info/blockchain/all/address/0xB31f66AA3C1e785363F0875A1B74E27b85FD66c7)
-* **Multicall:** [`0x878dFE971d44e9122048308301F540910Bbd934c`](https://avascan.info/blockchain/all/address/0x878dFE971d44e9122048308301F540910Bbd934c)
-* **Multicall2:** [`0xF2FD8219609E28C61A998cc534681f95D2740f61`](https://avascan.info/blockchain/all/address/0xF2FD8219609E28C61A998cc534681f95D2740f61)
+* **WAVAX:** [`0xB31f66AA3C1e785363F0875A1B74E27b85FD66c7`](https://snowtrace.io/address/0xB31f66AA3C1e785363F0875A1B74E27b85FD66c7)
+* **Multicall:** [`0x878dFE971d44e9122048308301F540910Bbd934c`](https://snowtrace.io/address/0x878dFE971d44e9122048308301F540910Bbd934c)
+* **Multicall2:** [`0xF2FD8219609E28C61A998cc534681f95D2740f61`](https://snowtrace.io/address/0xF2FD8219609E28C61A998cc534681f95D2740f61)
 
 </details>
 
