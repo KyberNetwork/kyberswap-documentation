@@ -6,7 +6,7 @@ description: Connecting Dapps To The Blockchain
 
 ## Overview
 
-In the Web3 space, a RPC is a shorthand which generally refers to how a [dapp](draft-dapps.md) gets data from a blockchain. While data is transparently stored on the blockchain, querying and sorting the publicly available data is highly resource intensive. Moreover, given the immediacy of on-chain data, performance requirements usually dictate that transaction logic be computed on a full node which holds the full transaction history of the blockchain. As dapps are meant to be lightweight pieces of code that can conveniently run on a web-page or mobile browser, this approach is infeasible and that is where RPCs come in handy.
+In the Web3 space, a RPC is a shorthand which generally refers to how a [dapp](dapps.md) gets data from a blockchain. While data is transparently stored on the blockchain, querying and sorting the publicly available data is highly resource intensive. Moreover, given the immediacy of on-chain data, performance requirements usually dictate that transaction logic be computed on a full node which holds the full transaction history of the blockchain. As dapps are meant to be lightweight pieces of code that can conveniently run on a web-page or mobile browser, this approach is infeasible and that is where RPCs come in handy.
 
 To achieve a better user experience for Web3 users, RPCs enable the following to be functionally separated:
 
