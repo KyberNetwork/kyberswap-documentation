@@ -84,7 +84,9 @@ There are several factors that can make you not see your order:
 
 <summary>Why does modifying or canceling my limit order incur gas fees?</summary>
 
-When a limit order is created, the signed maker transaction is distributed to our network of off-chain takers. As all potential takers now have a copy of the maker transaction, the only way to guarantee cancellation is to send a cancellation transaction to the chain so that if any other takers match and execute the maker transaction on-chain, the limit order will fail.
+You can now cancel for free with [gasless cancel](concepts/gasless-cancellation.md). Please refer to [Cancellation Options ](user-guides/cancel-limit-orders.md#cancellation-options)for the user guide.
+
+For users who require cancellation to be instant, KyberSwap provides a [hard cancel](concepts/gasless-cancellation.md#hard-cancel) option. Gas is required in this case as the signed maker transaction (i.e. newly created order)  is distributed to our network of off-chain takers. As all potential takers now have a copy of the maker transaction, the only way to guarantee cancellation is to send a cancellation transaction to the chain so that if any other takers match and execute the maker transaction on-chain, the limit order will fail.
 
 Please refer to [Off-Chain Relay, On-Chain Settlement](concepts/off-chain-relay.md) for further details on the Limit Order mechanism.
 
