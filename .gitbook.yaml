@@ -155,3 +155,4 @@ redirects:
   kyberswap-solutions/kyberswap-aggregator/developer-guides/upgrading-from-apiv1-to-apiv2: kyberswap-solutions/kyberswap-aggregator/developer-guides/upgrading-to-apiv1.md
   kyberswap-solutions/kyberswap-widget/widget-iframe: kyberswap-solutions/kyberswap-widget/iframe-alternative.md
   classic/guides/basic-pool-creation: liquidity-solutions/kyberswap-classic/user-guides/classic-pool-creation.md
+  getting-started/foundational-topics/decentralized-technologies/draft-dapps: getting-started/foundational-topics/decentralized-technologies/dapps.md
