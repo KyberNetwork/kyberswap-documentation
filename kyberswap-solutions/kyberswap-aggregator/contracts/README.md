@@ -9,5 +9,5 @@ In keeping to our core principle of building open and trustless financial infras
 Rest assured that we are committed to building anti-fragile systems as we continue to integrate the latest security and safety mechanisms into our contracts.&#x20;
 
 {% hint style="success" %}
-You can visit our [Audits](../../../reference/audits.md) page for more details.
+You can visit our [Audits](../../../security/audits.md) page for more details.
 {% endhint %}

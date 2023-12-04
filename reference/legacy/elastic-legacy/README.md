@@ -21,7 +21,7 @@ On April 2023, KyberSwap received a bug report from a whitehat hacker notifying 
 * 18 April 2023: KyberSwap [captures a snapshot](https://twitter.com/KyberNetwork/status/1648626138003181570) of remaining Elastic Farming positions and rewards. The snapshot will enable claim their allocated rewards in the future.
 * 25 May 2023: KyberSwap releases Elastic with the vulnerability having been fixed and validated.
 
-The audit reports for both Elastic Legacy as well as Elastic can be found on our [Audits](../../audits.md) page.
+The audit reports for both Elastic Legacy as well as Elastic can be found on our [Audits](../../../security/audits.md) page.
 
 While this situation was regrettable, there were many lessons which the KyberSwap team has carried forward to our current features. Most importantly, throughout this process, user funds remain SAFU and this user safety will always be front and center as we continue to introduce new and innovative features that empower KyberSwap users.
 

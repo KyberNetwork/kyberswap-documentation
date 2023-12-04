@@ -57,7 +57,7 @@ Kyber Network highly values the security of the KyberSwap protocol and the Kyber
 
 KyberSwap is fully non-custodial and our users’ funds are not held by KyberSwap. In addition, KyberSwap, KyberDAO, and their associated smart contracts have been audited by reputable audit teams in the blockchain industry, such as [Chainsecurity](https://chainsecurity.com/) and [Hacken](https://hacken.io/).
 
-You can find links to their security audit reports [here](../../reference/audits.md).
+You can find links to their security audit reports [here](../../security/audits.md).
 
 </details>
 

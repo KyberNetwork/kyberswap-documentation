@@ -238,6 +238,10 @@
   * [Gas Refund Program](governance/knc-token/gas-refund-program.md)
   * [KNC Contract Addresses](governance/knc-token/knc-contract-addresses.md)
 
+## Security
+
+* [Audits](security/audits.md)
+
 ## Reference
 
 * [Legacy](reference/legacy/README.md)
@@ -328,7 +332,6 @@
       * [Withdrawable](reference/legacy/api-abi/misc-contracts/withdrawable.md)
       * [OrderbookReserveInterface](reference/legacy/api-abi/misc-contracts/orderbookreserveinterface.md)
       * [OrderbookReserveLister](reference/legacy/api-abi/misc-contracts/orderbookreservelister.md)
-* [Audits](reference/audits.md)
 * [KyberSwap Operator MultiSig](reference/kyberswap-operator-multisig.md)
 * [Permitable Tokens](reference/permitable-tokens.md)
 * [Third-Party Integrations](reference/third-party-integrations.md)
