@@ -351,5 +351,4 @@
 ## Support
 
 * [KyberSwap Help Center](https://support.kyberswap.com/hc/en-us)
-* [Bug Bounty Program](https://immunefi.com/bounty/kybernetwork/)
 * [Complaints Handling Process](support/complaints-handling-process.md)
