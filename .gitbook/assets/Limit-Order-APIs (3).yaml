@@ -36,7 +36,8 @@ paths:
                   - code
                   - message
                   - data
-                example:
+              examples:
+                Example 1:
                   value:
                     code: 0
                     message: Successfully
@@ -62,7 +63,8 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/ErrorResponse'
-                example:
+              examples:
+                example-1:
                   value:
                     code: 4000
                     message: 'Missing required fields: ChainID'
@@ -74,7 +76,8 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/ErrorResponse'
-                example:
+              examples:
+                example-1:
                   value:
                     code: 5000
                     message: Internal Server Error
@@ -83,11 +86,10 @@ paths:
         content:
           application/json:
             schema:
-              type: object
               properties:
                 chainId:
                   type: string
-                  description: Support only EVM compatible blockchains.
+                  description: Support only EVM compatible blockchains. You can get the chainId from [HERE](https://docs.kyberswap.com/Limit%E2%81%9FOrder/smart-contracts/limit-order-protocol-smart-contract)
                 makerAsset:
                   type: string
                   description: 'The address of the token you want to sell.'
@@ -130,7 +132,7 @@ paths:
                   description: Timestamp in seconds
                 salt:
                   type: string
-                  description: The salt of order - returned from Get signing order message API
+                  description: The salt of order - returned from [Get signing order message API](https://docs.kyberswap.com/Limit%E2%81%9FOrder/limit-order-api#tag/APIs-for-makers/operation/post-write-api-v1-orders-sign-message)
                 signature:
                   type: string
                   description: Signed by maker
@@ -160,11 +162,11 @@ paths:
                   expiredAt: 1672200257
                   salt: '123456'
                   signature: d8ebe9440b60ca3414053d4f46e7f13cb9b0326395387bf86ed027b5adec883f6f63b52e31e1137ddfd211e4689932b37e4b2273066539a91cf43b064fc74df31c
-        #   application/xml:
-        #     schema:
-        #       type: object
-        #       properties: {}
-        # description: ''
+          application/xml:
+            schema:
+              type: object
+              properties: {}
+        description: ''
       description: API to create new order for partners/makers
       tags:
         - APIs for makers
@@ -198,7 +200,8 @@ paths:
                   - code
                   - message
                   - data
-                example:
+              examples:
+                example-1:
                   value:
                     code: 0
                     message: Successfully
@@ -212,7 +215,8 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/ErrorResponse'
-                example:
+              examples:
+                example-1:
                   value:
                     code: 4000
                     message: 'Missing required fields: ChainID'
@@ -224,20 +228,21 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/ErrorResponse'
-                example:
+              examples:
+                example-1:
                   value:
                     code: 5000
                     message: Internal Server Error
                     errorEntities: []
       operationId: get-read-ks-api-v1-orders-active-making-amount
-      description: Get total making amount of a maker which is able to be sold to takers
+      description: Get total making amount of a maker which is able to be selled to takers
       parameters:
         - schema:
             type: string
           in: query
           name: chainId
           required: true
-          description: Support only EVM compatible blockchains.
+          description: Support only EVM compatible blockchains. You can get the chainId from [HERE](https://docs.kyberswap.com/Limit%E2%81%9FOrder/smart-contracts/limit-order-protocol-smart-contract)
         - schema:
             type: string
           in: query
@@ -362,7 +367,8 @@ paths:
                   - code
                   - message
                   - data
-                example:
+              examples:
+                example-1:
                   value:
                     code: 0
                     message: Successfully
@@ -405,7 +411,8 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/ErrorResponse'
-                example:
+              examples:
+                example-1:
                   value:
                     code: 4000
                     message: 'Missing required fields: ChainID'
@@ -417,7 +424,8 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/ErrorResponse'
-                example:
+              examples:
+                example-1:
                   value:
                     code: 5000
                     message: Internal Server Error
@@ -429,7 +437,7 @@ paths:
           in: query
           name: chainId
           required: true
-          description: Support only EVM compatible blockchains.
+          description: Support only EVM compatible blockchains. You can get the chainId from [HERE](https://docs.kyberswap.com/Limit%E2%81%9FOrder/smart-contracts/limit-order-protocol-smart-contract)
         - schema:
             type: string
           in: query
@@ -461,7 +469,6 @@ paths:
             default: 1
           in: query
           name: page
-          description: Number of pages to return. Minimum and default is set at `1`
         - schema:
             type: integer
             minimum: 1
@@ -469,7 +476,6 @@ paths:
             default: 10
           in: query
           name: pageSize
-          description: Number of results to display per page. Minimum is `1` and maximum is `50`. Default is `10`.
   /read-partner/api/v1/orders:
     get:
       summary: Get orders for taker
@@ -1438,7 +1444,6 @@ paths:
           in: query
           name: chainId
           required: true
-
 components:
   schemas:
     ErrorResponse:

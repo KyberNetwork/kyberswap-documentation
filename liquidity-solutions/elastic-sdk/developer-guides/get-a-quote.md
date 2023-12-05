@@ -68,7 +68,7 @@ Once the Contract instance is created, we can then pull the following informatio
 
 We now have all the information required to create a [Pool](../classes/pool.md) instance.&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (182).png" alt=""><figcaption></figcaption></figure>
 
 All the functions above are covered by [`getPool()`](https://github.com/KyberNetwork/ks-sdk-elastic-demo/blob/07cfe25aa476d0c507ab75c630ad4828fb6c3866/src/operations/quote.ts#L50) which returns the newly created Pool instance for the target pool.
 

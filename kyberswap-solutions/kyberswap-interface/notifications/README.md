@@ -23,7 +23,7 @@ KyberSwap currently supports notifications via:
 
 * [Notification Center](notification-center.md): The notification center allows users of the KyberSwap dapp to receive and manage notifications directly on the [KyberSwap Interface](../). Notification preferences, rules, as well as communication channels can be managed via the notification center in the browser.
 
-<figure><img src="../../../.gitbook/assets/image (23).png" alt=""><figcaption><p>KyberSwap Interface notifications</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (43).png" alt=""><figcaption><p>KyberSwap Interface notifications</p></figcaption></figure>
 
 * [Email Notification](broken-reference): Users can opt to receive preset notifications straight to their inbox by linking their crypto account with their preferred email. This can be configured via the [Notification Center overview](notification-center.md#notification-center-overview).
 
@@ -33,27 +33,27 @@ KyberSwap users are able to subscribe to active notifications across the followi
 
 ### Price Alerts
 
-<figure><img src="../../../.gitbook/assets/image (67).png" alt=""><figcaption><p>Create a price alert</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (105).png" alt=""><figcaption><p>Create a price alert</p></figcaption></figure>
 
 Setup your target price and receive a notification whenever the market price for the token pair specified meets your target. Price alerts can be configured for any token pair that have been [imported](../user-guides/add-your-favourite-tokens.md) on the KyberSwap Interface. Alerts can be created with a cooldown across all KyberSwap [supported chains](../../../getting-started/supported-exchanges-and-networks.md).
 
 Users can also toggle their active alerts via the Notification Center.
 
-<figure><img src="../../../.gitbook/assets/image (163).png" alt=""><figcaption><p>Toggle active alerts</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (68).png" alt=""><figcaption><p>Toggle active alerts</p></figcaption></figure>
 
 With price alerts, users are able to monitor price actions and adjust their trade strategy accordingly be it [updating existing limit orders](../../limit-order/user-guides/update-limit-orders.md) or [executing an immediate swap](broken-reference).
 
-<figure><img src="../../../.gitbook/assets/image (55).png" alt=""><figcaption><p>Price alerts history</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (77).png" alt=""><figcaption><p>Price alerts history</p></figcaption></figure>
 
 ### Elastic Active Range Alerts
 
-<figure><img src="../../../.gitbook/assets/image (135).png" alt=""><figcaption><p>Liquidity position notifications</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4).png" alt=""><figcaption><p>Liquidity position notifications</p></figcaption></figure>
 
 [Create an Elastic pool position](../../../liquidity-solutions/kyberswap-elastic/user-guides/elastic-pool-creation.md) and receive notifications whenever your position goes in or out of range. Maximize your yields by timing your liquidity [removals](../../../liquidity-solutions/kyberswap-elastic/user-guides/removing-liquidity-on-elastic.md) and [additions](../../../liquidity-solutions/kyberswap-elastic/user-guides/add-liquidity-to-an-existing-elastic-pool.md) according to the markets.
 
 ### Limit Order Alerts
 
-<figure><img src="../../../.gitbook/assets/image (136).png" alt=""><figcaption><p>Limit order notification</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (162).png" alt=""><figcaption><p>Limit order notification</p></figcaption></figure>
 
 [Create a limit order ](../user-guides/trade-at-your-preferred-rates.md)and receive a notification whenever your order gets fully or partially filled. KyberSwap will also send out notifications if any of your active orders has expired. Predefine your trades and receive updates whenever there's a matching trade or change in status.
 

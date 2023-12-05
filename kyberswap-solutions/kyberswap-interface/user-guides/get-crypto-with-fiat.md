@@ -55,7 +55,7 @@ Click here for more information on [**Transak**](https://docs.transak.com/docs/w
 
 Transak is integrated on KyberSwap through a browser integration that will redirect users to Transak to access their fiat on ramp services.
 
-<figure><img src="../../../.gitbook/assets/image (12).png" alt=""><figcaption><p>Purchase crypto with fiat on KyberSwap with Transak</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (46).png" alt=""><figcaption><p>Purchase crypto with fiat on KyberSwap with Transak</p></figcaption></figure>
 
 **\*All of the KYC, regulation & compliance, fiat payment methods, and crypto coverage are solely handled by Transak.**
 
@@ -71,17 +71,17 @@ Click [**here**](https://transak.com/blog/kyberswap-now-integrated-with-transak)
 
 The link to the buy crypto interface can be found within the "Swap" dropdown of the KyberSwap landing page. Alternatively, you can go directly to [https://kyberswap.com/buy-crypto](https://kyberswap.com/buy-crypto).
 
-<figure><img src="../../../.gitbook/assets/image (42).png" alt=""><figcaption><p>Buy crypto navigation</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (90).png" alt=""><figcaption><p>Buy crypto navigation</p></figcaption></figure>
 
 ### Step 2: Connect your wallet
 
 Follow the instructions on the screen where you will be prompted to connect your wallet if you have yet to connect a wallet to KyberSwap. If you already have a connected wallet, your connected wallet address will be displayed on-screen as per the second image below.
 
-<figure><img src="../../../.gitbook/assets/image (60).png" alt=""><figcaption><p>Connect your crypto wallet</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (157).png" alt=""><figcaption><p>Connect your crypto wallet</p></figcaption></figure>
 
 Clicking the "Connect your wallet" button should bring up the connect wallet pop-up similar to the one in the [Connect Your Wallet](connect-your-wallet.md) guide. Once you have connected wallet, your wallet address will be displayed on-screen.
 
-<figure><img src="../../../.gitbook/assets/image (117).png" alt=""><figcaption><p>Connected wallet address</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (140).png" alt=""><figcaption><p>Connected wallet address</p></figcaption></figure>
 
 ### Step 3: Specify purchase currency and payment method
 
@@ -89,25 +89,25 @@ Upon selecting the "Buy Crypto" button, a Transak order pop-up will be displayed
 
 Additionally, you are also provided the option to select your preferred payment method.
 
-<figure><img src="../../../.gitbook/assets/image (87).png" alt=""><figcaption><p>Select preferred currency</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (127).png" alt=""><figcaption><p>Select preferred currency</p></figcaption></figure>
 
 ### Step 4: Select a cryptocurrency and chain
 
 You will then be required to specify the cryptocurrency that you would like to receive as well as the chain which it will be sent on.
 
-<figure><img src="../../../.gitbook/assets/image (10).png" alt=""><figcaption><p>Select token to receive</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (122).png" alt=""><figcaption><p>Select token to receive</p></figcaption></figure>
 
 ### Step 5: Review transaction
 
 Select the "Buy Now" button and you will be able to view a summary of your transaction which includes the relevant amounts and fees.
 
-<figure><img src="../../../.gitbook/assets/image (32).png" alt=""><figcaption><p>Transaction details</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (57).png" alt=""><figcaption><p>Transaction details</p></figcaption></figure>
 
 ### Step 6: Verify your email
 
 As part of the fiat on-ramp process, Transak requires an email verification. Enter your email and you will be prompted to verify your email by inputting the verification code sent.
 
-<figure><img src="../../../.gitbook/assets/image (155).png" alt=""><figcaption><p>Transak verification code</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (164).png" alt=""><figcaption><p>Transak verification code</p></figcaption></figure>
 
 Input the verification code received and you will also have to agree to Transak's T\&Cs.
 
@@ -117,31 +117,31 @@ You will then be prompted to enter personally identifiable information (personal
 
 Do note that as this transaction involves transaction in fiat, **KYC is required for the transaction to be processed by Transak**. **The handling of KYC is exclusively performed by Transak, and KyberSwap does not retain any KYC information.**
 
-<figure><img src="../../../.gitbook/assets/image (6).png" alt=""><figcaption><p>Fill in your details</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (72).png" alt=""><figcaption><p>Fill in your details</p></figcaption></figure>
 
 If this is your first time using Transak, there might be some processing time required for the KYC process.
 
-<figure><img src="../../../.gitbook/assets/image (127).png" alt=""><figcaption><p>KYC processing</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (118).png" alt=""><figcaption><p>KYC processing</p></figcaption></figure>
 
 You will be notified once the KYC process is completed.
 
-<figure><img src="../../../.gitbook/assets/image (131).png" alt=""><figcaption><p>KYC completed</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (139).png" alt=""><figcaption><p>KYC completed</p></figcaption></figure>
 
 Upon receiving the verification success email, an "Order Now" button will then be made available to you.
 
-<figure><img src="../../../.gitbook/assets/image (41).png" alt=""><figcaption><p>Account details</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (155).png" alt=""><figcaption><p>Account details</p></figcaption></figure>
 
 ### Step 8: Enter payment details
 
 Following successful KYC, you will then be prompted for your payment details. In this case, the payment method selected is via credit/debit card.
 
-<figure><img src="../../../.gitbook/assets/image (85).png" alt=""><figcaption><p>Payment details</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (18).png" alt=""><figcaption><p>Payment details</p></figcaption></figure>
 
 ### Step 9: Confirm your order
 
 You will then be able to review and confirm your order.
 
-<figure><img src="../../../.gitbook/assets/image (14).png" alt=""><figcaption><p>Confirm the order</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (56).png" alt=""><figcaption><p>Confirm the order</p></figcaption></figure>
 
 ### Step 10: Swap your crypto
 

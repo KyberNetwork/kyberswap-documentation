@@ -150,4 +150,4 @@ Please refer to [Hard Cancel](hard-cancel.md) for more info.
 
 The cancelled `orderId` as well as any operator signature expiry timestamp will be returned as part of the response values from the `/write/api/v1/orders/cancel` API.
 
-<figure><img src="../../../.gitbook/assets/image (178).png" alt=""><figcaption><p>Gasless cancel order success response</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (183).png" alt=""><figcaption><p>Gasless cancel order success response</p></figcaption></figure>

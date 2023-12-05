@@ -34,7 +34,7 @@ Still deciding on which solution suits you best?&#x20;
 
 From the My Pools page, choose the position from which you want to remove liquidity and click on its “Remove Liquidity” button.
 
-<figure><img src="../../../.gitbook/assets/image (137).png" alt=""><figcaption><p>Classic pools dashboard</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (130).png" alt=""><figcaption><p>Classic pools dashboard</p></figcaption></figure>
 
 This brings up the Remove Liquidity screen.
 
@@ -46,13 +46,13 @@ Note: If you choose to remove 100% of the liquidity in this position, that is ta
 
 {% tabs %}
 {% tab title="Token Pair" %}
-<figure><img src="../../../.gitbook/assets/image (166).png" alt=""><figcaption><p>Token pair removal</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (144).png" alt=""><figcaption><p>Token pair removal</p></figcaption></figure>
 
 Specify the amount of liquidity to remove. You can do this either by using the pre-set percentage buttons or the percentage slider, or by manually typing in the amount for either leg of the pair.&#x20;
 {% endtab %}
 
 {% tab title="Single Token" %}
-<figure><img src="../../../.gitbook/assets/image (47).png" alt=""><figcaption><p>Single token removal</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (73).png" alt=""><figcaption><p>Single token removal</p></figcaption></figure>
 
 For single token removals, you can specify the percentage or exact amount of LP tokens to remove. The corresponding output token amount can be seen under the "Output".
 
@@ -78,7 +78,7 @@ To ensure the safety of our user's funds, KyberSwap Classic does not support non
 
 If you haven't done so, you will need to permit the pool contract to remove your position from the pool. Note that this signature request does not require any gas.
 
-<figure><img src="../../../.gitbook/assets/image (30).png" alt=""><figcaption><p>Metamask permit signature</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (175).png" alt=""><figcaption><p>Metamask permit signature</p></figcaption></figure>
 
 Once you have authorized the contract, the previously disabled "Remove" button will now be available.
 
@@ -105,10 +105,10 @@ Please refer to [AMM Slippage](../../../getting-started/foundational-topics/dece
 
 Click the “Confirm” button to proceed. You should be prompted to confirm the transaction in your wallet.
 
-<figure><img src="../../../.gitbook/assets/image (92).png" alt=""><figcaption><p>KyberSwap pending confirmation</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (21).png" alt=""><figcaption><p>KyberSwap pending confirmation</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (153).png" alt=""><figcaption><p>Metamask confirmation</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (152).png" alt=""><figcaption><p>Metamask confirmation</p></figcaption></figure>
 
 Once confirmed, the Transaction Submitted screen will appear. You can click on "View Transaction" to see your transaction on the blockchain explorer.
 
-<figure><img src="../../../.gitbook/assets/image (35).png" alt=""><figcaption><p>Transaction submitted</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (31).png" alt=""><figcaption><p>Transaction submitted</p></figcaption></figure>

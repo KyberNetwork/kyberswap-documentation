@@ -70,13 +70,13 @@ Next, select the Web3 wallet that you would like to use to connect to KyberSwap 
 
 For the example below, we are connecting to KyberSwap with MetaMask.
 
-<figure><img src="../../../.gitbook/assets/image (66).png" alt=""><figcaption><p>Select MetaMask account to connect</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (76).png" alt=""><figcaption><p>Select MetaMask account to connect</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (65).png" alt=""><figcaption><p>Confirm connection</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (80).png" alt=""><figcaption><p>Confirm connection</p></figcaption></figure>
 
 Once confirmed, you should be able to see the same wallet account being reflected on the top right of the KyberSwap app. You can even click on the connected account to bring up a handy account summary.
 
-<figure><img src="../../../.gitbook/assets/image (81).png" alt=""><figcaption><p>KyberSwap Wallet Helper</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (22).png" alt=""><figcaption><p>KyberSwap Wallet Helper</p></figcaption></figure>
 
 ## Funding your wallet
 

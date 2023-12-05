@@ -82,7 +82,7 @@ To ensure the safety of our user's funds, KyberSwap Elastic does not support non
 
 With the token pair selected, you will then be required to select your fee tier. For your convenience, the distribution of liquidity is also displayed in the dropdown to allow you to see which are the most popular fee tiers for your selected token pairs. Additionally, pools which are eligible for [farming rewards](broken-reference) are also highlighted via the :moneybag: icon.
 
-<figure><img src="../../../.gitbook/assets/image (19).png" alt=""><figcaption><p>Select fee tier</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (42).png" alt=""><figcaption><p>Select fee tier</p></figcaption></figure>
 
 KyberSwap Elastic currently offers the following tiers to cater for different token pair correlations:
 
@@ -117,14 +117,14 @@ Selecting a fee tier with existing liquidity will result in your position being 
 
 Upon selecting a new fee tier, you will then need to specify the starting price for the pool. For reference, the current market price of the token pair selected is also displayed. The starting price will determine the specific [price curve](../../../getting-started/foundational-topics/decentralized-finance/automated-market-maker.md#price-curves) that is implemented for the pool.
 
-<figure><img src="../../../.gitbook/assets/image (84).png" alt=""><figcaption><p>Set starting price</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (24).png" alt=""><figcaption><p>Set starting price</p></figcaption></figure>
 
 {% hint style="danger" %}
 #### Price deviations
 
 As a safety precaution, KyberSwap Elastic will prompt the LP if the specified pool price deviates significantly from the market price.This is because any liquidity additions that significantly deviates from the market price would immediately result in [impermanent loss](../../../getting-started/foundational-topics/decentralized-finance/impermanent-loss.md) as arbitrageurs sweep up the significantly discounted token from the position.
 
-![](<../../../.gitbook/assets/image (21).png>)
+![](<../../../.gitbook/assets/image (51).png>)
 {% endhint %}
 
 ### **Step 5**: Set price range
@@ -143,7 +143,7 @@ View and interact with the full diagram in greater detail [here](https://blog.ky
 
 You can set your price range either by typing in the prices manually or ussing the +/- buttons. For new pools, as there is no existing liquidity, no liquidity data will be shown.
 
-<figure><img src="../../../.gitbook/assets/image (61).png" alt=""><figcaption><p>Select price range</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (88).png" alt=""><figcaption><p>Select price range</p></figcaption></figure>
 
 For convenience, KyberSwap also provides you the option to choose from a list of preset ranges which correspond to different DeFi familiarity and risk profiles. The section below provides some guidance on the percentage-based options matched to the token pair correlation which is calculated by KyberSwap.
 
@@ -203,7 +203,7 @@ Specify the deposit amounts, or how much liquidity you would like to add to open
 
 Note: The proportion of liquidity deposited for each leg of the pair is determined by your price range, so it is helpful to set the price range before specifying your deposit amounts.
 
-<figure><img src="../../../.gitbook/assets/image (161).png" alt=""><figcaption><p>Specify deposit amount</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (148).png" alt=""><figcaption><p>Specify deposit amount</p></figcaption></figure>
 
 ### **Step 6**: Authorize contract
 
@@ -217,11 +217,11 @@ Once the approval is confirmed, the previously-greyed-out “Preview” button w
 
 Click on the “Preview” button to bring up the preview screen. Once you have reviewed the information on this screen, click on the “Supply” button to proceed.
 
-<figure><img src="../../../.gitbook/assets/image (88).png" alt=""><figcaption><p>Add liquidity preview for confirmation</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (75).png" alt=""><figcaption><p>Add liquidity preview for confirmation</p></figcaption></figure>
 
 You will need to confirm this transaction in your wallet.
 
-<figure><img src="../../../.gitbook/assets/image (78).png" alt=""><figcaption><p>Add liquidity confirmation</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (16).png" alt=""><figcaption><p>Add liquidity confirmation</p></figcaption></figure>
 
 Once you’ve confirmed the transaction you will see a screen informing you that the transaction has been submitted. You can click on “View Transaction” to view your transaction on the appropriate blockchain explorer.
 
@@ -229,4 +229,4 @@ Once you’ve confirmed the transaction you will see a screen informing you that
 
 Your new position should now be visible on the My Pools page on KyberSwap.
 
-<figure><img src="../../../.gitbook/assets/image (114).png" alt=""><figcaption><p>My pools</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (133).png" alt=""><figcaption><p>My pools</p></figcaption></figure>

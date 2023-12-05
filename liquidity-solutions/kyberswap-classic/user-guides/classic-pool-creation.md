@@ -34,17 +34,17 @@ Still deciding on which solution suits you best?&#x20;
 
 Ensure you are on the correct network, and then click the “Create Pool” button at the top right of the screen.
 
-<figure><img src="../../../.gitbook/assets/image (93).png" alt=""><figcaption><p>Classic Pool page</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (165).png" alt=""><figcaption><p>Classic Pool page</p></figcaption></figure>
 
 This will bring up the Create a new pool screen, but it will be fairly empty until the parameters of the pool are properly specified.
 
-<figure><img src="../../../.gitbook/assets/image (76).png" alt=""><figcaption><p>Pool creation screen</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (103).png" alt=""><figcaption><p>Pool creation screen</p></figcaption></figure>
 
 ### **Step 2**: Select tokens to add
 
 Select the pair of tokens you would like to create the pool with. You can choose from already whitelisted tokens or [import any token](../../../kyberswap-solutions/kyberswap-interface/user-guides/add-your-favourite-tokens.md) on your chosen network.
 
-<figure><img src="../../../.gitbook/assets/image (26).png" alt=""><figcaption><p>Select token pair</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (13).png" alt=""><figcaption><p>Select token pair</p></figcaption></figure>
 
 {% hint style="warning" %}
 #### Non-standard tokens
@@ -66,14 +66,14 @@ Specify the token amounts to contribute as liquidity to the new pool. Upon enter
 
 Do note that KyberSwap Classic enables users to configure their pool according to their preferred price ranges hence LPs are able to define the starting price of their pool.
 
-<figure><img src="../../../.gitbook/assets/image (5).png" alt=""><figcaption><p>Token amounts and price ratio</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (126).png" alt=""><figcaption><p>Token amounts and price ratio</p></figcaption></figure>
 
 {% hint style="danger" %}
 #### Price deviations
 
 As a safety precaution, KyberSwap Classic will prompt the LP if the specified pool price deviates significantly from the market price.This is because any liquidity additions that significantly deviates from the market price would immediately result in [impermanent loss](../../../getting-started/foundational-topics/decentralized-finance/impermanent-loss.md) as arbitrageurs sweep up the significantly discounted token from the position.
 
-![](<../../../.gitbook/assets/image (59).png>)
+![](<../../../.gitbook/assets/image (87).png>)
 {% endhint %}
 
 ### Step 4: Select AMP value
@@ -82,13 +82,13 @@ Upon selecting a price ratio, you will then be prompted to enter an AMP value. A
 
 Please refer to [Amplification Factor](../concepts/dynamic-pricing-curves.md#amplification-factor-amp) for further details on selecting an AMP value.
 
-<figure><img src="../../../.gitbook/assets/image (124).png" alt=""><figcaption><p>Select AMP and corresponding price range</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (135).png" alt=""><figcaption><p>Select AMP and corresponding price range</p></figcaption></figure>
 
 ### Step 5: Select fee tier
 
 You will then be required to select your fee tier.
 
-<figure><img src="../../../.gitbook/assets/image (108).png" alt=""><figcaption><p>Select fee tier</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (115).png" alt=""><figcaption><p>Select fee tier</p></figcaption></figure>
 
 KyberSwap currently offers the following tiers to cater for different token pair correlations:
 
@@ -115,24 +115,24 @@ KyberSwap currently offers the following tiers to cater for different token pair
 
 If you haven’t already done so, you will need to need to authorize the KyberSwap smart contract to transact using your tokens on this network. Click the “Approve \[Token]” button to do so. This will open the approval dialog window on your wallet.
 
-<figure><img src="../../../.gitbook/assets/image (79).png" alt=""><figcaption><p>Approve KNC</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (131).png" alt=""><figcaption><p>Approve KNC</p></figcaption></figure>
 
 ### Step 7: Review pool creation
 
 Click on the "Create" button to bring up the preview screen. Once you have reviewed the information on this screen, click on the "Create Pool" button to proceed.
 
-<figure><img src="../../../.gitbook/assets/image (68).png" alt=""><figcaption><p>Create pool preview</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (26).png" alt=""><figcaption><p>Create pool preview</p></figcaption></figure>
 
 You will need to confirm this transaction in your wallet
 
-<figure><img src="../../../.gitbook/assets/image (162).png" alt=""><figcaption><p>KyberSwap pending confirmation from wallet</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (55).png" alt=""><figcaption><p>KyberSwap pending confirmation from wallet</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (15).png" alt=""><figcaption><p>Metamask confirmation</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (48).png" alt=""><figcaption><p>Metamask confirmation</p></figcaption></figure>
 
 Once you’ve confirmed the transaction you will see a screen informing you that the transaction has been submitted. You can click on “View Transaction” to view your transaction on the appropriate blockchain explorer.
 
-<figure><img src="../../../.gitbook/assets/image (147).png" alt=""><figcaption><p>Transaction submitted</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (142).png" alt=""><figcaption><p>Transaction submitted</p></figcaption></figure>
 
 Your new position should now be visible on the My Pools page on KyberSwap.
 
-<figure><img src="../../../.gitbook/assets/image (105).png" alt=""><figcaption><p>My Pools - Classic Pools </p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (12).png" alt=""><figcaption><p>My Pools - Classic Pools </p></figcaption></figure>

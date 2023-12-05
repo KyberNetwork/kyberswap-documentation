@@ -83,7 +83,7 @@ There are 2 ways to access the token's Explore page to view the token data: stra
 {% tab title="Rankings page" %}
 For tokens on the [rankings page](discover-promising-tokens.md), tokens which have been deployed to multiple chains will have multiple chain logos located below the token name. Upon selecting the token, users will also have to select the specific chain for which to view the token data. For tokens on a single-chain, clicking the row will directly navigate users to the Explore page for the token on the single chain.
 
-<figure><img src="../../../.gitbook/assets/KyberAI_UserGuide_Explore_RankingsNav.png" alt=""><figcaption><p>Select chain to display chain-specific data</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/KyberAI_UserGuide_Explore_RankingsNav (1).png" alt=""><figcaption><p>Select chain to display chain-specific data</p></figcaption></figure>
 {% endtab %}
 
 {% tab title="Manual search" %}

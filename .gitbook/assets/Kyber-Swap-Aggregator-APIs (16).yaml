@@ -185,8 +185,8 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/SwapRouteSuccess'
-                example:
-                  $ref: '#/components/examples/SampleResponseSwapV2'  
+              example:
+                $ref: '#/components/examples/SampleResponseSwapV2'  
       parameters:
         - schema:
             type: string
