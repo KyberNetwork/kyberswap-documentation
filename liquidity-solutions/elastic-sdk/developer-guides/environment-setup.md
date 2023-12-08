@@ -1,5 +1,13 @@
 # Environment Setup
 
+{% hint style="warning" %}
+**KyberSwap Elastic Security Incident**
+
+On 22 Nov 2023, the Elastic protocol experienced a security incident. More details can be found via our [official channels](https://x.com/KyberNetwork?s=20).
+
+All other KyberSwap products ([Aggregator](../../../kyberswap-solutions/kyberswap-aggregator/), [Limit Order](../../../kyberswap-solutions/limit-order/), & [Classic](../../kyberswap-classic/)) continue to be fully operational.
+{% endhint %}
+
 ## Overview
 
 All of the sample code corresponding to specific operations can be found in the `/src/operations` folder in the demo repo below:

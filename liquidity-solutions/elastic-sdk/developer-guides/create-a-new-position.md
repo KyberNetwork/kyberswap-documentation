@@ -1,5 +1,13 @@
 # Create A New Position
 
+{% hint style="warning" %}
+**KyberSwap Elastic Security Incident**
+
+On 22 Nov 2023, the Elastic protocol experienced a security incident. More details can be found via our [official channels](https://x.com/KyberNetwork?s=20).
+
+All other KyberSwap products ([Aggregator](../../../kyberswap-solutions/kyberswap-aggregator/), [Limit Order](../../../kyberswap-solutions/limit-order/), & [Classic](../../kyberswap-classic/)) continue to be fully operational.
+{% endhint %}
+
 ## Introduction
 
 The creation/minting of a new position is the very first step in contributing liquidity to Elastic contracts in exchange for market maker fees and rewards. Elastic positions are managed via the [AntiSnipAttackPositionManager](../../kyberswap-elastic/contracts/elastic-periphery-core-contracts.md#antisnipattackpositionmanager) contract which extends the base position manager contract by adding an anti-sniping feature for liquidity additions and removals.

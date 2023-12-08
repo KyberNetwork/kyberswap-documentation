@@ -27,6 +27,14 @@ For more information on Kyber Network, the organization, please visit the offici
 
 ### Liquidity Solutions
 
+{% hint style="warning" %}
+**KyberSwap Elastic Security Incident**
+
+On 22 Nov 2023, the Elastic protocol experienced a security incident. More details can be found via our [official channels](https://x.com/KyberNetwork?s=20).
+
+All other KyberSwap products ([Aggregator](kyberswap-solutions/kyberswap-aggregator/), [Limit Order](kyberswap-solutions/limit-order/), & [Classic](liquidity-solutions/kyberswap-classic/)) continue to be fully operational.
+{% endhint %}
+
 * [**KyberSwap Classic**](liquidity-solutions/kyberswap-classic/): Amplify your returns through [programmable pricing curves](liquidity-solutions/kyberswap-classic/concepts/dynamic-pricing-curves.md) as well as [dynamic auto-adjusting fees](liquidity-solutions/kyberswap-classic/concepts/flexible-fee-adjustment.md) which responds to market conditions. Deposit your tokens into capitally efficient pools and let the protocol optimize trading spreads (i.e. fees) based on the market volatility.
 * [**KyberSwap Elastic**](liquidity-solutions/kyberswap-elastic/): Add liquidity into [customizable price ranges](liquidity-solutions/kyberswap-elastic/concepts/concentrated-liquidity.md) and [automatically compound your yields](liquidity-solutions/kyberswap-elastic/concepts/reinvestment-curve.md). Your concentrated liquidity positions are safeguarded against front-runners with our native [Anti-Sniping feature](liquidity-solutions/kyberswap-elastic/concepts/anti-sniping-mechanism.md).
 * [**Elastic Static Farms**](liquidity-solutions/kyberswap-elastic/concepts/tick-based-farming.md#dynamic-farms): Continue earning concentrated liquidity farming rewards no matter the market conditions by [adding liquidity towards an operator-configured price range](liquidity-solutions/kyberswap-elastic/user-guides/yield-farming-on-static-farms.md).

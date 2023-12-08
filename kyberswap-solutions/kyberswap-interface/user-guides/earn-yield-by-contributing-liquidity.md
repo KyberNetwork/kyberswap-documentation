@@ -4,6 +4,14 @@ description: Make Your Assets Work For You
 
 # Earn Yield By Contributing Liquidity
 
+{% hint style="warning" %}
+**KyberSwap Elastic Security Incident**
+
+On 22 Nov 2023, the Elastic protocol experienced a security incident. More details can be found via our [official channels](https://x.com/KyberNetwork?s=20).
+
+All other KyberSwap products ([Aggregator](../../kyberswap-aggregator/), [Limit Order](../../limit-order/), & [Classic](../../../liquidity-solutions/kyberswap-classic/)) continue to be fully operational.
+{% endhint %}
+
 ## Get fees for Market Making
 
 Liquidity Providers (LPs) sit at the very centre of a well-functioning DeFi market as their liquidity contributions facilitate the trading of assets. By providing liquidity, your otherwise idle assets are put towards guaranteeing an available trade and thereby earning market maker fees along the way. To this end, KyberSwap has implemented two innovative solutions which enables LPs to earn a sustainable yield while mitigating impermanent loss risks.&#x20;

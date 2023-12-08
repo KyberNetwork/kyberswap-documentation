@@ -4,6 +4,14 @@ description: Customized Liquidity Positions With Auto-Compounding Yields
 
 # KyberSwap Elastic
 
+{% hint style="warning" %}
+**KyberSwap Elastic Security Incident**
+
+On 22 Nov 2023, the Elastic protocol experienced a security incident. More details can be found via our [official channels](https://x.com/KyberNetwork?s=20).
+
+All other KyberSwap products ([Aggregator](../../kyberswap-solutions/kyberswap-aggregator/), [Limit Order](../../kyberswap-solutions/limit-order/), & [Classic](../kyberswap-classic/)) continue to be fully operational.
+{% endhint %}
+
 ## Overview
 
 As the AMM space matured, increasingly sophisticated yield generation strategies created a strong demand for customized liquidity positions whereby liquidity providers were able to specify a price range for their liquidity positions. To meet this demand, we launched KyberSwap Elastic which iterated upon the [capital amplification](../kyberswap-classic/) capabilities of its [Classic](../kyberswap-classic/) counterpart by incorporating emerging [concentrated liquidity](concepts/concentrated-liquidity.md) concepts popularized by Uniswap V3. Through fusing the benefits of each, KyberSwap Elastic enables liquidity providers to determine their preferred liquidity price ranges while still maximizing returns through greater capital efficiency as well as the [auto-compounding of yields](concepts/reinvestment-curve.md).
