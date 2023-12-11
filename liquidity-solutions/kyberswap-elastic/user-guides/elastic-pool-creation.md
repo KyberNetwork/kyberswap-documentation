@@ -4,6 +4,14 @@ description: Create A Concentrated Liquidity Pool With Custom Fees
 
 # Elastic Pool Creation
 
+{% hint style="warning" %}
+**KyberSwap Elastic Security Incident**
+
+On 22 Nov 2023, the Elastic protocol experienced a security incident. More details can be found via our [official channels](https://x.com/KyberNetwork?s=20).
+
+All other KyberSwap products ([Aggregator](../../../kyberswap-solutions/kyberswap-aggregator/), [Limit Order](../../../kyberswap-solutions/limit-order/), & [Classic](../../kyberswap-classic/)) continue to be fully operational.
+{% endhint %}
+
 ## Introduction
 
 In order to participate in a **KyberSwap Elastic** pool and earn fees, you first need to add liquidity to the pool. Adding liquidity to a pool opens a new position. You can add liquidity either to an existing pool, or as part of creating a new pool. This guide describes the steps required to **create a new pool by adding liquidity**.
