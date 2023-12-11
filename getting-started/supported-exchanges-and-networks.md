@@ -210,6 +210,7 @@ Decentralized Exchanges:
 * [Uniswap (v3)](https://app.uniswap.org/#/swap)
 * [Velodrome ](https://app.velodrome.finance/swap)
 * [Velodrome V2](https://velodrome.finance/)
+* [Wombat](https://app.wombat.exchange/swap)
 * [WOOFi V2](https://fi.woo.org/swap/)
 * [ZipSwap](https://ipfs.zipswap.fi/#/swap)
 * [ZyberSwap V3](https://app.zyberswap.io/exchange/besttrade)
