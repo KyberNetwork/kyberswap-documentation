@@ -160,6 +160,7 @@ Decentralized Exchanges:
 * [Balancer Weighted](https://app.balancer.fi/#/)
 * [Balancer Composable](https://app.balancer.fi/#/)&#x20;
 * [ComethSwap ](https://swap.cometh.io/#/swap)
+* [CrowdSwap V2](https://app.crowdswap.org/exchange)
 * [Curve ](https://curve.fi/)
 * [DFYN ](https://exchange.dfyn.network/#/swap)
 * [DinoSwap ](https://dinoswap.exchange/)
