@@ -463,6 +463,7 @@ Decentralized Exchanges:
 * [SushiSwap V3](https://www.sushi.com/swap)
 * [SyncSwap](https://syncswap.xyz/)
 * [PunkSwap](https://zkscroll.punkswap.exchange/swap/)
+* [Wombat](https://app.wombat.exchange/swap)
 * [Zebra](https://zebra.xyz/#/swap)
 
 </details>
