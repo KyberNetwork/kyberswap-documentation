@@ -29,6 +29,7 @@ Decentralized Exchanges:
 * [KyberSwap Professional Market Maker](https://kyberswap.com/)
 * [Balancer Weighted](https://app.balancer.fi/#/)
 * [Balancer Composable](https://app.balancer.fi/#/)&#x20;
+* [CrowdSwap V2](https://app.crowdswap.org/exchange)
 * [Curve (3pool, aave, saave, hbtc, ren, sbtc, eurs, link)](https://curve.fi/#/ethereum/swap)
 * [DefiSwap](https://defiswap.io/en/swap)
 * [DODO (v2)](https://app.dodoex.io/)
