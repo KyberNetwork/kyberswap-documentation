@@ -235,6 +235,7 @@ Decentralized Exchanges:
 * Axial (!)
 * [Balancer Weighted](https://app.balancer.fi/#/)
 * [Balancer Composable](https://app.balancer.fi/#/)&#x20;
+* [CrowdSwap V2](https://app.crowdswap.org/exchange)
 * [Curve ](https://curve.fi/)
 * [DODO (v2)](https://app.dodoex.io/)
 * [Fraxswap](https://app.frax.finance/swap/main)
