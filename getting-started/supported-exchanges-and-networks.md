@@ -185,6 +185,7 @@ Decentralized Exchanges:
 * [Synapse ](https://synapseprotocol.com/)
 * [Uniswap V3 ](https://app.uniswap.org/#/swap)
 * Wault (!)
+* [Wombat](https://app.wombat.exchange/swap)
 * [WOOFi V2](https://fi.woo.org/swap/)
 
 </details>
