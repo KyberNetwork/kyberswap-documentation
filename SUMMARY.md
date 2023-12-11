@@ -335,7 +335,7 @@
 * [KyberSwap Operator MultiSig](reference/kyberswap-operator-multisig.md)
 * [Permitable Tokens](reference/permitable-tokens.md)
 * [Third-Party Integrations](reference/third-party-integrations.md)
-* [KyberSwap Dapp](https://kyberswap.com/)
+* [KyberSwap App](https://kyberswap.com/)
 * [GitHub](https://github.com/KyberNetwork)
 * [KyberSwap Analytics](https://analytics.kyberswap.com/)
 * [KyberSwap Blog](https://blog.kyberswap.com/)
