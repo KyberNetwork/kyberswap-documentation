@@ -67,6 +67,7 @@ Decentralized Exchanges:
 * [KyberSwap Limit Order V2](https://kyberswap.com/)
 * [ApeSwap](https://apeswap.finance/)
 * [Biswap](https://biswap.org/)
+* [CrowdSwap V2](https://app.crowdswap.org/exchange)
 * [Curve ](https://curve.fi/)
 * [DODO (v2)](https://app.dodoex.io/)
 * [Ellipsis ](https://ellipsis.finance/)
