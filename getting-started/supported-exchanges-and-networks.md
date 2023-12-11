@@ -117,6 +117,7 @@ Decentralized Exchanges:
 * [Camelot V3](https://app.camelot.exchange/)
 * [Chronos](https://app.chronos.exchange/)
 * [Chronos V3](https://app.chronos.exchange/?\_ga=2.47683175.1996768785.1691101109-2022647424.1691101109&\_gl=1\*126av9l\*\_ga\*MjAyMjY0NzQyNC4xNjkxMTAxMTA5\*\_ga\_ZZMYQC3ZN0\*MTY5MTEwMTEwOS4xLjEuMTY5MTEwMTExNi4wLjAuMA..\*\_ga\_12W2RDY62R\*MTY5MTEwMTEwOS4xLjEuMTY5MTEwMTExNi4wLjAuMA..)
+* [CrowdSwap V2](https://app.crowdswap.org/exchange)
 * [Curve ](https://curve.fi/)
 * [DODO V2](https://app.dodoex.io/)
 * [Fraxswap](https://app.frax.finance/swap/main)
