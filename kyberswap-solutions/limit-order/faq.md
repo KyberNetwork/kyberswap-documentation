@@ -18,7 +18,9 @@ Limit Orders are a new feature that we are gradually releasing to various chains
 * Avalanche
 * Arbitrum
 * Optimism
+* Base
 * Fantom
+* Linea
 
 Please refer to [Supported Exchanges and Networks](../../getting-started/supported-exchanges-and-networks.md) for further details.
 
