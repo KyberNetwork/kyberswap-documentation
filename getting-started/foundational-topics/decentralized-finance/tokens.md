@@ -23,15 +23,18 @@ While everything can be tokenized on the blockchain, it is important to differen
 | Ethereum         | ETH         |
 | BNB Smart Chain  | BNB         |
 | Arbitrum         | ETH         |
-| Polygon          | MATIC       |
+| Polygon PoS      | MATIC       |
 | Optimism         | OP          |
-| Fantom           | FTM         |
 | Avalanche        | AVAX        |
+| Base             | ETH         |
 | Cronos           | CRO         |
-| Velas            | VLX         |
+| zkSync Era       | ETH         |
+| Fantom           | FTM         |
+| Linea            | ETH         |
+| Polygon zkEVM    | ETH         |
 | Aurora           | ETH         |
-| Oasis            | ROSE        |
 | BitTorrent Chain | BTT         |
+| Scroll           | ETH         |
 
 * Tokens do not have their own blockchain and instead leverages existing chains (each with their own coins) to create and store their token data. Token teams are able to define the token supply and behaviour by creating a token [smart contract](https://ethereum.org/en/smart-contracts/) that is hosted on a blockchain. Consequently, token economics (a.k.a. tokenomics) can be specially crafted to suit a particular use case on the chain.\
   \
