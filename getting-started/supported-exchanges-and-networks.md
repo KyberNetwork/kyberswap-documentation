@@ -27,6 +27,7 @@ Decentralized Exchanges:
 * [KyberSwap Limit Order](https://kyberswap.com/)
 * [KyberSwap Limit Order V2](https://kyberswap.com/)
 * [KyberSwap Professional Market Maker](https://kyberswap.com/)
+* [Balancer V1](https://app.balancer.fi/#/)
 * [CrowdSwap V2](https://app.crowdswap.org/exchange)
 * [Curve (3pool, aave, saave, hbtc, ren, sbtc, eurs, link)](https://curve.fi/#/ethereum/swap)
 * [DefiSwap](https://defiswap.io/en/swap)
