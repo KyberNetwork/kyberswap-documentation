@@ -27,7 +27,6 @@ Decentralized Exchanges:
 * [KyberSwap Limit Order](https://kyberswap.com/)
 * [KyberSwap Limit Order V2](https://kyberswap.com/)
 * [KyberSwap Professional Market Maker](https://kyberswap.com/)
-* [Balancer Composable](https://app.balancer.fi/#/)&#x20;
 * [CrowdSwap V2](https://app.crowdswap.org/exchange)
 * [Curve (3pool, aave, saave, hbtc, ren, sbtc, eurs, link)](https://curve.fi/#/ethereum/swap)
 * [DefiSwap](https://defiswap.io/en/swap)
@@ -155,7 +154,6 @@ Decentralized Exchanges:
 * [KyberSwap Limit Order](https://kyberswap.com/)
 * [KyberSwap Limit Order V2](https://kyberswap.com/)
 * [ApeSwap](https://apeswap.finance/)
-* [Balancer Composable](https://app.balancer.fi/#/)&#x20;
 * [ComethSwap ](https://swap.cometh.io/#/swap)
 * [CrowdSwap V2](https://app.crowdswap.org/exchange)
 * [Curve ](https://curve.fi/)
@@ -230,7 +228,6 @@ Decentralized Exchanges:
 * [KyberSwap Limit Order](https://kyberswap.com/)
 * [KyberSwap Limit Order V2](https://kyberswap.com/)
 * Axial (!)
-* [Balancer Composable](https://app.balancer.fi/#/)&#x20;
 * [CrowdSwap V2](https://app.crowdswap.org/exchange)
 * [Curve ](https://curve.fi/)
 * [DODO (v2)](https://app.dodoex.io/)
@@ -265,7 +262,6 @@ Decentralized Exchanges:
 * [Aerodrome](https://aerodrome.finance/swap)
 * [Alien Base](https://app.alienbase.xyz/)
 * [Alien Base Stableswap](https://app.alienbase.xyz/)
-* [Balancer Composable](https://app.balancer.fi/#/)
 * [Baldex](https://app.baldex.hair/swap)
 * [BaseSwap](https://baseswap.fi/swap)
 * [BaseSwap V3](https://baseswap.fi/swap)
@@ -408,7 +404,6 @@ Decentralized Exchanges:
 
 * [KyberSwap Classic](https://kyberswap.com/)
 * [KyberSwap Elastic](https://kyberswap.com/)
-* [Balancer Composable](https://app.balancer.fi/#/)&#x20;
 * [Doveswap V3](https://swap.dovish.finance/#/swap)
 * [Kokonut Swap Crypto Pools](https://kokonutswap.finance/)
 * [MantisSwap](https://app.mantissa.finance/#/swap)
