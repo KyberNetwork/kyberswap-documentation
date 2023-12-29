@@ -318,6 +318,7 @@ Decentralized Exchanges:
 * [SynthSwap V2](https://app.horizondex.io/swap)
 * [SynthSwap V3](https://app.horizondex.io/swap)
 * [Uniswap V3](https://app.uniswap.org/#/swap)
+* [Voodoo.trade](https://voodoo.trade/)
 * [Wombat](https://app.wombat.exchange/swap)
 * [WOOFi V2](https://fi.woo.org/swap/)
 
