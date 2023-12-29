@@ -46,6 +46,7 @@ Decentralized Exchanges:
 * [Saddle](https://saddle.exchange/#/)
 * [ShibaSwap](https://shibaswap.com/#/)
 * [SmarDex](https://smardex.io/swap)
+* [Solidly V3](https://solidly.exchange/)
 * [SushiSwap](https://www.sushi.com/swap)
 * [SushiSwap V3](https://www.sushi.com/swap)
 * [Synapse](https://synapseprotocol.com/)
