@@ -362,6 +362,7 @@ Decentralized Exchanges:
 * [WOOFi V2](https://fi.woo.org/swap/)
 * [Velocore](https://app.velocore.xyz/swap)
 * [Velocore CPMM V2](https://app.velocore.xyz/swap)
+* [Velocore Wombat StableSwap V2](https://app.velocore.xyz/swap)
 * [veSync](https://app.vesync.finance/swap)
 * [ZKSwap](https://zks.app/)
 * [zkSwap Finance](https://zkswap.finance/swap)
@@ -422,6 +423,7 @@ Decentralized Exchanges:
 * [SushiSwap V3](https://www.sushi.com/swap)
 * [SyncSwap](https://syncswap.xyz/)
 * [Velocore CPMM V2](https://app.velocore.xyz/swap)
+* [Velocore Wombat StableSwap V2](https://app.velocore.xyz/swap)
 * [vooi](https://vooi.io/)
 * [WOOFi V2](https://fi.woo.org/swap/)
 
