@@ -333,6 +333,7 @@ Decentralized Exchanges:
 * [Crodex ](https://swap.crodex.app/#/swap)
 * [CronaSwap ](https://app.cronaswap.org/swap)
 * [EmpireDex ](https://app.empiredex.org/farm)
+* [Fulcrom](https://fulcrom.finance/en)
 * [KryptoDex ](https://www.kryptodex.org/)
 * [MMF ](https://cronosmm.finance/)
 * [PhotonSwap ](https://photonswap.finance/#/swap)
@@ -348,6 +349,7 @@ Decentralized Exchanges:
 
 * [KyberSwap Classic](https://kyberswap.com/)
 * [eZKalibur](https://dapp.ezkalibur.com/)
+* [Fulcrom](https://fulcrom.finance/en)
 * [iZiSwap](https://izumi.finance/trade/swap)
 * [Maverick](https://app.mav.xyz/)
 * [Mute.Switch](https://app.mute.io/swap)
