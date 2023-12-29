@@ -219,6 +219,7 @@ Decentralized Exchanges:
 * [FXDX](https://app.fxdx.exchange/trade)
 * [iZiSwap](https://izumi.finance/trade/swap)
 * [Mummy Finance](https://app.mummy.finance/#/trade)
+* [OPX.Finance](https://www.opx.finance/#/trade)
 * [Synapse ](https://synapseprotocol.com/)
 * [Synthetix ](https://staking.synthetix.io/)
 * [SushiSwap V3](https://www.sushi.com/swap)
