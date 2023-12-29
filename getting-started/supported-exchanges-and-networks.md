@@ -373,6 +373,7 @@ Decentralized Exchanges:
 * [KyberSwap Limit Order V2](https://kyberswap.com/)
 * [Beethoven X ](https://beets.fi/)
 * [Beethoven X Composable Stable Pools](https://beets.fi/)
+* [Beethoven X Stable Pools](https://beets.fi/)
 * [Curve](https://curve.fi/)
 * [Fraxswap](https://app.frax.finance/swap/main)
 * [FVM](https://www.fvm.exchange/swap)
