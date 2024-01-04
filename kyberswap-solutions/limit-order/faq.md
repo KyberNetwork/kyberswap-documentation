@@ -10,19 +10,7 @@ description: Your KyberSwap Limit Order Questions Answered
 
 <summary>Which chains are supported by Limit Orders?</summary>
 
-Limit Orders are a new feature that we are gradually releasing to various chains. It is currently available for use in token swaps on the following chains:
-
-* Ethereum
-* BNB Chain
-* Polygon PoS
-* Avalanche
-* Arbitrum
-* Optimism
-* Base
-* Fantom
-* Linea
-
-Please refer to [Supported Exchanges and Networks](../../getting-started/supported-exchanges-and-networks.md) for further details.
+The full list of supported chains can be found on [Supported Exchanges and Networks](../../getting-started/supported-exchanges-and-networks.md).
 
 </details>
 
