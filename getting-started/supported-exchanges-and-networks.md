@@ -451,6 +451,7 @@ Decentralized Exchanges:
 * [QuickSwap V3](https://quickswap.exchange/#/)
 * [SushiSwap V3](https://www.sushi.com/swap)
 * [WOOFi V2](https://fi.woo.org/swap/)
+* [Zero](https://www.zkzero.fi)
 
 </details>
 
