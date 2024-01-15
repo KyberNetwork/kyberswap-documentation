@@ -12,18 +12,10 @@ KyberSwap Elastic uses multiple [subgraphs](https://thegraph.com/docs/about/intr
 https://api.thegraph.com/subgraphs/name/kybernetwork/kyberswap-elastic-mainnet
 ```
 
-```
-https://ethereum-graph.kyberengineering.io/subgraphs/name/kybernetwork/kyberswap-elastic-ethereum
-```
-
 ### BSC (ChainID: 56)[​](https://docs.kyberswap.com/reference/subgraph-data#bsc) <a href="#bsc" id="bsc"></a>
 
 ```
 https://api.thegraph.com/subgraphs/name/kybernetwork/kyberswap-elastic-bsc
-```
-
-```
-https://bsc-graph.kyberengineering.io/subgraphs/name/kybernetwork/kyberswap-elastic-bsc
 ```
 
 ### Arbitrum[​](https://docs.kyberswap.com/reference/subgraph-data#arbitrum) (ChainID: 42161) <a href="#arbitrum" id="arbitrum"></a>
@@ -32,18 +24,10 @@ https://bsc-graph.kyberengineering.io/subgraphs/name/kybernetwork/kyberswap-elas
 https://api.thegraph.com/subgraphs/name/kybernetwork/kyberswap-elastic-arbitrum-one
 ```
 
-```
-https://arbitrum-graph.kyberengineering.io/subgraphs/name/kybernetwork/kyberswap-elastic-arbitrum
-```
-
 ### Polygon[​](https://docs.kyberswap.com/reference/subgraph-data#polygon) (ChainID: 137) <a href="#polygon" id="polygon"></a>
 
 ```
 https://api.thegraph.com/subgraphs/name/kybernetwork/kyberswap-elastic-matic 
-```
-
-```
-https://polygon-graph.kyberengineering.io/subgraphs/name/kybernetwork/kyberswap-elastic-polygon
 ```
 
 ### Optimism[​](https://docs.kyberswap.com/reference/subgraph-data#optimism) (ChainID: 10) <a href="#optimism" id="optimism"></a>
@@ -52,18 +36,10 @@ https://polygon-graph.kyberengineering.io/subgraphs/name/kybernetwork/kyberswap-
 https://api.thegraph.com/subgraphs/name/kybernetwork/kyberswap-elastic-optimism
 ```
 
-```
-https://optimism-graph.kyberengineering.io/subgraphs/name/kybernetwork/kyberswap-elastic-optimism
-```
-
 ### Avalanche[​](https://docs.kyberswap.com/reference/subgraph-data#avalanche) (ChainID: 43114)  <a href="#avalanche" id="avalanche"></a>
 
 ```
 https://api.thegraph.com/subgraphs/name/kybernetwork/kyberswap-elastic-avalanche
-```
-
-```
-https://avalanche-graph.kyberengineering.io/subgraphs/name/kybernetwork/kyberswap-elastic-avalanche
 ```
 
 ### Cronos[​](https://docs.kyberswap.com/reference/subgraph-data#cronos) (ChainID: 25) <a href="#cronos" id="cronos"></a>
@@ -82,10 +58,6 @@ https://base-graph.kyberengineering.io/subgraphs/name/kybernetwork/kyberswap-ela
 
 ```
 https://api.thegraph.com/subgraphs/name/kybernetwork/kyberswap-elastic-fantom
-```
-
-```
-https://fantom-graph.kyberengineering.io/subgraphs/name/kybernetwork/kyberswap-elastic-fantom
 ```
 
 ### Polygon zkEVM (ChainID: 1101)

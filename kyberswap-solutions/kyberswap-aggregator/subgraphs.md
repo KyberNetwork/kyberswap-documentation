@@ -12,28 +12,16 @@ KyberSwap Aggregator uses multiple [subgraphs](https://thegraph.com/docs/about/i
 https://api.thegraph.com/subgraphs/name/kybernetwork/kyberswap-aggregator-ethereum
 ```
 
-```
-https://ethereum-graph.kyberengineering.io/subgraphs/name/kybernetwork/kyberswap-aggregator-ethereum
-```
-
 ### BSC (ChainID: 56)[​](https://docs.kyberswap.com/reference/subgraph-data#bsc) <a href="#bsc" id="bsc"></a>
 
 ```
 https://api.thegraph.com/subgraphs/name/kybernetwork/kyberswap-aggregator-bsc
 ```
 
-```
-https://bsc-graph.kyberengineering.io/subgraphs/name/kybernetwork/kyberswap-aggregator-bsc
-```
-
 ### Arbitrum[​](https://docs.kyberswap.com/reference/subgraph-data#arbitrum) (ChainID: 42161) <a href="#arbitrum" id="arbitrum"></a>
 
 ```
 https://api.thegraph.com/subgraphs/name/kybernetwork/kyberswap-aggregator-arbitrum
-```
-
-```
-https://arbitrum-graph.kyberengineering.io/subgraphs/name/kybernetwork/kyberswap-aggregator-arbitrum
 ```
 
 ### Polygon[​](https://docs.kyberswap.com/reference/subgraph-data#polygon) PoS (ChainID: 137) <a href="#polygon" id="polygon"></a>
@@ -52,18 +40,10 @@ https://polygon-graph.kyberengineering.io/subgraphs/name/kybernetwork/kyberswap-
 https://api.thegraph.com/subgraphs/name/kybernetwork/kyberswap-aggregator-optimism
 ```
 
-```
-https://optimism-graph.kyberengineering.io/subgraphs/name/kybernetwork/kyberswap-aggregator-optimism
-```
-
 ### Avalanche[​](https://docs.kyberswap.com/reference/subgraph-data#avalanche) (ChainID: 43114)  <a href="#avalanche" id="avalanche"></a>
 
 ```
 https://api.thegraph.com/subgraphs/name/kybernetwork/kyberswap-aggregator-avalanche
-```
-
-```
-https://avalanche-graph.kyberengineering.io/subgraphs/name/kybernetwork/kyberswap-aggregator-avalanche
 ```
 
 ### Cronos[​](https://docs.kyberswap.com/reference/subgraph-data#cronos) (ChainID: 25) <a href="#cronos" id="cronos"></a>
@@ -90,10 +70,6 @@ https://zksync-graph.kyberengineering.io/subgraphs/name/kybernetwork/kyberswap-a
 https://api.thegraph.com/subgraphs/name/kybernetwork/kyberswap-aggregator-fantom
 ```
 
-```
-https://fantom-graph.kyberengineering.io/subgraphs/name/kybernetwork/kyberswap-aggregator-fantom
-```
-
 ### Polygon zkEVM (ChainID: 1101)
 
 ```
@@ -104,10 +80,6 @@ https://polygon-zkevm-graph.kyberengineering.io/subgraphs/name/kybernetwork/kybe
 
 ```
 https://api.thegraph.com/subgraphs/name/kybernetwork/kyberswap-aggregator-aurora/graphql
-```
-
-```
-https://aurora-graph.kyberengineering.io/subgraphs/name/kybernetwork/kyberswap-aggregator-aurora
 ```
 
 ### Linea (ChainID: 59144)

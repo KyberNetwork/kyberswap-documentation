@@ -12,24 +12,16 @@ KyberSwap Classic uses multiple [subgraphs](https://thegraph.com/docs/about/intr
 https://api.thegraph.com/subgraphs/name/kybernetwork/kyberswap-exchange-ethereum
 ```
 
-```
-https://ethereum-graph.kyberengineering.io/subgraphs/name/kybernetwork/kyberswap-exchange-ethereum
-```
-
 ### BSC (ChainID: 56) <a href="#bsc" id="bsc"></a>
 
 ```
 https://api.thegraph.com/subgraphs/name/kybernetwork/kyberswap-exchange-bsc
 ```
 
-```
-https://bsc-graph.kyberengineering.io/subgraphs/name/kybernetwork/kyberswap-exchange-bsc
-```
-
 ### Arbitrum[​](https://docs.kyberswap.com/Classic/reference/subgraph-data#arbitrum) (ChainID: 42161) <a href="#arbitrum" id="arbitrum"></a>
 
 ```
-https://arbitrum-graph.kyberengineering.io/subgraphs/name/kybernetwork/kyberswap-exchange-arbitrum
+https://api.thegraph.com/subgraphs/name/kybernetwork/kyberswap-exchange-arbitrum
 ```
 
 ### Polygon[​](https://docs.kyberswap.com/Classic/reference/subgraph-data#polygon) PoS (ChainID: 137) <a href="#polygon" id="polygon"></a>
@@ -38,28 +30,16 @@ https://arbitrum-graph.kyberengineering.io/subgraphs/name/kybernetwork/kyberswap
 https://api.thegraph.com/subgraphs/name/kybernetwork/kyberswap-exchange-polygon 
 ```
 
-```
-https://polygon-graph.kyberengineering.io/subgraphs/name/kybernetwork/kyberswap-exchange-polygon
-```
-
 ### Optimism[​](https://docs.kyberswap.com/Classic/reference/subgraph-data#optimism) (ChainID: 10) <a href="#optimism" id="optimism"></a>
 
 ```
 https://api.thegraph.com/subgraphs/name/kybernetwork/kyberswap-exchange-optimism
 ```
 
-```
-https://optimism-graph.kyberengineering.io/subgraphs/name/kybernetwork/kyberswap-exchange-optimism
-```
-
 ### Avalanche[​](https://docs.kyberswap.com/Classic/reference/subgraph-data#avalanche) (ChainID: 43114) <a href="#avalanche" id="avalanche"></a>
 
 ```
 https://api.thegraph.com/subgraphs/name/kybernetwork/kyberswap-exchange-avalanche
-```
-
-```
-https://avalanche-graph.kyberengineering.io/subgraphs/name/kybernetwork/kyberswap-exchange-avalanche
 ```
 
 ### Cronos[​](https://docs.kyberswap.com/Classic/reference/subgraph-data#cronos) (ChainID: 25) <a href="#cronos" id="cronos"></a>
@@ -78,10 +58,6 @@ https://zksync-graph.kyberengineering.io/subgraphs/name/kybernetwork/kyberswap-e
 
 ```
 https://api.thegraph.com/subgraphs/name/kybernetwork/kyberswap-exchange-fantom
-```
-
-```
-https://fantom-graph.kyberengineering.io/subgraphs/name/kybernetwork/kyberswap-exchange-fantom
 ```
 
 ### Polygon zkEVM (ChainID: 1101)
