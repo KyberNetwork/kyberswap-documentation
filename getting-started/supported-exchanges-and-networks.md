@@ -519,6 +519,7 @@ Decentralized Exchanges:
 * [SyncSwap](https://syncswap.xyz/)
 * [PunkSwap](https://zkscroll.punkswap.exchange/swap/)
 * [Wombat](https://app.wombat.exchange/swap)
-* [Zebra](https://zebra.xyz/#/swap)
+* [Zebra V1](https://zebra.xyz/#/swap)
+* [Zebra V2](https://zebra.xyz/#/swap)
 
 </details>
