@@ -358,7 +358,7 @@ Decentralized Exchanges:
 
 <details>
 
-<summary><img src="../.gitbook/assets/ZkSync_logo.png" alt="" data-size="line">   zkSync Era (ChainID: 324)</summary>
+<summary><img src="../.gitbook/assets/Screenshot_2024-03-10_at_6.48.45_PM-removebg-preview.png" alt="" data-size="line">  zkSync Era (ChainID: 324)</summary>
 
 Decentralized Exchanges:
 
