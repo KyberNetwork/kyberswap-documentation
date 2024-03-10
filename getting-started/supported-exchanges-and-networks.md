@@ -529,20 +529,6 @@ Decentralized Exchanges:
 
 <details>
 
-<summary><img src="../.gitbook/assets/Aurora_Chain_Negative.png" alt="" data-size="line">   Aurora (ChainID: 1313161554)</summary>
-
-Decentralized Exchanges:
-
-* [KyberSwap Classic](https://kyberswap.com/)
-* [DODO (v2)](https://app.dodoex.io/)
-* [NearPad](https://pad.fi/dex/swap)
-* [Trisolaris](https://www.trisolaris.io/#/swap)
-* [WannaSwap](https://wannaswap.finance/farm)
-
-</details>
-
-<details>
-
 <summary><img src="../.gitbook/assets/Cronos_Chain_Negative.png" alt="" data-size="line">   Cronos (ChainID: 25)</summary>
 
 Decentralized Exchanges:
