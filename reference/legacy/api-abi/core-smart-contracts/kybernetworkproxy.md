@@ -17,7 +17,7 @@ is [IKyberNetworkProxy](https://docs.kyberswap.com/Legacy/api-abi/core-smart-con
 
 _Source_: [KyberNetworkProxy.sol](https://github.com/KyberNetwork/smart-contracts/blob/master/contracts/sol6/KyberNetworkProxy.sol)
 
-
+***
 
 ### INDEX[​](https://docs.kyberswap.com/Legacy/api-abi/core-smart-contracts/api\_abi-kybernetworkproxy#index) <a href="#index" id="index"></a>
 
@@ -31,7 +31,7 @@ _Source_: [KyberNetworkProxy.sol](https://github.com/KyberNetwork/smart-contract
 
 Event for logging the setting of the KyberNetwork contract address.
 
-
+***
 
 event **KyberNetworkSet**(IKyberNetwork newKyberNetwork, IKyberNetwork previousKyberNetwork) | Parameter | Type | Description | | --------- |:-----:|:-----------:| | `newKyberNetwork` | IKyberNetwork | new kyberNetwork contract address | | `previousKyberNetwork` | IKyberNetwork | old kyberNetwork contract address | Signature: 0x8936e1f096bf0a8c9df862b3d1d5b82774cad78116200175f00b5b7ba3010b02
 
@@ -42,7 +42,7 @@ event **KyberNetworkSet**(IKyberNetwork newKyberNetwork, IKyberNetwork previousK
 
 Event for logging the setting of the KyberHintHandler contract address.
 
-
+***
 
 event **KyberHintHandlerSet**(IKyberHint kyberHintHandler) | Parameter | Type | Description | | --------- |:-----:|:-----------:| | `kyberHintHandler` | IKyberHint | kyberHintHandler contract address |
 
@@ -57,7 +57,7 @@ Signature: 0x6deb3a98fd141d661e9c0fb2d847541cc0c629cfb100c61011a76f57cb3b3a9b
 
 Executes a Best-of-All trade (no reserve routing) between src and dest token and send dest tokens to destAddress; platform fee is ignored and is pre-Katalyst/backwards compatible.
 
-
+***
 
 function **trade**(IERC20 src, uint256 srcAmount, IERC20 dest, address payable destAddress, uint256 maxDestAmount, uint256 minConversionRate, address payable platformWallet) external payable override returns (uint256) | Parameter | Type | Description | | --------- |:-----:|:-----------:| | `src` | IERC20 | source ERC20 token contract address | | `srcAmount` | uint256 | source ERC20 token amount in its token decimals | | `dest` | IERC20 | destination ERC20 token contract address | | `destAddress` | address | recipient address for destination ERC20 token | | `maxDestAmount` | uint256 | limit on the amount of destination tokens | | `minConversionRate` | uint256 | minimum conversion rate; trade is canceled if actual rate is lower | | `platformWallet` | address | address receiving the platform fee | **Returns:**\ Amount of actual destination tokens in twei
 

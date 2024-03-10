@@ -17,7 +17,7 @@ is WithdrawableNoModifiers, Utils5, [IKyberNetwork](https://docs.kyberswap.com/L
 
 _Source_: [KyberNetwork.sol](https://github.com/KyberNetwork/smart-contracts/blob/master/contracts/sol6/KyberNetwork.sol)
 
-
+***
 
 ### INDEX[​](https://docs.kyberswap.com/Legacy/api-abi/misc/api\_abi-kybernetwork#index) <a href="#index" id="index"></a>
 
@@ -31,7 +31,7 @@ _Source_: [KyberNetwork.sol](https://github.com/KyberNetwork/smart-contracts/blo
 
 Event logging the receival of ETH in the network contract.
 
-
+***
 
 event **EtherReceival**(address sender, uint256 amount) | Parameter | Type | Description | | --------- |:-----:|:-----------:| | `sender` | address | sender's address | | `amount` | uint256 | amount of ETH received in wei | Signature: 0x75f33ed68675112c77094e7c5b073890598be1d23e27cd7f6907b4a7d98ac619
 
@@ -42,7 +42,7 @@ event **EtherReceival**(address sender, uint256 amount) | Parameter | Type | Des
 
 Event logging the setting of the new KyberFeeHandler contract.
 
-
+***
 
 event **KyberFeeHandlerUpdated**(IKyberFeeHandler newKyberFeeHandler) | Parameter | Type | Description | | --------- |:-----:|:-----------:| | `newKyberFeeHandler` | IKyberFeeHandler | new KyberFeeHandler contract | Signature: 0x5128fc9be01065f3cabe4c8b72796eb6b8a00284f39a2390cd71e91b509f90b6
 
@@ -53,7 +53,7 @@ event **KyberFeeHandlerUpdated**(IKyberFeeHandler newKyberFeeHandler) | Paramete
 
 Event logging the setting of the new KyberMatchingEngine contract.
 
-
+***
 
 event **KyberMatchingEngineUpdated**(IKyberMatchingEngine newKyberMatchingEngine) | Parameter | Type | Description | | --------- |:-----:|:-----------:| | `newKyberMatchingEngine` | IKyberMatchingEngine | //TODO: description |
 
@@ -66,7 +66,7 @@ Signature: KyberMatchingEngineUpdated(IKyberMatchingEngine)
 
 Event logging the setting of the new GasHelper contract.
 
-
+***
 
 event **GasHelperUpdated**(IGasHelper newGasHelper) | Parameter | Type | Description | | --------- |:-----:|:-----------:| | `newGasHelper` | IGasHelper | new GasHelper contract | Signature: 0x95ba6becebde78de944071b522d81414292f67e3d95db7d9df46bb8e8b3da8b8
 
@@ -77,7 +77,7 @@ event **GasHelperUpdated**(IGasHelper newGasHelper) | Parameter | Type | Descrip
 
 Event logging the setting of the new KyberDao contract.
 
-
+***
 
 event **KyberDaoUpdated**(IKyberDao newKyberDao) | Parameter | Type | Description | | --------- |:-----:|:-----------:| | `newKyberDao` | IKyberDao | new KyberDao contract | Signature: 0x16a2e1af8449067f38aa765b54d479785c94d8ebdfbba7b410e3488b0877c1e4
 
@@ -88,7 +88,7 @@ event **KyberDaoUpdated**(IKyberDao newKyberDao) | Parameter | Type | Descriptio
 
 Event logging the setting of the maxGasPrice and negligibleRateDiffBps params in the network.
 
-
+***
 
 event **KyberNetworkParamsSet**(uint256 maxGasPrice, uint256 negligibleRateDiffBps) | Parameter | Type | Description | | --------- |:-----:|:-----------:| | `maxGasPrice` | uint256 | maximum gas price limit to prevent front running | | `negligibleRateDiffBps` | uint256 | negligible rate difference in BPS | Signature: 0xc1e6729d7fd9a615adc03ebe7d8ff15649d8eed7516bf6c30538a1e722bb1975
 
@@ -99,7 +99,7 @@ event **KyberNetworkParamsSet**(uint256 maxGasPrice, uint256 negligibleRateDiffB
 
 Event logging the enabling or disabling of trading in the network
 
-
+***
 
 event **KyberNetworkSetEnable**(bool isEnabled) | Parameter | Type | Description | | --------- |:-----:|:-----------:| | `isEnabled` | bool | `true` if network is enabled, otherwise `false` | Signature: 0x8a846a525e22497042ee2f99423a8ff8bbb831d3ae5384692bf6040f591c1eba
 
@@ -110,7 +110,7 @@ event **KyberNetworkSetEnable**(bool isEnabled) | Parameter | Type | Description
 
 Event logging the adding of a new proxy contract.
 
-
+***
 
 event **KyberProxyAdded**(address kyberProxy) | Parameter | Type | Description | | --------- |:-----:|:-----------:| | `kyberProxy` | address | added KyberNetworkProxy contract | Signature: 0x0b008ff10c7e378a96d6566635e1aa748886d16fb87659faee2aa20608fec815
 
@@ -121,7 +121,7 @@ event **KyberProxyAdded**(address kyberProxy) | Parameter | Type | Description |
 
 Event logging the removal of a proxy contract.
 
-
+***
 
 event **KyberProxyRemoved**(address kyberProxy) | Parameter | Type | Description | | --------- |:-----:|:-----------:| | `kyberProxy` | address | removed KyberNetworkProxy contract | Signature: 0xbb9ee888852ae070b75270fa50ea2845ba32102d3a96842c7c416d12aad2f487
 
@@ -132,7 +132,7 @@ event **KyberProxyRemoved**(address kyberProxy) | Parameter | Type | Description
 
 Event logging the listing of a list of reserves for a token.
 
-
+***
 
 event **ListedReservesForToken**(IERC20 token, address\[] reserves, bool add) | Parameter | Type | Description | | --------- |:-----:|:-----------:| | `token` | IERC20 | ERC20 token address | | `reserves` | address\[] | list of reserve addresses | | `add` | bool | `true` if to list, `false` otherwise | Signature: 0xd4b0877e3beef91cd767680ac04114217ec7c9cb3a4705c03fc8061de81168fc
 
@@ -144,7 +144,7 @@ event **ListedReservesForToken**(IERC20 token, address\[] reserves, bool add) | 
 \
 \### \`tradeWithHint\` Makes a trade between src and dest token and send dest tokens to destAddress, with an additional \`hint\` parameter for reserve routing. Function is backwards compatible to pre-Katalyst.
 
-
+***
 
 function **tradeWithHint**(address payable trader, ERC20 src, uint256 srcAmount, ERC20 dest, address payable destAddress, uint256 maxDestAmount, uint256 minConversionRate, address payable walletId, bytes hint) external payable returns (uint256 destAmount) | Parameter | Type | Description | | --------- |:-----:|:-----------:| | `trader` | address | trader's address | | `src` | ERC20 | source ERC20 token contract address | | `srcAmount` | uint256 | source ERC20 token amount in its token decimals | | `dest` | ERC20 | destination ERC20 token contract address | | `destAddress` | address | recipient address for destination ERC20 token | | `maxDestAmount` | uint256 | limit on the amount of destination tokens | | `minConversionRate` | uint | minimum conversion rate; trade is canceled if actual rate is lower | | `walletId` | address | wallet address to send part of the fees to | | `hint` | bytes | for filtering permissionless reserves | **Returns:**\ destAmount - Amount of actual destination tokens
 

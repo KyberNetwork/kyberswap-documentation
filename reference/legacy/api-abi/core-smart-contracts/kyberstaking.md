@@ -17,7 +17,7 @@ is IERC20, ReentrancyGuard, [IKyberStaking](https://docs.kyberswap.com/Legacy/ap
 
 _Source_: [KyberStaking.sol](https://github.com/KyberNetwork/smart-contracts/blob/master/contracts/sol6/Dao/KyberStaking.sol)
 
-
+***
 
 ### INDEX[​](https://docs.kyberswap.com/Legacy/api-abi/core-smart-contracts/api\_abi-kyberstaking#index) <a href="#index" id="index"></a>
 
@@ -31,7 +31,7 @@ _Source_: [KyberStaking.sol](https://github.com/KyberNetwork/smart-contracts/blo
 
 Event for logging the failed withdrawal of KNC from the staking contract.
 
-
+***
 
 event **WithdrawDataUpdateFailed**(uint256 curEpoch, address staker, uint256 amount) | Parameter | Type | Description | | --------- |:-----:|:-----------:| | `curEpoch` | uint256 | current epoch number where KNC was deposited | | `staker` | address | staker's address | | `amount` | uint256 | amount of KNC withdrawn in twei | Signature: 0xa412eef5316d3cbf9e2b4ba3d1cf3e482b40dc8946fd919b7f5053450fa621fb
 
@@ -44,7 +44,7 @@ event **WithdrawDataUpdateFailed**(uint256 curEpoch, address staker, uint256 amo
 
 Sets the delegation to a representative, and only takes effect on the next epoch
 
-
+***
 
 function **delegate**(address newRepresentative) external override | Parameter | Type | Description | | --------- |:-----:|:-----------:| | `dAddr` | address | representative's address to delegate to |
 

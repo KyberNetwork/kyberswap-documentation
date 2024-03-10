@@ -17,7 +17,7 @@ is [IKyberReserve](https://docs.kyberswap.com/Legacy/api-abi/core-smart-contract
 
 _Source_: [IKyberMatchingEngine.sol](https://github.com/KyberNetwork/smart-contracts/blob/master/contracts/sol6/IKyberMatchingEngine.sol)
 
-
+***
 
 ### INDEX[​](https://docs.kyberswap.com/Legacy/api-abi/core-smart-contracts/api\_abi-ikybermatchingengine#index) <a href="#index" id="index"></a>
 
@@ -31,7 +31,7 @@ _Source_: [IKyberMatchingEngine.sol](https://github.com/KyberNetwork/smart-contr
 
 Returns the negligible rate difference in BPS.
 
-
+***
 
 function **getNegligibleRateDiffBps**() external view returns (uint256)\ **Returns:**\ The negligible rate difference in BPS.
 

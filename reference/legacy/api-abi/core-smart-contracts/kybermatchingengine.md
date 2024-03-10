@@ -17,7 +17,7 @@ is [KyberHintHandler](https://docs.kyberswap.com/Legacy/api-abi/core-smart-contr
 
 _Source_: [KyberMatchingEngine.sol](https://github.com/KyberNetwork/smart-contracts/blob/master/contracts/sol6/KyberMatchingEngine.sol)
 
-
+***
 
 ### INDEX[​](https://docs.kyberswap.com/Legacy/api-abi/core-smart-contracts/api\_abi-kybermatchingengine#index) <a href="#index" id="index"></a>
 
@@ -31,7 +31,7 @@ _Source_: [KyberMatchingEngine.sol](https://github.com/KyberNetwork/smart-contra
 
 Event logging the setting of the new KyberStorage contract address.
 
-
+***
 
 event **KyberStorageUpdated**(IKyberStorage newKyberStorage) | Parameter | Type | Description | | --------- |:-----:|:-----------:| | `newKyberStorage` | IKyberStorage | new KyberStorage contract address | Signature: 0xed8c790db7ddf303f576c18e6644ec19e7b39356088eeeeac11c95212c61f49a
 
@@ -42,7 +42,7 @@ event **KyberStorageUpdated**(IKyberStorage newKyberStorage) | Parameter | Type 
 
 Event logging the setting of the new KyberNetwork contract address.
 
-
+***
 
 event **KyberNetworkUpdated**(IKyberNetwork newKyberNetwork) | Parameter | Type | Description | | --------- |:-----:|:-----------:| | `newKyberNetwork` | IKyberNetwork | new KyberNetwork contract address | Signature: 0x18970d46ac8a7d7e0da90e1bebb0be3e87ffc7705fc09d3bba5373d59b7a12aa
 
@@ -55,7 +55,7 @@ event **KyberNetworkUpdated**(IKyberNetwork newKyberNetwork) | Parameter | Type 
 
 Returns trading reserves info for a trade.
 
-
+***
 
 function **getTradingReserves**(IERC20 src, IERC20 dest, bool isTokenToToken, bytes hint) external view override returns (bytes32\[] reserveIds, uint256\[] splitValuesBps, ProcessWithRate processWithRate) | Parameter | Type | Description | | --------- |:-----:|:-----------:| | `src` | IERC20 | source token address | | `dest` | IERC20 | destination token address | | `isTokenToToken` | bool | whether the trade is token -> token | | `hint` | bytes | encoded hint for reserve routing | **Returns:**\ reserveIds - array of 32-byte reserve IDs for the trade splitValuesBps - array of split values in BPS for the trade respective to reserveIds processWithRate - whether extra processing is required or not
 

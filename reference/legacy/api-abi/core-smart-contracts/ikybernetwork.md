@@ -17,7 +17,7 @@ imports IERC20
 
 _Source_: [IKyberNetwork.sol](https://github.com/KyberNetwork/smart-contracts/blob/master/contracts/sol6/IKyberNetwork.sol)
 
-
+***
 
 ### INDEX[​](https://docs.kyberswap.com/Legacy/api-abi/core-smart-contracts/api\_abi-ikybernetwork#index) <a href="#index" id="index"></a>
 
@@ -31,7 +31,7 @@ _Source_: [IKyberNetwork.sol](https://github.com/KyberNetwork/smart-contracts/bl
 
 Event for logging execution of trades.
 
-
+***
 
 event **KyberTrade**(IERC20 src, IERC20 dest, uint256 ethWeiValue, uint256 networkFeeWei, uint256 customPlatformFeeWei, bytes32\[] t2eIds, bytes32\[] e2tIds, uint256\[] t2eSrcAmounts, uint256\[] e2tSrcAmounts, uint256\[] t2eRates, uint256\[] e2tRates) | Parameter | Type | Description | | --------- |:-----:|:-----------:| | `src` | IERC20 | source token address | | `dest` | IERC20 | destination token address | | `ethWeiValue` | uint256 | Ether wei value of the trade | | `networkFeeWei` | uint256 | network fee charged in wei | | `customPlatformFeeWei` | uint256 | platform fee charged in wei | | `t2eIds` | bytes32\[] | the reserve IDs used in the token to eth trade portion | | `e2tIds` | bytes32\[] | the reserve IDs used in the eth to token trade portion | | `t2eSrcAmounts` | uint256\[] | the source smounts used in the token to eth trade portion | | `e2tSrcAmounts` | uint256\[] | the source smounts used in the eth to token trade portion | | `t2eRates` | uint256\[] | the rates used in the token to eth trade portionn | | `e2tRates` | uint256\[] | the source smounts used in the eth to token trade portion | Signature: 0x30bbea603a7b36858fe5e3ec6ba5ff59dde039d02120d758eacfaed01520577d
 
@@ -44,7 +44,7 @@ event **KyberTrade**(IERC20 src, IERC20 dest, uint256 ethWeiValue, uint256 netwo
 
 Executes a trade between src and dest token and send dest tokens to destAddress; includes the platform fee.
 
-
+***
 
 function **tradeWithHintAndFee**(address payable trader, IERC20 src, uint256 srcAmount, IERC20 dest, address payable destAddress, uint256 maxDestAmount, uint256 minConversionRate, address payable platformWallet, uint256 platformFeeBps, bytes hint) external payable returns (uint256 destAmount) | Parameter | Type | Description | | --------- |:-----:|:-----------:| | `trader` | address | trader's address | | `src` | IERC20 | source ERC20 token contract address | | `srcAmount` | uint256 | source ERC20 token amount in its token decimals | | `dest` | IERC20 | destination ERC20 token contract address | | `destAddress` | address | recipient address for destination ERC20 token | | `maxDestAmount` | uint256 | limit on the amount of destination tokens | | `minConversionRate` | uint256 | minimum conversion rate; trade is canceled if actual rate is lower | | `platformWallet` | address | address receiving the platform fee | | `platformFeeBps` | uint256 | platform fee in BPS to be used in this trade | | `hint` | bytes | hint in bytes for reserve routing | **Returns:**\ Amount of actual destination tokens in twei
 
@@ -55,7 +55,7 @@ function **tradeWithHintAndFee**(address payable trader, IERC20 src, uint256 src
 
 Returns a boolean determining if trading is enabled on the network.
 
-
+***
 
 function **enabled**() external view returns (bool)\ **Returns:**\ Returns `true` if the network is enabled for trading, otherwise `false`.
 

@@ -4,7 +4,7 @@ description: 15 Chains, 360+ DEXs, and we're just getting started...
 
 # Supported Exchanges And Networks
 
-## Chains and DEXs
+Chains and DEXs
 
 The KyberSwap product suite has been deployed across the majority of the most established DeFi chains. Whichever your preferred chain, the [KyberSwap Aggregator](../kyberswap-solutions/kyberswap-aggregator/) ensures the best swap rates by aggregating liquidity across the most established [DEXs](foundational-topics/decentralized-finance/decentralised-exchange-dex.md) deployed on that chain.
 
@@ -529,3 +529,29 @@ Decentralized Exchanges:
 * [Zebra V2](https://zebra.xyz/#/swap)
 
 </details>
+
+<details>
+
+<summary><img src="../.gitbook/assets/image-removebg-preview-3-modified.png" alt="" data-size="line"> Blast (ChainID: 81457)</summary>
+
+Decentralized Exchanges:
+
+* [BlastDex](https://blastdex.xyz)
+* [BlasterSwap](https://blasterswap.com)
+* [CyberBlast V3](https://cyberblast.io)
+* [DyorSwap](https://dyorswap.finance)
+* [HyperBlast](https://hyperblast.io)
+* [IZUMI Finance](https://izumi.finance/trade/swap)
+* [MonoSwap V2](https://www.monoswap.io)
+* [MonoSwap V3](https://www.monoswap.io)
+* [RingSwap](https://ring.exchange)
+* [SushiSwap V2](https://www.sushi.com)
+* [SushiSwap V3](https://www.sushi.com)
+* [SwapBlast](https://swapblast.finance/#/swap)
+* [Synapse](https://synapseprotocol.com)
+* [Thruster V2](https://app.thruster.finance)
+* [Thruster Degen](https://app.thruster.finance)
+* [Thruster V3](https://app.thruster.finance)
+
+</details>
+

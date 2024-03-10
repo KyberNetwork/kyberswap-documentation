@@ -15,7 +15,7 @@ For the most updated information, please refer to:
 
 _Source_: [IEpochUtils.sol](https://github.com/KyberNetwork/smart-contracts/blob/master/contracts/sol6/Dao/IEpochUtils.sol)
 
-
+***
 
 ### INDEX[​](https://docs.kyberswap.com/Legacy/api-abi/core-smart-contracts/api\_abi-iepochutils#index) <a href="#index" id="index"></a>
 
@@ -29,7 +29,7 @@ _Source_: [IEpochUtils.sol](https://github.com/KyberNetwork/smart-contracts/blob
 
 Returns the number of seconds defined in an epoch.
 
-
+***
 
 function **epochPeriodInSeconds**() external view returns (uint256) **Returns:**\ Number of seconds in an epoch
 
