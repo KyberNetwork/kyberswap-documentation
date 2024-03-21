@@ -34,7 +34,7 @@ Decentralized Exchanges:
 * [Bancor V3](https://bancor.network)
 * [Blueprint](https://www.blueprint.fi)
 * [CrowdSwap V2](https://app.crowdswap.org/exchange)
-* [Curve (3pool, aave, saave, hbtc, ren, sbtc, eurs, link, stable plain)](https://curve.fi/#/ethereum/swap)
+* [Curve (3pool, aave, saave, hbtc, ren, sbtc, eurs, link, stable plain, stable ng)](https://curve.fi/#/ethereum/swap)
 * [DefiSwap](https://defiswap.io/en/swap)
 * [DODO (v1 & v2)](https://app.dodoex.io/)
 * [Ethena sUSDe](https://www.ethena.fi)
@@ -387,7 +387,7 @@ Decentralized Exchanges:
 
 <details>
 
-<summary><img src="../.gitbook/assets/image-removebg-preview-3-modified.png" alt="" data-size="line"> Blast (ChainID: 81457)</summary>
+<summary><img src="../.gitbook/assets/image-removebg-preview-3-modified.png" alt="" data-size="line">   Blast (ChainID: 81457)</summary>
 
 Decentralized Exchanges:
 
@@ -425,6 +425,8 @@ Decentralized Exchanges:
 * [Beethoven X Stable Pools](https://beets.fi/)
 * [Beethoven X Weighted Pools](https://beets.fi/)
 * [Curve](https://curve.fi/)
+* [Equalizer V1](https://equalizer.exchange)
+* [Equalizer CL](https://equalizer.exchange)
 * [Fraxswap](https://app.frax.finance/swap/main)
 * [FVM](https://www.fvm.exchange/swap)
 * [JetSwap ](https://jetswap.finance/)
