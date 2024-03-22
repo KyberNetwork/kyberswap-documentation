@@ -71,6 +71,32 @@ Squid is integrated on KyberSwap through API front end functionality to provide 
 
 <details>
 
+<summary>PayMaster x HoldStation</summary>
+
+#### What is PayMaster?
+
+Paymasters are smart contracts that able to pay gas fees for users. A Paymaster conversely, can sponsor transactions for users, enabling users to pay transaction fees in ERC20 tokens. This innovative approach to account management significantly enhances user experience, security, and flexibility, paving the way for broader adoption of blockchain technology.
+
+The concept of paymasters, designed to enhance flexibility, user experience and transaction sponsorship in ERC-20 tokens, respectively. Despite some similarities with Ethereum's EIP 4337, key differences shape zkSync's unique account management approach.
+
+To interact with a paymaster, EOA users sign their EIP-712 transaction.
+
+Click [**here**](https://twitter.com/zksync/status/1595085984487837696?s=61\&t=dzZ-VSBCMZBnCBKauuc5Pg) for more information on PayMaster.
+
+#### PayMaster powered by HoldStation on [KyberSwap.com](http://kyberswap.com/)
+
+PayMaster is integrated on KyberSwap's Aggregator that will allow the users to access its account abstraction capabilities.
+
+This development empowers KyberSwap users by offering the flexibility to pay gas fees using various tokens such as $USDC, $USDT, (wBTC TBA) and $HOLD&#x20;
+
+![](<../.gitbook/assets/IMG\_6812 (1).jpeg>)
+
+One of the standout features of this launch is that users are no longer required to maintain ETH in their wallets. This enhancement simplifies the user experience and adds a new layer of convenience to the KyberSwap platform.
+
+</details>
+
+<details>
+
 <summary>Flashbots</summary>
 
 **What is Flashbots?**
