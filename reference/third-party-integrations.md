@@ -93,6 +93,8 @@ This development empowers KyberSwap users by offering the flexibility to pay gas
 
 One of the standout features of this launch is that users are no longer required to maintain ETH in their wallets. This enhancement simplifies the user experience and adds a new layer of convenience to the KyberSwap platform.
 
+_Disclaimer:_ _The PayMaster module & contracts integrated on KyberSwap was developed and is operated by HoldStation. KyberSwap doesn't hold any responsibility over the feature._
+
 </details>
 
 <details>
