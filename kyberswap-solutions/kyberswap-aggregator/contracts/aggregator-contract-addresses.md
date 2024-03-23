@@ -62,17 +62,25 @@ All KyberSwap Aggregator contracts have been deployed at the same address across
 
 <details>
 
-<summary>Cronos (ChainID: 25)</summary>
+<summary>zkSync Era (ChainID: 324)</summary>
 
-* **MetaAggregationRouterV2:** [`0x6131B5fae19EA4f9D964eAc0408E4408b66337b5`](https://cronoscan.com/address/0x6131B5fae19EA4f9D964eAc0408E4408b66337b5)
+* **MetaAggregationRouterV2:** [`0x3F95eF3f2eAca871858dbE20A93c01daF6C2e923`](https://explorer.zksync.io/address/0x3F95eF3f2eAca871858dbE20A93c01daF6C2e923)
 
 </details>
 
 <details>
 
-<summary>zkSync Era (ChainID: 324)</summary>
+<summary>Mantle (ChainID:5000)</summary>
 
-* **MetaAggregationRouterV2:** [`0x3F95eF3f2eAca871858dbE20A93c01daF6C2e923`](https://explorer.zksync.io/address/0x3F95eF3f2eAca871858dbE20A93c01daF6C2e923)
+* **MetaAggregationRouterV2:** [`0x6131B5fae19EA4f9D964eAc0408E4408b66337b5`](https://explorer.mantle.xyz/address/0x6131B5fae19EA4f9D964eAc0408E4408b66337b5)
+
+</details>
+
+<details>
+
+<summary>Blast (ChainID: 81457)</summary>
+
+* **MetaAggregationRouterV2:**[`0x6131B5fae19EA4f9D964eAc0408E4408b66337b5`](https://blastscan.io/address/0x6131B5fae19EA4f9D964eAc0408E4408b66337b5)
 
 </details>
 
@@ -86,25 +94,25 @@ All KyberSwap Aggregator contracts have been deployed at the same address across
 
 <details>
 
-<summary>Polygon zkEVM (ChainID: 1101)</summary>
-
-* **MetaAggregationRouterV2:** [`0x6131B5fae19EA4f9D964eAc0408E4408b66337b5`](https://zkevm.polygonscan.com/address/0x6131B5fae19EA4f9D964eAc0408E4408b66337b5)
-
-</details>
-
-<details>
-
-<summary>Aurora (ChainID: 1313161554)</summary>
-
-* **MetaAggregationRouterV2:** [`0x6131B5fae19EA4f9D964eAc0408E4408b66337b5`](https://explorer.mainnet.aurora.dev/address/0x6131B5fae19EA4f9D964eAc0408E4408b66337b5)
-
-</details>
-
-<details>
-
 <summary>Linea (ChainID: 59144)</summary>
 
 * **MetaAggregationRouterV2:** [`0x6131B5fae19EA4f9D964eAc0408E4408b66337b5`](https://explorer.linea.build/address/0x6131B5fae19EA4f9D964eAc0408E4408b66337b5)
+
+</details>
+
+<details>
+
+<summary>Scroll (ChainID: 534352)</summary>
+
+* **MetaAggregationRouterV2:** [`0x6131B5fae19EA4f9D964eAc0408E4408b66337b5`](https://scrollscan.com/address/0x6131B5fae19EA4f9D964eAc0408E4408b66337b5)
+
+</details>
+
+<details>
+
+<summary>Polygon zkEVM (ChainID: 1101)</summary>
+
+* **MetaAggregationRouterV2:** [`0x6131B5fae19EA4f9D964eAc0408E4408b66337b5`](https://zkevm.polygonscan.com/address/0x6131B5fae19EA4f9D964eAc0408E4408b66337b5)
 
 </details>
 
@@ -118,8 +126,8 @@ All KyberSwap Aggregator contracts have been deployed at the same address across
 
 <details>
 
-<summary>Scroll (ChainID: 534352)</summary>
+<summary>Cronos (ChainID: 25)</summary>
 
-* **MetaAggregationRouterV2:** [`0x6131B5fae19EA4f9D964eAc0408E4408b66337b5`](https://scrollscan.com/address/0x6131B5fae19EA4f9D964eAc0408E4408b66337b5)
+* **MetaAggregationRouterV2:** [`0x6131B5fae19EA4f9D964eAc0408E4408b66337b5`](https://cronoscan.com/address/0x6131B5fae19EA4f9D964eAc0408E4408b66337b5)
 
 </details>
