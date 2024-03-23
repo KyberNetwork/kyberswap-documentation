@@ -446,6 +446,25 @@ Decentralized Exchanges:
 
 <details>
 
+<summary><img src="../.gitbook/assets/mantle-mnt-logo-removebg-preview.png" alt="" data-size="line">  Mantle (ChainID: 5000)</summary>
+
+Decentralized Exchanges:
+
+* [Agni](https://agni.finance)
+* [ButterFi](https://butter.xyz)
+* [Cleopatra V1](https://cleo.exchange/swap)
+* [Cleopatra CL](https://cleo.exchange/swap)
+* [FusionX V2](https://fusionx.finance)
+* [FusionX V3](https://fusionx.finance)
+* [IZUMI Finance](https://izumi.finance/trade/swap)
+* [Merchant Moe](https://merchantmoe.com)
+* [MVM](https://www.velocimeter.xyz/?chain=mantle)
+* [Stratum Finance](https://stratumexchange.com)
+
+</details>
+
+<details>
+
 <summary><img src="../.gitbook/assets/Linea.png" alt="" data-size="line">   Linea (ChainID: 59144)</summary>
 
 Decentralized Exchanges:
@@ -558,4 +577,3 @@ Decentralized Exchanges:
 * [KyberSwap Elastic](https://kyberswap.com/)
 
 </details>
-
