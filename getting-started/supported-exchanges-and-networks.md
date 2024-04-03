@@ -90,6 +90,7 @@ Decentralized Exchanges:
 * [Fraxswap](https://app.frax.finance/swap/main)
 * [iZiSwap](https://izumi.finance/trade/swap)
 * [JetSwap ](https://jetswap.finance/)
+* [Liquidus Finance](https://liquidus.finance)
 * [Maverick](https://app.mav.xyz/)
 * [MDEX ](https://mdex.com/#/)
 * [Nerve](https://nerve.fi/)&#x20;
@@ -101,6 +102,7 @@ Decentralized Exchanges:
 * [PancakeSwap (legacy) ](https://pancakeswap.finance/)
 * PantherSwap (!)
 * [SmarDex](https://smardex.io/swap)
+* [SquadSwap](https://squadswap.com)
 * [SushiSwap](https://www.sushi.com/swap)
 * [SushiSwap V3](https://www.sushi.com/swap)
 * [Synapse](https://synapseprotocol.com/)
@@ -457,7 +459,8 @@ Decentralized Exchanges:
 * [FusionX V2](https://fusionx.finance)
 * [FusionX V3](https://fusionx.finance)
 * [IZUMI Finance](https://izumi.finance/trade/swap)
-* [Merchant Moe](https://merchantmoe.com)
+* [Merchant Moe V1](https://merchantmoe.com)
+* [Merchant Moe V2.2](https://merchantmoe.com)
 * [MVM](https://www.velocimeter.xyz/?chain=mantle)
 * [Stratum Finance](https://stratumexchange.com)
 
