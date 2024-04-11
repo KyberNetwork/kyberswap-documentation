@@ -339,7 +339,7 @@
 * [GitHub](https://github.com/KyberNetwork)
 * [KyberSwap Analytics](https://analytics.kyberswap.com/)
 * [KyberSwap Blog](https://blog.kyberswap.com/)
-* [Kyber Network Press Kit](https://kybernetwork.notion.site/Kyber-Network-Press-Kit-4ceaad9056d146aa83ef78dc49cfe72f)
+* [Kyber Network Press Kit](https://kyber.network/media-kit)
 
 ## Socials
 
