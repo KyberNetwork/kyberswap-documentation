@@ -355,3 +355,8 @@
 
 * [KyberSwap Help Center](https://support.kyberswap.com/hc/en-us)
 * [Complaints Handling Process](support/complaints-handling-process.md)
+
+***
+
+* [test 1](test-1.md)
+* [test 2](test-2.md)
