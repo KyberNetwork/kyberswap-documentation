@@ -157,3 +157,4 @@ redirects:
   classic/guides/basic-pool-creation: liquidity-solutions/kyberswap-classic/user-guides/classic-pool-creation.md
   getting-started/foundational-topics/decentralized-technologies/draft-dapps: getting-started/foundational-topics/decentralized-technologies/dapps.md
   test-1: test-2.md
+  test-3: test-2.md
