@@ -20,9 +20,9 @@ You can visit our [Introduction to KyberSwap](../../) page for more details.
 
 <summary>How is KyberSwap different from other DeFi platforms?</summary>
 
-KyberSwap is DeFi's first multi-chain [Dynamic Automated Market Maker](broken-reference) (DMM) that is also a liquidity aggregator that optimizes returns for liquidity providers. KyberSwap differs from other DeFi platforms in the following ways:
+KyberSwap is DeFi's first multi-chain [Dynamic Automated Market Maker](broken-reference/) (DMM) that is also a liquidity aggregator that optimizes returns for liquidity providers. KyberSwap differs from other DeFi platforms in the following ways:
 
-* [Amplified Classic AMM pools with dynamic fees](broken-reference)
+* [Amplified Classic AMM pools with dynamic fees](broken-reference/)
 * [Auto-compounding concentrated liquidity positions](../../reference/legacy/kyberswap-elastic/)
 * [Optimized trade routing across DEXs and aggregators on multiple chains](../../kyberswap-solutions/kyberswap-aggregator/)
 * [Surfacing valuable on/off-chain token data for data-driven trades](../../reference/legacy/kyberai/)
@@ -65,7 +65,7 @@ You can find links to their security audit reports [here](../../security/audits.
 
 <summary>What fees do I need to pay to use KyberSwap?</summary>
 
-#### Network Fees
+**Network Fees**
 
 KyberSwap is a fully onchain service. Everyone who creates transactions on the blockchain will need to pay network fees associated with their transactions. These fees vary depending on
 
@@ -73,7 +73,7 @@ KyberSwap is a fully onchain service. Everyone who creates transactions on the b
 2. Network congestion at the time
 3. Complexity of the smart contract transaction being executed
 
-#### Trading Fees
+**Trading Fees**
 
 KyberSwap does not charge fees to users using the protocol to swap tokens. However Liquidity Providers are allowed to set fees on their liquidity pools and traders who choose to use these pools to perform swaps will need to pay trading fees to the LP, along with any associated network fees.
 
@@ -101,11 +101,11 @@ KyberSwap is a decentralized platform and does not hold our users’ funds in cu
 
 <summary>How to contact us for business outreach</summary>
 
-#### Partnerships
+**Partnerships**
 
 We are always open to build relationships with others in the DeFi space. If you represent a project and would like to get in touch with us about a potential partnership, please send us a proposal via [this google form](https://docs.google.com/forms/d/e/1FAIpQLScPRN6NSBQ2LsPTyseVlS92PX9i-Wq2O13qhHV-Z\_Ub3BgzqA/viewform).
 
-#### Marketing Proposal
+**Marketing Proposal**
 
 If you have a marketing opportunity you would like to share with us, please post the details in the [#marketing-proposal channel on our Discord server](https://discord.com/channels/608934314960224276/1031237120943194182). A member of our marketing team will be in touch if we deem the proposal a fit.
 
@@ -141,15 +141,11 @@ In this guide, we will show you how to specify an alternate RPC endpoint for **M
 
 **Step 1**: Open your Metamask wallet and click on “My accounts” (the circular button at the top right of the window) and then click on “Settings”.
 
-<img src="https://support.kyberswap.com/hc/article_attachments/14435445235865" alt="001a_MyAccountsCircularButton.png" data-size="original">
-
-<img src="https://support.kyberswap.com/hc/article_attachments/14435414408857" alt="001b_Settings.png" data-size="original">
+<img src="https://support.kyberswap.com/hc/article_attachments/14435445235865" alt="001a_MyAccountsCircularButton.png" data-size="original"> <img src="https://support.kyberswap.com/hc/article_attachments/14435414408857" alt="001b_Settings.png" data-size="original">
 
 **Step 2**: Go to Networks and click the “Add Network” button.
 
-<img src="https://support.kyberswap.com/hc/article_attachments/14435414474905" alt="002a_Networks.png" data-size="original">
-
-<img src="https://support.kyberswap.com/hc/article_attachments/14435445381913" alt="002c_AddNetworkButton.png" data-size="original">
+<img src="https://support.kyberswap.com/hc/article_attachments/14435414474905" alt="002a_Networks.png" data-size="original"> <img src="https://support.kyberswap.com/hc/article_attachments/14435445381913" alt="002c_AddNetworkButton.png" data-size="original">
 
 This will open up a browser tab with more Metamask Settings.
 
@@ -185,7 +181,7 @@ There are a couple of things you can try to resolve this.
 
 1. Ensure that the Metamask extension is installed on your browser.
 2. Ensure that your Metamask wallet is unlocked with your password. Your wallet extension may also be waiting for confirmation from you to connect to KyberSwap.
-3. If you have either or both **Trust Wallet** and/or **Coin98** wallet extensions installed, go into their extension settings and disable the options making them the default wallet. These wallet extensions have been known to set themselves as the default wallet, overriding other wallets like Metamask.&#x20;
+3. If you have either or both **Trust Wallet** and/or **Coin98** wallet extensions installed, go into their extension settings and disable the options making them the default wallet. These wallet extensions have been known to set themselves as the default wallet, overriding other wallets like Metamask.
 
 If these steps do not solve the problem, please take screenshots of what you’re seeing and contact [Support](https://support.kyberswap.com/hc/en-us/requests/new).
 

@@ -1,7 +1,7 @@
 # KyberSwap Classic
 
 {% hint style="warning" %}
-## <mark style="color:orange;">**KyberSwap Classic Discontinuation**</mark>
+### <mark style="color:orange;">**KyberSwap Classic Discontinuation**</mark>
 
 On 26 March 2024, the Classic protocol was discontinued. More details can be found here
 {% endhint %}
@@ -18,11 +18,11 @@ In order to maximize yields and encourage deeper market liquidity, KyberSwap Cla
 
 <summary>Liquidity Providers</summary>
 
-* [Learn how yields are amplified](broken-reference)
-* [Discover how dynamic fees offset impermanent loss](broken-reference)
-* [Create your own Classic pool](broken-reference)
-* [Contribute liquidity to an existing Classic pool](broken-reference)
-* [Receive additional rewards by yield farming on Classic](broken-reference)
+* [Learn how yields are amplified](broken-reference/)
+* [Discover how dynamic fees offset impermanent loss](broken-reference/)
+* [Create your own Classic pool](broken-reference/)
+* [Contribute liquidity to an existing Classic pool](broken-reference/)
+* [Receive additional rewards by yield farming on Classic](broken-reference/)
 
 </details>
 
@@ -30,8 +30,8 @@ In order to maximize yields and encourage deeper market liquidity, KyberSwap Cla
 
 <summary>Traders</summary>
 
-* [Learn how to take advantage of lower fees](broken-reference)
-* [Get superior rates via the integrated KyberSwap Aggregator](broken-reference)
+* [Learn how to take advantage of lower fees](broken-reference/)
+* [Get superior rates via the integrated KyberSwap Aggregator](broken-reference/)
 
 </details>
 
@@ -39,10 +39,10 @@ In order to maximize yields and encourage deeper market liquidity, KyberSwap Cla
 
 <summary>Developers</summary>
 
-* [Explore key Classic concepts](broken-reference)
-* [Execute a swap against Classic pools](broken-reference)
-* [Provide liquidity to Classic pools](broken-reference)
-* [Implement a flash swap on Classic](broken-reference)
-* [View Classic contract code and addresses](broken-reference)
+* [Explore key Classic concepts](broken-reference/)
+* [Execute a swap against Classic pools](broken-reference/)
+* [Provide liquidity to Classic pools](broken-reference/)
+* [Implement a flash swap on Classic](broken-reference/)
+* [View Classic contract code and addresses](broken-reference/)
 
 </details>
