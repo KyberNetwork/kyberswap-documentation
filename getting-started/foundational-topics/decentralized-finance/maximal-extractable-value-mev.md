@@ -61,7 +61,7 @@ A bot monitors the queue for liquidator transactions. Upon identifying a target 
 
 Of note, the strategies above could be used by both miners or MEV-parties but in either case, the miner still stands to benefit the most from such strategies. This is especially so if the miner is also the MEV-party as block producers do not need to include a transaction fee to incentivize transactions to be included in a block.
 
-The MEV-party stands to pocket the additional slippage in trades or front-running key token events. The miner benefits from the increased gas prices due to MEV bots outbidding each other. All the above comes at the expense of a degraded user experience as trades are always settled at the highest price, fees are consistently high, and any profit opportunities identified are effectively snatched away.&#x20;
+The MEV-party stands to pocket the additional slippage in trades or front-running key token events. The miner benefits from the increased gas prices due to MEV bots outbidding each other. All the above comes at the expense of a degraded user experience as trades are always settled at the highest price, fees are consistently high, and any profit opportunities identified are effectively snatched away.
 
 ## Protocol +/- ? <a href="#c289" id="c289"></a>
 
@@ -71,8 +71,7 @@ As a start, if the degraded user experience outweighs the benefits of using the 
 
 A more existential question is what happens when the MEV to block rewards ratio starts tilting in favor of MEV. In this scenario, it is more profitable for miners (who themselves are assumed to have a pure profit incentive) to start using MEV strategies instead of securing the network. Of course the MEV strategies wouldn’t exist without the blocks being created. However, taken as a whole, the network will not be able to provide reasonable guarantees that a transaction would be included based purely on the gas fee.
 
-Taking this a step further, miners could even rewrite blockchain history in what is called a [time-bandit attack](https://www.mev.wiki/attack-examples/time-bandit-attack). By re-mining past blocks, all MEV extracted in the previous blocks could be used to subsidise the attack. This makes rational sense the higher the MEV to block reward ratio.\
-
+Taking this a step further, miners could even rewrite blockchain history in what is called a [time-bandit attack](https://www.mev.wiki/attack-examples/time-bandit-attack). By re-mining past blocks, all MEV extracted in the previous blocks could be used to subsidise the attack. This makes rational sense the higher the MEV to block reward ratio.\\
 
 * The explosion of DeFi meant significantly more value being transacted on-chain. Moreover, the market cap of ERC20 tokens has exploded relative to ETH.
 * During the bull run, transaction fees managed to outpace block rewards meaning that more value is being extracted through unconventional means.
@@ -84,17 +83,17 @@ The second point above is what is concerning as it is hard to argue that such un
 
 [KyberSwap Elastic](../../../reference/legacy/kyberswap-elastic/) comes with an [anti-sniping feature](../../../reference/legacy/kyberswap-elastic/concepts/anti-sniping-mechanism.md) to natively protect LPs from any potential front-runners. This lock based vested reward system eliminates any front-running opportunities brought about from liquidity additions or removals. Refer to [Anti-Sniping Mechanism](../../../reference/legacy/kyberswap-elastic/concepts/anti-sniping-mechanism.md) for more information on how Elastic keeps its LPs safe.
 
-For traders, the KyberSwap Aggregator allows you to [customize the maximum slippage](broken-reference) for each trade. This minimizes any front-running opportunities linked to your trade as your trade will only be executed if the final price is within the interval set.
+For traders, the KyberSwap Aggregator allows you to [customize the maximum slippage](broken-reference/) for each trade. This minimizes any front-running opportunities linked to your trade as your trade will only be executed if the final price is within the interval set.
 
 {% tabs %}
 {% tab title="Liquidity Providers" %}
-* [Elastic Pool Creation](broken-reference)
-* [Add Liquidity To An Existing Classic Pool](broken-reference)
-* [Increasing Liquidity On Elastic](broken-reference)
+* [Elastic Pool Creation](../../../reference/legacy/kyberswap-elastic/#liquidity-providers)
+* [Add Liquidity To An Existing Classic Pool](../../../reference/legacy/kyberswap-elastic/#liquidity-providers)
+* [Increasing Liquidity On Elastic](../../../reference/legacy/kyberswap-elastic/#liquidity-providers)
 {% endtab %}
 
 {% tab title="Traders" %}
-* [Customize trade parameters](broken-reference)
-* [Instantly Swap At Superior Rates](broken-reference)
+* [Customize trade parameters](broken-reference/)
+* [Instantly Swap At Superior Rates](broken-reference/)
 {% endtab %}
 {% endtabs %}

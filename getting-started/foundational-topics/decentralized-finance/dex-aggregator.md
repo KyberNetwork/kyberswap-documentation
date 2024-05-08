@@ -9,7 +9,7 @@ description: DeFi's Liquidity Backbone
 While DEXs managed to achieve the non-trivial goal of facilitating secured and pseudonymous peer-to-peer transactions, a more socioeconomic challenge arose due to the open and permissionless nature of DeFi. Given that public smart contract code could easily be copied and tweaked, liquidity for the same asset pairs were fractured across various DEXes for a myriad of reasons:
 
 * **Transaction costs**: The network fees (gas) that was required to confirm a transaction could make smaller volume trades unprofitable. Users who prioritize lower fees might migrate their trades to DEXs on a chain with lower transaction fees.
-* **Yield optimisation**: Various AMM DEXs implemented customised pricing curves in an effort to maximise a liquidity provider’s risk-adjusted returns. Liquidity providers have different risk profiles resulting in each provider having a preferred DEX implementation. This is less significant for [order book DEXs](broken-reference) as users define their own risk levels through manual market making.
+* **Yield optimisation**: Various AMM DEXs implemented customised pricing curves in an effort to maximise a liquidity provider’s risk-adjusted returns. Liquidity providers have different risk profiles resulting in each provider having a preferred DEX implementation. This is less significant for order book DEXs as users define their own risk levels through manual market making.
 * **Information asymmetry**: Given DeFi ecosystem maturity, information on the best rates are not easily available resulting in more partially informed decisions.
 * **UX familiarity**: Doing your own research (DYOR) takes a significant amount of time and hence users will tend to gravitate towards dapps which they are more familiar with, even if the rates offered are objectively sub-par.
 * **Ecosystem considerations**: DEXs forms a part of a larger DeFi ecosystem hence there are other non-DEX specific considerations such as preferred tokens, integration with other DeFi primitives, etc.
@@ -50,7 +50,7 @@ For developers, KyberSwap Aggregator exposes a set of [swap APIs ](../../../kybe
 
 {% tabs %}
 {% tab title="Traders" %}
-* [Instantly Swap At Superior Rates](broken-reference)
+* [Instantly Swap At Superior Rates](broken-reference/)
 {% endtab %}
 
 {% tab title="Developers" %}
