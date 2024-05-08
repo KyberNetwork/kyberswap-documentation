@@ -156,5 +156,5 @@ redirects:
   kyberswap-solutions/kyberswap-widget/widget-iframe: kyberswap-solutions/kyberswap-widget/iframe-alternative.md
   classic/guides/basic-pool-creation: liquidity-solutions/kyberswap-classic/user-guides/classic-pool-creation.md
   getting-started/foundational-topics/decentralized-technologies/draft-dapps: getting-started/foundational-topics/decentralized-technologies/dapps.md
-  test-1: test-2.md
-  test-3: test-2.md
+  getting-started/whitepapers: reference/legacy/whitepapers.md
+  liquidity-solutions/kyberswap-classic: reference/legacy/kyberswap-classic/README.md
