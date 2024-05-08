@@ -125,8 +125,8 @@ KyberSwap Interface allows users to customize trade parameters which enables gre
 
 <figure><img src="../../../.gitbook/assets/UserGuide_CrossChain_SwapAmount.png" alt=""><figcaption><p>Specify cross-chain swap amount</p></figcaption></figure>
 
-{% content-ref url="../../../liquidity-solutions/classic-vs-elastic/" %}
-[classic-vs-elastic](../../../liquidity-solutions/classic-vs-elastic/)
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
 {% endcontent-ref %}
 
 {% hint style="warning" %}

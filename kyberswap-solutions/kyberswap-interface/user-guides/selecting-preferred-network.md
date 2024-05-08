@@ -10,23 +10,6 @@ KyberSwap supports the trading of more than 20,000 tokens across the majority of
 
 <details>
 
-<summary>Liquidity Provider Flow</summary>
-
-Still deciding on which solution suits you best?&#x20;
-
-* **Overview**: [Earn Yield By Contributing Liquidity](earn-yield-by-contributing-liquidity.md)
-* **Detailed comparison**:  [Classic vs Elastic](../../../liquidity-solutions/classic-vs-elastic/)&#x20;
-
-#### Next steps
-
-1. [Connect Your Wallet](connect-your-wallet.md)&#x20;
-2. **Switching Networks <-**
-3. [Earn Yield By Contributing Liquidity](earn-yield-by-contributing-liquidity.md)
-
-</details>
-
-<details>
-
 <summary>Trader Flow</summary>
 
 1. [Connect Your Wallet ](connect-your-wallet.md)

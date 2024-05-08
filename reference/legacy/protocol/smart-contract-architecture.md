@@ -5,8 +5,8 @@ You are referring to the **`Legacy`** version of KyberSwap docs.
 
 For the most updated information, please refer to:
 
-* [**`Classic`**](../../../liquidity-solutions/kyberswap-classic/)
-* [**`Elastic`**](../../../liquidity-solutions/kyberswap-elastic/)
+* [**`Classic`**](broken-reference)
+* [**`Elastic`**](../kyberswap-elastic/)
 * [**`Limit Order`**](../../../kyberswap-solutions/limit-order/)
 * [**`Aggregator`**](../../../kyberswap-solutions/kyberswap-aggregator/)
 {% endhint %}
@@ -79,14 +79,14 @@ Starting from the client and ending in the Ethereum blockchain, we can visualize
 
 Every contract in the Kyber protocol has three permission groups:
 
-#### 1. Admin[​](https://docs.kyberswap.com/Legacy/smart-contract-architecture#1-admin) <a href="#1-admin" id="1-admin"></a>
+#### 1. Admin[​](https://docs.kyberswap.com/Legacy/smart-contract-architecture#1-admin) <a href="#id-1-admin" id="id-1-admin"></a>
 
 The admin account is unique (usually cold wallet) and handles infrequent, manual operations like listing new tokens in the exchange. All sensitive operations (e.g. fund related) are limited to the admin address.
 
-#### 2. Operators[​](https://docs.kyberswap.com/Legacy/smart-contract-architecture#2-operators) <a href="#2-operators" id="2-operators"></a>
+#### 2. Operators[​](https://docs.kyberswap.com/Legacy/smart-contract-architecture#2-operators) <a href="#id-2-operators" id="id-2-operators"></a>
 
 The operator account is a hot wallet and is used for frequent updates like setting reserve rates and withdrawing funds from the reserve to addresses that have been whitelisted by the admin address.
 
-#### 3. Alerters[​](https://docs.kyberswap.com/Legacy/smart-contract-architecture#3-alerters) <a href="#3-alerters" id="3-alerters"></a>
+#### 3. Alerters[​](https://docs.kyberswap.com/Legacy/smart-contract-architecture#3-alerters) <a href="#id-3-alerters" id="id-3-alerters"></a>
 
 The alerter account is also a hot wallet and is used halt the execution due to inconsistencies in the system (e.g., strange conversion rates). In such cases, the reserve operation is suspended and can be resumed only by the admin address.

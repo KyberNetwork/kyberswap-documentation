@@ -18,7 +18,7 @@ At KyberSwap, we are building the next generation of liquidity solutions that wi
 
 {% tabs %}
 {% tab title="Liquidity Providers" %}
-* [Earn Yield By Contributing Liquidity](../../../kyberswap-solutions/kyberswap-interface/user-guides/earn-yield-by-contributing-liquidity.md)
+* [Earn Yield By Contributing Liquidity](broken-reference)
 {% endtab %}
 
 {% tab title="Traders" %}

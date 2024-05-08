@@ -6,7 +6,7 @@ description: 15 Chains, 390+ DEXs, and we're just getting started...
 
 Chains and DEXs
 
-The KyberSwap product suite has been deployed across the majority of the most established DeFi chains. Whichever your preferred chain, the [KyberSwap Aggregator](../kyberswap-solutions/kyberswap-aggregator/) ensures the best swap rates by aggregating liquidity across the most established [DEXs](foundational-topics/decentralized-finance/decentralised-exchange-dex.md) deployed on that chain.
+The KyberSwap product suite has been deployed across the majority of the most established DeFi chains. Whichever your preferred chain, the [KyberSwap Aggregator](../kyberswap-solutions/kyberswap-aggregator/) ensures the best swap rates by aggregating liquidity across the most established [DEXs](broken-reference) deployed on that chain.
 
 {% hint style="info" %}
 #### DEX filtering

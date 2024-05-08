@@ -29,14 +29,14 @@ Please refer to the respective wallet provider resources on how to setup your wa
 
 Still deciding on which solution suits you best?&#x20;
 
-* **Overview**: [Earn Yield By Contributing Liquidity](earn-yield-by-contributing-liquidity.md)
-* **Detailed comparison**:  [Classic vs Elastic](../../../liquidity-solutions/classic-vs-elastic/)&#x20;
+* **Overview**: [Earn Yield By Contributing Liquidity](broken-reference)
+* **Detailed comparison**:  [Classic vs Elastic](broken-reference)&#x20;
 
 #### Next steps
 
 1. **Connect Your Wallet <-**
 2. [Switching Networks](selecting-preferred-network.md)
-3. [Earn Yield By Contributing Liquidity](earn-yield-by-contributing-liquidity.md)
+3. [Earn Yield By Contributing Liquidity](broken-reference)
 
 </details>
 

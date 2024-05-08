@@ -24,7 +24,7 @@ Please refer to the [Slippage](slippage.md) page for more details.
 
 ## DEX price impact
 
-Due to the varying [DEX ](decentralised-exchange-dex.md)order matching mechanisms, price impact tends to be more pronounced for users on [AMM DEXs](automated-market-maker.md) as opposed to [order book DEXs](order-book.md).
+Due to the varying DEX order matching mechanisms, price impact tends to be more pronounced for users on AMM DEXs as opposed to order book DEXs.
 
 ### AMM price impact
 
@@ -48,14 +48,14 @@ Lastly,[ KyberSwap Limit Orders](../../../kyberswap-solutions/limit-order/) will
 
 {% tabs %}
 {% tab title="Traders" %}
-* [Customizing Trade Parameters](broken-reference)
-* [Instantly Swap At Superior Rates](broken-reference)
+* Customizing Trade Parameters
+* Instantly Swap At Superior Rates
 * [Swap At Your Preferred Rates](../../../kyberswap-solutions/kyberswap-interface/user-guides/trade-at-your-preferred-rates.md)
 {% endtab %}
 
 {% tab title="Developers" %}
 * [Execute A Swap With The Aggregator API](../../../kyberswap-solutions/kyberswap-aggregator/developer-guides/execute-a-swap-with-the-aggregator-api.md)
-* [Place A Limit Order](broken-reference)
-* [Fill A Limit Order](broken-reference)
+* Place A Limit Order
+* Fill A Limit Order
 {% endtab %}
 {% endtabs %}

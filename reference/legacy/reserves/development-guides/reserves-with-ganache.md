@@ -5,8 +5,8 @@ You are referring to the **`Legacy`** version of KyberSwap docs.
 
 For the most updated information, please refer to:
 
-* [**`Classic`**](../../../../liquidity-solutions/kyberswap-classic/)
-* [**`Elastic`**](../../../../liquidity-solutions/kyberswap-elastic/)
+* [**`Classic`**](broken-reference)
+* [**`Elastic`**](../../kyberswap-elastic/)
 * [**`Limit Order`**](../../../../kyberswap-solutions/limit-order/)
 * [**`Aggregator`**](../../../../kyberswap-solutions/kyberswap-aggregator/)
 {% endhint %}
@@ -169,7 +169,7 @@ workshop\
 
 ### Interacting with the Kyber contracts locally[​](https://docs.kyberswap.com/Legacy/reserves/development-guides/reserves-ganache#interacting-with-the-kyber-contracts-locally) <a href="#interacting-with-the-kyber-contracts-locally" id="interacting-with-the-kyber-contracts-locally"></a>
 
-#### 1A. Run Ganache with local snapshot[​](https://docs.kyberswap.com/Legacy/reserves/development-guides/reserves-ganache#1a-run-ganache-with-local-snapshot) <a href="#1a-run-ganache-with-local-snapshot" id="1a-run-ganache-with-local-snapshot"></a>
+#### 1A. Run Ganache with local snapshot[​](https://docs.kyberswap.com/Legacy/reserves/development-guides/reserves-ganache#1a-run-ganache-with-local-snapshot) <a href="#id-1a-run-ganache-with-local-snapshot" id="id-1a-run-ganache-with-local-snapshot"></a>
 
 A Ganache snapshot has already been pre-made with the Kyber contracts deployed. You can immediately interact with the contracts without having to do migrations. The snapshot is stored in `db` folder.
 
@@ -184,7 +184,7 @@ cd <PATH>/workshop
 ganache-cli --db db --accounts 10 --defaultBalanceEther 1000 --mnemonic 'gesture rather obey video awake genuine patient base soon parrot upset lounge' --networkId 5777 --debug
 ```
 
-#### 1B. Run Ganache and deploy the Kyber contracts from scratch[​](https://docs.kyberswap.com/Legacy/reserves/development-guides/reserves-ganache#1b-run-ganache-and-deploy-the-kyber-contracts-from-scratch) <a href="#1b-run-ganache-and-deploy-the-kyber-contracts-from-scratch" id="1b-run-ganache-and-deploy-the-kyber-contracts-from-scratch"></a>
+#### 1B. Run Ganache and deploy the Kyber contracts from scratch[​](https://docs.kyberswap.com/Legacy/reserves/development-guides/reserves-ganache#1b-run-ganache-and-deploy-the-kyber-contracts-from-scratch) <a href="#id-1b-run-ganache-and-deploy-the-kyber-contracts-from-scratch" id="id-1b-run-ganache-and-deploy-the-kyber-contracts-from-scratch"></a>
 
 If you wish to deploy the Kyber contracts yourself, you can run the following commands:
 
@@ -200,7 +200,7 @@ In a new terminal session, connect to the ganache network, and run the truffle m
 truffle migrate --network development
 ```
 
-#### 2. Running the example scripts[​](https://docs.kyberswap.com/Legacy/reserves/development-guides/reserves-ganache#2-running-the-example-scripts) <a href="#2-running-the-example-scripts" id="2-running-the-example-scripts"></a>
+#### 2. Running the example scripts[​](https://docs.kyberswap.com/Legacy/reserves/development-guides/reserves-ganache#2-running-the-example-scripts) <a href="#id-2-running-the-example-scripts" id="id-2-running-the-example-scripts"></a>
 
 You can directly interact with the Kyber contracts on the Ganache network. We have provided some example scripts in the `example` directory.
 

@@ -20,12 +20,12 @@ You can visit our [Introduction to KyberSwap](../../) page for more details.
 
 <summary>How is KyberSwap different from other DeFi platforms?</summary>
 
-KyberSwap is DeFi's first multi-chain [Dynamic Automated Market Maker](../whitepapers.md) (DMM) that is also a liquidity aggregator that optimizes returns for liquidity providers. KyberSwap differs from other DeFi platforms in the following ways:
+KyberSwap is DeFi's first multi-chain [Dynamic Automated Market Maker](broken-reference) (DMM) that is also a liquidity aggregator that optimizes returns for liquidity providers. KyberSwap differs from other DeFi platforms in the following ways:
 
-* [Amplified Classic AMM pools with dynamic fees](../../liquidity-solutions/kyberswap-classic/)
-* [Auto-compounding concentrated liquidity positions](../../liquidity-solutions/kyberswap-elastic/)
+* [Amplified Classic AMM pools with dynamic fees](broken-reference)
+* [Auto-compounding concentrated liquidity positions](../../reference/legacy/kyberswap-elastic/)
 * [Optimized trade routing across DEXs and aggregators on multiple chains](../../kyberswap-solutions/kyberswap-aggregator/)
-* [Surfacing valuable on/off-chain token data for data-driven trades](../../kyberswap-solutions/kyberai/)
+* [Surfacing valuable on/off-chain token data for data-driven trades](../../reference/legacy/kyberai/)
 
 For the full KyberSwap Solution suite, please refer to [Our Solutions](../../#our-solutions).
 
@@ -202,16 +202,6 @@ If you believe your drop to be missing or late, please contact Learnoverse ([hel
 </details>
 
 ## Others
-
-<details>
-
-<summary>What is impermanent loss?</summary>
-
-Impermanent loss is a temporary loss of funds brought about by the differences in token ratios when entering and exiting an AMM liquidity pool. In short, it is the difference in value between holding both assets versus providing those assets as liquidity.
-
-Please refer to [Impermanent Loss ](../foundational-topics/decentralized-finance/impermanent-loss.md)for an overview of impermanent loss and how it affects your liquidity positions.
-
-</details>
 
 <details>
 

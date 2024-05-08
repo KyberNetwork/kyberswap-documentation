@@ -2,16 +2,16 @@
 description: DeFi's Liquidity Backbone
 ---
 
-# DEX Aggregator
+# DEX/DeFi Aggregator
 
 ## Fractured liquidity
 
-While [DEXs ](decentralised-exchange-dex.md)managed to achieve the non-trivial goal of facilitating secured and pseudonymous peer-to-peer transactions, a more socioeconomic challenge arose due to the open and permissionless nature of DeFi. Given that public smart contract code could easily be copied and tweaked, liquidity for the same asset pairs were fractured across various DEXes for a myriad of reasons:
+While DEXs managed to achieve the non-trivial goal of facilitating secured and pseudonymous peer-to-peer transactions, a more socioeconomic challenge arose due to the open and permissionless nature of DeFi. Given that public smart contract code could easily be copied and tweaked, liquidity for the same asset pairs were fractured across various DEXes for a myriad of reasons:
 
 * **Transaction costs**: The network fees (gas) that was required to confirm a transaction could make smaller volume trades unprofitable. Users who prioritize lower fees might migrate their trades to DEXs on a chain with lower transaction fees.
-* **Yield optimisation**: Various [AMM DEXs](automated-market-maker.md) implemented customised pricing curves in an effort to maximise a liquidity provider’s risk-adjusted returns. Liquidity providers have different risk profiles resulting in each provider having a preferred DEX implementation. This is less significant for [order book DEXs](order-book.md) as users define their own risk levels through manual market making.
+* **Yield optimisation**: Various AMM DEXs implemented customised pricing curves in an effort to maximise a liquidity provider’s risk-adjusted returns. Liquidity providers have different risk profiles resulting in each provider having a preferred DEX implementation. This is less significant for [order book DEXs](broken-reference) as users define their own risk levels through manual market making.
 * **Information asymmetry**: Given DeFi ecosystem maturity, information on the best rates are not easily available resulting in more partially informed decisions.
-* **UX familiarity**: Doing your own research (DYOR) takes a significant amount of time and hence users will tend to gravitate towards [dapps](broken-reference) which they are more familiar with, even if the rates offered are objectively sub-par.
+* **UX familiarity**: Doing your own research (DYOR) takes a significant amount of time and hence users will tend to gravitate towards dapps which they are more familiar with, even if the rates offered are objectively sub-par.
 * **Ecosystem considerations**: DEXs forms a part of a larger DeFi ecosystem hence there are other non-DEX specific considerations such as preferred tokens, integration with other DeFi primitives, etc.
 
 Due to the above reasons, liquidity tends to be fractured across individual DEXs resulting in less optimal trades and yields. For order book DEXs, the splitting of trade orders results in shallower book depth and therefore less likelihood that a pending order will be matched. For AMM DEXs, the splitting of liquidity meant that the relative size of a trade against a liquidity pool was larger, resulting in greater slippage. Consequently, there exists a strong incentive for DEXs to engage in anti-competitive behaviour in the short term which goes against the goal of a decentralised and open DeFi ecosystem.

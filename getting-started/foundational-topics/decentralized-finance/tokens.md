@@ -58,12 +58,7 @@ KyberSwap supports the trading of any token that implements the ERC20 standard. 
 {% tabs %}
 {% tab title="Traders" %}
 * [Add Your Favourite Tokens](../../../kyberswap-solutions/kyberswap-interface/user-guides/add-your-favourite-tokens.md)
-* [Instantly Swap At Superior Rates](broken-reference)
+* Instantly Swap At Superior Rates
 * [Swap At Your Preferred Rates](../../../kyberswap-solutions/kyberswap-interface/user-guides/trade-at-your-preferred-rates.md)
-{% endtab %}
-
-{% tab title="Liquidity Providers" %}
-* [Add Your Favourite Tokens](../../../kyberswap-solutions/kyberswap-interface/user-guides/add-your-favourite-tokens.md)
-* [Earn Yield By Contributing Liquidity](../../../kyberswap-solutions/kyberswap-interface/user-guides/earn-yield-by-contributing-liquidity.md)
 {% endtab %}
 {% endtabs %}

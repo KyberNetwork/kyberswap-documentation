@@ -49,7 +49,7 @@ With price alerts, users are able to monitor price actions and adjust their trad
 
 <figure><img src="../../../.gitbook/assets/image (4).png" alt=""><figcaption><p>Liquidity position notifications</p></figcaption></figure>
 
-[Create an Elastic pool position](../../../liquidity-solutions/kyberswap-elastic/user-guides/elastic-pool-creation.md) and receive notifications whenever your position goes in or out of range. Maximize your yields by timing your liquidity [removals](../../../liquidity-solutions/kyberswap-elastic/user-guides/removing-liquidity-on-elastic.md) and [additions](../../../liquidity-solutions/kyberswap-elastic/user-guides/add-liquidity-to-an-existing-elastic-pool.md) according to the markets.
+[Create an Elastic pool position](broken-reference) and receive notifications whenever your position goes in or out of range. Maximize your yields by timing your liquidity [removals](broken-reference) and [additions](broken-reference) according to the markets.
 
 ### Limit Order Alerts
 
@@ -61,4 +61,4 @@ With price alerts, users are able to monitor price actions and adjust their trad
 
 <figure><img src="../../../.gitbook/assets/Notifications_KyberAIWatchlist.png" alt=""><figcaption><p>KyberAI watchlist</p></figcaption></figure>
 
-[Add your favourite tokens to your KyberAI watchlist](../../kyberai/user-guides/add-tokens-to-watchlist.md) and get notified of their latest [KyberScores](../../kyberai/kyberscore.md) and prices.
+[Add your favourite tokens to your KyberAI watchlist](broken-reference) and get notified of their latest [KyberScores](../../../reference/legacy/kyberai/kyberscore.md) and prices.

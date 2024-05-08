@@ -2,7 +2,7 @@
 
 ## Problem: Gas Fees And Capital Efficiency
 
-As a Liquidity Provider, one of the major pain points when contributing liquidity to [AMM pools](automated-market-maker.md) is the  need to source the exact ratio of tokens at the point of adding liquidity. For example, if you are adding liquidity to a USDC-WETH pool but only had 1,000USDC in your wallet, you would have go through multiple steps:
+As a Liquidity Provider, one of the major pain points when contributing liquidity to [AMM pools](broken-reference) is the  need to source the exact ratio of tokens at the point of adding liquidity. For example, if you are adding liquidity to a USDC-WETH pool but only had 1,000USDC in your wallet, you would have go through multiple steps:
 
 * Check the ratio of tokens required for adding liquidity. This ratio will be dependent on the current pool price as well as the position's selected range.
 * Swap USDC -> WETH
@@ -22,7 +22,7 @@ Following on the example above, there are 2 directions for zaps:
 In both the above cases, LPs are less likely to face any slippage risks as the whole process is completed within a single transaction. Consequently, there is also no longer a need to conduct additional transactions which incur both more gas fees and manual management.
 
 {% hint style="success" %}
-**Maximizing Returns With Elastic Zap**
+**Maximizing Returns With Kyber Zap**
 
-KyberSwap has iterated upon the zap concept, enabling LPs to zap into Elastic pools! Please refer to [Elastic Zap](../../../liquidity-solutions/kyberswap-elastic/concepts/elastic-zap.md) for more information on how this innovation could maximize your LP returns.
+KyberSwap has iterated upon the zap concept, enabling LPs to zap into pools! Please refer to Zap for more information on how this innovation could maximize your LP returns.
 {% endhint %}

@@ -20,13 +20,13 @@ Please refer to the [Price Impact](price-impact.md) page for more details.
 
 ## DEX slippage
 
-Specific to DeFi, the majority of trades take place via [DEXs](decentralised-exchange-dex.md) hence slippage presents itself differently depending on the order matching mechanism.&#x20;
+Specific to DeFi, the majority of trades take place via DEXs hence slippage presents itself differently depending on the order matching mechanism.&#x20;
 
 Note that for public blockchains, transactions are always batched into their respective blocks to be appended to the chain. This means that the slippage window increases according to how your transaction is prioritized by the network. Moreover, even within the same block, it is possible that trades for the same token pair are ordered before yours. As such, DEXs have implemented various safety mechanisms in an effort to minimize any unexpected trading outcomes.
 
 ### AMM slippage
 
-For [AMM DEXs](automated-market-maker.md), trades occur along a smooth price curve hence every trade against the pool will shift the market price according to the resulting token ratio changes in the pool. In the event that another transaction against the target pool is prioritized over yours, the actual price of the pool would have changed between the confirmation of your order and the final execution.&#x20;
+For AMM DEXs, trades occur along a smooth price curve hence every trade against the pool will shift the market price according to the resulting token ratio changes in the pool. In the event that another transaction against the target pool is prioritized over yours, the actual price of the pool would have changed between the confirmation of your order and the final execution.&#x20;
 
 Due to how orders are prioritized on the blockchain (see above), it is not possible to guarantee the price at the point of order submission. As such, rather than failing the order which would result in an endless cascade of failed orders, most AMMs have implemented a slippage tolerance parameter for trades against their pools. By setting the slippage as a percentage of the expected price, transactions can still be executed as long as the final price is within the boundaries set. This makes  transaction processing much more efficient at the application layer while also enabling traders to protect their trades.
 
@@ -38,7 +38,7 @@ Note that slippage also applies whenever liquidity is added or removed from an A
 
 ## Order book slippage
 
-For [order book DEXs](order-book.md), trades are executed when a pending order is filled by a counterparty with a matching order. In the case of limit orders where trades are only executed if the market price matches the expected price, hence slippage only happens in the direction favouring the trader. As such, limit orders are a great way to ensure that there are no negative trade outcomes based on the predefined parameters of the trade.
+For order book DEXs, trades are executed when a pending order is filled by a counterparty with a matching order. In the case of limit orders where trades are only executed if the market price matches the expected price, hence slippage only happens in the direction favouring the trader. As such, limit orders are a great way to ensure that there are no negative trade outcomes based on the predefined parameters of the trade.
 
 As limit orders can be valid for an indefinite amount of time, order book DEXs have also implemented an expiry and cancellation mechanism for limit orders. This acts as a safety mechanism so that traders are able to act according to the changing market conditions and not be caught with unfavorable orders which they had committed to under different market conditions.
 
@@ -104,14 +104,14 @@ Lastly, [KyberSwap Limit Order](../../../kyberswap-solutions/limit-order/) allow
 
 {% tabs %}
 {% tab title="Traders" %}
-* [Customizing Trade Parameters](broken-reference)
-* [Instantly Swap At Superior Rates](broken-reference)
+* Customizing Trade Parameters
+* Instantly Swap At Superior Rates
 * [Swap At Your Preferred Rates](../../../kyberswap-solutions/kyberswap-interface/user-guides/trade-at-your-preferred-rates.md)
 {% endtab %}
 
 {% tab title="Developers" %}
 * [Execute A Swap With The Aggregator API](../../../kyberswap-solutions/kyberswap-aggregator/developer-guides/execute-a-swap-with-the-aggregator-api.md)
-* [Place A Limit Order](broken-reference)
-* [Fill A Limit Order](broken-reference)
+* Place A Limit Order
+* Fill A Limit Order
 {% endtab %}
 {% endtabs %}
