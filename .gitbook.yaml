@@ -158,3 +158,12 @@ redirects:
   getting-started/foundational-topics/decentralized-technologies/draft-dapps: getting-started/foundational-topics/decentralized-technologies/dapps.md
   getting-started/whitepapers: reference/legacy/whitepapers.md
   liquidity-solutions/kyberswap-classic: reference/legacy/kyberswap-classic/README.md
+  liquidity-solutions/kyberswap-classic/concepts: reference/legacy/kyberswap-classic/concepts/README.md
+  liquidity-solutions/kyberswap-classic/concepts/dynamic-pricing-curves: reference/legacy/kyberswap-classic/concepts/programmable-pricing-curves.md
+  liquidity-solutions/kyberswap-classic/concepts/flexible-fee-adjustment: reference/legacy/kyberswap-classic/concepts/dynamic-auto-adjusting-fees.md
+  liquidity-solutions/kyberswap-classic/concepts/virtual-balances: reference/legacy/kyberswap-classic/concepts/virtual-balances.md
+  liquidity-solutions/kyberswap-classic/concepts/protocol-fee: reference/legacy/kyberswap-classic/concepts/protocol-fees.md
+  liquidity-solutions/kyberswap-classic/contracts: reference/legacy/kyberswap-classic/contracts/README.md
+  liquidity-solutions/kyberswap-classic/contracts/classic-contract-repo: reference/legacy/kyberswap-classic/contracts/classic-contract-repo.md
+  liquidity-solutions/kyberswap-classic/contracts/classic-contract-addresses: reference/legacy/kyberswap-classic/contracts/classic-contract-addresses.md
+  liquidity-solutions/kyberswap-classic/contracts/classic-farming-contract-addresses: reference/legacy/kyberswap-classic/contracts/classic-contract-farming-addresses.md
