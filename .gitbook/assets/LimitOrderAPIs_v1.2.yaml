@@ -1484,28 +1484,6 @@ paths:
           name: takerAsset
           description: The token address of the asset which the Taker is exchanging.
           required: true
-        - schema:
-            type: number
-            minimum: 0
-            format: float
-          in: query
-          name: rate
-          description: Additional filter option. Only orders having rates greater than or equal to are returned.
-        - schema:
-            type: number
-          in: query
-          name: gasUSD
-          description: Gas in USD used to calculate order rates. If gasUSD is equal to 0 or null, server will auto-calculate gasUSD.
-        - schema:
-            type: number
-          in: query
-          name: makerAssetPriceUSD
-          description: '`makerAsset` price in USD used to calculate order rates. If makerAssetPriceUSD is equal to 0 or null, server will auto-calculate makerAssetPriceUSD.'
-        - schema:
-            type: number
-          in: query
-          name: takerAssetPriceUSD
-          description: '`takerAsset` price in USD used to calculate order rates. If takerAssetPriceUSD is equal to 0 or null, server will auto-calculate takerAssetPriceUSD.'     
       responses:
         '200':
           description: OK
@@ -1559,6 +1537,8 @@ paths:
                             - permit
                             - interaction
                             - expiredAt                          
+                            - availableMakingAmount
+                            - makerBalanceAllowance
                           properties:
                             id:
                               type: integer
@@ -1637,6 +1617,12 @@ paths:
                             expiredAt:
                               type: integer
                               description: The unix timestamp upon which the Maker order will automatically lapse (i.e. expire).
+                            availableMakingAmount:
+                              type: string
+                              description: The remaining makingAmount available to be filled
+                            makerBalanceAllowance:
+                              type: string
+                              description: The smaller value between maker's balance for makerAsset and maker's allowance for DSLO contract to spend makerAsset
                 example:
                   value:
                     code: 0
@@ -1668,14 +1654,12 @@ paths:
                           permit: ''
                           interaction: ''
                           expiredAt: 1697698269
+                          availableMakingAmount:	'7000'
+                          makerBalanceAllowance:	'7000'
         '400':
           description: |-
             Bad Request
             - Missing required fields
-            - rate < 0
-            - gasUSD < 0
-            - makerAssetPriceUSD < 0
-            - takerAssetPriceUSD < 0
           content:
             application/json:
               schema:
