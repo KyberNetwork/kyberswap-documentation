@@ -26,7 +26,7 @@ KyberSwap whitelists well-known tokens for ease of access, but you can import cu
 
 <summary>What fees do I need to pay to use the KyberSwap Aggregator?</summary>
 
-#### Network Fees
+**Network Fees**
 
 KyberSwap is a fully onchain service. Everyone who creates transactions on the blockchain will need to pay network fees associated with their transactions. These fees vary depending on
 
@@ -34,7 +34,7 @@ KyberSwap is a fully onchain service. Everyone who creates transactions on the b
 2. Network congestion at the time
 3. Complexity of the smart contract transaction being executed
 
-#### Trading Fees
+**Trading Fees**
 
 KyberSwap does not charge fees to users using the protocol to swap tokens. However Liquidity Providers are allowed to set fees on their liquidity pools and traders who choose to use these pools to perform swaps will need to pay trading fees to the LP, along with any associated network fees.
 
@@ -60,7 +60,7 @@ For more information on completing a swap, you can refer to [Instantly Swap At T
 
 <summary>Why is my transaction stuck in "Pending" state?</summary>
 
-#### Reasons for stuck transactions
+**Reasons for stuck transactions**
 
 If your swap transaction was successfully accepted by the KyberSwap platform but you see on your transaction history and on blockchain explorers that the transaction has been stuck in a “pending” state for more than a few blocks, this could be due to one of several reasons:
 
@@ -72,7 +72,7 @@ During periods of high network activity, gas prices tend to increase. If you’v
 
 If you have sent several transactions within a short amount of time, some of your transactions could be held up behind one or more transactions that are pending due to low gas limits.
 
-#### How to fix stalled transactions
+**How to fix stalled transactions**
 
 If the transaction is stalled (stuck in a pending state) in the mempool and has zero block confirmations, you can either cancel it or expedite it be rebroadcasting the transaction using the same nonce as the pending transaction. This action will incur its own network fee and is performed through your Web3 wallet software.
 
@@ -100,4 +100,4 @@ Do pay particular attention to the [Price Impact](../../getting-started/foundati
 
 </details>
 
-Still can't find what you're looking for? Check out the [KyberSwap Help Center](https://support.kyberswap.com/hc/en-us).
+Still can't find what you're looking for? Check out the [KyberSwap Help Center](https://discord.com/channels/608934314960224276/1192426056183972010).

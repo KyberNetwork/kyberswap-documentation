@@ -141,11 +141,11 @@ In this guide, we will show you how to specify an alternate RPC endpoint for **M
 
 **Step 1**: Open your Metamask wallet and click on “My accounts” (the circular button at the top right of the window) and then click on “Settings”.
 
-<img src="https://support.kyberswap.com/hc/article_attachments/14435445235865" alt="001a_MyAccountsCircularButton.png" data-size="original"> <img src="https://support.kyberswap.com/hc/article_attachments/14435414408857" alt="001b_Settings.png" data-size="original">
+<img src="https://support.kyberswap.com/hc/article_attachments/14435445235865" alt="001a_MyAccountsCircularButton.png" data-size="original"><img src="https://support.kyberswap.com/hc/article_attachments/14435414408857" alt="001b_Settings.png" data-size="original">
 
 **Step 2**: Go to Networks and click the “Add Network” button.
 
-<img src="https://support.kyberswap.com/hc/article_attachments/14435414474905" alt="002a_Networks.png" data-size="original"> <img src="https://support.kyberswap.com/hc/article_attachments/14435445381913" alt="002c_AddNetworkButton.png" data-size="original">
+<img src="https://support.kyberswap.com/hc/article_attachments/14435414474905" alt="002a_Networks.png" data-size="original"><img src="https://support.kyberswap.com/hc/article_attachments/14435445381913" alt="002c_AddNetworkButton.png" data-size="original">
 
 This will open up a browser tab with more Metamask Settings.
 
@@ -264,5 +264,5 @@ If you would like to help us keep our community safe, you can contribute by repo
 
 Can't find what you're looking for? Our dedicated team of experts are available 24 hours a day to assist you with any queries, concerns, or technical issues you might encounter.
 
-Please visit the [KyberSwap Help Center](https://support.kyberswap.com/hc/en-us) for further details.
+Please visit the [KyberSwap Help Center](https://discord.com/channels/608934314960224276/1192426056183972010) for further details.
 {% endhint %}

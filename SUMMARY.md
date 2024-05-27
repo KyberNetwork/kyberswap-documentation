@@ -270,5 +270,5 @@
 
 ## Support
 
-* [KyberSwap Help Center](https://support.kyberswap.com/hc/en-us)
+* [KyberSwap Help Center](https://discord.com/channels/608934314960224276/1192426056183972010)
 * [Complaints Handling Process](support/complaints-handling-process.md)
