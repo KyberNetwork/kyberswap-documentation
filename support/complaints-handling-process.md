@@ -4,7 +4,7 @@ DMM aims to process any complaints received in a fair, consistent, and prompt ma
 
 The Customer Support team at DMM will be responsible for the handling of all client complaints and will be independent of the subject of the complaints.
 
-Customer complaints must be submitted in the COMPLAINTS FORM to one of the following email addresses: [`support@kyberswap.com`](mailto:support@kyberswap.com)
+Customer complaints must be submitted in the COMPLAINTS FORM to one of the following email addresses: `complaints@kyber.network` or `support@kyberswap.com`
 
 {% file src="../.gitbook/assets/Complaints Form.pdf" %}
 KyberSwap Complaints Form
