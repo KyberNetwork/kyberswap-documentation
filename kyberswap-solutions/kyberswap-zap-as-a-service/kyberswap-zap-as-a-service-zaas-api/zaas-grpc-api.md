@@ -1,0 +1,354 @@
+---
+description: GRPC API doc for ZaaS API
+---
+
+# ZaaS GRPC API
+
+Please refer to the following server configuration and proto file for the grpc API. You can use [https://buf.build/](https://buf.build/) along with its plugin [https://buf.build/grpc-ecosystem/gateway](https://buf.build/grpc-ecosystem/gateway) to generate a grpc client. Refer to [https://github.com/grpc-ecosystem/grpc-gateway/tree/main/examples/internal/clients](https://github.com/grpc-ecosystem/grpc-gateway/tree/main/examples/internal/clients) for some example code.
+
+| Parameter            | Value                                                                                                                                                                                                                                                                                                                 |
+| -------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Server address       | zap-api.kyberswap.com:443                                                                                                                                                                                                                                                                                             |
+| Header `X-Chain-ID`  | <ul><li><code>42161</code> for <code>arbitrum</code></li><li><code>43114</code> for <code>avalanche</code></li><li><code>8453</code> for <code>base</code></li><li><code>56</code> for <code>bsc</code></li><li><code>10</code> for <code>optimism</code></li><li><code>137</code> for <code>polygon</code></li></ul> |
+| Header `X-Client-ID` | <p>Some value to identify your client.</p><p>Please contact <a href="mailto:bd@kyber.network">bd@kyber.network</a> to whitelist your client id with more rate limit quota</p>                                                                                                                                         |
+
+Download zap.proto:&#x20;
+
+{% file src="../../../.gitbook/assets/zap.proto" %}
+zap.proto
+{% endfile %}
+
+```protobuf
+syntax = "proto3";
+package zap.v1;
+
+import "google/api/annotations.proto";
+import "protoc-gen-openapiv2/options/annotations.proto";
+import "validate/validate.proto";
+
+// Dex is the type of dex to zap into/out of. It uses different enum values from the zap contract.
+enum Dex {
+  // Unspecified value.
+  DEX_UNSPECIFIED = 0;
+  // For UniSwap V3.
+  DEX_UNISWAPV3 = 2;
+  // For PancakeSwap V3.
+  DEX_PANCAKESWAPV3 = 3;
+  // For Uniswap V2.
+  DEX_UNISWAPV2 = 4;
+}
+
+option (grpc.gateway.protoc_gen_openapiv2.options.openapiv2_swagger) = {
+  info: {
+    title: "Zap Service"
+    description: "Zap Service for quickly zapping pool liquidity in a single transaction"
+    version: "1.0.0"
+    contact: {
+      url: "https://discord.gg/kyberswap"
+      email: "bd@kyber.network"
+    }
+  }
+  host: "zap-api.stg.kyberengineering.io"
+  base_path: "/{chain}"
+  schemes: HTTPS
+  responses: {
+    key: "400"
+    value: {
+      description: "Invalid Argument"
+      schema: {
+        json_schema: {ref: "#/definitions/rpcStatus"}
+      }
+      examples: {
+        key: "application/json"
+        value: '{"code":3, "message":"dex DEX_PANCAKESWAPV3 not available on chain polygon;'
+          ' invalid GetInRouteRequest.Position: value is required;'
+          ' invalid GetInRouteRequest.TokenIn: value does not match regex pattern \\"^0x[0-9A-Za-z]{40}$\\";'
+          ' invalid GetInRouteRequest.AmountIn: value does not match regex pattern \\"^\\\\\\\\d+$\\";'
+          ' invalid GetInRouteRequest.FeePcm: value must be inside range [0, 100000];'
+          ' invalid GetInRouteRequest.Slippage: value must be inside range [0, 10000];'
+          ' invalid pool: token0=0x430ef9263e76dae63c84292c3409d61c598e9682, expected 0x0d500B1d8E8eF31E21C99d1Db9A6444d3ADf1270;'
+          ' invalid pool: fee=500, expected 10000"}'
+      }
+    }
+  }
+  responses: {
+    key: "404"
+    value: {
+      description: "Not Found"
+      schema: {
+        json_schema: {ref: "#/definitions/rpcStatus"}
+      }
+      examples: {
+        key: "application/json"
+        value: '{"code":5, "message":"failed to get best zap route"}'
+      }
+    }
+  }
+};
+
+// Service allows getting and building zap routes.
+service Service {
+  // Get the best zap-in route.
+  rpc GetInRoute(GetInRouteRequest) returns (GetInRouteResponse){
+    option (google.api.http) = {
+      get: "/api/v1/in/route"
+    };
+    option (grpc.gateway.protoc_gen_openapiv2.options.openapiv2_operation) = {
+      parameters: {
+        headers: {
+          name: "X-Client-Id"
+          description: "Client Id"
+          type: STRING
+        }
+        headers: {
+          name: "X-Request-Id"
+          description: "Request Id"
+          type: STRING
+        }
+      }
+    };
+  }
+  // Decode zap-in route for debugging purposes.
+  rpc DecodeInRoute(DecodeInRouteRequest) returns (DecodeInRouteResponse){
+    option (google.api.http) = {
+      post: "/api/v1/in/route/decode"
+      body: "*"
+    };
+  }
+  // Build encoded data for the specified zap-in route.
+  rpc BuildInRoute(BuildInRouteRequest) returns (BuildInRouteResponse){
+    option (google.api.http) = {
+      post: "/api/v1/in/route/build"
+      body: "*"
+    };
+    option (grpc.gateway.protoc_gen_openapiv2.options.openapiv2_operation) = {
+      parameters: {
+        headers: {
+          name: "X-Client-Id"
+          description: "Client Id"
+          type: STRING
+        }
+        headers: {
+          name: "X-Request-Id"
+          description: "Request Id"
+          type: STRING
+        }
+      }
+    };
+  }
+}
+
+// Get the best zap-in route.
+message GetInRouteRequest {
+  // which dex to use zap with
+  Dex dex = 1 [(validate.rules).enum.defined_only = true];
+  // the pool to zap into
+  Pool pool = 2;
+  // position details
+  Position position = 3 [(validate.rules).message.required = true];
+  // which token(s) to use as zap source. also accepts comma separated addresses
+  repeated string token_in = 4 [(validate.rules).repeated.items.string.pattern = "^0x[0-9A-Za-z]{40}(,0x[0-9A-Za-z]{40})*$"];
+  // amount(s) to zap including fee, corresponding to tokenIn. also accepts comma separated amounts.
+  repeated string amount_in = 5 [(validate.rules).repeated.items.string.pattern = "^\\d+(,\\d+)*$"];
+  // aggregator options
+  AggregatorOptions aggregator_options = 6;
+  // options for getting aggregator routes
+  message AggregatorOptions {
+    // whether to disable swapping with the aggregator
+    bool disable = 1;
+    // comma-separated list of sources to use for aggregator
+    string included_sources = 2;
+    // comma-separated list of sources to exclude for aggregator
+    string excluded_sources = 3;
+  }
+  // the address of the fee recipient.
+  string fee_address = 7 [(validate.rules).string = {ignore_empty: true, pattern: "^0x[0-9A-Za-z]{40}$"}];
+  // fee percentage in per cent mille (0.001% or 1 in 100,000). Ignored if feeAddress is empty.
+  // From 0 to 100,000 inclusively. Example: 1 for 0.001%.
+  uint32 fee_pcm = 8 [(validate.rules).uint32 = {gte: 0, lte: 100000}];
+  // maximum slippage tolerance in basis points (0.01%), used for aggregator (exceeding which the transaction will
+  // revert) and pool swap during zap (for additional zapping and for refund).
+  // From 0 to 10,000 inclusively. Example: 1 for 0.01%.
+  uint32 slippage = 9 [(validate.rules).uint32 = {gte: 0, lte: 10000}];
+}
+
+// Pool describes the pool to zap into.
+message Pool {
+  // id of the pool to zap into.
+  string id = 1 [(validate.rules).string.pattern = "^0x[0-9A-Za-z]{40}$"];
+  // address of the pool's token0.
+  string token0 = 2 [(validate.rules).string.pattern = "^0x[0-9A-Za-z]{40}$"];
+  // address of the pool's token1.
+  string token1 = 3 [(validate.rules).string.pattern = "^0x[0-9A-Za-z]{40}$"];
+  // fee tier of the pool (in 0.0001%).
+  uint32 fee = 4 [(validate.rules).uint32 = {gte: 0, lt: 1000000}];
+}
+
+// Position describes either an existing position or a new one.
+message Position {
+  // id of the position to add liquidity to; omit to create a new uniswapV3 position. for uniswapV2 this is user address
+  optional string id = 1;
+  // min tick of the position, required if creating a new uniswapV3 position.
+  optional sint32 tick_lower = 2;
+  // max tick of the position, required if creating a new uniswapV3 position.
+  optional sint32 tick_upper = 3;
+}
+
+// Returns the best route to zap-in to the specified pool position.
+message GetInRouteResponse {
+  // grpc error code
+  int32 code = 1;
+  // grpc error message
+  string message = 2;
+  // response data
+  Data data = 3;
+
+  // Encompasses returned data.
+  message Data {
+    PoolDetails pool_details = 1;
+    // details of the pool
+    message PoolDetails {
+      // pool tick before zap (uniswapV3)
+      optional sint32 tick = 1;
+      // pool tick after zap (uniswapV3)
+      optional sint32 new_tick = 2;
+      // pool sqrt price (times 2^96) before zap (uniswapV3)
+      optional string sqrt_p = 3;
+      // pool sqrt price (times 2^96) after zap (uniswapV3)
+      optional string new_sqrt_p = 4;
+      // reserve0 before zap (uniswapV2)
+      optional string reserve0 = 5;
+      // reserve0 after zap (uniswapV2)
+      optional string new_reserve0 = 7;
+      // reserve1 before zap (uniswapV2)
+      optional string reserve1 = 6;
+      // reserve1 after zap (uniswapV2)
+      optional string new_reserve1 = 8;
+    }
+
+    PositionDetails position_details = 2;
+    // details of the new position state
+    message PositionDetails {
+      // how much position liquidity to be added
+      string added_liquidity = 1 [(grpc.gateway.protoc_gen_openapiv2.options.openapiv2_field).pattern = "\\d+"];
+      // amount of token0 to be added
+      string added_amount_0 = 2;
+      // USD value of token0 to be added
+      string added_amount_0_usd = 3;
+      // amount of token1 to be added
+      string added_amount_1 = 4;
+      // USD value of token1 to be added
+      string added_amount_1_usd = 5;
+      // total USD value of the position to be added
+      string added_amount_usd = 6;
+    }
+
+    // zap details
+    ZapDetails zap_details = 3;
+    // details of the zap
+    message ZapDetails {
+      // USD value of the source zap token amount
+      string initial_amount_usd = 1;
+      // list of aggregator swaps
+      repeated AggregatorSwap aggregator_swaps = 2;
+      // aggregator swap input and output
+      message AggregatorSwap {
+        // swapped token address
+        string token_in = 1 [(grpc.gateway.protoc_gen_openapiv2.options.openapiv2_field).pattern = "^0x[0-9A-Za-z]{40}$"];
+        // amount of token to be swapped using aggregator
+        string amount_in = 2;
+        // USD value of the amount to be swapped using aggregator
+        string amount_in_usd = 3;
+        // token address to swap into
+        string token_out = 4 [(grpc.gateway.protoc_gen_openapiv2.options.openapiv2_field).pattern = "^0x[0-9A-Za-z]{40}$"];
+        // amount of output token received by swapping using aggregator
+        string amount_out = 5;
+        // USD value of the amount received by swapping using aggregator
+        string amount_out_usd = 6;
+      }
+      // kyber fee per cent mille (0.001%) of the source zap amount
+      uint32 kyber_zap_fee_pcm = 3;
+      // kyber fee in USD
+      string kyber_zap_fee_usd = 4;
+      // partner fee per cent mille (0.001%) of the source zap amount
+      uint32 partner_fee_pcm = 5;
+      // partner fee in USD
+      string partner_fee_usd = 6;
+      // left-over amount of token0 after zapping
+      string remaining_amount_0 = 7;
+      // USD value of left-over amount of token0
+      string remaining_amount_0_usd = 8;
+      // left-over amount of token1 after zapping
+      string remaining_amount_1 = 9;
+      // USD value of left-over amount of token1
+      string remaining_amount_1_usd = 10;
+      // USD value of the final amount including the added position and the left-over amount
+      string final_amount_usd = 11;
+      // price impact after zapping of final amount against initial amount
+      float price_impact = 12;
+    }
+
+    // the zap route to pass to build API to get call-data
+    bytes route = 4;
+
+    // the router address to check approval amount
+    string router_address = 5;
+
+    // rough estimate of gas required for the transaction
+    string gas = 6;
+    // USD value of estimated gas required
+    string gas_usd = 7;
+  }
+}
+
+// Decode zap-in route for debugging purposes.
+message DecodeInRouteRequest {
+  // the route as returned from get-route endpoint.
+  bytes route = 1;
+}
+
+// Returns the zap-in route details.
+message DecodeInRouteResponse {
+  int32 code = 1;
+  string message = 2;
+  Data data = 3;
+
+  // Encompasses returned data.
+  message Data {
+    // JSON encode of the zap in route.
+    string json = 1;
+  }
+}
+
+// Build encoded data for zap-in transaction from the specified route.
+message BuildInRouteRequest {
+  // the wallet sending the transaction, and thus, the tokens.
+  string sender = 1 [(validate.rules).string.pattern = "^0x[0-9A-Za-z]{40}$"];
+  // the wallet receiving the new position. default to sender if empty.
+  string recipient = 2 [(validate.rules).string = {ignore_empty: true, pattern: "^0x[0-9A-Za-z]{40}$"}];
+  // the route as returned from get-route endpoint.
+  bytes route = 3;
+  // deadline for the swap transaction to execute.
+  fixed32 deadline = 4;
+  // the source of the zap-in transaction.
+  string source = 5;
+}
+
+// Returns the zap-in transaction details.
+message BuildInRouteResponse {
+  int32 code = 1;
+  string message = 2;
+  Data data = 3;
+
+  // Encompasses returned data.
+  message Data {
+    // zap router address to send the zap-in transaction to
+    string router_address = 1;
+    // call data for the zap-in transaction
+    string call_data = 2;
+    // native token value to transfer with the zap-in transaction in case of zapping with native tokens
+    string value = 3;
+  }
+}
+
+```

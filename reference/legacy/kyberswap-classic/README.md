@@ -1,7 +1,7 @@
 # KyberSwap Classic
 
 {% hint style="warning" %}
-### <mark style="color:orange;">**KyberSwap Classic Discontinuation**</mark>
+#### <mark style="color:orange;">**KyberSwap Classic Discontinuation**</mark>
 
 On 26 March 2024, the Classic protocol was discontinued. More details can be found here
 {% endhint %}
