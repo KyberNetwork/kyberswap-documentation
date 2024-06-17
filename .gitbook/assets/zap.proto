@@ -21,13 +21,13 @@ option (grpc.gateway.protoc_gen_openapiv2.options.openapiv2_swagger) = {
   info: {
     title: "Zap Service"
     description: "Zap Service for quickly zapping pool liquidity in a single transaction"
-    version: "1.0.0"
+    version: "1.1.0"
     contact: {
       url: "https://discord.gg/kyberswap"
       email: "bd@kyber.network"
     }
   }
-  host: "zap-api.stg.kyberengineering.io"
+  host: "pre-zap-api.kyberengineering.io"
   base_path: "/{chain}"
   schemes: HTTPS
   responses: {
@@ -181,91 +181,17 @@ message GetInRouteResponse {
   string message = 2;
   // response data
   Data data = 3;
+  // request trace id
+  string request_id = 4;
 
   // Encompasses returned data.
   message Data {
     PoolDetails pool_details = 1;
-    // details of the pool
-    message PoolDetails {
-      // pool tick before zap (uniswapV3)
-      optional sint32 tick = 1;
-      // pool tick after zap (uniswapV3)
-      optional sint32 new_tick = 2;
-      // pool sqrt price (times 2^96) before zap (uniswapV3)
-      optional string sqrt_p = 3;
-      // pool sqrt price (times 2^96) after zap (uniswapV3)
-      optional string new_sqrt_p = 4;
-      // reserve0 before zap (uniswapV2)
-      optional string reserve0 = 5;
-      // reserve0 after zap (uniswapV2)
-      optional string new_reserve0 = 7;
-      // reserve1 before zap (uniswapV2)
-      optional string reserve1 = 6;
-      // reserve1 after zap (uniswapV2)
-      optional string new_reserve1 = 8;
-    }
 
     PositionDetails position_details = 2;
-    // details of the new position state
-    message PositionDetails {
-      // how much position liquidity to be added
-      string added_liquidity = 1 [(grpc.gateway.protoc_gen_openapiv2.options.openapiv2_field).pattern = "\\d+"];
-      // amount of token0 to be added
-      string added_amount_0 = 2;
-      // USD value of token0 to be added
-      string added_amount_0_usd = 3;
-      // amount of token1 to be added
-      string added_amount_1 = 4;
-      // USD value of token1 to be added
-      string added_amount_1_usd = 5;
-      // total USD value of the position to be added
-      string added_amount_usd = 6;
-    }
 
     // zap details
     ZapDetails zap_details = 3;
-    // details of the zap
-    message ZapDetails {
-      // USD value of the source zap token amount
-      string initial_amount_usd = 1;
-      // list of aggregator swaps
-      repeated AggregatorSwap aggregator_swaps = 2;
-      // aggregator swap input and output
-      message AggregatorSwap {
-        // swapped token address
-        string token_in = 1 [(grpc.gateway.protoc_gen_openapiv2.options.openapiv2_field).pattern = "^0x[0-9A-Za-z]{40}$"];
-        // amount of token to be swapped using aggregator
-        string amount_in = 2;
-        // USD value of the amount to be swapped using aggregator
-        string amount_in_usd = 3;
-        // token address to swap into
-        string token_out = 4 [(grpc.gateway.protoc_gen_openapiv2.options.openapiv2_field).pattern = "^0x[0-9A-Za-z]{40}$"];
-        // amount of output token received by swapping using aggregator
-        string amount_out = 5;
-        // USD value of the amount received by swapping using aggregator
-        string amount_out_usd = 6;
-      }
-      // kyber fee per cent mille (0.001%) of the source zap amount
-      uint32 kyber_zap_fee_pcm = 3;
-      // kyber fee in USD
-      string kyber_zap_fee_usd = 4;
-      // partner fee per cent mille (0.001%) of the source zap amount
-      uint32 partner_fee_pcm = 5;
-      // partner fee in USD
-      string partner_fee_usd = 6;
-      // left-over amount of token0 after zapping
-      string remaining_amount_0 = 7;
-      // USD value of left-over amount of token0
-      string remaining_amount_0_usd = 8;
-      // left-over amount of token1 after zapping
-      string remaining_amount_1 = 9;
-      // USD value of left-over amount of token1
-      string remaining_amount_1_usd = 10;
-      // USD value of the final amount including the added position and the left-over amount
-      string final_amount_usd = 11;
-      // price impact after zapping of final amount against initial amount
-      float price_impact = 12;
-    }
 
     // the zap route to pass to build API to get call-data
     bytes route = 4;
@@ -280,6 +206,132 @@ message GetInRouteResponse {
   }
 }
 
+// details of the pool
+message PoolDetails {
+  string category = 1;
+  oneof pool {
+    UniswapV3 uniswap_v3 = 8;
+    UniswapV2 uniswap_v2 = 9;
+  }
+  // details of the uniswapV3 pool
+  message UniswapV3 {
+    // pool tick before zap
+    optional sint32 tick = 1;
+    // pool tick after zap
+    optional sint32 new_tick = 2;
+    // pool sqrt price (times 2^96) before zap
+    optional string sqrt_p = 3;
+    // pool sqrt price (times 2^96) after zap
+    optional string new_sqrt_p = 4;
+  }
+  // details of the uniswapV2 pool
+  message UniswapV2 {
+    // reserve0 before zap
+    optional string reserve0 = 1;
+    // reserve0 after zap
+    optional string new_reserve0 = 2;
+    // reserve1 before zap
+    optional string reserve1 = 3;
+    // reserve1 after zap
+    optional string new_reserve1 = 4;
+  }
+}
+
+// details of the new position state
+message PositionDetails {
+  // how much position liquidity to be removed
+  string removed_liquidity = 1 [(grpc.gateway.protoc_gen_openapiv2.options.openapiv2_field).pattern = "\\d+"];
+  // total USD value of the position to be removed
+  string removed_amount_usd = 2;
+  // how much position liquidity to be added
+  string added_liquidity = 3 [(grpc.gateway.protoc_gen_openapiv2.options.openapiv2_field).pattern = "\\d+"];
+  // total USD value of the position to be added
+  string added_amount_usd = 4;
+}
+
+// details of the zap
+message ZapDetails {
+  // USD value of the source zap token amount
+  string initial_amount_usd = 1;
+  // list of zap actions
+  repeated Action actions = 2;
+  // one of the zap actions, specified by the type field
+  message Action {
+    ActionType type = 1;
+    oneof action {
+      FeeAction protocol_fee = 2;
+      FeeAction partner_fee = 3;
+      SwapAction aggregator_swap = 4;
+      SwapAction pool_swap = 5;
+      LiquidityAction add_liquidity = 6;
+      LiquidityAction remove_liquidity = 7;
+      RefundAction refund = 8;
+    }
+  }
+  // type of the zap action
+  enum ActionType {
+    // Unspecified action
+    ACTION_TYPE_UNSPECIFIED = 0;
+    // protocol fee
+    ACTION_TYPE_PROTOCOL_FEE = 1;
+    // partner fee
+    ACTION_TYPE_PARTNER_FEE = 2;
+    // aggregator swap
+    ACTION_TYPE_AGGREGATOR_SWAP = 3;
+    // pool swap
+    ACTION_TYPE_POOL_SWAP = 4;
+    // add liquidity
+    ACTION_TYPE_ADD_LIQUIDITY = 5;
+    // remove liquidity
+    ACTION_TYPE_REMOVE_LIQUIDITY = 6;
+    // refund
+    ACTION_TYPE_REFUND = 7;
+  }
+  // fee collection
+  message FeeAction {
+    // fee per cent mille (0.001%) of the source zap amount
+    uint32 pcm = 1;
+    // token amounts
+    repeated TokenAmount tokens = 2;
+  }
+  // token swap, either with aggregator or with pool
+  message SwapAction {
+    repeated Swap swaps = 1;
+    // a single swap
+    message Swap {
+      // swapped token amount
+      TokenAmount token_in = 1;
+      // returned token amount
+      TokenAmount token_out = 2;
+    }
+  }
+  // added or removed liquidity
+  message LiquidityAction {
+    // added token 0
+    TokenAmount token0 = 1;
+    // added token 1
+    TokenAmount token1 = 2;
+  }
+  // refund left-over tokens to user
+  message RefundAction {
+    // refunded token amounts
+    repeated TokenAmount tokens = 1 [(validate.rules).repeated.items.message.required = true];
+  }
+  // token address and amount in wei and in usd
+  message TokenAmount {
+    // token address
+    string address = 1 [(grpc.gateway.protoc_gen_openapiv2.options.openapiv2_field).pattern = "^0x[0-9A-Za-z]{40}$"];
+    // wei amount of the token
+    string amount = 2;
+    // USD value of the token
+    string amount_usd = 3;
+  }
+  // USD value of the final amount including the added position and the left-over amount
+  string final_amount_usd = 3;
+  // price impact after zapping of final amount against initial amount
+  optional float price_impact = 4;
+}
+
 // Decode zap-in route for debugging purposes.
 message DecodeInRouteRequest {
   // the route as returned from get-route endpoint.
@@ -288,9 +340,14 @@ message DecodeInRouteRequest {
 
 // Returns the zap-in route details.
 message DecodeInRouteResponse {
+  // grpc error code
   int32 code = 1;
+  // grpc error message
   string message = 2;
+  // response data
   Data data = 3;
+  // request trace id
+  string request_id = 4;
 
   // Encompasses returned data.
   message Data {
@@ -315,9 +372,14 @@ message BuildInRouteRequest {
 
 // Returns the zap-in transaction details.
 message BuildInRouteResponse {
+  // grpc error code
   int32 code = 1;
+  // grpc error message
   string message = 2;
+  // response data
   Data data = 3;
+  // request trace id
+  string request_id = 4;
 
   // Encompasses returned data.
   message Data {

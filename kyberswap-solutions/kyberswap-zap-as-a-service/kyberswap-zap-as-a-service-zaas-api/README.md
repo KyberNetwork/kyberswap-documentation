@@ -24,8 +24,10 @@ The API consists of 2 main APIs - GetRoute and BuildRoute
 
           * The amount is full amount without decimals (for example: `1000000` for `1 USDT`)
           * Slippage tolerance. This is used to calculate minimum swap output amount and minimum minted liquidity amount acceptable, otherwise the transaction will be reverted to protect against slippage.
+      * Fee configuration: the client can opt to provide their fee collection address and fee per cent mille (0.001%) if they want to charge user with a fee
     * Provide a client id with the header `X-Client-ID` to get easier technical support and help facilitate better traffic observability.
       * By default, clients without a whitelisted client id are also rate limitted to 10 requests per 10 seconds. If you require a higher rate, please contact bd@kyber.network to request for a client id.
+    * The client can optionally provide fee collection address and fee per cent mille (0.001%) to charge a fee from the input token. More details about zap's fee model can be found in the [Zap Fee Model](../zap-fee-model.md) page.
   * Response
     * Pool details
       * Include details about pool price before and after zapping in. Clients **should** use this data to provide their users with appropriate warnings, e.g. in case the pool price deviates too much from market price after zapping, which will subject the user's position to potential arbitrage

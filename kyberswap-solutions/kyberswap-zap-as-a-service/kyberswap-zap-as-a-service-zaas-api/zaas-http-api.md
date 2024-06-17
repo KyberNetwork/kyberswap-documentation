@@ -8,10 +8,10 @@ Please refer to the following server configuration and openapi file for the http
 
 ## Common Parameters
 
-| Configuration        | Value                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
-| -------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Base URL             | <ul><li><p><code>https://zap-api.kyberswap.com/{chain}</code> where chain is one of the supported chain. For example: <code>https://zap-api.kyberswap.com/polygon</code></p><ul><li><code>https://zap-api.kyberswap.com/arbitrum</code></li><li><code>https://zap-api.kyberswap.com/avalanche</code></li><li><code>https://zap-api.kyberswap.com/base</code></li><li><code>https://zap-api.kyberswap.com/bsc</code></li><li><code>https://zap-api.kyberswap.com/optimism</code></li><li><code>https://zap-api.kyberswap.com/polygon</code></li></ul></li></ul> |
-| Header `X-Client-Id` | <p>Some value to identify your client.</p><p>Please contact <a href="mailto:bd@kyber.network">bd@kyber.network</a> to whitelist your client id with more rate limit quota</p>                                                                                                                                                                                                                                                                                                                                                                                  |
+| Configuration        | Value                                                                                                                                                                                                                            |
+| -------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Base URL             | <ul><li><code>https://zap-api.kyberswap.com/{chain}</code> where chain is one of the <a href="../zaps-supported-chains-dexes.md">supported chain</a>. For example: <code>https://zap-api.kyberswap.com/arbitrum</code></li></ul> |
+| Header `X-Client-Id` | <p>Some value to identify your client.</p><p>Please contact <a href="mailto:bd@kyber.network">bd@kyber.network</a> to whitelist your client id with more rate limit quota</p>                                                    |
 
 ## API list
 
@@ -19,8 +19,8 @@ Please refer to the following server configuration and openapi file for the http
 
 #### Get Route
 
-{% swagger src="../../../.gitbook/assets/zap-service.yaml" path="/api/v1/in/route" method="get" %}
-[zap-service.yaml](../../../.gitbook/assets/zap-service.yaml)
+{% swagger src="../../../.gitbook/assets/zap_service.yaml" path="/api/v1/in/route" method="get" %}
+[zap_service.yaml](../../../.gitbook/assets/zap_service.yaml)
 {% endswagger %}
 
 {% tabs %}
@@ -90,8 +90,8 @@ end
 
 #### Build Route
 
-{% swagger src="../../../.gitbook/assets/zap-service.yaml" path="/api/v1/in/route/build" method="post" %}
-[zap-service.yaml](../../../.gitbook/assets/zap-service.yaml)
+{% swagger src="../../../.gitbook/assets/zap_service.yaml" path="/api/v1/in/route/build" method="post" %}
+[zap_service.yaml](../../../.gitbook/assets/zap_service.yaml)
 {% endswagger %}
 
 {% tabs %}

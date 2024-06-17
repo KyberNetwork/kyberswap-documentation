@@ -1,0 +1,147 @@
+{
+  "56": {
+    "stable_pair": [
+      "0x4f31fa980a675570939b737ebdde0471a4be40eb",
+      "0x92b7807bf19b7dddf89b706143896d05228f3121",
+      "0x589a5062e47202bb994cd354913733a14b54e8dc",
+      "0x4f3126d5de26413abdcf6948943fb9d0847d9818",
+      "0xbf72b6485e4b31601afe7b0a1210be2004d2b1d6"
+    ],
+    "correlated_pair": [
+      "0x379044e32f5a162233e82de19da852255d0951b8",
+      "0x9474e972f49605315763c296b122cbb998b615cf",
+      "0x12197d7a4fe2d67f9f97ae64d82a44c24b7ad407",
+      "0x12e79eb21dcc5852f9c6ac1736d977312925da33"
+    ],
+    "common_pair": [
+      "0x36696169c63e42cd08ce11f5deebbcebae652050",
+      "0xd4dca84e1808da3354924cd243c66828cf775470",
+      "0x133b3d95bad5405d14d53473671200e9342896bf",
+      "0x46cf1cf8c69595804ba91dfdd8d6b960c9b0a7c4",
+      "0x4bba1018b967e59220b22ca03f68821a3276c9a6",
+      "0x538f6feeb195c3adcb99a6e82c545c50ab2ddf6d",
+      "0xfc75f4e78bf71ed5066db9ca771d4ccb7c1264e0",
+      "0xd0e226f674bbf064f54ab47f42473ff80db98cba",
+      "0x7f51c8aaa6b0599abd16674e2b17fec7a9f674a1",
+      "0x6bbc40579ad1bbd243895ca0acb086bb6300d636",
+      "0x172fcd41e0913e95784454622d1c3724f546f849",
+      "0x7d05c84581f0c41ad80ddf677a510360bae09a5a",
+      "0xbe141893e4c6ad9272e8c04bab7e6a10604501a5"
+    ]
+  },
+  "1": {
+    "stable_pair": [
+      "0x04c8577958ccc170eb3d2cca76f9d51bc6e42d8f",
+      "0x6c2348deec1508724c0207a84d21cc5ee88231c8",
+      "0xd9e497bd8f491fe163b42a62c296fb54caea74b7"
+    ],
+    "correlated_pair": [
+      "0x7b94a5622035207d3f527d236d47b7714ee0acba",
+      "0x2201d2400d30bfd8172104b4ad046d019ca4e7bd",
+      "0x402b2bceb1415f48b413752cc0e27d76ff34ddeb",
+      "0x3a1b97fc25fa45832f588ed3bfb2a0f74ddbd4f8",
+      "0xfcc3b8959d99f1154f0b1ac0252aa7e0f0617bcc",
+      "0x6db0f81db2c3b2a85a802d511577d8522d0d8c14",
+      "0x3733493ec5d2c181dcd7c54ed100641c0f07bb0e",
+      "0x5172c87dea75758709a929fb0006b1ca38efe67d",
+      "0xccd1d21fce02959f4f51ddc4505ea154aebe7f1b",
+      "0x4f64951a6583d56004ff6310834c70d182142a07",
+      "0x5c9c6f39ce25cc6d0f39410f890933a1476fb1b0",
+      "0x4d4c8f2f30e0224889ab578283a844e10b57e0f8"
+    ],
+    "common_pair": [
+      "0x6ca298d2983ab03aa1da7679389d955a4efee15c",
+      "0x1ac1a8feaaea1900c4166deeed0c11cc10669d36",
+      "0x517f451b0a9e1b87dc0ae98a05ee033c3310f046",
+      "0xacdb27b266142223e1e676841c1e809255fc6d07",
+      "0x9b5699d18dff51fc65fb8ad6f70d93287c36349f",
+      "0x1445f32d1a74872ba41f3d8cf4022e9996120b31",
+      "0x11a6713b702817db0aa0964d1afee4e641319732"
+    ]
+  },
+  "1101": {
+    "stable_pair": [
+      "0xca06375be938a2d6ef311dfafab7e326d55d23cc",
+      "0xb91cec385c698cbc2a802d9f661341836939692f",
+      "0x9bc342259cceda0487e70b71a3161f002a95f0e8"
+    ],
+    "correlated_pair": [
+      "0x160f3d3af6a2ece5274afd0925137e0387baa5f2",
+      "0x3752bdb9215a2c0609d71407b50a528e1c6ecabd",
+      "0x2e780d6666c2c44754a0ca7a8e2ed97506b47751",
+      "0xf142d852c9c805e419399c9b3ce2a8485f950bbf"
+    ],
+    "common_pair": [
+      "0x4a080d9488ce2c8258185d78852275d6d3c2820c",
+      "0xd43b9dcbb61e6ccfbcfef9f21e1bb5064f1cb33f",
+      "0x9f37552b87b68e7f169c442d595c1be7a0f03b92",
+      "0xb5d9e1622bfa6efb3fb50c0bdc6a0ee2b2d046fa",
+      "0xf1e501f74ed9dc619be53fddb698c94abf9d56b6"
+    ]
+  },
+  "42161": {
+    "stable_pair": [
+      "0x8a06339abd7499af755df585738ebf43d5d62b94",
+      "0xa1f9159e11ad48524c16c9bf10bf440815b03e6c",
+      "0x7e928afb59f5de9d2f4d162f754c6eb40c88aa8e",
+      "0x38437dbfd1d6a147a50cd0991a9581ac8f996892"
+    ],
+    "correlated_pair": [
+      "0x3abbbbb4c254b9327f1a0580bdbccb51b0b5fb08",
+      "0x64dae6685725dbd0a0e63fe522c9134d0eaa7258",
+      "0x4b89179dafe5c36ae611208b5590fef9153b7daa",
+      "0xc75908421566ea77a73b14d9cd0479c568f2b7a7",
+      "0x060d8a5a7c03882e33aca8fc304babe869e21ee9"
+    ],
+    "common_pair": [
+      "0x0bacc7a9717e70ea0da5ac075889bd87d4c81197",
+      "0xd9e2a1a61b6e61b275cec326465d417e52c1b95c",
+      "0x7fcdc35463e3770c2fb992716cd070b63540b947",
+      "0x389938cf14be379217570d8e4619e51fbdafaa21",
+      "0x843ac8dc6d34aeb07a56812b8b36429ee46bdd07",
+      "0x9ffca51d23ac7f7df82da414865ef1055e5afcc3",
+      "0x0d7c4b40018969f81750d0a164c3839a77353efb"
+    ]
+  },
+  "59144": {
+    "stable_pair": [
+      "0x37613ae9371c7ce78d544516dea2379e2653ba2d",
+      "0xbc0e1b76f21b04114de725583ff213b3134b2e6e",
+      "0x85164b6d8a74ba481ab6d02d2c4e779eccbaf982",
+      "0xa48e0630b7b9dcb250112143c9d0fe47d26cb1e4"
+    ],
+    "correlated_pair": [
+      "0x90375306810c6e8b2efa8294835c78b499d7c691",
+      "0xfde733b5de5b5a06c68353e01e4c1d3415c89560",
+      "0x3f63a467c54c96538bd36a7df1b9e7c4719dcac9"
+    ],
+    "common_pair": [
+      "0x586733678b9ac9da43dd7cb83bbb41d23677dfc3",
+      "0xd5539d0360438a66661148c633a9f0965e482845",
+      "0x5afda31027c3e6a03c77a113ffc031b564abbf05",
+      "0x1947b87d35e9f1cd53cede1ad6f7be44c12212b8",
+      "0xbd3bc396c9393e63bbc935786dd120b17f58df4c",
+      "0xe817a59f8a030544ff65f47536aba272f6d63059"
+    ]
+  },
+  "8453": {
+    "stable_pair": [
+      "0x25dee2707979055245a18ae6a415bb7b1435eb06",
+      "0x29ed55b18af0add137952cb3e29fb77b32fce426",
+      "0xe4eff19c7ace186ba39fd3ed639b2d34171f7eff",
+      "0x345825a980bd94e1480bc4f20fe4e3dae2f23dd3"
+    ],
+    "correlated_pair": [
+      "0x257fcbae4ac6b26a02e4fc5e1a11e4174b5ce395",
+      "0xc0efc182479319ff258eca420e2647cd82d3790c",
+      "0xbd59a718e60bd868123c6e949c9fd97185efbdb7"
+    ],
+    "common_pair": [
+      "0xe58b73ff901325b8b2056b29712c50237242f520",
+      "0x72ab388e2e2f6facef59e3c3fa2c4e29011c2d38",
+      "0xf6c0a374a483101e04ef5f7ac9bd15d9142bac95",
+      "0xb775272e537cc670c65dc852908ad47015244eaf",
+      "0x03c33a2fc0d444a5b61e573f9e1a285357a694fc"
+    ]
+  }
+}
