@@ -1,5 +1,5 @@
 ---
-description: 15 Chains, 390+ DEXs, and we're just getting started...
+description: 15 Chains, 400+ DEXs, and we're just getting started...
 ---
 
 # Supported Exchanges And Networks
@@ -11,7 +11,7 @@ The KyberSwap product suite has been deployed across the majority of the most es
 {% hint style="info" %}
 #### DEX filtering
 
-For traders, you can specify which DEXs are considered when computing your swap route by [Customizing Trade Parameters](broken-reference) directly on the [KyberSwap Interface](../kyberswap-solutions/kyberswap-interface/).
+For traders, you can specify which DEXs are considered when computing your swap route by Customizing Trade Parameters directly on the [KyberSwap Interface](../kyberswap-solutions/kyberswap-interface/).
 
 For developers integrating with the [KyberSwap Aggregator](../kyberswap-solutions/kyberswap-aggregator/), please refer to [DEX IDs](../kyberswap-solutions/kyberswap-aggregator/dex-ids.md) for internal mapping of DEXs used for filtering via the [API](../kyberswap-solutions/kyberswap-aggregator/aggregator-api-specification/).
 {% endhint %}
@@ -578,5 +578,25 @@ Decentralized Exchanges:
 
 * [KyberSwap Classic](https://kyberswap.com/)
 * [KyberSwap Elastic](https://kyberswap.com/)
+
+</details>
+
+<details>
+
+<summary> <img src="../.gitbook/assets/image-removebg-preview-3 (1).png" alt="" data-size="line">  X Layer (ChainID: 196)</summary>
+
+Decentralized Exchanges:
+
+* [Abstra](https://abstradex.xyz)
+* [DackieSwap V2](https://www.dackieswap.xyz/swap?chain=base)
+* [DackieSwap V3](https://www.dackieswap.xyz/swap?chain=base)
+* [DyorSwap](https://dyorswap.finance/?chainId=7000)
+* [Izumi Finance](https://izumi.finance/trade/swap)
+* [Potato Swap](https://potatoswap.finance)
+* [QuickSwap V3](https://quickswap.exchange/#/)
+* [RevoSwap](https://revoswap.com)
+* [StationDex V2](https://stationdex.com)
+* [StationDex V3](https://stationdex.com)
+* XLayer Dex
 
 </details>
