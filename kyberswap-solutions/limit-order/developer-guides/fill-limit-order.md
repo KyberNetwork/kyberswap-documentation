@@ -92,7 +92,7 @@ The fees charged will be according to the most exotic token in the trading pair.
 
 * All remaining tokens not covered in the super stable, stable, normal, and KNC categories.
 
-**KNC (0.05%)**
+**KNC (0.1%)**
 
 * Trades to and from KNC will be charged a flat 0.05% fee.
 

@@ -84,7 +84,7 @@ The Aggregator APIs require a chain name to be included in the path when calling
 
 <figure><img src="../../../.gitbook/assets/Aggregator APIv1.jpg" alt=""><figcaption></figcaption></figure>
 
-{% swagger src="../../../.gitbook/assets/KyberSwapAggregator_EVMAPIs_v2.8.1.yaml" path="/{chain}/api/v1/routes" method="get" %}
+{% swagger src="../../../.gitbook/assets/KyberSwapAggregator_EVMAPIs_v2.8.1.yaml" path="/{chain}/api/v1/routes" method="get" expanded="false" %}
 [KyberSwapAggregator_EVMAPIs_v2.8.1.yaml](../../../.gitbook/assets/KyberSwapAggregator_EVMAPIs_v2.8.1.yaml)
 {% endswagger %}
 
