@@ -92,6 +92,7 @@
     * [Maker APIs](kyberswap-solutions/limit-order/limit-order-api-specification/maker-apis.md)
     * [Taker APIs](kyberswap-solutions/limit-order/limit-order-api-specification/taker-apis.md)
   * [FAQ](kyberswap-solutions/limit-order/faq.md)
+* [KyberSwap OnChain Price Service](kyberswap-solutions/kyberswap-onchain-price-service.md)
 
 ## Governance
 
