@@ -4,6 +4,10 @@ description: HTTP API doc for ZaaS API
 
 # ZaaS HTTP API
 
+{% file src="../../../.gitbook/assets/zap_service.yaml" %}
+OpenAPI YAML
+{% endfile %}
+
 Please refer to the following server configuration and openapi file for the http API.
 
 ## Common Parameters
@@ -26,7 +30,7 @@ Please refer to the following server configuration and openapi file for the http
 {% tabs %}
 {% tab title="Bash" %}
 ```bash
-curl -X GET "https://zap-api.kyberswap.com/polygon/api/v1/in/route?dex=DEX_UNISWAPV3&pool.id=0xb46388f104ff88aac68626a316aaf3a924f32055&pool.token0=0x0b3F868E0BE5597D5DB7fEB59E1CADBb0fdDa50a&pool.token1=0x0d500B1d8E8eF31E21C99d1Db9A6444d3ADf1270&pool.fee=10000&position.tickLower=-24800&position.tickUpper=32400&tokenIn=0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE&amountIn=1000000000000000000&slippage=100" \
+curl -X GET "https://zap-api.kyberswap.com/polygon/api/v1/in/route?dex=DEX_UNISWAPV3&pool.id=0xb46388f104ff88aac68626a316aaf3a924f32055&position.tickLower=-24800&position.tickUpper=32400&tokenIn=0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE&amountIn=1000000000000000000&slippage=100" \
  -H "accept: application/json"\
  -H "x-client-id: zap-docs"
 ```
@@ -34,7 +38,7 @@ curl -X GET "https://zap-api.kyberswap.com/polygon/api/v1/in/route?dex=DEX_UNISW
 
 {% tab title="JavaScript" %}
 ```javascript
-fetch('https://zap-api.kyberswap.com/polygon/api/v1/in/route?dex=DEX_UNISWAPV3&pool.id=0xb46388f104ff88aac68626a316aaf3a924f32055&pool.token0=0x0b3F868E0BE5597D5DB7fEB59E1CADBb0fdDa50a&pool.token1=0x0d500B1d8E8eF31E21C99d1Db9A6444d3ADf1270&pool.fee=10000&position.tickLower=-24800&position.tickUpper=32400&tokenIn=0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE&amountIn=1000000000000000000&slippage=100', {
+fetch('https://zap-api.kyberswap.com/polygon/api/v1/in/route?dex=DEX_UNISWAPV3&pool.id=0xb46388f104ff88aac68626a316aaf3a924f32055&position.tickLower=-24800&position.tickUpper=32400&tokenIn=0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE&amountIn=1000000000000000000&slippage=100', {
   headers: {
     'accept': 'application/json',
     'x-client-id': 'zap-docs'
@@ -55,9 +59,6 @@ headers = {
 params = {
     'dex': 'DEX_UNISWAPV3',
     'pool.id': '0xb46388f104ff88aac68626a316aaf3a924f32055',
-    'pool.token0': '0x0b3F868E0BE5597D5DB7fEB59E1CADBb0fdDa50a',
-    'pool.token1': '0x0d500B1d8E8eF31E21C99d1Db9A6444d3ADf1270',
-    'pool.fee': '10000',
     'position.tickLower': '-24800',
     'position.tickUpper': '32400',
     'tokenIn': '0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE',
@@ -73,7 +74,7 @@ response = requests.get('https://zap-api.kyberswap.com/polygon/api/v1/in/route',
 ```ruby
 require 'net/http'
 
-uri = URI('https://zap-api.kyberswap.com/polygon/api/v1/in/route?dex=DEX_UNISWAPV3&pool.id=0xb46388f104ff88aac68626a316aaf3a924f32055&pool.token0=0x0b3F868E0BE5597D5DB7fEB59E1CADBb0fdDa50a&pool.token1=0x0d500B1d8E8eF31E21C99d1Db9A6444d3ADf1270&pool.fee=10000&position.tickLower=-24800&position.tickUpper=32400&tokenIn=0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE&amountIn=1000000000000000000&slippage=100')
+uri = URI('https://zap-api.kyberswap.com/polygon/api/v1/in/route?dex=DEX_UNISWAPV3&pool.id=0xb46388f104ff88aac68626a316aaf3a924f32055&position.tickLower=-24800&position.tickUpper=32400&tokenIn=0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE&amountIn=1000000000000000000&slippage=100')
 req = Net::HTTP::Get.new(uri)
 req['accept'] = 'application/json'
 req['x-client-id'] = 'zap-docs'
