@@ -71,7 +71,7 @@
     * [Customizing The KyberSwap Widget](kyberswap-solutions/kyberswap-widget/developer-guides/customizing-the-kyberswap-widget.md)
   * [iFrame Alternative](kyberswap-solutions/kyberswap-widget/iframe-alternative.md)
 * [KyberSwap Liquidity Widget](kyberswap-solutions/kyberswap-liquidity-widget/README.md)
-  * [Integrating The KyberSwap Liqudity Widget](kyberswap-solutions/kyberswap-liquidity-widget/integrating-the-kyberswap-liqudity-widget.md)
+  * [Integrating The KyberSwap Liquidity Widget](kyberswap-solutions/kyberswap-liquidity-widget/integrating-the-kyberswap-liquidity-widget.md)
 * [Limit Order](kyberswap-solutions/limit-order/README.md)
   * [Concepts](kyberswap-solutions/limit-order/concepts/README.md)
     * [Off-Chain Relay, On-Chain Settlement](kyberswap-solutions/limit-order/concepts/off-chain-relay.md)

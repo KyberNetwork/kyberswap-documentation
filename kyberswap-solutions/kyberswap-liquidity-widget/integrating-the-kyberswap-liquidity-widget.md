@@ -2,7 +2,7 @@
 description: Zap into a Liquidity Protocol With Minimal Code
 ---
 
-# Integrating The KyberSwap Liqudity Widget
+# Integrating The KyberSwap Liquidity Widget
 
 Installing the Liquidity Widget
 
