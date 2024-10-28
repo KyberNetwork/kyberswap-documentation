@@ -40,4 +40,14 @@ The API consists of 2 main APIs - GetRoute and BuildRoute
 * `BuildRoute` is used to build the calldata from the route returned by GetRoute in order for the user to actually send the transaction on-chain. The clients call this API once the user confirm they want to execute the zap-in, then use the calldata and other details in the response to send the transaction on chain.
   * This endpoint simply returns the needed call data, transaction value, and router address to send the transaction to.
 
+
+
+## Zap Migrate
+
+Similar to Zap In, Zap Migrate API consists of 2 main APIs - GetRoute and BuildRoute
+
+Please refer to the two API specifications below for details about request and response fields.
+
+
+
 <table data-view="cards"><thead><tr><th></th><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td></td><td>ZaaS HTTP API</td><td></td><td><a href="zaas-http-api.md">zaas-http-api.md</a></td></tr><tr><td></td><td>ZaaS GRPC API</td><td></td><td><a href="zaas-grpc-api.md">zaas-grpc-api.md</a></td></tr></tbody></table>
