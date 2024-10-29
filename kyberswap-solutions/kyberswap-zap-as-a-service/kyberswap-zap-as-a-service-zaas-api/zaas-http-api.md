@@ -4,7 +4,7 @@ description: HTTP API doc for ZaaS API
 
 # ZaaS HTTP API
 
-{% file src="../../../.gitbook/assets/zap-service.yaml" %}
+{% file src="../../../.gitbook/assets/openapi (4).yaml" %}
 OpenAPI YAML
 {% endfile %}
 
@@ -17,15 +17,21 @@ Please refer to the following server configuration and openapi file for the http
 | Base URL             | <ul><li><code>https://zap-api.kyberswap.com/{chain}</code> where chain is one of the <a href="../zaps-supported-chains-dexes.md">supported chain</a>. For example: <code>https://zap-api.kyberswap.com/arbitrum</code></li></ul> |
 | Header `X-Client-Id` | <p>Some value to identify your client.</p><p>Please contact <a href="mailto:bd@kyber.network">bd@kyber.network</a> to whitelist your client id with more rate limit quota</p>                                                    |
 
+{% hint style="info" %}
+Please refer to [dex-ids.md](../dex-ids.md "mention") and [zaps-supported-chains-dexes.md](../zaps-supported-chains-dexes.md "mention") for list of supported DEXes for each chain and their corresponding IDs
+{% endhint %}
+
 ## API list
 
 ### Zap in
 
 #### Get Route
 
-{% swagger src="../../../.gitbook/assets/zap_service.yaml" path="/api/v1/in/route" method="get" %}
-[zap_service.yaml](../../../.gitbook/assets/zap_service.yaml)
+{% swagger src="../../../.gitbook/assets/openapi (4).yaml" path="/api/v1/in/route" method="get" %}
+[openapi (4).yaml](<../../../.gitbook/assets/openapi (4).yaml>)
 {% endswagger %}
+
+
 
 {% tabs %}
 {% tab title="Bash" %}
@@ -183,9 +189,11 @@ end
 
 #### Get Route
 
-{% swagger src="../../../.gitbook/assets/zap_service.yaml" path="/api/v1/migrate/route" method="get" %}
-[zap_service.yaml](../../../.gitbook/assets/zap_service.yaml)
+{% swagger src="../../../.gitbook/assets/openapi (4).yaml" path="/api/v1/migrate/route" method="get" %}
+[openapi (4).yaml](<../../../.gitbook/assets/openapi (4).yaml>)
 {% endswagger %}
+
+
 
 #### Build Route
 

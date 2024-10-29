@@ -65,6 +65,7 @@
   * [Zap Fee Model](kyberswap-solutions/kyberswap-zap-as-a-service/zap-fee-model.md)
   * [Zap's Supported Chains/Dexes](kyberswap-solutions/kyberswap-zap-as-a-service/zaps-supported-chains-dexes.md)
   * [Zap's Deployed Contract Addresses](kyberswap-solutions/kyberswap-zap-as-a-service/zaps-deployed-contract-addresses.md)
+  * [Zap's DEX IDs](kyberswap-solutions/kyberswap-zap-as-a-service/dex-ids.md)
 * [KyberSwap Widget](kyberswap-solutions/kyberswap-widget/README.md)
   * [Developer Guides](kyberswap-solutions/kyberswap-widget/developer-guides/README.md)
     * [Integrating The KyberSwap Widget](kyberswap-solutions/kyberswap-widget/developer-guides/integrating-the-kyberswap-widget.md)
