@@ -9,7 +9,7 @@ KyberSwap provides an iFrame option for integrators that require swap functional
 
 In order to ensure the security of user's fund when interacting with the KyberSwap iFrame, KyberSwap requires integrator domains to be whitelisted. By doing so, integrators can protect their users from cross-domain attacks.&#x20;
 
-**Please contact our Head of BD, `sasha@kyber.network`,  if you would like to get your domain whitelisted. Upon whitelisting, you will then be provided with the base domain for iFrame integration.**
+**Please contact our Head of BD `tram@kyber.network`,  if you would like to get your domain whitelisted. Upon whitelisting, you will then be provided with the base domain for iFrame integration.**
 
 To accompany the domain, KyberSwap also implements a `clientId` field that enables us to continuously improve the KyberSwap Widget by understanding how swaps are being utilized. As a developer integrating with our widget, **please add your clientID (i.e. company name) to the `clientId` field** to enable us to serve you better.
 {% endhint %}
