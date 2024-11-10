@@ -45,7 +45,7 @@ PMMs actively quote two sides of the markets and generate a profit based on the 
 <summary>Traders</summary>
 
 * [Learn how KyberSwap sources the best rates for your swap](concepts/dynamic-trade-routing.md)
-* [Instantly swap at superior rates from the KyberSwap Interface](broken-reference)
+* Instantly swap at superior rates from the KyberSwap Interface
 
 </details>
 

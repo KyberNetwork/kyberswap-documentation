@@ -13,7 +13,6 @@ KyberSwap has included links to various native bridges that enable you to conven
 * [Polygon PoS (ChainID: 137)](https://wallet.polygon.technology/?redirectOnConnect=%2FzkEVM-Bridge%2Fbridge%3Ffaster-bridges%3Dtrue)
 * [Optimism (ChainID: 10)](https://app.optimism.io/bridge/deposit)
 * [Avalanche (ChainID: 43114)](https://core.app/bridge/)
-* [Cronos (ChainID: 25)](https://cronos.org/bridge/)
 * [Base (ChainID: 8453)](https://bridge.base.org/deposit)
 * [zkSync Era (ChainID: 324)](https://portal.zksync.io/bridge/)
 * [Polygon zkEVM (ChainID: 1101)](https://wallet.polygon.technology/?redirectOnConnect=%2FzkEVM-Bridge%2Fbridge%3Ffaster-bridges%3Dtrue)

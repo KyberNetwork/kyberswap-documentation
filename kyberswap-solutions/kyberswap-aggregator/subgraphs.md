@@ -46,12 +46,6 @@ https://api.thegraph.com/subgraphs/name/kybernetwork/kyberswap-aggregator-optimi
 https://api.thegraph.com/subgraphs/name/kybernetwork/kyberswap-aggregator-avalanche
 ```
 
-### Cronos[​](https://docs.kyberswap.com/reference/subgraph-data#cronos) (ChainID: 25) <a href="#cronos" id="cronos"></a>
-
-```
-https://cronos-graph.kyberengineering.io/subgraphs/name/kybernetwork/kyberswap-aggregator-cronos
-```
-
 ### Base (ChainID: 8453) <a href="#fantom" id="fantom"></a>
 
 ```
@@ -76,22 +70,10 @@ https://api.thegraph.com/subgraphs/name/kybernetwork/kyberswap-aggregator-fantom
 https://polygon-zkevm-graph.kyberengineering.io/subgraphs/name/kybernetwork/kyberswap-aggregator-polygon-zkevm
 ```
 
-### Aurora[​](https://docs.kyberswap.com/reference/subgraph-data#aurora) (ChainID: 1313161554) <a href="#aurora" id="aurora"></a>
-
-```
-https://api.thegraph.com/subgraphs/name/kybernetwork/kyberswap-aggregator-aurora/graphql
-```
-
 ### Linea (ChainID: 59144)
 
 ```
 https://graph-query.linea.build/subgraphs/name/kybernetwork/kyberswap-aggregator-linea
-```
-
-### BitTorrent Chain[​](https://docs.kyberswap.com/reference/subgraph-data#bittorrent) (ChainID: 199) <a href="#bittorrent" id="bittorrent"></a>
-
-```
-https://bttc-graph.kyberengineering.io/subgraphs/name/kybernetwork/kyberswap-aggregator-bttc
 ```
 
 ### Scroll (ChainID: 534352)

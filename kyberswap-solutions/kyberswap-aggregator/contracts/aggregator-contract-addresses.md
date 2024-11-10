@@ -123,19 +123,3 @@ All KyberSwap Aggregator contracts have been deployed at the same address across
 * **MetaAggregationRouterV2:** [`0x6131B5fae19EA4f9D964eAc0408E4408b66337b5`](https://zkevm.polygonscan.com/address/0x6131B5fae19EA4f9D964eAc0408E4408b66337b5)
 
 </details>
-
-<details>
-
-<summary>BitTorrent Chain (ChainID: 199)</summary>
-
-* **MetaAggregationRouterV2:** [`0x6131B5fae19EA4f9D964eAc0408E4408b66337b5`](https://bttcscan.com/address/0x6131B5fae19EA4f9D964eAc0408E4408b66337b5)
-
-</details>
-
-<details>
-
-<summary>Cronos (ChainID: 25)</summary>
-
-* **MetaAggregationRouterV2:** [`0x6131B5fae19EA4f9D964eAc0408E4408b66337b5`](https://cronoscan.com/address/0x6131B5fae19EA4f9D964eAc0408E4408b66337b5)
-
-</details>

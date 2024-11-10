@@ -553,36 +553,6 @@ Decentralized Exchanges:
 
 <details>
 
-<summary><img src="../.gitbook/assets/Cronos_Chain_Negative.png" alt="" data-size="line">   Cronos (ChainID: 25)</summary>
-
-Decentralized Exchanges:
-
-* [KyberSwap Classic](https://kyberswap.com/)
-* [KyberSwap Elastic](https://kyberswap.com/)
-* [Crodex ](https://swap.crodex.app/#/swap)
-* [CronaSwap ](https://app.cronaswap.org/swap)
-* [EmpireDex ](https://app.empiredex.org/farm)
-* [Fulcrom](https://fulcrom.finance/en)
-* [KryptoDex ](https://www.kryptodex.org/)
-* [MMF ](https://cronosmm.finance/)
-* [PhotonSwap ](https://photonswap.finance/#/swap)
-* [VVS Finance](https://vvs.finance/)
-
-</details>
-
-<details>
-
-<summary><img src="../.gitbook/assets/BitTorrentChain_Chain_Negative.png" alt="" data-size="line">   BitTorrent Chain (ChainID: 199)</summary>
-
-Decentralized Exchanges:
-
-* [KyberSwap Classic](https://kyberswap.com/)
-* [KyberSwap Elastic](https://kyberswap.com/)
-
-</details>
-
-<details>
-
 <summary> <img src="../.gitbook/assets/image-removebg-preview-3 (1).png" alt="" data-size="line">  X Layer (ChainID: 196)</summary>
 
 Decentralized Exchanges:
