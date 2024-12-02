@@ -137,7 +137,7 @@ Decentralized Exchanges:
 * [Camelot](https://app.camelot.exchange/)
 * [Camelot V3](https://app.camelot.exchange/)
 * [Chronos](https://app.chronos.exchange/)
-* [Chronos V3](https://app.chronos.exchange/?\_ga=2.47683175.1996768785.1691101109-2022647424.1691101109&\_gl=1\*126av9l\*\_ga\*MjAyMjY0NzQyNC4xNjkxMTAxMTA5\*\_ga\_ZZMYQC3ZN0\*MTY5MTEwMTEwOS4xLjEuMTY5MTEwMTExNi4wLjAuMA..\*\_ga\_12W2RDY62R\*MTY5MTEwMTEwOS4xLjEuMTY5MTEwMTExNi4wLjAuMA..)
+* [Chronos V3](https://app.chronos.exchange/?_ga=2.47683175.1996768785.1691101109-2022647424.1691101109&_gl=1*126av9l*_ga*MjAyMjY0NzQyNC4xNjkxMTAxMTA5*_ga_ZZMYQC3ZN0*MTY5MTEwMTEwOS4xLjEuMTY5MTEwMTExNi4wLjAuMA..*_ga_12W2RDY62R*MTY5MTEwMTEwOS4xLjEuMTY5MTEwMTExNi4wLjAuMA..)
 * [CrowdSwap V2](https://app.crowdswap.org/exchange)
 * [Curve ](https://curve.fi/)
 * [DODO V2](https://app.dodoex.io/)
@@ -548,25 +548,5 @@ Decentralized Exchanges:
 * [SushiSwap V3](https://www.sushi.com/swap)
 * [WOOFi V2](https://fi.woo.org/swap/)
 * [Zero](https://www.zkzero.fi)
-
-</details>
-
-<details>
-
-<summary> <img src="../.gitbook/assets/image-removebg-preview-3 (1).png" alt="" data-size="line">  X Layer (ChainID: 196)</summary>
-
-Decentralized Exchanges:
-
-* [Abstra](https://abstradex.xyz)
-* [DackieSwap V2](https://www.dackieswap.xyz/swap?chain=base)
-* [DackieSwap V3](https://www.dackieswap.xyz/swap?chain=base)
-* [DyorSwap](https://dyorswap.finance/?chainId=7000)
-* [Izumi Finance](https://izumi.finance/trade/swap)
-* [Potato Swap](https://potatoswap.finance)
-* [QuickSwap V3](https://quickswap.exchange/#/)
-* [RevoSwap](https://revoswap.com)
-* [StationDex V2](https://stationdex.com)
-* [StationDex V3](https://stationdex.com)
-* XLayer Dex
 
 </details>

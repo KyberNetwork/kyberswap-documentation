@@ -39,8 +39,13 @@ To support the continued development of the Limit Orders feature, KyberSwap will
 * Optimism (ChainID: 10)
 * Avalanche (ChainID: 43114)
 * Fantom (ChainID: 250)
+* Base (ChainID: 8453)
+* ZkSync (ChainID: 324)
+* Linea (ChainID: 59144)
+* Mantle (ChainID: 5000)
+* Scroll (ChainID: 534352)&#x20;
 
-The fees charged will be according to the most exotic token in the trading pair. The section below lists the fees whereby the highest fee category will apply based on the classification of the input and output tokens. There are 4 categories of tokens with an additional special category for trades involving KNC.
+The fees charged will be according to the most exotic token in the trading pair. The section below lists the fees whereby the highest fee category will apply based on the classification of the input and output tokens. There are 6 categories of tokens with an additional special category for trades involving KNC.
 
 **Super stable (0.01%)**
 
@@ -111,6 +116,14 @@ The fees charged will be according to the most exotic token in the trading pair.
 **Exotic (0.3%)**
 
 * All remaining tokens not covered in the super stable, stable, normal, and KNC categories.
+
+#### High Volatility  (0.5%)
+
+* Tokens that have been added in the Token Catalog from 2 weeks to 1 month.
+
+#### Super High Volatility  (1%)
+
+* Tokens that have been added in the Token Catalog for less than 2 weeks.
 
 **KNC (0.05%)**
 
