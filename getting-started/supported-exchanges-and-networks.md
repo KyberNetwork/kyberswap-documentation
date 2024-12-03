@@ -1,5 +1,5 @@
 ---
-description: 15 Chains, 400+ DEXs, and we're just getting started...
+description: 14 Chains, 400+ DEXs, and we're just getting started...
 ---
 
 # Supported Exchanges And Networks

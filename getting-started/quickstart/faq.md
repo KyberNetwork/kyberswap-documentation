@@ -10,7 +10,7 @@ description: Your KyberSwap Questions Answered
 
 <summary>What is KyberSwap?</summary>
 
-KyberSwap is both a multi-chain DEX aggregator and a liquidity source with capital-efficient liquidity pools that earns fees for liquidity providers. KyberSwap is the best place to trade and earn on networks such as Ethereum, Polygon, Binance Smart Chain (BSC), Avalanche, and Fantom since you can get the best rates for your token swaps and earn more with your token assets.\
+KyberSwap is a multi-chain DEX aggregator. KyberSwap is the best place to trade on networks such as Ethereum, Polygon, Binance Smart Chain (BSC), Avalanche, and Fantom since you can get the best rates for your token swaps.\
 \
 You can visit our [Introduction to KyberSwap](../../) page for more details.
 
@@ -103,7 +103,7 @@ KyberSwap is a decentralized platform and does not hold our users’ funds in cu
 
 **Partnerships**
 
-We are always open to build relationships with others in the DeFi space. If you represent a project and would like to get in touch with us about a potential partnership, please send us a proposal via [this google form](https://docs.google.com/forms/d/e/1FAIpQLScPRN6NSBQ2LsPTyseVlS92PX9i-Wq2O13qhHV-Z\_Ub3BgzqA/viewform).
+We are always open to build relationships with others in the DeFi space. If you represent a project and would like to get in touch with us about a potential partnership, please send us a proposal via [this google form](https://docs.google.com/forms/d/e/1FAIpQLScPRN6NSBQ2LsPTyseVlS92PX9i-Wq2O13qhHV-Z_Ub3BgzqA/viewform).
 
 **Marketing Proposal**
 
