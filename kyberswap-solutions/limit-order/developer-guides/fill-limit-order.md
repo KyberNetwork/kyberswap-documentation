@@ -24,7 +24,7 @@ To support the continued development of the Limit Orders feature, KyberSwap will
 * Linea (ChainID: 59144)
 * Mantle (ChainID: 5000)
 * Scroll (ChainID: 534352)&#x20;
-* Blast (ChainID: `81457)`
+* Blast (ChainID: 81457)
 
 The fees charged will be according to the most exotic token in the trading pair. The section below lists the fees whereby the highest fee category will apply based on the classification of the input and output tokens. There are 4 categories of tokens with an additional special category for trades involving KNC.
 
