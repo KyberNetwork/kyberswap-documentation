@@ -92,9 +92,51 @@ The fees charged will be according to the most exotic token in the trading pair.
 
 * All remaining tokens not covered in the super stable, stable, normal, and KNC categories.
 
+#### High Volatility  (0.5%)
+
+* Tokens that have been added in the Token Catalog from 2 weeks to 1 month.
+
+#### Super High Volatility  (1%)
+
+* Tokens that have been added in the Token Catalog for less than 2 weeks.
+
 **KNC (0.1%)**
 
 * Trades to and from KNC will be charged a flat 0.1% fee.
+
+</details>
+
+<details>
+
+<summary>Limit Order fees structure</summary>
+
+The fee token is determined based on the following logic, in order of priority **(from top to bottom)**:
+
+1.  **Token Catalog Availability (Rare Case):**
+
+    * If the **taker** **token** (`takerAsset`) is **not listed** in the token catalog:
+
+    &#x20;→ The **maker token** (`makerAsset`) will be the fee token.
+
+    * If the **maker** **token** (`makerAsset`) is **not listed** in the token catalog:
+
+    → The **taker token** (`takerAsset`) will be the fee token.
+
+If both token are in the token catalog, move to 2 & 3
+
+2. **Whitelist Priority:**
+
+* If the **maker token** is whitelisted and the **taker token** is not: → The **maker token** will be the fee token.
+* If the **taker token** is whitelisted and the **maker token** is not → The **taker token** will be the fee token.
+
+3. **Token Ranking:**
+
+If **both tokens** are either whitelisted or not whitelisted, the fee token is based on the **higher-ranked token**:
+
+* Each token’s ranking using its **CMC Rank** or **CGK Rank** is calculated (marketcap ranking).
+* The token with the **better (higher) ranking** will be the fee token.
+
+Example: If `makerAssetRanking > takerAssetRanking`, use `makerAsset` as the fee token; otherwise, use `takerAsset`.
 
 </details>
 
