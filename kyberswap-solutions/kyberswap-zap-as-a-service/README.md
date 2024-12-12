@@ -30,6 +30,4 @@ Zap currently supports the following liquidity actions:
 ## Future developements
 
 1. Creating a new pool - pool not created yet for the specific token pair-fee tier configuration
-2. Zap in with any token - not just pool's token
-3. Zap in with multiple tokens
-4. Remove liquidity from the pool into a single token
+2. Remove liquidity from the pool into a single token

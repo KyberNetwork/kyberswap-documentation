@@ -16,14 +16,10 @@ The API consists of 2 main APIs - GetRoute and BuildRoute
       * The dex to zap into
       * Pool's token 0, token 1 and fee tier
       * Position id or position lower and upper ticks (for UniswapV3-like dexes)
-      *   Token in and amount in
-
-          * The token can be any ERC-20 token or `0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE` for the specific chain's native token. Currently, only the pool's token0, token1 or the unwrapped native token of either of those is supported.
-
-          (Support for any token and for multiple tokens will be available soon)
-
-          * The amount is full amount without decimals (for example: `1000000` for `1 USDT`)
-          * Slippage tolerance. This is used to calculate minimum swap output amount and minimum minted liquidity amount acceptable, otherwise the transaction will be reverted to protect against slippage.
+      * Input tokens and amounts
+        * The tokens can be any ERC-20 token or `0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE` for the specific chain's native token (not limited to the pool's token0 or token1).
+        * The amounts are full amounts without decimals (for example: `1000000` for `1 USDT`)
+        * Slippage tolerance. This is used to calculate minimum swap output amount and minimum minted liquidity amount acceptable, otherwise the transaction will be reverted to protect against slippage.
       * Fee configuration: the client can opt to provide their fee collection address and fee per cent mille (0.001%) if they want to charge user with a fee
     * Provide a client id with the header `X-Client-ID` to get easier technical support and help facilitate better traffic observability.
       * By default, clients without a whitelisted client id are also rate limitted to 10 requests per 10 seconds. If you require a higher rate, please contact bd@kyber.network to request for a client id.
