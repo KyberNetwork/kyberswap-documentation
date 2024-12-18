@@ -11,7 +11,7 @@ description: KyberSwap Aggregator EVM APIs
 {% hint style="success" %}
 #### Note on integration: clientID
 
-In order to continuously improve the KyberSwap Aggregator, our APIs implement a client identifier field that enables us to understand how the APIs are being utilized. A stricter rate limit will be applied if a clientId is not provided. As a developer integrating with our APIs, **please preferably the same clientID (i.e. company name or your app name)** for:
+In order to continuously improve the KyberSwap Aggregator, our APIs implement a client identifier field that enables us to understand how the APIs are being utilized. A stricter rate limit will be applied if a clientId is not provided. As a developer integrating with our APIs, **please preferably use the same clientID (i.e. company name or your app name)** for:
 
 * **\[V1] Get Swap Route**
   * **Header:** `x-client-id`
