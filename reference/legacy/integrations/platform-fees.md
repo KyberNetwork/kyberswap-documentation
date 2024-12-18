@@ -58,7 +58,7 @@ These events are no longer emitted, but remain documented.
 ### [KyberNetworkProxy](https://docs.kyberswap.com/Legacy/integrations/addresses-mainnet.md#kybernetworkproxy)[​](https://docs.kyberswap.com/Legacy/integrations/platform-fees#kybernetworkproxy) <a href="#kybernetworkproxy" id="kybernetworkproxy"></a>
 
 _Contract Address_: [0x9AAb3f75489902f3a48495025729a0AF77d4b11e](https://etherscan.io/address/0x9AAb3f75489902f3a48495025729a0AF77d4b11e)\
-_Source_: [KyberNetworkProxy.sol](https://github.com/KyberNetwork/smart-contracts/blob/Katalyst/contracts/sol6/KyberNetworkProxy.sol)
+&#xNAN;_&#x53;ource_: [KyberNetworkProxy.sol](https://github.com/KyberNetwork/smart-contracts/blob/Katalyst/contracts/sol6/KyberNetworkProxy.sol)
 
 #### `ExecuteTrade (V2)`[​](https://docs.kyberswap.com/Legacy/integrations/platform-fees#executetrade-v2) <a href="#executetrade-v2" id="executetrade-v2"></a>
 
@@ -81,7 +81,7 @@ Event Signature: `0xf724b4df6617473612b53d7f88ecc6ea983074b30960a049fcd0657ffe80
 ### [KyberNetworkProxy (V1)](https://docs.kyberswap.com/Legacy/integrations/addresses-mainnet.md#kybernetworkproxy-v1)[​](https://docs.kyberswap.com/Legacy/integrations/platform-fees#kybernetworkproxy-v1) <a href="#kybernetworkproxy-v1" id="kybernetworkproxy-v1"></a>
 
 _Contract Address_: [0x818E6FECD516Ecc3849DAf6845e3EC868087B755](https://etherscan.io/address/0x818E6FECD516Ecc3849DAf6845e3EC868087B755)\
-_Source_: [KyberNetworkProxy.sol](https://github.com/KyberNetwork/smart-contracts/blob/master/contracts/KyberNetworkProxy.sol)
+&#xNAN;_&#x53;ource_: [KyberNetworkProxy.sol](https://github.com/KyberNetwork/smart-contracts/blob/master/contracts/KyberNetworkProxy.sol)
 
 #### `ExecuteTrade (V1)`[​](https://docs.kyberswap.com/Legacy/integrations/platform-fees#executetrade-v1) <a href="#executetrade-v1" id="executetrade-v1"></a>
 
@@ -102,7 +102,7 @@ Event Signature: `0x1849bd6a030a1bca28b83437fd3de96f3d27a5d172fa7e9c78e7b6146892
 ### [KyberNetwork](https://docs.kyberswap.com/Legacy/integrations/addresses-mainnet.md#kybernetwork)[​](https://docs.kyberswap.com/Legacy/integrations/platform-fees#kybernetwork) <a href="#kybernetwork" id="kybernetwork"></a>
 
 _Contract Address_: [0x7C66550C9c730B6fdd4C03bc2e73c5462c5F7ACC](https://etherscan.io/address/0x7C66550C9c730B6fdd4C03bc2e73c5462c5F7ACC)\
-_Source_: [KyberNetwork.sol](https://github.com/KyberNetwork/smart-contracts/blob/Katalyst/contracts/sol6/KyberNetwork.sol)
+&#xNAN;_&#x53;ource_: [KyberNetwork.sol](https://github.com/KyberNetwork/smart-contracts/blob/Katalyst/contracts/sol6/KyberNetwork.sol)
 
 #### `KyberTrade (V2)`[​](https://docs.kyberswap.com/Legacy/integrations/platform-fees#kybertrade-v2) <a href="#kybertrade-v2" id="kybertrade-v2"></a>
 
@@ -133,7 +133,7 @@ Event Signature: `0xc6efb0df0b5d684cd6482e00270d068229ca5833634798e25f85b79eee51
 ### [KyberFeeHandler (ETH)](https://docs.kyberswap.com/Legacy/integrations/addresses-mainnet.md#kyberfeehandler-eth)[​](https://docs.kyberswap.com/Legacy/integrations/platform-fees#kyberfeehandler-eth) <a href="#kyberfeehandler-eth" id="kyberfeehandler-eth"></a>
 
 _Contract Address_: [0xd3d2b5643e506c6d9B7099E9116D7aAa941114fe](https://etherscan.io/address/0xd3d2b5643e506c6d9B7099E9116D7aAa941114fe)\
-_Source_: [KyberFeeHandler.sol](https://github.com/KyberNetwork/smart-contracts/blob/Katalyst/contracts/sol6/Dao/KyberFeeHandler.sol)
+&#xNAN;_&#x53;ource_: [KyberFeeHandler.sol](https://github.com/KyberNetwork/smart-contracts/blob/Katalyst/contracts/sol6/Dao/KyberFeeHandler.sol)
 
 #### `FeeDistributed`[​](https://docs.kyberswap.com/Legacy/integrations/platform-fees#feedistributed) <a href="#feedistributed" id="feedistributed"></a>
 
@@ -200,8 +200,8 @@ Event Signature: `0x11c852d8be537f120b8d4b4d5c3c211870522fd96a8bd9fa51d102774077
 ### [KyberReserve](https://docs.kyberswap.com/Legacy/integrations/addresses-mainnet.md#kyberreserve)[​](https://docs.kyberswap.com/Legacy/integrations/platform-fees#kyberreserve) <a href="#kyberreserve" id="kyberreserve"></a>
 
 _Contract Address_: [0x63825c174ab367968EC60f061753D3bbD36A0D8F](https://etherscan.io/address/0x63825c174ab367968EC60f061753D3bbD36A0D8F/)\
-_Other Reserves_: Visit our [tracker](https://tracker.kyber.network/#/reserves) to see other reserve addresses.\
-_Source_: [KyberReserve.sol](https://github.com/KyberNetwork/smart-contracts/blob/master/contracts/KyberReserve.sol)
+&#xNAN;_&#x4F;ther Reserves_: Visit our [tracker](https://tracker.kyber.network/#/reserves) to see other reserve addresses.\
+&#xNAN;_&#x53;ource_: [KyberReserve.sol](https://github.com/KyberNetwork/smart-contracts/blob/master/contracts/KyberReserve.sol)
 
 #### `DepositToken`[​](https://docs.kyberswap.com/Legacy/integrations/platform-fees#deposittoken) <a href="#deposittoken" id="deposittoken"></a>
 

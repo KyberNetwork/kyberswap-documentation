@@ -6,18 +6,17 @@ description: KyberSwap Aggregator EVM APIs
 
 ## Download OpenAPI specification:
 
-{% file src="../../../.gitbook/assets/KyberSwapAggregator_EVMAPIs_v2.9.0.yaml" %}
+{% file src="../../../.gitbook/assets/KyberSwapAggregator_EVMAPIs_v2.9.1.yaml" %}
 
 {% hint style="success" %}
 #### Note on integration: clientID
 
-In order to continuously improve the KyberSwap Aggregator, our APIs implement a client identifier field that enables us to understand how the APIs are being utilized. A stricter rate limit will be applied if a clientId is not provided. As a developer integrating with our APIs, **please use the same clientID (i.e. company name)** for:
+In order to continuously improve the KyberSwap Aggregator, our APIs implement a client identifier field that enables us to understand how the APIs are being utilized. A stricter rate limit will be applied if a clientId is not provided. As a developer integrating with our APIs, **please use some same clientID (i.e. company name or your app name)** for:
 
 * **\[V1] Get Swap Route**
   * **Header:** `x-client-id`
 * **\[V1] Post Swap Route For Encoded Data**
   * **Header:** `x-client-id`
-  * **Body:** `source`
 
 This will enable us to serve you better as we continuously strive to improve our Aggregator API. For integrators who have previously integrated with our `Legacy` API, we highly encourage migrating to the `Latest` APIs to ensure access to the latest features as well as improved service quality and efficiency.
 
@@ -25,12 +24,10 @@ This will enable us to serve you better as we continuously strive to improve our
 
 * \[V1] `GET` /routes
   * Header
-    * x-client-id: "yourCompanyNameHere"
+    * `x-client-id: MyAwesomeApp`
 * \[V1] `POST` /route/build
   * Header
-    * x-client-id: "yourCompanyNameHere"
-  * Body
-    * "source": "yourCompanyNameHere"
+    * `x-client-id: MyAwesomeApp`
 {% endhint %}
 
 ## EVM swap APIs
@@ -74,22 +71,23 @@ The Aggregator APIs require a chain **name** to be included in the path when cal
 * Scroll (ChainID: 534352) -> `scroll`
 * Mantle (ChainID: 5000) -> `mantle`
 * Blast (ChainID: 81457) -> `blast`
+* Sonic (ChainID: 146) -> `sonic`
 {% endhint %}
 
 ### `Latest`
 
 <figure><img src="../../../.gitbook/assets/Aggregator APIv1.jpg" alt=""><figcaption></figcaption></figure>
 
-{% swagger src="../../../.gitbook/assets/KyberSwapAggregator_EVMAPIs_v2.9.0.yaml" path="/{chain}/api/v1/routes" method="get" %}
-[KyberSwapAggregator_EVMAPIs_v2.9.0.yaml](../../../.gitbook/assets/KyberSwapAggregator_EVMAPIs_v2.9.0.yaml)
+{% swagger src="../../../.gitbook/assets/KyberSwapAggregator_EVMAPIs_v2.9.1.yaml" path="/{chain}/api/v1/routes" method="get" %}
+[KyberSwapAggregator_EVMAPIs_v2.9.1.yaml](../../../.gitbook/assets/KyberSwapAggregator_EVMAPIs_v2.9.1.yaml)
 {% endswagger %}
 
-{% swagger src="../../../.gitbook/assets/KyberSwapAggregator_EVMAPIs_v2.9.0.yaml" path="/{chain}/api/v1/route/build" method="post" %}
-[KyberSwapAggregator_EVMAPIs_v2.9.0.yaml](../../../.gitbook/assets/KyberSwapAggregator_EVMAPIs_v2.9.0.yaml)
+{% swagger src="../../../.gitbook/assets/KyberSwapAggregator_EVMAPIs_v2.9.1.yaml" path="/{chain}/api/v1/route/build" method="post" %}
+[KyberSwapAggregator_EVMAPIs_v2.9.1.yaml](../../../.gitbook/assets/KyberSwapAggregator_EVMAPIs_v2.9.1.yaml)
 {% endswagger %}
 
 ### `Legacy`
 
-{% swagger src="../../../.gitbook/assets/KyberSwapAggregator_EVMAPIs_v2.9.0.yaml" path="/{chain}/route/encode" method="get" %}
-[KyberSwapAggregator_EVMAPIs_v2.9.0.yaml](../../../.gitbook/assets/KyberSwapAggregator_EVMAPIs_v2.9.0.yaml)
+{% swagger src="../../../.gitbook/assets/KyberSwapAggregator_EVMAPIs_v2.9.1.yaml" path="/{chain}/route/encode" method="get" %}
+[KyberSwapAggregator_EVMAPIs_v2.9.1.yaml](../../../.gitbook/assets/KyberSwapAggregator_EVMAPIs_v2.9.1.yaml)
 {% endswagger %}

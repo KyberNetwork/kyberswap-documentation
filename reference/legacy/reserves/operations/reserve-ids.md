@@ -14,7 +14,7 @@ For the most updated information, please refer to:
 ### What are reserve IDs?[​](https://docs.kyberswap.com/Legacy/reserves/operation/reserve-ids#what-are-reserve-ids) <a href="#what-are-reserve-ids" id="what-are-reserve-ids"></a>
 
 Instead of Ethereum addresses, reserves are now identified using reserve IDs. Each reserve ID is 32 bytes long.\
-_Example: 0xaa4b4e4320415052000000000000000000000000000000000000000000000000_
+&#xNAN;_&#x45;xample: 0xaa4b4e4320415052000000000000000000000000000000000000000000000000_
 
 ### Why are reserve IDs used instead of addresses?[​](https://docs.kyberswap.com/Legacy/reserves/operation/reserve-ids#why-are-reserve-ids-used-instead-of-addresses) <a href="#why-are-reserve-ids-used-instead-of-addresses" id="why-are-reserve-ids-used-instead-of-addresses"></a>
 
