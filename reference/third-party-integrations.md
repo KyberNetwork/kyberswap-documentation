@@ -52,7 +52,7 @@ Click [**here**](https://docs.squidrouter.com/) for more information on Squid.
 
 #### Why Axelar x Squid?
 
-![](<../.gitbook/assets/Squid\_LiquidityModel (1).jpg>)
+![](<../.gitbook/assets/Squid_LiquidityModel (1).jpg>)
 
 By routing transactions through axlUSDC/USDC stable swap pools as well as USDC/native token pools, Squid supports swapping of any token combination across supported chains. Built on top of Axelar, Squid leverages Axelar's general cross-chain messaging abilities as well as its axlUSDC ecosystem to enable secure cross-chain token swaps.
 
@@ -89,7 +89,7 @@ PayMaster is integrated on KyberSwap's Aggregator that will allow the users to a
 
 This development empowers KyberSwap users by offering the flexibility to pay gas fees using various tokens such as $USDC, $USDT, (wBTC TBA) and $HOLD&#x20;
 
-![](<../.gitbook/assets/IMG\_6812 (1).jpeg>)
+![](<../.gitbook/assets/IMG_6812 (1).jpeg>)
 
 One of the standout features of this launch is that users are no longer required to maintain ETH in their wallets. This enhancement simplifies the user experience and adds a new layer of convenience to the KyberSwap platform.
 
@@ -99,42 +99,26 @@ _Disclaimer:_ _The PayMaster module & contracts integrated on KyberSwap was deve
 
 <details>
 
-<summary>Flashbots</summary>
+<summary>BLINK</summary>
 
-**What is Flashbots?**
+**What is Blink?**
 
-Flashbots Protect [RPC](../getting-started/foundational-topics/decentralized-technologies/rpc.md) allows regular users to easily submit their transactions to the Flashbots Auction by using a custom RPC endpoint in their wallet. Everything should be the same for users, except transactions are sent to the Flashbots builder instead of the public mempool.
+Blink Protect [RPC](../getting-started/foundational-topics/decentralized-technologies/rpc.md) allows regular users to easily submit their transactions to the Blink Auction by using a custom RPC endpoint in their wallet. Everything should be the same for users, except transactions are sent to the Blink builder instead of the public mempool.
 
-Key benefits to using the Flashbots RPC endpoint:
+Key benefits to using the Blink RPC endpoint:
 
 * **Frontrunning protection:** your transaction will not be seen by hungry sandwich bots in the public mempool.
 *   **No failed transactions:** your transaction will only be included if it doesn't include any reverts, so you don't pay for failed transactions.
 
     > Note: your transaction could be uncled, emitted to the mempool, and then included on-chain.
 
-Privacy notice: **Flashbots Protect RPC does not track** any kind of user information (i.e. IP, location, etc.). No user information is ever stored or even logged.
+Privacy notice: **Blink RPC does not track** any kind of user information (i.e. IP, location, etc.). No user information is ever stored or even logged.
 
-Click [here](https://docs.flashbots.net/flashbots-protect/overview) for more information on Flashbots RPC.
+Click [here](https://github.com/KyberNetwork/kyberswap-interface/commit/5ca7103e0099afe9c3e92fa0df7ed383fc03fdf3) for more information on Blink RPC.
 
-**Flashbots on** [**KyberSwap.com**](https://kyberswap.com/swap/ethereum)
+**Blink on** [**KyberSwap.com**](https://kyberswap.com/swap/ethereum)
 
-KyberSwap provides its user the option to conveniently connect to the Flashbots RPC when trading on the Ethereum mainnet.
-
-</details>
-
-<details>
-
-<summary>MEVBlocker</summary>
-
-**What is MEVBlocker?**
-
-MEV Blocker facilitates an auction between a network of “searchers” who are given the opportunity to backrun your transactions. In return, they protect you from frontrunning and sandwich attacks - the nasty types of MEV that exploit Ethereum users every day.
-
-Click [here](https://mevblocker.io/) for more information on MEVBlocker.
-
-**MEVBlocker on** [**KyberSwap.com**](https://kyberswap.com/swap/ethereum)
-
-KyberSwap provides its user the option to conveniently connect to the MEVBlocker RPC when trading on the Ethereum mainnet.
+KyberSwap provides its user the option to conveniently connect to the Blink RPC when trading on the Ethereum mainnet.
 
 </details>
 

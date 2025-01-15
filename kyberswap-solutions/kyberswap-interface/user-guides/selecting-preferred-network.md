@@ -26,50 +26,34 @@ KyberSwap supports the trading of more than 20,000 tokens across the majority of
 
 ## MEV protection on Ethereum
 
-<figure><img src="../../../.gitbook/assets/SwitchNetwork_MEVProtection.png" alt=""><figcaption><p>MEV protected RPCs</p></figcaption></figure>
-
-To protect transactions on Ethereum against [MEV strategies](../../../getting-started/foundational-topics/decentralized-finance/maximal-extractable-value-mev.md), KyberSwap provides users with the option to select MEV protected [RPCs](../../../getting-started/foundational-topics/decentralized-technologies/rpc.md) such as [Flashbots ](https://www.flashbots.net/)and [MEVBlocker](https://mevblocker.io/). Transactions via such RPCs will undergo a different transaction ordering process and therefore enjoy protection from multiple MEV strategies.&#x20;
+To protect transactions on Ethereum against [MEV strategies](../../../getting-started/foundational-topics/decentralized-finance/maximal-extractable-value-mev.md), KyberSwap provides users with the option to select MEV protected [RPCs](../../../getting-started/foundational-topics/decentralized-technologies/rpc.md) such as Blink. Transactions via such RPCs will undergo a different transaction ordering process and therefore enjoy protection from multiple MEV strategies.&#x20;
 
 It is important that you understand the pros and cons of using MEV protected RPCs. This will help you make an informed decision as to the suitability of such RPCs with regards to your DeFi goals. MEV protected RPCs will be indicated with the green shield icon.
 
 <details>
 
-<summary>Flashbots</summary>
+<summary>BLINK</summary>
 
-**What is Flashbots?**
+**What is Blink?**
 
-Flashbots Protect [RPC](../../../getting-started/foundational-topics/decentralized-technologies/rpc.md) allows regular users to easily submit their transactions to the Flashbots Auction by using a custom RPC endpoint in their wallet. Everything should be the same for users, except transactions are sent to the Flashbots builder instead of the public mempool.
+Blink Protect [RPC](../../../getting-started/foundational-topics/decentralized-technologies/rpc.md) allows regular users to easily submit their transactions to the Blink Auction by using a custom RPC endpoint in their wallet. Everything should be the same for users, except transactions are sent to the Blink builder instead of the public mempool.
 
-Key benefits to using the Flashbots RPC endpoint:
+Endpoint: [https://ethereum-mev-protection.kyberengineering.io/](https://ethereum-mev-protection.kyberengineering.io/)
+
+Key benefits to using the Blink RPC endpoint:
 
 * **Frontrunning protection:** your transaction will not be seen by hungry sandwich bots in the public mempool.
 *   **No failed transactions:** your transaction will only be included if it doesn't include any reverts, so you don't pay for failed transactions.
 
     > Note: your transaction could be uncled, emitted to the mempool, and then included on-chain.
 
-Privacy notice: **Flashbots Protect RPC does not track** any kind of user information (i.e. IP, location, etc.). No user information is ever stored or even logged.
+Privacy notice: **Blink RPC does not track** any kind of user information (i.e. IP, location, etc.). No user information is ever stored or even logged.
 
-Click [here](https://docs.flashbots.net/flashbots-protect/overview) for more information on Flashbots Protect RPC.
+Click [here](https://github.com/KyberNetwork/kyberswap-interface/commit/5ca7103e0099afe9c3e92fa0df7ed383fc03fdf3) for more information on Blink RPC.
 
-**Flashbots on** [**KyberSwap.com**](https://kyberswap.com/swap/ethereum)
+**Blink on** [**KyberSwap.com**](https://kyberswap.com/swap/ethereum)
 
-KyberSwap provides its user the option to conveniently connect to the Flashbots RPC when trading on the Ethereum mainnet.
-
-</details>
-
-<details>
-
-<summary>MEVBlocker</summary>
-
-**What is MEVBlocker?**
-
-MEV Blocker facilitates an auction between a network of “searchers” who are given the opportunity to backrun your transactions. In return, they protect you from frontrunning and sandwich attacks - the nasty types of MEV that exploit Ethereum users every day.
-
-Click [here](https://mevblocker.io/) for more information on MEVBlocker.
-
-**MEVBlocker on** [**KyberSwap.com**](https://kyberswap.com/swap/ethereum)
-
-KyberSwap provides its user the option to conveniently connect to the MEVBlocker RPC when trading on the Ethereum mainnet.
+KyberSwap provides its user the option to conveniently connect to the Blink RPC when trading on the Ethereum mainnet.
 
 </details>
 
