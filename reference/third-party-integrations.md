@@ -105,6 +105,8 @@ _Disclaimer:_ _The PayMaster module & contracts integrated on KyberSwap was deve
 
 Blink Protect [RPC](../getting-started/foundational-topics/decentralized-technologies/rpc.md) allows regular users to easily submit their transactions to the Blink Auction by using a custom RPC endpoint in their wallet. Everything should be the same for users, except transactions are sent to the Blink builder instead of the public mempool.
 
+Endpoint: [https://ethereum-mev-protection.kyberengineering.io/](https://ethereum-mev-protection.kyberengineering.io/)
+
 Key benefits to using the Blink RPC endpoint:
 
 * **Frontrunning protection:** your transaction will not be seen by hungry sandwich bots in the public mempool.
