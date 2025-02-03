@@ -1,0 +1,2095 @@
+openapi: 3.0.3
+info:
+  title: KyberSwap Limit Order APIs
+  version: '1.2.0'
+  description: API specification for managing KyberSwap on-chain and off-chain limit orders.
+servers:
+  - url: 'https://limit-order.kyberswap.com'
+paths:
+  # General LO APIS
+  /read-partner/api/v1/orders/pairs:
+    get:
+      summary: Get Chain Supported Pairs
+      tags:
+        - General
+      operationId: get-read-partner-api-v1-orders-pairs
+      description: Please refer to [Supported Exchanges And Networks](https://docs.kyberswap.com/getting-started/supported-exchanges-and-networks) for full list of supported networks.      
+      parameters:
+        - schema:
+            type: string
+          in: query
+          name: chainId
+          description: The chainId of the network to query.
+          required: true        
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                required:
+                  - code
+                  - message
+                  - data
+                properties:                                  
+                  code:
+                    type: integer
+                    description: The response code.
+                  message:
+                    type: string
+                    description: Server response message.
+                  data:
+                    type: object
+                    required:
+                      - pairs
+                    properties:
+                      pairs:
+                        type: array
+                        description: The supported token pairs.
+                        items:
+                          type: object
+                          required:
+                            - makerAsset
+                            - takerAsset                             
+                          properties:                       
+                            makerAsset:
+                              type: string
+                              description: The token address of the asset which the Maker is selling.
+                            takerAsset:
+                              type: string
+                              description: The token address of the asset which the Maker expects in return.
+                example:
+                  value:
+                    code: 0
+                    message: Successfully
+                    data:
+                      pairs:
+                        - makerAsset: '0x1c954e8fe737f99f68fa1ccda3e51ebdb291948c'
+                          takerAsset: '0x2791bca1f2de4661ed88a30c99a7a9449aa84174'
+        '400':
+          description: |-
+            Bad Request
+            - Missing required field
+            - chainId is not supported
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+                example:
+                  value:
+                    code: 4000
+                    message: 'Missing required field: chainId'
+                    errorEntities:
+                      - chainId
+        '500':
+          description: Internal Server Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+                example:
+                  value:
+                    code: 5000
+                    message: Internal Server Error
+                    errorEntities: []
+  /read-ks/api/v1/configs/contract-address:
+    get:
+      summary: Get Limit Order Contract Addresses
+      tags:
+        - General
+      operationId: get-read-ks-api-v1-configs-contract-address
+      description: Please refer to [Supported Exchanges And Networks](https://docs.kyberswap.com/getting-started/supported-exchanges-and-networks) for full list of supported networks.
+      parameters:
+        - schema:
+            type: string
+          in: query
+          name: chainId
+          description: The chainId of the network to query.         
+          required: true       
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                required:
+                  - code
+                  - message
+                  - data                   
+                properties:             
+                  code:
+                    type: integer
+                    description: The response code.
+                  message:
+                    type: string
+                    description: Server response message.                    
+                  data:
+                    type: object
+                    required:
+                      - latest
+                      - features
+                    properties:
+                      latest:
+                        type: string
+                        description: The latest limit order contract address.
+                      features:
+                        type: object
+                        description: The limit order contract address.
+                        additionalProperties:
+                          type: object
+                          required:
+                            - supportDoubleSignature                          
+                          properties:
+                            supportDoubleSignature:
+                              type: boolean
+                              description: Whether the contract supports gasless cancellations (i.e. double signature = maker signature + operator signature).
+                example:
+                  value:
+                    code: 0
+                    message: Successfully
+                    data:
+                      latest: '0xcab2FA2eeab7065B45CBcF6E3936dDE2506b4f6C'
+                      features:
+                        '0xBff3AF706AedfAa19724BAb00947b7cD7bF3Af5F':
+                          supportDoubleSignature: false
+                        '0xcab2FA2eeab7065B45CBcF6E3936dDE2506b4f6C':
+                          supportDoubleSignature: true
+        '400':
+          description: |-
+            Bad Request
+            - Missing required field
+            - chainId is not supported
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+                example:
+                  value:
+                    code: 4000
+                    message: 'Missing required field: chainId'
+                    errorEntities:
+                      - chainId
+        '500':
+          description: Internal Server Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+                example:
+                  value:
+                    code: 5000
+                    message: Internal Server Error
+                    errorEntities: []  
+
+  # Maker: Create order(s)
+  /write/api/v1/orders/sign-message:
+    post:
+      summary: Get Unsigned Create Order Message
+      tags: 
+        - Maker
+      operationId: post-write-api-v1-orders-sign-message
+      description: Get EIP712 create order message to be signed. The response of this API will need to be signed with [Sign Typed Data v4](https://docs.metamask.io/guide/signing-data.html#sign-typed-data-v4) before submitting create order request to KyberSwap via `/write/api/v1/orders`.
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+                - chainId
+                - makerAsset
+                - takerAsset
+                - maker
+                - makingAmount
+                - takingAmount
+                - expiredAt              
+              properties:
+                chainId:
+                  type: string
+                  description: The chainId on which the order is being created. Only supports EVM chains.
+                makerAsset:
+                  type: string
+                  description: The token address of the asset which the Maker is selling.
+                takerAsset:
+                  type: string
+                  description: The token address of the asset which the Maker expects in return.
+                maker:
+                  type: string
+                  description: The address of the Maker.
+                receiver:
+                  type: string
+                  description: |-
+                    Defines who will receive the takerAsset when the order is filled.
+                    Default: `maker`.
+                allowedSenders:
+                  type: array
+                  maxItems: 1
+                  description: Defines the addresses who are allowed to fill the order.
+                  items:
+                    type: string
+                makingAmount:
+                  type: string
+                  description: The amount of `makerAsset` in wei. String representation of uint256 value.
+                takingAmount:
+                  type: string
+                  description: The amount of `takerAsset` in wei. String representation of uint256 value.
+                feeRecipient:
+                  type: string
+                  description: The address to receive the fees, if any. Fees are configured in `makerTokenFeePercent`.
+                makerTokenFeePercent:
+                  type: string
+                  description: |-
+                    Amount of makerToken paid by the taker to the `feeRecipient`. For example, 20% = 0.2 -> makerTokenFeePercent = 0.2 * 10000 = 2000
+                    Format: uint32
+                expiredAt:
+                  type: integer
+                  description: The unix timestamp upon which the order will automatically lapse (i.e. expire).
+              example:
+                chainId: '137'
+                makerAsset: '0x2791bca1f2de4661ed88a30c99a7a9449aa84174'
+                takerAsset: '0x1c954e8fe737f99f68fa1ccda3e51ebdb291948c'
+                maker: '0x2bfc3A4Ef52Fe6cD2c5236dA08005C59EaFB43a7'
+                allowedSenders:
+                  - '0x2bfc3A4Ef52Fe6cD2c5236dA08005C59EaFB43a7'
+                makingAmount: '10000'
+                takingAmount: '20000000000000000'
+                expiredAt: 1697690051
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                required:
+                  - code
+                  - message
+                  - data                
+                properties:
+                  code:
+                    type: integer
+                    description: The response code.
+                  message:
+                    type: string
+                    description: Server response message.
+                  data:
+                    type: object
+                    required:
+                      - types
+                      - domain
+                      - primaryType
+                      - message
+                    properties:
+                      types:
+                        type: object
+                        required:
+                          - EIP712Domain
+                          - Order
+                        properties:
+                          EIP712Domain:
+                            type: array
+                            items:
+                              $ref: '#/components/schemas/OrderSignMessageDefinition'
+                          Order:
+                            type: array
+                            items:
+                              $ref: '#/components/schemas/OrderSignMessageDefinition'
+                      domain:
+                        type: object
+                        required:
+                          - name
+                          - version
+                          - chainId
+                          - verifyingContract
+                        properties:
+                          name:
+                            type: string
+                            description: The user readable name of signing domain, i.e. the name of the DApp or the protocol.
+                          version:
+                            type: string
+                            description: The current major version of the signing domain. Signatures from different versions are not compatible.
+                          chainId:
+                            type: string
+                            description: The EIP-155 chain id. The user-agent should refuse signing if it does not match the currently active chain.
+                          verifyingContract:
+                            type: string
+                            description: the address of the contract that will verify the signature. The user-agent may do contract specific phishing prevention.
+                      primaryType:
+                        type: string
+                        description: The top-level type of the object in the EIP712 message but does not have to correspond to any of the types in the message.
+                      message:
+                        type: object
+                        required:
+                          - salt
+                          - makerAsset
+                          - takerAsset
+                          - maker
+                          - receiver
+                          - allowedSender
+                          - makingAmount
+                          - takingAmount
+                          - feeConfig
+                          - makerAssetData
+                          - takerAssetData
+                          - getMakerAmount
+                          - getTakerAmount
+                          - predicate
+                          - interaction
+                        properties:
+                          salt:
+                            type: string
+                            description: The randomized data fed as an additional input to the hashing function.
+                          makerAsset:
+                            type: string
+                            description: The token address of the asset which the Maker is selling.
+                          takerAsset:
+                            type: string
+                            description: The token address of the asset which the Maker expects in return.
+                          maker:
+                            type: string
+                            description: The address of the Maker.
+                          receiver:
+                            type: string
+                            description: The receiver of the takerAsset when order is filled.
+                          allowedSender:
+                            type: string
+                            description: Defines the addresses who are allowed to fill the order. Deafults to `0x000...` if none specified.
+                          makingAmount:
+                            type: string
+                            description: The amount of `makerAsset` in wei.
+                          takingAmount:
+                            type: string
+                            description: The amount of `takerAsset` in wei.
+                          feeConfig:
+                            type: string
+                            description: The hashstring representing the fee configuration for the order.
+                          takerTokenFeeAmount:
+                            type: string
+                            description: The amount of token taken from the Taker as the limit order fee.
+                          makerAssetData:
+                            type: string
+                            description: ABIv2 encoded data that can be decoded by a specified proxy contract when transferring makerAsset.
+                          takerAssetData:
+                            type: string
+                            description: ABIv2 encoded data that can be decoded by a specified proxy contract when transferring takerAsset.
+                          getMakerAmount:
+                            type: string
+                            description: The hexstring representing the `makerAsset` amount.
+                          getTakerAmount:
+                            type: string
+                            description: The hexstring representing the `takerAsset` amount.
+                          predicate:
+                            type: string
+                            description: Call data that indicates the validity of the orders logic.
+                          permit:
+                            type: string
+                            description: Included data if token is able to leverage Permit function (EIP2612) for gasless approvals.
+                          interaction:
+                            type: string
+                            description: Call data that is sent to an intermediate contract when the order is filled.
+                example:
+                  value:
+                    code: 0
+                    message: Successfully
+                    data:
+                      types:
+                        DSOrder:
+                          - name: 'orderHash'
+                            type: 'bytes32'
+                          - name: 'opExpireTime' 
+                            type: 'uint32'
+                        EIP712Domain:
+                          - name: 'name'
+                            type: 'string'
+                          - name: 'version'
+                            type: 'string'
+                          - name: 'chainId'
+                            type: 'uint256'
+                          - name: 'verifyingContract'
+                            type: 'address' 
+                        Order:
+                          - name: 'salt' 
+                            type: 'uint256'
+                          - name: 'makerAsset'
+                            type: 'address'
+                          - name: 'takerAsset'
+                            type: 'address'
+                          - name: 'maker'
+                            type: 'address'
+                          - name: 'receiver'
+                            type: 'address'
+                          - name: 'allowedSender'
+                            type: 'address'
+                          - name: 'makingAmount'
+                            type: 'uint256'
+                          - name: 'takingAmount'
+                            type: 'uint256'
+                          - name: 'feeConfig'
+                            type: 'uint256'
+                          - name: 'makerAssetData'
+                            type: 'bytes'
+                          - name: 'takerAssetData'
+                            type: 'bytes'
+                          - name: 'getMakerAmount'
+                            type: 'bytes'
+                          - name: 'getTakerAmount'
+                            type: 'bytes'
+                          - name: 'predicate'
+                            type: 'bytes'
+                          - name: 'interaction'
+                            type: 'bytes'
+                      domain:
+                        name: Kyber Limit Order Protocol
+                        version: '2'
+                        chainId: '5'
+                        verifyingContract: '0x973B1847407C579a58E610e5f12003996C5a4f16'
+                      primaryType: 'Order'
+                      message:
+                        allowedSender: '0x2bfc3a4ef52fe6cd2c5236da08005c59eafb43a7'
+                        feeConfig: '73529011378642731556159749336395186902652258478889'
+                        getMakerAmount: '0xf4a215c3000000000000000000000000000000000000000000000000000000000000271000000000000000000000000000000000000000000000000000470de4df820000'
+                        getTakerAmount: '0x296637bf000000000000000000000000000000000000000000000000000000000000271000000000000000000000000000000000000000000000000000470de4df820000'
+                        interaction: '0x'
+                        maker: '0x2bfc3a4ef52fe6cd2c5236da08005c59eafb43a7'
+                        makerAsset: '0x2791bca1f2de4661ed88a30c99a7a9449aa84174'
+                        makerAssetData: '0x'
+                        makingAmount: '10000'
+                        predicate: '0x961d5b1e000000000000000000000000000000000000000000000000000000000000004000000000000000000000000000000000000000000000000000000000000000a00000000000000000000000000000000000000000000000000000000000000002000000000000000000000000cab2fa2eeab7065b45cbcf6e3936dde2506b4f6c000000000000000000000000cab2fa2eeab7065b45cbcf6e3936dde2506b4f6c0000000000000000000000000000000000000000000000000000000000000002000000000000000000000000000000000000000000000000000000000000004000000000000000000000000000000000000000000000000000000000000000c00000000000000000000000000000000000000000000000000000000000000044cf6fc6e30000000000000000000000002bfc3a4ef52fe6cd2c5236da08005c59eafb43a7000000000000000000000000000000000000000000000000000000000000000300000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002463592c2b0000000000000000000000000000000000000000000000000000000065308b6d00000000000000000000000000000000000000000000000000000000'
+                        receiver: '0x2bfc3a4ef52fe6cd2c5236da08005c59eafb43a7'
+                        salt: '108360087403015833110619993432889154326'
+                        takerAsset: '0x1c954e8fe737f99f68fa1ccda3e51ebdb291948c'
+                        takerAssetData: '0x'
+                        takingAmount: '20000000000000000'
+        '400':
+          description: |-
+            Bad Request
+            - Missing required fields
+            - chainId is not supported
+            - makerAsset, takerAsset, maker, receiver, allowedSenders, feeRecipient are not ETH address
+            - makerAsset or takerAsset are native tokens
+            - makingAmount, takingAmount are less than or equal to 0
+            - makerTokenFeePercent is less than 0
+            - makingAmount, takingAmount, takerTokenFeeAmount are not uint128
+            - expiredAt is in the past
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+                example:
+                  value:
+                    code: 4000
+                    message: 'Missing required fields: chainId'
+                    errorEntities:
+                      - chainId
+        '500':
+          description: Internal Server Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+                example:
+                  value:
+                    code: 5000
+                    message: Internal Server Error
+                    errorEntities: []
+  /write/api/v1/orders:
+    post:
+      summary: Create New Order
+      tags:
+        - Maker    
+      operationId: post-write-api-v1-orders
+      description: API for Makers to create new orders by sending in order params which includes the signed EIP712 message returned in `/write/api/v1/orders/sign-message`.
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+                - chainId
+                - makerAsset
+                - takerAsset
+                - maker
+                - makingAmount
+                - takingAmount
+                - expiredAt
+                - salt
+                - signature              
+              properties:
+                chainId:
+                  type: string
+                  description: The chainId on which the order is being created. Only supports EVM chains.
+                makerAsset:
+                  type: string
+                  description: The token address of the asset which the Maker is selling.
+                takerAsset:
+                  type: string
+                  description: The token address of the asset which the Maker expects in return.
+                maker:
+                  type: string
+                  description: The address of the Maker.
+                receiver:
+                  type: string
+                  description: |-
+                    Defines who will receive the takerAsset when the order is filled.
+                    Default: `maker`.
+                allowedSenders:
+                  type: array
+                  description: Defines the addresses who are allowed to fill the order.
+                  items:
+                    type: string
+                makingAmount:
+                  type: string
+                  description: The amount of `makerAsset` in wei. String representation of uint256 value.
+                takingAmount:
+                  type: string
+                  description: The amount of `takerAsset` in wei. String representation of uint256 value.
+                feeRecipient:
+                  type: string
+                  description: The address to receive the fees, if any. Fees are configured in `makerTokenFeePercent`.
+                makerTokenFeePercent:
+                  type: string
+                  description: |-
+                    Amount of makerToken paid by the taker to the `feeRecipient`. For example, 20% = 0.2 -> makerTokenFeePercent = 0.2 * 10000 = 2000
+                    Format: uint32
+                expiredAt:
+                  type: integer
+                  description: The unix timestamp upon which the order will automatically lapse (i.e. expire).
+                salt:
+                  type: string
+                  description: The randomized data fed as an additional input to the hashing function. Returned in `/write/api/v1/orders/sign-message`.
+                signature:
+                  type: string
+                  description: The signed(signDataTyped) EIP712 creation order returned in `/write/api/v1/orders/sign-message`.
+              example:
+                chainId: '137'
+                makerAsset: '0x2791bca1f2de4661ed88a30c99a7a9449aa84174'
+                takerAsset: '0x1c954e8fe737f99f68fa1ccda3e51ebdb291948c'
+                maker: '0x2bfc3A4Ef52Fe6cD2c5236dA08005C59EaFB43a7'
+                allowedSenders: 
+                  - '0x2bfc3A4Ef52Fe6cD2c5236dA08005C59EaFB43a7'
+                makingAmount: '10000'
+                takingAmount: '20000000000000000'
+                expiredAt: 1697683411
+                salt: '235124343165545613944116882191476069603'
+                signature: '0xff25fe292d922e7a28b4b84919d2709b8b01a4d2cd4d5ee2335b227dbaa13e1f789d861e1cbb1153e251d839651490276bae2324266f3107c1ade2137c6b4c301b'
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                required:
+                  - code
+                  - message
+                  - data                
+                properties:
+                  code:
+                    type: integer
+                    description: The response code.
+                  message:
+                    type: string
+                    description: Server response message.
+                  data:
+                    type: object
+                    required:
+                      - id
+                    properties:
+                      id:
+                        type: integer
+                        description: ID of the successfully created order.
+                example:
+                  value:
+                    code: 0
+                    message: Successfully
+                    data:
+                      id: 1
+        '400':
+          description: |-
+            Bad Request
+            - Missing required fields
+            - chainId is not supported
+            - makerAsset, takerAsset, maker, receiver, allowedSenders, feeRecipient are not ETH address
+            - makerAsset, takerAsset are native token
+            - makingAmount, takingAmount are less than or equal 0
+            - makerTokenFeePercent is less than 0
+            - makingAmount, takingAmount, salt are not uint256
+            - makerTokenFeePercent is not uint32
+            - makerAsset is equal to takerAsset
+            - expiredAt is in the past
+            - signature is incorrect
+            - maker's balance is not enough
+            - maker's allowance amount is not enough
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+                example:
+                  value:
+                    code: 4000
+                    message: 'Missing required fields: chainId'
+                    errorEntities:
+                      - chainId
+        '500':
+          description: Internal Server Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+                example:
+                  value:
+                    code: 5000
+                    message: Internal Server Error
+                    errorEntities: []
+
+  # Maker: Query maker order(s)
+  /read-ks/api/v1/orders:
+    get:
+      summary: Get List Of Orders By Maker
+      tags:
+        - Maker
+      operationId: get-read-ks-api-v1-orders
+      description: Get all orders created by a Maker address filtered by the order status.
+      parameters:
+        - schema:
+            type: string
+          in: query
+          name: chainId
+          required: true
+          description: The chainId on which the order is being created. Only supports EVM chains.
+        - schema:
+            type: string
+          in: query
+          name: maker
+          required: true
+          description: The address of the Maker.
+        - schema:
+            type: string
+            enum:
+              - active
+              - open
+              - partially_filled
+              - closed
+              - filled
+              - cancelled
+              - expired
+          in: query
+          name: status
+          required: true
+          description: |-
+            The status of the order to filter for:
+              - `active`: Order is active (both open and has been partially filled).
+              - `open`: Order is open and has yet to be filled.
+              - `partially_filled`: Order has been partially filled.
+              - `closed`: Order has been closed and can no longer be filled.
+              - `filled`: Order has been filled with no remaining assets to be filled.
+              - `cancelled`: Order was cancelled by the Maker and can no longer be filled.
+              - `expired`: Order can no longer be filled as the expiry set by the Maker is in the past.
+        - schema:
+            type: string
+          in: query
+          name: query
+          description: Token symbol or token address. Search prefix for symbol, search exact for address.
+        - schema:
+            type: integer
+            minimum: 1
+            default: 1
+          in: query
+          name: page
+          description: Number of pages to return. Minimum and default is set at `1`.
+        - schema:
+            type: integer
+            minimum: 1
+            maximum: 50
+            default: 10
+          in: query
+          name: pageSize
+          description: Number of results to display per page. Minimum is `1` and maximum is `50`. Default is `10`.      
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                required:
+                  - code
+                  - message
+                  - data                
+                properties:
+                  code:
+                    type: integer
+                    description: The response code.
+                  message:
+                    type: string
+                    description: Server response message.
+                  data:
+                    type: object
+                    required:
+                      - orders
+                      - pagination
+                    properties:
+                      orders:
+                        type: array
+                        items:
+                          type: object
+                          required:
+                            - id
+                            - chainId
+                            - nonce
+                            - makerAsset
+                            - takerAsset
+                            - makerAssetDecimals
+                            - takerAssetDeicmals
+                            - makingAmount
+                            - takingAmount
+                            - status
+                            - createdAt
+                            - expiredAt                          
+                          properties:
+                            id:
+                              type: integer
+                              description: The limit order ID.
+                            chainId:
+                              type: string
+                              description: The chainId on which the order was created.
+                            nonce:
+                              type: integer
+                              description: The nonce generated by KyberSwap to enable hard cancellation of all orders. See `/read-ks/api/v1/encode/increase-nonce`.
+                            makerAsset:
+                              type: string
+                              description: The token address of the asset which the Maker is selling.
+                            takerAsset:
+                              type: string
+                              description: The token address of the asset which the Maker expects in return.
+                            makerAssetSymbol:
+                              type: string
+                              description: The ERC20 token symbol for the `makerAsset`.
+                            takerAssetSymbol:
+                              type: string
+                              description: The ECR20 token symbol for the `takerAsset`.
+                            makerAssetDecimals:
+                              type: integer
+                              description: The number of decimals supported by the ERC20 `makerAsset` token.
+                            takerAssetDecimals:
+                              type: integer
+                              description: The number of decimals supported by the ERC20 `takerAsset` token.
+                            makerAssetLogoURL:
+                              type: string
+                              description: A URL which hosts the logo of the `makerAsset`.
+                            takerAssetLogoURL:
+                              type: string
+                              description: A URL which hosts the logo of the `takerAsset`.
+                            makingAmount:
+                              type: string
+                              description: The amount of `makerAsset` in wei.
+                            takingAmount:
+                              type: string
+                              description: The amount of `takerAsset` in wei.
+                            filledMakingAmount:
+                              type: string
+                              description: The amount of `makerAsset` which has been filled for this order.
+                            filledTakingAmount:
+                              type: string
+                              description: The amount of `takerAsset` which has been filled for this order.
+                            status:
+                              type: string
+                              description: |-
+                                The status of the order to filter for:
+                                - `active`: Order is active and has yet to be filled.
+                                - `open`: Order is active and has been partially filled.
+                                - `partially_filled`: Order has been partially filled.
+                                - `closed`: Order has been closed and can no longer be filled.
+                                - `filled`: Order has been filled with no remaining assets to be filled.
+                                - `cancelled`: Order was cancelled by the Maker and can no longer be filled.
+                                - `expired`: Order can no longer be filled as the expiry set by the Maker is in the past.
+                            createdAt:
+                              type: integer
+                              description: Timestamp at which the Maker order was created.
+                            expiredAt:
+                              type: integer
+                              description: The unix timestamp upon which the order will automatically lapse (i.e. expire).
+                            transactions:
+                              type: array
+                              description: The fill transactions related to this order.
+                              items:
+                                type: object
+                                required:
+                                  - id
+                                  - txHash
+                                  - txTime
+                                  - makingAmount
+                                  - takingAmount                                
+                                properties:
+                                  id:
+                                    type: integer
+                                    description: The order ID.
+                                  txHash:
+                                    type: string
+                                    description: The on-chain tx hash which filled the order.
+                                  txTime:
+                                    type: integer
+                                    description: The fill order tx timestamp.
+                                  makingAmount:
+                                    type: string
+                                    description: The amount of `makerAsset` filled by this order.
+                                  takingAmount:
+                                    type: string
+                                    description: The amount of `takerAsset` filled by this order.
+                      pagination:
+                        type: object
+                        required:
+                          - totalItems
+                        properties:
+                          totalItems:
+                            type: integer
+                            description: The total number or Maker orders.
+                example:
+                  code: 0
+                  message: Successfully
+                  data:
+                    orders:
+                      - id: 22385,
+                        chainId: '137'
+                        nonce: 3,
+                        makerAsset: '0x2791bca1f2de4661ed88a30c99a7a9449aa84174'
+                        takerAsset: '0x1c954e8fe737f99f68fa1ccda3e51ebdb291948c'
+                        contractAddress: '0xcab2fa2eeab7065b45cbcf6e3936dde2506b4f6c'
+                        orderHash: '57e2bec735db51269aff31b60f4a02f8bd2ef2e554c1433bbd0aea914c378f3a'
+                        makerAssetSymbol: 'USDC.e'
+                        takerAssetSymbol: 'KNC'
+                        makerAssetLogoURL: 'https://assets.coingecko.com/coins/images/6319/large/USD_Coin_icon.png'
+                        takerAssetLogoURL: 'https://storage.googleapis.com/ks-setting-1d682dca/9e796f57-482a-426d-904d-007a6adf22fb.png'
+                        makerAssetDecimals: 6
+                        takerAssetDecimals: 18
+                        makingAmount: '10000'
+                        takingAmount: '20000000000000000'
+                        filledMakingAmount: '0'
+                        filledTakingAmount: '0'
+                        status: 'open'
+                        createdAt: 1697679812
+                        expiredAt: 1697683411
+                        operatorSignatureExpiredAt: 0
+                        transactions: []
+                    pagination:
+                      totalItems: 1
+        '400':
+          description: |-
+            Bad Request
+            - Missing required fields
+            - status is not part of accepted values
+            - page, pageSize are in invalid formats
+            - page, pageSize are greater than/less than max/min value
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+                example:
+                  value:
+                    code: 4000
+                    message: 'Missing required fields: chainId'
+                    errorEntities:
+                      - chainId
+        '500':
+          description: Internal Server Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+                example:
+                  value:
+                    code: 5000
+                    message: Internal Server Error
+                    errorEntities: []
+  /read-ks/api/v1/orders/active-making-amount:
+    get:
+      summary: Get Maker Active Making Amount
+      tags:
+        - Maker
+      operationId: get-read-ks-api-v1-orders-active-making-amount
+      description: Get the Maker's total making amount for a specified token.
+      parameters:
+        - schema:
+            type: string
+          in: query
+          name: chainId
+          required: true
+          description: The chainId on which the order is being created. Only supports EVM chains.
+        - schema:
+            type: string
+          in: query
+          name: makerAsset
+          required: true
+          description: The token address of the asset which the Maker is selling.
+        - schema:
+            type: string
+          in: query
+          name: maker
+          description: The address of the Maker.
+          required: true        
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                required:
+                  - code
+                  - message
+                  - data                
+                properties:
+                  code:
+                    type: integer
+                    description: The response code.
+                  message:
+                    type: string
+                    description: Server response message.
+                  data:
+                    type: object
+                    required:
+                      - activeMakingAmount
+                    properties:
+                      activeMakingAmount:
+                        type: string
+                        description: The total making amount for the specified token (in wei). String representation of uint256 amount.
+                example:
+                  value:
+                    code: 0
+                    message: Successfully
+                    data:
+                      activeMakingAmount: '1000000000000000000'
+        '400':
+          description: |-
+            Bad Request
+            - Missing required fields
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+                example:
+                  value:
+                    code: 4000
+                    message: 'Missing required fields: chainId'
+                    errorEntities:
+                      - chainId
+        '500':
+          description: Internal Server Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+                example:
+                  value:
+                    code: 5000
+                    message: Internal Server Error
+                    errorEntities: []
+
+  # Maker: Gasless cancel order(s)
+  /write/api/v1/orders/cancel-sign:
+    post:
+      summary: Get Unsigned Cancel Order(s) Message
+      tags: 
+        - Maker
+      operationId: post-write-api-v1-orders-cancel-sign
+      description: Get EIP712 cancel order message to be signed (i.e. 'Gasless Cancel'). The response of this API will need to be signed with [Sign Typed Data v4](https://docs.metamask.io/guide/signing-data.html#sign-typed-data-v4) before submitting create order request to KyberSwap via `/write/api/v1/orders/cancel`.
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+                - chainId
+                - maker
+                - orderIds       
+              properties:
+                chainId:
+                  type: string
+                  description: The chainId on which the order is being created. Only supports EVM chains.
+                maker:
+                  type: string
+                  description: The address of the Maker that created the order.
+                orderIds:
+                  type: array
+                  items:
+                    type: integer
+                    description: The order IDs to be cancelled gaslessly.
+              example:
+                chainId: '137'
+                maker: '0x2bfc3A4Ef52Fe6cD2c5236dA08005C59EaFB43a7'
+                orderIds:
+                  - 22393                
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                required:
+                  - code
+                  - message
+                  - data                
+                properties:
+                  code:
+                    type: integer
+                    description: The response code.
+                  message:
+                    type: string
+                    description: Server response message.
+                  data:
+                    type: object
+                    required:
+                      - types
+                      - domain
+                      - primaryType
+                      - message
+                    properties:
+                      types:
+                        type: object
+                        required:
+                          - EIP712Domain
+                          - CancelOrder
+                        properties:
+                          EIP712Domain:
+                            type: array
+                            items:
+                              $ref: '#/components/schemas/OrderSignMessageDefinition'
+                          CancelOrder:
+                            type: array
+                            items:
+                              $ref: '#/components/schemas/OrderSignMessageDefinition'
+                      domain:
+                        type: object
+                        required:
+                          - name
+                          - version
+                          - chainId
+                        properties:
+                          name:
+                            type: string
+                            description: The user readable name of signing domain, i.e. the name of the DApp or the protocol.
+                          version:
+                            type: string
+                            description: The current major version of the signing domain. Signatures from different versions are not compatible.
+                          chainId:
+                            type: string
+                            description: The EIP-155 chain id. The user-agent should refuse signing if it does not match the currently active chain.
+                      primaryType:
+                        type: string
+                        description: The top-level type of the object in the EIP712 message but does not have to correspond to any of the types in the message.
+                      message:
+                        type: object
+                        required:
+                          - chainId
+                          - maker
+                          - orderIds
+                        properties:
+                          chainId:
+                            type: string
+                            description: The chainId on which the order is being created.
+                          maker:
+                            type: string
+                            description: The address of the Maker that created the order.
+                          orderIds:
+                            type: array
+                            items:
+                              type: integer
+                              description: The order IDs to be cancelled gaslessly.
+                example:
+                  value:
+                    code: 0
+                    message: Successfully
+                    data:
+                      types:
+                        EIP712Domain:
+                          - name: 'name'
+                            type: 'string'
+                          - name: 'version'
+                            type: 'string'
+                          - name: 'chainId'
+                            type: 'uint256'
+                          - name: 'verifyingContract'
+                            type: 'address' 
+                        CancelOrder:
+                          - name: 'chainId'
+                            type: 'string'
+                          - name: 'maker'
+                            type: 'address'
+                          - name: 'orderIds'
+                            type: 'uint64[]'
+                      domain:
+                        name: Kyber Limit Order Protocol
+                        version: '1'
+                        chainId: '137'
+                      primaryType: 'CancelOrder'
+                      message:
+                        chainId: '137'
+                        maker: '0x2bfc3a4ef52fe6cd2c5236da08005c59eafb43a7'
+                        orderIds:
+                          - 22393
+        '400':
+          description: |-
+            Bad Request
+            - Missing required fields
+            - chainId is not supported
+            - makerAsset, takerAsset, maker, receiver, allowedSenders, feeRecipient are not ETH address
+            - makerAsset or takerAsset are native tokens
+            - makingAmount, takingAmount are less than or equal to 0
+            - makerTokenFeePercent is less than 0
+            - makingAmount, takingAmount, takerTokenFeeAmount are not uint128
+            - expiredAt is in the past
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+                example:
+                  value:
+                    code: 4000
+                    message: 'Missing required fields: chainId'
+                    errorEntities:
+                      - chainId
+        '500':
+          description: Internal Server Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+                example:
+                  value:
+                    code: 5000
+                    message: Internal Server Error
+                    errorEntities: []  
+  /write/api/v1/orders/cancel:
+    post:
+      summary: Submit Gasless Cancel Order(s)
+      tags:
+        - Maker    
+      operationId: post-write-api-v1-orders-cancel
+      description: API for Makers to gaslessly cancel orders by sending in order params which includes the signed EIP712 message returned in `/write/api/v1/orders/cancel-sign`.
+      parameters:
+        - schema:
+            type: string
+          in: header
+          name: Origin
+          description: Required to include 'https://kyberswap.com' to authenticate the POST call.
+          required: true   
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+                - chainId
+                - maker
+                - orderIds
+                - signature              
+              properties:
+                chainId:
+                  type: string
+                  description: The chainId on which the order is being cancelled. Only supports EVM chains.
+                maker:
+                  type: string
+                  description: The address of the Maker that created the order.
+                orderIds:
+                  type: array
+                  items:
+                    type: integer
+                  description: The order IDs to be cancelled gaslessly.
+                signature:
+                  type: string
+                  description: The signed(signDataTyped) EIP712 cancellation order returned in `/write/api/v1/orders/cancel-sign`.
+              example:
+                chainId: '137'
+                maker: '0x2bfc3A4Ef52Fe6cD2c5236dA08005C59EaFB43a7'
+                orderIds:
+                  - 22405
+                signature: '0xc888d70ebd240e95dc2af556c8002bb8ad92c3e34f6c037e496779d06e778ede53b76399fdacdb812fc0bc3eb7a429ae0b1bdfeabf052f212f732daea628beaa1c'
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                required:
+                  - code
+                  - message
+                  - data                
+                properties:
+                  code:
+                    type: integer
+                    description: The response code.
+                  message:
+                    type: string
+                    description: Server response message.
+                  data:
+                    type: object
+                    required:
+                      - orders
+                    properties:
+                      orders:
+                        type: array
+                        items:
+                          type: object
+                          required:
+                            - id
+                            - chainId
+                            - operatorSignatureExpiredAt
+                          properties:
+                            id:
+                              type: integer
+                              description: ID of the cancelled order.
+                            chainId:
+                              type: string
+                              description: The chainId on which the order was cancelled.
+                            operatorSignatureExpiredAt:
+                              type: integer
+                              description: The unix timestamp at which the Operator's signature expires.
+                example:
+                  value:
+                    code: 0
+                    message: Successfully
+                    data:
+                      orders:
+                        - id: 22404
+                          chainId: '137'
+                          operatorSignatureExpiredAt: 0 
+        '400':
+          description: |-
+            Bad Request
+            - Missing required fields
+            - chainId is not supported
+            - makerAsset, takerAsset, maker, receiver, allowedSenders, feeRecipient are not ETH addresses
+            - makerAsset, takerAsset are native tokens
+            - makingAmount, takingAmount are less than or equal 0
+            - makerTokenFeePercent is less than 0
+            - makingAmount, takingAmount, salt are not uint256
+            - makerTokenFeePercent is not uint32
+            - makerAsset is equal to takerAsset
+            - expiredAt is in the past
+            - signature is incorrect
+            - maker's balance is not enough
+            - maker's allowance amount is not enough
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+                example:
+                  value:
+                    code: 4000
+                    message: 'Missing required fields: chainId'
+                    errorEntities:
+                      - chainId
+        '500':
+          description: Internal Server Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+                example:
+                  value:
+                    code: 5000
+                    message: Internal Server Error
+                    errorEntities: []
+
+  # Maker: Encode cancel order(s)
+  /read-ks/api/v1/encode/cancel-batch-orders:
+    post:
+      summary: Generate Encoded Data For Batch Cancellation
+      tags:
+        - Maker
+      operationId: post-read-ks-api-v1-encode-cancel-batch-orders        
+      description: Request for the cancellation encoded data from KyberSwap. This data can then be executed on-chain from the signer's wallet.
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+                - orderIds              
+              properties:
+                orderIds:
+                  type: array
+                  description: The order IDs to be cancelled on-chain.
+                  items:
+                    type: integer
+              example:
+                value:
+                  orderIds:
+                    - 22393
+                    - 22394
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                required:
+                  - code
+                  - message
+                  - data                
+                properties:
+                  code:
+                    type: integer
+                    description: The response code.
+                  message:
+                    type: string
+                    description: Server response message.
+                  data:
+                    type: object
+                    required:
+                      - encodedData
+                    properties:
+                      encodedData:
+                        type: string
+                        description: The batch cancellation encoded data to be used as the on-chain tx call data.
+                example:
+                  value:
+                    code: 0
+                    message: Successfully
+                    data:
+                      encodedData: '0xf7da270200000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000002000000000000000000000000000000000bf887decc94b42c183580ae17ef2f93d0000000000000000000000002791bca1f2de4661ed88a30c99a7a9449aa841740000000000000000000000001c954e8fe737f99f68fa1ccda3e51ebdb291948c0000000000000000000000002bfc3a4ef52fe6cd2c5236da08005c59eafb43a70000000000000000000000002bfc3a4ef52fe6cd2c5236da08005c59eafb43a70000000000000000000000002bfc3a4ef52fe6cd2c5236da08005c59eafb43a7000000000000000000000000000000000000000000000000000000000000271000000000000000000000000000000000000000000000000000470de4df8200000000000000000000000000324f82e73edb06d29ff62c91ec8f5ff06571bdeb2900000000000000000000000000000000000000000000000000000000000001e00000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000022000000000000000000000000000000000000000000000000000000000000002a000000000000000000000000000000000000000000000000000000000000003200000000000000000000000000000000000000000000000000000000000000540000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000044f4a215c3000000000000000000000000000000000000000000000000000000000000271000000000000000000000000000000000000000000000000000470de4df820000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000044296637bf000000000000000000000000000000000000000000000000000000000000271000000000000000000000000000000000000000000000000000470de4df8200000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001e4961d5b1e000000000000000000000000000000000000000000000000000000000000004000000000000000000000000000000000000000000000000000000000000000a00000000000000000000000000000000000000000000000000000000000000002000000000000000000000000cab2fa2eeab7065b45cbcf6e3936dde2506b4f6c000000000000000000000000cab2fa2eeab7065b45cbcf6e3936dde2506b4f6c0000000000000000000000000000000000000000000000000000000000000002000000000000000000000000000000000000000000000000000000000000004000000000000000000000000000000000000000000000000000000000000000c00000000000000000000000000000000000000000000000000000000000000044cf6fc6e30000000000000000000000002bfc3a4ef52fe6cd2c5236da08005c59eafb43a7000000000000000000000000000000000000000000000000000000000000000300000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002463592c2b000000000000000000000000000000000000000000000000000000006530ac2500000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
+        '400':
+          description: |-
+            Bad Request
+            - Missing required fields
+            - Orders don't have the same maker or chainId
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+                example:
+                  value:
+                    code: 4000
+                    message: 'Missing required fields: orderIds'
+                    errorEntities:
+                      - orderIds
+        '404':
+          description: |-
+            Not Found
+            - Not found order
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+                example:
+                  value:
+                    code: 4040
+                    message: 'Not found: orderId: 1'
+                    errorEntities:
+                      - 'orderId: 1'
+        '409':
+          description: |-
+            Conflict
+            - Duplicate orderId in request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+                example:
+                  value:
+                    code: 4090
+                    message: 'Duplicate data: orderIds'
+                    errorEntities:
+                      - orderIds
+        '500':
+          description: Internal Server Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+                example:
+                  value:
+                    code: 5000
+                    message: Internal Server Error
+                    errorEntities: []
+  /read-ks/api/v1/encode/increase-nonce:
+    post:
+      summary: Generate Encoded Data For Cancel All
+      tags:
+        - Maker
+      operationId: post-read-ks-api-v1-encode-increase-nonce
+      description: Request for the cancel all encoded data from KyberSwap. By increasing the LO contract nonce tied to the Maker, the LO contract is able to nullify all existing orders. This data can then be executed on-chain from the Maker's wallet.    
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                required:
+                  - code
+                  - message
+                  - data
+                properties:
+                  code:
+                    type: integer
+                    description: The response code.
+                  message:
+                    type: string
+                    description: Server response message.
+                  data:
+                    type: object
+                    required:
+                      - encodedData
+                    properties:
+                      encodedData:
+                        type: string
+                        description: The cancel all encoded data to be used as the on-chain tx call data.
+                example:
+                  value:
+                    code: 0
+                    message: Successfully
+                    data:
+                      encodedData: '0xc53a0292'
+        '500':
+          description: Internal Server Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+                example:
+                  value:
+                    code: 5000
+                    message: Internal Server Error
+                    errorEntities: []
+
+  # Taker: Query order(s)
+  /read-partner/api/v1/orders:
+    get:
+      summary: Get Orders By Token Pair
+      tags:
+        - Taker
+      operationId: get-read-partner-api-v1-orders
+      description: Returns orders for the queried token pair sorted by best rates in descending order.
+      parameters:
+        - schema:
+            type: string
+          in: query
+          name: chainId
+          description: The chainId of the network to query.
+          required: true
+        - schema:
+            type: string
+          in: query
+          name: makerAsset
+          description: The token address of the asset which the Taker expects in return.
+          required: true
+        - schema:
+            type: string
+          in: query
+          name: takerAsset
+          description: The token address of the asset which the Taker is exchanging.
+          required: true
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                required:
+                  - code
+                  - message
+                  - data                
+                properties:
+                  code:
+                    type: integer
+                    description: The response code.
+                  message:
+                    type: string
+                    description: Server response message.
+                  data:
+                    type: object
+                    required:
+                      - orders
+                    properties:
+                      orders:
+                        type: array
+                        items:
+                          type: object
+                          required:
+                            - id
+                            - chainId
+                            - signature
+                            - salt                            
+                            - makerAsset
+                            - takerAsset
+                            - maker
+                            - contractAddress
+                            - receiver
+                            - allowedSenders
+                            - makingAmount
+                            - takingAmount
+                            - filledMakingAmount
+                            - filledTakingAmount
+                            - feeConfig
+                            - feeRecipient
+                            - makerTokenFeePercent
+                            - makerAssetData
+                            - takerAssetData
+                            - getMakerAmount
+                            - getTakerAmount
+                            - predicate
+                            - permit
+                            - interaction
+                            - expiredAt                          
+                            - availableMakingAmount
+                            - makerBalanceAllowance
+                          properties:
+                            id:
+                              type: integer
+                              description: The limit order ID.
+                            chainId:
+                              type: string
+                              description: The chainId on which the order was created.
+                            signature:
+                              type: string
+                              description: The signed EIP712 message which created the Maker order.                              
+                            salt:
+                              type: string
+                              description: The randomized data fed as an additional input to the create order function.
+                            makerAsset:
+                              type: string
+                              description: The token address of the asset which the Taker expects in return.
+                            takerAsset:
+                              type: string
+                              description: The token address of the asset which the Taker is exchanging.
+                            maker:
+                              type: string
+                              description: The address of the Maker.
+                            contractAddress:
+                              type: string
+                              description: The address of the Limit Order contract.
+                            receiver:
+                              type: string
+                              description: The address of the Taker to receive the `makerAsset`.
+                            allowedSenders:
+                              type: string
+                              description: Defines the addresses who are allowed to fill the order.
+                            makingAmount:
+                              type: string
+                              description: The amount of `makerAsset` in wei. String representation of uint256 value.
+                            takingAmount:
+                              type: string
+                              description: The amount of `takerAsset` in wei. String representation of uint256 value.
+                            filledMakingAmount:
+                              type: string
+                              description: The amount of `makerAsset` which has been filled for this order.
+                            filledTakingAmount:
+                              type: string
+                              description: The amount of `takerAsset` which has been filled for this order.                              
+                            feeConfig:
+                              type: string
+                              description: The hashstring representing the fee configuration for the order.
+                            feeRecipient:
+                              type: string
+                              description: The address to receive the fees, if any. Fees are configured in `makerTokenFeePercent`.                              
+                            makerTokenFeePercent:
+                              type: string
+                              description: |-
+                                Amount of makerToken paid by the taker to the `feeRecipient`. For example, 20% = 0.2 -> makerTokenFeePercent = 0.2 * 10000 = 2000
+                                Format: uint32
+                            makerAssetData:
+                              type: string
+                              description: ABIv2 encoded data that can be decoded by a specified proxy contract when transferring makerAsset.
+                            takerAssetData:
+                              type: string
+                              description: ABIv2 encoded data that can be decoded by a specified proxy contract when transferring takerAsset.
+                            getMakerAmount:
+                              type: string
+                              description: The hexstring representing the `makerAsset` amount.
+                            getTakerAmount:
+                              type: string
+                              description: The hexstring representing the `takerAsset` amount.
+                            predicate:
+                              type: string
+                              description: Call data that indicates the validity of the orders logic.
+                            permit:
+                              type: string
+                              description: Included data if token is able to leverage Permit function (EIP2612) for gasless approvals.
+                            interaction:
+                              type: string
+                              description: Call data that is sent to an intermediate contract when the order is filled.
+                            expiredAt:
+                              type: integer
+                              description: The unix timestamp upon which the Maker order will automatically lapse (i.e. expire).
+                            availableMakingAmount:
+                              type: string
+                              description: The remaining makingAmount available to be filled
+                            makerBalanceAllowance:
+                              type: string
+                              description: The smaller value between maker's balance for makerAsset and maker's allowance for DSLO contract to spend makerAsset
+                example:
+                  value:
+                    code: 0
+                    message: Successfully
+                    data:
+                      orders:
+                        - id: 22444,
+                          chainId: '137'
+                          signature: '27c31b3a272e79db13b5e75fddff71b070346cf3a3e5d619ceb766fed82d80e32f3e565c1b741f4a2d0cc44132b18551322f2657a274a2782022bdac7fecd2d21b'
+                          salt: '23992172604416598893041149026939778295'
+                          makerAsset: '0x2791bca1f2de4661ed88a30c99a7a9449aa84174'
+                          takerAsset: '0x1c954e8fe737f99f68fa1ccda3e51ebdb291948c'
+                          maker: '0x2bfc3a4ef52fe6cd2c5236da08005c59eafb43a7'
+                          contractAddress: '0xcab2fa2eeab7065b45cbcf6e3936dde2506b4f6c'
+                          receiver: '0x2bfc3a4ef52fe6cd2c5236da08005c59eafb43a7'
+                          allowedSenders: '0x2bfc3a4ef52fe6cd2c5236da08005c59eafb43a7'
+                          makingAmount: '10000'
+                          takingAmount: '20000000000000000'
+                          filledMakingAmount: '0'
+                          filledTakingAmount: '0'
+                          feeConfig: '73529011378642731556159749336395186902652258478889'
+                          feeRecipient: '0x4f82e73edb06d29ff62c91ec8f5ff06571bdeb29'
+                          makerTokenFeePercent: '5'
+                          makerAssetData: ''
+                          takerAssetData: ''
+                          getMakerAmount: 'f4a215c3000000000000000000000000000000000000000000000000000000000000271000000000000000000000000000000000000000000000000000470de4df820000'
+                          getTakerAmount: '296637bf000000000000000000000000000000000000000000000000000000000000271000000000000000000000000000000000000000000000000000470de4df820000'
+                          predicate: '961d5b1e000000000000000000000000000000000000000000000000000000000000004000000000000000000000000000000000000000000000000000000000000000a00000000000000000000000000000000000000000000000000000000000000002000000000000000000000000cab2fa2eeab7065b45cbcf6e3936dde2506b4f6c000000000000000000000000cab2fa2eeab7065b45cbcf6e3936dde2506b4f6c0000000000000000000000000000000000000000000000000000000000000002000000000000000000000000000000000000000000000000000000000000004000000000000000000000000000000000000000000000000000000000000000c00000000000000000000000000000000000000000000000000000000000000044cf6fc6e30000000000000000000000002bfc3a4ef52fe6cd2c5236da08005c59eafb43a7000000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002463592c2b000000000000000000000000000000000000000000000000000000006530d1dd00000000000000000000000000000000000000000000000000000000'
+                          permit: ''
+                          interaction: ''
+                          expiredAt: 1697698269
+                          availableMakingAmount:	'7000'
+                          makerBalanceAllowance:	'7000'
+        '400':
+          description: |-
+            Bad Request
+            - Missing required fields
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+                example:
+                  value:
+                    code: 4000
+                    message: 'Missing requried fields: chainId'
+                    errorEntities:
+                      - chainId
+        '500':
+          description: |-
+            Internal Server Error
+            - Error when get price from Price Service
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+                example:
+                  value:
+                    code: 5000
+                    message: Internal Server Error
+                    errorEntities: []
+
+  # Taker: Get operator signature
+  /read-partner/api/v1/orders/operator-signature:
+    get:
+      summary: Request Operator Signature For Maker Orders
+      tags:
+        - Taker     
+      operationId: post-read-partner-api-v1-orders-operator-signature
+      description: Takers will need to request for KyberSwap Operator signature for target Maker orders which they are planning to fill. The returned operator signature will be required when encoding the Taker fill order for both `/read-ks/api/v1/encode/fill-batch-orders-to` and `/read-ks/api/v1/encode/fill-order-to`.
+      parameters:
+        - schema:
+            type: string
+          in: query
+          name: chainId
+          required: true
+          description: The chainId on which the order is being filled. Only supports EVM chains.
+        - schema:
+            type: string
+          in: query
+          name: orderIds
+          required: true
+          description: The order IDs to be cancelled gaslessly.                
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                required:
+                  - code
+                  - message
+                  - data                
+                properties:
+                  code:
+                    type: integer
+                    description: The response code.
+                  message:
+                    type: string
+                    description: Server response message.
+                  data:
+                    type: array
+                    items:
+                      type: object
+                      required:
+                        - id
+                        - chainId
+                        - operatorSignature
+                        - operatorSignatureExpiredAt
+                      properties:
+                        id:
+                          type: integer
+                          description: ID of Maker order to be filled.
+                        chainId:
+                          type: string
+                          description: Chain which order to be filled is on.
+                        operatorSignature:
+                          type: string
+                          description: The signature of the operator for the requested order id.
+                        operatorSignatureExpiredAt:
+                          type: integer
+                          description: The unix timestamp at which the Operator's signature expires.
+                example:
+                  value:
+                    code: 0
+                    message: Successfully
+                    data:
+                      id: 22452
+                      chainId: '137'
+                      operatorSignature: '10cde325b99d3616c4d1e0557b8d45c86137e854af12515b4167a72a817c101d64c75a365dbeef6b50f2a6694f0692fe85abfa827af278ac00f56ba942b91b0f1b'
+                      operatorSignatureExpiredAt: 1697708112
+        '400':
+          description: |-
+            Bad Request
+            - Missing required fields
+            - Orders don't have the same maker or chainId
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+                example:
+                  value:
+                    code: 4000
+                    message: 'Missing required fields: orderIDs'
+                    errorEntities:
+                      - orderIDs
+        '404':
+          description: |-
+            Not Found
+            - Not found order
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+                example:
+                  value:
+                    code: 4040
+                    message: 'Not found: orderId: 1'
+                    errorEntities:
+                      - 'orderId: 1'
+        '409':
+          description: |-
+            Conflict
+            - Duplicate orderId in request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+                example:
+                  value:
+                    code: 4090
+                    message: 'Duplicate data: orderIds'
+                    errorEntities:
+                      - orderIds
+        '500':
+          description: Internal Server Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+                example:
+                  value:
+                    code: 5000
+                    message: Internal Server Error
+                    errorEntities: []
+
+  # Taker: Encode fill order(s)
+  /read-ks/api/v1/encode/fill-order-to:
+    post:
+      summary: Generate Encoded Data To Fill Order
+      tags:
+        - Taker
+      operationId: post-read-ks-api-v1-encode-fill-order-to
+      description: Request for the encoded fill order data from KyberSwap. This data can then be executed on-chain from the signer's wallet. 
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+                - orderId
+                - takingAmount
+                - thresholdAmount
+                - target
+                - operatorSignature              
+              properties:
+                orderId:
+                  type: integer
+                  description: The ID of the order to be filled.
+                takingAmount:
+                  type: string
+                  description: The amount of `takerAsset` in wei. String representation of uint256 value.
+                thresholdAmount:
+                  type: string
+                  description: |-
+                    If thresholdAmount != 0, the order will be filled 
+                    if and only if (actualTakingAmount / actualMakingAmount) <= (thresholdAmount / requestedMakingAmount).
+                target:
+                  type: string
+                  description: The Taker wallet address which will receive the `makerAsset`.
+                operatorSignature:
+                  type: string
+                  description: The Operator signature obtained from `/read-partner/api/v1/orders/operator-signature`. The order must be signed by the operator before it can be filled.
+              example:
+                orderId: 22456
+                takingAmount: '10000000000000000'
+                thresholdAmount: '0'
+                target: '0x2bfc3A4Ef52Fe6cD2c5236dA08005C59EaFB43a7'
+                operatorSignature: '8e7a0176b55cb6af042c837114ab98cba45a083a8a0facece2096ff200c060ed4d162fffa88047eb1f040f1fe0eddb27be712d38021795e3b6b5681c27914cd81c'
+      responses:  
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                required:
+                  - code
+                  - message
+                  - data                
+                properties:
+                  code:
+                    type: integer
+                    description: The response code.
+                  message:
+                    type: string
+                    description: Server response message.
+                  data:
+                    type: object
+                    required:
+                      - encodedData
+                    properties:
+                      encodedData:
+                        type: string
+                        description: The fill order encoded data to be used as the on-chain tx call data.
+                example:
+                  value:
+                    code: 0
+                    message: Succeeded
+                    data:
+                      encodedData: '0xd2f1d95600000000000000000000000000000000000000000000000000000000000000a00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002386f26fc100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000a00000000000000000000000000000000000000000000000000000000000000600000000000000000000000000000000000000000000000000000000006530fdc60000000000000000000000002bfc3a4ef52fe6cd2c5236da08005c59eafb43a7000000000000000000000000000000000000000000000000000000000000074000000000000000000000000000000000aef7e6a8082647289728e7d3ca198b9a0000000000000000000000002791bca1f2de4661ed88a30c99a7a9449aa841740000000000000000000000001c954e8fe737f99f68fa1ccda3e51ebdb291948c0000000000000000000000002bfc3a4ef52fe6cd2c5236da08005c59eafb43a70000000000000000000000002bfc3a4ef52fe6cd2c5236da08005c59eafb43a70000000000000000000000002bfc3a4ef52fe6cd2c5236da08005c59eafb43a7000000000000000000000000000000000000000000000000000000000000271000000000000000000000000000000000000000000000000000470de4df8200000000000000000000000000324f82e73edb06d29ff62c91ec8f5ff06571bdeb2900000000000000000000000000000000000000000000000000000000000001e00000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000022000000000000000000000000000000000000000000000000000000000000002a000000000000000000000000000000000000000000000000000000000000003200000000000000000000000000000000000000000000000000000000000000540000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000044f4a215c3000000000000000000000000000000000000000000000000000000000000271000000000000000000000000000000000000000000000000000470de4df820000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000044296637bf000000000000000000000000000000000000000000000000000000000000271000000000000000000000000000000000000000000000000000470de4df8200000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001e4961d5b1e000000000000000000000000000000000000000000000000000000000000004000000000000000000000000000000000000000000000000000000000000000a00000000000000000000000000000000000000000000000000000000000000002000000000000000000000000cab2fa2eeab7065b45cbcf6e3936dde2506b4f6c000000000000000000000000cab2fa2eeab7065b45cbcf6e3936dde2506b4f6c0000000000000000000000000000000000000000000000000000000000000002000000000000000000000000000000000000000000000000000000000000004000000000000000000000000000000000000000000000000000000000000000c00000000000000000000000000000000000000000000000000000000000000044cf6fc6e30000000000000000000000002bfc3a4ef52fe6cd2c5236da08005c59eafb43a7000000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002463592c2b000000000000000000000000000000000000000000000000000000006531054900000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004000000000000000000000000000000000000000000000000000000000000000c000000000000000000000000000000000000000000000000000000000000000417d01d984f71c81e9413a9b8ffababca76101c36259a84416cf579ce1d00d36b161a5fc1fa3e8366021ae470cac537133f7e8b9c6f06a2cd2d6a0b81534501ead1c0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000418e7a0176b55cb6af042c837114ab98cba45a083a8a0facece2096ff200c060ed4d162fffa88047eb1f040f1fe0eddb27be712d38021795e3b6b5681c27914cd81c000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
+        '400':
+          description: |-
+            Bad Request
+            - Missing required fields
+            - orderId is invalid format
+            - takingAmount, thresholdAmount is not uint256
+            - target is not ETH address
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+                example:
+                  value:
+                    code: 4000
+                    message: 'Missing reuiqred fields: orderId'
+                    errorEntities:
+                      - orderId
+        '404':
+          description: |-
+            Not Found
+            - Not found orderId
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+                example:
+                  value:
+                    code: 4040
+                    message: 'Not found: order'
+                    errorEntities:
+                      - order
+        '500':
+          description: Internal Server Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+                example:
+                  value:
+                    code: 5000
+                    message: Internal Server Error
+                    errorEntities: []
+  /read-ks/api/v1/encode/fill-batch-orders-to:
+    post:
+      summary: Generate Encoded Data To Fill Batch Order
+      tags:
+        - Taker
+      operationId: post-read-ks-api-v1-encode-fill-batch-orders-to
+      description: Request for the encoded fill batch order data from KyberSwap. This data can then be executed on-chain from the signer's wallet.         
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+                - orderIds
+                - takingAmount
+                - thresholdAmount
+                - target
+                - operatorSignatures              
+              properties:
+                orderIds:
+                  type: array
+                  description: The order IDs to be filled in the batch order.
+                  items:
+                    type: integer
+                takingAmount:
+                  type: string
+                  description: The amount of `takerAsset` in wei. String representation of uint256 value.
+                thresholdAmount:
+                  type: string
+                  description: |-
+                    If thresholdAmount != 0, the order will be filled 
+                    if and only if (actualTakingAmount / actualMakingAmount) <= (thresholdAmount / requestedMakingAmount).
+                target:
+                  type: string
+                  description: The Taker wallet address which will receive the `makerAsset`.
+                operatorSignatures:
+                  type: array
+                  description: The Operator signature obtained from `/read-partner/api/v1/orders/operator-signature`. The order must be signed by the operator before it can be filled. Operator signature order must match `orderIds`.                
+                  items:
+                    type: string
+              example:
+                value:
+                  orderIds:
+                    - 22452
+                  takingAmount: '10000000000000000'
+                  thresholdAmount: '0'
+                  target: '0x2bfc3A4Ef52Fe6cD2c5236dA08005C59EaFB43a7'
+                  operatorSignatures:
+                    - '23eaa3c40c5f5440a099adcd010505a5e7a6445c52be45481f19bf53fa8721d03a6bcb7ca7242941662c3083bc3a2bea55f5259f72f471cff3b48033ecb747fd1b'
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                required:
+                  - code
+                  - message
+                  - data                
+                properties:
+                  code:
+                    type: integer
+                    description: The response code.
+                  message:
+                    type: string
+                    description: Server response message.
+                  data:
+                    type: object
+                    required:
+                      - encodedData
+                    properties:
+                      encodedData:
+                        type: string
+                        description: The fill batch order encoded data to be used as the on-chain tx call data.
+                example:
+                  code: 0
+                  message: Succeeded
+                  data:
+                    encodedData: '0x6fbd13d0000000000000000000000000000000000000000000000000000000000000002000000000000000000000000000000000000000000000000000000000000000c0000000000000000000000000000000000000000000000000000000000000066000000000000000000000000000000000000000000000000000000000000007e00000000000000000000000002bfc3a4ef52fe6cd2c5236da08005c59eafb43a7000000000000000000000000000000000000000000000000002386f26fc10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000004ab283f00b764bfb9f4d237bd2d9fe670000000000000000000000002791bca1f2de4661ed88a30c99a7a9449aa841740000000000000000000000001c954e8fe737f99f68fa1ccda3e51ebdb291948c0000000000000000000000002bfc3a4ef52fe6cd2c5236da08005c59eafb43a70000000000000000000000002bfc3a4ef52fe6cd2c5236da08005c59eafb43a70000000000000000000000002bfc3a4ef52fe6cd2c5236da08005c59eafb43a7000000000000000000000000000000000000000000000000000000000000271000000000000000000000000000000000000000000000000000470de4df8200000000000000000000000000324f82e73edb06d29ff62c91ec8f5ff06571bdeb2900000000000000000000000000000000000000000000000000000000000001e00000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000022000000000000000000000000000000000000000000000000000000000000002a000000000000000000000000000000000000000000000000000000000000003200000000000000000000000000000000000000000000000000000000000000540000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000044f4a215c3000000000000000000000000000000000000000000000000000000000000271000000000000000000000000000000000000000000000000000470de4df820000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000044296637bf000000000000000000000000000000000000000000000000000000000000271000000000000000000000000000000000000000000000000000470de4df8200000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001e4961d5b1e000000000000000000000000000000000000000000000000000000000000004000000000000000000000000000000000000000000000000000000000000000a00000000000000000000000000000000000000000000000000000000000000002000000000000000000000000cab2fa2eeab7065b45cbcf6e3936dde2506b4f6c000000000000000000000000cab2fa2eeab7065b45cbcf6e3936dde2506b4f6c0000000000000000000000000000000000000000000000000000000000000002000000000000000000000000000000000000000000000000000000000000004000000000000000000000000000000000000000000000000000000000000000c00000000000000000000000000000000000000000000000000000000000000044cf6fc6e30000000000000000000000002bfc3a4ef52fe6cd2c5236da08005c59eafb43a7000000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002463592c2b00000000000000000000000000000000000000000000000000000000653105410000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000004000000000000000000000000000000000000000000000000000000000000000c00000000000000000000000000000000000000000000000000000000000000041ce462832d07c5490f5aca639027dd7f95c682ce5e6ce6a8093f4374f3824acba1107271a51a61fc3fc395b72c61ea22df29dee27f9534342df6e9f44ffcd7d351c00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004123eaa3c40c5f5440a099adcd010505a5e7a6445c52be45481f19bf53fa8721d03a6bcb7ca7242941662c3083bc3a2bea55f5259f72f471cff3b48033ecb747fd1b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000006530ffd1'
+        '400':
+          description: |-
+            Bad Request
+            - Missing required fields
+            - takingAmount, thresholdAmount is not uint256
+            - target is not ETH address
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+                example:
+                  value:
+                    code: 4000
+                    message: 'Missing required fields: orderIds'
+                    errorEntities:
+                      - orderIds
+        '404':
+          description: |-
+            Not Found
+            - Not found order
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+                example:
+                  value:
+                    code: 4040
+                    message: 'Not found: orderId: 1'
+                    errorEntities:
+                      - 'orderId: 1'
+        '409':
+          description: |-
+            Conflict
+            - Duplicate order ids in request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+                example:
+                  value:
+                    code: 4090
+                    message: 'Duplicate data: orderIds'
+                    errorEntities:
+                      - drderIds
+        '500':
+          description: Internal Server Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+                example:
+                  value:
+                    code: 5000
+                    message: Internal Server Error
+                    errorEntities: []
+
+components:
+  schemas:
+    ErrorResponse:
+      title: ErrorResponse
+      type: object
+      properties:
+        code:
+          type: integer
+          description: Error code
+        message:
+          type: string
+          description: Error message
+        errorEntities:
+          type: array
+          items:
+            type: string
+      required:
+        - code
+        - message
+        - errorEntities
+    OrderSignMessageDefinition:
+      title: OrderSignMessageDefinition
+      type: object
+      properties:
+        name:
+          type: string
+        type:
+          type: string
+      required:
+        - name
+        - type
