@@ -6,10 +6,10 @@ description: 14 Chains, 400+ DEXs, and we're just getting started...
 
 Chains and DEXs
 
-The KyberSwap product suite has been deployed across the majority of the most established DeFi chains. Whichever your preferred chain, the [KyberSwap Aggregator](../kyberswap-solutions/kyberswap-aggregator/) ensures the best swap rates by aggregating liquidity across the most established [DEXs](broken-reference) deployed on that chain.
+The KyberSwap product suite has been deployed across the majority of the most established DeFi chains. Whichever your preferred chain, the [KyberSwap Aggregator](../kyberswap-solutions/kyberswap-aggregator/) ensures the best swap rates by aggregating liquidity across the most established [DEXs](broken-reference/) deployed on that chain.
 
 {% hint style="info" %}
-#### DEX filtering
+**DEX filtering**
 
 For traders, you can specify which DEXs are considered when computing your swap route by Customizing Trade Parameters directly on the [KyberSwap Interface](../kyberswap-solutions/kyberswap-interface/).
 
@@ -18,7 +18,7 @@ For developers integrating with the [KyberSwap Aggregator](../kyberswap-solution
 
 <details>
 
-<summary><img src="../.gitbook/assets/Ethereum_Chain_Negative (1).png" alt="" data-size="line">   Ethereum (ChainID: 1)</summary>
+<summary><img src="../.gitbook/assets/Ethereum_Chain_Negative (1).png" alt="" data-size="line"> Ethereum (ChainID: 1)</summary>
 
 Decentralized Exchanges:
 
@@ -102,7 +102,7 @@ Decentralized Exchanges:
 
 <details>
 
-<summary><img src="../.gitbook/assets/BSC_Chain_Negative.png" alt="" data-size="line">   BSC (ChainID: 56)</summary>
+<summary><img src="../.gitbook/assets/BSC_Chain_Negative.png" alt="" data-size="line"> BSC (ChainID: 56)</summary>
 
 Decentralized Exchanges:
 
@@ -115,28 +115,28 @@ Decentralized Exchanges:
 * Binance wbETH
 * Bebop
 * [CrowdSwap V2](https://app.crowdswap.org/exchange)
-* [Curve ](https://curve.fi/)
+* [Curve](https://curve.fi/)
 * [DODO (v2)](https://app.dodoex.io/)
 * Degen Express
-* [Ellipsis ](https://ellipsis.finance/)
-* [Firebird ](https://app.firebird.finance/swap)
+* [Ellipsis](https://ellipsis.finance/)
+* [Firebird](https://app.firebird.finance/swap)
 * [Fraxswap](https://app.frax.finance/swap/main)
 * Hashflow V3
 * [iZiSwap](https://izumi.finance/trade/swap)
-* [JetSwap ](https://jetswap.finance/)
+* [JetSwap](https://jetswap.finance/)
 * KTX
 * [Liquidus Finance](https://liquidus.finance)
 * [Maverick](https://app.mav.xyz/)
-* [MDEX ](https://mdex.com/#/)
+* [MDEX](https://mdex.com/#/)
 * Native
-* [Nerve](https://nerve.fi/)&#x20;
+* [Nerve](https://nerve.fi/)
 * [Nomiswap](https://nomiswap.io/)
 * NomiSwap Stable
-* [OneSwap ](https://www.oneswap.net/)
+* [OneSwap](https://www.oneswap.net/)
 * [PancakeSwap V2](https://pancakeswap.finance/)
 * [PancakeSwap V3](https://pancakeswap.finance/swap)
 * [PancakeSwap Stable](https://pancakeswap.finance/)
-* [PancakeSwap (legacy) ](https://pancakeswap.finance/)
+* [PancakeSwap (legacy)](https://pancakeswap.finance/)
 * PantherSwap (!)
 * [SmarDex](https://smardex.io/swap)
 * [SquadSwap](https://squadswap.com)
@@ -158,7 +158,7 @@ Decentralized Exchanges:
 
 <details>
 
-<summary><img src="../.gitbook/assets/Arbitrum_Chain_Negative.png" alt="" data-size="line">   Arbitrum (ChainID: 42161)</summary>
+<summary><img src="../.gitbook/assets/Arbitrum_Chain_Negative.png" alt="" data-size="line"> Arbitrum (ChainID: 42161)</summary>
 
 Decentralized Exchanges:
 
@@ -177,7 +177,7 @@ Decentralized Exchanges:
 * [Chronos](https://app.chronos.exchange/)
 * [Chronos V3](https://app.chronos.exchange/?_ga=2.47683175.1996768785.1691101109-2022647424.1691101109&_gl=1*126av9l*_ga*MjAyMjY0NzQyNC4xNjkxMTAxMTA5*_ga_ZZMYQC3ZN0*MTY5MTEwMTEwOS4xLjEuMTY5MTEwMTExNi4wLjAuMA..*_ga_12W2RDY62R*MTY5MTEwMTEwOS4xLjEuMTY5MTEwMTExNi4wLjAuMA..)
 * [CrowdSwap V2](https://app.crowdswap.org/exchange)
-* [Curve ](https://curve.fi/)
+* [Curve](https://curve.fi/)
 * [DODO V2](https://app.dodoex.io/)
 * Degen Express
 * Dexalot
@@ -186,7 +186,7 @@ Decentralized Exchanges:
 * [Fraxswap](https://app.frax.finance/swap/main)
 * Fluid Dex
 * Fluid Liquidations
-* [GMX ](https://app.gmx.io/#/trade)
+* [GMX](https://app.gmx.io/#/trade)
 * [Balancer Gyro 2CLP](https://gyro.finance)
 * [Balancer Gyro 3CLP](https://gyro.finance)
 * [Balancer Gyro ECLP](https://gyro.finance)
@@ -204,21 +204,21 @@ Decentralized Exchanges:
 
 - [Ramses](https://app.ramses.exchange/)
 - [Ramses CL](https://app.ramses.exchange/swap)
-- [Saddle ](https://saddle.exchange/#/)
+- [Saddle](https://saddle.exchange/#/)
 - [SmarDex](https://smardex.io/swap)
 - [Solidly V3](https://solidly.com/swap/)
 - [Sparta Dex](https://app.spartadex.io/)
 - [SushiSwap](https://www.sushi.com/swap)
 - [SushiSwap V3](https://www.sushi.com/swap)
-- [Swapr ](https://swapr.eth.link/#/swap?chainId=1)
+- [Swapr](https://swapr.eth.link/#/swap?chainId=1)
 - Swaap V2
-- [Synapse ](https://synapseprotocol.com/)
+- [Synapse](https://synapseprotocol.com/)
 - [TraderJoe V20](https://traderjoexyz.com/)
 - [TraderJoe V21](https://traderjoexyz.com/)
 - [TraderJoe V2](https://traderjoexyz.com/)2
 - Thick
 - [Uniswap V2](https://uniswap.org)
-- [Uniswap V3 ](https://app.uniswap.org/#/swap)
+- [Uniswap V3](https://app.uniswap.org/#/swap)
 - [Wombat](https://app.wombat.exchange/swap)
 - [WOOFi V2](https://fi.woo.org/swap/)
 - [WOOFi V](https://fi.woo.org/swap/)3
@@ -228,7 +228,7 @@ Decentralized Exchanges:
 
 <details>
 
-<summary><img src="../.gitbook/assets/Polygon_Chain_Negative.png" alt="" data-size="line">   Polygon PoS (ChainID: 137)</summary>
+<summary><img src="../.gitbook/assets/Polygon_Chain_Negative.png" alt="" data-size="line"> Polygon PoS (ChainID: 137)</summary>
 
 Decentralized Exchanges:
 
@@ -240,39 +240,39 @@ Decentralized Exchanges:
 * [Balancer Composable Stable Pools V2](https://app.balancer.fi/#/)
 * [Balancer Stable Pools V2](https://app.balancer.fi/#/)
 * [Balancer Weighted Pools V2](https://app.balancer.fi/#/)
-* [ComethSwap ](https://swap.cometh.io/#/swap)
+* [ComethSwap](https://swap.cometh.io/#/swap)
 * [CrowdSwap V2](https://app.crowdswap.org/exchange)
-* [Curve ](https://curve.fi/)
-* [DFYN ](https://exchange.dfyn.network/#/swap)
-* [DinoSwap ](https://dinoswap.exchange/)
+* [Curve](https://curve.fi/)
+* [DFYN](https://exchange.dfyn.network/#/swap)
+* [DinoSwap](https://dinoswap.exchange/)
 * [DODO (v2)](https://app.dodoex.io/)
-* [Dystopia ](https://www.dystopia.exchange/)
-* [Firebird ](https://app.firebird.finance/swap)
+* [Dystopia](https://www.dystopia.exchange/)
+* [Firebird](https://app.firebird.finance/swap)
 * [Fraxswap](https://app.frax.finance/swap/main)
-* [Gravity](https://gravityfinance.io/dashboard)&#x20;
+* [Gravity](https://gravityfinance.io/dashboard)
 * [Balancer Gyro 2CLP](https://gyro.finance)
 * [Balancer Gyro 3CLP](https://gyro.finance)
 * [Balancer Gyro ECLP](https://gyro.finance)
 * [Iron-stable](https://app.iron.finance/) (!)
 * [iZiSwap](https://izumi.finance/trade/swap)
-* [JetSwap ](https://jetswap.finance/)
+* [JetSwap](https://jetswap.finance/)
 * [MadMex](https://madmex.io/#/trade)
 * [MantisSwap](https://app.mantissa.finance/#/swap)
-* [MMF](https://mm.finance/swap)[ ](https://madmex.io/#/trade)
-* [MetaVault ](https://app.metavault.trade/#/trade)
-* [OneSwap ](https://www.oneswap.net/)
+* [MMF](https://mm.finance/swap)
+* [MetaVault](https://app.metavault.trade/#/trade)
+* [OneSwap](https://www.oneswap.net/)
 * [Pearl](https://www.pearl.exchange/swap)
 * [Pearl V2](https://www.pearl.exchange/swap)
-* [Polycat ](https://polycat.finance/)
-* [PolyDex](https://www.polydex.fi/)&#x20;
+* [Polycat](https://polycat.finance/)
+* [PolyDex](https://www.polydex.fi/)
 * [QuickSwap](https://quickswap.exchange/#/)
 * [Retro](https://retro.finance/swap)
 * [Retro (v3)](https://retro.finance/swap)
 * [SushiSwap](https://www.sushi.com/swap)
 * [SushiSwap V3](https://www.sushi.com/swap)
-* [Synapse ](https://synapseprotocol.com/)
+* [Synapse](https://synapseprotocol.com/)
 * [Uniswap V2](https://uniswap.org)
-* [Uniswap V3 ](https://app.uniswap.org/#/swap)
+* [Uniswap V3](https://app.uniswap.org/#/swap)
 * Wault (!)
 * [Wombat](https://app.wombat.exchange/swap)
 * [WOOFi V2](https://fi.woo.org/swap/)
@@ -281,7 +281,7 @@ Decentralized Exchanges:
 
 <details>
 
-<summary><img src="../.gitbook/assets/Optimism_Chain_Negative.png" alt="" data-size="line">   Optimism (ChainID: 10)</summary>
+<summary><img src="../.gitbook/assets/Optimism_Chain_Negative.png" alt="" data-size="line"> Optimism (ChainID: 10)</summary>
 
 Decentralized Exchanges:
 
@@ -292,9 +292,9 @@ Decentralized Exchanges:
 * [Balancer Composable Stable Pools V2](https://app.balancer.fi/#/)
 * [Balancer Stable Pools V2](https://app.balancer.fi/#/)
 * [Balancer Weighted Pools V2](https://app.balancer.fi/#/)
-* [Beethoven X ](https://beets.fi/)
+* [Beethoven X](https://beets.fi/)
 * Bebop
-* [Curve ](https://curve.fi/)
+* [Curve](https://curve.fi/)
 * [Fraxswap](https://app.frax.finance/swap/main)
 * [FXDX](https://app.fxdx.exchange/trade)
 * Hashflow V3
@@ -308,12 +308,12 @@ Decentralized Exchanges:
 * [Solidly V3](https://solidly.exchange/)
 * SuperSwap V3
 * Swaap V2
-* [Synapse ](https://synapseprotocol.com/)
-* [Synthetix ](https://staking.synthetix.io/)
+* [Synapse](https://synapseprotocol.com/)
+* [Synthetix](https://staking.synthetix.io/)
 * [SushiSwap V3](https://www.sushi.com/swap)
 * [Uniswap V2](https://uniswap.org)
 * [Uniswap V3](https://uniswap.org)
-* [Velodrome ](https://app.velodrome.finance/swap)
+* [Velodrome](https://app.velodrome.finance/swap)
 * [Velodrome V2](https://velodrome.finance/)
 * Velodrome Slipstream
 * [Wombat](https://app.wombat.exchange/swap)
@@ -326,7 +326,7 @@ Decentralized Exchanges:
 
 <details>
 
-<summary><img src="../.gitbook/assets/Avalanche_Chain_Negative.png" alt="" data-size="line">   Avalanche (ChainID: 43114)</summary>
+<summary><img src="../.gitbook/assets/Avalanche_Chain_Negative.png" alt="" data-size="line"> Avalanche (ChainID: 43114)</summary>
 
 Decentralized Exchanges:
 
@@ -339,23 +339,23 @@ Decentralized Exchanges:
 * [Balancer Stable Pools V2](https://app.balancer.fi/#/)
 * [Balancer Weighted Pools V2](https://app.balancer.fi/#/)
 * [CrowdSwap V2](https://app.crowdswap.org/exchange)
-* [Curve ](https://curve.fi/)
+* [Curve](https://curve.fi/)
 * [DODO (v2)](https://app.dodoex.io/)
 * Dexalot
 * [Fraxswap](https://app.frax.finance/swap/main)
-* [GMX ](https://app.gmx.io/#/trade)
+* [GMX](https://app.gmx.io/#/trade)
 * Hashflow V3
 * [Iron-stable](https://app.iron.finance/) (!)
-* [Lydia ](https://www.lydia.finance/)
+* [Lydia](https://www.lydia.finance/)
 * Native
-* [Pangolin ](https://app.pangolin.exchange/#/dashboard)
-* [Platypus ](https://app.platypus.finance/swap)
+* [Pangolin](https://app.pangolin.exchange/#/dashboard)
+* [Platypus](https://app.platypus.finance/swap)
 * [Pharaoh V1](https://pharaoh.exchange/swap)
 * [Pharaoh CL](https://pharaoh.exchange/swap)
 * [SushiSwap](https://www.sushi.com/swap)
 * [SushiSwap V3](https://www.sushi.com/swap)
-* [Synapse ](https://synapseprotocol.com/)
-* [TraderJoe ](https://traderjoexyz.com/avalanche)
+* [Synapse](https://synapseprotocol.com/)
+* [TraderJoe](https://traderjoexyz.com/avalanche)
 * [TraderJoe V20](https://traderjoexyz.com/)
 * [TraderJoe V21](https://traderjoexyz.com/)
 * [TraderJoe V2](https://traderjoexyz.com/)2
@@ -371,7 +371,7 @@ Decentralized Exchanges:
 
 <details>
 
-<summary><img src="../.gitbook/assets/Base_Negative.svg" alt="" data-size="line">   Base (ChainID: 8453)</summary>
+<summary><img src="../.gitbook/assets/Base_Negative.svg" alt="" data-size="line"> Base (ChainID: 8453)</summary>
 
 Decentralized Exchanges:
 
@@ -437,7 +437,7 @@ Decentralized Exchanges:
 
 <details>
 
-<summary><img src="../.gitbook/assets/Screenshot_2024-03-10_at_6.48.45_PM-removebg-preview.png" alt="" data-size="line">  zkSync Era (ChainID: 324)</summary>
+<summary><img src="../.gitbook/assets/Screenshot_2024-03-10_at_6.48.45_PM-removebg-preview.png" alt="" data-size="line"> zkSync Era (ChainID: 324)</summary>
 
 Decentralized Exchanges:
 
@@ -474,7 +474,7 @@ Decentralized Exchanges:
 
 <details>
 
-<summary><img src="../.gitbook/assets/image-removebg-preview-3-modified.png" alt="" data-size="line">   Blast (ChainID: 81457)</summary>
+<summary><img src="../.gitbook/assets/image-removebg-preview-3-modified.png" alt="" data-size="line"> Blast (ChainID: 81457)</summary>
 
 Decentralized Exchanges:
 
@@ -502,7 +502,7 @@ Decentralized Exchanges:
 
 <details>
 
-<summary><img src="../.gitbook/assets/Fantom_Chain_Negative.png" alt="" data-size="line">   Fantom (ChainID: 250)</summary>
+<summary><img src="../.gitbook/assets/Fantom_Chain_Negative.png" alt="" data-size="line"> Fantom (ChainID: 250)</summary>
 
 Decentralized Exchanges:
 
@@ -510,7 +510,7 @@ Decentralized Exchanges:
 * [KyberSwap Elastic](https://kyberswap.com/)
 * [KyberSwap Limit Order](https://kyberswap.com/)
 * [KyberSwap Limit Order V2](https://kyberswap.com/)
-* [Beethoven X ](https://beets.fi/)
+* [Beethoven X](https://beets.fi/)
 * [Beethoven X Composable Stable Pools](https://beets.fi/)
 * [Beethoven X Stable Pools](https://beets.fi/)
 * [Beethoven X Weighted Pools](https://beets.fi/)
@@ -521,14 +521,14 @@ Decentralized Exchanges:
 * E3
 * [Fraxswap](https://app.frax.finance/swap/main)
 * [FVM](https://www.fvm.exchange/swap)
-* [JetSwap ](https://jetswap.finance/)
-* [MorpheusSwap ](https://www.morpheusswap.app/)
+* [JetSwap](https://jetswap.finance/)
+* [MorpheusSwap](https://www.morpheusswap.app/)
 * [Mummy Finance](https://app.mummy.finance/#/trade)
-* [PaintSwap ](https://paintswap.finance/)
-* [Saddle ](https://saddle.exchange/#/)
+* [PaintSwap](https://paintswap.finance/)
+* [Saddle](https://saddle.exchange/#/)
 * [Solidly V3](https://solidly.com/swap/)
-* [SpiritSwap ](https://www.spiritswap.finance/home)
-* [SpookySwap ](https://spooky.fi/#/)
+* [SpiritSwap](https://www.spiritswap.finance/home)
+* [SpookySwap](https://spooky.fi/#/)
 * SpookySwap V3
 * [SushiSwap](https://www.sushi.com/swap)
 * [SushiSwap V3](https://www.sushi.com/swap)
@@ -541,7 +541,7 @@ Decentralized Exchanges:
 
 <details>
 
-<summary><img src="../.gitbook/assets/mantle-mnt-logo-removebg-preview.png" alt="" data-size="line">  Mantle (ChainID: 5000)</summary>
+<summary><img src="../.gitbook/assets/mantle-mnt-logo-removebg-preview.png" alt="" data-size="line"> Mantle (ChainID: 5000)</summary>
 
 Decentralized Exchanges:
 
@@ -567,7 +567,7 @@ Decentralized Exchanges:
 
 <details>
 
-<summary><img src="../.gitbook/assets/Linea.png" alt="" data-size="line">   Linea (ChainID: 59144)</summary>
+<summary><img src="../.gitbook/assets/Linea.png" alt="" data-size="line"> Linea (ChainID: 59144)</summary>
 
 Decentralized Exchanges:
 
@@ -605,7 +605,7 @@ Decentralized Exchanges:
 
 <details>
 
-<summary><img src="../.gitbook/assets/Scroll_Negative.png" alt="" data-size="line">   Scroll (ChainID: 534352)</summary>
+<summary><img src="../.gitbook/assets/Scroll_Negative.png" alt="" data-size="line"> Scroll (ChainID: 534352)</summary>
 
 Decentralized Exchanges:
 
@@ -640,7 +640,7 @@ Decentralized Exchanges:
 
 <details>
 
-<summary><img src="../.gitbook/assets/PolygonzkEVM_Chain_Negative.png" alt="" data-size="line">   Polygon zkEVM (ChainID: 1101)</summary>
+<summary><img src="../.gitbook/assets/PolygonzkEVM_Chain_Negative.png" alt="" data-size="line"> Polygon zkEVM (ChainID: 1101)</summary>
 
 Decentralized Exchanges:
 
@@ -665,11 +665,9 @@ Decentralized Exchanges:
 
 </details>
 
-
-
 <details>
 
-<summary><img src="../.gitbook/assets/32684 (3).png" alt="" data-size="line">Sonic (ChainID: 146)</summary>
+<summary><img src="../.gitbook/assets/32684 (3).png" alt="" data-size="line"> Sonic (ChainID: 146)</summary>
 
 * Sonic Market
 * Metropolis
@@ -681,5 +679,23 @@ Decentralized Exchanges:
 * Thick
 * SwapX
 * Shadow Dex
+
+</details>
+
+<details>
+
+<summary><img src="../.gitbook/assets/BERA-modified.png" alt="" data-size="line"> Berachain (ChainID: 80094)</summary>
+
+* Beracaine
+* BeraSwap V2 Composable
+* BeraSwap V2 Weighted
+* Bulla
+* Burrbear V2 Composable
+* Burrbear V2 Weighted
+* Hold Fun
+* Kodiak V2
+* Kodiak V3
+* KyberSwap Limit Order V2
+* MemeSwap
 
 </details>
