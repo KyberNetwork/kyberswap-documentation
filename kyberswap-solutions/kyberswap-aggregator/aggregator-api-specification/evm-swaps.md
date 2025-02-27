@@ -9,7 +9,7 @@ description: KyberSwap Aggregator EVM APIs
 {% file src="../../../.gitbook/assets/KyberSwapAggregator_EVMAPIs_v2.9.1.yaml" %}
 
 {% hint style="success" %}
-#### Note on integration: clientID
+**Note on integration: clientID**
 
 In order to continuously improve the KyberSwap Aggregator, our APIs implement a client identifier field that enables us to understand how the APIs are being utilized. A stricter rate limit will be applied if a clientId is not provided. As a developer integrating with our APIs, **please preferably use the same clientID (i.e. company name or your app name)** for:
 
@@ -20,7 +20,7 @@ In order to continuously improve the KyberSwap Aggregator, our APIs implement a 
 
 This will enable us to serve you better as we continuously strive to improve our Aggregator API. For integrators who have previously integrated with our `Legacy` API, we highly encourage migrating to the `Latest` APIs to ensure access to the latest features as well as improved service quality and efficiency.
 
-#### Example
+**Example**
 
 * \[V1] `GET` /routes
   * Header
@@ -32,7 +32,7 @@ This will enable us to serve you better as we continuously strive to improve our
 
 ## EVM swap APIs
 
-If you're just getting started with the KyberSwap Aggregator, you can refer to our [Execute A Swap With The Aggregator API](../developer-guides/execute-a-swap-with-the-aggregator-api.md) dev guide for information and code samples on how to query and execute swaps at superior rates. Note that there is also a [KyberSwap Widget](../../kyberswap-widget/) option for integrators who require a simple minimal-code implementation. For existing integrators, please refer to [Upgrading To APIv1](../developer-guides/upgrading-to-apiv1.md) for further details on the motivation behind the upgrade as well as the relevant changes to swap flow and parameters.&#x20;
+If you're just getting started with the KyberSwap Aggregator, you can refer to our [Execute A Swap With The Aggregator API](../developer-guides/execute-a-swap-with-the-aggregator-api.md) dev guide for information and code samples on how to query and execute swaps at superior rates. Note that there is also a [KyberSwap Widget](../../kyberswap-widget/) option for integrators who require a simple minimal-code implementation. For existing integrators, please refer to [Upgrading To APIv1](../developer-guides/upgrading-to-apiv1.md) for further details on the motivation behind the upgrade as well as the relevant changes to swap flow and parameters.
 
 To support more performant queries and the use of RFQ liquidity sources, KyberSwap highly encourages all integrators to implement the latest API `[V1]` version. While both versions of the API remains backwards compatible, only the `[V1]` APIs will continue to receive updates and can make use of RFQ liquidity sources, and hence developers are highly encouraged to implement the latest `[V1]` APIs to avoid any disruptions as the non-versioned API will eventually be deprecated.
 
@@ -55,7 +55,7 @@ The KyberSwap Docs will continue to maintain information regarding `Legacy` and 
 {% hint style="info" %}
 **Chain identifiers**
 
-The Aggregator APIs require a chain **name** to be included in the path when calling the APIs:&#x20;
+The Aggregator APIs require a chain **name** to be included in the path when calling the APIs:
 
 * Ethereum (ChainID: 1) -> `ethereum`
 * BSC (ChainID: 56) -> `bsc`
@@ -67,27 +67,27 @@ The Aggregator APIs require a chain **name** to be included in the path when cal
 * zkSync Era (ChainID: 324) -> `zksync`
 * Fantom (ChainID: 250) -> `fantom`
 * Linea (ChainID: 59144) -> `linea`
-* Polygon zkEVM (ChainID: 1101) -> `polygon-zkevm`
 * Scroll (ChainID: 534352) -> `scroll`
 * Mantle (ChainID: 5000) -> `mantle`
 * Blast (ChainID: 81457) -> `blast`
 * Sonic (ChainID: 146) -> `sonic`
+* Berachain (ChainID: 80094) -> `berachain`
 {% endhint %}
 
 ### `Latest`
 
 <figure><img src="../../../.gitbook/assets/Aggregator APIv1.jpg" alt=""><figcaption></figcaption></figure>
 
-{% swagger src="../../../.gitbook/assets/KyberSwapAggregator_EVMAPIs_v2.9.1.yaml" path="/{chain}/api/v1/routes" method="get" %}
+{% openapi src="../../../.gitbook/assets/KyberSwapAggregator_EVMAPIs_v2.9.1.yaml" path="/{chain}/api/v1/routes" method="get" %}
 [KyberSwapAggregator_EVMAPIs_v2.9.1.yaml](../../../.gitbook/assets/KyberSwapAggregator_EVMAPIs_v2.9.1.yaml)
-{% endswagger %}
+{% endopenapi %}
 
-{% swagger src="../../../.gitbook/assets/KyberSwapAggregator_EVMAPIs_v2.9.1.yaml" path="/{chain}/api/v1/route/build" method="post" %}
+{% openapi src="../../../.gitbook/assets/KyberSwapAggregator_EVMAPIs_v2.9.1.yaml" path="/{chain}/api/v1/route/build" method="post" %}
 [KyberSwapAggregator_EVMAPIs_v2.9.1.yaml](../../../.gitbook/assets/KyberSwapAggregator_EVMAPIs_v2.9.1.yaml)
-{% endswagger %}
+{% endopenapi %}
 
 ### `Legacy`
 
-{% swagger src="../../../.gitbook/assets/KyberSwapAggregator_EVMAPIs_v2.9.1.yaml" path="/{chain}/route/encode" method="get" %}
+{% openapi src="../../../.gitbook/assets/KyberSwapAggregator_EVMAPIs_v2.9.1.yaml" path="/{chain}/route/encode" method="get" %}
 [KyberSwapAggregator_EVMAPIs_v2.9.1.yaml](../../../.gitbook/assets/KyberSwapAggregator_EVMAPIs_v2.9.1.yaml)
-{% endswagger %}
+{% endopenapi %}

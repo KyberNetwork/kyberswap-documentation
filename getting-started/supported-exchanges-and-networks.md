@@ -640,33 +640,6 @@ Decentralized Exchanges:
 
 <details>
 
-<summary><img src="../.gitbook/assets/PolygonzkEVM_Chain_Negative.png" alt="" data-size="line"> Polygon zkEVM (ChainID: 1101)</summary>
-
-Decentralized Exchanges:
-
-* [KyberSwap Classic](https://kyberswap.com/)
-* [KyberSwap Elastic](https://kyberswap.com/)
-* [Balancer Composable Stable Pools V2](https://app.balancer.fi/#/)
-* [Balancer Stable Pools V2](https://app.balancer.fi/#/)
-* [Balancer Weighted Pools V2](https://app.balancer.fi/#/)
-* [Doveswap V3](https://swap.dovish.finance/#/swap)
-* [Balancer Gyro 2CLP](https://gyro.finance)
-* [Balancer Gyro 3CLP](https://gyro.finance)
-* [Balancer Gyro ECLP](https://gyro.finance)
-* [Kokonut Swap Crypto Pools](https://kokonutswap.finance/)
-* [MantisSwap](https://app.mantissa.finance/#/swap)
-* [PancakeSwap V2](https://pancakeswap.finance/)
-* [PancakeSwap V3](https://pancakeswap.finance/swap)
-* [QuickPerps](https://perps.quickswap.exchange/)
-* [QuickSwap V3](https://quickswap.exchange/#/)
-* [SushiSwap V3](https://www.sushi.com/swap)
-* [WOOFi V2](https://fi.woo.org/swap/)
-* [Zero](https://www.zkzero.fi)
-
-</details>
-
-<details>
-
 <summary><img src="../.gitbook/assets/32684 (3).png" alt="" data-size="line"> Sonic (ChainID: 146)</summary>
 
 * Sonic Market
