@@ -42,27 +42,29 @@ As part of this upgrade, some of the parameters have also been modified to make 
 
 ### Request
 
-| API GET           | APIv1 GET       | APIv1 POST              |
-| ----------------- | --------------- | ----------------------- |
-| tokenIn\*         | tokenIn\*       | -                       |
-| tokenOut\*        | tokenOut\*      | -                       |
-| amountIn\*        | amountIn\*      | -                       |
-| saveGas           | saveGas         | -                       |
-| slippageTolerance | -               | slippageTolerance       |
-| isInBps           | isInBps         | -                       |
-| chargeFeeBy       | chargeFeeBy     | -                       |
-| feeReceiver       | feeReceiver     | -                       |
-| feeAmount         | feeAmount       | -                       |
-| deadline          | -               | deadline                |
-| to\*              | -               | recipient\*             |
-| clientData        | -               | source                  |
-| -                 | includedSources | -                       |
-| -                 | excludedSources | -                       |
-| -                 | gasInclude      | -                       |
-| -                 | gasPrice        | -                       |
-| -                 | -               | routeSummary\*          |
-| -                 | -               | sender\*                |
-| -                 | -               | skipSimulateTransaction |
+| API GET           | APIv1 GET       | APIv1 POST          |
+| ----------------- | --------------- | ------------------- |
+| tokenIn\*         | tokenIn\*       | -                   |
+| tokenOut\*        | tokenOut\*      | -                   |
+| amountIn\*        | amountIn\*      | -                   |
+| saveGas           | saveGas         | -                   |
+| slippageTolerance | -               | slippageTolerance   |
+| isInBps           | isInBps         | -                   |
+| chargeFeeBy       | chargeFeeBy     | -                   |
+| feeReceiver       | feeReceiver     | -                   |
+| feeAmount         | feeAmount       | -                   |
+| deadline          | -               | deadline            |
+| to\*              | -               | recipient\*         |
+| clientData        | -               | source              |
+| referral          | -               | referral            |
+| permit            | -               | permit              |
+| dexes             | includedSources | -                   |
+| -                 | excludedSources | -                   |
+| gasInclude        | gasInclude      | -                   |
+| gasPrice          | gasPrice        | -                   |
+| -                 | -               | routeSummary\*      |
+| -                 | -               | sender\*            |
+| -                 | -               | enableGasEstimation |
 
 ### Response
 
