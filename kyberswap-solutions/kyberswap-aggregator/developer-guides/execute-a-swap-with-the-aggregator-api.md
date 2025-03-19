@@ -11,13 +11,13 @@ KyberSwap maintains a single API specification for all EVM chains:
 * [Swap API specs for EVM chains](../aggregator-api-specification/evm-swaps.md)
 
 {% hint style="info" %}
-#### KyberSwap Aggregator APIv1
+**KyberSwap Aggregator APIv1**
 
 Following feedback on the initial non-versioned API, KyberSwap has implemented a more performant `[V1]` API which improves the response time for getting a route via offloading encoding requirements to the post method.
 
-For integrators who have previously integrated with the non-versioned API, please refer to [Upgrading To APIv1](upgrading-to-apiv1.md) for further details on the motivation behind the upgrade as well as the relevant changes to swap flow and parameters.&#x20;
+For integrators who have previously integrated with the non-versioned API, please refer to [Upgrading To APIv1](upgrading-to-apiv1.md) for further details on the motivation behind the upgrade as well as the relevant changes to swap flow and parameters.
 
-Please use the `[V1]GET` API for more efficient route queries. The returned route can then be reused in the `[V1]POST` body to get the encoded swap data. The non-versioned`GET` and `[V1]GET` remains backwards compatible with the main change being the queried path.&#x20;
+Please use the `[V1]GET` API for more efficient route queries. The returned route can then be reused in the `[V1]POST` body to get the encoded swap data. The non-versioned`GET` and `[V1]GET` remains backwards compatible with the main change being the queried path.
 
 **While both versions of the API remains backwards compatible, only the `[V1]` APIs will continue to receive updates and hence developers are highly encouraged to implement the latest `[V1]` APIs to avoid any disruptions as the non-versioned API is eventually deprecated.**
 {% endhint %}
@@ -66,7 +66,7 @@ Note that the full list of available parameters as well as their usage can be fo
 
 For each of the token swaps queried, the `[V1] GET` API will return a data object consisting of:
 
-* `routeSummary` ->  An object containing the routing data in human readable format. The API will only return the route with the best rate as determined by the KyberSwap Aggregator algorithm.
+* `routeSummary` -> An object containing the routing data in human readable format. The API will only return the route with the best rate as determined by the KyberSwap Aggregator algorithm.
 * `routerAddress` -> The address of the router contract which facilitates the swap
 
 ### Step 2: Encode Preferred Swap Route
@@ -111,3 +111,13 @@ const executeSwapTx = await signer.sendTransaction({
 A tx hash will be returned once the swap tx has been successfully executed:
 
 <figure><img src="../../../.gitbook/assets/Aggregator_DevGuide_SwapSuccess.png" alt=""><figcaption><p><a href="https://polygonscan.com/tx/0x149002bd7c5b290ecf31dc7d395cd3c0f97b19c1c8aeaf511541e9191dd29c7a">Sample swap on Polygon</a></p></figcaption></figure>
+
+{% hint style="warning" %}
+**KyberSwap positive slippage surplus collection**
+
+For every swap executed by the KyberSwap Aggregator, users will be able to see an estimated output amount based on the current price as well as a minimum received that takes into account the [max slippage setting](../../kyberswap-interface/user-guides/instantly-swap-at-superior-rates.md#customizing-trade-parameters). KyberSwap Aggregator will always strive to execute swaps at the estimated output amount and revert the transaction if the minimum received amount is not achieved.
+
+In the event that the market moves in favor of the trade which results in a surplus of tokens above the estimated output amount (i.e positive slippage), this surplus will initially accrue to KyberSwap. Surplus sharing programs will be explored as the KyberSwap ecosystem grows to be more self-sufficient. **Critically, traders will always get the estimated output amount as long as the swap is executed at or above the current rate**.
+
+Note that this surplus is different from fees as it only applies in cases where the executed swap rate is better than the estimated rate at point of transaction confirmation. Please refer to [slippage](../../../getting-started/foundational-topics/decentralized-finance/slippage.md) for more information.
+{% endhint %}

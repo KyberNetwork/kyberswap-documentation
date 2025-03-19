@@ -14,8 +14,8 @@ Please refer to [Supported Exchanges and Networks](../../../getting-started/supp
 
 <summary>Trader Flow</summary>
 
-1. [Connect Your Wallet ](connect-your-wallet.md)
-2. [Switching Networks ](selecting-preferred-network.md)
+1. [Connect Your Wallet](connect-your-wallet.md)
+2. [Switching Networks](selecting-preferred-network.md)
 3. Get Tokens
    * [Get Crypto With Fiat](get-crypto-with-fiat.md)
    * [Bridge Your Tokens](bridge-your-assets-across-multiple-chains.md)
@@ -36,7 +36,7 @@ Please refer to [Supported Exchanges and Networks](../../../getting-started/supp
 
 ### **Step 2:** Specify your swap pair
 
-&#x20;You can either do this manually using the individual token selection buttons on the swap screen.
+You can either do this manually using the individual token selection buttons on the swap screen.
 
 <figure><img src="../../../.gitbook/assets/Screenshot 2023-04-12 at 12.27.26 PM.png" alt=""><figcaption><p>Specify tokens individually</p></figcaption></figure>
 
@@ -45,11 +45,11 @@ or by searching for your desired swap pair using the search field. (The keyboard
 <figure><img src="../../../.gitbook/assets/Screenshot 2023-04-12 at 12.28.37 PM.png" alt=""><figcaption><p>Swap via smart search</p></figcaption></figure>
 
 {% hint style="warning" %}
-#### Fee-on-transfer tokens
+**Fee-on-transfer tokens**
 
 Note that certain ERC20 token smart contracts implement a fee-on-transfer (FOT) mechanism whereby for every token transfer, a percentage of the tokens are burned or distributed to various wallets. As a permissionless dapp, KyberSwap enables users to [Add Their Favourite Tokens](add-your-favourite-tokens.md) and hence do not limit the type of tokens traded as long as the token follows the [ERC20 standard](https://docs.openzeppelin.com/contracts/4.x/erc20).
 
-Specific to swaps against [AMM DEXs](broken-reference), tokens undergo multiple hops between various smart contracts during the course of a single swap. Multiple contracts are required to ensure the security of the swap as well as the accountability that accompanies clear functional separation between different smart contract teams. Given that FOT tokens are designed to charge a tax on every transfer, each token hop will incur a tax which is usually a percentage of the transfer amount.
+Specific to swaps against [AMM DEXs](broken-reference/), tokens undergo multiple hops between various smart contracts during the course of a single swap. Multiple contracts are required to ensure the security of the swap as well as the accountability that accompanies clear functional separation between different smart contract teams. Given that FOT tokens are designed to charge a tax on every transfer, each token hop will incur a tax which is usually a percentage of the transfer amount.
 
 For standard AMM swaps, the FOT tax will be charged twice as tokens are transferred from the pool contract to the executor contract to the recipient. If the swap involves a commission fee (configured by integrators or referees), an additional hop to the router contract is required to collect the fees.
 
@@ -66,7 +66,7 @@ Note that the FOT tax is specified in the FOT token's smart contract (i.e. the F
 Specify the amount you would like to swap by either typing in an amount manually or by using the “Max” and “Half” buttons to swap pre-set proportions of your wallet balance. An estimate of the amount returned should appear in the quote field.
 
 {% hint style="info" %}
-#### Route refresh: Ensuring optimal rates
+**Route refresh: Ensuring optimal rates**
 
 Do note that the KyberSwap Interface will continuously update the swap rates in order to source superior rates for your swap given the changing market conditions. As such, you will always be able to see the latest proposed route and rates prior to clicking the "Swap" button.
 
@@ -76,7 +76,7 @@ Upon clicking the "Swap" button, KyberSwap Aggregator will attempt to secure the
 KyberSwap Interface allows users to customize trade parameters which enables greater trade security or even more advanced trade strategies. Refer to [Customizing trade parameters](instantly-swap-at-superior-rates.md#customizing-trade-parameters) section for more details.
 
 {% hint style="danger" %}
-#### Max slippage: Protecting your trades
+**Max slippage: Protecting your trades**
 
 KyberSwap enables you to avoid any negative trade outcomes by setting a Max Slippage. Please refer to [Customizing trade parameters](instantly-swap-at-superior-rates.md#customizing-trade-parameters) below for further details or [Slippage](../../../getting-started/foundational-topics/decentralized-finance/slippage.md) if you would like to understand the concept better.
 {% endhint %}
@@ -92,7 +92,7 @@ If this is the first time you are swapping this token on this network using this
 In the pursuit of greater gas savings for our users, KyberSwap has implemented a permit option for tokens which follow the [ERC-2612](https://eips.ethereum.org/EIPS/eip-2612) standard. In contrast to the basic [ERC20](../../../getting-started/foundational-topics/decentralized-finance/tokens.md#token-standards) token implementation, ERC-2612 enables gasless approvals of smart contract allowances with just a signed message. In other words, approving a token via "Permit" does not require any gas and achieves the same effect as the ERC20 "Approve". If you see a "Permit" button, it means your token is eligible for gasless approvals!
 
 {% hint style="info" %}
-#### Permitable tokens
+**Permitable tokens**
 
 Please refer to [Permitable Tokens](../../../reference/permitable-tokens.md) for the full list of tokens which have implemented the ERC-2612 standard.
 {% endhint %}
@@ -110,9 +110,9 @@ Upon signing the permit, you will then be able to proceed with the swap.
 <figure><img src="../../../.gitbook/assets/Permit signature exact value.png" alt=""><figcaption><p>Note the value in the signature request matches the swap amount</p></figcaption></figure>
 
 {% hint style="info" %}
-#### A note on permits
+**A note on permits**
 
-By permitting the swap, you are authorizing KyberSwap to swap the exact amount of tokens specified in the trade for the next 24 hours. This 24 hour deadline is implemented as a safety mechanism to ensure that the permit expires in case a corresponding swap order was not submitted or in the highly improbable event that an order was not filled. A new permit will be required upon the expiration of the current permit.&#x20;
+By permitting the swap, you are authorizing KyberSwap to swap the exact amount of tokens specified in the trade for the next 24 hours. This 24 hour deadline is implemented as a safety mechanism to ensure that the permit expires in case a corresponding swap order was not submitted or in the highly improbable event that an order was not filled. A new permit will be required upon the expiration of the current permit.
 
 Note that the granting of a permit and the confirmation of a swap ([step 5](instantly-swap-at-superior-rates.md#step-5-confirm-the-swap)) are separate transactions whereby the latter is unable to proceed without the completion of the former. More importantly, as opposed to permits, swaps will always require gas to be paid as token transfers have to be confirmed by the network. As such, in the case whereby a swap remains in a pending state, it is possible to cancel the swap transaction in your wallet while the permit remains valid until expiry. If a future swap requires more tokens than an existing permit, the user will be requested to sign a new permit.
 {% endhint %}
@@ -125,7 +125,7 @@ Click on the "Approve \[Token]" button to allow KyberSwap to swap the tokens on 
 
 To ensure the safety of your tokens, KyberSwap will also prompt you to select an allowance limit for the token being approved. By setting an allowance limit, this ensures that KyberSwap is only able to swap the specified number of tokens from your wallet. As long as the accumulated tokens for current or future swaps exceeds this limit, another approve process will be required. You can either set a custom allowance limit or opt for an infinite limit.
 
-Hovering your mouse above the options will also bring up the helpers for your convenience.&#x20;
+Hovering your mouse above the options will also bring up the helpers for your convenience.
 
 <figure><img src="../../../.gitbook/assets/image (106).png" alt=""><figcaption><p>Infinite allowance helper</p></figcaption></figure>
 
@@ -141,10 +141,10 @@ Upon confirming an allowance limit, your wallet will then prompt you to sign the
 
 ### **Step 5**: Confirm the swap
 
-Click the “Swap” button to bring up the confirmation screen.&#x20;
+Click the “Swap” button to bring up the confirmation screen.
 
 {% hint style="warning" %}
-#### Route confirmation and market volatility
+**Route confirmation and market volatility**
 
 Do note that once the final route has been secured, the details related to your swap will be available for your review in the "Confirm Swap Details" pop-up.
 
@@ -171,27 +171,27 @@ In the case whereby the market has moved in the trader's favor, the "Confirm Swa
 {% endtab %}
 
 {% tab title="Worse price" %}
-In cases whereby market conditions have moved against the trader, KyberSwap will display various warnings depending on the severity of the price deviation. To protect our users, additional safeguards are put in place to ensure that users are always in full control of their trades.&#x20;
+In cases whereby market conditions have moved against the trader, KyberSwap will display various warnings depending on the severity of the price deviation. To protect our users, additional safeguards are put in place to ensure that users are always in full control of their trades.
 
-#### Price drops by less than 1% (price drop <1%)
+**Price drops by less than 1% (price drop <1%)**
 
 A warning is displayed but no additional steps are required to confirm the swap.
 
 <figure><img src="../../../.gitbook/assets/Screenshot 2023-04-11 at 6.20.23 PM.png" alt=""><figcaption><p>Confirm swap for price drop &#x3C; 1%</p></figcaption></figure>
 
-#### Price drops more than 1% but less than 5% (1%< price drop < 5%)
+**Price drops more than 1% but less than 5% (1%< price drop < 5%)**
 
 A warning is displayed and user will have to accept the new amount by clicking on the "Accept New Amount" button.
 
 <figure><img src="../../../.gitbook/assets/Screenshot 2023-04-11 at 6.18.25 PM.png" alt=""><figcaption><p>Accept new amount for 1% &#x3C; price drop &#x3C; 5%</p></figcaption></figure>
 
-#### Price drops more than 5% but less than 10% (5%< price drop < 10%)
+**Price drops more than 5% but less than 10% (5%< price drop < 10%)**
 
 A strong warning is displayed and user will have to accept the new amount by clicking on the "Accept New Amount" button.
 
 <figure><img src="../../../.gitbook/assets/Screenshot 2023-04-11 at 6.21.54 PM.png" alt=""><figcaption><p>Accept new amount for 5% &#x3C; price drop &#x3C; 10%</p></figcaption></figure>
 
-#### Price drops more than 10% (10%< price drop)
+**Price drops more than 10% (10%< price drop)**
 
 A warning is displayed and user will have to accept the new amount by clicking on the "Accept New Amount" button. Additionally, users will have to manually type in their confirmation to validate that they consent to the significant price deviation.
 
@@ -205,12 +205,12 @@ In all the above cases, the confirmation screen will always display a few key pi
 
 * **Output amount:** Estimated return after the Swap.
 
-{% hint style="info" %}
-#### KyberSwap positive slippage surplus collection
+{% hint style="warning" %}
+**KyberSwap positive slippage surplus collection**
 
 For every swap executed by the KyberSwap Aggregator, users will be able to see an estimated output amount based on the current price as well as a minimum received that takes into account the [max slippage setting](instantly-swap-at-superior-rates.md#customizing-trade-parameters). KyberSwap Aggregator will always strive to execute swaps at the estimated output amount and revert the transaction if the minimum received amount is not achieved.
 
-In the event that the market moves in favor of the trade which results in a surplus of tokens above the estimated output amount (i.e positive slippage), this surplus will initially accrue to KyberSwap. Surplus sharing programs will be explored as the KyberSwap ecosystem grows to be more self-sufficient. **Critically, traders will always get the estimated output amount as long as the swap is executed at or above the current rate**.&#x20;
+In the event that the market moves in favor of the trade which results in a surplus of tokens above the estimated output amount (i.e positive slippage), this surplus will initially accrue to KyberSwap. Surplus sharing programs will be explored as the KyberSwap ecosystem grows to be more self-sufficient. **Critically, traders will always get the estimated output amount as long as the swap is executed at or above the current rate**.
 
 Note that this surplus is different from fees as it only applies in cases where the executed swap rate is better than the estimated rate at point of transaction confirmation. Please refer to [slippage ](../../../getting-started/foundational-topics/decentralized-finance/slippage.md)for more information.
 {% endhint %}
@@ -221,7 +221,7 @@ Note that this surplus is different from fees as it only applies in cases where 
 * **Price Impact**: The estimated change in the market price due to the size of your transaction.
 
 {% hint style="danger" %}
-#### Price impact
+**Price impact**
 
 Do take note of the resulting price impact of your trade as this will determine the final average price of your trade. Higher trade volumes relative to available liquidity will result in each additional token unit being acquired at a higher price. As such, a higher price impact would result in subpar swap rates.
 
@@ -247,7 +247,7 @@ The KyberSwap Interface also provides additional features for more advanced trad
 * **Max Slippage:** The maximum amount of slippage before the trade is reverted. Slippage refers to the difference between the expected and final price at which the trade was executed. As market conditions can change between the submission and execution of the trade, this guarantees that the trade will only be executed if the final price is within the expected price interval. For more details on slippage, refer to our [Foundational Topics](../../../getting-started/foundational-topics/decentralized-finance/slippage.md).
 
 {% hint style="warning" %}
-#### Max Slippage setting
+**Max Slippage setting**
 
 While KyberSwap recommends keeping the Max Slippage as low as possible to ensure that trades are executed at favourable rates, such transactions might face a higher failure rate in times of extreme market volatility.
 
@@ -267,7 +267,7 @@ These settings can be accessed via selecting the slider icons on the main swap p
 KyberSwap implemented Degen Mode for our most "advanced" apes. While KyberSwap has consistently iterated upon industry-leading safeguards to enable our users to trade safely, we are aware that some advanced traders might find these protective features inconvenient. As such, switching to Degen Mode allows users to conduct high impact trades without any confirmation prompts nor price impact limits.
 
 {% hint style="info" %}
-#### Price deviations
+**Price deviations**
 
 Note that even with Degen Mode turned on, any significant price deviations that occurs while the swap is being secured will still require user confirmation. Please refer to [Route confirmation and market volatility](instantly-swap-at-superior-rates.md#step-5-confirm-the-swap) for more details.
 {% endhint %}
@@ -283,7 +283,7 @@ By turning on Degen Mode, multiple safeguards will be overridden allowing users 
 ### Activating Degen Mode
 
 {% hint style="danger" %}
-#### Advanced traders only
+**Advanced traders only**
 
 Tread carefully when turning on Degen Mode as [slippage](../../../getting-started/foundational-topics/decentralized-finance/slippage.md) and [price impact](../../../getting-started/foundational-topics/decentralized-finance/price-impact.md) risks are not conservatively capped which could result in significant losses. **KyberSwap recommends that users only activate Degen Mode if you are fully aware of the risks of unprotected trades.**
 {% endhint %}
