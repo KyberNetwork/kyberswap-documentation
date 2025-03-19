@@ -111,13 +111,3 @@ const executeSwapTx = await signer.sendTransaction({
 A tx hash will be returned once the swap tx has been successfully executed:
 
 <figure><img src="../../../.gitbook/assets/Aggregator_DevGuide_SwapSuccess.png" alt=""><figcaption><p><a href="https://polygonscan.com/tx/0x149002bd7c5b290ecf31dc7d395cd3c0f97b19c1c8aeaf511541e9191dd29c7a">Sample swap on Polygon</a></p></figcaption></figure>
-
-{% hint style="warning" %}
-**KyberSwap positive slippage surplus collection**
-
-For every swap executed by the KyberSwap Aggregator, users will be able to see an estimated output amount based on the current price as well as a minimum received that takes into account the [max slippage setting](../../kyberswap-interface/user-guides/instantly-swap-at-superior-rates.md#customizing-trade-parameters). KyberSwap Aggregator will always strive to execute swaps at the estimated output amount and revert the transaction if the minimum received amount is not achieved.
-
-In the event that the market moves in favor of the trade which results in a surplus of tokens above the estimated output amount (i.e positive slippage), this surplus will initially accrue to KyberSwap. Surplus sharing programs will be explored as the KyberSwap ecosystem grows to be more self-sufficient. **Critically, traders will always get the estimated output amount as long as the swap is executed at or above the current rate**.
-
-Note that this surplus is different from fees as it only applies in cases where the executed swap rate is better than the estimated rate at point of transaction confirmation. Please refer to [slippage](../../../getting-started/foundational-topics/decentralized-finance/slippage.md) for more information.
-{% endhint %}
