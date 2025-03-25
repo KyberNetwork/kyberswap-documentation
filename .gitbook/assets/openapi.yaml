@@ -38,110 +38,20 @@ paths:
         - name: dex
           in: query
           description: |-
-            which dex to use zap with
-
-             - DEX_UNSPECIFIED: Unspecified value.
-             - DEX_UNISWAPV3: For UniSwap V3.
-             - DEX_PANCAKESWAPV3: For PancakeSwap V3.
-             - DEX_UNISWAPV2: For Uniswap V2.
-             - DEX_SUSHISWAPV2: For SushiSwap V2.
-             - DEX_CURVE: For Curve
-             - DEX_BALANCER: For Balancer
-             - DEX_METAVAULTV3: MetaVault V3
-             - DEX_RAMSESCL: Ramses CL
-             - DEX_QUICKSWAPV3UNI: Quickswap V3 Uni
-             - DEX_SUSHISWAPV3: SushiSwap V3
-             - DEX_THRUSTERV3: Thruster V3
-             - DEX_CAMELOTV3: Camelot V3
-             - DEX_QUICKSWAPV3ALGEBRA: Quickswap V3 Algebra
-             - DEX_THENAFUSION: Thena Fusion
-             - DEX_PANCAKESWAPV2: PancakeSwap V2
-             - DEX_METAVAULTV2: MetaVault V2
-             - DEX_PANGOLINSTANDARD: Pangolin Standard
-             - DEX_QUICKSWAPV2: Quickswap V2
-             - DEX_THRUSTERV2: Thruster V2 (1% fee)
-             - DEX_CAMELOTV2: Camelot V2
-             - DEX_LYNEX: Lynex
-             - DEX_RAMSESLEGACY: Ramses Legacy
-             - DEX_AERODROMECL: Aerodrome Concentrated
-             - DEX_AERODROMEBASICVOLATILE: Aerodrome Basic Volatile
-             - DEX_AERODROMEBASICSTABLE: Aerodrome Basic Stable
-             - DEX_GAMMA: Gamma
-             - DEX_AMBIENT: Ambient
-             - DEX_DEFIEDGE: DefiEdge
-             - DEX_BEEFY: Beefy
-             - DEX_VFAT: Vfat
-             - DEX_MAVERICK: Maverick
-             - DEX_TRADERJOE: Traderjoe
-             - DEX_THRUSTERV2DEGEN: Thruster V2 Degen (0.3% fee)
-             - DEX_LINEHUBV3: LineHub V3
-             - DEX_RINGV2: Ring V2
-             - DEX_KOILEGACY: KOI Legacy
-             - DEX_KOICL: KOI CL
-             - DEX_EQUALIZER: Equalizer
-             - DEX_NILE: Nile
-             - DEX_ARRAKIS: Arrakis
-             - DEX_ICHI: ICHI
-             - DEX_GMX: GMX
-             - DEX_SWAPMODE: SwapMode
-             - DEX_SOLIDLY: Solidly
-          required: false
+            Refer to https://docs.kyberswap.com/kyberswap-solutions/kyberswap-zap-as-a-service/zaps-supported-chains-dexes for list of supported dexes for each chain
+          required: true
           style: form
           explode: true
           schema:
             type: string
-            default: DEX_UNSPECIFIED
+            default: DEX_UNISWAPV3
             enum:
-              - DEX_UNSPECIFIED
               - DEX_UNISWAPV3
-              - DEX_PANCAKESWAPV3
-              - DEX_UNISWAPV2
-              - DEX_SUSHISWAPV2
-              - DEX_CURVE
-              - DEX_BALANCER
-              - DEX_METAVAULTV3
-              - DEX_RAMSESCL
-              - DEX_QUICKSWAPV3UNI
-              - DEX_SUSHISWAPV3
-              - DEX_THRUSTERV3
-              - DEX_CAMELOTV3
-              - DEX_QUICKSWAPV3ALGEBRA
-              - DEX_THENAFUSION
-              - DEX_PANCAKESWAPV2
-              - DEX_METAVAULTV2
-              - DEX_PANGOLINSTANDARD
-              - DEX_QUICKSWAPV2
-              - DEX_THRUSTERV2
-              - DEX_CAMELOTV2
-              - DEX_LYNEX
-              - DEX_RAMSESLEGACY
-              - DEX_AERODROMECL
-              - DEX_AERODROMEBASICVOLATILE
-              - DEX_AERODROMEBASICSTABLE
-              - DEX_GAMMA
-              - DEX_AMBIENT
-              - DEX_DEFIEDGE
-              - DEX_BEEFY
-              - DEX_VFAT
-              - DEX_MAVERICK
-              - DEX_TRADERJOE
-              - DEX_THRUSTERV2DEGEN
-              - DEX_LINEHUBV3
-              - DEX_RINGV2
-              - DEX_KOILEGACY
-              - DEX_KOICL
-              - DEX_EQUALIZER
-              - DEX_NILE
-              - DEX_ARRAKIS
-              - DEX_ICHI
-              - DEX_GMX
-              - DEX_SWAPMODE
-              - DEX_SOLIDLY
           example: "DEX_UNISWAPV3"
         - name: pool.id
           in: query
           description: id of the pool to zap into.
-          required: false
+          required: true
           style: form
           explode: true
           schema:
@@ -178,7 +88,7 @@ paths:
         - name: tokensIn
           in: query
           description: which token(s) to use as zap source. also accepts comma separated addresses
-          required: false
+          required: true
           style: form
           explode: true
           schema:
@@ -188,7 +98,7 @@ paths:
         - name: amountsIn
           in: query
           description: "amount(s) to zap including fee, corresponding to tokenIn. also accepts comma separated amounts."
-          required: false
+          required: true
           style: form
           explode: true
           schema:
@@ -452,211 +362,33 @@ paths:
         - name: dexFrom
           in: query
           description: |-
-            which dex to zap migrate out from
-
-             - DEX_UNSPECIFIED: Unspecified value.
-             - DEX_UNISWAPV3: For UniSwap V3.
-             - DEX_PANCAKESWAPV3: For PancakeSwap V3.
-             - DEX_UNISWAPV2: For Uniswap V2.
-             - DEX_SUSHISWAPV2: For SushiSwap V2.
-             - DEX_CURVE: For Curve
-             - DEX_BALANCER: For Balancer
-             - DEX_METAVAULTV3: MetaVault V3
-             - DEX_RAMSESCL: Ramses CL
-             - DEX_QUICKSWAPV3UNI: Quickswap V3 Uni
-             - DEX_SUSHISWAPV3: SushiSwap V3
-             - DEX_THRUSTERV3: Thruster V3
-             - DEX_CAMELOTV3: Camelot V3
-             - DEX_QUICKSWAPV3ALGEBRA: Quickswap V3 Algebra
-             - DEX_THENAFUSION: Thena Fusion
-             - DEX_PANCAKESWAPV2: PancakeSwap V2
-             - DEX_METAVAULTV2: MetaVault V2
-             - DEX_PANGOLINSTANDARD: Pangolin Standard
-             - DEX_QUICKSWAPV2: Quickswap V2
-             - DEX_THRUSTERV2: Thruster V2 (1% fee)
-             - DEX_CAMELOTV2: Camelot V2
-             - DEX_LYNEX: Lynex
-             - DEX_RAMSESLEGACY: Ramses Legacy
-             - DEX_AERODROMECL: Aerodrome Concentrated
-             - DEX_AERODROMEBASICVOLATILE: Aerodrome Basic Volatile
-             - DEX_AERODROMEBASICSTABLE: Aerodrome Basic Stable
-             - DEX_GAMMA: Gamma
-             - DEX_AMBIENT: Ambient
-             - DEX_DEFIEDGE: DefiEdge
-             - DEX_BEEFY: Beefy
-             - DEX_VFAT: Vfat
-             - DEX_MAVERICK: Maverick
-             - DEX_TRADERJOE: Traderjoe
-             - DEX_THRUSTERV2DEGEN: Thruster V2 Degen (0.3% fee)
-             - DEX_LINEHUBV3: LineHub V3
-             - DEX_RINGV2: Ring V2
-             - DEX_KOILEGACY: KOI Legacy
-             - DEX_KOICL: KOI CL
-             - DEX_EQUALIZER: Equalizer
-             - DEX_NILE: Nile
-             - DEX_ARRAKIS: Arrakis
-             - DEX_ICHI: ICHI
-             - DEX_GMX: GMX
-             - DEX_SWAPMODE: SwapMode
-             - DEX_SOLIDLY: Solidly
-          required: false
+            Refer to https://docs.kyberswap.com/kyberswap-solutions/kyberswap-zap-as-a-service/zaps-supported-chains-dexes for list of supported dexes for each chain
+          required: true
           style: form
           explode: true
           schema:
             type: string
-            default: DEX_UNSPECIFIED
+            default: DEX_UNISWAPV3
             enum:
-              - DEX_UNSPECIFIED
               - DEX_UNISWAPV3
-              - DEX_PANCAKESWAPV3
-              - DEX_UNISWAPV2
-              - DEX_SUSHISWAPV2
-              - DEX_CURVE
-              - DEX_BALANCER
-              - DEX_METAVAULTV3
-              - DEX_RAMSESCL
-              - DEX_QUICKSWAPV3UNI
-              - DEX_SUSHISWAPV3
-              - DEX_THRUSTERV3
-              - DEX_CAMELOTV3
-              - DEX_QUICKSWAPV3ALGEBRA
-              - DEX_THENAFUSION
-              - DEX_PANCAKESWAPV2
-              - DEX_METAVAULTV2
-              - DEX_PANGOLINSTANDARD
-              - DEX_QUICKSWAPV2
-              - DEX_THRUSTERV2
-              - DEX_CAMELOTV2
-              - DEX_LYNEX
-              - DEX_RAMSESLEGACY
-              - DEX_AERODROMECL
-              - DEX_AERODROMEBASICVOLATILE
-              - DEX_AERODROMEBASICSTABLE
-              - DEX_GAMMA
-              - DEX_AMBIENT
-              - DEX_DEFIEDGE
-              - DEX_BEEFY
-              - DEX_VFAT
-              - DEX_MAVERICK
-              - DEX_TRADERJOE
-              - DEX_THRUSTERV2DEGEN
-              - DEX_LINEHUBV3
-              - DEX_RINGV2
-              - DEX_KOILEGACY
-              - DEX_KOICL
-              - DEX_EQUALIZER
-              - DEX_NILE
-              - DEX_ARRAKIS
-              - DEX_ICHI
-              - DEX_GMX
-              - DEX_SWAPMODE
-              - DEX_SOLIDLY
+          example: "DEX_UNISWAPV3"
         - name: dexTo
           in: query
           description: |-
-            which dex to zap migrate in to
-
-             - DEX_UNSPECIFIED: Unspecified value.
-             - DEX_UNISWAPV3: For UniSwap V3.
-             - DEX_PANCAKESWAPV3: For PancakeSwap V3.
-             - DEX_UNISWAPV2: For Uniswap V2.
-             - DEX_SUSHISWAPV2: For SushiSwap V2.
-             - DEX_CURVE: For Curve
-             - DEX_BALANCER: For Balancer
-             - DEX_METAVAULTV3: MetaVault V3
-             - DEX_RAMSESCL: Ramses CL
-             - DEX_QUICKSWAPV3UNI: Quickswap V3 Uni
-             - DEX_SUSHISWAPV3: SushiSwap V3
-             - DEX_THRUSTERV3: Thruster V3
-             - DEX_CAMELOTV3: Camelot V3
-             - DEX_QUICKSWAPV3ALGEBRA: Quickswap V3 Algebra
-             - DEX_THENAFUSION: Thena Fusion
-             - DEX_PANCAKESWAPV2: PancakeSwap V2
-             - DEX_METAVAULTV2: MetaVault V2
-             - DEX_PANGOLINSTANDARD: Pangolin Standard
-             - DEX_QUICKSWAPV2: Quickswap V2
-             - DEX_THRUSTERV2: Thruster V2 (1% fee)
-             - DEX_CAMELOTV2: Camelot V2
-             - DEX_LYNEX: Lynex
-             - DEX_RAMSESLEGACY: Ramses Legacy
-             - DEX_AERODROMECL: Aerodrome Concentrated
-             - DEX_AERODROMEBASICVOLATILE: Aerodrome Basic Volatile
-             - DEX_AERODROMEBASICSTABLE: Aerodrome Basic Stable
-             - DEX_GAMMA: Gamma
-             - DEX_AMBIENT: Ambient
-             - DEX_DEFIEDGE: DefiEdge
-             - DEX_BEEFY: Beefy
-             - DEX_VFAT: Vfat
-             - DEX_MAVERICK: Maverick
-             - DEX_TRADERJOE: Traderjoe
-             - DEX_THRUSTERV2DEGEN: Thruster V2 Degen (0.3% fee)
-             - DEX_LINEHUBV3: LineHub V3
-             - DEX_RINGV2: Ring V2
-             - DEX_KOILEGACY: KOI Legacy
-             - DEX_KOICL: KOI CL
-             - DEX_EQUALIZER: Equalizer
-             - DEX_NILE: Nile
-             - DEX_ARRAKIS: Arrakis
-             - DEX_ICHI: ICHI
-             - DEX_GMX: GMX
-             - DEX_SWAPMODE: SwapMode
-             - DEX_SOLIDLY: Solidly
-          required: false
+            Refer to https://docs.kyberswap.com/kyberswap-solutions/kyberswap-zap-as-a-service/zaps-supported-chains-dexes for list of supported dexes for each chain
+          required: true
           style: form
           explode: true
           schema:
             type: string
-            default: DEX_UNSPECIFIED
+            default: DEX_UNISWAPV3
             enum:
-              - DEX_UNSPECIFIED
               - DEX_UNISWAPV3
-              - DEX_PANCAKESWAPV3
-              - DEX_UNISWAPV2
-              - DEX_SUSHISWAPV2
-              - DEX_CURVE
-              - DEX_BALANCER
-              - DEX_METAVAULTV3
-              - DEX_RAMSESCL
-              - DEX_QUICKSWAPV3UNI
-              - DEX_SUSHISWAPV3
-              - DEX_THRUSTERV3
-              - DEX_CAMELOTV3
-              - DEX_QUICKSWAPV3ALGEBRA
-              - DEX_THENAFUSION
-              - DEX_PANCAKESWAPV2
-              - DEX_METAVAULTV2
-              - DEX_PANGOLINSTANDARD
-              - DEX_QUICKSWAPV2
-              - DEX_THRUSTERV2
-              - DEX_CAMELOTV2
-              - DEX_LYNEX
-              - DEX_RAMSESLEGACY
-              - DEX_AERODROMECL
-              - DEX_AERODROMEBASICVOLATILE
-              - DEX_AERODROMEBASICSTABLE
-              - DEX_GAMMA
-              - DEX_AMBIENT
-              - DEX_DEFIEDGE
-              - DEX_BEEFY
-              - DEX_VFAT
-              - DEX_MAVERICK
-              - DEX_TRADERJOE
-              - DEX_THRUSTERV2DEGEN
-              - DEX_LINEHUBV3
-              - DEX_RINGV2
-              - DEX_KOILEGACY
-              - DEX_KOICL
-              - DEX_EQUALIZER
-              - DEX_NILE
-              - DEX_ARRAKIS
-              - DEX_ICHI
-              - DEX_GMX
-              - DEX_SWAPMODE
-              - DEX_SOLIDLY
+          example: "DEX_UNISWAPV3"
         - name: poolFrom.id
           in: query
           description: id of the pool to zap into.
-          required: false
+          required: true
           style: form
           explode: true
           schema:
@@ -664,37 +396,19 @@ paths:
         - name: poolTo.id
           in: query
           description: id of the pool to zap into.
-          required: false
+          required: true
           style: form
           explode: true
           schema:
             type: string
         - name: positionFrom.id
           in: query
-          description: id of the position to add liquidity to; omit to create a new uniswapV3 position. for uniswapV2 this is user address
-          required: false
+          description: id of the position to withdraw from
+          required: true
           style: form
           explode: true
           schema:
             type: string
-        - name: positionFrom.tickLower
-          in: query
-          description: "min tick of the position, required if creating a new uniswapV3 position."
-          required: false
-          style: form
-          explode: true
-          schema:
-            type: integer
-            format: int32
-        - name: positionFrom.tickUpper
-          in: query
-          description: "max tick of the position, required if creating a new uniswapV3 position."
-          required: false
-          style: form
-          explode: true
-          schema:
-            type: integer
-            format: int32
         - name: positionTo.id
           in: query
           description: id of the position to add liquidity to; omit to create a new uniswapV3 position. for uniswapV2 this is user address
@@ -912,6 +626,264 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/v1BuildMigrateRouteResponse'
+        "400":
+          description: Invalid Argument
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/rpcStatus'
+              example:
+                code: 3
+                message: "validation error:\\\\n - pool: missing tokens [Pool.tokens]\\\\n - pool.id: value does not match regex pattern `^0x[0-9A-Za-z]{40}$` [string.pattern]\\\\n - position: value is required [required]\\\\n - token_in[0]: value does not match regex pattern `^0x[0-9A-Za-z]{40}(,0x[0-9A-Za-z]{40})*$` [string.pattern]\\\\n - amount_in[0]: value does not match regex pattern `^\\\\d+(,\\\\d+)*$` [string.pattern]\\\\n - fee_address: value does not match regex pattern `^0x[0-9A-Za-z]{40}$` [string.pattern]"
+        "404":
+          description: Not Found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/rpcStatus'
+              example:
+                code: 5
+                message: "failed to get zap routes: cannot swap tokens [0xE2035f04040A135c4dA2f96AcA742143c57c79F9]"
+        default:
+          description: An unexpected error response.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/rpcStatus'
+      x-codegen-request-body-name: body
+      parameters: []
+  /api/v1/out/route:
+    get:
+      tags:
+        - Service
+      summary: Get the best zap-out route.
+      operationId: Service_GetOutRoute
+      parameters:
+        - name: dexFrom
+          in: query
+          description: |-
+            Refer to https://docs.kyberswap.com/kyberswap-solutions/kyberswap-zap-as-a-service/zaps-supported-chains-dexes for list of supported dexes for each chain
+          required: true
+          style: form
+          explode: true
+          schema:
+            type: string
+            default: DEX_UNISWAPV3
+            enum:
+              - DEX_UNISWAPV3
+          example: "DEX_UNISWAPV3"
+        - name: poolFrom.id
+          in: query
+          description: id of the pool to withdraw from.
+          required: true
+          style: form
+          explode: true
+          schema:
+            type: string
+        - name: positionFrom.id
+          in: query
+          description: id of the position to withdraw from
+          required: true
+          style: form
+          explode: true
+          schema:
+            type: string
+        - name: liquidityOut
+          in: query
+          description: "liquidity amount to withdraw, or empty or 0 to withdraw all"
+          required: false
+          style: form
+          explode: true
+          schema:
+            type: string
+        - name: tokenOut
+          in: query
+          required: true
+          style: form
+          explode: true
+          schema:
+            type: string
+        - name: aggregatorOptions.disable
+          in: query
+          description: whether to disable swapping with the aggregator
+          required: false
+          style: form
+          explode: true
+          schema:
+            type: boolean
+        - name: aggregatorOptions.includedSources
+          in: query
+          description: comma-separated list of sources to use for aggregator
+          required: false
+          style: form
+          explode: true
+          schema:
+            type: string
+        - name: aggregatorOptions.excludedSources
+          in: query
+          description: comma-separated list of sources to exclude for aggregator
+          required: false
+          style: form
+          explode: true
+          schema:
+            type: string
+        - name: aggregatorOptions.excludedPools
+          in: query
+          description: comma-separated list of pools to exclude for aggregator
+          required: false
+          style: form
+          explode: true
+          schema:
+            type: string
+        - name: feeAddress
+          in: query
+          description: fee recipient
+          required: false
+          style: form
+          explode: true
+          schema:
+            type: string
+        - name: feePcm
+          in: query
+          description: |-
+            fee percentage in per cent mille (0.001% or 1 in 100,000). Ignored if feeAddress is empty.
+            From 0 to 100,000 inclusively. Example: 1 for 0.001%.
+          required: false
+          style: form
+          explode: true
+          schema:
+            type: integer
+            format: int64
+        - name: slippage
+          in: query
+          description: |-
+            maximum slippage tolerance in basis points (0.01%), used for aggregator (exceeding which the transaction will
+            revert) and pool swap during zap (for additional zapping and for refund).
+            From 0 to 10,000 inclusively. Example: 1 for 0.01%.
+          required: false
+          style: form
+          explode: true
+          schema:
+            type: integer
+            format: int64
+          example: "100"
+        - name: X-Client-Id
+          in: header
+          description: Client Id
+          required: false
+          style: simple
+          explode: false
+          schema:
+            type: string
+          example: "zap-docs"
+        - name: X-Request-Id
+          in: header
+          description: Request Id
+          required: false
+          style: simple
+          explode: false
+          schema:
+            type: string
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/v1GetOutRouteResponse'
+              example:
+                code: 0
+                data: {}
+        "400":
+          description: Invalid Argument
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/rpcStatus'
+              example:
+                code: 3
+                message: "validation error:\\\\n - pool: missing tokens [Pool.tokens]\\\\n - pool.id: value does not match regex pattern `^0x[0-9A-Za-z]{40}$` [string.pattern]\\\\n - position: value is required [required]\\\\n - token_in[0]: value does not match regex pattern `^0x[0-9A-Za-z]{40}(,0x[0-9A-Za-z]{40})*$` [string.pattern]\\\\n - amount_in[0]: value does not match regex pattern `^\\\\d+(,\\\\d+)*$` [string.pattern]\\\\n - fee_address: value does not match regex pattern `^0x[0-9A-Za-z]{40}$` [string.pattern]"
+        "404":
+          description: Not Found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/rpcStatus'
+              example:
+                code: 5
+                message: "failed to get zap routes: cannot swap tokens [0xE2035f04040A135c4dA2f96AcA742143c57c79F9]"
+        default:
+          description: An unexpected error response.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/rpcStatus'
+  /api/v1/out/route/decode:
+    post:
+      tags:
+        - Service
+      summary: Decode zap-out route for debugging purposes.
+      operationId: Service_DecodeOutRoute
+      requestBody:
+        description: Decode zap-out route for debugging purposes.
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/v1DecodeOutRouteRequest'
+        required: true
+      responses:
+        "200":
+          description: A successful response.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/v1DecodeOutRouteResponse'
+        "400":
+          description: Invalid Argument
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/rpcStatus'
+              example:
+                code: 3
+                message: "validation error:\\\\n - pool: missing tokens [Pool.tokens]\\\\n - pool.id: value does not match regex pattern `^0x[0-9A-Za-z]{40}$` [string.pattern]\\\\n - position: value is required [required]\\\\n - token_in[0]: value does not match regex pattern `^0x[0-9A-Za-z]{40}(,0x[0-9A-Za-z]{40})*$` [string.pattern]\\\\n - amount_in[0]: value does not match regex pattern `^\\\\d+(,\\\\d+)*$` [string.pattern]\\\\n - fee_address: value does not match regex pattern `^0x[0-9A-Za-z]{40}$` [string.pattern]"
+        "404":
+          description: Not Found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/rpcStatus'
+              example:
+                code: 5
+                message: "failed to get zap routes: cannot swap tokens [0xE2035f04040A135c4dA2f96AcA742143c57c79F9]"
+        default:
+          description: An unexpected error response.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/rpcStatus'
+      x-codegen-request-body-name: body
+      parameters: []
+  /api/v1/out/route/build:
+    post:
+      tags:
+        - Service
+      summary: Build encoded data for the specified zap-out route.
+      operationId: Service_BuildOutRoute
+      requestBody:
+        description: Build encoded data for zap-out transaction from the specified route.
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/v1BuildOutRouteRequest'
+        required: true
+      responses:
+        "200":
+          description: A successful response.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/v1BuildOutRouteResponse'
         "400":
           description: Invalid Argument
           content:
@@ -1263,6 +1235,60 @@ components:
           title: native token value to transfer with the zap-migrate transaction in case of zapping with native tokens
           type: string
       description: Encompasses returned data.
+    v1BuildOutRouteRequest:
+      type: object
+      properties:
+        sender:
+          type: string
+          description: "the wallet sending the transaction, and thus, the tokens."
+        recipient:
+          type: string
+          description: the wallet receiving the new position. default to sender if empty.
+        route:
+          pattern: "^(?:[A-Za-z0-9+/]{4})*(?:[A-Za-z0-9+/]{2}==|[A-Za-z0-9+/]{3}=)?$"
+          type: string
+          description: the route as returned from get-route endpoint.
+          format: byte
+        deadline:
+          type: integer
+          description: deadline for the swap transaction to execute.
+          format: int64
+        source:
+          type: string
+          description: the source of the zap-out transaction.
+        burnNft:
+          type: boolean
+          description: whether to throw away the position NFT or keep it.
+      description: Build encoded data for zap-out transaction from the specified route.
+    v1BuildOutRouteResponse:
+      type: object
+      properties:
+        code:
+          title: grpc error code
+          type: integer
+          format: int32
+        message:
+          title: grpc error message
+          type: string
+        data:
+          $ref: '#/components/schemas/v1BuildOutRouteResponseData'
+        requestId:
+          title: request trace id
+          type: string
+      description: Returns the zap-out transaction details.
+    v1BuildOutRouteResponseData:
+      type: object
+      properties:
+        routerAddress:
+          title: zap router address to send the zap-out transaction to
+          type: string
+        callData:
+          title: call data for the zap-out transaction
+          type: string
+        value:
+          title: native token value to transfer with the zap-out transaction in case of zapping with native tokens
+          type: string
+      description: Encompasses returned data.
     v1DecodeInRouteRequest:
       type: object
       properties:
@@ -1335,6 +1361,38 @@ components:
           type: string
           description: JSON encode of the zap in route.
       description: Encompasses returned data.
+    v1DecodeOutRouteRequest:
+      type: object
+      properties:
+        route:
+          pattern: "^(?:[A-Za-z0-9+/]{4})*(?:[A-Za-z0-9+/]{2}==|[A-Za-z0-9+/]{3}=)?$"
+          type: string
+          description: the route as returned from get-route endpoint.
+          format: byte
+      description: Decode zap-out route for debugging purposes.
+    v1DecodeOutRouteResponse:
+      type: object
+      properties:
+        code:
+          title: grpc error code
+          type: integer
+          format: int32
+        message:
+          title: grpc error message
+          type: string
+        data:
+          $ref: '#/components/schemas/v1DecodeOutRouteResponseData'
+        requestId:
+          title: request trace id
+          type: string
+      description: Returns the zap-out route details.
+    v1DecodeOutRouteResponseData:
+      type: object
+      properties:
+        json:
+          type: string
+          description: JSON encode of the zap in route.
+      description: Encompasses returned data.
     v1Dex:
       type: string
       description: |-
@@ -1383,8 +1441,9 @@ components:
          - DEX_ARRAKIS: Arrakis
          - DEX_ICHI: ICHI
          - DEX_GMX: GMX
-         - DEX_SWAPMODE: SwapMode
+         - DEX_SWAPMODEV2: SwapMode V2
          - DEX_SOLIDLY: Solidly
+         - DEX_SWAPMODEV3: SwapMode V3
       default: DEX_UNSPECIFIED
       enum:
         - DEX_UNSPECIFIED
@@ -1430,8 +1489,9 @@ components:
         - DEX_ARRAKIS
         - DEX_ICHI
         - DEX_GMX
-        - DEX_SWAPMODE
+        - DEX_SWAPMODEV2
         - DEX_SOLIDLY
+        - DEX_SWAPMODEV3
     v1GetInRouteResponse:
       type: object
       properties:
@@ -1557,6 +1617,42 @@ components:
           $ref: '#/components/schemas/v1PoolDetails'
         positionDetails:
           $ref: '#/components/schemas/v1PositionDetails'
+        zapDetails:
+          $ref: '#/components/schemas/v1ZapDetails'
+        route:
+          title: the zap route to pass to build API to get call-data
+          pattern: "^(?:[A-Za-z0-9+/]{4})*(?:[A-Za-z0-9+/]{2}==|[A-Za-z0-9+/]{3}=)?$"
+          type: string
+          format: byte
+        routerAddress:
+          title: the router address to check approval amount
+          type: string
+        gas:
+          title: rough estimate of gas required for the transaction
+          type: string
+        gasUsd:
+          title: USD value of estimated gas required
+          type: string
+      description: Encompasses returned data.
+    v1GetOutRouteResponse:
+      type: object
+      properties:
+        code:
+          title: grpc error code
+          type: integer
+          format: int32
+        message:
+          title: grpc error message
+          type: string
+        data:
+          $ref: '#/components/schemas/v1GetOutRouteResponseData'
+        requestId:
+          title: request trace id
+          type: string
+      description: Returns the best route to zap-out from an existing position to the specified pool position.
+    v1GetOutRouteResponseData:
+      type: object
+      properties:
         zapDetails:
           $ref: '#/components/schemas/v1ZapDetails'
         route:

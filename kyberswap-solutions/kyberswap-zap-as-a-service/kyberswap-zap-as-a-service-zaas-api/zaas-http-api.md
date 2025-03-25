@@ -4,7 +4,7 @@ description: HTTP API doc for ZaaS API
 
 # ZaaS HTTP API
 
-{% file src="../../../.gitbook/assets/openapi (4).yaml" %}
+{% file src="../../../.gitbook/assets/openapi (1).yaml" %}
 OpenAPI YAML
 {% endfile %}
 
@@ -27,11 +27,9 @@ Please refer to [dex-ids.md](../dex-ids.md "mention") and [zaps-supported-chains
 
 #### Get Route
 
-{% swagger src="../../../.gitbook/assets/openapi (4).yaml" path="/api/v1/in/route" method="get" %}
-[openapi (4).yaml](<../../../.gitbook/assets/openapi (4).yaml>)
-{% endswagger %}
-
-
+{% openapi src="../../../.gitbook/assets/openapi (1).yaml" path="/api/v1/in/route" method="get" %}
+[openapi (1).yaml](<../../../.gitbook/assets/openapi (1).yaml>)
+{% endopenapi %}
 
 {% tabs %}
 {% tab title="Bash" %}
@@ -97,9 +95,9 @@ end
 
 #### Build Route
 
-{% swagger src="../../../.gitbook/assets/zap_service.yaml" path="/api/v1/in/route/build" method="post" %}
+{% openapi src="../../../.gitbook/assets/zap_service.yaml" path="/api/v1/in/route/build" method="post" %}
 [zap_service.yaml](../../../.gitbook/assets/zap_service.yaml)
-{% endswagger %}
+{% endopenapi %}
 
 {% tabs %}
 {% tab title="Bash" %}
@@ -183,21 +181,33 @@ end
 {% endtab %}
 {% endtabs %}
 
-
-
 ### Zap Migrate
 
 #### Get Route
 
-{% swagger src="../../../.gitbook/assets/openapi (4).yaml" path="/api/v1/migrate/route" method="get" %}
-[openapi (4).yaml](<../../../.gitbook/assets/openapi (4).yaml>)
-{% endswagger %}
+{% openapi src="../../../.gitbook/assets/openapi (1).yaml" path="/api/v1/migrate/route" method="get" %}
+[openapi (1).yaml](<../../../.gitbook/assets/openapi (1).yaml>)
+{% endopenapi %}
 
 
 
 #### Build Route
 
-{% swagger src="../../../.gitbook/assets/zap_service.yaml" path="/api/v1/migrate/route/build" method="post" %}
+{% openapi src="../../../.gitbook/assets/zap_service.yaml" path="/api/v1/migrate/route/build" method="post" %}
 [zap_service.yaml](../../../.gitbook/assets/zap_service.yaml)
-{% endswagger %}
+{% endopenapi %}
+
+### Zap Out
+
+#### Get Route
+
+{% openapi src="../../../.gitbook/assets/openapi (1).yaml" path="/api/v1/out/route" method="get" %}
+[openapi (1).yaml](<../../../.gitbook/assets/openapi (1).yaml>)
+{% endopenapi %}
+
+Build Route
+
+{% openapi src="../../../.gitbook/assets/openapi (1).yaml" path="/api/v1/out/route/build" method="post" %}
+[openapi (1).yaml](<../../../.gitbook/assets/openapi (1).yaml>)
+{% endopenapi %}
 
