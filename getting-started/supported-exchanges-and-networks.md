@@ -672,3 +672,12 @@ Decentralized Exchanges:
 * MemeSwap
 
 </details>
+
+<details>
+
+<summary><img src="../.gitbook/assets/0131e44f-1c52-46b9-b186-9ac83e79af001742407435650-modified.png" alt="" data-size="line"> Ronin (ChainID: 2020)</summary>
+
+* Katana V2
+* Katana V3
+
+</details>
