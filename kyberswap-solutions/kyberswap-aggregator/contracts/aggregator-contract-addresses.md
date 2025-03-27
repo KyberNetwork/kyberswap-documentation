@@ -110,14 +110,6 @@ All KyberSwap Aggregator contracts have been deployed at the same address across
 
 <details>
 
-<summary>Polygon zkEVM (ChainID: 1101)</summary>
-
-* **MetaAggregationRouterV2:** [`0x6131B5fae19EA4f9D964eAc0408E4408b66337b5`](https://zkevm.polygonscan.com/address/0x6131B5fae19EA4f9D964eAc0408E4408b66337b5)
-
-</details>
-
-<details>
-
 <summary>Sonic (ChainID: 146)</summary>
 
 * **MetaAggregationRouterV2:** [`0x6131B5fae19EA4f9D964eAc0408E4408b66337b5`](https://explorer.linea.build/address/0x6131B5fae19EA4f9D964eAc0408E4408b66337b5)
@@ -129,5 +121,13 @@ All KyberSwap Aggregator contracts have been deployed at the same address across
 <summary>Berachain (ChainID: 80094)</summary>
 
 **MetaAggregationRouterV2:** [`0x6131B5fae19EA4f9D964eAc0408E4408b66337b5`](https://explorer.linea.build/address/0x6131B5fae19EA4f9D964eAc0408E4408b66337b5)
+
+</details>
+
+<details>
+
+<summary>Ronin (ChainID: 2020)</summary>
+
+* **MetaAggregationRouterV2:** [`0x6131B5fae19EA4f9D964eAc0408E4408b66337b5`](https://app.roninchain.com/address/0x6131b5fae19ea4f9d964eac0408e4408b66337b5?p=1\&ps=25)
 
 </details>

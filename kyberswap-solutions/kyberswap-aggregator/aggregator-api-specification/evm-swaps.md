@@ -72,6 +72,7 @@ The Aggregator APIs require a chain **name** to be included in the path when cal
 * Blast (ChainID: 81457) -> `blast`
 * Sonic (ChainID: 146) -> `sonic`
 * Berachain (ChainID: 80094) -> `berachain`
+* Ronin (ChainID: 2020) -> `ronin`
 {% endhint %}
 
 ### `Latest`
