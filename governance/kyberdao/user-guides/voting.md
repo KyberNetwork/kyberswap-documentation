@@ -50,7 +50,7 @@ Step 3: Paste the Ethereum address that you want to delegate voting power to →
 
 Important: In this default delegation method, your delegate is responsible for voting on your behalf and distributing your KNC rewards to you (though your delegate can’t touch or withdraw your own staked KNC). Kyber Network does not hold your funds or manage this process. KyberDAO voting is operated using the blockchain and is fully transparent and verifiable.
 
-![](<../../../.gitbook/assets/image (82).png>)
+<img src="../../../.gitbook/assets/image (82).png" alt="" data-size="original">
 
 </details>
 
@@ -78,9 +78,7 @@ For the latest governance parameters, please read [https://github.com/KyberNetwo
 
 <summary>How are voting and rewards linked?</summary>
 
-
-
-2 simple rules: \
+2 simple rules:\
 (A) You MUST VOTE to get the reward, and (B) You must vote in ALL the ongoing proposals to get your full reward for that particular epoch.
 
 If the epoch has 2 proposals, but you voted in only 1 proposal, you will get only half of your rewards.

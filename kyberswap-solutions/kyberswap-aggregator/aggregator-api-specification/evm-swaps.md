@@ -6,7 +6,7 @@ description: KyberSwap Aggregator EVM APIs
 
 ## Download OpenAPI specification:
 
-{% file src="../../../.gitbook/assets/KyberSwapAggregator_EVMAPIs_v2.9.1.yaml" %}
+{% file src="../../../.gitbook/assets/KyberSwapAggregator_EVMAPIs_v2.10.0.yaml" %}
 
 {% hint style="success" %}
 **Note on integration: clientID**
@@ -75,25 +75,23 @@ The Aggregator APIs require a chain **name** to be included in the path when cal
 * Ronin (ChainID: 2020) -> `ronin`
 {% endhint %}
 
-### `Latest`
+### &#x20;Latest
 
 <figure><img src="../../../.gitbook/assets/Aggregator APIv1.jpg" alt=""><figcaption></figcaption></figure>
 
-{% openapi src="../../../.gitbook/assets/KyberSwapAggregator_EVMAPIs_v2.9.1.yaml" path="/{chain}/api/v1/routes" method="get" %}
-[KyberSwapAggregator_EVMAPIs_v2.9.1.yaml](../../../.gitbook/assets/KyberSwapAggregator_EVMAPIs_v2.9.1.yaml)
+{% openapi src="../../../.gitbook/assets/KyberSwapAggregator_EVMAPIs_v2.10.0.yaml" path="/{chain}/api/v1/routes" method="get" %}
+[KyberSwapAggregator_EVMAPIs_v2.10.0.yaml](../../../.gitbook/assets/KyberSwapAggregator_EVMAPIs_v2.10.0.yaml)
 {% endopenapi %}
 
-{% openapi src="../../../.gitbook/assets/KyberSwapAggregator_EVMAPIs_v2.9.1.yaml" path="/{chain}/api/v1/route/build" method="post" %}
-[KyberSwapAggregator_EVMAPIs_v2.9.1.yaml](../../../.gitbook/assets/KyberSwapAggregator_EVMAPIs_v2.9.1.yaml)
+{% openapi src="../../../.gitbook/assets/KyberSwapAggregator_EVMAPIs_v2.10.0.yaml" path="/{chain}/api/v1/route/build" method="post" %}
+[KyberSwapAggregator_EVMAPIs_v2.10.0.yaml](../../../.gitbook/assets/KyberSwapAggregator_EVMAPIs_v2.10.0.yaml)
 {% endopenapi %}
 
-### `Legacy`
+### Legacy
 
-{% openapi src="../../../.gitbook/assets/KyberSwapAggregator_EVMAPIs_v2.9.1.yaml" path="/{chain}/route/encode" method="get" %}
-[KyberSwapAggregator_EVMAPIs_v2.9.1.yaml](../../../.gitbook/assets/KyberSwapAggregator_EVMAPIs_v2.9.1.yaml)
+{% openapi src="../../../.gitbook/assets/KyberSwapAggregator_EVMAPIs_v2.10.0.yaml" path="/{chain}/route/encode" method="get" %}
+[KyberSwapAggregator_EVMAPIs_v2.10.0.yaml](../../../.gitbook/assets/KyberSwapAggregator_EVMAPIs_v2.10.0.yaml)
 {% endopenapi %}
-
-
 
 {% hint style="info" %}
 **KyberSwap positive slippage surplus collection**

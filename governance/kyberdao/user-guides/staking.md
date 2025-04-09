@@ -22,11 +22,11 @@ Step 2: Connect your wallet
 
 Step 3: Stake KNC
 
-![](<../../../.gitbook/assets/image (158).png>)
+<img src="../../../.gitbook/assets/image (158).png" alt="" data-size="original">
 
 If you stake KNC in epoch “n”, you or your delegate will only be eligible to vote in epoch “n+1” (next epoch onwards). Example:
 
-![](https://kyber.org/static/media/faq2.b02361d2.png)
+<img src="https://kyber.org/static/media/faq2.b02361d2.png" alt="" data-size="original">
 
 Read our Staking and Voting Overview:
 
@@ -80,7 +80,7 @@ Epoch 14: Claims rewards for epoch 13. Votes with 15,000 KNC in voting power.
 
 Epoch 15: Claims rewards for epoch 14. Continue voting with 15,000 KNC in voting power.
 
-![](https://kyber.org/static/media/faq3.de8c6bb3.png)
+<img src="https://kyber.org/static/media/faq3.de8c6bb3.png" alt="" data-size="original">
 
 </details>
 
@@ -99,7 +99,7 @@ Example:
 * Epoch 16: Tom voted with 15,000 KNC then withdrew 3000 KNC → Total staked is now 15,000 - 3000 = 12,000 KNC
 * Epoch 17: Tom can only claim his reward based on 12,000 KNC (not 15,000 KNC). His new voting power will now be equivalent to 12,000 KNC.
 
-![](https://kyber.org/static/media/faq4.d8edb1f2.png)
+<img src="https://kyber.org/static/media/faq4.d8edb1f2.png" alt="" data-size="original">
 
 </details>
 
@@ -119,7 +119,7 @@ It depends. After every epoch, there will be trading fees set aside for voting r
 
 The network fee percentage and fee allocation ratio are decided by the KyberDAO. As an individual KNC staker, your share of the rewards received after the epoch will be determined by your voting points (the amount of KNC you have staked during the epoch x the number of campaigns you voted on), in proportion to the total voting points of all KNC stakers.
 
-![](https://kyber.org/static/media/faq6.923eb036.png)
+<img src="https://kyber.org/static/media/faq6.923eb036.png" alt="" data-size="original">
 
 You MUST VOTE on all ongoing proposal campaigns in order to receive your full reward in the next epoch. Assuming you (and all the other stakers) voted for all the proposal campaigns in that epoch, your share will be proportional to your KNC staked vs. the total amount of KNC staked by all voters.
 

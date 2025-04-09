@@ -4,11 +4,11 @@
 
 <summary>Transak</summary>
 
-#### What is Transak?
+**What is Transak?**
 
 Transak is a developer integration toolkit that enables onboarding of users to buy/sell crypto in any blockchain app, website or web plugin. Transak helps onboard mainstream users into dApp, protocol, game or wallet app.
 
-#### Transak on [KyberSwap.com](http://kyberswap.com/)
+**Transak on** [**KyberSwap.com**](http://kyberswap.com/)
 
 Transak is integrated on KyberSwap through a browser integration that will redirect users to Transak to access their fiat on ramp services.
 
@@ -26,37 +26,37 @@ Click here for more information on [**Transak**](https://docs.transak.com/docs/w
 
 <summary>Axelar x Squid</summary>
 
-#### What is Axelar?
+**What is Axelar?**
 
 Axelar delivers secure cross-chain communication for Web3, enabling you to build Interchain dApps that grow beyond a single chain. _Secure_ means Axelar is built on proof-of-stake, the battle-tested approach used by Ethereum, Polygon, Cosmos, and more. _Cross-chain communication_ means you can build a complete experience for your users that lets them interact with any asset, any application, on any chain with one click.
 
 Click [**here**](https://docs.axelar.dev/) for more information on Axelar.
 
-#### What is axlUSDC?
+**What is axlUSDC?**
 
 axlUSDC is a wrapped, multi-chain representation of USDC, a dollar stablecoin. For each unit of axlUSDC, there is a unit of USDC locked in an Axelar Gateway on Ethereum. axlUSDC is secured by a dynamic validator set running delegated Proof-of-Stake, which holds key shares in the Axelar Gateways via multi-party cryptography.
 
 Click [**here**](https://docs.axelar.dev/learn/axlusdc) for more information on axlUSDC.
 
-#### What is Squid?
+**What is Squid?**
 
-Squid is the cross-chain swap and liquidity routing protocol on [Axelar Network](https://axelar.network/).&#x20;
+Squid is the cross-chain swap and liquidity routing protocol on [Axelar Network](https://axelar.network/).
 
 Squid utilises existing DEXs to swap and send any native token between chains. This can be done via their SDK, Front End or Contracts directly.
 
-Swaps are composable with Axelar's generalised message passing, so Squid can enable _one-click_ transactions between any application and any user, using any asset.&#x20;
+Swaps are composable with Axelar's generalised message passing, so Squid can enable _one-click_ transactions between any application and any user, using any asset.
 
 Buy NFTs from any marketplace, use multi-chain DeFi, play a game on another chain, all without signing multiple transactions or downloading multiple wallets.
 
 Click [**here**](https://docs.squidrouter.com/) for more information on Squid.
 
-#### Why Axelar x Squid?
+**Why Axelar x Squid?**
 
-![](<../.gitbook/assets/Squid_LiquidityModel (1).jpg>)
+<img src="../.gitbook/assets/Squid_LiquidityModel (1).jpg" alt="" data-size="original">
 
 By routing transactions through axlUSDC/USDC stable swap pools as well as USDC/native token pools, Squid supports swapping of any token combination across supported chains. Built on top of Axelar, Squid leverages Axelar's general cross-chain messaging abilities as well as its axlUSDC ecosystem to enable secure cross-chain token swaps.
 
-#### Axelar x Squid on [KyberSwap.com](https://kyberswap.com/)
+**Axelar x Squid on** [**KyberSwap.com**](https://kyberswap.com/)
 
 Squid is integrated on KyberSwap through API front end functionality to provide users with an option to conveniently swap tokens across the following supported chains:
 
@@ -73,7 +73,7 @@ Squid is integrated on KyberSwap through API front end functionality to provide 
 
 <summary>PayMaster x HoldStation</summary>
 
-#### What is PayMaster?
+**What is PayMaster?**
 
 Paymasters are smart contracts that able to pay gas fees for users. A Paymaster conversely, can sponsor transactions for users, enabling users to pay transaction fees in ERC20 tokens. This innovative approach to account management significantly enhances user experience, security, and flexibility, paving the way for broader adoption of blockchain technology.
 
@@ -83,13 +83,13 @@ To interact with a paymaster, EOA users sign their EIP-712 transaction.
 
 Click [**here**](https://twitter.com/zksync/status/1595085984487837696?s=61\&t=dzZ-VSBCMZBnCBKauuc5Pg) for more information on PayMaster.
 
-#### PayMaster powered by HoldStation on [KyberSwap.com](http://kyberswap.com/)
+**PayMaster powered by HoldStation on** [**KyberSwap.com**](http://kyberswap.com/)
 
 PayMaster is integrated on KyberSwap's Aggregator that will allow the users to access its account abstraction capabilities.
 
-This development empowers KyberSwap users by offering the flexibility to pay gas fees using various tokens such as $USDC, $USDT, (wBTC TBA) and $HOLD&#x20;
+This development empowers KyberSwap users by offering the flexibility to pay gas fees using various tokens such as $USDC, $USDT, (wBTC TBA) and $HOLD
 
-![](<../.gitbook/assets/IMG_6812 (1).jpeg>)
+<img src="../.gitbook/assets/IMG_6812 (1).jpeg" alt="" data-size="original">
 
 One of the standout features of this launch is that users are no longer required to maintain ETH in their wallets. This enhancement simplifies the user experience and adds a new layer of convenience to the KyberSwap platform.
 
