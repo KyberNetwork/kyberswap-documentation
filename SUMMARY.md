@@ -52,6 +52,7 @@
     * [Upgrading To APIv1](kyberswap-solutions/kyberswap-aggregator/developer-guides/upgrading-to-apiv1.md)
   * [Aggregator API Specification](kyberswap-solutions/kyberswap-aggregator/aggregator-api-specification/README.md)
     * [EVM Swaps](kyberswap-solutions/kyberswap-aggregator/aggregator-api-specification/evm-swaps.md)
+    * [Permit](kyberswap-solutions/kyberswap-aggregator/aggregator-api-specification/permit.md)
   * [Contracts](kyberswap-solutions/kyberswap-aggregator/contracts/README.md)
     * [Aggregator Contract Addresses](kyberswap-solutions/kyberswap-aggregator/contracts/aggregator-contract-addresses.md)
   * [DEX IDs](kyberswap-solutions/kyberswap-aggregator/dex-ids.md)
@@ -277,8 +278,8 @@
 * [Telegram](https://t.me/kybernetwork)
 * [LinkedIn](https://www.linkedin.com/company/kybernetwork/)
 * [Reddit](https://www.reddit.com/r/kybernetwork/)
-* [Instagram](https://www.instagram.com/kyberswap\_official/)
-* [Tik Tok](https://www.tiktok.com/@kyberswap\_official)
+* [Instagram](https://www.instagram.com/kyberswap_official/)
+* [Tik Tok](https://www.tiktok.com/@kyberswap_official)
 
 ## Support
 
