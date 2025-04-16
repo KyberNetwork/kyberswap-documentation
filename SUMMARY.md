@@ -72,6 +72,7 @@
     * [Integrating The KyberSwap Widget](kyberswap-solutions/kyberswap-widget/developer-guides/integrating-the-kyberswap-widget.md)
     * [Customizing The KyberSwap Widget](kyberswap-solutions/kyberswap-widget/developer-guides/customizing-the-kyberswap-widget.md)
   * [iFrame Alternative](kyberswap-solutions/kyberswap-widget/iframe-alternative.md)
+  * [Widget/iFrame Fee](kyberswap-solutions/kyberswap-widget/widget-iframe-fee.md)
 * [KyberSwap Liquidity Widget](kyberswap-solutions/kyberswap-liquidity-widget/README.md)
   * [Integrating The KyberSwap Liquidity Widget](kyberswap-solutions/kyberswap-liquidity-widget/integrating-the-kyberswap-liquidity-widget.md)
 * [Limit Order](kyberswap-solutions/limit-order/README.md)
