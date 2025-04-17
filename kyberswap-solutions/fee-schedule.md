@@ -11,7 +11,7 @@
 
 3.  **Product-Specific Fee Details**
 
-    1.  **KyberSwap Aggregator**
+    1.  **Swap**
 
         KyberSwap does not charge fees to users using the protocol to swap tokens. However Liquidity Providers are allowed to set fees on their liquidity pools and traders who choose to use these pools to perform swaps will need to pay trading fees to the LP, along with any associated network fees.
     2.  **Limit Order**
