@@ -6,7 +6,7 @@ description: KyberSwap Aggregator EVM APIs
 
 ## Download OpenAPI specification:
 
-{% file src="../../../.gitbook/assets/KyberSwapAggregator_EVMAPIs_v2.10.0.yaml" %}
+{% file src="../../../.gitbook/assets/KyberSwapAggregator_EVMAPIs_v2.11.0.yaml" %}
 
 {% hint style="success" %}
 **Note on integration: clientID**
@@ -79,19 +79,19 @@ The Aggregator APIs require a chain **name** to be included in the path when cal
 
 <figure><img src="../../../.gitbook/assets/Aggregator APIv1.jpg" alt=""><figcaption></figcaption></figure>
 
-{% openapi src="../../../.gitbook/assets/KyberSwapAggregator_EVMAPIs_v2.10.0.yaml" path="/{chain}/api/v1/routes" method="get" %}
-[KyberSwapAggregator_EVMAPIs_v2.10.0.yaml](../../../.gitbook/assets/KyberSwapAggregator_EVMAPIs_v2.10.0.yaml)
-{% endopenapi %}
+{% openapi-operation spec="aggregator-api" path="/{chain}/api/v1/routes" method="get" %}
+[Broken link](broken-reference)
+{% endopenapi-operation %}
 
-{% openapi src="../../../.gitbook/assets/KyberSwapAggregator_EVMAPIs_v2.10.0.yaml" path="/{chain}/api/v1/route/build" method="post" %}
-[KyberSwapAggregator_EVMAPIs_v2.10.0.yaml](../../../.gitbook/assets/KyberSwapAggregator_EVMAPIs_v2.10.0.yaml)
-{% endopenapi %}
+{% openapi-operation spec="aggregator-api" path="/{chain}/api/v1/route/build" method="post" %}
+[Broken link](broken-reference)
+{% endopenapi-operation %}
 
 ### Legacy
 
-{% openapi src="../../../.gitbook/assets/KyberSwapAggregator_EVMAPIs_v2.10.0.yaml" path="/{chain}/route/encode" method="get" %}
-[KyberSwapAggregator_EVMAPIs_v2.10.0.yaml](../../../.gitbook/assets/KyberSwapAggregator_EVMAPIs_v2.10.0.yaml)
-{% endopenapi %}
+{% openapi-operation spec="aggregator-api" path="/{chain}/route/encode" method="get" %}
+[Broken link](broken-reference)
+{% endopenapi-operation %}
 
 {% hint style="info" %}
 **KyberSwap positive slippage surplus collection**
