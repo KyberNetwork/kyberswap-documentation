@@ -38,54 +38,7 @@ paths:
         - name: dex
           in: query
           description: |-
-            which dex to use zap with
-
-             - DEX_UNSPECIFIED: Unspecified value.
-             - DEX_UNISWAPV3: For UniSwap V3.
-             - DEX_PANCAKESWAPV3: For PancakeSwap V3.
-             - DEX_UNISWAPV2: For Uniswap V2.
-             - DEX_SUSHISWAPV2: For SushiSwap V2.
-             - DEX_CURVE: For Curve
-             - DEX_BALANCER: For Balancer
-             - DEX_METAVAULTV3: MetaVault V3
-             - DEX_RAMSESCL: Ramses CL
-             - DEX_QUICKSWAPV3UNI: Quickswap V3 Uni
-             - DEX_SUSHISWAPV3: SushiSwap V3
-             - DEX_THRUSTERV3: Thruster V3
-             - DEX_CAMELOTV3: Camelot V3
-             - DEX_QUICKSWAPV3ALGEBRA: Quickswap V3 Algebra
-             - DEX_THENAFUSION: Thena Fusion
-             - DEX_PANCAKESWAPV2: PancakeSwap V2
-             - DEX_METAVAULTV2: MetaVault V2
-             - DEX_PANGOLINSTANDARD: Pangolin Standard
-             - DEX_QUICKSWAPV2: Quickswap V2
-             - DEX_THRUSTERV2: Thruster V2 (1% fee)
-             - DEX_CAMELOTV2: Camelot V2
-             - DEX_LYNEX: Lynex
-             - DEX_RAMSESLEGACY: Ramses Legacy
-             - DEX_AERODROMECL: Aerodrome Concentrated
-             - DEX_AERODROMEBASICVOLATILE: Aerodrome Basic Volatile
-             - DEX_AERODROMEBASICSTABLE: Aerodrome Basic Stable
-             - DEX_GAMMA: Gamma
-             - DEX_AMBIENT: Ambient
-             - DEX_DEFIEDGE: DefiEdge
-             - DEX_BEEFY: Beefy
-             - DEX_VFAT: Vfat
-             - DEX_MAVERICK: Maverick
-             - DEX_TRADERJOE: Traderjoe
-             - DEX_THRUSTERV2DEGEN: Thruster V2 Degen (0.3% fee)
-             - DEX_LINEHUBV3: LineHub V3
-             - DEX_RINGV2: Ring V2
-             - DEX_KOILEGACY: KOI Legacy
-             - DEX_KOICL: KOI CL
-             - DEX_EQUALIZER: Equalizer
-             - DEX_NILE: Nile
-             - DEX_ARRAKIS: Arrakis
-             - DEX_ICHI: ICHI
-             - DEX_GMX: GMX
-             - DEX_SWAPMODEV2: SwapMode V2
-             - DEX_SOLIDLY: Solidly
-             - DEX_SWAPMODEV3: SwapMode V3
+            Refer to https://docs.kyberswap.com/kyberswap-solutions/kyberswap-zap-as-a-service/zaps-supported-chains-dexes for list of supported dexes for each chain
           required: false
           style: form
           explode: true
@@ -454,54 +407,7 @@ paths:
         - name: dexFrom
           in: query
           description: |-
-            which dex to zap migrate out from
-
-             - DEX_UNSPECIFIED: Unspecified value.
-             - DEX_UNISWAPV3: For UniSwap V3.
-             - DEX_PANCAKESWAPV3: For PancakeSwap V3.
-             - DEX_UNISWAPV2: For Uniswap V2.
-             - DEX_SUSHISWAPV2: For SushiSwap V2.
-             - DEX_CURVE: For Curve
-             - DEX_BALANCER: For Balancer
-             - DEX_METAVAULTV3: MetaVault V3
-             - DEX_RAMSESCL: Ramses CL
-             - DEX_QUICKSWAPV3UNI: Quickswap V3 Uni
-             - DEX_SUSHISWAPV3: SushiSwap V3
-             - DEX_THRUSTERV3: Thruster V3
-             - DEX_CAMELOTV3: Camelot V3
-             - DEX_QUICKSWAPV3ALGEBRA: Quickswap V3 Algebra
-             - DEX_THENAFUSION: Thena Fusion
-             - DEX_PANCAKESWAPV2: PancakeSwap V2
-             - DEX_METAVAULTV2: MetaVault V2
-             - DEX_PANGOLINSTANDARD: Pangolin Standard
-             - DEX_QUICKSWAPV2: Quickswap V2
-             - DEX_THRUSTERV2: Thruster V2 (1% fee)
-             - DEX_CAMELOTV2: Camelot V2
-             - DEX_LYNEX: Lynex
-             - DEX_RAMSESLEGACY: Ramses Legacy
-             - DEX_AERODROMECL: Aerodrome Concentrated
-             - DEX_AERODROMEBASICVOLATILE: Aerodrome Basic Volatile
-             - DEX_AERODROMEBASICSTABLE: Aerodrome Basic Stable
-             - DEX_GAMMA: Gamma
-             - DEX_AMBIENT: Ambient
-             - DEX_DEFIEDGE: DefiEdge
-             - DEX_BEEFY: Beefy
-             - DEX_VFAT: Vfat
-             - DEX_MAVERICK: Maverick
-             - DEX_TRADERJOE: Traderjoe
-             - DEX_THRUSTERV2DEGEN: Thruster V2 Degen (0.3% fee)
-             - DEX_LINEHUBV3: LineHub V3
-             - DEX_RINGV2: Ring V2
-             - DEX_KOILEGACY: KOI Legacy
-             - DEX_KOICL: KOI CL
-             - DEX_EQUALIZER: Equalizer
-             - DEX_NILE: Nile
-             - DEX_ARRAKIS: Arrakis
-             - DEX_ICHI: ICHI
-             - DEX_GMX: GMX
-             - DEX_SWAPMODEV2: SwapMode V2
-             - DEX_SOLIDLY: Solidly
-             - DEX_SWAPMODEV3: SwapMode V3
+            Refer to https://docs.kyberswap.com/kyberswap-solutions/kyberswap-zap-as-a-service/zaps-supported-chains-dexes for list of supported dexes for each chain
           required: false
           style: form
           explode: true
@@ -558,54 +464,7 @@ paths:
         - name: dexTo
           in: query
           description: |-
-            which dex to zap migrate in to
-
-             - DEX_UNSPECIFIED: Unspecified value.
-             - DEX_UNISWAPV3: For UniSwap V3.
-             - DEX_PANCAKESWAPV3: For PancakeSwap V3.
-             - DEX_UNISWAPV2: For Uniswap V2.
-             - DEX_SUSHISWAPV2: For SushiSwap V2.
-             - DEX_CURVE: For Curve
-             - DEX_BALANCER: For Balancer
-             - DEX_METAVAULTV3: MetaVault V3
-             - DEX_RAMSESCL: Ramses CL
-             - DEX_QUICKSWAPV3UNI: Quickswap V3 Uni
-             - DEX_SUSHISWAPV3: SushiSwap V3
-             - DEX_THRUSTERV3: Thruster V3
-             - DEX_CAMELOTV3: Camelot V3
-             - DEX_QUICKSWAPV3ALGEBRA: Quickswap V3 Algebra
-             - DEX_THENAFUSION: Thena Fusion
-             - DEX_PANCAKESWAPV2: PancakeSwap V2
-             - DEX_METAVAULTV2: MetaVault V2
-             - DEX_PANGOLINSTANDARD: Pangolin Standard
-             - DEX_QUICKSWAPV2: Quickswap V2
-             - DEX_THRUSTERV2: Thruster V2 (1% fee)
-             - DEX_CAMELOTV2: Camelot V2
-             - DEX_LYNEX: Lynex
-             - DEX_RAMSESLEGACY: Ramses Legacy
-             - DEX_AERODROMECL: Aerodrome Concentrated
-             - DEX_AERODROMEBASICVOLATILE: Aerodrome Basic Volatile
-             - DEX_AERODROMEBASICSTABLE: Aerodrome Basic Stable
-             - DEX_GAMMA: Gamma
-             - DEX_AMBIENT: Ambient
-             - DEX_DEFIEDGE: DefiEdge
-             - DEX_BEEFY: Beefy
-             - DEX_VFAT: Vfat
-             - DEX_MAVERICK: Maverick
-             - DEX_TRADERJOE: Traderjoe
-             - DEX_THRUSTERV2DEGEN: Thruster V2 Degen (0.3% fee)
-             - DEX_LINEHUBV3: LineHub V3
-             - DEX_RINGV2: Ring V2
-             - DEX_KOILEGACY: KOI Legacy
-             - DEX_KOICL: KOI CL
-             - DEX_EQUALIZER: Equalizer
-             - DEX_NILE: Nile
-             - DEX_ARRAKIS: Arrakis
-             - DEX_ICHI: ICHI
-             - DEX_GMX: GMX
-             - DEX_SWAPMODEV2: SwapMode V2
-             - DEX_SOLIDLY: Solidly
-             - DEX_SWAPMODEV3: SwapMode V3
+            Refer to https://docs.kyberswap.com/kyberswap-solutions/kyberswap-zap-as-a-service/zaps-supported-chains-dexes for list of supported dexes for each chain
           required: false
           style: form
           explode: true
@@ -962,54 +821,7 @@ paths:
         - name: dexFrom
           in: query
           description: |-
-            dex to zap out
-
-             - DEX_UNSPECIFIED: Unspecified value.
-             - DEX_UNISWAPV3: For UniSwap V3.
-             - DEX_PANCAKESWAPV3: For PancakeSwap V3.
-             - DEX_UNISWAPV2: For Uniswap V2.
-             - DEX_SUSHISWAPV2: For SushiSwap V2.
-             - DEX_CURVE: For Curve
-             - DEX_BALANCER: For Balancer
-             - DEX_METAVAULTV3: MetaVault V3
-             - DEX_RAMSESCL: Ramses CL
-             - DEX_QUICKSWAPV3UNI: Quickswap V3 Uni
-             - DEX_SUSHISWAPV3: SushiSwap V3
-             - DEX_THRUSTERV3: Thruster V3
-             - DEX_CAMELOTV3: Camelot V3
-             - DEX_QUICKSWAPV3ALGEBRA: Quickswap V3 Algebra
-             - DEX_THENAFUSION: Thena Fusion
-             - DEX_PANCAKESWAPV2: PancakeSwap V2
-             - DEX_METAVAULTV2: MetaVault V2
-             - DEX_PANGOLINSTANDARD: Pangolin Standard
-             - DEX_QUICKSWAPV2: Quickswap V2
-             - DEX_THRUSTERV2: Thruster V2 (1% fee)
-             - DEX_CAMELOTV2: Camelot V2
-             - DEX_LYNEX: Lynex
-             - DEX_RAMSESLEGACY: Ramses Legacy
-             - DEX_AERODROMECL: Aerodrome Concentrated
-             - DEX_AERODROMEBASICVOLATILE: Aerodrome Basic Volatile
-             - DEX_AERODROMEBASICSTABLE: Aerodrome Basic Stable
-             - DEX_GAMMA: Gamma
-             - DEX_AMBIENT: Ambient
-             - DEX_DEFIEDGE: DefiEdge
-             - DEX_BEEFY: Beefy
-             - DEX_VFAT: Vfat
-             - DEX_MAVERICK: Maverick
-             - DEX_TRADERJOE: Traderjoe
-             - DEX_THRUSTERV2DEGEN: Thruster V2 Degen (0.3% fee)
-             - DEX_LINEHUBV3: LineHub V3
-             - DEX_RINGV2: Ring V2
-             - DEX_KOILEGACY: KOI Legacy
-             - DEX_KOICL: KOI CL
-             - DEX_EQUALIZER: Equalizer
-             - DEX_NILE: Nile
-             - DEX_ARRAKIS: Arrakis
-             - DEX_ICHI: ICHI
-             - DEX_GMX: GMX
-             - DEX_SWAPMODEV2: SwapMode V2
-             - DEX_SOLIDLY: Solidly
-             - DEX_SWAPMODEV3: SwapMode V3
+            Refer to https://docs.kyberswap.com/kyberswap-solutions/kyberswap-zap-as-a-service/zaps-supported-chains-dexes for list of supported dexes for each chain
           required: false
           style: form
           explode: true

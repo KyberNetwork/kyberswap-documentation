@@ -44,9 +44,54 @@ paths:
           explode: true
           schema:
             type: string
-            default: DEX_UNISWAPV3
+            default: DEX_UNSPECIFIED
             enum:
+              - DEX_UNSPECIFIED
               - DEX_UNISWAPV3
+              - DEX_PANCAKESWAPV3
+              - DEX_UNISWAPV2
+              - DEX_SUSHISWAPV2
+              - DEX_CURVE
+              - DEX_BALANCER
+              - DEX_METAVAULTV3
+              - DEX_RAMSESCL
+              - DEX_QUICKSWAPV3UNI
+              - DEX_SUSHISWAPV3
+              - DEX_THRUSTERV3
+              - DEX_CAMELOTV3
+              - DEX_QUICKSWAPV3ALGEBRA
+              - DEX_THENAFUSION
+              - DEX_PANCAKESWAPV2
+              - DEX_METAVAULTV2
+              - DEX_PANGOLINSTANDARD
+              - DEX_QUICKSWAPV2
+              - DEX_THRUSTERV2
+              - DEX_CAMELOTV2
+              - DEX_LYNEX
+              - DEX_RAMSESLEGACY
+              - DEX_AERODROMECL
+              - DEX_AERODROMEBASICVOLATILE
+              - DEX_AERODROMEBASICSTABLE
+              - DEX_GAMMA
+              - DEX_AMBIENT
+              - DEX_DEFIEDGE
+              - DEX_BEEFY
+              - DEX_VFAT
+              - DEX_MAVERICK
+              - DEX_TRADERJOE
+              - DEX_THRUSTERV2DEGEN
+              - DEX_LINEHUBV3
+              - DEX_RINGV2
+              - DEX_KOILEGACY
+              - DEX_KOICL
+              - DEX_EQUALIZER
+              - DEX_NILE
+              - DEX_ARRAKIS
+              - DEX_ICHI
+              - DEX_GMX
+              - DEX_SWAPMODEV2
+              - DEX_SOLIDLY
+              - DEX_SWAPMODEV3
           example: "DEX_UNISWAPV3"
         - name: pool.id
           in: query
@@ -362,29 +407,211 @@ paths:
         - name: dexFrom
           in: query
           description: |-
-            Refer to https://docs.kyberswap.com/kyberswap-solutions/kyberswap-zap-as-a-service/zaps-supported-chains-dexes for list of supported dexes for each chain
+            which dex to zap migrate out from
+
+             - DEX_UNSPECIFIED: Unspecified value.
+             - DEX_UNISWAPV3: For UniSwap V3.
+             - DEX_PANCAKESWAPV3: For PancakeSwap V3.
+             - DEX_UNISWAPV2: For Uniswap V2.
+             - DEX_SUSHISWAPV2: For SushiSwap V2.
+             - DEX_CURVE: For Curve
+             - DEX_BALANCER: For Balancer
+             - DEX_METAVAULTV3: MetaVault V3
+             - DEX_RAMSESCL: Ramses CL
+             - DEX_QUICKSWAPV3UNI: Quickswap V3 Uni
+             - DEX_SUSHISWAPV3: SushiSwap V3
+             - DEX_THRUSTERV3: Thruster V3
+             - DEX_CAMELOTV3: Camelot V3
+             - DEX_QUICKSWAPV3ALGEBRA: Quickswap V3 Algebra
+             - DEX_THENAFUSION: Thena Fusion
+             - DEX_PANCAKESWAPV2: PancakeSwap V2
+             - DEX_METAVAULTV2: MetaVault V2
+             - DEX_PANGOLINSTANDARD: Pangolin Standard
+             - DEX_QUICKSWAPV2: Quickswap V2
+             - DEX_THRUSTERV2: Thruster V2 (1% fee)
+             - DEX_CAMELOTV2: Camelot V2
+             - DEX_LYNEX: Lynex
+             - DEX_RAMSESLEGACY: Ramses Legacy
+             - DEX_AERODROMECL: Aerodrome Concentrated
+             - DEX_AERODROMEBASICVOLATILE: Aerodrome Basic Volatile
+             - DEX_AERODROMEBASICSTABLE: Aerodrome Basic Stable
+             - DEX_GAMMA: Gamma
+             - DEX_AMBIENT: Ambient
+             - DEX_DEFIEDGE: DefiEdge
+             - DEX_BEEFY: Beefy
+             - DEX_VFAT: Vfat
+             - DEX_MAVERICK: Maverick
+             - DEX_TRADERJOE: Traderjoe
+             - DEX_THRUSTERV2DEGEN: Thruster V2 Degen (0.3% fee)
+             - DEX_LINEHUBV3: LineHub V3
+             - DEX_RINGV2: Ring V2
+             - DEX_KOILEGACY: KOI Legacy
+             - DEX_KOICL: KOI CL
+             - DEX_EQUALIZER: Equalizer
+             - DEX_NILE: Nile
+             - DEX_ARRAKIS: Arrakis
+             - DEX_ICHI: ICHI
+             - DEX_GMX: GMX
+             - DEX_SWAPMODEV2: SwapMode V2
+             - DEX_SOLIDLY: Solidly
+             - DEX_SWAPMODEV3: SwapMode V3
           required: false
           style: form
           explode: true
           schema:
             type: string
-            default: DEX_UNISWAPV3
+            default: DEX_UNSPECIFIED
             enum:
+              - DEX_UNSPECIFIED
               - DEX_UNISWAPV3
-          example: "DEX_UNISWAPV3"
+              - DEX_PANCAKESWAPV3
+              - DEX_UNISWAPV2
+              - DEX_SUSHISWAPV2
+              - DEX_CURVE
+              - DEX_BALANCER
+              - DEX_METAVAULTV3
+              - DEX_RAMSESCL
+              - DEX_QUICKSWAPV3UNI
+              - DEX_SUSHISWAPV3
+              - DEX_THRUSTERV3
+              - DEX_CAMELOTV3
+              - DEX_QUICKSWAPV3ALGEBRA
+              - DEX_THENAFUSION
+              - DEX_PANCAKESWAPV2
+              - DEX_METAVAULTV2
+              - DEX_PANGOLINSTANDARD
+              - DEX_QUICKSWAPV2
+              - DEX_THRUSTERV2
+              - DEX_CAMELOTV2
+              - DEX_LYNEX
+              - DEX_RAMSESLEGACY
+              - DEX_AERODROMECL
+              - DEX_AERODROMEBASICVOLATILE
+              - DEX_AERODROMEBASICSTABLE
+              - DEX_GAMMA
+              - DEX_AMBIENT
+              - DEX_DEFIEDGE
+              - DEX_BEEFY
+              - DEX_VFAT
+              - DEX_MAVERICK
+              - DEX_TRADERJOE
+              - DEX_THRUSTERV2DEGEN
+              - DEX_LINEHUBV3
+              - DEX_RINGV2
+              - DEX_KOILEGACY
+              - DEX_KOICL
+              - DEX_EQUALIZER
+              - DEX_NILE
+              - DEX_ARRAKIS
+              - DEX_ICHI
+              - DEX_GMX
+              - DEX_SWAPMODEV2
+              - DEX_SOLIDLY
+              - DEX_SWAPMODEV3
         - name: dexTo
           in: query
           description: |-
-            Refer to https://docs.kyberswap.com/kyberswap-solutions/kyberswap-zap-as-a-service/zaps-supported-chains-dexes for list of supported dexes for each chain
+            which dex to zap migrate in to
+
+             - DEX_UNSPECIFIED: Unspecified value.
+             - DEX_UNISWAPV3: For UniSwap V3.
+             - DEX_PANCAKESWAPV3: For PancakeSwap V3.
+             - DEX_UNISWAPV2: For Uniswap V2.
+             - DEX_SUSHISWAPV2: For SushiSwap V2.
+             - DEX_CURVE: For Curve
+             - DEX_BALANCER: For Balancer
+             - DEX_METAVAULTV3: MetaVault V3
+             - DEX_RAMSESCL: Ramses CL
+             - DEX_QUICKSWAPV3UNI: Quickswap V3 Uni
+             - DEX_SUSHISWAPV3: SushiSwap V3
+             - DEX_THRUSTERV3: Thruster V3
+             - DEX_CAMELOTV3: Camelot V3
+             - DEX_QUICKSWAPV3ALGEBRA: Quickswap V3 Algebra
+             - DEX_THENAFUSION: Thena Fusion
+             - DEX_PANCAKESWAPV2: PancakeSwap V2
+             - DEX_METAVAULTV2: MetaVault V2
+             - DEX_PANGOLINSTANDARD: Pangolin Standard
+             - DEX_QUICKSWAPV2: Quickswap V2
+             - DEX_THRUSTERV2: Thruster V2 (1% fee)
+             - DEX_CAMELOTV2: Camelot V2
+             - DEX_LYNEX: Lynex
+             - DEX_RAMSESLEGACY: Ramses Legacy
+             - DEX_AERODROMECL: Aerodrome Concentrated
+             - DEX_AERODROMEBASICVOLATILE: Aerodrome Basic Volatile
+             - DEX_AERODROMEBASICSTABLE: Aerodrome Basic Stable
+             - DEX_GAMMA: Gamma
+             - DEX_AMBIENT: Ambient
+             - DEX_DEFIEDGE: DefiEdge
+             - DEX_BEEFY: Beefy
+             - DEX_VFAT: Vfat
+             - DEX_MAVERICK: Maverick
+             - DEX_TRADERJOE: Traderjoe
+             - DEX_THRUSTERV2DEGEN: Thruster V2 Degen (0.3% fee)
+             - DEX_LINEHUBV3: LineHub V3
+             - DEX_RINGV2: Ring V2
+             - DEX_KOILEGACY: KOI Legacy
+             - DEX_KOICL: KOI CL
+             - DEX_EQUALIZER: Equalizer
+             - DEX_NILE: Nile
+             - DEX_ARRAKIS: Arrakis
+             - DEX_ICHI: ICHI
+             - DEX_GMX: GMX
+             - DEX_SWAPMODEV2: SwapMode V2
+             - DEX_SOLIDLY: Solidly
+             - DEX_SWAPMODEV3: SwapMode V3
           required: false
           style: form
           explode: true
           schema:
             type: string
-            default: DEX_UNISWAPV3
+            default: DEX_UNSPECIFIED
             enum:
+              - DEX_UNSPECIFIED
               - DEX_UNISWAPV3
-          example: "DEX_UNISWAPV3"
+              - DEX_PANCAKESWAPV3
+              - DEX_UNISWAPV2
+              - DEX_SUSHISWAPV2
+              - DEX_CURVE
+              - DEX_BALANCER
+              - DEX_METAVAULTV3
+              - DEX_RAMSESCL
+              - DEX_QUICKSWAPV3UNI
+              - DEX_SUSHISWAPV3
+              - DEX_THRUSTERV3
+              - DEX_CAMELOTV3
+              - DEX_QUICKSWAPV3ALGEBRA
+              - DEX_THENAFUSION
+              - DEX_PANCAKESWAPV2
+              - DEX_METAVAULTV2
+              - DEX_PANGOLINSTANDARD
+              - DEX_QUICKSWAPV2
+              - DEX_THRUSTERV2
+              - DEX_CAMELOTV2
+              - DEX_LYNEX
+              - DEX_RAMSESLEGACY
+              - DEX_AERODROMECL
+              - DEX_AERODROMEBASICVOLATILE
+              - DEX_AERODROMEBASICSTABLE
+              - DEX_GAMMA
+              - DEX_AMBIENT
+              - DEX_DEFIEDGE
+              - DEX_BEEFY
+              - DEX_VFAT
+              - DEX_MAVERICK
+              - DEX_TRADERJOE
+              - DEX_THRUSTERV2DEGEN
+              - DEX_LINEHUBV3
+              - DEX_RINGV2
+              - DEX_KOILEGACY
+              - DEX_KOICL
+              - DEX_EQUALIZER
+              - DEX_NILE
+              - DEX_ARRAKIS
+              - DEX_ICHI
+              - DEX_GMX
+              - DEX_SWAPMODEV2
+              - DEX_SOLIDLY
+              - DEX_SWAPMODEV3
         - name: poolFrom.id
           in: query
           description: id of the pool to zap into.
@@ -688,16 +915,107 @@ paths:
         - name: dexFrom
           in: query
           description: |-
-            Refer to https://docs.kyberswap.com/kyberswap-solutions/kyberswap-zap-as-a-service/zaps-supported-chains-dexes for list of supported dexes for each chain
+            dex to zap out
+
+             - DEX_UNSPECIFIED: Unspecified value.
+             - DEX_UNISWAPV3: For UniSwap V3.
+             - DEX_PANCAKESWAPV3: For PancakeSwap V3.
+             - DEX_UNISWAPV2: For Uniswap V2.
+             - DEX_SUSHISWAPV2: For SushiSwap V2.
+             - DEX_CURVE: For Curve
+             - DEX_BALANCER: For Balancer
+             - DEX_METAVAULTV3: MetaVault V3
+             - DEX_RAMSESCL: Ramses CL
+             - DEX_QUICKSWAPV3UNI: Quickswap V3 Uni
+             - DEX_SUSHISWAPV3: SushiSwap V3
+             - DEX_THRUSTERV3: Thruster V3
+             - DEX_CAMELOTV3: Camelot V3
+             - DEX_QUICKSWAPV3ALGEBRA: Quickswap V3 Algebra
+             - DEX_THENAFUSION: Thena Fusion
+             - DEX_PANCAKESWAPV2: PancakeSwap V2
+             - DEX_METAVAULTV2: MetaVault V2
+             - DEX_PANGOLINSTANDARD: Pangolin Standard
+             - DEX_QUICKSWAPV2: Quickswap V2
+             - DEX_THRUSTERV2: Thruster V2 (1% fee)
+             - DEX_CAMELOTV2: Camelot V2
+             - DEX_LYNEX: Lynex
+             - DEX_RAMSESLEGACY: Ramses Legacy
+             - DEX_AERODROMECL: Aerodrome Concentrated
+             - DEX_AERODROMEBASICVOLATILE: Aerodrome Basic Volatile
+             - DEX_AERODROMEBASICSTABLE: Aerodrome Basic Stable
+             - DEX_GAMMA: Gamma
+             - DEX_AMBIENT: Ambient
+             - DEX_DEFIEDGE: DefiEdge
+             - DEX_BEEFY: Beefy
+             - DEX_VFAT: Vfat
+             - DEX_MAVERICK: Maverick
+             - DEX_TRADERJOE: Traderjoe
+             - DEX_THRUSTERV2DEGEN: Thruster V2 Degen (0.3% fee)
+             - DEX_LINEHUBV3: LineHub V3
+             - DEX_RINGV2: Ring V2
+             - DEX_KOILEGACY: KOI Legacy
+             - DEX_KOICL: KOI CL
+             - DEX_EQUALIZER: Equalizer
+             - DEX_NILE: Nile
+             - DEX_ARRAKIS: Arrakis
+             - DEX_ICHI: ICHI
+             - DEX_GMX: GMX
+             - DEX_SWAPMODEV2: SwapMode V2
+             - DEX_SOLIDLY: Solidly
+             - DEX_SWAPMODEV3: SwapMode V3
           required: false
           style: form
           explode: true
           schema:
             type: string
-            default: DEX_UNISWAPV3
+            default: DEX_UNSPECIFIED
             enum:
+              - DEX_UNSPECIFIED
               - DEX_UNISWAPV3
-          example: "DEX_UNISWAPV3"
+              - DEX_PANCAKESWAPV3
+              - DEX_UNISWAPV2
+              - DEX_SUSHISWAPV2
+              - DEX_CURVE
+              - DEX_BALANCER
+              - DEX_METAVAULTV3
+              - DEX_RAMSESCL
+              - DEX_QUICKSWAPV3UNI
+              - DEX_SUSHISWAPV3
+              - DEX_THRUSTERV3
+              - DEX_CAMELOTV3
+              - DEX_QUICKSWAPV3ALGEBRA
+              - DEX_THENAFUSION
+              - DEX_PANCAKESWAPV2
+              - DEX_METAVAULTV2
+              - DEX_PANGOLINSTANDARD
+              - DEX_QUICKSWAPV2
+              - DEX_THRUSTERV2
+              - DEX_CAMELOTV2
+              - DEX_LYNEX
+              - DEX_RAMSESLEGACY
+              - DEX_AERODROMECL
+              - DEX_AERODROMEBASICVOLATILE
+              - DEX_AERODROMEBASICSTABLE
+              - DEX_GAMMA
+              - DEX_AMBIENT
+              - DEX_DEFIEDGE
+              - DEX_BEEFY
+              - DEX_VFAT
+              - DEX_MAVERICK
+              - DEX_TRADERJOE
+              - DEX_THRUSTERV2DEGEN
+              - DEX_LINEHUBV3
+              - DEX_RINGV2
+              - DEX_KOILEGACY
+              - DEX_KOICL
+              - DEX_EQUALIZER
+              - DEX_NILE
+              - DEX_ARRAKIS
+              - DEX_ICHI
+              - DEX_GMX
+              - DEX_SWAPMODEV2
+              - DEX_SOLIDLY
+              - DEX_SWAPMODEV3
         - name: poolFrom.id
           in: query
           description: id of the pool to zap into.
