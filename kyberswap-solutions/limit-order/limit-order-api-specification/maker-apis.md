@@ -6,7 +6,7 @@ description: KyberSwap Limit Order Maker APIs
 
 ## Download OpenAPI specification:
 
-{% file src="../../../.gitbook/assets/LimitOrderAPIs_v1.2.1.yaml" %}
+{% file src="../../../.gitbook/assets/LimitOrderAPIs.yaml" %}
 
 ## Maker APIs
 
@@ -36,25 +36,23 @@ The KyberSwap Docs will continue to maintain information regarding `Legacy` and 
 Please refer to [**Create Limit Order** ](../developer-guides/create-limit-order.md)for the relevant sequence diagram as well as a TypeScript example.
 {% endhint %}
 
-{% swagger src="../../../.gitbook/assets/LimitOrderAPIs_v1.2.yaml" path="/write/api/v1/orders/sign-message" method="post" %}
-[LimitOrderAPIs_v1.2.yaml](../../../.gitbook/assets/LimitOrderAPIs_v1.2.yaml)
-{% endswagger %}
+{% openapi-operation spec="limit-order" path="/write/api/v1/orders/sign-message" method="post" %}
+[Broken link](broken-reference)
+{% endopenapi-operation %}
 
-{% swagger src="../../../.gitbook/assets/LimitOrderAPIs_v1.2.yaml" path="/write/api/v1/orders" method="post" %}
-[LimitOrderAPIs_v1.2.yaml](../../../.gitbook/assets/LimitOrderAPIs_v1.2.yaml)
-{% endswagger %}
+{% openapi-operation spec="limit-order" path="/write/api/v1/orders" method="post" %}
+[Broken link](broken-reference)
+{% endopenapi-operation %}
 
 #### Query Maker Order(s)
 
-
-
-{% swagger src="../../../.gitbook/assets/LimitOrderAPIs_v1.2.1.yaml" path="/read-ks/api/v1/orders" method="get" %}
+{% openapi src="../../../.gitbook/assets/LimitOrderAPIs_v1.2.1.yaml" path="/read-ks/api/v1/orders" method="get" %}
 [LimitOrderAPIs_v1.2.1.yaml](../../../.gitbook/assets/LimitOrderAPIs_v1.2.1.yaml)
-{% endswagger %}
+{% endopenapi %}
 
-{% swagger src="../../../.gitbook/assets/LimitOrderAPIs_v1.2.yaml" path="/read-ks/api/v1/orders/active-making-amount" method="get" %}
+{% openapi src="../../../.gitbook/assets/LimitOrderAPIs_v1.2.yaml" path="/read-ks/api/v1/orders/active-making-amount" method="get" %}
 [LimitOrderAPIs_v1.2.yaml](../../../.gitbook/assets/LimitOrderAPIs_v1.2.yaml)
-{% endswagger %}
+{% endopenapi %}
 
 #### Gasless Cancel Order(s)
 
@@ -64,13 +62,13 @@ Please refer to [**Create Limit Order** ](../developer-guides/create-limit-order
 Please refer to [**Gasless Cancel**](../developer-guides/gasless-cancel.md) for the relevant sequence diagram as well as a TypeScript example.
 {% endhint %}
 
-{% swagger src="../../../.gitbook/assets/LimitOrderAPIs_v1.2.yaml" path="/write/api/v1/orders/cancel-sign" method="post" %}
+{% openapi src="../../../.gitbook/assets/LimitOrderAPIs_v1.2.yaml" path="/write/api/v1/orders/cancel-sign" method="post" %}
 [LimitOrderAPIs_v1.2.yaml](../../../.gitbook/assets/LimitOrderAPIs_v1.2.yaml)
-{% endswagger %}
+{% endopenapi %}
 
-{% swagger src="../../../.gitbook/assets/LimitOrderAPIs_v1.2.yaml" path="/write/api/v1/orders/cancel" method="post" %}
+{% openapi src="../../../.gitbook/assets/LimitOrderAPIs_v1.2.yaml" path="/write/api/v1/orders/cancel" method="post" %}
 [LimitOrderAPIs_v1.2.yaml](../../../.gitbook/assets/LimitOrderAPIs_v1.2.yaml)
-{% endswagger %}
+{% endopenapi %}
 
 #### Hard Cancel Order(s)
 
@@ -80,10 +78,10 @@ Please refer to [**Gasless Cancel**](../developer-guides/gasless-cancel.md) for 
 Please refer to [**Hard Cancel**](../developer-guides/hard-cancel.md) for the relevant sequence diagram as well as a TypeScript example.
 {% endhint %}
 
-{% swagger src="../../../.gitbook/assets/LimitOrderAPIs_v1.2.yaml" path="/read-ks/api/v1/encode/cancel-batch-orders" method="post" %}
+{% openapi src="../../../.gitbook/assets/LimitOrderAPIs_v1.2.yaml" path="/read-ks/api/v1/encode/cancel-batch-orders" method="post" %}
 [LimitOrderAPIs_v1.2.yaml](../../../.gitbook/assets/LimitOrderAPIs_v1.2.yaml)
-{% endswagger %}
+{% endopenapi %}
 
-{% swagger src="../../../.gitbook/assets/LimitOrderAPIs_v1.2.yaml" path="/read-ks/api/v1/encode/increase-nonce" method="post" %}
+{% openapi src="../../../.gitbook/assets/LimitOrderAPIs_v1.2.yaml" path="/read-ks/api/v1/encode/increase-nonce" method="post" %}
 [LimitOrderAPIs_v1.2.yaml](../../../.gitbook/assets/LimitOrderAPIs_v1.2.yaml)
-{% endswagger %}
+{% endopenapi %}
