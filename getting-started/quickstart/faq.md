@@ -35,7 +35,7 @@ For the full KyberSwap Solution suite, please refer to [Our Solutions](../../#ou
 
 <summary>Which countries are KyberSwap available in?</summary>
 
-KyberSwap.com is available for use in most countries, except in Excluded Jurisdictions, which include but are not limited to Iran, North Korea, Myanmar, Cuba, Syria, Venezuela, Belarus, and the Russian Federation.\
+KyberSwap.com is available for use in most countries, except in Excluded Jurisdictions, which include but are not limited to Iran, North Korea, Myanmar, Cuba, Syria, Venezuela, Belarus, the Russian Federation and Singapore.\
 Users are responsible to ensure that their use of KyberSwap complies with all applicable laws and regulations in their respective jurisdictions.
 
 </details>
