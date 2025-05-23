@@ -8,14 +8,14 @@ description: Avoid The Pitfalls Of Low Liquidity
 
 Price impact refers to the change in the market price that is brought about due to the execution of a transaction. Price impact is determined by the trade size relative to the available liquidity. In general, as each token purchased results in less available supply, it follows that the price of each additional token unit increases accordingly. Put simply, the more tokens demanded by a trade, the higher the average price per token as tokens will have to be sourced further and further from the market price (i.e. the market price only indicates the price of the next available token).
 
-<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption><p>KyberSwap price impact</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption><p>KyberSwap price impact</p></figcaption></figure>
 
 As an example, the screenshot above taken from the KyberSwap [swap page](https://kyberswap.com/swap) indicates that a 10M USDC to USDT trade would result in a 14.65% price impact. This means that such a trade would result in the trader paying, on average, 14.65% more USDC per USDT token as compared to the current market price.
 
-As price impact is a function of supply and demand, it is a natural outcome of any market. As such, it is important to be aware of the price impact of your trades and take the necessary steps to minimize it.&#x20;
+As price impact is a function of supply and demand, it is a natural outcome of any market. As such, it is important to be aware of the price impact of your trades and take the necessary steps to minimize it.
 
 {% hint style="info" %}
-#### Slippage vs price impact
+**Slippage vs price impact**
 
 Although closely related, slippage and price impact are separate concepts. Slippage occurs due to market factors external to the trader while price impact occurs due to the size of a trade relative to the available liquidity.
 
@@ -36,11 +36,11 @@ The AMM price curve design ensures that the price per token scales with the avai
 
 Price impact does not apply to order book DEXs in the conventional flow as active limit orders are only executed when a matching order is found. As such, setting a limit order that is within the bid-ask spread sidesteps any price impact risks as limit orders will be filled when the current market price matches the limit order ask. Put in another way, the "impact" that your limit order has on the market is that you are creating a price floor or ceiling for the asset.
 
-Where price impact does come into play is when a trader sets a limit order that is significantly above or below the market price. This might happen accidentally due to mistaken input parameters or as part of more complex trading strategies to secure large amounts of tokens at predefined prices (i.e. according to active limit orders). In such cases, price impact is limited to the difference between the limit order price and the market price.&#x20;
+Where price impact does come into play is when a trader sets a limit order that is significantly above or below the market price. This might happen accidentally due to mistaken input parameters or as part of more complex trading strategies to secure large amounts of tokens at predefined prices (i.e. according to active limit orders). In such cases, price impact is limited to the difference between the limit order price and the market price.
 
 ## Protecting our users
 
-KyberSwap's highest priority is the safety of our users. As such, we have implemented multiple safeguards to ensure that traders using our platform do not receive any unwelcomed surprises.&#x20;
+KyberSwap's highest priority is the safety of our users. As such, we have implemented multiple safeguards to ensure that traders using our platform do not receive any unwelcomed surprises.
 
 By splitting and rerouting trades across multiple liquidity sources, the [KyberSwap Aggregator](../../../kyberswap-solutions/kyberswap-aggregator/) minimizes the potential price impact incurred from any single source. Moreover, the [KyberSwap Aggregator](../../../kyberswap-solutions/kyberswap-aggregator/) enables traders to set a `Max Slippage` to guarantee that trades are only executed if the final price is within the expected price range.
 

@@ -5,14 +5,14 @@ description: AI-Powered Trading Insights For All
 # KyberScore
 
 {% hint style="warning" %}
-#### Disclaimer: Not financial advice
+**Disclaimer: Not financial advice**
 
 KyberAI was created with the intention of empowering our users with the data insights required to make informed trading decisions. Through democratizing data, KyberAI equips our users with tools that were largely limited to institutions and high net worth individuals. Users must exercise due diligence in their trading decisions with the best trading strategies incorporating the insights enabled by KyberAI.
 {% endhint %}
 
 ## Overview
 
-<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption><p>KyberScore</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4).png" alt=""><figcaption><p>KyberScore</p></figcaption></figure>
 
 In keeping to the permissionless and transparent ethos of DeFi, KyberScore was a key component of our solution to democratize data insights for all. A single number that could be easily understood and utilized by traders of all levels, whether it was an advanced trader looking to filter potential opportunities for further analysis or a new trader trying to discover undervalued tokens. While condensing all the complexities of a token and its market dynamics into a single number seems overly bold, the research team here at KyberSwap has managed to leverage the latest advancements in machine learning to create a provably accurate general prediction model. In other words, AI-powered trading insights for all!
 
@@ -23,7 +23,7 @@ At its core, KyberScore reflects the probability that a token will enter into bu
 Critically, by contrasting KyberScores across tokens, users are quickly able to deduce which token will likely outperform or underperform the mean. Moreover, KyberScore represents the token performance for a token across all the supported chains hence users can even compare tokens on different networks easily.
 
 {% hint style="info" %}
-#### Calculating KyberScore for tokens deployed on multiple chains
+**Calculating KyberScore for tokens deployed on multiple chains**
 
 KyberScore is meant to represent a token's overall performance and was hence designed to be chain agnostic. With DeFi expanding significantly across multiple chains ([KyberSwap included](../../../getting-started/supported-exchanges-and-networks.md)), token teams have also taken this opportunity to launch their tokens across a multitude of chains. Consequently, to account for any inter-chain variances for the same token, KyberScore aggregates on-chain data from all the supported chains to determine the net movement of the factor being tracked.
 
@@ -42,8 +42,8 @@ KyberScore makes use of both [on-chain and off-chain data](../../../getting-star
 {% tab title="On-chain" %}
 Through extensive testing with various types of on-chain data, the KyberSwap research team has narrowed down the on-chain data ingested to the following data types:
 
-* [**Netflow to CEX**](on-chain-indicators/netflow-to-cex.md): The net value of tokens (in USD) that are being transferred in/out of CEX wallet addresses.&#x20;
-* [**Netflow to Whale Wallets**](on-chain-indicators/netflow-to-whale-wallets.md): The net value of tokens (in USD) that are being transferred in/out of whale wallet addresses.&#x20;
+* [**Netflow to CEX**](on-chain-indicators/netflow-to-cex.md): The net value of tokens (in USD) that are being transferred in/out of CEX wallet addresses.
+* [**Netflow to Whale Wallets**](on-chain-indicators/netflow-to-whale-wallets.md): The net value of tokens (in USD) that are being transferred in/out of whale wallet addresses.
 * [**Number of Transfers**](on-chain-indicators/number-of-transfers.md): The total number of on-chain transfers between wallets for the token.
 * [**Number of Holders**](on-chain-indicators/number-of-holders.md): The total number of wallet addresses currently holding the token on-chain.
 
@@ -55,7 +55,7 @@ Based on the off-chain OHLCV data, KyberScore extracts further insights through 
 
 * **Simple Moving Average (SMA)**: The is the average price of an asset within a certain time period. SMA is calculated by aggregating the price of the asset for each period and dividing the sum by the number of periods for the timeframe being measured. In doing so, fluctuations within the timeframe measured are smoothened out providing clearer insights into the the direction which the asset is trending.
 * **Exponential Moving Average (EMA)**: The EMA builds on top of the SMA by prioritizing recent price data which is assumed to be more relevant. EMA assigns a greater weight to more recent price data which skews the average in favor of the latest market data. Consequently, EMA is able to respond faster to price changes and therefore uncover upcoming trends earlier.
-* **Moving Average Convergence Divergence (MACD)**: MACD is a momentum indicator that measures the relationship between a shorter moving average and longer moving average. It showcases the strength of the short term trend against the longer term trend as an indicator of future price momentum. To calculate the MACD, the longer term EMA (usually 26 periods) is divided by the shorter term EMA (usually 12 periods). The MACD line centers on a zero line which it oscillates around whereby a positive value indicates upward momentum and a negative value indicates downward momentum. This MACD is then compared against a signal line which is the EMA of the MACD values (usually 9 periods). If the MACD line crosses above the signal, it is a bullish sign and vice versa.&#x20;
+* **Moving Average Convergence Divergence (MACD)**: MACD is a momentum indicator that measures the relationship between a shorter moving average and longer moving average. It showcases the strength of the short term trend against the longer term trend as an indicator of future price momentum. To calculate the MACD, the longer term EMA (usually 26 periods) is divided by the shorter term EMA (usually 12 periods). The MACD line centers on a zero line which it oscillates around whereby a positive value indicates upward momentum and a negative value indicates downward momentum. This MACD is then compared against a signal line which is the EMA of the MACD values (usually 9 periods). If the MACD line crosses above the signal, it is a bullish sign and vice versa.
 * **Relative Strength Index (RSI)**: RSI is a momentum indicator which measures both the speed and size of price changes. To get the RSI, the average gains is divided by the average loses over a specific time period. This ratio allows traders to compare the relative strength of the current price movement against past movements to identify when a token is overbought or oversold. If the token price diverges from the RSI, it could mean that a reversal might be incoming.
 
 In addition to technical analysis methods, the model also measures the historic returns and relative volatility to generate the KyberScore.
@@ -71,7 +71,7 @@ The bulk of KyberScore's complexity lies in condensing all the aforementioned fa
 In keeping up with rapid developments in the crypto space, KyberScores are refreshed every hour based on the last 37 days of token data. This data period was selected as it provided the most optimal results when predicting token performance over the next 24 hours. Consequently, KyberScores can only be computed for tokens with at least 37 days worth of on-chain data. This not only ensures the applicability (i.e. detecting abnormalities, etc.) of the KyberScore model but also serves as a qualifying criteria for more trustworthy tokens. It is important to note that the KyberScore model has been trained based on a year's worth of historical data and will continue to be iterated upon as more factors and data sets become available. With KyberScore already producing such promising results (see below), the KyberSwap team remains optimistic about the future potential of the model.
 
 {% hint style="info" %}
-#### Stablecoins
+**Stablecoins**
 
 Note that due to the nature of stablecoins being a fixed unit-of-account, KyberScores are not generated for stablecoins.
 {% endhint %}
@@ -159,15 +159,15 @@ ERC20 [`Transfer`](https://docs.openzeppelin.com/contracts/4.x/api/token/erc20#I
 {% endtab %}
 
 {% tab title="Off-chain" %}
-#### OHLCV data sourced from:
+**OHLCV data sourced from:**
 
-#### CoinMarketCap
+**CoinMarketCap**
 
 **API**: [https://pro-api.coinmarketcap.com](https://pro-api.coinmarketcap.com)
 
 * /v2/cryptocurrency/ohlcv/historical
 
-#### CoinGecko
+**CoinGecko**
 
 **API**: [https://pro-api.coingecko.com/api](https://pro-api.coingecko.com/api)
 

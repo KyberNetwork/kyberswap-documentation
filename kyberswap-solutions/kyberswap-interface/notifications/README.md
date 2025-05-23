@@ -25,7 +25,7 @@ KyberSwap currently supports notifications via:
 
 <figure><img src="../../../.gitbook/assets/image (43).png" alt=""><figcaption><p>KyberSwap Interface notifications</p></figcaption></figure>
 
-* [Email Notification](broken-reference): Users can opt to receive preset notifications straight to their inbox by linking their crypto account with their preferred email. This can be configured via the [Notification Center overview](notification-center.md#notification-center-overview).
+* [Email Notification](broken-reference/): Users can opt to receive preset notifications straight to their inbox by linking their crypto account with their preferred email. This can be configured via the [Notification Center overview](notification-center.md#notification-center-overview).
 
 ## Types of notifications
 
@@ -41,15 +41,15 @@ Users can also toggle their active alerts via the Notification Center.
 
 <figure><img src="../../../.gitbook/assets/image (68).png" alt=""><figcaption><p>Toggle active alerts</p></figcaption></figure>
 
-With price alerts, users are able to monitor price actions and adjust their trade strategy accordingly be it [updating existing limit orders](../../limit-order/user-guides/update-limit-orders.md) or [executing an immediate swap](broken-reference).
+With price alerts, users are able to monitor price actions and adjust their trade strategy accordingly be it [updating existing limit orders](../../limit-order/user-guides/update-limit-orders.md) or [executing an immediate swap](broken-reference/).
 
 <figure><img src="../../../.gitbook/assets/image (77).png" alt=""><figcaption><p>Price alerts history</p></figcaption></figure>
 
 ### Elastic Active Range Alerts
 
-<figure><img src="../../../.gitbook/assets/image (4).png" alt=""><figcaption><p>Liquidity position notifications</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4) (1).png" alt=""><figcaption><p>Liquidity position notifications</p></figcaption></figure>
 
-[Create an Elastic pool position](broken-reference) and receive notifications whenever your position goes in or out of range. Maximize your yields by timing your liquidity [removals](broken-reference) and [additions](broken-reference) according to the markets.
+[Create an Elastic pool position](broken-reference/) and receive notifications whenever your position goes in or out of range. Maximize your yields by timing your liquidity [removals](broken-reference/) and [additions](broken-reference/) according to the markets.
 
 ### Limit Order Alerts
 
@@ -61,4 +61,4 @@ With price alerts, users are able to monitor price actions and adjust their trad
 
 <figure><img src="../../../.gitbook/assets/Notifications_KyberAIWatchlist.png" alt=""><figcaption><p>KyberAI watchlist</p></figcaption></figure>
 
-[Add your favourite tokens to your KyberAI watchlist](broken-reference) and get notified of their latest [KyberScores](../../../reference/legacy/kyberai/kyberscore.md) and prices.
+[Add your favourite tokens to your KyberAI watchlist](broken-reference/) and get notified of their latest [KyberScores](../../../reference/legacy/kyberai/kyberscore.md) and prices.

@@ -32,6 +32,7 @@
     * [Switching Networks](kyberswap-solutions/kyberswap-interface/user-guides/selecting-preferred-network.md)
     * [Instantly Swap At Superior Rates](kyberswap-solutions/kyberswap-interface/user-guides/instantly-swap-at-superior-rates.md)
     * [Swap At Your Preferred Rates](kyberswap-solutions/kyberswap-interface/user-guides/trade-at-your-preferred-rates.md)
+    * [Cross-chain Swap](kyberswap-solutions/kyberswap-interface/user-guides/cross-chain-swap.md)
     * [Add Your Favourite Tokens](kyberswap-solutions/kyberswap-interface/user-guides/add-your-favourite-tokens.md)
     * [Get Crypto With Fiat](kyberswap-solutions/kyberswap-interface/user-guides/get-crypto-with-fiat.md)
     * [Bridge Your Assets Across Multiple Chains](kyberswap-solutions/kyberswap-interface/user-guides/bridge-your-assets-across-multiple-chains.md)

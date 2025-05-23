@@ -1,5 +1,6 @@
 ---
 description: Access Any Token On Any Chain All Via A Single Swap
+hidden: true
 ---
 
 # Swap Between Different Tokens Across Chains
@@ -16,14 +17,14 @@ More information can be found on our third-party integration [page](../../../ref
 
 <summary>Trader Flow</summary>
 
-1. [Connect Your Wallet ](connect-your-wallet.md)
-2. [Switching Networks ](selecting-preferred-network.md)
+1. [Connect Your Wallet](connect-your-wallet.md)
+2. [Switching Networks](selecting-preferred-network.md)
 3. Get Tokens
    * [Get Crypto With Fiat](get-crypto-with-fiat.md)
    * [Bridge Your Tokens](bridge-your-assets-across-multiple-chains.md)
 4. Swap Tokens
-   * [Instantly Swap At Superior Rates](instantly-swap-at-superior-rates.md)&#x20;
-   * [Swap At Your Preferred Rates ](trade-at-your-preferred-rates.md)
+   * [Instantly Swap At Superior Rates](instantly-swap-at-superior-rates.md)
+   * [Swap At Your Preferred Rates](trade-at-your-preferred-rates.md)
    * **Swap Between Tokens On Different Chains <-**
 
 </details>
@@ -61,11 +62,11 @@ Click [**here**](https://docs.axelar.dev/learn/axlusdc) for more information on 
 
 #### What is Squid?
 
-Squid is the cross-chain swap and liquidity routing protocol on [Axelar Network](https://axelar.network/).&#x20;
+Squid is the cross-chain swap and liquidity routing protocol on [Axelar Network](https://axelar.network/).
 
 Squid utilises existing DEXs to swap and send any native token between chains. This can be done via their SDK, Front End or Contracts directly.
 
-Swaps are composable with Axelar's generalised message passing, so Squid can enable _one-click_ transactions between any application and any user, using any asset.&#x20;
+Swaps are composable with Axelar's generalised message passing, so Squid can enable _one-click_ transactions between any application and any user, using any asset.
 
 Buy NFTs from any marketplace, use multi-chain DeFi, play a game on another chain, all without signing multiple transactions or downloading multiple wallets.
 
@@ -108,7 +109,7 @@ As this is a cross-chain swap (i.e. swapping tokens on an origin chain to a diff
 
 * **Origin chain**: The input chain where the input token you are swapping out from is hosted. The origin chain will have to match the connected chain in step 1.
 * **Input token**: The token to swap out from the origin chain.
-* **Destination chain**: The output chain to receive the output tokens from the swap.&#x20;
+* **Destination chain**: The output chain to receive the output tokens from the swap.
 * **Output token**: The token to receive on the destination chain. Note that tokens will be sent to the same address on the destination chain (i.e. the address used to send input tokens will be equivalent to the output token address but on a different chain).
 
 <figure><img src="../../../.gitbook/assets/UserGuide_CrossChain_SelectChainAndToken.png" alt=""><figcaption><p>Select chain and token</p></figcaption></figure>
@@ -118,7 +119,7 @@ As this is a cross-chain swap (i.e. swapping tokens on an origin chain to a diff
 Specify the amount you would like to swap by either typing in an amount manually or by clicking the account balance in the input form to swap all tokens in your wallet. An estimate of the amount returned should appear in the quote field.
 
 {% hint style="info" %}
-#### Protecting against slippage
+**Protecting against slippage**
 
 KyberSwap Interface allows users to customize trade parameters which enables greater trade security or even more advanced trade strategies. Refer to [Customizing trade parameters](swap-between-different-tokens-across-chains.md#customizing-trade-parameters) section for more details.
 {% endhint %}
@@ -126,11 +127,11 @@ KyberSwap Interface allows users to customize trade parameters which enables gre
 <figure><img src="../../../.gitbook/assets/UserGuide_CrossChain_SwapAmount.png" alt=""><figcaption><p>Specify cross-chain swap amount</p></figcaption></figure>
 
 {% hint style="warning" %}
-#### Squid Slippage Handling
+**Squid Slippage Handling**
 
 As market conditions can change during processing of the cross-chain swap, Axelar implements a safeguard against excessive [slippage](../../../getting-started/foundational-topics/decentralized-finance/slippage.md) by transferring axlUSDC to the trader's wallet if the slippage for the last token swap exceeds the configured slippage. Please refer to [Squid Docs](https://docs.squidrouter.com/architecture/fallback-behaviour-on-failed-transactions) for more information about this fallback behaviour. In such cases, you can view your axlUSDC directly in the KyberSwap UI.
 
-![](../../../.gitbook/assets/CrossChain\_SquidFallback.png)
+<img src="../../../.gitbook/assets/CrossChain_SquidFallback.png" alt="" data-size="original">
 
 You can refer to [Axelars Docs](https://docs.axelar.dev/dev/reference/mainnet-contract-addresses#assets) for the full list of axlUSDC contract addresses across the supported chains.
 {% endhint %}
@@ -144,7 +145,7 @@ If this is the first time you are swapping this token on this network using this
 In the pursuit of greater gas savings for our users, KyberSwap has implemented a permit option for tokens which follow the [ERC-2612](https://eips.ethereum.org/EIPS/eip-2612) standard. In contrast to the basic [ERC20](../../../getting-started/foundational-topics/decentralized-finance/tokens.md#token-standards) token implementation, ERC-2612 enables gasless approvals of smart contract allowances with just a signed message. In other words, approving a token via "Permit" does not require any gas and achieves the same effect as the ERC20 "Approve". If you see a "Permit" button, it means your token is eligible for gasless approvals!
 
 {% hint style="info" %}
-#### Permitable tokens
+**Permitable tokens**
 
 Please refer to [Permitable Tokens](../../../reference/permitable-tokens.md) for the full list of tokens which have implemented the ERC-2612 standard.
 {% endhint %}
@@ -162,9 +163,9 @@ Upon signing the permit, you will then be able to proceed with the swap.
 <figure><img src="../../../.gitbook/assets/Permit signature exact value.png" alt=""><figcaption><p>Note the value in the signature request matches the swap amount</p></figcaption></figure>
 
 {% hint style="info" %}
-#### A note on permits
+**A note on permits**
 
-By permitting the swap, you are authorizing KyberSwap to swap the exact amount of tokens specified in the trade for the next 24 hours. This 24 hour deadline is implemented as a safety mechanism to ensure that the permit expires in case a corresponding swap order was not submitted or in the highly improbable event that an order was not filled. A new permit will be required upon the expiration of the current permit.&#x20;
+By permitting the swap, you are authorizing KyberSwap to swap the exact amount of tokens specified in the trade for the next 24 hours. This 24 hour deadline is implemented as a safety mechanism to ensure that the permit expires in case a corresponding swap order was not submitted or in the highly improbable event that an order was not filled. A new permit will be required upon the expiration of the current permit.
 
 Note that the granting of a permit and the confirmation of a swap ([step 5](swap-between-different-tokens-across-chains.md#step-5-confirm-the-swap)) are separate transactions whereby the latter is unable to proceed without the completion of the former. More importantly, as opposed to permits, swaps will always require gas to be paid as token transfers have to be confirmed by the network. As such, in the case whereby a swap remains in a pending state, it is possible to cancel the swap transaction in your wallet while the permit remains valid until expiry. If a future swap requires more tokens than an existing permit, the user will be requested to sign a new permit.
 {% endhint %}
@@ -177,7 +178,7 @@ Click on the "Approve \[Token]" button to allow KyberSwap to swap the tokens on 
 
 To ensure the safety of your tokens, KyberSwap will also prompt you to select an allowance limit for the token being approved. By setting an allowance limit, this ensures that KyberSwap is only able to swap the specified number of tokens from your wallet. As long as the accumulated tokens for current or future swaps exceeds this limit, another approve process will be required. You can either set a custom allowance limit or opt for an infinite limit.
 
-Hovering your mouse above the options will also bring up the helpers for your convenience.&#x20;
+Hovering your mouse above the options will also bring up the helpers for your convenience.
 
 <figure><img src="../../../.gitbook/assets/image (106).png" alt=""><figcaption><p>Infinite allowance helper</p></figcaption></figure>
 
@@ -193,14 +194,14 @@ Upon confirming an allowance limit, your wallet will then prompt you to sign the
 
 ### **Step 5**: Confirm the swap
 
-Click the “Swap” button to bring up the confirmation screen.&#x20;
+Click the “Swap” button to bring up the confirmation screen.
 
 {% tabs %}
 {% tab title="Standard flow" %}
 In the case of the standard flow where the cross-chain swap:
 
 * is not expected to result in significant [price impact](../../../getting-started/foundational-topics/decentralized-finance/price-impact.md) or;
-* has not been [configured](broken-reference) with an aggressive max [slippage](../../../getting-started/foundational-topics/decentralized-finance/slippage.md);
+* has not been [configured](broken-reference/) with an aggressive max [slippage](../../../getting-started/foundational-topics/decentralized-finance/slippage.md);
 
 the confirmation pop-up will be as follows:
 
@@ -224,14 +225,14 @@ Depending on the available liquidity for the tokens being swapped, the expected 
 
 <figure><img src="../../../.gitbook/assets/UserGuide_CrossChain_PriceImpactMoreThan10.png" alt=""><figcaption><p>Extremely high price impact</p></figcaption></figure>
 
-Note that to proceed with swaps with extremely high price impact, users must enable [Degen Mode](broken-reference).
+Note that to proceed with swaps with extremely high price impact, users must enable [Degen Mode](broken-reference/).
 {% endtab %}
 {% endtabs %}
 
 {% hint style="info" %}
-#### Third-party integration: Squid
+**Third-party integration: Squid**
 
-Note that in order to proceed with the cross-chain swap, users must acknowledge that the swap will be handled by [Squid x Axelar](swap-between-different-tokens-across-chains.md#axelar-x-squid). As such, users are encouraged to visit [Squid's Docs](https://docs.squidrouter.com/architecture/liquidity-model) to understand how their swaps are being routed and secured across the supported chains.&#x20;
+Note that in order to proceed with the cross-chain swap, users must acknowledge that the swap will be handled by [Squid x Axelar](swap-between-different-tokens-across-chains.md#axelar-x-squid). As such, users are encouraged to visit [Squid's Docs](https://docs.squidrouter.com/architecture/liquidity-model) to understand how their swaps are being routed and secured across the supported chains.
 {% endhint %}
 
 In all the above cases, the confirmation screen will always display a few key pieces of information for review:
@@ -243,7 +244,7 @@ In all the above cases, the confirmation screen will always display a few key pi
 * **Price Impact**: The estimated change in the market price due to the size of your transaction.
 
 {% hint style="danger" %}
-#### Price impact
+**Price impact**
 
 Do take note of the resulting price impact of your trade as this will determine the final average price of your trade. Higher trade volumes relative to available liquidity will result in each additional token unit being acquired at a higher price. As such, a higher price impact would result in subpar swap rates.
 
@@ -254,20 +255,20 @@ Please refer to the [Price Impact](../../../getting-started/foundational-topics/
 * **Service Fee**: Cross-chain swap fees charged by Squid for servicing the swap across-chains. Note that this differs from the gas fees which is required for the blockchain to process your transactions as well as the message relay fees which ensures the security of the cross-chain messages by incentivizing the relayers.
 
 {% hint style="info" %}
-#### Squid x Axelar fees
+**Squid x Axelar fees**
 
-As an integrator, KyberSwap does not charge any additional fees for cross-chain swaps and have provided the functionality as a convenience feature for our users to quickly swap between tokens on different chains.&#x20;
+As an integrator, KyberSwap does not charge any additional fees for cross-chain swaps and have provided the functionality as a convenience feature for our users to quickly swap between tokens on different chains.
 
-For more information on the fees that are incurred during a cross-chain swap, please refer to the Squid documentation on [Fees](https://docs.squidrouter.com/architecture/transaction-times-and-fees#fees) and [Gas Fees](https://docs.squidrouter.com/widget/information-for-integrators#gas-fees).&#x20;
+For more information on the fees that are incurred during a cross-chain swap, please refer to the Squid documentation on [Fees](https://docs.squidrouter.com/architecture/transaction-times-and-fees#fees) and [Gas Fees](https://docs.squidrouter.com/widget/information-for-integrators#gas-fees).
 {% endhint %}
 
 Upon confirming the swap in the UI, you will be prompted to sign the transaction in your wallet. In this example, we are using the MetaMask wallet to confirm the swap transaction.
 
 <figure><img src="../../../.gitbook/assets/UserGuide_CrossChain_ConfirmSwapMetaMask.png" alt=""><figcaption><p>Confirm transaction in wallet</p></figcaption></figure>
 
-Once the transaction has been confirmed in the wallet, your swap transaction will then be submitted to the network to be executed. You should see the Transaction Submitted screen appear. You can click on "View Transaction" to see your transaction on the blockchain explorer.&#x20;
+Once the transaction has been confirmed in the wallet, your swap transaction will then be submitted to the network to be executed. You should see the Transaction Submitted screen appear. You can click on "View Transaction" to see your transaction on the blockchain explorer.
 
-Upon the transaction being executed, KyberSwap will also send a notification to alert you that the cross-chain swap has been accepted by the network and is currently being processed.&#x20;
+Upon the transaction being executed, KyberSwap will also send a notification to alert you that the cross-chain swap has been accepted by the network and is currently being processed.
 
 <figure><img src="../../../.gitbook/assets/UserGuide_CrossChain_TxExecuted.png" alt=""><figcaption><p>Swap successfully executed on input chain</p></figcaption></figure>
 

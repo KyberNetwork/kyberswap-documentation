@@ -12,7 +12,7 @@ KyberSwap supports the trading of more than 20,000 tokens across the majority of
 
 <summary>Trader Flow</summary>
 
-1. [Connect Your Wallet ](connect-your-wallet.md)
+1. [Connect Your Wallet](connect-your-wallet.md)
 2. **Switching Networks <-**
 3. Get Tokens
    * [Get Crypto With Fiat](get-crypto-with-fiat.md)
@@ -26,7 +26,7 @@ KyberSwap supports the trading of more than 20,000 tokens across the majority of
 
 ## MEV protection on Ethereum
 
-To protect transactions on Ethereum against [MEV strategies](../../../getting-started/foundational-topics/decentralized-finance/maximal-extractable-value-mev.md), KyberSwap provides users with the option to select MEV protected [RPCs](../../../getting-started/foundational-topics/decentralized-technologies/rpc.md) such as Blink. Transactions via such RPCs will undergo a different transaction ordering process and therefore enjoy protection from multiple MEV strategies.&#x20;
+To protect transactions on Ethereum against [MEV strategies](../../../getting-started/foundational-topics/decentralized-finance/maximal-extractable-value-mev.md), KyberSwap provides users with the option to select MEV protected [RPCs](../../../getting-started/foundational-topics/decentralized-technologies/rpc.md) such as Blink. Transactions via such RPCs will undergo a different transaction ordering process and therefore enjoy protection from multiple MEV strategies.
 
 It is important that you understand the pros and cons of using MEV protected RPCs. This will help you make an informed decision as to the suitability of such RPCs with regards to your DeFi goals. MEV protected RPCs will be indicated with the green shield icon.
 
@@ -82,7 +82,7 @@ Upon [connecting your wallet](connect-your-wallet.md), KyberSwap would have auto
 
 <figure><img src="../../../.gitbook/assets/image (132).png" alt=""><figcaption><p>KyberSwap connected to Ethereum</p></figcaption></figure>
 
-In the example above, KyberSwap has connected to the Ethereum Mainnet as per the MetaMask setting.&#x20;
+In the example above, KyberSwap has connected to the Ethereum Mainnet as per the MetaMask setting.
 
 ### **Step 2: Switch networks**
 
@@ -90,17 +90,17 @@ To change the network, you can select the dropdown which will display the full l
 
 <figure><img src="../../../.gitbook/assets/UserGuide_SwitchNetwork_SelectChain.png" alt=""><figcaption><p>KyberSwap supported chains</p></figcaption></figure>
 
-Select your preferred chain and you should then be prompted by your wallet to confirm the network change.&#x20;
+Select your preferred chain and you should then be prompted by your wallet to confirm the network change.
 
 {% hint style="success" %}
-#### MEV protection
+**MEV protection**
 
 KyberSwap enables users to select MEV protected RPCs. Please refer to [MEV protection on Ethereum](selecting-preferred-network.md#mev-protection-on-ethereum) for further details.
 {% endhint %}
 
 If this is your first time connecting to a chain, your wallet provider should display the details of the chain for your verification. The below is an example of adding the Polygon chain and confirming the chain switch using MetaMask.
 
-<figure><img src="../../../.gitbook/assets/image (3).png" alt=""><figcaption><p>Adding a Polygon chain to MetaMask</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1).png" alt=""><figcaption><p>Adding a Polygon chain to MetaMask</p></figcaption></figure>
 
 <figure><img src="../../../.gitbook/assets/image (30).png" alt=""><figcaption><p>Switch to Polygon chain on Metamask</p></figcaption></figure>
 
