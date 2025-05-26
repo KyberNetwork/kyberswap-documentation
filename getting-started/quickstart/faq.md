@@ -42,6 +42,14 @@ Users are responsible to ensure that their use of KyberSwap complies with all ap
 
 <details>
 
+<summary>Is KyberSwap licensed by the Monetary Authority of Singapore (MAS)?</summary>
+
+No, KyberSwap is not currently licensed by the Monetary Authority of Singapore (MAS). However, we remain committed to upholding high standards of security, transparency, compliance, and industry best practices applicable to decentralized platforms
+
+</details>
+
+<details>
+
 <summary>What chains does KyberSwap support?</summary>
 
 Please refer to [Supported Exchanges And Networks](../supported-exchanges-and-networks.md) for the full list of chains which are supported by KyberSwap.
