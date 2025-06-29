@@ -112,7 +112,7 @@ All KyberSwap Aggregator contracts have been deployed at the same address across
 
 <summary>Sonic (ChainID: 146)</summary>
 
-* **MetaAggregationRouterV2:** [`0x6131B5fae19EA4f9D964eAc0408E4408b66337b5`](https://explorer.linea.build/address/0x6131B5fae19EA4f9D964eAc0408E4408b66337b5)
+* **MetaAggregationRouterV2:** [`0x6131B5fae19EA4f9D964eAc0408E4408b66337b5`](https://sonicscan.org/address/0x6131B5fae19EA4f9D964eAc0408E4408b66337b5)
 
 </details>
 
@@ -120,7 +120,7 @@ All KyberSwap Aggregator contracts have been deployed at the same address across
 
 <summary>Berachain (ChainID: 80094)</summary>
 
-**MetaAggregationRouterV2:** [`0x6131B5fae19EA4f9D964eAc0408E4408b66337b5`](https://explorer.linea.build/address/0x6131B5fae19EA4f9D964eAc0408E4408b66337b5)
+**MetaAggregationRouterV2:** [`0x6131B5fae19EA4f9D964eAc0408E4408b66337b5`](https://berascan.com/address/0x6131B5fae19EA4f9D964eAc0408E4408b66337b5)
 
 </details>
 
