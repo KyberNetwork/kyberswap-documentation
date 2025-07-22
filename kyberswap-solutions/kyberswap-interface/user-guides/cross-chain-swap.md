@@ -55,7 +55,9 @@ To support the continued development and maintenance of the Cross-Chain Swap, Ky
 
 Below is the detailed fee structure:
 
-<table data-header-hidden><thead><tr><th width="139.953125"></th><th></th><th></th><th></th><th width="245.0859375"></th></tr></thead><tbody><tr><td><strong>Route</strong></td><td><strong>Stable pair</strong></td><td><strong>Common pair</strong></td><td><strong>Exotic pair</strong></td><td><strong>High-volatility pair</strong></td></tr><tr><td><strong>EVM ↔ EVM</strong></td><td>0.05 %</td><td>0.10 %</td><td>0.15 %</td><td>0.25 %</td></tr><tr><td><strong>Near ↔ EVM</strong></td><td>0.2%</td><td>0.2%</td><td>0.2%</td><td>0.25 %</td></tr><tr><td><strong>BTC ↔ EVM</strong></td><td>0.25 %</td><td>0.25 %</td><td>0.25 %</td><td>0.2%</td></tr><tr><td><strong>Bitcoin ↔ Near</strong></td><td>0.25 %</td><td>0.25 %</td><td>0.25 %</td><td>0.25 %</td></tr></tbody></table>
+
+
+<table data-header-hidden><thead><tr><th></th><th width="181.61328125"></th><th></th><th></th><th></th></tr></thead><tbody><tr><td><strong>Route</strong></td><td><strong>Stable tokens &#x26; Same native token</strong></td><td><strong>Common</strong></td><td><strong>Exotic</strong></td><td><strong>High-volatility</strong></td></tr><tr><td><strong>EVM ↔ EVM</strong></td><td>0.05 %</td><td>0.10 %</td><td>0.15 %</td><td>0.25 %</td></tr><tr><td><strong>Near ↔ EVM</strong></td><td>0.1%</td><td>0.2%</td><td>0.2%</td><td>0.2%</td></tr><tr><td><strong>Solana ↔ EVM</strong></td><td>0.1%</td><td>0.2%</td><td>0.2%</td><td>0.2%</td></tr><tr><td><strong>BTC ↔ EVM</strong></td><td>0.25 % </td><td>0.25 % </td><td>0.25 % </td><td>0.25 % </td></tr><tr><td><strong>Non-EVM ↔ Non-EVM</strong></td><td>0.25 %</td><td>0.25 % </td><td>0.25 % </td><td>0.25 %</td></tr></tbody></table>
 
 > Note: The “Platform Fee” is separate from the “Protocol Fee”. Some third-party providers may charge a protocol-specific fee for using their route. If applicable, this “Protocol Fee” will be displayed in the Swap Details when this route is selected, or within the “Choose Your Route” section during route comparison.
 
