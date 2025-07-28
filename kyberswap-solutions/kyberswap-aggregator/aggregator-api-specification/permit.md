@@ -10,7 +10,7 @@ description: >-
 Refer to [evm-swaps.md](evm-swaps.md "mention") for details on where `permit`can be used
 {% endhint %}
 
-[EIP-2612](https://eips.ethereum.org/EIPS/eip-2612) tokens can be swapped directly without an initial approval transaction. The client needs to provide a directly usable `permit` calldata as a parameter to [#chain-api-v1-route-build](evm-swaps.md#chain-api-v1-route-build "mention") API call. Refer to the [EIP-2612](https://eips.ethereum.org/EIPS/eip-2612) specification for how to sign and encode this call. `permit` ABI is provided below for reference:
+[EIP-2612](https://eips.ethereum.org/EIPS/eip-2612) tokens can be swapped directly without an initial approval transaction. The client needs to provide a directly usable `permit` function calldata as a parameter to [#chain-api-v1-route-build](evm-swaps.md#chain-api-v1-route-build "mention") API call. Refer to the [EIP-2612](https://eips.ethereum.org/EIPS/eip-2612) specification for how to sign and encode this call. `permit` function ABI is provided below for reference:
 
 {% code overflow="wrap" %}
 ```solidity

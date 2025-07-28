@@ -73,6 +73,7 @@ The Aggregator APIs require a chain **name** to be included in the path when cal
 * Sonic (ChainID: 146) -> `sonic`
 * Berachain (ChainID: 80094) -> `berachain`
 * Ronin (ChainID: 2020) -> `ronin`
+* HyperEVM (ChainID: 999) -> `hyperevm`
 {% endhint %}
 
 ### &#x20;Latest
@@ -80,17 +81,17 @@ The Aggregator APIs require a chain **name** to be included in the path when cal
 <figure><img src="../../../.gitbook/assets/Aggregator APIv1.jpg" alt=""><figcaption></figcaption></figure>
 
 {% openapi-operation spec="aggregator-api" path="/{chain}/api/v1/routes" method="get" %}
-[Broken link](broken-reference)
+[OpenAPI aggregator-api](https://gitbook-x-prod-openapi.4401d86825a13bf607936cc3a9f3897a.r2.cloudflarestorage.com/raw/ab5d11c7e0062e7b9db63557286aec722ff7f6e144c94d31eff4c8acadd75558.txt?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=dce48141f43c0191a2ad043a6888781c%2F20250728%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20250728T075743Z&X-Amz-Expires=172800&X-Amz-Signature=460e3087d3d323b5217daebf67a10ca5e6f183ba249302f3c8ad6130c5c094ae&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
 {% endopenapi-operation %}
 
 {% openapi-operation spec="aggregator-api" path="/{chain}/api/v1/route/build" method="post" %}
-[Broken link](broken-reference)
+[OpenAPI aggregator-api](https://gitbook-x-prod-openapi.4401d86825a13bf607936cc3a9f3897a.r2.cloudflarestorage.com/raw/ab5d11c7e0062e7b9db63557286aec722ff7f6e144c94d31eff4c8acadd75558.txt?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=dce48141f43c0191a2ad043a6888781c%2F20250728%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20250728T075743Z&X-Amz-Expires=172800&X-Amz-Signature=460e3087d3d323b5217daebf67a10ca5e6f183ba249302f3c8ad6130c5c094ae&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
 {% endopenapi-operation %}
 
 ### Legacy
 
 {% openapi-operation spec="aggregator-api" path="/{chain}/route/encode" method="get" %}
-[Broken link](broken-reference)
+[OpenAPI aggregator-api](https://gitbook-x-prod-openapi.4401d86825a13bf607936cc3a9f3897a.r2.cloudflarestorage.com/raw/ab5d11c7e0062e7b9db63557286aec722ff7f6e144c94d31eff4c8acadd75558.txt?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=dce48141f43c0191a2ad043a6888781c%2F20250728%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20250728T075743Z&X-Amz-Expires=172800&X-Amz-Signature=460e3087d3d323b5217daebf67a10ca5e6f183ba249302f3c8ad6130c5c094ae&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
 {% endopenapi-operation %}
 
 {% hint style="info" %}
