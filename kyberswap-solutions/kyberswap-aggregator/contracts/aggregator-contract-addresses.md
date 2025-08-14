@@ -62,14 +62,6 @@ All KyberSwap Aggregator contracts have been deployed at the same address across
 
 <details>
 
-<summary>zkSync Era (ChainID: 324)</summary>
-
-* **MetaAggregationRouterV2:** [`0x3F95eF3f2eAca871858dbE20A93c01daF6C2e923`](https://explorer.zksync.io/address/0x3F95eF3f2eAca871858dbE20A93c01daF6C2e923)
-
-</details>
-
-<details>
-
 <summary>Mantle (ChainID:5000)</summary>
 
 * **MetaAggregationRouterV2:** [`0x6131B5fae19EA4f9D964eAc0408E4408b66337b5`](https://explorer.mantle.xyz/address/0x6131B5fae19EA4f9D964eAc0408E4408b66337b5)
@@ -78,33 +70,9 @@ All KyberSwap Aggregator contracts have been deployed at the same address across
 
 <details>
 
-<summary>Blast (ChainID: 81457)</summary>
-
-* **MetaAggregationRouterV2:**[`0x6131B5fae19EA4f9D964eAc0408E4408b66337b5`](https://blastscan.io/address/0x6131B5fae19EA4f9D964eAc0408E4408b66337b5)
-
-</details>
-
-<details>
-
-<summary>Fantom (ChainID: 250)</summary>
-
-* **MetaAggregationRouterV2:** [`0x6131B5fae19EA4f9D964eAc0408E4408b66337b5`](https://ftmscan.com/address/0x6131B5fae19EA4f9D964eAc0408E4408b66337b5)
-
-</details>
-
-<details>
-
 <summary>Linea (ChainID: 59144)</summary>
 
 * **MetaAggregationRouterV2:** [`0x6131B5fae19EA4f9D964eAc0408E4408b66337b5`](https://explorer.linea.build/address/0x6131B5fae19EA4f9D964eAc0408E4408b66337b5)
-
-</details>
-
-<details>
-
-<summary>Scroll (ChainID: 534352)</summary>
-
-* **MetaAggregationRouterV2:** [`0x6131B5fae19EA4f9D964eAc0408E4408b66337b5`](https://scrollscan.com/address/0x6131B5fae19EA4f9D964eAc0408E4408b66337b5)
 
 </details>
 
