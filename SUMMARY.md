@@ -63,7 +63,6 @@
   * [KyberSwap Zap as a Service (ZaaS) API](kyberswap-solutions/kyberswap-zap-as-a-service/kyberswap-zap-as-a-service-zaas-api/README.md)
     * [ZaaS HTTP API](kyberswap-solutions/kyberswap-zap-as-a-service/kyberswap-zap-as-a-service-zaas-api/zaas-http-api.md)
     * [ZaaS GRPC API](kyberswap-solutions/kyberswap-zap-as-a-service/kyberswap-zap-as-a-service-zaas-api/zaas-grpc-api.md)
-  * [KyberSwap Zap Liquidity Widget](kyberswap-solutions/kyberswap-zap-as-a-service/kyberswap-zap-liquidity-widget.md)
   * [Zap Fee Model](kyberswap-solutions/kyberswap-zap-as-a-service/zap-fee-model.md)
   * [Zap's Supported Chains/Dexes](kyberswap-solutions/kyberswap-zap-as-a-service/zaps-supported-chains-dexes.md)
   * [Zap's Deployed Contract Addresses](kyberswap-solutions/kyberswap-zap-as-a-service/zaps-deployed-contract-addresses.md)

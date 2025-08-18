@@ -2,20 +2,6 @@
 description: DeFi's Open and Permissionless Liquidity Backbone
 cover: .gitbook/assets/KyberSwap_Banner.png
 coverY: 0
-layout:
-  cover:
-    visible: true
-    size: full
-  title:
-    visible: true
-  description:
-    visible: true
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
 ---
 
 # Introduction to KyberSwap

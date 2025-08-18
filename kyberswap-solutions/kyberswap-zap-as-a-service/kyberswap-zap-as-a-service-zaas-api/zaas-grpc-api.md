@@ -6,17 +6,15 @@ description: GRPC API doc for ZaaS API
 
 Please refer to the following server configuration and proto file for the grpc API. You can use [https://buf.build/](https://buf.build/) along with its plugin [https://buf.build/grpc-ecosystem/gateway](https://buf.build/grpc-ecosystem/gateway) to generate a grpc client. Refer to [https://github.com/grpc-ecosystem/grpc-gateway/tree/main/examples/internal/clients](https://github.com/grpc-ecosystem/grpc-gateway/tree/main/examples/internal/clients) for some example code.
 
-| Parameter            | Value                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
-| -------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Server address       | zap-api.kyberswap.com:443                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
-| Header `X-Chain-ID`  | <ul><li><code>42161</code> for <code>arbitrum</code></li><li><code>43114</code> for <code>avalanche</code></li><li><code>8453</code> for <code>base</code></li><li><code>56</code> for <code>bsc</code></li><li><code>1</code> for <code>ethereum</code></li><li><code>59144</code> for <code>linea</code></li><li><code>10</code> for <code>optimism</code></li><li><code>137</code> for <code>polygon</code></li><li><code>1101</code> for <code>polygon-zkevm</code></li></ul><p>Refer to the <a href="../zaps-supported-chains-dexes.md">supported chains page</a> for the latest list</p> |
-| Header `X-Client-ID` | <p>Some value to identify your client.</p><p>Please contact <a href="mailto:bd@kyber.network">bd@kyber.network</a> to whitelist your client id with more rate limit quota</p>                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| Parameter            | Value                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| -------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Server address       | zap-api.kyberswap.com:443                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| Header `X-Chain-ID`  | <ul><li><code>42161</code> for <code>arbitrum</code></li><li><code>43114</code> for <code>avalanche</code></li><li><code>8453</code> for <code>base</code></li><li><code>56</code> for <code>bsc</code></li><li><code>1</code> for <code>ethereum</code></li><li><code>59144</code> for <code>linea</code></li><li><code>10</code> for <code>optimism</code></li><li><code>137</code> for <code>polygon</code></li><li><code>146</code> for <code>sonic</code> </li><li><code>80094</code> for <code>berachain</code></li><li><code>2020</code> for <code>ronin</code></li></ul><p>Refer to the <a href="../zaps-supported-chains-dexes.md">supported chains page</a> for the latest list</p> |
+| Header `X-Client-ID` | <p>Some value to identify your client.</p><p>Please contact <a href="mailto:bd@kyber.network">bd@kyber.network</a> to whitelist your client id with more rate limit quota</p>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
 
-Download zap.proto:&#x20;
+Download zap.proto:
 
 {% file src="../../../.gitbook/assets/zap.proto" %}
-zap.proto
-{% endfile %}
 
 ```protobuf
 syntax = "proto3";
@@ -25,22 +23,7 @@ package zap.v1;
 import "buf/validate/validate.proto";
 import "google/api/annotations.proto";
 import "protoc-gen-openapiv2/options/annotations.proto";
-
-// Dex is the type of dex to zap into/out of. It uses different enum values from the zap contract.
-enum Dex {
-  // Unspecified value.
-  DEX_UNSPECIFIED = 0;
-  // For UniSwap V3.
-  DEX_UNISWAPV3 = 2;
-  // For PancakeSwap V3.
-  DEX_PANCAKESWAPV3 = 3;
-  // For Uniswap V2.
-  DEX_UNISWAPV2 = 4;
-  // For SushiSwap V2.
-  DEX_SUSHISWAPV2 = 5;
-  // For Curve
-  DEX_CURVE = 6;
-}
+import "zap/v1/dex.proto";
 
 option (grpc.gateway.protoc_gen_openapiv2.options.openapiv2_swagger) = {
   info: {
@@ -181,7 +164,334 @@ service Service {
       body: "*"
     };
   }
+
+  // Get the best zap-out route.
+  rpc GetOutRoute(GetOutRouteRequest) returns (GetOutRouteResponse) {
+    option (google.api.http) = {get: "/api/v1/out/route"};
+    option (grpc.gateway.protoc_gen_openapiv2.options.openapiv2_operation) = {
+      parameters: {
+        headers: {
+          name: "X-Client-Id"
+          description: "Client Id"
+          type: STRING
+        }
+        headers: {
+          name: "X-Request-Id"
+          description: "Request Id"
+          type: STRING
+        }
+      }
+      responses: {
+        key: '200'
+        value: {
+          description: "OK"
+          examples: {
+            key: 'application/json'
+            value: '{"code":0,"data":{}}'
+          }
+        }
+      }
+    };
+  }
+  // Decode zap-out route for debugging purposes.
+  rpc DecodeOutRoute(DecodeOutRouteRequest) returns (DecodeOutRouteResponse) {
+    option (google.api.http) = {
+      post: "/api/v1/out/route/decode"
+      body: "*"
+    };
+  }
+  // Build encoded data for the specified zap-out route.
+  rpc BuildOutRoute(BuildOutRouteRequest) returns (BuildOutRouteResponse) {
+    option (google.api.http) = {
+      post: "/api/v1/out/route/build"
+      body: "*"
+    };
+  }
+
+  rpc GetCompoundRoute(GetCompoundRouteRequest) returns (GetInRouteResponse) {
+    option (google.api.http) = {get: "/api/v1/compound/route"};
+    option (grpc.gateway.protoc_gen_openapiv2.options.openapiv2_operation) = {
+      parameters: {
+        headers: {
+          name: "X-Client-Id"
+          description: "Client Id"
+          type: STRING
+        }
+        headers: {
+          name: "X-Request-Id"
+          description: "Request Id"
+          type: STRING
+        }
+      }
+      responses: {
+        key: '200'
+        value: {
+          description: "OK"
+          examples: {
+            key: 'application/json'
+            value: '{"code":0,"data":{}}'
+          }
+        }
+      }
+    };
+  }
+
+  // Build encoded data for the specified zap-compound route.
+  rpc BuildCompoundRoute(BuildInRouteRequest) returns (BuildInRouteResponse) {
+    option (google.api.http) = {
+      post: "/api/v1/compound/route/build"
+      body: "*"
+    };
+  }
+
+  // Get the best zap-create route.
+  rpc GetCreateRoute(GetCreateRouteRequest) returns (GetCreateRouteResponse) {
+    option (google.api.http) = {get: "/api/v1/create/route"};
+    option (grpc.gateway.protoc_gen_openapiv2.options.openapiv2_operation) = {
+      parameters: {
+        headers: {
+          name: "X-Client-Id"
+          description: "Client Id"
+          type: STRING
+        }
+        headers: {
+          name: "X-Request-Id"
+          description: "Request Id"
+          type: STRING
+        }
+      }
+    };
+  }
+  // Decode zap-create route for debugging purposes.
+  rpc DecodeCreateRoute(DecodeCreateRouteRequest) returns (DecodeCreateRouteResponse) {
+    option (google.api.http) = {
+      post: "/api/v1/create/route/decode"
+      body: "*"
+    };
+  }
+  // Build encoded data for the specified zap-create route.
+  rpc BuildCreateRoute(BuildCreateRouteRequest) returns (BuildCreateRouteResponse) {
+    option (google.api.http) = {
+      post: "/api/v1/create/route/build"
+      body: "*"
+    };
+    option (grpc.gateway.protoc_gen_openapiv2.options.openapiv2_operation) = {
+      parameters: {
+        headers: {
+          name: "X-Client-Id"
+          description: "Client Id"
+          type: STRING
+        }
+        headers: {
+          name: "X-Request-Id"
+          description: "Request Id"
+          type: STRING
+        }
+      }
+    };
+  }
 }
+
+message DecodeCreateRouteRequest {
+  // which dex to use zap with
+ // the route as returned from get-route endpoint.
+  bytes route = 1;
+}
+
+message DecodeCreateRouteResponse {
+  // grpc error code
+  int32 code = 1;
+  // grpc error message
+  string message = 2;
+  // response data
+  Data data = 3;
+  // request trace id
+  string request_id = 4;
+
+  // Encompasses returned data.
+  message Data {
+    // JSON encode of the zap in route.
+    string json = 1;
+  }
+}
+
+message BuildCreateRouteRequest {
+  // the wallet sending the transaction, and thus, the tokens.
+  string sender = 1 [(buf.validate.field).string.pattern = "^0x[0-9A-Za-z]{40}$"];
+  // the wallet receiving the new position. default to sender if empty.
+  string recipient = 2 [(buf.validate.field) = {
+    string: {pattern: "^0x[0-9A-Za-z]{40}$"}
+    ignore: IGNORE_IF_UNPOPULATED
+  }];
+  // the route as returned from get-route endpoint.
+  bytes route = 3;
+  // deadline for the swap transaction to execute.
+  fixed32 deadline = 4 [(buf.validate.field).cel = {
+    id: "deadline.gte_now"
+    message: "deadline must be in the future"
+    expression: "this == 0u || this > int(now)"
+  }];
+  // the source of the zap-in transaction.
+  string source = 5;
+  // map of each token address to its ERC20 permit using EIP-2612 to skip a separate approval step.
+  map<string, string> permits = 6 [
+    (buf.validate.field).map.keys.string.pattern = "^0x[0-9A-Za-z]{40}$",
+    (buf.validate.field).map.values.string.pattern = "^0x[0-9A-Za-z]{448}$"
+  ];
+  // the (optional) referral code
+  string referral = 7;
+
+  // override slippage in get route request
+  uint32 slippage = 8 [(buf.validate.field).uint32 = {
+    gte: 0
+    lte: 10000
+  }];
+  
+  // debug flag to force gas estimation
+  bool debug_estimate_gas = 9;
+}
+
+// Encompasses returned data.
+message BuildZapResult {
+  // zap router address to send the zap-in transaction to
+  string router_address = 1;
+  // call data for the zap-in transaction
+  string call_data = 2;
+  // native token value to transfer with the zap-in transaction in case of zapping with native tokens
+  string value = 3;
+}
+
+message BuildCreateRouteResponse {
+  // grpc error code
+  int32 code = 1;
+  // grpc error message
+  string message = 2;
+  // response data
+  BuildZapResult data = 3;
+  // request trace id
+  string request_id = 4;
+
+
+}
+
+message GetCreateRouteRequest {
+  // which dex to use zap with
+  Dex dex = 1;
+  // the pool to create
+  PoolInitParams pool = 2 [(buf.validate.field).required = true];
+  // zap params
+  ZapInParams zap_in = 3 [(buf.validate.field).required = true];
+}
+
+message PoolInitParams{
+  // unique token addresses
+  // also accepts comma separated addresses
+  // example: "0xabc...,0xdef..."
+  repeated string tokens = 1 [
+    (buf.validate.field).repeated = {
+      unique: true,
+      items: { string: { pattern:  "^0x[0-9A-Za-z]{40}(,0x[0-9A-Za-z]{40})*$"} }
+    },
+    (buf.validate.field).repeated.min_items = 1, 
+    (buf.validate.field).repeated.max_items = 8
+  ];
+  oneof config {
+    UniswapV4PoolConfig uniswap_v4_config = 2;
+  }
+}
+
+message UniswapV4PoolConfig{
+  uint32 fee = 1 [(buf.validate.field).uint32 = {
+    gte: 0
+    lte: 100000
+  }];
+  uint32 tick_spacing = 2 [(buf.validate.field).uint32 = {
+    gte: 0
+    lte: 100000
+  }];
+  optional string hook = 3 [(buf.validate.field).string.pattern = "^0x[0-9A-Za-z]{40}$"];
+  string sqrt_p = 4;
+}
+
+message ZapInParams{
+  // position details
+  Position position = 1 [(buf.validate.field).required = true];
+  // which token(s) to use as zap source. also accepts comma separated addresses
+  repeated string tokens_in = 2 [(buf.validate.field).repeated.items.string.pattern = "^0x[0-9A-Za-z]{40}(,0x[0-9A-Za-z]{40})*$"];
+  // amount(s) to zap including fee, corresponding to tokenIn. also accepts comma separated amounts.
+  repeated string amounts_in = 3 [(buf.validate.field).repeated.items.string.pattern = "^\\d+(,\\d+)*$"];
+
+  option (buf.validate.message).cel = {
+    id: "ZapInParams.tokens_in"
+    message: "missing tokens_in"
+    expression: "has(this.tokens_in)"
+  };
+  option (buf.validate.message).cel = {
+    id: "ZapInParams.amounts_in"
+    message: "missing amounts_in"
+    expression: "has(this.amounts_in)"
+  };
+  // aggregator options
+  AggregatorOptions aggregator_options = 4;
+  // the address of the fee recipient.
+  string fee_address = 5 [(buf.validate.field) = {
+    string: {pattern: "^0x[0-9A-Za-z]{40}$"}
+    ignore: IGNORE_IF_UNPOPULATED
+  }];
+  // fee percentage in per cent mille (0.001% or 1 in 100,000). Ignored if feeAddress is empty.
+  // From 0 to 100,000 inclusively. Example: 1 for 0.001%.
+  uint32 fee_pcm = 6 [(buf.validate.field).uint32 = {
+    gte: 0
+    lte: 100000
+  }];
+  // maximum slippage tolerance in basis points (0.01%), used for aggregator (exceeding which the transaction will
+  // revert) and pool swap during zap (for additional zapping and for refund).
+  // From 0 to 10,000 inclusively. Example: 1 for 0.01%.
+  uint32 slippage = 7 [(buf.validate.field).uint32 = {
+    gte: 0
+    lte: 10000
+  }];
+  string sender = 8 [(buf.validate.field) = {
+    string: {pattern: "^0x[0-9A-Za-z]{40}$"}
+    ignore: IGNORE_IF_UNPOPULATED
+  }];
+}
+
+
+message GetCreateRouteResponse {
+  // grpc error code
+  int32 code = 1;
+  // grpc error message
+  string message = 2;
+  // response data
+  GetZapResult data = 3;
+  // request trace id
+  string request_id = 4;
+
+}
+
+  // Encompasses returned data.
+  message GetZapResult {
+    PoolDetails pool_details = 1;
+
+    PositionDetails position_details = 2;
+
+    // zap details
+    ZapDetails zap_details = 3;
+
+    // the zap route to pass to build API to get call-data
+    bytes route = 4;
+
+    // the router address to check approval amount
+    string router_address = 5;
+
+    // rough estimate of gas required for the transaction
+    string gas = 6;
+    // USD value of estimated gas required
+    string gas_usd = 7;
+  }
+
+
 
 // Get the best zap-in route.
 message GetInRouteRequest {
@@ -231,6 +541,11 @@ message GetInRouteRequest {
     gte: 0
     lte: 10000
   }];
+
+  string sender = 10 [(buf.validate.field) = {
+    string: {pattern: "^0x[0-9A-Za-z]{40}$"}
+    ignore: IGNORE_IF_UNPOPULATED
+  }];
 }
 
 // options for getting aggregator routes
@@ -241,12 +556,14 @@ message AggregatorOptions {
   string included_sources = 2;
   // comma-separated list of sources to exclude for aggregator
   string excluded_sources = 3;
+  // comma-separated list of pools to exclude for aggregator
+  string excluded_pools = 4;
 }
 
 // Pool describes the pool to zap into.
 message Pool {
   // id of the pool to zap into.
-  string id = 1 [(buf.validate.field).string.pattern = "^0x[0-9A-Za-z]{40}$"];
+  string id = 1 [(buf.validate.field).string.pattern = "^0x([0-9A-Za-z]{40})|([0-9A-Za-z]{64})$"];
 }
 
 // Position describes either an existing position or a new one.
@@ -256,12 +573,29 @@ message Position {
     message: "tick_lower must be less than tick_upper"
     expression: "!(has(this.tick_lower) || has(this.tick_upper)) || this.tick_lower < this.tick_upper"
   };
+  option (buf.validate.message).cel = {
+    id: "position.bins_check"
+    message: "bin_id_lower must be less than or equal bin_id_upper"
+    expression: "!(has(this.bin_id_lower) || has(this.bin_id_upper)) || this.bin_id_lower <= this.bin_id_upper"
+  };
   // id of the position to add liquidity to; omit to create a new uniswapV3 position. for uniswapV2 this is user address
-  optional string id = 1;
+  optional string id = 1 [(buf.validate.field).string.max_len = 200];
   // min tick of the position, required if creating a new uniswapV3 position.
   optional sint32 tick_lower = 2;
   // max tick of the position, required if creating a new uniswapV3 position.
   optional sint32 tick_upper = 3;
+  // min bin id of the position, required if creating a new liquidity book position.
+  optional sint32 bin_id_lower = 4;
+  // max bin id of the position, required if creating a new liquidity book position.
+  optional sint32 bin_id_upper = 5;
+  // active id of the position, required if creating a new liquidity book position.
+  optional sint32 active_id_desired = 6;
+  // shape of the liquidity distribution
+  BinLiquidityShape bin_liquidity_shape = 7;
+  // pool token amount in USD fractions of the position.
+  // ([amount0_usd/total_amount_usd] for pool with 2 tokens, [amount0_usd/total_amount_usd, amount1_usd/total_amount_usd, amount2_usd/total_amount_usd] for 3 tokens...)
+  repeated string amount_usd_fractions = 8;
+
 }
 
 // Returns the best route to zap-in to the specified pool position.
@@ -271,38 +605,28 @@ message GetInRouteResponse {
   // grpc error message
   string message = 2;
   // response data
-  Data data = 3;
+  GetZapResult data = 3;
   // request trace id
   string request_id = 4;
-
-  // Encompasses returned data.
-  message Data {
-    PoolDetails pool_details = 1;
-
-    PositionDetails position_details = 2;
-
-    // zap details
-    ZapDetails zap_details = 3;
-
-    // the zap route to pass to build API to get call-data
-    bytes route = 4;
-
-    // the router address to check approval amount
-    string router_address = 5;
-
-    // rough estimate of gas required for the transaction
-    string gas = 6;
-    // USD value of estimated gas required
-    string gas_usd = 7;
-  }
 }
 
 // details of the pool
 message PoolDetails {
   string category = 1;
+  string new_liquidity = 2 [(grpc.gateway.protoc_gen_openapiv2.options.openapiv2_field).pattern = "\\d+"];
   oneof pool {
     UniswapV3 uniswap_v3 = 8;
     UniswapV2 uniswap_v2 = 9;
+    AlgebraV1 algebra_v1 = 10;
+    PancakeBin pancake_bin = 11;
+  }
+
+  // details of the pancake bin pool
+  message PancakeBin {
+    // active id before zap
+    optional sint32 active_id = 1;
+    // active id after zap
+    optional sint32 new_active_id = 2;
   }
   // details of the uniswapV3 pool
   message UniswapV3 {
@@ -325,6 +649,17 @@ message PoolDetails {
     optional string reserve1 = 3;
     // reserve1 after zap
     optional string new_reserve1 = 4;
+  }
+  // details of the algebraV1 pool
+  message AlgebraV1 {
+    // pool tick before zap
+    optional sint32 tick = 1;
+    // pool tick after zap
+    optional sint32 new_tick = 2;
+    // pool sqrt price (times 2^96) before zap
+    optional string sqrt_p = 3;
+    // pool sqrt price (times 2^96) after zap
+    optional string new_sqrt_p = 4;
   }
 }
 
@@ -394,6 +729,8 @@ message ZapDetails {
       TokenAmount token_in = 1;
       // returned token amount
       TokenAmount token_out = 2;
+      // pool address for pool swap (optional)
+      optional string pool_address = 3 [(grpc.gateway.protoc_gen_openapiv2.options.openapiv2_field).pattern = "^0x[0-9A-Za-z]$"];
     }
   }
   // added or removed liquidity
@@ -425,6 +762,9 @@ message ZapDetails {
   string final_amount_usd = 3;
   // price impact after zapping of final amount against initial amount
   optional float price_impact = 4;
+
+  // suggested slippage based on the swap routes involved
+  uint32 suggested_slippage = 5;
 }
 
 // Decode zap-in route for debugging purposes.
@@ -475,6 +815,17 @@ message BuildInRouteRequest {
     (buf.validate.field).map.keys.string.pattern = "^0x[0-9A-Za-z]{40}$",
     (buf.validate.field).map.values.string.pattern = "^0x[0-9A-Za-z]{448}$"
   ];
+  // the (optional) referral code
+  string referral = 7;
+
+  // override slippage in get route request
+  uint32 slippage = 8 [(buf.validate.field).uint32 = {
+    gte: 0
+    lte: 10000
+  }];
+  
+  // debug flag to force gas estimation
+  bool debug_estimate_gas = 9;
 }
 
 // Returns the zap-in transaction details.
@@ -484,19 +835,10 @@ message BuildInRouteResponse {
   // grpc error message
   string message = 2;
   // response data
-  Data data = 3;
+  BuildZapResult data = 3;
   // request trace id
   string request_id = 4;
 
-  // Encompasses returned data.
-  message Data {
-    // zap router address to send the zap-in transaction to
-    string router_address = 1;
-    // call data for the zap-in transaction
-    string call_data = 2;
-    // native token value to transfer with the zap-in transaction in case of zapping with native tokens
-    string value = 3;
-  }
 }
 
 // Get the best zap-migrate route.
@@ -515,13 +857,19 @@ message GetMigrateRouteRequest {
     (buf.validate.field).cel = {
       id: "position_from.has_id"
       message: "position_from must provide an existing nft id"
-      expression: "has(this.id)"
+      expression: "has(this.id) && this.id != ''"
     }
   ];
   // new position details
   Position position_to = 3 [(buf.validate.field).required = true];
   // liquidity amount to withdraw, or empty or 0 to withdraw all
-  string liquidity_out = 4 [(buf.validate.field).string.pattern = "^\\d*$"];
+  optional string liquidity_out = 4 [(buf.validate.field).cel = {
+    id: "liquidity_out.nonnegative_integer"
+    message: "liquidity_out must be a non-negative integer with at most 200 characters"
+    expression: "this.matches('^(0|[1-9][0-9]*)$') && this.size() <= 200"
+  }];
+  // whether to collect fee from the position NFT or not.
+  bool collect_fee = 13;
   // aggregator options
   AggregatorOptions aggregator_options = 6;
   // options for getting aggregator routes
@@ -543,6 +891,10 @@ message GetMigrateRouteRequest {
     gte: 0
     lte: 10000
   }];
+  string sender = 14 [(buf.validate.field) = {
+    string: {pattern: "^0x[0-9A-Za-z]{40}$"}
+    ignore: IGNORE_IF_UNPOPULATED
+  }];
 }
 
 // Returns the best route to zap-migrate from an existing position to the specified pool position.
@@ -552,30 +904,8 @@ message GetMigrateRouteResponse {
   // grpc error message
   string message = 2;
   // response data
-  Data data = 3;
-  // request trace id
+  GetZapResult data = 3;  // request trace id
   string request_id = 4;
-
-  // Encompasses returned data.
-  message Data {
-    PoolDetails pool_details = 1;
-
-    PositionDetails position_details = 2;
-
-    // zap details
-    ZapDetails zap_details = 3;
-
-    // the zap route to pass to build API to get call-data
-    bytes route = 4;
-
-    // the router address to check approval amount
-    string router_address = 5;
-
-    // rough estimate of gas required for the transaction
-    string gas = 6;
-    // USD value of estimated gas required
-    string gas_usd = 7;
-  }
 }
 
 // Decode zap-migrate route for debugging purposes.
@@ -623,10 +953,159 @@ message BuildMigrateRouteRequest {
   string source = 5;
   // whether to throw away the position NFT or keep it.
   bool burn_nft = 6;
+  // the (optional) referral code
+  string referral = 7;
+
+  // override slippage in get route request
+  uint32 slippage = 8 [(buf.validate.field).uint32 = {
+    gte: 0
+    lte: 10000
+  }];
+  
+  // debug flag to force gas estimation
+  bool debug_estimate_gas = 9;
 }
 
 // Returns the zap-migrate transaction details.
 message BuildMigrateRouteResponse {
+  // grpc error code
+  int32 code = 1;
+  // grpc error message
+  string message = 2;
+  // response data
+  BuildZapResult data = 3;
+  // request trace id
+  string request_id = 4;
+}
+
+// Type of compound operation
+enum CompoundType {
+  // Unspecified compound type
+  COMPOUND_TYPE_UNSPECIFIED = 0;
+  // Compound fees
+  COMPOUND_TYPE_FEE = 1;
+  // Compound rewards
+  COMPOUND_TYPE_REWARD = 2;
+}
+
+// Get the best zap-compound route.
+message GetCompoundRouteRequest {
+  // which dex to zap compound in to
+  Dex dex = 1;
+  // the pool to zap into
+  Pool pool = 2 [(buf.validate.field).required = true];
+  // old position details
+  Position position = 3 [
+    (buf.validate.field).required = true,
+    (buf.validate.field).cel = {
+      id: "position_from.has_id"
+      message: "position_from must provide an existing nft id"
+      expression: "has(this.id) && this.id != ''"
+    }
+  ];
+  // aggregator options
+  AggregatorOptions aggregator_options = 4;
+  // options for getting aggregator routes
+  // the address of the fee recipient.
+  string fee_address = 5 [(buf.validate.field) = {
+    string: {pattern: "^0x[0-9A-Za-z]{40}$"}
+    ignore: IGNORE_IF_UNPOPULATED
+  }];
+  // fee percentage in per cent mille (0.001% or 1 in 100,000). Ignored if feeAddress is empty.
+  // From 0 to 100,000 inclusively. Example: 1 for 0.001%.
+  uint32 fee_pcm = 6 [(buf.validate.field).uint32 = {
+    gte: 0
+    lte: 100000
+  }];
+  // maximum slippage tolerance in basis points (0.01%), used for aggregator (exceeding which the transaction will
+  // revert) and pool swap during zap (for additional zapping and for refund).
+  // From 0 to 10,000 inclusively. Example: 1 for 0.01%.
+  uint32 slippage = 7 [(buf.validate.field).uint32 = {
+    gte: 0
+    lte: 10000
+  }];
+  string sender = 8 [(buf.validate.field) = {
+    string: {pattern: "^0x[0-9A-Za-z]{40}$"}
+    ignore: IGNORE_IF_UNPOPULATED
+  }];
+  // type of compound operation
+  CompoundType compound_type = 9;
+}
+
+// Get the best zap-out route.
+message GetOutRouteRequest {
+  // dex to zap out
+  Dex dex_from = 10;
+  // pool to zap out
+  Pool pool_from = 20 [(buf.validate.field).required = true];
+  // position to zap out
+  Position position_from = 30 [
+    (buf.validate.field).required = true,
+    (buf.validate.field).cel = {
+      id: "position_from.has_id"
+      message: "position_from must provide an existing nft id"
+      expression: "has(this.id) && this.id != ''"
+    }
+  ];
+  // liquidity amount to withdraw, or empty or 0 to withdraw all
+  optional string liquidity_out = 40 [(buf.validate.field).cel = {
+    id: "liquidity_out.nonnegative_integer"
+    message: "liquidity_out must be a non-negative integer with at most 200 characters"
+    expression: "this.matches('^(0|[1-9][0-9]*)$') && this.size() <= 200"
+  }];
+  // whether to collect fee from the position NFT or not.
+  bool collect_fee = 41;
+
+  optional string token_out = 50 [(buf.validate.field) = {
+    string: {pattern: "^0x[0-9A-Za-z]{40}$"}
+  }];
+  // aggregator options
+  AggregatorOptions aggregator_options = 60;
+  // fee recipient
+  string fee_address = 70 [(buf.validate.field) = {
+    string: {pattern: "^0x[0-9A-Za-z]{40}$"}
+    ignore: IGNORE_IF_UNPOPULATED
+  }];
+  // fee percentage in per cent mille (0.001% or 1 in 100,000). Ignored if feeAddress is empty.
+  // From 0 to 100,000 inclusively. Example: 1 for 0.001%.
+  uint32 fee_pcm = 80 [(buf.validate.field).uint32 = {
+    gte: 0
+    lte: 100000
+  }];
+  // maximum slippage tolerance in basis points (0.01%), used for aggregator (exceeding which the transaction will
+  // revert) and pool swap during zap (for additional zapping and for refund).
+  // From 0 to 10,000 inclusively. Example: 1 for 0.01%.
+  uint32 slippage = 90 [(buf.validate.field).uint32 = {
+    gte: 0
+    lte: 10000
+  }];
+  string sender = 100 [(buf.validate.field) = {
+    string: {pattern: "^0x[0-9A-Za-z]{40}$"}
+    ignore: IGNORE_IF_UNPOPULATED
+  }];
+}
+
+// Returns the best route to zap-out from an existing position to the specified pool position.
+message GetOutRouteResponse {
+  // grpc error code
+  int32 code = 1;
+  // grpc error message
+  string message = 2;
+  // response data
+  GetZapResult data = 3;
+  // request trace id
+  string request_id = 4;
+
+}
+
+// Decode zap-out route for debugging purposes.
+message DecodeOutRouteRequest {
+  // the route as returned from get-route endpoint.
+  bytes route = 1;
+}
+
+// Returns the zap-out route details.
+message DecodeOutRouteResponse {
   // grpc error code
   int32 code = 1;
   // grpc error message
@@ -638,13 +1117,62 @@ message BuildMigrateRouteResponse {
 
   // Encompasses returned data.
   message Data {
-    // zap router address to send the zap-migrate transaction to
-    string router_address = 1;
-    // call data for the zap-migrate transaction
-    string call_data = 2;
-    // native token value to transfer with the zap-migrate transaction in case of zapping with native tokens
-    string value = 3;
+    // JSON encode of the zap in route.
+    string json = 1;
   }
 }
 
+// Build encoded data for zap-out transaction from the specified route.
+message BuildOutRouteRequest {
+  // the wallet sending the transaction, and thus, the tokens.
+  string sender = 10 [(buf.validate.field).string.pattern = "^0x[0-9A-Za-z]{40}$"];
+  // the wallet receiving the new position. default to sender if empty.
+  string recipient = 20 [(buf.validate.field) = {
+    string: {pattern: "^0x[0-9A-Za-z]{40}$"}
+    ignore: IGNORE_IF_UNPOPULATED
+  }];
+  // the route as returned from get-route endpoint.
+  bytes route = 30;
+  // deadline for the swap transaction to execute.
+  fixed32 deadline = 40 [(buf.validate.field).cel = {
+    id: "deadline.gte_now"
+    message: "deadline must be in the future"
+    expression: "this == 0u || this > int(now)"
+  }];
+  // the source of the zap-out transaction.
+  string source = 50;
+  // whether to throw away the position NFT or keep it.
+  bool burn_nft = 60;
+  // the (optional) referral code
+  string referral = 70;
+
+  // override slippage in get route request
+  uint32 slippage = 80 [(buf.validate.field).uint32 = {
+    gte: 0
+    lte: 10000
+  }];
+  
+  // debug flag to force gas estimation
+  bool debug_estimate_gas = 90;
+}
+
+// Returns the zap-out transaction details.
+message BuildOutRouteResponse {
+  // grpc error code
+  int32 code = 1;
+  // grpc error message
+  string message = 2;
+  // response data
+  BuildZapResult data = 3;
+  // request trace id
+  string request_id = 4;
+}
+
+
+enum BinLiquidityShape {
+  BIN_LIQUIDITY_SHAPE_UNSPECIFIED = 0;
+  BIN_LIQUIDITY_SHAPE_SPOT = 1;
+  BIN_LIQUIDITY_SHAPE_CURVE = 2;
+  BIN_LIQUIDITY_SHAPE_BID_ASK = 3;
+}
 ```
