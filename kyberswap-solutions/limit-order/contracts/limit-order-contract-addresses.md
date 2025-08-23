@@ -70,10 +70,9 @@ All KyberSwap Limit Order contracts have been deployed at the same address acros
 
 <details>
 
-<summary>Fantom (ChainID: 250)</summary>
+<summary>Sonic (ChainID: 146)</summary>
 
-* **DSLOProtocol:** [`0xcab2FA2eeab7065B45CBcF6E3936dDE2506b4f6C`](https://ftmscan.com/address/0xcab2fa2eeab7065b45cbcf6e3936dde2506b4f6c)
-* **LimitOrderProtocol:** [`0x227B0c196eA8db17A665EA6824D972A64202E936`](https://ftmscan.com/address/0x227B0c196eA8db17A665EA6824D972A64202E936)
+* **DSLOProtocol:** [`0xcab2FA2eeab7065B45CBcF6E3936dDE2506b4f6C`](https://sonicscan.org/address/0xcab2fa2eeab7065b45cbcf6e3936dde2506b4f6c)
 
 </details>
 
@@ -82,5 +81,29 @@ All KyberSwap Limit Order contracts have been deployed at the same address acros
 <summary>Linea (ChainID: 59144)</summary>
 
 * **DSLOProtocol**: [`0xcab2FA2eeab7065B45CBcF6E3936dDE2506b4f6C`](https://explorer.linea.build/address/0xcab2FA2eeab7065B45CBcF6E3936dDE2506b4f6C)
+
+</details>
+
+<details>
+
+<summary>Berachain (ChainID: 80094)</summary>
+
+* **DSLOProtocol**: [`0xcab2FA2eeab7065B45CBcF6E3936dDE2506b4f6C`](https://berascan.com/address/0xcab2FA2eeab7065B45CBcF6E3936dDE2506b4f6C)
+
+</details>
+
+<details>
+
+<summary>Ronin (ChainID: 2020)</summary>
+
+* **DSLOProtocol**: [`0xcab2FA2eeab7065B45CBcF6E3936dDE2506b4f6C`](https://app.roninchain.com/address/0xcab2fa2eeab7065b45cbcf6e3936dde2506b4f6c)
+
+</details>
+
+<details>
+
+<summary>Unichain (ChainID: 130)</summary>
+
+* **DSLOProtocol**: [`0xcab2FA2eeab7065B45CBcF6E3936dDE2506b4f6C`](https://uniscan.xyz/address/0xcab2fa2eeab7065b45cbcf6e3936dde2506b4f6c)
 
 </details>
