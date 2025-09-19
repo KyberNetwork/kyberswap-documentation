@@ -51,6 +51,7 @@
   * [Developer Guides](kyberswap-solutions/kyberswap-aggregator/developer-guides/README.md)
     * [Execute A Swap With The Aggregator API](kyberswap-solutions/kyberswap-aggregator/developer-guides/execute-a-swap-with-the-aggregator-api.md)
     * [Upgrading To APIv1](kyberswap-solutions/kyberswap-aggregator/developer-guides/upgrading-to-apiv1.md)
+    * [Scaling swap calldata with ScaleHelper](kyberswap-solutions/kyberswap-aggregator/developer-guides/scaling-swap-calldata-with-scalehelper.md)
   * [Aggregator API Specification](kyberswap-solutions/kyberswap-aggregator/aggregator-api-specification/README.md)
     * [EVM Swaps](kyberswap-solutions/kyberswap-aggregator/aggregator-api-specification/evm-swaps.md)
     * [Permit](kyberswap-solutions/kyberswap-aggregator/aggregator-api-specification/permit.md)
