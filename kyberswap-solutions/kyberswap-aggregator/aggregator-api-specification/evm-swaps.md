@@ -4,6 +4,10 @@ description: KyberSwap Aggregator EVM APIs
 
 # EVM Swaps
 
+{% hint style="info" %}
+_Disclaimer: Data provided as-is. Please see the relevant_ [_Developer Guide_](../developer-guides/execute-a-swap-with-the-aggregator-api.md#overview) _for more details_
+{% endhint %}
+
 ## Download OpenAPI specification:
 
 {% file src="../../../.gitbook/assets/KyberSwapAggregator_EVMAPIs_v2.12.0.yaml" %}
@@ -82,17 +86,17 @@ The Aggregator APIs require a chain **name** to be included in the path when cal
 <figure><img src="../../../.gitbook/assets/Aggregator APIv1.jpg" alt=""><figcaption></figcaption></figure>
 
 {% openapi-operation spec="aggregator-api" path="/{chain}/api/v1/routes" method="get" %}
-[OpenAPI aggregator-api](https://4401d86825a13bf607936cc3a9f3897a.r2.cloudflarestorage.com/gitbook-x-prod-openapi/raw/7021a94270560f8aab4e6c37f0a65892f33d03e1a42e077686016fa7ab9fafc4.yaml?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=dce48141f43c0191a2ad043a6888781c%2F20250922%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20250922T080710Z&X-Amz-Expires=172800&X-Amz-Signature=421752b17608e1a4c37dd2dc2e4071e1c9b91d107be7581f602b7811f81c64d3&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
+[OpenAPI aggregator-api](https://4401d86825a13bf607936cc3a9f3897a.r2.cloudflarestorage.com/gitbook-x-prod-openapi/raw/7021a94270560f8aab4e6c37f0a65892f33d03e1a42e077686016fa7ab9fafc4.yaml?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=dce48141f43c0191a2ad043a6888781c%2F20250922%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20250922T085931Z&X-Amz-Expires=172800&X-Amz-Signature=bf35872bfbb29ef2b86e39e4935cdf4486d7a8beaa327f807b4608e0cf54685d&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
 {% endopenapi-operation %}
 
 {% openapi-operation spec="aggregator-api" path="/{chain}/api/v1/route/build" method="post" %}
-[OpenAPI aggregator-api](https://4401d86825a13bf607936cc3a9f3897a.r2.cloudflarestorage.com/gitbook-x-prod-openapi/raw/7021a94270560f8aab4e6c37f0a65892f33d03e1a42e077686016fa7ab9fafc4.yaml?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=dce48141f43c0191a2ad043a6888781c%2F20250922%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20250922T080710Z&X-Amz-Expires=172800&X-Amz-Signature=421752b17608e1a4c37dd2dc2e4071e1c9b91d107be7581f602b7811f81c64d3&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
+[OpenAPI aggregator-api](https://4401d86825a13bf607936cc3a9f3897a.r2.cloudflarestorage.com/gitbook-x-prod-openapi/raw/7021a94270560f8aab4e6c37f0a65892f33d03e1a42e077686016fa7ab9fafc4.yaml?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=dce48141f43c0191a2ad043a6888781c%2F20250922%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20250922T085931Z&X-Amz-Expires=172800&X-Amz-Signature=bf35872bfbb29ef2b86e39e4935cdf4486d7a8beaa327f807b4608e0cf54685d&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
 {% endopenapi-operation %}
 
 ### Legacy
 
 {% openapi-operation spec="aggregator-api" path="/{chain}/route/encode" method="get" %}
-[OpenAPI aggregator-api](https://4401d86825a13bf607936cc3a9f3897a.r2.cloudflarestorage.com/gitbook-x-prod-openapi/raw/7021a94270560f8aab4e6c37f0a65892f33d03e1a42e077686016fa7ab9fafc4.yaml?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=dce48141f43c0191a2ad043a6888781c%2F20250922%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20250922T080710Z&X-Amz-Expires=172800&X-Amz-Signature=421752b17608e1a4c37dd2dc2e4071e1c9b91d107be7581f602b7811f81c64d3&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
+[OpenAPI aggregator-api](https://4401d86825a13bf607936cc3a9f3897a.r2.cloudflarestorage.com/gitbook-x-prod-openapi/raw/7021a94270560f8aab4e6c37f0a65892f33d03e1a42e077686016fa7ab9fafc4.yaml?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=dce48141f43c0191a2ad043a6888781c%2F20250922%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20250922T085931Z&X-Amz-Expires=172800&X-Amz-Signature=bf35872bfbb29ef2b86e39e4935cdf4486d7a8beaa327f807b4608e0cf54685d&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
 {% endopenapi-operation %}
 
 {% hint style="info" %}
