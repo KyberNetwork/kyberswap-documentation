@@ -4,11 +4,11 @@ description: Interacting With KyberSwap Aggregator Router Contract
 
 # Execute A Swap With The Aggregator API
 
+## Overview
+
 {% hint style="info" %}
 _Disclaimer: the calldatas returned in any API responses are provided as is and as available. By using the calldata provided by our API to execute any swap, you acknowledge that you have independently reviewed and verified all transaction details and that you accept and assume full responsibility for all risks, including potential loss of funds, arising from such transactions_
 {% endhint %}
-
-## Overview
 
 KyberSwap maintains a single API specification for all EVM chains:
 
