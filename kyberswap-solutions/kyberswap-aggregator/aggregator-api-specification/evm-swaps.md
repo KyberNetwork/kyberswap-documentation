@@ -6,7 +6,7 @@ description: KyberSwap Aggregator EVM APIs
 
 ## Download OpenAPI specification:
 
-{% file src="../../../.gitbook/assets/KyberSwapAggregator_EVMAPIs_v2.11.0.yaml" %}
+{% file src="../../../.gitbook/assets/KyberSwapAggregator_EVMAPIs_v2.12.0.yaml" %}
 
 {% hint style="success" %}
 **Note on integration: clientID**
@@ -36,6 +36,10 @@ If you're just getting started with the KyberSwap Aggregator, you can refer to o
 
 To support more performant queries and the use of RFQ liquidity sources, KyberSwap highly encourages all integrators to implement the latest API `[V1]` version. While both versions of the API remains backwards compatible, only the `[V1]` APIs will continue to receive updates and can make use of RFQ liquidity sources, and hence developers are highly encouraged to implement the latest `[V1]` APIs to avoid any disruptions as the non-versioned API will eventually be deprecated.
 
+{% hint style="info" %}
+\[V1] `GET` `/routes` API is designed to be performant and real-time, the market moves constantly so it is recommended to not cache routes from client side for more than 5-10 seconds and to refetch a new route before swapping if the current swap is too long ago to avoid potential slippage.
+{% endhint %}
+
 <details>
 
 <summary>API statuses and support</summary>
@@ -64,15 +68,12 @@ The Aggregator APIs require a chain **name** to be included in the path when cal
 * Optimism (ChainID: 10) -> `optimism`
 * Avalanche (ChainID: 43114) -> `avalanche`
 * Base (ChainID: 8453) -> `base`
-* zkSync Era (ChainID: 324) -> `zksync`
-* Fantom (ChainID: 250) -> `fantom`
 * Linea (ChainID: 59144) -> `linea`
-* Scroll (ChainID: 534352) -> `scroll`
 * Mantle (ChainID: 5000) -> `mantle`
-* Blast (ChainID: 81457) -> `blast`
 * Sonic (ChainID: 146) -> `sonic`
 * Berachain (ChainID: 80094) -> `berachain`
 * Ronin (ChainID: 2020) -> `ronin`
+* Unichain (ChainID: 130) -> `unichain`
 * HyperEVM (ChainID: 999) -> `hyperevm`
 {% endhint %}
 
@@ -81,17 +82,17 @@ The Aggregator APIs require a chain **name** to be included in the path when cal
 <figure><img src="../../../.gitbook/assets/Aggregator APIv1.jpg" alt=""><figcaption></figcaption></figure>
 
 {% openapi-operation spec="aggregator-api" path="/{chain}/api/v1/routes" method="get" %}
-[OpenAPI aggregator-api](https://gitbook-x-prod-openapi.4401d86825a13bf607936cc3a9f3897a.r2.cloudflarestorage.com/raw/ab5d11c7e0062e7b9db63557286aec722ff7f6e144c94d31eff4c8acadd75558.txt?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=dce48141f43c0191a2ad043a6888781c%2F20250728%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20250728T075743Z&X-Amz-Expires=172800&X-Amz-Signature=460e3087d3d323b5217daebf67a10ca5e6f183ba249302f3c8ad6130c5c094ae&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
+[OpenAPI aggregator-api](https://4401d86825a13bf607936cc3a9f3897a.r2.cloudflarestorage.com/gitbook-x-prod-openapi/raw/7021a94270560f8aab4e6c37f0a65892f33d03e1a42e077686016fa7ab9fafc4.yaml?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=dce48141f43c0191a2ad043a6888781c%2F20250922%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20250922T080710Z&X-Amz-Expires=172800&X-Amz-Signature=421752b17608e1a4c37dd2dc2e4071e1c9b91d107be7581f602b7811f81c64d3&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
 {% endopenapi-operation %}
 
 {% openapi-operation spec="aggregator-api" path="/{chain}/api/v1/route/build" method="post" %}
-[OpenAPI aggregator-api](https://gitbook-x-prod-openapi.4401d86825a13bf607936cc3a9f3897a.r2.cloudflarestorage.com/raw/ab5d11c7e0062e7b9db63557286aec722ff7f6e144c94d31eff4c8acadd75558.txt?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=dce48141f43c0191a2ad043a6888781c%2F20250728%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20250728T075743Z&X-Amz-Expires=172800&X-Amz-Signature=460e3087d3d323b5217daebf67a10ca5e6f183ba249302f3c8ad6130c5c094ae&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
+[OpenAPI aggregator-api](https://4401d86825a13bf607936cc3a9f3897a.r2.cloudflarestorage.com/gitbook-x-prod-openapi/raw/7021a94270560f8aab4e6c37f0a65892f33d03e1a42e077686016fa7ab9fafc4.yaml?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=dce48141f43c0191a2ad043a6888781c%2F20250922%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20250922T080710Z&X-Amz-Expires=172800&X-Amz-Signature=421752b17608e1a4c37dd2dc2e4071e1c9b91d107be7581f602b7811f81c64d3&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
 {% endopenapi-operation %}
 
 ### Legacy
 
 {% openapi-operation spec="aggregator-api" path="/{chain}/route/encode" method="get" %}
-[OpenAPI aggregator-api](https://gitbook-x-prod-openapi.4401d86825a13bf607936cc3a9f3897a.r2.cloudflarestorage.com/raw/ab5d11c7e0062e7b9db63557286aec722ff7f6e144c94d31eff4c8acadd75558.txt?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=dce48141f43c0191a2ad043a6888781c%2F20250728%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20250728T075743Z&X-Amz-Expires=172800&X-Amz-Signature=460e3087d3d323b5217daebf67a10ca5e6f183ba249302f3c8ad6130c5c094ae&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
+[OpenAPI aggregator-api](https://4401d86825a13bf607936cc3a9f3897a.r2.cloudflarestorage.com/gitbook-x-prod-openapi/raw/7021a94270560f8aab4e6c37f0a65892f33d03e1a42e077686016fa7ab9fafc4.yaml?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=dce48141f43c0191a2ad043a6888781c%2F20250922%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20250922T080710Z&X-Amz-Expires=172800&X-Amz-Signature=421752b17608e1a4c37dd2dc2e4071e1c9b91d107be7581f602b7811f81c64d3&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
 {% endopenapi-operation %}
 
 {% hint style="info" %}
