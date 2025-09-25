@@ -36,9 +36,7 @@ KyberSwap is a fully onchain service. Everyone who creates transactions on the b
 
 **Trading Fees**
 
-KyberSwap does not charge fees to users using the protocol to swap tokens. However Liquidity Providers are allowed to set fees on their liquidity pools and traders who choose to use these pools to perform swaps will need to pay trading fees to the LP, along with any associated network fees.
-
-It should be noted that of these Trading Fees collected by LPs, 10% goes to KyberSwap’s governance DAO, KyberDAO.
+KyberSwap does not charge fees to users using the protocol to swap tokens. However Liquidity Providers are allowed to set fees on their liquidity pools and traders who choose to use these pools to perform swaps will need to pay trading fees to the LP, along with any associated network fees. The output amount that users see returned from KyberSwap Aggregator is already the amount after this fee.
 
 </details>
 
@@ -48,7 +46,7 @@ It should be noted that of these Trading Fees collected by LPs, 10% goes to Kybe
 
 <summary>How do I change slippage tolerance?</summary>
 
-Slippage tolerance for swaps defaults to a conservative 0.5%, but you can [change this in Swap settings](broken-reference/).
+Slippage tolerance for swaps defaults to different values depending on the token pair's categorization, but you can [change this in Swap settings](broken-reference/).
 
 For more information on completing a swap, you can refer to [Instantly Swap At The Best Rates](broken-reference/) for a step-by-step guide.
 

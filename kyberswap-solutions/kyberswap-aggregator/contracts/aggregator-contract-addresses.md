@@ -107,3 +107,11 @@ All KyberSwap Aggregator contracts have been deployed at the same address across
 * **MetaAggregationRouterV2:** [`0x6131B5fae19EA4f9D964eAc0408E4408b66337b5`](https://hyperevmscan.io/address/0x6131b5fae19ea4f9d964eac0408e4408b66337b5)
 
 </details>
+
+<details>
+
+<summary>Plasma (ChainID: 9745)</summary>
+
+* **MetaAggregationRouterV2:** [`0x6131B5fae19EA4f9D964eAc0408E4408b66337b5`](https://plasmascan.to/address/0x6131b5fae19ea4f9d964eac0408e4408b66337b5)
+
+</details>

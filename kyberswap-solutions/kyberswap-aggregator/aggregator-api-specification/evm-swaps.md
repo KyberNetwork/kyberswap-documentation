@@ -79,6 +79,7 @@ The Aggregator APIs require a chain **name** to be included in the path when cal
 * Ronin (ChainID: 2020) -> `ronin`
 * Unichain (ChainID: 130) -> `unichain`
 * HyperEVM (ChainID: 999) -> `hyperevm`
+* Plasma (ChainID: 9745) -> `plasma`
 {% endhint %}
 
 ### &#x20;Latest
@@ -86,17 +87,17 @@ The Aggregator APIs require a chain **name** to be included in the path when cal
 <figure><img src="../../../.gitbook/assets/Aggregator APIv1.jpg" alt=""><figcaption></figcaption></figure>
 
 {% openapi-operation spec="aggregator-api" path="/{chain}/api/v1/routes" method="get" %}
-[OpenAPI aggregator-api](https://4401d86825a13bf607936cc3a9f3897a.r2.cloudflarestorage.com/gitbook-x-prod-openapi/raw/7021a94270560f8aab4e6c37f0a65892f33d03e1a42e077686016fa7ab9fafc4.yaml?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=dce48141f43c0191a2ad043a6888781c%2F20250922%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20250922T085931Z&X-Amz-Expires=172800&X-Amz-Signature=bf35872bfbb29ef2b86e39e4935cdf4486d7a8beaa327f807b4608e0cf54685d&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
+[OpenAPI aggregator-api](https://4401d86825a13bf607936cc3a9f3897a.r2.cloudflarestorage.com/gitbook-x-prod-openapi/raw/7021a94270560f8aab4e6c37f0a65892f33d03e1a42e077686016fa7ab9fafc4.yaml?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=dce48141f43c0191a2ad043a6888781c%2F20250925%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20250925T103337Z&X-Amz-Expires=172800&X-Amz-Signature=d2b9d52b2ebb9cdd3ceec563133d719e2d155743aff9e852d529c787c6f2a588&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
 {% endopenapi-operation %}
 
 {% openapi-operation spec="aggregator-api" path="/{chain}/api/v1/route/build" method="post" %}
-[OpenAPI aggregator-api](https://4401d86825a13bf607936cc3a9f3897a.r2.cloudflarestorage.com/gitbook-x-prod-openapi/raw/7021a94270560f8aab4e6c37f0a65892f33d03e1a42e077686016fa7ab9fafc4.yaml?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=dce48141f43c0191a2ad043a6888781c%2F20250922%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20250922T085931Z&X-Amz-Expires=172800&X-Amz-Signature=bf35872bfbb29ef2b86e39e4935cdf4486d7a8beaa327f807b4608e0cf54685d&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
+[OpenAPI aggregator-api](https://4401d86825a13bf607936cc3a9f3897a.r2.cloudflarestorage.com/gitbook-x-prod-openapi/raw/7021a94270560f8aab4e6c37f0a65892f33d03e1a42e077686016fa7ab9fafc4.yaml?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=dce48141f43c0191a2ad043a6888781c%2F20250925%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20250925T103337Z&X-Amz-Expires=172800&X-Amz-Signature=d2b9d52b2ebb9cdd3ceec563133d719e2d155743aff9e852d529c787c6f2a588&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
 {% endopenapi-operation %}
 
 ### Legacy
 
 {% openapi-operation spec="aggregator-api" path="/{chain}/route/encode" method="get" %}
-[OpenAPI aggregator-api](https://4401d86825a13bf607936cc3a9f3897a.r2.cloudflarestorage.com/gitbook-x-prod-openapi/raw/7021a94270560f8aab4e6c37f0a65892f33d03e1a42e077686016fa7ab9fafc4.yaml?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=dce48141f43c0191a2ad043a6888781c%2F20250922%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20250922T085931Z&X-Amz-Expires=172800&X-Amz-Signature=bf35872bfbb29ef2b86e39e4935cdf4486d7a8beaa327f807b4608e0cf54685d&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
+[OpenAPI aggregator-api](https://4401d86825a13bf607936cc3a9f3897a.r2.cloudflarestorage.com/gitbook-x-prod-openapi/raw/7021a94270560f8aab4e6c37f0a65892f33d03e1a42e077686016fa7ab9fafc4.yaml?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=dce48141f43c0191a2ad043a6888781c%2F20250925%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20250925T103337Z&X-Amz-Expires=172800&X-Amz-Signature=d2b9d52b2ebb9cdd3ceec563133d719e2d155743aff9e852d529c787c6f2a588&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
 {% endopenapi-operation %}
 
 {% hint style="info" %}
@@ -104,7 +105,7 @@ The Aggregator APIs require a chain **name** to be included in the path when cal
 
 For every swap executed by the KyberSwap Aggregator, users will be able to see an estimated output amount based on the current price as well as a minimum received that takes into account the [max slippage setting](../../kyberswap-interface/user-guides/instantly-swap-at-superior-rates.md#customizing-trade-parameters). KyberSwap Aggregator will always strive to execute swaps at the estimated output amount and revert the transaction if the minimum received amount is not achieved.
 
-In the event that the market moves in favor of the trade which results in a surplus of tokens above the estimated output amount (i.e positive slippage), this surplus will initially accrue to KyberSwap. Surplus sharing programs will be explored as the KyberSwap ecosystem grows to be more self-sufficient. **Critically, traders will always get the estimated output amount as long as the swap is executed at or above the current rate**.
+In the event that the market moves in favor of the trade which results in a surplus of tokens above the estimated output amount (i.e positive slippage), this surplus will initially accrue to KyberSwap. Surplus sharing programs will be explored as the KyberSwap ecosystem grows to be more self-sufficient. _**Critically, traders are guaranteed at least the minimum received amount (the estimated output adjusted by the selected max slippage) that they confirmed before submitting the transaction.**_
 
 Note that this surplus is different from fees as it only applies in cases where the executed swap rate is better than the estimated rate at point of transaction confirmation. Please refer to [slippage](../../../getting-started/foundational-topics/decentralized-finance/slippage.md) for more information.
 {% endhint %}
