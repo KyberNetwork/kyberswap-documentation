@@ -97,6 +97,12 @@
     * [Taker APIs](kyberswap-solutions/limit-order/limit-order-api-specification/taker-apis.md)
   * [FAQ](kyberswap-solutions/limit-order/faq.md)
 * [KyberSwap OnChain Price Service](kyberswap-solutions/kyberswap-onchain-price-service.md)
+* [KyberSwap FairFlow](kyberswap-solutions/kyberswap-fairflow/README.md)
+  * [Problem Statement](kyberswap-solutions/kyberswap-fairflow/problem-statement.md)
+  * [Solution (FairFlow)](kyberswap-solutions/kyberswap-fairflow/solution-fairflow.md)
+  * [FairFlow Details](kyberswap-solutions/kyberswap-fairflow/fairflow-details.md)
+  * [Experiment Results](kyberswap-solutions/kyberswap-fairflow/experiment-results.md)
+  * [FAQ](kyberswap-solutions/kyberswap-fairflow/faq.md)
 * [Fee Schedule](kyberswap-solutions/fee-schedule.md)
 
 ## Governance

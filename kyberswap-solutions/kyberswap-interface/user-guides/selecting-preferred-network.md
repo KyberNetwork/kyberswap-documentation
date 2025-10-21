@@ -100,7 +100,7 @@ KyberSwap enables users to select MEV protected RPCs. Please refer to [MEV prote
 
 If this is your first time connecting to a chain, your wallet provider should display the details of the chain for your verification. The below is an example of adding the Polygon chain and confirming the chain switch using MetaMask.
 
-<figure><img src="../../../.gitbook/assets/image (3) (1).png" alt=""><figcaption><p>Adding a Polygon chain to MetaMask</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption><p>Adding a Polygon chain to MetaMask</p></figcaption></figure>
 
 <figure><img src="../../../.gitbook/assets/image (30).png" alt=""><figcaption><p>Switch to Polygon chain on Metamask</p></figcaption></figure>
 

@@ -12,7 +12,7 @@ KyberAI was created with the intention of empowering our users with the data ins
 
 ## Overview
 
-<figure><img src="../../../.gitbook/assets/image (4).png" alt=""><figcaption><p>KyberScore</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4) (1).png" alt=""><figcaption><p>KyberScore</p></figcaption></figure>
 
 In keeping to the permissionless and transparent ethos of DeFi, KyberScore was a key component of our solution to democratize data insights for all. A single number that could be easily understood and utilized by traders of all levels, whether it was an advanced trader looking to filter potential opportunities for further analysis or a new trader trying to discover undervalued tokens. While condensing all the complexities of a token and its market dynamics into a single number seems overly bold, the research team here at KyberSwap has managed to leverage the latest advancements in machine learning to create a provably accurate general prediction model. In other words, AI-powered trading insights for all!
 
