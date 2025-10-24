@@ -12,7 +12,7 @@ KyberAI was created with the intention of empowering our users with the data ins
 
 ## Overview
 
-<figure><img src="../../../.gitbook/assets/image (4) (1).png" alt=""><figcaption><p>KyberScore</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4) (1) (1).png" alt=""><figcaption><p>KyberScore</p></figcaption></figure>
 
 In keeping to the permissionless and transparent ethos of DeFi, KyberScore was a key component of our solution to democratize data insights for all. A single number that could be easily understood and utilized by traders of all levels, whether it was an advanced trader looking to filter potential opportunities for further analysis or a new trader trying to discover undervalued tokens. While condensing all the complexities of a token and its market dynamics into a single number seems overly bold, the research team here at KyberSwap has managed to leverage the latest advancements in machine learning to create a provably accurate general prediction model. In other words, AI-powered trading insights for all!
 
@@ -80,7 +80,7 @@ Note that due to the nature of stablecoins being a fixed unit-of-account, KyberS
 
 Based on our extensive testing, KyberScore has consistently managed to anticipate the relative performance of a token over the next 24 hours. The graphs below highlights this fact by comparing the KyberScore for BTC against its historical price over various intervals. Note that the on-chain data used to calculate BTC's KyberScore is based on the WBTC data across the supported EVM chains.
 
-<figure><img src="../../../.gitbook/assets/image (19).png" alt=""><figcaption><p>Comparing KyberScore with BTC historical price movements for Sept 2022</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (19) (1).png" alt=""><figcaption><p>Comparing KyberScore with BTC historical price movements for Sept 2022</p></figcaption></figure>
 
 <figure><img src="../../../.gitbook/assets/image (129).png" alt=""><figcaption><p>Comparing KyberScore with BTC historical price movements for Oct 2022</p></figcaption></figure>
 

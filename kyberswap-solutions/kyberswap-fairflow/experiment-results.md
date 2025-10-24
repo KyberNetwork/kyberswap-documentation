@@ -6,4 +6,4 @@ The results show that Uniswap v4 FairFlow consistently delivers a higher Earning
 
 After 200 hours of experiment, the APR of the Uniswap v4 FairFlow 0.05% pool reached nearly 80%.
 
-<figure><img src="../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (6) (1).png" alt=""><figcaption></figcaption></figure>

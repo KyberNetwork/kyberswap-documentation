@@ -102,6 +102,7 @@
   * [Solution (FairFlow)](kyberswap-solutions/kyberswap-fairflow/solution-fairflow.md)
   * [FairFlow Details](kyberswap-solutions/kyberswap-fairflow/fairflow-details.md)
   * [Experiment Results](kyberswap-solutions/kyberswap-fairflow/experiment-results.md)
+  * [Position APR Estimation](kyberswap-solutions/kyberswap-fairflow/position-apr-estimation.md)
   * [FAQ](kyberswap-solutions/kyberswap-fairflow/faq.md)
 * [Fee Schedule](kyberswap-solutions/fee-schedule.md)
 

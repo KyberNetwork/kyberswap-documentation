@@ -6,7 +6,7 @@ description: Buy crypto easily with over 50+ currencies
 
 ## Introduction
 
-KyberSwap has integrated the Transak toolkit to enable our customers to conveniently purchase crypto with fiat directly on [https://kyberswap.com/buy-crypto](https://kyberswap.com/buy-crypto).&#x20;
+KyberSwap has integrated the Transak toolkit to enable our customers to conveniently purchase crypto with fiat directly on [https://kyberswap.com/buy-crypto](https://kyberswap.com/buy-crypto).
 
 **For any support on your transaction, please contact** [**Transak**](https://support.transak.com/hc/en-us)**.** More information can be found on our third-party integration [page](../../../reference/third-party-integrations.md).
 
@@ -16,14 +16,14 @@ KyberSwap has integrated the Transak toolkit to enable our customers to convenie
 
 <summary>Trader Flow</summary>
 
-1. [Connect Your Wallet ](connect-your-wallet.md)
-2. [Switching Networks ](selecting-preferred-network.md)
+1. [Connect Your Wallet](connect-your-wallet.md)
+2. [Switching Networks](selecting-preferred-network.md)
 3. Get Tokens
    * **Get Crypto With Fiat** **<-**
    * [Bridge Your Tokens](bridge-your-assets-across-multiple-chains.md)
 4. Swap Tokens
-   * [Instantly Swap At Superior Rates ](instantly-swap-at-superior-rates.md)
-   * [Swap At Your Preferred Rates ](trade-at-your-preferred-rates.md)
+   * [Instantly Swap At Superior Rates](instantly-swap-at-superior-rates.md)
+   * [Swap At Your Preferred Rates](trade-at-your-preferred-rates.md)
    * [Swap Between Different Tokens Across Chains](swap-between-different-tokens-across-chains.md)
 
 </details>
@@ -47,7 +47,7 @@ For ease of communication, KyberSwap is referred to as "we" in this disclaimer. 
 
 ## Transak
 
-Transak is a developer integration toolkit that enables onboarding of users to buy/sell crypto in any blockchain app, website or web plugin. Transak helps onboard mainstream users into dApp, protocol, game or wallet app.&#x20;
+Transak is a developer integration toolkit that enables onboarding of users to buy/sell crypto in any blockchain app, website or web plugin. Transak helps onboard mainstream users into dApp, protocol, game or wallet app.
 
 Click here for more information on [**Transak**](https://docs.transak.com/docs/what-is-transak)**.**
 
@@ -65,7 +65,7 @@ For support, please contact Transak [**here**](https://support.transak.com/)**.*
 
 Click [**here**](https://transak.com/blog/kyberswap-now-integrated-with-transak)[ ](https://blog.kyber.network/kyberswap-launches-multichain-integration-39e12c42fb73)for the official announcement.
 
-## Buy crypto easily with over 50+ currencies&#x20;
+## Buy crypto easily with over 50+ currencies
 
 ### Step 1: Navigate to the buy crypto interface
 
@@ -113,7 +113,7 @@ Input the verification code received and you will also have to agree to Transak'
 
 ### Step 7: Submit KYC details
 
-You will then be prompted to enter personally identifiable information (personal details, address, ID, digital face verification).&#x20;
+You will then be prompted to enter personally identifiable information (personal details, address, ID, digital face verification).
 
 Do note that as this transaction involves transaction in fiat, **KYC is required for the transaction to be processed by Transak**. **The handling of KYC is exclusively performed by Transak, and KyberSwap does not retain any KYC information.**
 
@@ -135,7 +135,7 @@ Upon receiving the verification success email, an "Order Now" button will then b
 
 Following successful KYC, you will then be prompted for your payment details. In this case, the payment method selected is via credit/debit card.
 
-<figure><img src="../../../.gitbook/assets/image (18).png" alt=""><figcaption><p>Payment details</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (18) (1).png" alt=""><figcaption><p>Payment details</p></figcaption></figure>
 
 ### Step 9: Confirm your order
 

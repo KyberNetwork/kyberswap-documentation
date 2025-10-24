@@ -13,5 +13,5 @@ To simplify the concept, we have a basic example here (some technical details ha
 
 _Note: This simplified example is for conceptual illustration only. The figures are not based on any simulation. Refer to the table below for actual simulation results._
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (19).png" alt=""><figcaption></figcaption></figure>
 

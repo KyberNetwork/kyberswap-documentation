@@ -47,7 +47,7 @@ With price alerts, users are able to monitor price actions and adjust their trad
 
 ### Elastic Active Range Alerts
 
-<figure><img src="../../../.gitbook/assets/image (4) (1) (1).png" alt=""><figcaption><p>Liquidity position notifications</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1).png" alt=""><figcaption><p>Liquidity position notifications</p></figcaption></figure>
 
 [Create an Elastic pool position](broken-reference/) and receive notifications whenever your position goes in or out of range. Maximize your yields by timing your liquidity [removals](broken-reference/) and [additions](broken-reference/) according to the markets.
 

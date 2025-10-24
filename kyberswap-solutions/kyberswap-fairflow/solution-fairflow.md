@@ -6,7 +6,7 @@ Instead of allowing arbitrage profits to be fully captured by external arbitrage
 
 This is made possible because the KyberSwap Aggregator is the only taker for FF pools, blocking external arbitrageurs from fully extracting value. As a result, the majority of arbitrage profits generated within FF pools are captured by the FF hook and then redistributed to LPs.
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Here’s a simple explanation and example to help you understand how FF works:
 
@@ -18,7 +18,7 @@ Here’s a simple explanation and example to help you understand how FF works:
     _Note: From the beginning, the taker received a quote that includes the fair market output so 0.388 is what they expected_
 * In this case, KyberSwap Aggregator is the only taker for FF pool so this Equilibrium Gain (EG) is absorbed by FF hook, rather than going to external arbitragers, and later redistributed to LPs via EG Sharing Program.
 
-<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 **How is Equilibrium Gain (EG) actually distributed back to LPs?**
 
