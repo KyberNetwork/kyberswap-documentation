@@ -151,7 +151,7 @@
       * [Anti-Sniping Mechanism](reference/legacy/kyberswap-elastic/concepts/anti-sniping-mechanism.md)
       * [Tick-Based Farming](reference/legacy/kyberswap-elastic/concepts/tick-based-farming.md)
       * [Elastic Zap](reference/legacy/kyberswap-elastic/concepts/elastic-zap.md)
-      * [TWAP Oracle](reference/legacy/kyberswap-elastic/concepts/twap-oracle.md)
+      * [TWAP](reference/legacy/kyberswap-elastic/concepts/twap-oracle.md)
       * [Elastic APR Calculations](reference/legacy/kyberswap-elastic/concepts/apr-calculations.md)
     * [Contracts](reference/legacy/kyberswap-elastic/contracts/README.md)
       * [Elastic Contract Repo](reference/legacy/kyberswap-elastic/contracts/elastic-contract-repo.md)
