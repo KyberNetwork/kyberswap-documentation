@@ -1,5 +1,5 @@
 ---
-description: For modifying effective amount in on-chain
+description: For modifying effective amount in on-chain (at most ±5%)
 ---
 
 # Scaling swap calldata with ScaleHelper
@@ -76,9 +76,11 @@ To avoid including such DEXes, our API provides a parameter called [`onlyScalabl
 
 Note: If you set `onlyScalableSources` to `true` and try to **scale up** with a DEX that only supports **scaling down**, it will return empty data.
 
+The KyberSwap router also has restrictions on the maximum scaling allowed. The current limit is set at ±5% (95%–105%)
+
 **Tip:**
 
-* You can request calldata with a slightly higher amount (5–10%) than needed, then use the scale helper to scale it down accordingly.
+* You can request calldata with a slightly higher amount (2–4%) than needed, then use the scale helper to scale it down accordingly.
 * If you need to scale up more than 2%, it should exclude some sources:
   * native v1 + v2
 
