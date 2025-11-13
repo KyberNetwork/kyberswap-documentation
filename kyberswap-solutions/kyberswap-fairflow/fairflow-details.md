@@ -29,3 +29,5 @@ EG sharing for each position will be calculated and be displayed in near real-ti
 The rewards from the completed cycle will enter a validation period of up to 48 hours. Once validated, our internal system will transfer the accumulated EG sharing funds to the distribution smart contract.
 
 The accumulated EG sharing will be split between the LP Pool and Kyber (as the hook owner), with 70% allocated to the LP Pool and 30% to Kyber (This ratio is subject to change based on prevailing policies or governance decisions).
+
+_Note: only selected pools that are listed in our EG Sharing program will be eligible to receive EG Sharing._
