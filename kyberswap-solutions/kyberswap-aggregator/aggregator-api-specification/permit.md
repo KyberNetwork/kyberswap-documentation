@@ -57,7 +57,7 @@ const message = {
 
 ## Example
 
-```mjs
+```javascript
 import { ethers } from "ethers";
 import fetch from "node-fetch";
 
