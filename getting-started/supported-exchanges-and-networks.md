@@ -24,15 +24,15 @@ For developers integrating with the [KyberSwap Aggregator](../kyberswap-solution
 | EVM      | Berachain (80094)      | ✅              | ✅               | ✅       | ✅                    |
 | EVM      | Sonic (146)            | ✅              | ✅               | ✅       | ✅                    |
 | EVM      | Ronin (2020)           | ✅              | ✅               | ✅       | ✅                    |
-| EVM      | HyperEVM (999)         | ✅              | ✅               |         | ✅                    |
-| EVM      | Plasma (9745)          | ✅              |                 |         | ✅                    |
 | EVM      | Base (8453)            | ✅              | ✅               | ✅       | ✅                    |
 | EVM      | Arbitrum (42161)       | ✅              | ✅               | ✅       | ✅                    |
 | EVM      | Optimism (10)          | ✅              | ✅               | ✅       | ✅                    |
 | EVM      | Polygon POS (137)      | ✅              | ✅               | ✅       | ✅                    |
 | EVM      | Unichain               | ✅              | ✅               |         | ✅                    |
 | EVM      | Linea (59144)          | ✅              | ✅               | ✅       | ✅                    |
+| EVM      | HyperEVM (999)         | ✅              | ✅               |         | ✅                    |
 | EVM      | Mantle (5000)          | ✅              | ✅               |         | ✅                    |
+| EVM      | Plasma (9745)          | ✅              |                 |         | ✅                    |
 | EVM      | Etherlink (42793)      | ✅              |                 |         | ✅                    |
 | EVM      | zkSync                 |                |                 |         | ✅                    |
 | EVM      | Scroll                 |                |                 |         | ✅                    |
