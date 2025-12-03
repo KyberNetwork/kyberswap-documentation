@@ -1,3 +1,7 @@
+---
+description: In Code We Trust
+---
+
 # Deployment Contracts
 
 This page contains all FairFlow deployment contracts, including:

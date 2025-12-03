@@ -13,15 +13,15 @@ KyberSwap Limit Order was created to enable our users to trade on their own term
 No more having to monitor the markets around the clock waiting for your target price to be reached. Trades are always settled when prices favor the trader, meaning that users might actually receive more tokens than expected. Critically, users have complete ownership of their assets until a matching trade has been found.
 
 {% hint style="info" %}
-#### Supported tokens and chains
+**Supported tokens and chains**
 
 KyberSwap Limit Orders support all [ERC20](../../getting-started/foundational-topics/decentralized-finance/tokens.md#token-standards) tokens and the full list of supported chains can be found on [Supported Exchanges And Networks](../../getting-started/supported-exchanges-and-networks.md).
 {% endhint %}
 
-The [KyberSwap Interface](https://kyberswap.com/limit/) provides a convenient interface to easily create, modify, and track all your orders. KyberSwap has also implemented a suite of Limit Order APIs that enable developers to  seamlessly integrate limit order functionality within their apps.
+The [KyberSwap Interface](https://kyberswap.com/limit/) provides a convenient interface to easily create, modify, and track all your orders. KyberSwap has also implemented a suite of Limit Order APIs that enable developers to seamlessly integrate limit order functionality within their apps.
 
 {% hint style="info" %}
-#### Out of scope
+**Out of scope**
 
 _We will not provide an order book interface for users to visualize the limit order (_[_example_](https://dex.raydium.io/)_). This is something we can consider in the future_
 {% endhint %}
@@ -59,6 +59,6 @@ To increase the likelihood that limit orders will be filled, KyberSwap Limit Ord
 
 * [Explore key Limit Order concepts](concepts/)
 * [Create an order using the Limit Order API](limit-order-api-specification/)
-* [View Limit Order contract code and addresses](contracts/)
+* [View Limit Order contract code and addresses](contracts.md)
 
 </details>

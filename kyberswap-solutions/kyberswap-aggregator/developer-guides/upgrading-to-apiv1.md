@@ -18,7 +18,7 @@ As part of the APIv1 upgrade, querying of the route data and the encoded data ha
 
 Due to this functional separation, applications have more flexibility when handling route refreshes prior to user confirming the swap route. For example, if rates need to be refreshed, the application will just have to query the APIv1 [`GET`](../aggregator-api-specification/evm-swaps.md#chain-api-v1-routes) endpoint which will return just the route summary. As the encoded data does not have to be processed at this stage, responses are much faster and redundant encodings are avoided.
 
-Moreover, given the reduced latency for each call in APIv1, this reduces the likelihood that the returned data will be stale hence mitigating transaction failure risks. Routes are secured (i.e. "locked-in") via the APIv1 [`POST`](../aggregator-api-specification/evm-swaps.md#chain-api-v1-route-build) which returns the encoded data to be sent to the [`MetaAggregationRouterV2`](../contracts/aggregator-contract-addresses.md) contract.
+Moreover, given the reduced latency for each call in APIv1, this reduces the likelihood that the returned data will be stale hence mitigating transaction failure risks. Routes are secured (i.e. "locked-in") via the APIv1 [`POST`](../aggregator-api-specification/evm-swaps.md#chain-api-v1-route-build) which returns the encoded data to be sent to the [`MetaAggregationRouterV2`](/broken/pages/jGSQwkNNFqLTnHbPExjE) contract.
 
 ### Non-versioned API swap flow
 

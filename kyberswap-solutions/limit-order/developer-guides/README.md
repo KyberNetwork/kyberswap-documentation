@@ -12,7 +12,7 @@ The guides in the following section are targeted at application developers as we
 
 KyberSwap Limit Orders implements a hybrid [Off-Chain Relay, On-Chain Settlement](../concepts/off-chain-relay.md) design whereby Makers pre-commit to orders off-chain and Takers execute order settlement on-chain. The KyberSwap Limit Order Service exposes a set of Maker and Taker APIs which enable gasless management of limit orders secured by the option to settle on-chain. When settling orders on-chain, KyberSwap Limit Order provides the relevant APIs required to encode the call data to be sent to the Limit Order smart contracts.
 
-Please refer to [Limit Order Contract Addresses](../contracts/limit-order-contract-addresses.md) for the full list of contracts which have been deployed across the supported chains.
+Please refer to [Limit Order Contract Addresses](/broken/pages/R8A83AxHt39tquHs7Yp1) for the full list of contracts which have been deployed across the supported chains.
 
 ## Next steps
 
