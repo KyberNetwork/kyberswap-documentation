@@ -55,7 +55,7 @@
   * [Aggregator API Specification](kyberswap-solutions/kyberswap-aggregator/aggregator-api-specification/README.md)
     * [EVM Swaps](kyberswap-solutions/kyberswap-aggregator/aggregator-api-specification/evm-swaps.md)
     * [Permit](kyberswap-solutions/kyberswap-aggregator/aggregator-api-specification/permit.md)
-  * [Contracts](kyberswap-solutions/kyberswap-aggregator/contracts/README.md)
+  * [Deployment Contracts](kyberswap-solutions/kyberswap-aggregator/contracts/README.md)
     * [Aggregator Contract Addresses](kyberswap-solutions/kyberswap-aggregator/contracts/aggregator-contract-addresses.md)
   * [DEX IDs](kyberswap-solutions/kyberswap-aggregator/dex-ids.md)
   * [Subgraphs](kyberswap-solutions/kyberswap-aggregator/subgraphs.md)
