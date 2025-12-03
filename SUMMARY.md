@@ -101,7 +101,7 @@
   * [Problem Statement](kyberswap-solutions/kyberswap-fairflow/problem-statement.md)
   * [Solution (FairFlow)](kyberswap-solutions/kyberswap-fairflow/solution-fairflow.md)
   * [FairFlow Details](kyberswap-solutions/kyberswap-fairflow/fairflow-details.md)
-  * [Deployment Contract](kyberswap-solutions/kyberswap-fairflow/deployment-contract.md)
+  * [Deployment Contracts](kyberswap-solutions/kyberswap-fairflow/deployment-contracts.md)
   * [Experiment Results](kyberswap-solutions/kyberswap-fairflow/experiment-results.md)
   * [Position APR Estimation](kyberswap-solutions/kyberswap-fairflow/position-apr-estimation.md)
   * [FAQ](kyberswap-solutions/kyberswap-fairflow/faq.md)
