@@ -2,13 +2,11 @@
 
 1. **Introduction**\
    By using the Sites or the Services, a Transaction Fee may be charged for each transaction executed, for the use of or execution of transactions on a blockchain network or in connection with the Services. Therefore, in addition to the network fees associated with their transactions, KyberSwap may charge a Trading Fee depending on the product being used. This Trading Fee helps sustain the protocol, reward liquidity providers, and support order execution on-chain. The Fee Schedule below provides details of the specific fee for each product on KyberSwap.
-2.  **Fee Summary Table**\
-
+2.  **Fee Summary Table**<br>
 
     <table><thead><tr><th align="center">Product</th><th width="163" align="center">Fee Type</th><th align="center">Fee Rate</th><th align="center" valign="middle">Note</th></tr></thead><tbody><tr><td align="center">Swap</td><td align="center">No fee</td><td align="center">No fee</td><td align="center" valign="middle"></td></tr><tr><td align="center">Limit Order</td><td align="center">Fixed</td><td align="center">0.01% - 1%</td><td align="center" valign="middle">depends on volatility level of the tokens</td></tr><tr><td align="center">Earn</td><td align="center">Fixed</td><td align="center">0.01% - 0.25%</td><td align="center" valign="middle"></td></tr><tr><td align="center">Widget/ iFrame</td><td align="center">Variable</td><td align="center">Variable</td><td align="center" valign="middle">Configured by protocol using (not by KyberSwap)</td></tr><tr><td align="center">Other value-added service (Market Overview, Analytics, Token Checker, and MEV Protection)</td><td align="center">No fee</td><td align="center">No fee</td><td align="center" valign="middle"></td></tr></tbody></table>
 
-    \
-
+    <br>
 3.  **Product-Specific Fee Details**
 
     1.  **Swap**
@@ -130,8 +128,7 @@
         | Common pair     | 0.1%         |
         | Exotic pair     | 0.25%        |
 
-        * Please refer to the example file below for a list of PancakeSwap v3 pools for each of the category above. PancakeSwap v3 pools not in the list belongs to the "Exotic pair" category.\
-
+        * Please refer to the example file below for a list of PancakeSwap v3 pools for each of the category above. PancakeSwap v3 pools not in the list belongs to the "Exotic pair" category.<br>
 
         **Partner fees**
 
@@ -150,4 +147,4 @@ _Additional notes:_
 _\*For Third Party Integrated Services, users are responsible for complying with the third party's fee schedule._
 
 _\*\*This Fee Schedule may be updated from time to time by KyberSwap. Please refer to our Terms of Use for further details._\
-\
+<br>
