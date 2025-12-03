@@ -128,6 +128,6 @@ All KyberSwap Aggregator contracts have been deployed at the same address across
 
 <summary>Monad (ChainID: 143)</summary>
 
-* **MetaAggregationRouterV2:** [`0x6131B5fae19EA4f9D964eAc0408E4408b66337b5`](https://explorer.etherlink.com/address/0x6131B5fae19EA4f9D964eAc0408E4408b66337b5)
+* **MetaAggregationRouterV2:** [`0x6131B5fae19EA4f9D964eAc0408E4408b66337b5`](https://monadscan.com/address/0x6131B5fae19EA4f9D964eAc0408E4408b66337b5)
 
 </details>
