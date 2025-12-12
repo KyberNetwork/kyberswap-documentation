@@ -11,6 +11,7 @@ All KyberSwap Aggregator contracts have been deployed at the same address across
 <summary>Ethereum (ChainID: 1)</summary>
 
 * **MetaAggregationRouterV2:** [`0x6131B5fae19EA4f9D964eAc0408E4408b66337b5`](https://etherscan.io/address/0x6131B5fae19EA4f9D964eAc0408E4408b66337b5)
+* **InputScalingHelperV2:** [`0x2f577A41BeC1BE1152AeEA12e73b7391d15f655D`](https://etherscan.io/address/0x2f577A41BeC1BE1152AeEA12e73b7391d15f655D)
 
 </details>
 
@@ -19,6 +20,7 @@ All KyberSwap Aggregator contracts have been deployed at the same address across
 <summary>BSC (ChainID: 56)</summary>
 
 * **MetaAggregationRouterV2:** [`0x6131B5fae19EA4f9D964eAc0408E4408b66337b5`](https://bscscan.com/address/0x6131B5fae19EA4f9D964eAc0408E4408b66337b5)
+* **InputScalingHelperV2:** [`0x2f577A41BeC1BE1152AeEA12e73b7391d15f655D`](https://bscscan.com/address/0x2f577A41BeC1BE1152AeEA12e73b7391d15f655D)
 
 </details>
 
@@ -27,6 +29,7 @@ All KyberSwap Aggregator contracts have been deployed at the same address across
 <summary>Arbitrum (ChainID: 42161)</summary>
 
 * **MetaAggregationRouterV2:** [`0x6131B5fae19EA4f9D964eAc0408E4408b66337b5`](https://arbiscan.io/address/0x6131B5fae19EA4f9D964eAc0408E4408b66337b5)
+* **InputScalingHelperV2:** [`0x2f577A41BeC1BE1152AeEA12e73b7391d15f655D`](https://arbiscan.io/address/0x2f577A41BeC1BE1152AeEA12e73b7391d15f655D)
 
 </details>
 
@@ -35,6 +38,7 @@ All KyberSwap Aggregator contracts have been deployed at the same address across
 <summary>Polygon PoS (ChainID: 137)</summary>
 
 * **MetaAggregationRouterV2:** [`0x6131B5fae19EA4f9D964eAc0408E4408b66337b5`](https://polygonscan.com/address/0x6131B5fae19EA4f9D964eAc0408E4408b66337b5)
+* **InputScalingHelperV2:** [`0x2f577A41BeC1BE1152AeEA12e73b7391d15f655D`](https://polygonscan.com/address/0x2f577A41BeC1BE1152AeEA12e73b7391d15f655D)
 
 </details>
 
@@ -43,6 +47,7 @@ All KyberSwap Aggregator contracts have been deployed at the same address across
 <summary>Optimism (ChainID: 10)</summary>
 
 * **MetaAggregationRouterV2:** [`0x6131B5fae19EA4f9D964eAc0408E4408b66337b5`](https://optimistic.etherscan.io/address/0x6131B5fae19EA4f9D964eAc0408E4408b66337b5)
+* **InputScalingHelperV2:** [`0x2f577A41BeC1BE1152AeEA12e73b7391d15f655D`](https://optimistic.etherscan.io/address/0x2f577A41BeC1BE1152AeEA12e73b7391d15f655D)
 
 </details>
 
@@ -50,7 +55,8 @@ All KyberSwap Aggregator contracts have been deployed at the same address across
 
 <summary>Avalanche (ChainID: 43114)</summary>
 
-* **MetaAggregationRouterV2:** [`0x6131B5fae19EA4f9D964eAc0408E4408b66337b5`](https://snowtrace.io/address/0x6131B5fae19EA4f9D964eAc0408E4408b66337b5)
+* **MetaAggregationRouterV2:** [`0x6131B5fae19EA4f9D964eAc0408E4408b66337b5`](https://snowscan.xyz/address/0x6131B5fae19EA4f9D964eAc0408E4408b66337b5)
+* **InputScalingHelperV2:** [`0x2f577A41BeC1BE1152AeEA12e73b7391d15f655D`](https://snowscan.xyz/address/0x2f577A41BeC1BE1152AeEA12e73b7391d15f655D)
 
 </details>
 
@@ -59,6 +65,7 @@ All KyberSwap Aggregator contracts have been deployed at the same address across
 <summary>Base (ChainID: 8453)</summary>
 
 * **MetaAggregationRouterV2:** [`0x6131B5fae19EA4f9D964eAc0408E4408b66337b5`](https://basescan.org/address/0x6131B5fae19EA4f9D964eAc0408E4408b66337b5)
+* **InputScalingHelperV2:** [`0x2f577A41BeC1BE1152AeEA12e73b7391d15f655D`](https://basescan.org/address/0x2f577A41BeC1BE1152AeEA12e73b7391d15f655D)
 
 </details>
 
@@ -66,7 +73,8 @@ All KyberSwap Aggregator contracts have been deployed at the same address across
 
 <summary>Mantle (ChainID: 5000)</summary>
 
-* **MetaAggregationRouterV2:** [`0x6131B5fae19EA4f9D964eAc0408E4408b66337b5`](https://explorer.mantle.xyz/address/0x6131B5fae19EA4f9D964eAc0408E4408b66337b5)
+* **MetaAggregationRouterV2:** [`0x6131B5fae19EA4f9D964eAc0408E4408b66337b5`](https://mantlescan.xyz/address/0x6131B5fae19EA4f9D964eAc0408E4408b66337b5)
+* **InputScalingHelperV2:** [`0x2f577A41BeC1BE1152AeEA12e73b7391d15f655D`](https://mantlescan.xyz/address/0x2f577A41BeC1BE1152AeEA12e73b7391d15f655D)
 
 </details>
 
@@ -74,7 +82,8 @@ All KyberSwap Aggregator contracts have been deployed at the same address across
 
 <summary>Linea (ChainID: 59144)</summary>
 
-* **MetaAggregationRouterV2:** [`0x6131B5fae19EA4f9D964eAc0408E4408b66337b5`](https://explorer.linea.build/address/0x6131B5fae19EA4f9D964eAc0408E4408b66337b5)
+* **MetaAggregationRouterV2:** [`0x6131B5fae19EA4f9D964eAc0408E4408b66337b5`](https://lineascan.build/address/0x6131B5fae19EA4f9D964eAc0408E4408b66337b5)
+* **InputScalingHelperV2:** [`0x2f577A41BeC1BE1152AeEA12e73b7391d15f655D`](https://lineascan.build/address/0x2f577A41BeC1BE1152AeEA12e73b7391d15f655D)
 
 </details>
 
@@ -82,7 +91,8 @@ All KyberSwap Aggregator contracts have been deployed at the same address across
 
 <summary>Sonic (ChainID: 146)</summary>
 
-* **MetaAggregationRouterV2:** [`0x6131B5fae19EA4f9D964eAc0408E4408b66337b5`](https://explorer.linea.build/address/0x6131B5fae19EA4f9D964eAc0408E4408b66337b5)
+* **MetaAggregationRouterV2:** [`0x6131B5fae19EA4f9D964eAc0408E4408b66337b5`](https://sonicscan.org/address/0x6131B5fae19EA4f9D964eAc0408E4408b66337b5)
+* **InputScalingHelperV2:** [`0x2f577A41BeC1BE1152AeEA12e73b7391d15f655D`](https://sonicscan.org/address/0x2f577A41BeC1BE1152AeEA12e73b7391d15f655D)
 
 </details>
 
@@ -90,7 +100,8 @@ All KyberSwap Aggregator contracts have been deployed at the same address across
 
 <summary>Berachain (ChainID: 80094)</summary>
 
-**MetaAggregationRouterV2:** [`0x6131B5fae19EA4f9D964eAc0408E4408b66337b5`](https://explorer.linea.build/address/0x6131B5fae19EA4f9D964eAc0408E4408b66337b5)
+* **MetaAggregationRouterV2:** [`0x6131B5fae19EA4f9D964eAc0408E4408b66337b5`](https://berascan.com/address/0x6131B5fae19EA4f9D964eAc0408E4408b66337b5)
+* **InputScalingHelperV2:** [`0x2f577A41BeC1BE1152AeEA12e73b7391d15f655D`](https://berascan.com/address/0x2f577A41BeC1BE1152AeEA12e73b7391d15f655D)
 
 </details>
 
@@ -99,6 +110,7 @@ All KyberSwap Aggregator contracts have been deployed at the same address across
 <summary>Ronin (ChainID: 2020)</summary>
 
 * **MetaAggregationRouterV2:** [`0x6131B5fae19EA4f9D964eAc0408E4408b66337b5`](https://app.roninchain.com/address/0x6131b5fae19ea4f9d964eac0408e4408b66337b5?p=1\&ps=25)
+* **InputScalingHelperV2:** [`0x2f577A41BeC1BE1152AeEA12e73b7391d15f655D`](https://app.roninchain.com/address/0x2f577A41BeC1BE1152AeEA12e73b7391d15f655D?p=1\&ps=25)
 
 </details>
 
@@ -107,6 +119,7 @@ All KyberSwap Aggregator contracts have been deployed at the same address across
 <summary>Unichain (ChainID: 130)</summary>
 
 * **MetaAggregationRouterV2:** [`0x6131B5fae19EA4f9D964eAc0408E4408b66337b5`](https://uniscan.xyz/address/0x6131b5fae19ea4f9d964eac0408e4408b66337b5)
+* **InputScalingHelperV2:** [`0x2f577A41BeC1BE1152AeEA12e73b7391d15f655D`](https://uniscan.xyz/address/0x2f577A41BeC1BE1152AeEA12e73b7391d15f655D)
 
 </details>
 
@@ -115,6 +128,7 @@ All KyberSwap Aggregator contracts have been deployed at the same address across
 <summary>HyperEVM (ChainID: 999)</summary>
 
 * **MetaAggregationRouterV2:** [`0x6131B5fae19EA4f9D964eAc0408E4408b66337b5`](https://hyperevmscan.io/address/0x6131b5fae19ea4f9d964eac0408e4408b66337b5)
+* **InputScalingHelperV2:** [`0x2f577A41BeC1BE1152AeEA12e73b7391d15f655D`](https://hyperevmscan.io/address/0x2f577A41BeC1BE1152AeEA12e73b7391d15f655D)
 
 </details>
 
@@ -123,6 +137,7 @@ All KyberSwap Aggregator contracts have been deployed at the same address across
 <summary>Plasma (ChainID: 9745)</summary>
 
 * **MetaAggregationRouterV2:** [`0x6131B5fae19EA4f9D964eAc0408E4408b66337b5`](https://plasmascan.to/address/0x6131b5fae19ea4f9d964eac0408e4408b66337b5)
+* **InputScalingHelperV2:** [`0x2f577A41BeC1BE1152AeEA12e73b7391d15f655D`](https://plasmascan.to/address/0x2f577A41BeC1BE1152AeEA12e73b7391d15f655D)
 
 </details>
 
@@ -131,6 +146,7 @@ All KyberSwap Aggregator contracts have been deployed at the same address across
 <summary>Etherlink (ChainID: 42793)</summary>
 
 * **MetaAggregationRouterV2:** [`0x6131B5fae19EA4f9D964eAc0408E4408b66337b5`](https://explorer.etherlink.com/address/0x6131B5fae19EA4f9D964eAc0408E4408b66337b5)
+* **InputScalingHelperV2:** [`0x2f577A41BeC1BE1152AeEA12e73b7391d15f655D`](https://explorer.etherlink.com/address/0x2f577A41BeC1BE1152AeEA12e73b7391d15f655D)
 
 </details>
 
@@ -139,5 +155,6 @@ All KyberSwap Aggregator contracts have been deployed at the same address across
 <summary>Monad (ChainID: 143)</summary>
 
 * **MetaAggregationRouterV2:** [`0x6131B5fae19EA4f9D964eAc0408E4408b66337b5`](https://monadscan.com/address/0x6131B5fae19EA4f9D964eAc0408E4408b66337b5)
+* **InputScalingHelperV2:** [`0x2f577A41BeC1BE1152AeEA12e73b7391d15f655D`](https://monadscan.com/address/0x2f577A41BeC1BE1152AeEA12e73b7391d15f655D)
 
 </details>
