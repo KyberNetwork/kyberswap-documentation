@@ -158,3 +158,12 @@ All KyberSwap Aggregator contracts have been deployed at the same address across
 * **InputScalingHelperV2:** [`0x2f577A41BeC1BE1152AeEA12e73b7391d15f655D`](https://monadscan.com/address/0x2f577A41BeC1BE1152AeEA12e73b7391d15f655D)
 
 </details>
+
+<details>
+
+<summary>MegaETH (ChainID: 4326)</summary>
+
+* **MetaAggregationRouterV2:** [`0x6131B5fae19EA4f9D964eAc0408E4408b66337b5`](https://megaeth.blockscout.com/address/0x6131b5fae19ea4f9d964eac0408e4408b66337b5)
+* **InputScalingHelperV2:** [`0x2f577A41BeC1BE1152AeEA12e73b7391d15f655D`](https://megaeth.blockscout.com/address/0x2f577A41BeC1BE1152AeEA12e73b7391d15f655D)
+
+</details>

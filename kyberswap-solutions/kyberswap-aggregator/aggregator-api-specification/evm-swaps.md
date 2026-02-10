@@ -10,7 +10,7 @@ _Disclaimer: Data provided as-is. Please see the relevant_ [_Developer Guide_](.
 
 ## Download OpenAPI specification:
 
-{% file src="../../../.gitbook/assets/KyberSwapAggregator_EVMAPIs_v2.12.0.yaml" %}
+{% file src="../../../.gitbook/assets/KyberSwapAggregator_EVMAPIs_v2.12.1.yaml" %}
 
 {% hint style="success" %}
 **Note on integration: clientID**
@@ -82,6 +82,7 @@ The Aggregator APIs require a chain **name** to be included in the path when cal
 * Plasma (ChainID: 9745) -> `plasma`
 * Etherlink (ChainID: 42793) -> `etherlink`
 * Monad (ChainID: 143) -> `monad`
+* MegaETH (ChainID: 4326) -> `megaeth`
 {% endhint %}
 
 ### &#x20;Latest
@@ -89,17 +90,17 @@ The Aggregator APIs require a chain **name** to be included in the path when cal
 <figure><img src="../../../.gitbook/assets/Aggregator APIv1.jpg" alt=""><figcaption></figcaption></figure>
 
 {% openapi-operation spec="aggregator-api" path="/{chain}/api/v1/routes" method="get" %}
-[OpenAPI aggregator-api](https://4401d86825a13bf607936cc3a9f3897a.r2.cloudflarestorage.com/gitbook-x-prod-openapi/raw/7021a94270560f8aab4e6c37f0a65892f33d03e1a42e077686016fa7ab9fafc4.yaml?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=dce48141f43c0191a2ad043a6888781c%2F20251127%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251127T040723Z&X-Amz-Expires=172800&X-Amz-Signature=8ab35daf4f3f6acdd4348d376528ff21bf6db84ae25d4d017f4d72164557207c&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
+[OpenAPI aggregator-api](https://4401d86825a13bf607936cc3a9f3897a.r2.cloudflarestorage.com/gitbook-x-prod-openapi/raw/7021a94270560f8aab4e6c37f0a65892f33d03e1a42e077686016fa7ab9fafc4.yaml?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=dce48141f43c0191a2ad043a6888781c%2F20260210%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260210T092957Z&X-Amz-Expires=172800&X-Amz-Signature=82ea1deccf6d2121f0a5e26f7a91677a6d84a60f99933d89b2757583648b21c1&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
 {% endopenapi-operation %}
 
 {% openapi-operation spec="aggregator-api" path="/{chain}/api/v1/route/build" method="post" %}
-[OpenAPI aggregator-api](https://4401d86825a13bf607936cc3a9f3897a.r2.cloudflarestorage.com/gitbook-x-prod-openapi/raw/7021a94270560f8aab4e6c37f0a65892f33d03e1a42e077686016fa7ab9fafc4.yaml?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=dce48141f43c0191a2ad043a6888781c%2F20251127%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251127T040723Z&X-Amz-Expires=172800&X-Amz-Signature=8ab35daf4f3f6acdd4348d376528ff21bf6db84ae25d4d017f4d72164557207c&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
+[OpenAPI aggregator-api](https://4401d86825a13bf607936cc3a9f3897a.r2.cloudflarestorage.com/gitbook-x-prod-openapi/raw/7021a94270560f8aab4e6c37f0a65892f33d03e1a42e077686016fa7ab9fafc4.yaml?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=dce48141f43c0191a2ad043a6888781c%2F20260210%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260210T092957Z&X-Amz-Expires=172800&X-Amz-Signature=82ea1deccf6d2121f0a5e26f7a91677a6d84a60f99933d89b2757583648b21c1&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
 {% endopenapi-operation %}
 
 ### Legacy
 
 {% openapi-operation spec="aggregator-api" path="/{chain}/route/encode" method="get" %}
-[OpenAPI aggregator-api](https://4401d86825a13bf607936cc3a9f3897a.r2.cloudflarestorage.com/gitbook-x-prod-openapi/raw/7021a94270560f8aab4e6c37f0a65892f33d03e1a42e077686016fa7ab9fafc4.yaml?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=dce48141f43c0191a2ad043a6888781c%2F20251127%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251127T040723Z&X-Amz-Expires=172800&X-Amz-Signature=8ab35daf4f3f6acdd4348d376528ff21bf6db84ae25d4d017f4d72164557207c&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
+[OpenAPI aggregator-api](https://4401d86825a13bf607936cc3a9f3897a.r2.cloudflarestorage.com/gitbook-x-prod-openapi/raw/7021a94270560f8aab4e6c37f0a65892f33d03e1a42e077686016fa7ab9fafc4.yaml?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=dce48141f43c0191a2ad043a6888781c%2F20260210%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260210T092957Z&X-Amz-Expires=172800&X-Amz-Signature=82ea1deccf6d2121f0a5e26f7a91677a6d84a60f99933d89b2757583648b21c1&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
 {% endopenapi-operation %}
 
 ## **KyberSwap positive slippage surplus collection**
