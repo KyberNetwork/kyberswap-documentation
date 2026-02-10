@@ -151,7 +151,7 @@ Token pairs that composed of stablecoins or assets designed to maintain a stable
 
 **Correlated pair**
 
-Token pairs are strongly correlated or derivatives of each other. This includes derivative tokens (e.g., liquid staking tokens representing staked ETH) or tokens minted from one another (e.g., MATICX ↔ WMATIC).
+Token pairs are strongly correlated or derivatives of each other. This includes derivative tokens (e.g., liquid staking tokens representing staked ETH) or tokens minted from one another (e.g., WETH/wstETH).
 
 **Common pair**
 
