@@ -45,7 +45,7 @@ Note:
 * When the Fee Yield condition is satisfied, the pool price used at that time is treated as the **exitPoolPrice** for that evaluation.
 * Fee yield is evaluated **in token-based** basis rather than in USD value, so the calculation reflects fees actually earned by the position, independent of external price movements. This design avoids misleading effects caused by short-term price volatility and ensures that the condition is not affected by changes in market valuation.
 
-To help users understand their current fee earnings and set more informed strategies, the interface displays Earning Fee Yield during order setup. The value represents the percentage of fees earned from the time the position was created up to the current time, calculated based on the amount of fee tokens earned by the position relative to the initial deposit, as defined by the formula above.
+To help users understand their current fee earnings and set more informed strategies, the interface displays **Earning Fee Yield** during order setup. The value represents the percentage of fees earned from the time the position was created up to the current time, calculated based on **the amount of fee tokens** earned by the position relative to the initial deposit, as defined by the formula above.
 
 <figure><img src="../../.gitbook/assets/Fee copy.png" alt="" width="563"><figcaption></figcaption></figure>
 
