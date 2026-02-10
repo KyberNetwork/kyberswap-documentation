@@ -103,6 +103,9 @@
   * [Experiment Results](kyberswap-solutions/kyberswap-fairflow/experiment-results.md)
   * [Position APR Estimation](kyberswap-solutions/kyberswap-fairflow/position-apr-estimation.md)
   * [FAQ](kyberswap-solutions/kyberswap-fairflow/faq.md)
+* [Smart Exit](kyberswap-solutions/smart-exit/README.md)
+  * [Feature Capabilities](kyberswap-solutions/smart-exit/feature-capabilities.md)
+  * [User Guide](kyberswap-solutions/smart-exit/user-guide.md)
 * [Fee Schedule](kyberswap-solutions/fee-schedule.md)
 
 ## Governance

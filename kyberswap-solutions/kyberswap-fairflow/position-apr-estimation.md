@@ -4,7 +4,7 @@ The Position APR Estimation feature - currently implemented in FairFlow farming 
 \
 Estimated Position APR is the estimated annual return a liquidity provider may earn from a position based on user’s inputs with active liquidity share and chosen price range. This value serves as a reference metric to assist users in evaluating and comparing different price range strategies under pool’s market conditions.
 
-<figure><img src="../../.gitbook/assets/image.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2).png" alt="" width="563"><figcaption></figcaption></figure>
 
 ### How the Estimated Position APR is calculated
 

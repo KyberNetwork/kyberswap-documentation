@@ -153,7 +153,7 @@ Note: Some providers may have their protocol fee for using their router; if appl
 
 <summary>Review Details and Confirm Swap</summary>
 
-<figure><img src="../../../.gitbook/assets/image (2) (1) (1).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1).png" alt="" width="375"><figcaption></figcaption></figure>
 
 After configuring swap details, you might need to Approve the input token first if you haven’t previously authorized the protocol to swap this token on your behalf. Once approved, click “Review the Cross-chain Swap”.
 
