@@ -1,0 +1,293 @@
+# KyberSwap
+
+> KyberSwap is multi-chain DeFi infrastructure providing swap aggregation, limit orders, zap-in liquidity, cross-chain swaps, and MEV protection across 18+ EVM chains.
+> Two main developer APIs: **Aggregator API** (swap routing and execution across 400+ DEXs) and **Limit Order API** (off-chain relay, on-chain settlement limit orders).
+> Aggregator Base URL: `https://aggregator-api.kyberswap.com`. Limit Order Base URL: `https://limit-order.kyberswap.com`. ZaaS Base URL: `https://zap-api.kyberswap.com/{chain}`. Token API Base URL: `https://token-api.kyberswap.com`. Common Service Base URL: `https://common-service.kyberswap.com`.
+
+## Quick Reference
+
+- Aggregator Swap Route: `GET /{chain}/api/v1/routes`
+- Aggregator Build Swap: `POST /{chain}/api/v1/route/build`
+- Limit Order Sign Message: `POST /write/api/v1/orders/sign-message`
+- Limit Order Create: `POST /write/api/v1/orders`
+- Limit Order Query (Maker): `GET /read-ks/api/v1/orders`
+- Limit Order Query (Taker): `GET /read-partner/api/v1/orders`
+- Limit Order Fill: `POST /read-ks/api/v1/encode/fill-order-to`
+- ZaaS Zap-In Route: `GET /api/v1/in/route`
+- ZaaS Zap-In Build: `POST /api/v1/in/route/build`
+- ZaaS Zap-Out Route: `GET /api/v1/out/route`
+- Token Search: `GET https://token-api.kyberswap.com/api/v1/public/tokens`
+- Token Honeypot/FOT Check: `GET https://token-api.kyberswap.com/api/v1/public/tokens/honeypot-fot-info`
+- Supported Chains: `GET https://common-service.kyberswap.com/api/v1/aggregator/supported-chains`
+
+## Getting Started
+
+Foundational topics, quickstart guides, and supported networks.
+
+- [Quickstart](https://docs.kyberswap.com/getting-started/quickstart): Getting started guide for using KyberSwap products and services.
+- [FAQ](https://docs.kyberswap.com/getting-started/quickstart/faq): Frequently asked questions about KyberSwap basics.
+- [Supported Exchanges And Networks](https://docs.kyberswap.com/getting-started/supported-exchanges-and-networks): Complete list of 18+ EVM chains (Ethereum, BSC, Arbitrum, Polygon, Optimism, Avalanche, Base, Linea, Mantle, Sonic, Berachain, Ronin, Unichain, HyperEVM, Plasma, Etherlink, Monad, MegaETH) and 400+ integrated DEXs. Also supports cross-chain swaps to non-EVM chains (Solana, Bitcoin, NEAR).
+
+### Foundational Topics
+
+- [Decentralized Finance](https://docs.kyberswap.com/getting-started/foundational-topics/decentralized-finance): Overview of DeFi concepts relevant to KyberSwap.
+- [Tokens](https://docs.kyberswap.com/getting-started/foundational-topics/decentralized-finance/tokens): ERC-20 tokens and their role in DeFi swaps.
+- [Stablecoins](https://docs.kyberswap.com/getting-started/foundational-topics/decentralized-finance/stablecoins): Stablecoin types and their use in KyberSwap liquidity.
+- [DEX Aggregator](https://docs.kyberswap.com/getting-started/foundational-topics/decentralized-finance/dex-aggregator): How DEX aggregators optimize swap rates across fragmented liquidity.
+- [Slippage](https://docs.kyberswap.com/getting-started/foundational-topics/decentralized-finance/slippage): Understanding slippage and configuring slippage tolerance.
+- [Price Impact](https://docs.kyberswap.com/getting-started/foundational-topics/decentralized-finance/price-impact): How trade size affects execution price in AMM pools.
+- [Zap](https://docs.kyberswap.com/getting-started/foundational-topics/decentralized-finance/zap): One-click liquidity provisioning concept.
+- [MEV](https://docs.kyberswap.com/getting-started/foundational-topics/decentralized-finance/maximal-extractable-value-mev): Maximal Extractable Value and its impact on DeFi traders.
+
+### Decentralized Technologies
+
+- [Wallets](https://docs.kyberswap.com/getting-started/foundational-topics/decentralized-technologies/wallets): Web3 wallet connection and management.
+- [DApps](https://docs.kyberswap.com/getting-started/foundational-topics/decentralized-technologies/dapps): Decentralized application fundamentals.
+- [RPC](https://docs.kyberswap.com/getting-started/foundational-topics/decentralized-technologies/rpc): Remote Procedure Call connections for blockchain interaction.
+- [Oracles](https://docs.kyberswap.com/getting-started/foundational-topics/decentralized-technologies/oracles): Price oracle mechanisms in DeFi.
+- [On-Chain vs Off-Chain Data](https://docs.kyberswap.com/getting-started/foundational-topics/decentralized-technologies/on-chain-vs-off-chain-data): Data storage trade-offs in blockchain systems.
+- [Other Valuable Resources](https://docs.kyberswap.com/getting-started/foundational-topics/other-valuable-resources): Additional learning resources for DeFi developers.
+
+## KyberSwap Interface
+
+Web interface at kyberswap.com for swapping, limit orders, cross-chain swaps, and earning.
+
+- [KyberSwap Interface Overview](https://docs.kyberswap.com/kyberswap-solutions/kyberswap-interface): Overview of the KyberSwap web application and its features.
+- [User Guides](https://docs.kyberswap.com/kyberswap-solutions/kyberswap-interface/user-guides): User guide index for KyberSwap interface features.
+- [Connect Your Wallet](https://docs.kyberswap.com/kyberswap-solutions/kyberswap-interface/user-guides/connect-your-wallet): How to connect Web3 wallets to KyberSwap.
+- [Selecting Preferred Network](https://docs.kyberswap.com/kyberswap-solutions/kyberswap-interface/user-guides/selecting-preferred-network): Switch between supported blockchain networks.
+- [Instantly Swap At Superior Rates](https://docs.kyberswap.com/kyberswap-solutions/kyberswap-interface/user-guides/instantly-swap-at-superior-rates): Step-by-step guide for executing token swaps via the aggregator. Covers approval, permit (EIP-2612), slippage configuration, and price impact warnings.
+- [Trade At Your Preferred Rates](https://docs.kyberswap.com/kyberswap-solutions/kyberswap-interface/user-guides/trade-at-your-preferred-rates): Guide for creating limit orders. Set target prices, expiry times, and approve tokens for gasless order placement.
+- [Cross-Chain Swap](https://docs.kyberswap.com/kyberswap-solutions/kyberswap-interface/user-guides/cross-chain-swap): Swap tokens across different blockchains via integrated Squid/Axelar cross-chain protocol. Supports 8+ EVM chains plus non-EVM networks.
+- [Add Your Favourite Tokens](https://docs.kyberswap.com/kyberswap-solutions/kyberswap-interface/user-guides/add-your-favourite-tokens): Import and manage custom token lists.
+- [Get Crypto With Fiat](https://docs.kyberswap.com/kyberswap-solutions/kyberswap-interface/user-guides/get-crypto-with-fiat): Purchase crypto using fiat currency through integrated on-ramp services.
+- [Bridge Your Assets Across Multiple Chains](https://docs.kyberswap.com/kyberswap-solutions/kyberswap-interface/user-guides/bridge-your-assets-across-multiple-chains): Bridge tokens between supported blockchains.
+
+### Profiles
+
+- [Profiles](https://docs.kyberswap.com/kyberswap-solutions/kyberswap-interface/profiles): User profile system overview.
+- [Profile Creation](https://docs.kyberswap.com/kyberswap-solutions/kyberswap-interface/profiles/profile-creation): Create and set up your KyberSwap profile.
+- [Profile Customization](https://docs.kyberswap.com/kyberswap-solutions/kyberswap-interface/profiles/profile-customization): Customize your profile settings and preferences.
+- [Sync Profile Across Devices](https://docs.kyberswap.com/kyberswap-solutions/kyberswap-interface/profiles/sync-profile-across-devices): Synchronize settings across multiple devices.
+
+### Notifications
+
+- [Notifications](https://docs.kyberswap.com/kyberswap-solutions/kyberswap-interface/notifications): Notification system overview.
+- [Notification Center](https://docs.kyberswap.com/kyberswap-solutions/kyberswap-interface/notifications/notification-center): Manage and configure trade notifications.
+
+## KyberSwap Aggregator
+
+DEX aggregator connecting traders to optimal swap rates across 400+ DEXs on 18+ chains.
+
+- [Aggregator Overview](https://docs.kyberswap.com/kyberswap-solutions/kyberswap-aggregator): KyberSwap Aggregator enables traders to swap at superior rates by connecting to fragmented liquidity across DEXs. Includes Professional Market Maker (PMM) network on Ethereum for additional liquidity depth.
+
+### Concepts
+
+- [Dynamic Trade Routing](https://docs.kyberswap.com/kyberswap-solutions/kyberswap-aggregator/concepts/dynamic-trade-routing): How the aggregator splits and routes trades across multiple DEXs and liquidity sources for optimal rates.
+
+### Developer Guides
+
+- [Developer Guides](https://docs.kyberswap.com/kyberswap-solutions/kyberswap-aggregator/developer-guides): Developer guide index for aggregator integration.
+- [Execute A Swap With The Aggregator API](https://docs.kyberswap.com/kyberswap-solutions/kyberswap-aggregator/developer-guides/execute-a-swap-with-the-aggregator-api): End-to-end tutorial: query route via GET, build transaction via POST, sign and send on-chain. Includes code examples.
+- [Upgrading To APIv1](https://docs.kyberswap.com/kyberswap-solutions/kyberswap-aggregator/developer-guides/upgrading-to-apiv1): Migration guide from non-versioned API to v1. Key change: split single GET into GET /routes + POST /route/build for reduced latency and better gas estimation.
+- [Scaling Swap Calldata With ScaleHelper](https://docs.kyberswap.com/kyberswap-solutions/kyberswap-aggregator/developer-guides/scaling-swap-calldata-with-scalehelper): Use InputScalingHelperV2 contract to scale swap amounts without re-querying routes.
+
+### Aggregator API Specification
+
+- [Aggregator API Specification](https://docs.kyberswap.com/kyberswap-solutions/kyberswap-aggregator/aggregator-api-specification): Overview of the unified EVM swap API specification.
+- [EVM Swaps](https://docs.kyberswap.com/kyberswap-solutions/kyberswap-aggregator/aggregator-api-specification/evm-swaps): Complete API spec for EVM swaps. Base URL: `https://aggregator-api.kyberswap.com`. GET `/{chain}/api/v1/routes` returns optimal swap route. POST `/{chain}/api/v1/route/build` returns encoded transaction data. Key params: tokenIn, tokenOut, amountIn, slippageTolerance. Header: X-Client-Id recommended. OpenAPI spec: KyberSwapAggregator_EVMAPIs_v2.12.1.yaml. Supported chain slugs and chain IDs: ethereum (1), bsc (56), arbitrum (42161), polygon (137), optimism (10), avalanche (43114), base (8453), linea (59144), mantle (5000), sonic (146), berachain (80094), ronin (2020), unichain (130), hyperevm (999), plasma (9745), etherlink (42793), monad (143), megaeth (4326). Native token address for all chains: `0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE`.
+- [Permit](https://docs.kyberswap.com/kyberswap-solutions/kyberswap-aggregator/aggregator-api-specification/permit): EIP-2612 permit support for gasless token approvals in swap transactions.
+
+### Contracts
+
+- [Aggregator Contracts](https://docs.kyberswap.com/kyberswap-solutions/kyberswap-aggregator/contracts): Deployment addresses across 18 chains. MetaAggregationRouterV2: `0x6131B5fae19EA4f9D964eAc0408E4408b66337b5`. InputScalingHelperV2: `0x2f577A41BeC1BE1152AeEA12e73b7391d15f655D`. Same addresses on all supported chains.
+
+### Resources
+
+- [DEX IDs](https://docs.kyberswap.com/kyberswap-solutions/kyberswap-aggregator/dex-ids): Complete list of DEX identifiers for filtering liquidity sources in API requests.
+- [Subgraphs](https://docs.kyberswap.com/kyberswap-solutions/kyberswap-aggregator/subgraphs): The Graph subgraph endpoints for querying on-chain aggregator data per chain.
+- [FAQ](https://docs.kyberswap.com/kyberswap-solutions/kyberswap-aggregator/faq): Frequently asked questions about the KyberSwap Aggregator.
+
+## KyberSwap Token API
+
+Token search, lookup, and safety verification across all supported chains.
+
+Base URL: `https://token-api.kyberswap.com`. Note: This is a KyberSwap API service (*.kyberswap.com) used by the KyberSwap interface and aggregator integrations. Not yet documented on docs.kyberswap.com as a standalone page.
+
+- Token Search — `GET /api/v1/public/tokens`: Search token information (address, decimals, symbol, name, marketCap) across all supported chains. Query params: `chainIds` (required, comma-separated chain IDs), `name` (search by name/symbol, case-insensitive partial match), `isWhitelisted` (if true, only KyberSwap-vetted tokens), `page` (1-indexed, default 1), `pageSize` (default 10). Response includes `address`, `symbol`, `name`, `decimals`, `marketCap`, `isVerified`, `isWhitelisted`, `isStable`. Results sorted by marketCap. Use `isWhitelisted=true` first to filter out unverified or spam tokens.
+- Honeypot/FOT Detection — `GET /api/v1/public/tokens/honeypot-fot-info`: Check if a token is a honeypot (cannot sell after buying) or has fee-on-transfer tax. Query params: `chainId` (required, integer), `address` (required, token contract address). Response: `isHoneypot` (boolean), `isFOT` (boolean), `tax` (percentage number). Always check unfamiliar tokens before swapping.
+
+## KyberSwap Common Service API
+
+Chain discovery and configuration service.
+
+Base URL: `https://common-service.kyberswap.com`. Note: This is a KyberSwap API service (*.kyberswap.com) used for programmatic chain discovery. Not yet documented on docs.kyberswap.com as a standalone page.
+
+- Supported Chains — `GET /api/v1/aggregator/supported-chains`: Returns the live list of supported chains and their status. Each chain object includes `chainId`, `chainName` (slug for API paths), `displayName`, and `state` (`active`, `inactive`, or `new`). Use this to dynamically discover which chains the Aggregator API supports.
+
+## Limit Order
+
+Off-chain relay, on-chain settlement limit orders with gasless creation and cancellation.
+
+- [Limit Order Overview](https://docs.kyberswap.com/kyberswap-solutions/limit-order): KyberSwap Limit Order enables traders to set target prices for token swaps. Orders are signed off-chain (gasless creation) and settled on-chain when filled. Supports gasless and hard cancellation.
+
+### Concepts
+
+- [Concepts](https://docs.kyberswap.com/kyberswap-solutions/limit-order/concepts): Limit order concept index.
+- [Off-Chain Relay](https://docs.kyberswap.com/kyberswap-solutions/limit-order/concepts/off-chain-relay): Hybrid architecture: orders stored off-chain with cryptographic signatures, settled on-chain when matched. Eliminates gas costs for order creation and management.
+- [Gasless Cancellation](https://docs.kyberswap.com/kyberswap-solutions/limit-order/concepts/gasless-cancellation): Two cancellation methods: Gasless Cancel (free, up to 90 seconds via operator signature withholding) and Hard Cancel (immediate via on-chain transaction with gas fee).
+
+### User Guides
+
+- [User Guides](https://docs.kyberswap.com/kyberswap-solutions/limit-order/user-guides): User guide index for limit orders.
+- [Update Limit Orders](https://docs.kyberswap.com/kyberswap-solutions/limit-order/user-guides/update-limit-orders): How to modify existing limit order parameters.
+- [Cancel Limit Orders](https://docs.kyberswap.com/kyberswap-solutions/limit-order/user-guides/cancel-limit-orders): How to cancel orders via gasless or hard cancel methods.
+
+### Developer Guides
+
+- [Developer Guides](https://docs.kyberswap.com/kyberswap-solutions/limit-order/developer-guides): Developer guide index for limit order integration.
+- [Create Limit Order](https://docs.kyberswap.com/kyberswap-solutions/limit-order/developer-guides/create-limit-order): Programmatic limit order creation: POST sign-message to get EIP-712 message, sign with wallet, POST to create order.
+- [Gasless Cancel](https://docs.kyberswap.com/kyberswap-solutions/limit-order/developer-guides/gasless-cancel): Programmatic gasless order cancellation via operator signature withholding.
+- [Hard Cancel](https://docs.kyberswap.com/kyberswap-solutions/limit-order/developer-guides/hard-cancel): Programmatic hard cancellation via on-chain transaction (cancel-batch-orders or increase-nonce).
+- [Fill Limit Order](https://docs.kyberswap.com/kyberswap-solutions/limit-order/developer-guides/fill-limit-order): Programmatic order filling as a taker: query orders, get operator signature, encode fill transaction.
+
+### Limit Order API Specification
+
+Base URL: `https://limit-order.kyberswap.com`
+
+- [Limit Order API Specification](https://docs.kyberswap.com/kyberswap-solutions/limit-order/limit-order-api-specification): Overview of the Limit Order API with OpenAPI spec (LimitOrderAPIs_v1.2.1.yaml).
+- [General APIs](https://docs.kyberswap.com/kyberswap-solutions/limit-order/limit-order-api-specification/general-apis): 2 general endpoints — GET /read-partner/api/v1/orders/pairs (query supported trading pairs), GET /read-ks/api/v1/configs/contract-address (retrieve contract addresses per chain). Also defines order status lifecycle: Latest, Legacy, Deprecated.
+- [Maker APIs](https://docs.kyberswap.com/kyberswap-solutions/limit-order/limit-order-api-specification/maker-apis): 8 maker endpoints — POST /write/api/v1/orders/sign-message (get unsigned EIP-712 message), POST /write/api/v1/orders (create order with signature), GET /read-ks/api/v1/orders (query orders), GET /read-ks/api/v1/orders/active-making-amount (active amounts), POST /write/api/v1/orders/cancel-sign (gasless cancel sign), POST /write/api/v1/orders/cancel (gasless cancel execute), POST /read-ks/api/v1/encode/cancel-batch-orders (hard cancel batch), POST /read-ks/api/v1/encode/increase-nonce (hard cancel via nonce).
+- [Taker APIs](https://docs.kyberswap.com/kyberswap-solutions/limit-order/limit-order-api-specification/taker-apis): 4 taker endpoints — GET /read-partner/api/v1/orders (query orders), GET /read-partner/api/v1/orders/operator-signature (get operator signature), POST /read-ks/api/v1/encode/fill-order-to (fill single order), POST /read-ks/api/v1/encode/fill-batch-orders-to (fill batch orders). Fee structure by token category: Super Stable 0.01%, Stable 0.02%, Normal 0.1%, Exotic 0.3%, High Volatility 0.5%, Super High Volatility 1%.
+
+### Contracts
+
+- [Limit Order Contracts](https://docs.kyberswap.com/kyberswap-solutions/limit-order/contracts): Deployment addresses across 17 chains. DSLOProtocol: `0xcab2FA2eeab7065B45CBcF6E3936dDE2506b4f6C` (same on all chains). LimitOrderProtocol: `0x227B0c196eA8db17A665EA6824D972A64202E936` (Ethereum, BSC, Arbitrum, Polygon, Optimism, Avalanche). WETHUnwrapper varies per chain.
+- [FAQ](https://docs.kyberswap.com/kyberswap-solutions/limit-order/faq): Frequently asked questions about KyberSwap Limit Orders.
+
+## KyberSwap Zap as a Service (ZaaS)
+
+One-click liquidity provisioning API for concentrated liquidity protocols.
+
+- [ZaaS Overview](https://docs.kyberswap.com/kyberswap-solutions/kyberswap-zap-as-a-service): Zap as a Service simplifies adding liquidity into concentrated liquidity protocols (UniswapV3-like). Handles token ratio calculation, swaps, and deposits in a single transaction. Integrated with KyberSwap Aggregator for price optimization.
+
+### ZaaS API
+
+Base URL: `https://zap-api.kyberswap.com/{chain}`. Required header: `X-Client-Id`. Rate limit: 10 req/10s default.
+
+- [ZaaS API Overview](https://docs.kyberswap.com/kyberswap-solutions/kyberswap-zap-as-a-service/kyberswap-zap-as-a-service-zaas-api): API overview covering Zap In (GetRoute + BuildRoute), Zap Migrate, and Zap Out operations.
+- [ZaaS HTTP API](https://docs.kyberswap.com/kyberswap-solutions/kyberswap-zap-as-a-service/kyberswap-zap-as-a-service-zaas-api/zaas-http-api): Full HTTP API spec. Zap In: GET /api/v1/in/route + POST /api/v1/in/route/build. Zap Out: GET /api/v1/out/route + POST /api/v1/out/route/build. Zap Migrate: GET /api/v1/migrate/route + POST /api/v1/migrate/route/build. Key params: dex, pool.id, position.tickLower/tickUpper, tokensIn, amountsIn, slippage.
+- [ZaaS gRPC API](https://docs.kyberswap.com/kyberswap-solutions/kyberswap-zap-as-a-service/kyberswap-zap-as-a-service-zaas-api/zaas-grpc-api): gRPC API at zap-api.kyberswap.com:443. Supports Zap In, Out, Migrate, Compound, and Create operations with GetRoute/DecodeRoute/BuildRoute for each. Headers: X-Chain-ID, X-Client-ID.
+- [Zap Fee Model](https://docs.kyberswap.com/kyberswap-solutions/kyberswap-zap-as-a-service/zap-fee-model): Protocol fees by pair type: Stable 0.01%, Correlated 0.025%, Common 0.1%, Exotic 0.25%. Partner fees configurable via feeAddress and feePcm parameters.
+- [Zap Supported Chains/DEXes](https://docs.kyberswap.com/kyberswap-solutions/kyberswap-zap-as-a-service/zaps-supported-chains-dexes): 13 chains supported: Arbitrum, Avalanche, Base, BSC, Ethereum, Linea, Optimism, Polygon, Scroll, zkSync, Sonic, Berachain, Ronin. DEXes include UniswapV2/V3/V4, PancakeSwapV2/V3, SushiSwapV2/V3, Aerodrome, Curve, Balancer, and many more per chain.
+- [Zap Deployed Contract Addresses](https://docs.kyberswap.com/kyberswap-solutions/kyberswap-zap-as-a-service/zaps-deployed-contract-addresses): KSZapRouterPosition: `0x0e97c887b61ccd952a53578b04763e7134429e05` (all chains). KSZapValidatorV2Part1: `0xa16f32442209c6b978431818aa535bcc9ad2863e` (all chains). KSZapRouterPositionPermit: `0x638d935eEcD1646991A8b2CE9C2A2B7B840CCaBb` (most chains).
+- [ZaaS DEX IDs](https://docs.kyberswap.com/kyberswap-solutions/kyberswap-zap-as-a-service/dex-ids): DEX identifiers for ZaaS API requests.
+
+## KyberSwap Widget
+
+Embeddable swap widget for third-party applications.
+
+- [KyberSwap Widget](https://docs.kyberswap.com/kyberswap-solutions/kyberswap-widget): Drop-in swap widget powered by KyberSwap Aggregator for any web application.
+- [Developer Guides](https://docs.kyberswap.com/kyberswap-solutions/kyberswap-widget/developer-guides): Widget developer guide index.
+- [Integrating The KyberSwap Widget](https://docs.kyberswap.com/kyberswap-solutions/kyberswap-widget/developer-guides/integrating-the-kyberswap-widget): Step-by-step integration guide for embedding the swap widget.
+- [Customizing The KyberSwap Widget](https://docs.kyberswap.com/kyberswap-solutions/kyberswap-widget/developer-guides/customizing-the-kyberswap-widget): Configuration options for widget appearance, default tokens, fees, and behavior.
+- [iFrame Alternative](https://docs.kyberswap.com/kyberswap-solutions/kyberswap-widget/iframe-alternative): Embed KyberSwap via iFrame for simpler integration without npm packages.
+- [Widget/iFrame Fee](https://docs.kyberswap.com/kyberswap-solutions/kyberswap-widget/widget-iframe-fee): Fee configuration for widget and iFrame integrations. Fees set by integrating protocol, not KyberSwap.
+
+## KyberSwap Liquidity Widget
+
+Embeddable liquidity provisioning widget for third-party applications.
+
+- [KyberSwap Liquidity Widget](https://docs.kyberswap.com/kyberswap-solutions/kyberswap-liquidity-widget): Drop-in widget for adding liquidity to concentrated liquidity pools, powered by ZaaS.
+- [Integrating The KyberSwap Liquidity Widget](https://docs.kyberswap.com/kyberswap-solutions/kyberswap-liquidity-widget/integrating-the-kyberswap-liquidity-widget): Integration guide for embedding the liquidity widget.
+
+## KyberSwap On-Chain Price Service
+
+- [On-Chain Price Service](https://docs.kyberswap.com/kyberswap-solutions/kyberswap-onchain-price-service): On-chain price feed using graph-based algorithm across DEX liquidity. Provides network-specific buy and sell prices using stablecoins and native tokens as quote symbols. Updates every 10 seconds. Enhanced support for exotic/long-tail tokens.
+
+## KyberSwap FairFlow
+
+MEV protection and LP revenue enhancement via Uniswap V4 hooks.
+
+- [FairFlow Overview](https://docs.kyberswap.com/kyberswap-solutions/kyberswap-fairflow): Swap hook on Uniswap V4 that captures MEV arbitrage gains and redistributes them to liquidity providers via Equilibrium Gain Sharing. No LP token staking required.
+- [Problem Statement](https://docs.kyberswap.com/kyberswap-solutions/kyberswap-fairflow/problem-statement): The MEV extraction problem affecting liquidity providers.
+- [Solution: FairFlow](https://docs.kyberswap.com/kyberswap-solutions/kyberswap-fairflow/solution-fairflow): How FairFlow captures and redistributes arbitrage value.
+- [FairFlow Details](https://docs.kyberswap.com/kyberswap-solutions/kyberswap-fairflow/fairflow-details): Technical implementation details of the FairFlow mechanism.
+- [Deployment Contracts](https://docs.kyberswap.com/kyberswap-solutions/kyberswap-fairflow/deployment-contracts): FairFlow smart contract deployment addresses.
+- [Experiment Results](https://docs.kyberswap.com/kyberswap-solutions/kyberswap-fairflow/experiment-results): Performance data and experiment results for FairFlow.
+- [Position APR Estimation](https://docs.kyberswap.com/kyberswap-solutions/kyberswap-fairflow/position-apr-estimation): How APR is estimated for FairFlow-enhanced positions.
+- [FAQ](https://docs.kyberswap.com/kyberswap-solutions/kyberswap-fairflow/faq): Frequently asked questions about FairFlow.
+
+## Smart Exit
+
+Automated liquidity position exit based on predefined conditions.
+
+- [Smart Exit Overview](https://docs.kyberswap.com/kyberswap-solutions/smart-exit): Intent-based system for automatic LP position exits. Users declare exit conditions (target prices, fee earnings, timeframes) monitored off-chain and executed on-chain. Gasless execution — operators broadcast transactions on user's behalf. Trustless: all validation enforced by public smart contracts.
+- [Feature Capabilities](https://docs.kyberswap.com/kyberswap-solutions/smart-exit/feature-capabilities): Detailed capabilities of the Smart Exit system.
+- [User Guide](https://docs.kyberswap.com/kyberswap-solutions/smart-exit/user-guide): How to set up and manage Smart Exit conditions.
+- [Deployment Contracts](https://docs.kyberswap.com/kyberswap-solutions/smart-exit/deployment-contracts): Smart Exit contract deployment addresses.
+
+## Fee Schedule
+
+- [Fee Schedule](https://docs.kyberswap.com/kyberswap-solutions/fee-schedule): Complete fee structure across all products. Swap: no fee. Limit Order: 0.01%-1% by token volatility. Earn (Zap): 0.01%-0.25% by pair type. Cross-chain Swap: 0.05%-0.25% by route and volatility. Widget/iFrame: variable, set by integrator. Value-added services (analytics, MEV protection): no fee.
+
+## Governance
+
+KyberDAO governance and KNC token.
+
+### KyberDAO
+
+- [KyberDAO](https://docs.kyberswap.com/governance/kyberdao): Decentralized governance hub for KyberSwap protocol decisions.
+- [User Guides](https://docs.kyberswap.com/governance/kyberdao/user-guides): KyberDAO user guide index.
+- [Participating In KyberDAO](https://docs.kyberswap.com/governance/kyberdao/user-guides/participating-in-kyberdao): How to participate in governance proposals and voting.
+- [Staking](https://docs.kyberswap.com/governance/kyberdao/user-guides/staking): Stake KNC tokens to participate in governance and earn rewards.
+- [Voting](https://docs.kyberswap.com/governance/kyberdao/user-guides/voting): How to vote on KyberDAO proposals.
+- [Stake KNC And Enjoy Gas Savings](https://docs.kyberswap.com/governance/kyberdao/user-guides/stake-knc-and-enjoy-gas-savings): Gas refund program for KNC stakers.
+- [Fees To KyberDAO](https://docs.kyberswap.com/governance/kyberdao/fees-to-kyberdao): How protocol fees are distributed to KyberDAO.
+- [KyberDAO Operator Multisig](https://docs.kyberswap.com/governance/kyberdao/kyberdao-operator-multisig): Multisig governance operator details.
+- [KyberDAO Contract Repo](https://docs.kyberswap.com/governance/kyberdao/contracts/kyberdao-contract-repo): GitHub repository for KyberDAO smart contracts.
+- [KyberDAO Contract Addresses](https://docs.kyberswap.com/governance/kyberdao/contracts/kyberdao-contract-addresses): Deployed KyberDAO contract addresses.
+- [FAQ](https://docs.kyberswap.com/governance/kyberdao/faq): Frequently asked questions about KyberDAO governance.
+
+### KNC Token
+
+- [KNC Token](https://docs.kyberswap.com/governance/knc-token): KNC is an ERC-20 utility and governance token for KyberSwap. Launched on Ethereum in 2017. Used for staking, voting, and earning gas refunds. Dynamic — can be upgraded by KyberDAO.
+- [KNC Tokenomics](https://docs.kyberswap.com/governance/knc-token/knc-tokenomics): Token supply, distribution, and economic model.
+- [Gas Refund Program](https://docs.kyberswap.com/governance/knc-token/gas-refund-program): Earn gas refunds by staking KNC and participating in governance.
+- [KNC Contract Addresses](https://docs.kyberswap.com/governance/knc-token/knc-contract-addresses): KNC token contract addresses across supported chains.
+
+## Security
+
+- [Audits](https://docs.kyberswap.com/security/audits): Security audit reports. KyberDAO/KNC audited by Hacken (May 2021, "Well-secured"). FairFlow audited by Omniscia and Spearbit. Smart Exit audited by Hexens.
+
+## Reference
+
+Additional reference documentation.
+
+- [KyberSwap Operator Multisig](https://docs.kyberswap.com/reference/kyberswap-operator-multisig): KyberSwap operational multisig details.
+- [Permitable Tokens](https://docs.kyberswap.com/reference/permitable-tokens): Tokens supporting EIP-2612 permit for gasless approvals.
+- [Third-Party Integrations](https://docs.kyberswap.com/reference/third-party-integrations): External services and protocols integrated with KyberSwap.
+- [Complaints Handling Process](https://docs.kyberswap.com/support/complaints-handling-process): Support and complaints resolution process.
+
+### Legacy
+
+Deprecated products maintained for reference.
+
+- [Legacy Overview](https://docs.kyberswap.com/reference/legacy): Index of deprecated KyberSwap products.
+- [KyberSwap Classic](https://docs.kyberswap.com/reference/legacy/kyberswap-classic): Deprecated AMM with programmable pricing curves, dynamic fees, and virtual balances. Discontinued March 26, 2024.
+- [KyberSwap Elastic](https://docs.kyberswap.com/reference/legacy/kyberswap-elastic): Deprecated concentrated liquidity protocol with reinvestment curve, anti-sniping, and tick-based farming. Discontinued November 23, 2023.
+- [KyberAI](https://docs.kyberswap.com/reference/legacy/kyberai): Deprecated AI-powered token analytics with KyberScore, on-chain indicators, and technical analysis.
+- [Elastic Legacy](https://docs.kyberswap.com/reference/legacy/elastic-legacy): Legacy Elastic protocol contracts and migration guide.
+- [Whitepapers](https://docs.kyberswap.com/reference/legacy/whitepapers): Historical whitepapers for KyberSwap protocols.
+- [Legacy Audits](https://docs.kyberswap.com/reference/legacy/audits): Audit reports for deprecated products.
+- [Legacy Protocol](https://docs.kyberswap.com/reference/legacy/protocol): Original Kyber Network protocol documentation.
+- [Legacy Integrations](https://docs.kyberswap.com/reference/legacy/integrations): Integration guides for the original Kyber Network protocol.
+- [Legacy Reserves](https://docs.kyberswap.com/reference/legacy/reserves): Reserve management documentation for the original protocol.
+- [Legacy Addresses](https://docs.kyberswap.com/reference/legacy/addresses): Contract addresses for deprecated protocol versions.
+- [Legacy API/ABI](https://docs.kyberswap.com/reference/legacy/api-abi): API and ABI documentation for the original Kyber Network protocol.
+
+## Optional
+
+- [KyberSwap App](https://kyberswap.com/): Access the KyberSwap interface to swap, trade, and earn
+- [KyberSwap Documentation](https://docs.kyberswap.com/): Full documentation portal
+- [KyberSwap GitHub](https://github.com/KyberNetwork): Open source repositories
