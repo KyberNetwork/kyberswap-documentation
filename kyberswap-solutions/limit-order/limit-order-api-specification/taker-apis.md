@@ -43,7 +43,7 @@ To support the continued development of the Limit Orders feature, KyberSwap will
 * ZkSync (ChainID: 324)
 * Linea (ChainID: 59144)
 * Mantle (ChainID: 5000)
-* Scroll (ChainID: 534352)&#x20;
+* Scroll (ChainID: 534352)
 * Blast (ChainID: `81457)`
 
 The fees charged will be according to the most exotic token in the trading pair. The section below lists the fees whereby the highest fee category will apply based on the classification of the input and output tokens. There are 6 categories of tokens with an additional special category for trades involving KNC.
@@ -57,7 +57,7 @@ The fees charged will be according to the most exotic token in the trading pair.
 * BSC (ChainID: 56)
   * USDC: [`0x8ac76a51cc950d9822d68b83fe1ad97b32cd580d`](https://bscscan.com/address/0x8ac76a51cc950d9822d68b83fe1ad97b32cd580d)
   * USDT: [`0x55d398326f99059ff775485246999027b3197955`](https://bscscan.com/address/0x55d398326f99059ff775485246999027b3197955)
-  * DAI: [`0x1af3f329e8be154074d8769d1ffa4ee058b1dbc3`](https://bscscan.com/address/0x1af3f329e8be154074d8769d1ffa4ee058b1dbc3)&#x20;
+  * DAI: [`0x1af3f329e8be154074d8769d1ffa4ee058b1dbc3`](https://bscscan.com/address/0x1af3f329e8be154074d8769d1ffa4ee058b1dbc3)
   * BUSD: [`0xe9e7cea3dedca5984780bafc599bd69add087d56`](https://bscscan.com/address/0xe9e7cea3dedca5984780bafc599bd69add087d56)
 * Arbitrum (ChainID: 42161)
   * USDT: [`0xFd086bC7CD5C481DCC9C85ebE478A1C0b69FCbb9`](https://arbiscan.io/address/0xFd086bC7CD5C481DCC9C85ebE478A1C0b69FCbb9)
@@ -118,17 +118,17 @@ The fees charged will be according to the most exotic token in the trading pair.
 
 * All remaining tokens not covered in the super stable, stable, normal, and KNC categories.
 
-#### High Volatility  (0.5%)
+**High Volatility (0.5%)**
 
 * Tokens that have been added in the Token Catalog from 2 weeks to 1 month.
 
-#### Super High Volatility  (1%)
+**Super High Volatility (1%)**
 
 * Tokens that have been added in the Token Catalog for less than 2 weeks.
 
-**KNC (0.05%)**
+**KNC (0.1%)**
 
-* Trades to and from KNC will be charged a flat 0.05% fee.
+* Trades to and from KNC will be charged a flat 0.1% fee.
 
 </details>
 
@@ -150,22 +150,22 @@ Please refer to [**Fill Limit Order**](../developer-guides/fill-limit-order.md) 
 
 #### Query Order(s)
 
-{% swagger src="../../../.gitbook/assets/LimitOrderAPIs_v1.2.yaml" path="/read-partner/api/v1/orders" method="get" %}
+{% openapi src="../../../.gitbook/assets/LimitOrderAPIs_v1.2.yaml" path="/read-partner/api/v1/orders" method="get" %}
 [LimitOrderAPIs_v1.2.yaml](../../../.gitbook/assets/LimitOrderAPIs_v1.2.yaml)
-{% endswagger %}
+{% endopenapi %}
 
 #### Get Operator Signature
 
-{% swagger src="../../../.gitbook/assets/LimitOrderAPIs_v1.2.yaml" path="/read-partner/api/v1/orders/operator-signature" method="get" %}
+{% openapi src="../../../.gitbook/assets/LimitOrderAPIs_v1.2.yaml" path="/read-partner/api/v1/orders/operator-signature" method="get" %}
 [LimitOrderAPIs_v1.2.yaml](../../../.gitbook/assets/LimitOrderAPIs_v1.2.yaml)
-{% endswagger %}
+{% endopenapi %}
 
 #### Fill Order(s)
 
-{% swagger src="../../../.gitbook/assets/LimitOrderAPIs_v1.2.yaml" path="/read-ks/api/v1/encode/fill-order-to" method="post" %}
+{% openapi src="../../../.gitbook/assets/LimitOrderAPIs_v1.2.yaml" path="/read-ks/api/v1/encode/fill-order-to" method="post" %}
 [LimitOrderAPIs_v1.2.yaml](../../../.gitbook/assets/LimitOrderAPIs_v1.2.yaml)
-{% endswagger %}
+{% endopenapi %}
 
-{% swagger src="../../../.gitbook/assets/LimitOrderAPIs_v1.2.yaml" path="/read-ks/api/v1/encode/fill-batch-orders-to" method="post" %}
+{% openapi src="../../../.gitbook/assets/LimitOrderAPIs_v1.2.yaml" path="/read-ks/api/v1/encode/fill-batch-orders-to" method="post" %}
 [LimitOrderAPIs_v1.2.yaml](../../../.gitbook/assets/LimitOrderAPIs_v1.2.yaml)
-{% endswagger %}
+{% endopenapi %}
