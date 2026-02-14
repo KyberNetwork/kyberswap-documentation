@@ -134,6 +134,7 @@
 
 ## Reference
 
+* [AI Workflow](reference/ai-workflow.md)
 * [Legacy](reference/legacy/README.md)
   * [KyberSwap Classic](reference/legacy/kyberswap-classic/README.md)
     * [Concepts](reference/legacy/kyberswap-classic/concepts/README.md)
