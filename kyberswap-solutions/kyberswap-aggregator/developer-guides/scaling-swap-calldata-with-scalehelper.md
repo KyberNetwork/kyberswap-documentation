@@ -2,13 +2,15 @@
 description: For modifying effective amount in on-chain (at most ±5%)
 ---
 
-# Scaling swap calldata with ScaleHelper
+# Scaling Swap Calldata With ScaleHelper
 
 ## Scale Helper contract
 
-The getScaledInputData function is the main entry point for scaling swap transaction data. It takes pre-encoded transaction data for KyberSwap's MetaAggregationRouterV2 and adjusts the swap amount to a new value while maintaining all other parameters proportionally.
+The `getScaledInputData` function is the main entry point for scaling swap transaction data. It takes pre-encoded transaction data for KyberSwap's `MetaAggregationRouterV2` and adjusts the swap amount to a new value while maintaining all other parameters proportionally.
 
-This function is essential for adjusting pre-built swap transactions when you need to change the input amount. For example, if you have encoded swap data for 100 tokens but want to swap 150 tokens instead, this function will scale all the internal amounts proportionally while maintaining the same swap route and parameters. The function returns false if the scaling fails (e.g., unsupported dexes, scaling constraints violated) and true with the new encoded data if successful. Thus it is important to specify onlyScalableSources=true when getting a route that needs to be scaled later.
+This function is essential for adjusting pre-built swap transactions when you need to change the input amount. For example, if you have encoded swap data for 100 tokens but want to swap 150 tokens instead, this function will scale all the internal amounts proportionally while maintaining the same swap route and parameters.
+
+The function returns false if the scaling fails (e.g., unsupported dexes, scaling constraints violated) and true with the new encoded data if successful. Thus, it is important to specify `onlyScalableSources=true` when getting a route that needs to be scaled later.
 
 ### Interface
 
@@ -16,7 +18,7 @@ This function is essential for adjusting pre-built swap transactions when you ne
 function getScaledInputData(
     bytes calldata inputData,
     uint256 newAmount
-  ) external view returns (bool isSuccess, bytes memory data);
+  ) external view returns (bool isSuccess, bytes memory newScaledData);
 ```
 
 ### How to use
@@ -26,15 +28,14 @@ function getScaledInputData(
   * `newAmount`: The new amount you want to adjust to.
 * **Returns**
   * `isSuccess`: Indicates whether scaling was successful (`true`) or not (`false`).
-  * `data`: The new `calldata` after scaling. You can use this directly with `MetaAggregationRouterV2`.
+  * `newScaledData`: The new `calldata` after scaling. You can use this directly with `MetaAggregationRouterV2`.
 * **Example**
-  * Before: RouterContract.call(inputData)
-  * After: RouterContract.call(newScaledData)
+  * Before: `RouterContract.call(inputData)`
+  * After: `RouterContract.call(newScaledData)`
 
 ## Contract address
 
-* `0x2f577A41BeC1BE1152AeEA12e73b7391d15f655D`
-* network support: eth, polygon POS, sonic, bnb, linea, mantle, bera, avax, arb, op, base, hyperEVM, ronin
+* `0x2f577A41BeC1BE1152AeEA12e73b7391d15f655D` for all supported chains
 
 ## **📝 Usage Notes**
 
