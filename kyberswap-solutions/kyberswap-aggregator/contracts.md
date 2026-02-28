@@ -71,15 +71,6 @@ All KyberSwap Aggregator contracts have been deployed at the same address across
 
 <details>
 
-<summary>Mantle (ChainID: 5000)</summary>
-
-* **MetaAggregationRouterV2:** [`0x6131B5fae19EA4f9D964eAc0408E4408b66337b5`](https://mantlescan.xyz/address/0x6131B5fae19EA4f9D964eAc0408E4408b66337b5)
-* **InputScalingHelperV2:** [`0x2f577A41BeC1BE1152AeEA12e73b7391d15f655D`](https://mantlescan.xyz/address/0x2f577A41BeC1BE1152AeEA12e73b7391d15f655D)
-
-</details>
-
-<details>
-
 <summary>Linea (ChainID: 59144)</summary>
 
 * **MetaAggregationRouterV2:** [`0x6131B5fae19EA4f9D964eAc0408E4408b66337b5`](https://lineascan.build/address/0x6131B5fae19EA4f9D964eAc0408E4408b66337b5)

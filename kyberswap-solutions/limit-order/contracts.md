@@ -75,15 +75,6 @@ description: In Code We Trust
 
 <details>
 
-<summary>Mantle (ChainID: 5000)</summary>
-
-* **DSLOProtocol**: [`0xcab2FA2eeab7065B45CBcF6E3936dDE2506b4f6C`](https://mantlescan.xyz/address/0xcab2FA2eeab7065B45CBcF6E3936dDE2506b4f6C#code)
-* **WETHUnwrapper:** [`0x37334Cd06DFEcd2e9b3937a6dA17853d637A5b94`](https://mantlescan.xyz/address/0x37334Cd06DFEcd2e9b3937a6dA17853d637A5b94)
-
-</details>
-
-<details>
-
 <summary>Linea (ChainID: 59144)</summary>
 
 * **DSLOProtocol**: [`0xcab2FA2eeab7065B45CBcF6E3936dDE2506b4f6C`](https://lineascan.build/address/0xcab2FA2eeab7065B45CBcF6E3936dDE2506b4f6C)
