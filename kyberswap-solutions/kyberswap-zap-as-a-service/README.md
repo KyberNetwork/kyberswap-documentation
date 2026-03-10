@@ -26,8 +26,5 @@ Zap currently supports the following liquidity actions:
 
 1. Add Liquidity to a Pool with a new position
 2. Increase Liquidity into an existing Liquidity Position
-
-## Future developements
-
-1. Creating a new pool - pool not created yet for the specific token pair-fee tier configuration
-2. Remove liquidity from the pool into a single token
+3. Remove liquidity from the pool into a single token
+4. Creating a new pool - pool not created yet for the specific token pair-fee tier configuration
