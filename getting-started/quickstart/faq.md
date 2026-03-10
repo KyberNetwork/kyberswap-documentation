@@ -10,7 +10,7 @@ description: Your KyberSwap Questions Answered
 
 <summary>What is KyberSwap?</summary>
 
-KyberSwap is a multi-chain DEX aggregator. KyberSwap is the best place to trade on networks such as Ethereum, Polygon, Binance Smart Chain (BSC), Avalanche, and Fantom since you can get the best rates for your token swaps.\
+KyberSwap is a decentralized platform. KyberSwap is the best place to trade on networks such as Ethereum, Polygon, Binance Smart Chain (BSC), Avalanche, and Fantom since you can get the best rates for your token swaps.\
 \
 You can visit our [Introduction to KyberSwap](../../) page for more details.
 
