@@ -219,6 +219,10 @@ Please refer to the [Price Impact](../../../getting-started/foundational-topics/
 
 * **Slippage**: The estimated difference between the expected price and final price of the trade. Slippage is an inherent characteristic of all active markets whose risks can only be mitigated. For more detailed insights, please refer to [Slippage](../../../getting-started/foundational-topics/decentralized-finance/slippage.md).
 
+{% hint style="warning" %}
+KyberSwap’s interface does **not charge any flat swap fee** for trades executed directly through its interface. If an additional fee appears during a transaction, it is **not charged by KyberSwap**.
+{% endhint %}
+
 Click the “Confirm Swap” button to proceed. You should see the Transaction Submitted screen appear. You can click on "View Transaction" to see your transaction on the blockchain explorer. Additionally, you can add the token to MetaMask if you haven't already done so.
 
 <figure><img src="../../../.gitbook/assets/image (29).png" alt=""><figcaption><p>Transaction broadcasted confirmation</p></figcaption></figure>
