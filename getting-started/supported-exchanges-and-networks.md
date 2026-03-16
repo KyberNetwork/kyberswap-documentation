@@ -29,6 +29,7 @@ For developers integrating with the [KyberSwap Aggregator](../kyberswap-solution
 | EVM      | HyperEVM (999)         | ✅              | ✅               |         | ✅                    |
 | EVM      | Plasma (9745)          | ✅              |                 |         | ✅                    |
 | EVM      | Etherlink (42793)      | ✅              |                 |         | ✅                    |
+| EVM      | MegaETH (4326)         | ✅              | ✅               |         | ✅                    |
 | EVM      | Monad (143)            | ✅              | ✅               | ✅       | ✅                    |
 | EVM      | zkSync                 |                |                 |         | ✅                    |
 | EVM      | Mantle (5000)          |                |                 |         | ✅                    |
