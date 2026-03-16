@@ -255,7 +255,7 @@ These settings can be accessed via selecting the slider icons on the main swap p
 
 <figure><img src="../../../.gitbook/assets/Screenshot 2023-04-12 at 1.01.34 PM.png" alt=""><figcaption><p>Access trade settings</p></figcaption></figure>
 
-## Degen Mode: Tread carefully
+## Degen Mode: Trade carefully
 
 KyberSwap implemented Degen Mode for our most "advanced" apes. While KyberSwap has consistently iterated upon industry-leading safeguards to enable our users to trade safely, we are aware that some advanced traders might find these protective features inconvenient. As such, switching to Degen Mode allows users to conduct high impact trades without any confirmation prompts nor price impact limits.
 
