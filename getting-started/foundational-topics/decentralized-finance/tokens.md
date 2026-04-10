@@ -14,9 +14,9 @@ While everything can be tokenized on the blockchain, it is important to differen
 
 * Coins are essentially a form of digital currency which is native to its blockchain. The blockchain protocol defines the coins supply curve which includes the minting and burning of coins.\
   \
-  Coins facilitate activity on the chain by creating a market for on-chain computing resources. The easiest method to identify a coin is if a blockchain requires you to pay transaction fees denominated in their native coin. \
+  Coins facilitate activity on the chain by creating a market for on-chain computing resources. The easiest method to identify a coin is if a blockchain requires you to pay transaction fees denominated in their native coin.\
   \
-  Below are the list of blockchains and their respective coins which are supported by KyberSwap. Do note that each chain has control over their coin symbol and as such some chains have opted to keep the ETH symbol. The ETH coin is specific to each chain and are not interoperable. You can refer to [Bridge Your Assets Across Multiple Chains](broken-reference) if you would like to transfer coin value form one chain to the next.
+  Below are the list of blockchains and their respective coins which are supported by KyberSwap. Do note that each chain has control over their coin symbol and as such some chains have opted to keep the ETH symbol. The ETH coin is specific to each chain and are not interoperable. You can refer to [Bridge Your Assets Across Multiple Chains](broken-reference/) if you would like to transfer coin value form one chain to the next.
 
 | Blockchain       | Coin Symbol |
 | ---------------- | ----------- |
@@ -40,7 +40,7 @@ While everything can be tokenized on the blockchain, it is important to differen
   \
   The use cases for tokens are only limited by code. As such, token applications are virtually unlimited. Some popular use cases are: utility tokens to use a particular service, governance tokens that enable holders to participate in project governance, non-fungible tokens to prove exclusive ownership.\
   \
-  The same token ticker can exist on multiple chains depending on which chains the token smart contract has been deployed on. While the token conceptually represents the same asset across chains, you will still need to [bridge](broken-reference) the token to your selected chain if you are performing any actions on that chain.
+  The same token ticker can exist on multiple chains depending on which chains the token smart contract has been deployed on. While the token conceptually represents the same asset across chains, you will still need to [bridge](broken-reference/) the token to your selected chain if you are performing any actions on that chain.
 
 ## Token standards
 
@@ -51,14 +51,14 @@ The two most popular token standards that established itself in the DeFi space a
 * [ERC20](https://docs.openzeppelin.com/contracts/4.x/erc20): A standard for fungible tokens which implements a basic set of token characteristics including name, symbol, and decimals. This is supplemented with additional functionalities which enable developers to mint/burn/transfer tokens as well as query token balances.
 * [ERC721](https://docs.openzeppelin.com/contracts/4.x/erc721): A standard for non-fungible tokens (NFTs) which implements a basic set of characteristics including collection name, symbol, and NFT identifiers. In addition to the ERC20 functionalities, ERC721 also adds further functionalities that enables querying of NFT owners.
 
-## Trade and earn with your preferred stablecoins&#x20;
+## Trade and earn with your preferred stablecoins
 
-KyberSwap supports the trading of any token that implements the ERC20 standard. You can [Add Your Favourite Tokens](../../../kyberswap-solutions/kyberswap-interface/user-guides/add-your-favourite-tokens.md) via the KyberSwap interface and start trading them immediately.
+KyberSwap supports the trading of any token that implements the ERC20 standard. You can [Add Your Favourite Tokens](../../../user-guide/user-guides/add-your-favourite-tokens.md) via the KyberSwap interface and start trading them immediately.
 
 {% tabs %}
 {% tab title="Traders" %}
-* [Add Your Favourite Tokens](../../../kyberswap-solutions/kyberswap-interface/user-guides/add-your-favourite-tokens.md)
+* [Add Your Favourite Tokens](../../../user-guide/user-guides/add-your-favourite-tokens.md)
 * Instantly Swap At Superior Rates
-* [Swap At Your Preferred Rates](../../../kyberswap-solutions/kyberswap-interface/user-guides/trade-at-your-preferred-rates.md)
+* [Swap At Your Preferred Rates](../../../user-guide/limit-order/)
 {% endtab %}
 {% endtabs %}

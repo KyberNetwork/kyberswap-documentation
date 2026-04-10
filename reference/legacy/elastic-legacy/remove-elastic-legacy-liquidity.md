@@ -6,15 +6,15 @@ description: Retrieve Elastic Legacy Funds
 
 ## Introduction
 
-On 17 April 2023, KyberSwap validated a vulnerability reported by a whitehat hacker which could result in double-counting of liquidity deposits under a specific condition. Elastic pools and farms were paused with all user funds being safely withdrawn from the identified contracts. As of 25 May 2023, this has now been fixed with all the relevant Elastic protocol and farm contracts updated.&#x20;
+On 17 April 2023, KyberSwap validated a vulnerability reported by a whitehat hacker which could result in double-counting of liquidity deposits under a specific condition. Elastic pools and farms were paused with all user funds being safely withdrawn from the identified contracts. As of 25 May 2023, this has now been fixed with all the relevant Elastic protocol and farm contracts updated.
 
-This guide is targeted at users who still have tokens in the old Elastic Legacy contracts. As trades against Elastic Legacy contracts have been disabled to ensure the safety of liquidity provider funds, it is highly recommended that such idle funds be removed from Elastic Legacy. Users always maintain control over their own funds and are free to decide how best to utilize their funds whether it is for [yield farming in the newly audited Elastic contracts](broken-reference) or other purposes.
+This guide is targeted at users who still have tokens in the old Elastic Legacy contracts. As trades against Elastic Legacy contracts have been disabled to ensure the safety of liquidity provider funds, it is highly recommended that such idle funds be removed from Elastic Legacy. Users always maintain control over their own funds and are free to decide how best to utilize their funds whether it is for [yield farming in the newly audited Elastic contracts](broken-reference/) or other purposes.
 
 ## Removing liquidity from Elastic Legacy
 
 ### Step 1: Check for existing positions
 
-Upon [connecting your wallet](../../../kyberswap-solutions/kyberswap-interface/user-guides/connect-your-wallet.md) to KyberSwap, you will be prompted with a notification if there are existing liquidity positions on KyberSwap Elastic Legacy that are linked to your address.
+Upon [connecting your wallet](../../../user-guide/user-guides/connect-your-wallet.md) to KyberSwap, you will be prompted with a notification if there are existing liquidity positions on KyberSwap Elastic Legacy that are linked to your address.
 
 <figure><img src="../../../.gitbook/assets/ElasticLegacy_ExistingPositionNotification.png" alt=""><figcaption><p>Elastic Legacy existing position notification</p></figcaption></figure>
 
@@ -36,7 +36,7 @@ Note that once the positions have been unstaked, any accrued rewards from the El
 
 <figure><img src="../../../.gitbook/assets/ElasticLegacy_ClaimFarmRewards.png" alt=""><figcaption><p>Claim Elastic Legacy farming rewards</p></figcaption></figure>
 
-### Step 4: Remove liquidity&#x20;
+### Step 4: Remove liquidity
 
 Once all your positions have been unstaked from the farm, you can then proceed to retrieve your funds via selecting the "Remove Liquidity" button for each Elastic Legacy position on the "My Pools" page.
 

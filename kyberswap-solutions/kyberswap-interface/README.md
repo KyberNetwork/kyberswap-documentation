@@ -1,5 +1,6 @@
 ---
 description: One Stop Liquidity Gateway
+hidden: true
 ---
 
 # KyberSwap Interface
@@ -15,8 +16,8 @@ KyberSwap Interface is a one stop [web application](https://kyberswap.com/swap/e
 As a window into the world of DeFi liquidity, KyberSwap Interface enables you to:
 
 * Trade at superior market rates via the KyberSwap Aggregator
-* [Trade at your preferred rates by setting Limit Orders](user-guides/trade-at-your-preferred-rates.md)
-* [Swap between different tokens across chains](user-guides/swap-between-different-tokens-across-chains.md)
+* [Trade at your preferred rates by setting Limit Orders](../../user-guide/limit-order/)
+* [Swap between different tokens across chains](../../user-guide/user-guides/swap-between-different-tokens-across-chains.md)
 * Purchase crypto with a credit/debit card, mobile wallet, or bank account
 * Bridge your asset across 13 chains and counting
 * [Participate in KyberDAO governance](../../governance/kyberdao/user-guides/participating-in-kyberdao.md)

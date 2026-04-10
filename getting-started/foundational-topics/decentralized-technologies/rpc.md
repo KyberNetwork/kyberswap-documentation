@@ -27,12 +27,12 @@ In the large majority of cases, the term RPC is usually used to refer to the RPC
 
 ## Selecting a RPC
 
-As each chain requires nodes to run a different set of blockchain software, users will have to change their connected RPC endpoint when switching between chains. You can refer to our [Switching Networks guide](../../../kyberswap-solutions/kyberswap-interface/user-guides/selecting-preferred-network.md) on how to achieve this.
+As each chain requires nodes to run a different set of blockchain software, users will have to change their connected RPC endpoint when switching between chains. You can refer to our [Switching Networks guide](../../../user-guide/user-guides/selecting-preferred-network.md) on how to achieve this.
 
 In addition to switching between chains, there is also an element of trust when a user selects a specific RPC on a chain. This is because the execution of dapp logic ultimately depends on the RPC node reliably and objectively processing the signed instructions. A RPC which is consistently offline or slower to respond would result in a degraded user experience. Moreover, RPC nodes can even take advantage of the transaction data to execute [MEV strategies](../decentralized-finance/maximal-extractable-value-mev.md) thereby profiting at the expense of the user. As such, users will have to select RPCs based on a combination of factors.
 
 {% hint style="success" %}
-#### MEV Protection
+**MEV Protection**
 
 KyberSwap allows users to select RPCs which protect the user's transactions against MEV strategies by routing the transaction into a private mempool. Please refer to MEV protection for more details.
 {% endhint %}

@@ -14,4 +14,4 @@ All you need is an Ethereum wallet and KNC tokens to participate. Simply follow 
 6. After voting, claim your rewards in next epoch
 7. Join Kyber’s official [Discord Server](https://discord.com/invite/kyberswap) and the [KyberDAO Twitter](https://twitter.com/kyberdao) account for the latest updates
 
-For the list of supported wallets, please refer to the [Connect Your Wallet](../../../kyberswap-solutions/kyberswap-interface/user-guides/connect-your-wallet.md) user guide.
+For the list of supported wallets, please refer to the [Connect Your Wallet](../../../user-guide/user-guides/connect-your-wallet.md) user guide.

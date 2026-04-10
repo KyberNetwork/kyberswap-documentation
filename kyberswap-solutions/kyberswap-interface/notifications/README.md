@@ -35,13 +35,13 @@ KyberSwap users are able to subscribe to active notifications across the followi
 
 <figure><img src="../../../.gitbook/assets/image (105).png" alt=""><figcaption><p>Create a price alert</p></figcaption></figure>
 
-Setup your target price and receive a notification whenever the market price for the token pair specified meets your target. Price alerts can be configured for any token pair that have been [imported](../user-guides/add-your-favourite-tokens.md) on the KyberSwap Interface. Alerts can be created with a cooldown across all KyberSwap [supported chains](../../../getting-started/supported-exchanges-and-networks.md).
+Setup your target price and receive a notification whenever the market price for the token pair specified meets your target. Price alerts can be configured for any token pair that have been [imported](../../../user-guide/user-guides/add-your-favourite-tokens.md) on the KyberSwap Interface. Alerts can be created with a cooldown across all KyberSwap [supported chains](../../../getting-started/supported-exchanges-and-networks.md).
 
 Users can also toggle their active alerts via the Notification Center.
 
 <figure><img src="../../../.gitbook/assets/image (68).png" alt=""><figcaption><p>Toggle active alerts</p></figcaption></figure>
 
-With price alerts, users are able to monitor price actions and adjust their trade strategy accordingly be it [updating existing limit orders](../../limit-order/user-guides/update-limit-orders.md) or [executing an immediate swap](broken-reference/).
+With price alerts, users are able to monitor price actions and adjust their trade strategy accordingly be it [updating existing limit orders](../../../user-guide/limit-order/update-limit-orders.md) or [executing an immediate swap](broken-reference/).
 
 <figure><img src="../../../.gitbook/assets/image (77).png" alt=""><figcaption><p>Price alerts history</p></figcaption></figure>
 
@@ -55,7 +55,7 @@ With price alerts, users are able to monitor price actions and adjust their trad
 
 <figure><img src="../../../.gitbook/assets/image (162).png" alt=""><figcaption><p>Limit order notification</p></figcaption></figure>
 
-[Create a limit order ](../user-guides/trade-at-your-preferred-rates.md)and receive a notification whenever your order gets fully or partially filled. KyberSwap will also send out notifications if any of your active orders has expired. Predefine your trades and receive updates whenever there's a matching trade or change in status.
+[Create a limit order ](../../../user-guide/limit-order/)and receive a notification whenever your order gets fully or partially filled. KyberSwap will also send out notifications if any of your active orders has expired. Predefine your trades and receive updates whenever there's a matching trade or change in status.
 
 ### KyberAI Watchlist
 

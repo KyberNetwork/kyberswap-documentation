@@ -189,6 +189,42 @@ service Service {
     };
   }
 
+  // Get the best zap-swap route (claim rewards -> swap to a single token).
+  rpc GetSwapRoute(GetSwapRouteRequest) returns (GetSwapRouteResponse) {
+    option (google.api.http) = {get: "/api/v1/swap/route"};
+    option (grpc.gateway.protoc_gen_openapiv2.options.openapiv2_operation) = {
+      parameters: {
+        headers: {
+          name: "X-Client-Id"
+          description: "Client Id"
+          type: STRING
+        }
+        headers: {
+          name: "X-Request-Id"
+          description: "Request Id"
+          type: STRING
+        }
+      }
+      responses: {
+        key: '200'
+        value: {
+          description: "OK"
+          examples: {
+            key: 'application/json'
+            value: '{"code":0,"data":{}}'
+          }
+        }
+      }
+    };
+  }
+  // Build encoded data for the specified zap-swap route.
+  rpc BuildSwapRoute(BuildSwapRouteRequest) returns (BuildSwapRouteResponse) {
+    option (google.api.http) = {
+      post: "/api/v1/swap/route/build"
+      body: "*"
+    };
+  }
+
   rpc GetCompoundRoute(GetCompoundRouteRequest) returns (GetInRouteResponse) {
     option (google.api.http) = {get: "/api/v1/compound/route"};
     option (grpc.gateway.protoc_gen_openapiv2.options.openapiv2_operation) = {
@@ -314,11 +350,8 @@ message BuildCreateRouteRequest {
   }];
   // the source of the zap-in transaction.
   string source = 5;
-  // map of each token address to its ERC20 permit using EIP-2612 to skip a separate approval step.
-  map<string, string> permits = 6 [
-    (buf.validate.field).map.keys.string.pattern = "^0x[0-9A-Za-z]{40}$",
-    (buf.validate.field).map.values.string.pattern = "^0x[0-9A-Za-z]{448}$"
-  ];
+  // map of each token address to its ERC20/ERC721 permit to skip a separate approval step.
+  map<string, string> permits = 6;
   // the (optional) referral code
   string referral = 7;
 
@@ -327,7 +360,7 @@ message BuildCreateRouteRequest {
     gte: 0
     lte: 10000
   }];
-  
+
   // debug flag to force gas estimation
   bool debug_estimate_gas = 9;
 }
@@ -340,6 +373,14 @@ message BuildZapResult {
   string call_data = 2;
   // native token value to transfer with the zap-in transaction in case of zapping with native tokens
   string value = 3;
+  // target executor address to receive tokens (used for reward hook flow)
+  string token_target = 4;
+  // quoted output amount before slippage (token units)
+  string quote_amount_out = 5;
+  // minimum output after slippage guard (token units)
+  string min_amount_out = 6;
+  // quoted output value in USD
+  string amount_out_usd = 7;
 }
 
 message BuildCreateRouteResponse {
@@ -373,7 +414,7 @@ message PoolInitParams{
       unique: true,
       items: { string: { pattern:  "^0x[0-9A-Za-z]{40}(,0x[0-9A-Za-z]{40})*$"} }
     },
-    (buf.validate.field).repeated.min_items = 1, 
+    (buf.validate.field).repeated.min_items = 1,
     (buf.validate.field).repeated.max_items = 8
   ];
   oneof config {
@@ -390,7 +431,7 @@ message UniswapV4PoolConfig{
     gte: 0
     lte: 100000
   }];
-  optional string hook = 3 [(buf.validate.field).string.pattern = "^0x[0-9A-Za-z]{40}$"];
+  optional string hooks = 3 [(buf.validate.field).string.pattern = "^0x[0-9A-Za-z]{40}$"];
   string sqrt_p = 4;
 }
 
@@ -470,6 +511,8 @@ message GetCreateRouteResponse {
     string gas = 6;
     // USD value of estimated gas required
     string gas_usd = 7;
+    // the router permit address
+    string router_permit_address = 8;
   }
 
 
@@ -791,11 +834,8 @@ message BuildInRouteRequest {
   }];
   // the source of the zap-in transaction.
   string source = 5;
-  // map of each token address to its ERC20 permit using EIP-2612 to skip a separate approval step.
-  map<string, string> permits = 6 [
-    (buf.validate.field).map.keys.string.pattern = "^0x[0-9A-Za-z]{40}$",
-    (buf.validate.field).map.values.string.pattern = "^0x[0-9A-Za-z]{448}$"
-  ];
+  // map of each token address to its ERC20/ERC721 permit to skip a separate approval step.
+  map<string, string> permits = 6;
   // the (optional) referral code
   string referral = 7;
 
@@ -804,7 +844,7 @@ message BuildInRouteRequest {
     gte: 0
     lte: 10000
   }];
-  
+
   // debug flag to force gas estimation
   bool debug_estimate_gas = 9;
 }
@@ -942,9 +982,12 @@ message BuildMigrateRouteRequest {
     gte: 0
     lte: 10000
   }];
-  
+
   // debug flag to force gas estimation
   bool debug_estimate_gas = 9;
+
+  // map of each token address to its ERC20/ERC721 permit to skip a separate approval step.
+  map<string, string> permits = 10;
 }
 
 // Returns the zap-migrate transaction details.
@@ -1132,13 +1175,96 @@ message BuildOutRouteRequest {
     gte: 0
     lte: 10000
   }];
-  
+
   // debug flag to force gas estimation
   bool debug_estimate_gas = 90;
+
+  // map of each token address to its ERC20/ERC721 permit to skip a separate approval step.
+  map<string, string> permits = 100;
 }
 
 // Returns the zap-out transaction details.
 message BuildOutRouteResponse {
+  // grpc error code
+  int32 code = 1;
+  // grpc error message
+  string message = 2;
+  // response data
+  BuildZapResult data = 3;
+  // request trace id
+  string request_id = 4;
+}
+
+// Get the best zap-swap route (claim rewards -> swap -> single token).
+message GetSwapRouteRequest {
+  // list of REWARD tokens to be swapped (no native/ETH)
+  repeated string tokens_in = 1 [(buf.validate.field).repeated.items.string.pattern = "^0x[0-9A-Za-z]{40}(,0x[0-9A-Za-z]{40})*$"];
+  // amounts to swap corresponding to tokens_in
+  repeated string amounts_in = 2 [(buf.validate.field).repeated.items.string.pattern = "^\\d+(,\\d+)*$"];
+  // target token to receive
+  string token_out = 3 [(buf.validate.field).string.pattern = "^0x[0-9A-Za-z]{40}$"];
+  // aggregator options
+  AggregatorOptions aggregator_options = 4;
+  // slippage tolerance in basis points used for estimation only.
+  uint32 slippage = 5 [(buf.validate.field).uint32 = {
+    gte: 0
+    lte: 10000
+  }];
+  // optional sender address (for logging/allow-listing)
+  string sender = 6 [(buf.validate.field) = {
+    string: {pattern: "^0x[0-9A-Za-z]{40}$"}
+    ignore: IGNORE_IF_UNPOPULATED
+  }];
+}
+
+// Returns the zap-swap route details.
+message GetSwapRouteResponse {
+  // grpc error code
+  int32 code = 1;
+  // grpc error message
+  string message = 2;
+  // response data
+  GetZapResult data = 3;
+  // request trace id
+  string request_id = 4;
+}
+
+// Build encoded data for zap-swap transaction from the specified route.
+message BuildSwapRouteRequest {
+  // the wallet sending the transaction.
+  string sender = 1 [(buf.validate.field).string.pattern = "^0x[0-9A-Za-z]{40}$"];
+  // the wallet receiving the swapped token. defaults to sender if empty.
+  string recipient = 2 [(buf.validate.field) = {
+    string: {pattern: "^0x[0-9A-Za-z]{40}$"}
+    ignore: IGNORE_IF_UNPOPULATED
+  }];
+  // the route as returned from get-route endpoint.
+  bytes route = 3;
+  // deadline for the swap transaction to execute.
+  fixed32 deadline = 4 [(buf.validate.field).cel = {
+    id: "deadline.gte_now"
+    message: "deadline must be in the future"
+    expression: "this == 0u || this > int(now)"
+  }];
+  // the source of the zap-swap transaction.
+  string source = 5;
+  // the (optional) referral code
+  string referral = 6;
+  // override slippage in get route request
+  uint32 slippage = 7 [(buf.validate.field).uint32 = {
+    gte: 0
+    lte: 10000
+  }];
+  // permit signatures for gasless approvals
+  // key: token address (lowercase) or position ID for NFTs
+  // value: permit signature hex string
+  map<string, string> permits = 8;
+  // token source mode
+  TokenSourceMode mode = 9;
+}
+
+// Returns the zap-swap transaction details.
+message BuildSwapRouteResponse {
   // grpc error code
   int32 code = 1;
   // grpc error message
@@ -1155,4 +1281,12 @@ enum BinLiquidityShape {
   BIN_LIQUIDITY_SHAPE_SPOT = 1;
   BIN_LIQUIDITY_SHAPE_CURVE = 2;
   BIN_LIQUIDITY_SHAPE_BID_ASK = 3;
+}
+
+enum TokenSourceMode {
+  TOKEN_SOURCE_MODE_UNSPECIFIED = 0;
+  // pull tokens from sender's wallet (requires approval or permit)
+  TOKEN_SOURCE_MODE_PULL = 1;
+  // tokens already in executor (no pulling needed)
+  TOKEN_SOURCE_MODE_PUSH = 2;
 }

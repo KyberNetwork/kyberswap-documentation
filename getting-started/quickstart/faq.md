@@ -10,7 +10,7 @@ description: Your KyberSwap Questions Answered
 
 <summary>What is KyberSwap?</summary>
 
-KyberSwap is a decentralized platform. KyberSwap is the best place to trade on networks such as Ethereum, Polygon, Binance Smart Chain (BSC), Avalanche, and Fantom since you can get the best rates for your token swaps.\
+KyberSwap is a multi-chain decentralized platform. KyberSwap is the best place to trade on networks such as Ethereum, Polygon, Binance Smart Chain (BSC), Avalanche, and Base since you can get the best rates for your token swaps.\
 \
 You can visit our [Introduction to KyberSwap](../../) page for more details.
 
@@ -114,7 +114,7 @@ KyberSwap is a decentralized platform and does not hold our users’ funds in cu
 
 **Partnerships**
 
-We are always open to build relationships with others in the DeFi space. If you represent a project and would like to get in touch with us about a potential partnership, please send us a proposal via [this google form](https://docs.google.com/forms/d/e/1FAIpQLScPRN6NSBQ2LsPTyseVlS92PX9i-Wq2O13qhHV-Z_Ub3BgzqA/viewform).
+We are always open to build relationships with others in the DeFi space. If you represent a project and would like to get in touch with us about a potential partnership, please send us a proposal via in #business-outreach channel on our [Discord server](http://discord.gg/kyberswap).
 
 **Marketing Proposal**
 
@@ -130,7 +130,7 @@ If you have a marketing opportunity you would like to share with us, please post
 
 As a decentralized platform, KyberSwap does not offer users “accounts” in the traditional sense. We do not store your private data and all transactions on our platform take place through the use of [Web3 wallets](../foundational-topics/decentralized-technologies/wallets.md).
 
-Connecting your Web3 wallet to the KyberSwap platform will enable you to use the full suite of KyberSwap's onchain features. For more information on how to connect your wallet to KyberSwap, please refer to [this article](../../kyberswap-solutions/kyberswap-interface/user-guides/connect-your-wallet.md).
+Connecting your Web3 wallet to the KyberSwap platform will enable you to use the full suite of KyberSwap's onchain features. For more information on how to connect your wallet to KyberSwap, please refer to [this article](../../user-guide/user-guides/connect-your-wallet.md).
 
 </details>
 
@@ -138,7 +138,7 @@ Connecting your Web3 wallet to the KyberSwap platform will enable you to use the
 
 <summary>How to connect or disconnect a Web3 wallet</summary>
 
-Please refer to [Connect Your Wallet](../../kyberswap-solutions/kyberswap-interface/user-guides/connect-your-wallet.md) for a step-by-step guide on connecting your Web3 wallet with KyberSwap. You can also visit [Wallets](../foundational-topics/decentralized-technologies/wallets.md) to learn more about Web3 wallets and their implementation.
+Please refer to [Connect Your Wallet](../../user-guide/user-guides/connect-your-wallet.md) for a step-by-step guide on connecting your Web3 wallet with KyberSwap. You can also visit [Wallets](../foundational-topics/decentralized-technologies/wallets.md) to learn more about Web3 wallets and their implementation.
 
 </details>
 
@@ -194,7 +194,7 @@ There are a couple of things you can try to resolve this.
 2. Ensure that your Metamask wallet is unlocked with your password. Your wallet extension may also be waiting for confirmation from you to connect to KyberSwap.
 3. If you have either or both **Trust Wallet** and/or **Coin98** wallet extensions installed, go into their extension settings and disable the options making them the default wallet. These wallet extensions have been known to set themselves as the default wallet, overriding other wallets like Metamask.
 
-If these steps do not solve the problem, please take screenshots of what you’re seeing and contact [Support](https://support.kyberswap.com/hc/en-us/requests/new).
+If these steps do not solve the problem, please take screenshots of what you’re seeing and contact [Support](https://discord.gg/kyberswap).
 
 </details>
 

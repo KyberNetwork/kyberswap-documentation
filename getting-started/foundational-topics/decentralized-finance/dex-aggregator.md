@@ -46,7 +46,7 @@ A key aspect to this flow is that users are given the final option to consent to
 
 The[ KyberSwap Aggregator ](../../../kyberswap-solutions/kyberswap-aggregator/)can be conveniently accessed via the [KyberSwap Interface](../../../kyberswap-solutions/kyberswap-interface/). By initiating a trade via the KyberSwap [UI](https://kyberswap.com/swap), users are able to view optimal rates as well as the exact route which their trade will take.
 
-For developers, KyberSwap Aggregator exposes a set of [swap APIs ](../../../kyberswap-solutions/kyberswap-aggregator/aggregator-api-specification/)which enable favourable rates to be queried and encoded to be sent to the [Aggregator smart contract](/broken/pages/jGSQwkNNFqLTnHbPExjE).
+For developers, KyberSwap Aggregator exposes a set of [swap APIs ](../../../developer-guide/aggregator-api/aggregator-api-specification/)which enable favourable rates to be queried and encoded to be sent to the [Aggregator smart contract](/broken/pages/jGSQwkNNFqLTnHbPExjE).
 
 {% tabs %}
 {% tab title="Traders" %}
@@ -54,9 +54,9 @@ For developers, KyberSwap Aggregator exposes a set of [swap APIs ](../../../kybe
 {% endtab %}
 
 {% tab title="Developers" %}
-* [Integrating The KyberSwap Widget](../../../kyberswap-solutions/kyberswap-widget/developer-guides/integrating-the-kyberswap-widget.md)
-* [Execute A Swap With The Aggregator API](../../../kyberswap-solutions/kyberswap-aggregator/developer-guides/execute-a-swap-with-the-aggregator-api.md)
-* [Aggregator API Specification](../../../kyberswap-solutions/kyberswap-aggregator/aggregator-api-specification/)
-* [Aggregator Contracts](../../../kyberswap-solutions/kyberswap-aggregator/contracts.md)
+* [Integrating The KyberSwap Widget](../../../developer-guide/aggregator-api/how-to-guides/kyberswap-widget/integrating-the-kyberswap-widget.md)
+* [Execute A Swap With The Aggregator API](../../../developer-guide/aggregator-api/how-to-guides/execute-a-swap-with-the-aggregator-api/)
+* [Aggregator API Specification](../../../developer-guide/aggregator-api/aggregator-api-specification/)
+* [Aggregator Contracts](../../../developer-guide/aggregator-api/contracts.md)
 {% endtab %}
 {% endtabs %}

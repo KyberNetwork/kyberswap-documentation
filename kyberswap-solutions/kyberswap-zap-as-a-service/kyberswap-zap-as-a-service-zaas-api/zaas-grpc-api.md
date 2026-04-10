@@ -14,7 +14,7 @@ Please refer to the following server configuration and proto file for the grpc A
 
 Download zap.proto:
 
-{% file src="../../../.gitbook/assets/zap.proto" %}
+{% file src="../../../.gitbook/assets/zap (1).proto" %}
 
 ```protobuf
 syntax = "proto3";

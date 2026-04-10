@@ -32,7 +32,7 @@ While the **Hard Cancel** mechanism above practically guarantees cancellation, t
 In contrast to the **Hard Cancel** option which cancels orders on-chain, the **Gasless Cancel** option cancels the order off-chain by introducing an operator timed signature requirement. For a limit order to be valid, it must be signed by both the maker and a KyberSwap Operator, each with their own signature validity period:
 
 * **Maker signature**: Defines the expiry for the LO. This is set by the Maker at the point of LO creation. Maker order is automatically expired after this date.
-* **Operator signature**: Valid for 60-90 seconds and is only created when an operator unsigned maker order is included in a quote (via [LO Taker](../limit-order-api-specification/taker-apis.md) or [Aggregator](../../kyberswap-aggregator/aggregator-api-specification/evm-swaps.md) APIs).
+* **Operator signature**: Valid for 60-90 seconds and is only created when an operator unsigned maker order is included in a quote (via [LO Taker](../limit-order-api-specification/taker-apis.md) or [Aggregator](../../../developer-guide/aggregator-api/aggregator-api-specification/evm-swaps.md) APIs).
 
 As a result of the aforementioned design, maker limit orders will have a maximum 90 seconds validity period upon which another Operator signature is required. Consequently, maker's have the option to instruct the KyberSwap Operator not to renew their signature by submitting a **Gasless Cancel** order prior to the next Operator signature (i.e. when the maker order is requested in a quote).
 

@@ -40,4 +40,4 @@ Wallets generally fall into two overarching categories which are differentiated 
 * [Trust Wallet](https://trustwallet.com/)
 * [WalletConnect](https://walletconnect.com/)
 
-Please refer to the respective wallet provider resources on how to setup your wallet. Refer to [Connect Your Wallet](../../../kyberswap-solutions/kyberswap-interface/user-guides/connect-your-wallet.md) for a step-by-step guide on how to link your new wallet to the KyberSwap UI.
+Please refer to the respective wallet provider resources on how to setup your wallet. Refer to [Connect Your Wallet](../../../user-guide/user-guides/connect-your-wallet.md) for a step-by-step guide on how to link your new wallet to the KyberSwap UI.

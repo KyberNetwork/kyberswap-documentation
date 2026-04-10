@@ -50,11 +50,11 @@ Lastly,[ KyberSwap Limit Orders](../../../kyberswap-solutions/limit-order/) will
 {% tab title="Traders" %}
 * Customizing Trade Parameters
 * Instantly Swap At Superior Rates
-* [Swap At Your Preferred Rates](../../../kyberswap-solutions/kyberswap-interface/user-guides/trade-at-your-preferred-rates.md)
+* [Swap At Your Preferred Rates](../../../user-guide/limit-order/)
 {% endtab %}
 
 {% tab title="Developers" %}
-* [Execute A Swap With The Aggregator API](../../../kyberswap-solutions/kyberswap-aggregator/developer-guides/execute-a-swap-with-the-aggregator-api.md)
+* [Execute A Swap With The Aggregator API](../../../developer-guide/aggregator-api/how-to-guides/execute-a-swap-with-the-aggregator-api/)
 * Place A Limit Order
 * Fill A Limit Order
 {% endtab %}

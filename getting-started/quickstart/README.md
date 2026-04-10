@@ -1,17 +1,25 @@
 ---
-description: Jump Right Into The KyberSwap Ecosystem
+description: New to KyberSwap? Start here.
 ---
 
 # Quickstart
 
 ## User Guides
 
-Beginner friendly guides to get you started
+Beginner-friendly guides to get you started
 
-<table data-view="cards"><thead><tr><th></th><th data-hidden></th><th data-hidden></th><th data-hidden data-card-cover data-type="files"></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><strong>Get Crypto With Fiat (Cards, Mobile, Banks)</strong></td><td></td><td></td><td><a href="../../.gitbook/assets/userg-get crypto w fiat.png">userg-get crypto w fiat.png</a></td><td><a href="../../kyberswap-solutions/kyberswap-interface/user-guides/get-crypto-with-fiat.md">get-crypto-with-fiat.md</a></td></tr><tr><td><strong>Bridge Your Assets Across Multiple Chains</strong></td><td></td><td></td><td><a href="../../.gitbook/assets/Quickstart_NativeBridge.png">Quickstart_NativeBridge.png</a></td><td><a href="../../kyberswap-solutions/kyberswap-interface/user-guides/bridge-your-assets-across-multiple-chains.md">bridge-your-assets-across-multiple-chains.md</a></td></tr><tr><td><strong>Instantly Swap At Superior Rates</strong></td><td></td><td></td><td><a href="../../.gitbook/assets/Quickstart_InstantSwap.png">Quickstart_InstantSwap.png</a></td><td><a href="broken-reference">Broken link</a></td></tr><tr><td><strong>Trade At Your Preferred Rates</strong></td><td></td><td></td><td><a href="../../.gitbook/assets/userg-LO.png">userg-LO.png</a></td><td><a href="../../kyberswap-solutions/kyberswap-interface/user-guides/trade-at-your-preferred-rates.md">trade-at-your-preferred-rates.md</a></td></tr><tr><td><strong>Swap Between Different Tokens Across Chains</strong></td><td></td><td></td><td><a href="../../.gitbook/assets/Quickstart_CrossChain.png">Quickstart_CrossChain.png</a></td><td><a href="../../kyberswap-solutions/kyberswap-interface/user-guides/swap-between-different-tokens-across-chains.md">swap-between-different-tokens-across-chains.md</a></td></tr></tbody></table>
+* [Instantly swap at the best rates](../../user-guide/swap/)
+* [Swap at your preferred rates](../../user-guide/limit-order/)
+* [Swap between tokens across multiple chains](../../user-guide/cross-chain-swap.md)
+* Explore earning opportunities, ape in, and manage your liquidity positions
 
 ## Developer Guides
 
-Easily integrate KyberSwap with your application or smart contract
+Easily integrate KyberSwap with your application
 
-<table data-view="cards"><thead><tr><th></th><th data-hidden></th><th data-hidden></th><th data-hidden data-card-cover data-type="files"></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><strong>Superior In-App Rates With KyberSwap Widget</strong></td><td></td><td></td><td><a href="../../.gitbook/assets/devg-widget.png">devg-widget.png</a></td><td><a href="../../kyberswap-solutions/kyberswap-widget/developer-guides/integrating-the-kyberswap-widget.md">integrating-the-kyberswap-widget.md</a></td></tr><tr><td><strong>Execute A Swap With The Aggregator API</strong></td><td></td><td></td><td><a href="../../.gitbook/assets/devg-api.png">devg-api.png</a></td><td><a href="../../kyberswap-solutions/kyberswap-aggregator/developer-guides/execute-a-swap-with-the-aggregator-api.md">execute-a-swap-with-the-aggregator-api.md</a></td></tr><tr><td><strong>Integrate With Limit Order Smart Contracts</strong></td><td></td><td></td><td><a href="../../.gitbook/assets/devg-LO SC.png">devg-LO SC.png</a></td><td><a href="../../kyberswap-solutions/limit-order/developer-guides/">developer-guides</a></td></tr><tr><td><strong>Swap At Fixed Rates With The Limit Order API</strong></td><td></td><td></td><td><a href="../../.gitbook/assets/devg-swap-at-fixed-rates-on-LO.png">devg-swap-at-fixed-rates-on-LO.png</a></td><td><a href="../../kyberswap-solutions/limit-order/developer-guides/">developer-guides</a></td></tr></tbody></table>
+* [Execute a swap with the Aggregator API](../../developer-guide/aggregator-api/how-to-guides/execute-a-swap-with-the-aggregator-api/)
+* [Embed a swap interface with the Swap Widget](../../developer-guide/aggregator-api/how-to-guides/kyberswap-widget/)
+* [Add liquidity using a single token, multiple tokens, or an existing position with the ZaaS API](../../developer-guide/zap-as-a-service-zaas-api/how-to-guides/zap-in-enter-a-liquidity-position.md)
+* [Embed a liquidity interface with the Liquidity Widget](../../developer-guide/zap-as-a-service-zaas-api/how-to-guides/kyberswap-liquidity-widget/)
+* [Create and fill limit orders with the Limit Order API](../../developer-guide/limit-order-api/how-to-guides/place-a-limit-order.md)
+

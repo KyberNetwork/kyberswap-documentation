@@ -12,14 +12,14 @@ Stablecoins are usually minted/burned based on a collateralisation ratio of a ba
 
 As a stable unit of accounting, stablecoins facilitate liquidity flows due to the intuitive nature of the asset that it is pegged against. Put simply, stablecoin users have a stable point of reference against which they can value their trades or actions on the chain.
 
-## Trade with your preferred stablecoins&#x20;
+## Trade with your preferred stablecoins
 
-KyberSwap enables you to easily trade your favorite stablecoins by [adding them to the KyberSwap Interface](../../../kyberswap-solutions/kyberswap-interface/user-guides/add-your-favourite-tokens.md).
+KyberSwap enables you to easily trade your favorite stablecoins by [adding them to the KyberSwap Interface](../../../user-guide/user-guides/add-your-favourite-tokens.md).
 
 {% tabs %}
 {% tab title="Traders" %}
-* [Add Your Favourite Tokens](../../../kyberswap-solutions/kyberswap-interface/user-guides/add-your-favourite-tokens.md)
+* [Add Your Favourite Tokens](../../../user-guide/user-guides/add-your-favourite-tokens.md)
 * Instantly Swap At Superior Rates
-* [Swap At Your Preferred Rates](../../../kyberswap-solutions/kyberswap-interface/user-guides/trade-at-your-preferred-rates.md)
+* [Swap At Your Preferred Rates](../../../user-guide/limit-order/)
 {% endtab %}
 {% endtabs %}

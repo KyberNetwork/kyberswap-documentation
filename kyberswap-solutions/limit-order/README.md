@@ -20,12 +20,6 @@ KyberSwap Limit Orders support all [ERC20](../../getting-started/foundational-to
 
 The [KyberSwap Interface](https://kyberswap.com/limit/) provides a convenient interface to easily create, modify, and track all your orders. KyberSwap has also implemented a suite of Limit Order APIs that enable developers to seamlessly integrate limit order functionality within their apps.
 
-{% hint style="info" %}
-**Out of scope**
-
-_We will not provide an order book interface for users to visualize the limit order (_[_example_](https://dex.raydium.io/)_). This is something we can consider in the future_
-{% endhint %}
-
 ## Aggregator integration
 
 To increase the likelihood that limit orders will be filled, KyberSwap Limit Orders has been integrated as an additional liquidity source on the [KyberSwap Aggregator](../kyberswap-aggregator/). This means that swaps via the Aggregator will also be routed through active limit orders which effectively increases the pool of potential takers for a limit order. By combining solutions, KyberSwap enables our users to discover the best liquidity sources for their trades.
@@ -49,7 +43,7 @@ To increase the likelihood that limit orders will be filled, KyberSwap Limit Ord
 <summary>Traders</summary>
 
 * [Learn how KyberSwap sources the best liquidity for your swap](concepts/off-chain-relay.md)
-* [Trade at your preferred rates on the KyberSwap Interface](../kyberswap-interface/user-guides/trade-at-your-preferred-rates.md)
+* [Trade at your preferred rates on the KyberSwap Interface](../../user-guide/limit-order/)
 
 </details>
 
