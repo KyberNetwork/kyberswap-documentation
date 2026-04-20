@@ -8,4 +8,4 @@ The KyberSwap documentation is optimized for AI-assisted development through our
 
 ## llms.txt
 
-{% embed url="https://docs.kyberswap.com/llms.txt" %}
+{% file src="../.gitbook/assets/llms.txt" %}
