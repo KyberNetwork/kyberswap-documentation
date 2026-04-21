@@ -4,8 +4,6 @@ description: Connect your AI agent to KyberSwap's APIs and docs
 
 # Overview
 
-{% file src="../.gitbook/assets/llms.txt" %}
-
 Connect your AI agent to KyberSwap - a multi-chain decentralized platform connected to 420+ liquidity sources. Swap tokens, create gasless limit orders, zap into concentrated liquidity pools, query token metadata and pool details - across 18 EVM chains, from any MCP-compatible client or any coding agent with shell access. No API keys. No SDK. Public JSON endpoints.
 
 ## Overview
