@@ -35,6 +35,7 @@
   * [Swap Between Different Tokens Across Chains](user-guide/user-guides/swap-between-different-tokens-across-chains.md)
 * [Swap](user-guide/swap/README.md)
   * [Instantly Swap At The Best Rate](user-guide/swap/instantly-swap-at-the-best-rate.md)
+  * [Smart Settlement](developer-guide/start-here/foundational-solutions/smart-settlement-better-swap-output-with-lower-slippage.md)
   * [FAQ](user-guide/swap/faq.md)
 * [Limit Order](user-guide/limit-order/README.md)
   * [Create Limit Orders](user-guide/limit-order/create-limit-orders.md)
@@ -63,6 +64,7 @@
   * [Rate Limits & Client ID](developer-guide/start-here/rate-limits-and-client-id.md)
   * [Foundational Solutions](developer-guide/start-here/foundational-solutions/README.md)
     * [Dynamic Trade Routing](developer-guide/start-here/foundational-solutions/dynamic-trade-routing.md)
+    * [Smart Settlement](developer-guide/start-here/foundational-solutions/smart-settlement-better-swap-output-with-lower-slippage.md)
     * [Off-Chain Relay, On-Chain Settlement](developer-guide/start-here/foundational-solutions/off-chain-relay.md)
     * [Gasless Cancellation](developer-guide/start-here/foundational-solutions/gasless-cancellation.md)
     * [KyberSwap OnChain Price Service](developer-guide/start-here/foundational-solutions/kyberswap-onchain-price-service.md)
@@ -112,7 +114,10 @@
 
 ## AI Agent Hub
 
-* [AI Workflow](ai-agent-hub/ai-workflow.md)
+* [Overview](ai-agent-hub/ai-workflow.md)
+* [Read the Docs (llms.txt + MCP)](ai-agent-hub/read-the-docs-llms.txt-+-mcp.md)
+* [Skills - For Local Agents](ai-agent-hub/skills-for-local-agents.md)
+* [MCP Server - For Hosted Agents](ai-agent-hub/mcp-server-for-hosted-agents.md)
 
 ## KyberSwap Solutions
 
