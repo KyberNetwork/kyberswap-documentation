@@ -51,7 +51,7 @@ This happens in the background - you simply enjoy a better result with stronger 
 4. **Can Smart Settlement cause my transaction to fail?**\
    No. Smart Settlement does not introduce additional revert conditions. If no better pool is found, execution proceeds through the originally quoted route. Your existing slippage tolerance setting remains the primary protection against transaction failure.
 5. **Does Smart Settlement interact with KyberSwap Limit Orders?**\
-   Smart Settlement currently applies to AMM and PropAMM pool selection within the aggregator. It does not alter how Limit Order fills are settled. Refer to [Off-Chain Relay, On-Chain Settlement](off-chain-relay.md) for details on the Limit Order execution model.
+   Yes, any swaps with slippage risk may use Smart Settlement. Moreover, KyberSwap Limit Orders can also be used as additional candidate pools given good price/liquidity
 6. **Does Smart Settlement protect against PropAMM spoofing?**\
    Yes — by comparing pools on-chain at execution time, it prevents PropAMM operators from showing attractive quotes and then worsening them before your trade settles.
 7. **Is Smart Settlement slower?**\
