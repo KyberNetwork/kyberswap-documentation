@@ -2,7 +2,6 @@
 description: >-
   Understand Kyber Earn's APR metrics to find insights and fine-tune your LP
   strategy
-hidden: true
 ---
 
 # APR Metrics
