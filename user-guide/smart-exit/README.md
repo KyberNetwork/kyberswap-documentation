@@ -1,3 +1,7 @@
+---
+description: Conditional withdrawal liquidity on Kyber Earn
+---
+
 # Smart Exit
 
 ## **Core Concept**

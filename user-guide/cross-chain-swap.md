@@ -12,7 +12,7 @@ With the introduction of Cross-Chain Swap, KyberSwap expands beyond [Swap](swap/
 
 The Cross-chain Swap function on [KyberSwap.com](http://kyberswap.com/) enables users to seamlessly swap assets across different blockchain networks - all within a single, unified interface. Instead of manually interacting with multiple bridges or swapping assets across multiple DEXs, users can swap from any token on one chain to a different token on another chain, directly through KyberSwap, with no external steps required.
 
-<figure><img src="../.gitbook/assets/1 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/1 (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 KyberSwap Cross-chain Swap feature aggregates liquidity from multiple third-party cross-chain swaps and cross-chain swap protocols. Key features include:
 
