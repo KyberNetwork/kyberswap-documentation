@@ -42,19 +42,14 @@ For more information on completing a swap, you can refer to [Instantly Swap At T
 
 ## Troubleshooting
 
-1. Why is my transaction stuck in "Pending" state?
+1. **Why is my transaction stuck in "Pending" state?**
 
 **Reasons for stuck transactions**
 
 If your swap transaction was successfully accepted by the KyberSwap platform but you see on your transaction history and on blockchain explorers that the transaction has been stuck in a “pending” state for more than a few blocks, this could be due to one of several reasons:
 
-**Low Gas Limit**
-
-During periods of high network activity, gas prices tend to increase. If you’ve set your Web3 wallet to use a gas limit that is relatively low, it may take some time before miners pick up your transaction from the mempool.
-
-**Multiple Transactions Held Up by One Slow Transaction**
-
-If you have sent several transactions within a short amount of time, some of your transactions could be held up behind one or more transactions that are pending due to low gas limits.
+* Low Gas Limit: During periods of high network activity, gas prices tend to increase. If you’ve set your Web3 wallet to use a gas limit that is relatively low, it may take some time before miners pick up your transaction from the mempool.
+* Multiple Transactions Held Up by One Slow Transaction: If you have sent several transactions within a short amount of time, some of your transactions could be held up behind one or more transactions that are pending due to low gas limits.
 
 **How to fix stalled transactions**
 
@@ -64,8 +59,8 @@ If you have a queue of stuck transactions, you may only need to cancel/expedite 
 
 Here are links to instructions on how to perform this action on some of the more common Web3 wallets.
 
-* [Metamask](https://metamask.zendesk.com/hc/en-us/articles/360015489251-How-to-Speed-Up-or-Cancel-a-Pending-Transaction)
-* [Trust Wallet](https://community.trustwallet.com/t/pending-stuck-transactions/126)
+* [Metamask](https://support.metamask.io/manage-crypto/transactions/how-to-speed-up-or-cancel-a-pending-transaction/)
+* [Trust Wallet](https://support.trustwallet.com/support/solutions/articles/67000635278-why-is-my-transaction-pending-or-stuck-)
 * [MEW](https://help.myetherwallet.com/en/articles/5461454-canceling-or-replacing-a-transaction-after-it-s-been-sent)
 * [1inch iOS Wallet](https://help.1inch.io/en/articles/5211509-how-to-cancel-or-speed-up-a-pending-transaction-in-the-1inch-wallet)
 * [Crypto.com Defi Wallet](https://help.crypto.com/en/articles/4476691-how-do-i-cancel-or-speed-up-my-pending-eth-erc-20-transaction-on-crypto-com-defi-wallet-with-replace-by-fee)
