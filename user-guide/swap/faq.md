@@ -6,57 +6,43 @@ description: Your KyberSwap Aggregator Questions Answered
 
 ## General
 
-<details>
-
-<summary>Which chains does KyberSwap Aggregator support?</summary>
+1. **Which chains does KyberSwap Aggregator support?**
 
 The full list of supported chains can be found on [Supported Exchanges and Networks](../../getting-started/supported-exchanges-and-networks.md).
 
-</details>
 
-<details>
 
-<summary>Which tokens does KyberSwap Aggregator support?</summary>
+2. **Which tokens does KyberSwap Aggregator support?**
 
 KyberSwap whitelists well-known tokens for ease of access, but you can import custom tokens that meet the ERC20 standard via our user interface. For more information on how to do this, please refer to [Add Your Favourite Tokens](../user-guides/add-your-favourite-tokens.md).
 
-</details>
 
-<details>
 
-<summary>What fees do I need to pay to use the KyberSwap Aggregator?</summary>
+3. **What fees do I need to pay to use the KyberSwap Aggregator?**
 
-**Network Fees**
-
-KyberSwap is a fully onchain service. Everyone who creates transactions on the blockchain will need to pay network fees associated with their transactions. These fees vary depending on
+Network Fees: KyberSwap is a fully onchain service. Everyone who creates transactions on the blockchain will need to pay network fees associated with their transactions. These fees vary depending on
 
 1. The network being used
 2. Network congestion at the time
 3. Complexity of the smart contract transaction being executed
 
-**Trading Fees**
+Trading Fees: KyberSwap does not charge fees to users using the protocol to swap tokens. However Liquidity Providers are allowed to set fees on their liquidity pools and traders who choose to use these pools to perform swaps will need to pay trading fees to the LP, along with any associated network fees. The output amount that users see returned from KyberSwap Aggregator is already the amount after this fee.
 
-KyberSwap does not charge fees to users using the protocol to swap tokens. However Liquidity Providers are allowed to set fees on their liquidity pools and traders who choose to use these pools to perform swaps will need to pay trading fees to the LP, along with any associated network fees. The output amount that users see returned from KyberSwap Aggregator is already the amount after this fee.
 
-</details>
 
 ## Trading
 
-<details>
-
-<summary>How do I change slippage tolerance?</summary>
+1. **How do I change slippage tolerance?**
 
 Slippage tolerance for swaps defaults to different values depending on the token pair's categorization, but you can change this in Swap settings.
 
 For more information on completing a swap, you can refer to [Instantly Swap At The Best Rates](./) for a step-by-step guide.
 
-</details>
+
 
 ## Troubleshooting
 
-<details>
-
-<summary>Why is my transaction stuck in "Pending" state?</summary>
+1. Why is my transaction stuck in "Pending" state?
 
 **Reasons for stuck transactions**
 
@@ -84,11 +70,9 @@ Here are links to instructions on how to perform this action on some of the more
 * [1inch iOS Wallet](https://help.1inch.io/en/articles/5211509-how-to-cancel-or-speed-up-a-pending-transaction-in-the-1inch-wallet)
 * [Crypto.com Defi Wallet](https://help.crypto.com/en/articles/4476691-how-do-i-cancel-or-speed-up-my-pending-eth-erc-20-transaction-on-crypto-com-defi-wallet-with-replace-by-fee)
 
-</details>
 
-<details>
 
-<summary>I received fewer tokens than expected</summary>
+2. **I received fewer tokens than expected**
 
 Before confirming a swap transaction, you will be shown an order confirmation screen that clearly displays the tokens you will receive after the swap. This screen helps to ensure that there are no unpleasant surprises; you will never receive fewer tokens than the minimum amount displayed on this screen if the swap is successful.
 
@@ -96,6 +80,6 @@ Do pay particular attention to the [Price Impact](../../getting-started/foundati
 
 <img src="../../.gitbook/assets/image (71).png" alt="" data-size="original">
 
-</details>
+
 
 Still can't find what you're looking for? Reach out to us on [Discord](https://discord.gg/kyberswap).
