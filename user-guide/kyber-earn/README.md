@@ -8,56 +8,83 @@ description: All-in-one Liquidity Hub for Liquidity Providers
 
 ### Overview
 
-[Kyber Earn](https://kyberswap.com/earn) is a streamlined, all-in-one platform designed to help users easily access and manage yield-generating opportunities across multiple liquidity protocols. By aggregating top-tier liquidity protocols - including Uniswap V3, Uniswap V4, PancakeSwap, Aerodrome, and SushiSwap, etc. - Kyber Earn provides a single interface where users can seamlessly explore, compare diverse earning opportunities, enter positions with ease, and easily track and manage their positions.
+[Kyber Earn](https://kyberswap.com/earn) is an all-in-one platform that lets you discover, enter, and manage liquidity positions across multiple protocols — including Uniswap V3, Uniswap V4, PancakeSwap, Aerodrome, SushiSwap, etc. - from a single interface.
 
-The platform abstracts the fragmentation of DeFi, allowing users to conduct deep yield discovery; execute single-click deposits from any held assets using dynamic trade routing optimized for the best swap rates, minimal price impact, and complex fallback logic ([KyberZap](../../developer-guide/zap-as-a-service-zaas-api/)); and actively manage complex liquidity positions across multiple chains from a single interface.
+Instead of switching between DEXs to compare pools, manually balancing tokens, or tracking positions across different dashboards, Kyber Earn brings everything together. You can explore and compare earning opportunities with rich visual analytics, enter positions using any tokens you hold, and actively monitor and adjust your liquidity - all in one place.
 
 {% hint style="info" %}
 Kyber Earn does not operate liquidity pools directly. It provides tooling to interact with pools on third-party protocols, currently including Uniswap V3, Uniswap V4, PancakeSwap, Aerodrome, and SushiSwap, among others. For a comprehensive list of supported chains and protocols, refer to [Supported Exchanges And Networks](../../getting-started/supported-exchanges-and-networks.md).
 {% endhint %}
 
-### **Integrated Technologies**
+### **Integrated Technologies: Zap technology**
 
-[KyberZap (Zap as a service)](../../developer-guide/zap-as-a-service-zaas-api/) is the transaction execution layer used for all deposit, migration, repositioning, compounding, and single-asset withdrawal (Zap Out) operations within Kyber Earn. For Zap In operations, it accepts a basket of input tokens, computes the swap path required to reach the reserve ratio of the target pool and price range, executes the swaps via the KyberSwap Aggregator internally, and submits the liquidity deposit. For Zap Out, it withdraws the position and consolidates the resulting assets into a single target token via the KyberSwap Aggregator.
+All deposit, withdrawal, migration, repositioning, and compounding operations within Kyber Earn are powered by [Zap as a Service (ZaaS)](../../developer-guide/zap-as-a-service-zaas-api/). ZaaS automatically handles the token swaps and calculations needed to enter or exit a position, so you don't have to do it manually.
 
-Key properties:
+Key highlights:
 
-* Accepts up to 5 distinct input tokens per Zap In transaction — an industry-first capability for concentrated liquidity deposits.
-* All swaps are routed internally through the KyberSwap Aggregator, optimizing for rate, price impact, and gas efficiency.
-* KyberZap employs fallback logic to simulate alternative swap routes and execute additional swaps if needed, maximizing capital usage even in volatile market conditions.
+* **Up to 5 input tokens** — Deposit into any pool using up to 5 different tokens in a single transaction, an industry-first for concentrated liquidity.
+* **Optimized routing** — All swaps are routed through the [KyberSwap Aggregator](https://docs.kyberswap.com/kyberswap-solutions/kyberswap-aggregator), optimizing for the best rate, minimal price impact, and gas efficiency.
+* **Fallback logic** — If the primary swap route encounters issues, KyberZap automatically simulates and executes alternative routes to maximize capital usage.
+
+For full technical details, see the [**Zap as a Service (ZaaS) documentation**](../../developer-guide/zap-as-a-service-zaas-api/)**.**
 
 ## Key Benefits
 
-### Earning Opportunities Discovery & Analytics
+### Discover & Compare Pools with Rich Insights
 
-<figure><img src="../../.gitbook/assets/kyberearn.jpeg" alt=""><figcaption></figcaption></figure>
+Kyber Earn aggregates pools across supported protocols and gives you the data you need to make informed decisions — not just a single APR number.
 
-Navigating fragmented liquidity markets requires precise, on-chain data. Kyber Earn acts as a centralized intelligence hub, aggregating pools across prominent protocols (e.g., Uniswap V3/V4, PancakeSwap, Aerodrome) and dynamically categorizing them to align with specific LP risk profiles.
+*   **Real-Time Metrics** - Browse pools with live data on APR (including Est. Pool APR, Active APR, Max APR), fees earned, TVL, volume, and rewards.
 
-* **Real-Time Metrics:** Evaluate earning opportunities using real-time data, including APR, fee earned, TVL and volume.
-* **Targeted Segmentation:** Instantly identify optimal setups tailored to your specific risk profile and market outlook. Kyber Earn systematically filters pools into distinct classifications, allowing liquidity providers to rapidly deploy targeted market-making strategies:
-  * **Low Volatility:** Designed for risk-averse liquidity providers seeking to minimize impermanent loss. This category highlights pools consisting of stablecoins or highly correlated assets, offering steady yield with minimal price divergence.
-  * **High APR:** Geared toward risk-tolerant liquidity providers looking to maximize capital efficiency. This segment identifies pools offering exceptionally high aggregate yields, compensating for the increased price volatility with aggressive trading fees and protocol emissions.
-  * **Solid Earning:** Tailored for data-driven liquidity providers seeking proven market activity. This category filters for pools that have generated the highest trading fees over a trailing 7-day period, indicating deep, consistent routing volume and strong organic utilization.
+    <figure><img src="../../.gitbook/assets/image (190).png" alt=""><figcaption></figcaption></figure>
+*   **Five APR Metrics** — Go beyond standard Est. pool APR. Kyber Earn surfaces five distinct APR metrics — Est. Pool APR, Active APR, Max APR, Est. Position APR, and Est. My Position APR — so you can evaluate pools and positions with precision. See the [APR Metrics page](https://docs.kyberswap.com/user-guide/kyber-earn/apr-metrics) for a full breakdown of how each is calculated and when to use it.
 
-### Single-Transaction Capital Deployment via KyberZap
+    <figure><img src="../../.gitbook/assets/image (191).png" alt=""><figcaption></figcaption></figure>
+* **Pool Categories** — Pools are grouped into three categories to help you filter by strategy:
+  * **Farming** — Pools with active reward programs, earning you additional token rewards on top of LP fees.
+  * **Highlighted** — Pools matching tokens in your connected wallet, or top volume pools if no wallet is connected — a personalized starting point.
+  * **Low Volatility** — Stablecoin and correlated-asset pools with steady yield and minimal impermanent loss risk.
+  * **High APR** — Pools offering the highest aggregate yields, suited for LPs comfortable with higher price volatility.
+  * **Solid Earning** — Pools with the highest trading fees over the past 7 days, indicating consistent, organic volume.
 
-<figure><img src="../../.gitbook/assets/kyberearn2.jpeg" alt=""><figcaption></figcaption></figure>
+### Visualized Pool & Position Data
 
-Traditionally, entering a concentrated liquidity position requires precise, manual asset balancing and multiple smart contract interactions. Kyber Earn eliminates this friction through its proprietary [**KyberZap technology (Zap as a Service)**](../../developer-guide/zap-as-a-service-zaas-api/).
+Every pool detail page is organized into three tabs — **Information**, **Earning(s)**, and **Analytics** — so performance is actually readable, not buried in raw numbers.
 
-* **Frictionless Entry & Migration:** Supply liquidity using a custom basket of up to 5 distinct tokens directly from your wallet, or execute an atomic "Zap Migrate" to instantly move capital from an existing position into a new pool.
-* **Automated Asset Routing & Deposit:** KyberZap leverages the underlying [KyberSwap Aggregator ](../../developer-guide/aggregator-api/)to automatically swap input tokens into the exact ratios required by the target pool's price range. This ensures minimal price impact, optimized gas usage, and maximum capital efficiency without requiring manual calculations.
+*   **Information** — View pool metrics at a glance: TVL, 24h volume, 24h fees, rewards, liquidity utilization, and an interactive APR history chart over 24h, 7d, or 30d. The chart overlays Est. Pool APR, Active APR, and volume so you can see how yields have trended over time.
 
-### Comprehensive Portfolio & Risk Management
+    <figure><img src="../../.gitbook/assets/image (192).png" alt=""><figcaption></figcaption></figure>
+*   **Earning(s)** — See the earning history for any pool, broken down by source: LP Fees, LM (Liquidity Mining) Rewards, EG (Equilibrium Gain) Sharing, and Bonus (other incentives). A donut chart shows the total earned and how it splits across sources, while a bar chart tracks daily earnings over your selected period. APR and Active APR are displayed with their fee and reward components side by side.
 
-<figure><img src="../../.gitbook/assets/kyberearn3.jpeg" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (193).png" alt=""><figcaption></figcaption></figure>
+*   **Analytics** — Access pool price candlestick charts (24h, 7d, 30d) powered by [Token Settlement Price](../../developer-guide/start-here/foundational-solutions/token-settlement-price.md) - derived from real on-chain swap events - alongside a liquidity flows chart showing add/remove activity, net flow, and TVL over time.
 
-Active liquidity management requires continuous oversight. Kyber Earn replaces fragmented protocol tracking with a consolidated LP dashboard.
+    <figure><img src="../../.gitbook/assets/image (194).png" alt=""><figcaption></figcaption></figure>
 
-* **Unified Oversight:** Track the pool performance and accrued fees and rewards of all your liquidity positions across multiple chains and protocols from a single interface.
-* **Active Range Monitoring & Adjustment:** Easily monitor whether your concentrated liquidity positions remain within their active tick ranges to ensure continuous fee generation. If the market shifts, liquidity providers can quickly trigger **a** **reposition** **action** to realign their capital with the new price range. Kyber Earn automatically withdraws the current position including claiming accrued fees, rebalances the underlying assets to fit the new range, and redeposits them - all within a single, atomic transaction.
-* **Automated Risk Mitigation (Smart Exit):** Smart Exit allows liquidity providers to establish predefined market conditions (such as specific price triggers) to automatically execute a liquidity withdrawal. This conditional logic acts as a vital stop-loss mechanism to shield portfolios from extreme volatility and runaway impermanent loss. See the [Smart Exit documentation](../smart-exit/) for full details.
+### More Reward Opportunities
+
+Kyber Earn surfaces multiple earning layers beyond standard trading fees:
+
+* **FairFlow Rewards** — Pools running on Uniswap V4 or similar protocols with [KyberSwap FairFlow](../kyberswap-fairflow/) generate additional yield for LPs through two reward components:
+  * **EG (Equilibrium Gain) Sharing** — Rewards from arbitrage value captured by the FairFlow swap hook, distributed to LPs.
+  * **LM (Liquidity Mining) Rewards** — Token incentives allocated to LPs participating in FairFlow pools.
+* **Bonus Rewards via Merkl** — Additional bonus incentives sourced through Merkl are displayed directly in the pool detail view, so you can see the full earning potential of a pool before entering.
+
+### Enter Any Pool in One Transaction
+
+Entering a concentrated liquidity position normally requires multiple steps: swapping tokens in separate transactions to match the pool's required ratio, calculating exact amounts, and then depositing. Kyber Earn removes this friction with [**our Zap technology**](../../developer-guide/zap-as-a-service-zaas-api/).
+
+* **Flexible Entry** — Supply liquidity using any combination of up to 5 tokens from your wallet. KyberSwap’s Zap handles all the swapping and ratio balancing for you.
+* **Instant Migration** — Use Zap Migrate to move capital from an existing position to a new pool in a single atomic transaction — no need to withdraw, swap, and redeposit manually.
+
+#### Track & Manage Your Positions
+
+Once you've entered positions, Kyber Earn gives you a unified dashboard to monitor performance and manage your liquidity — all from one place.
+
+* **Unified Dashboard** — Track accrued fees, rewards, and position status (in-range vs. out-of-range) across all your positions, chains, and protocols.
+* **Full Position Management** — Increase liquidity, claim fees, withdraw (partially or fully), set up or view your active Smart Exit orders — every action you need to manage a position is accessible from the dashboard.
+* **One-Click Repositioning** — When the market moves and your position goes out of range, reposition to a new price range in a single transaction. Kyber Earn automatically withdraws, claims fees, rebalances, and redeposits for you — no manual steps required.
+* **Smart Exit** — Set predefined exit conditions (e.g., "exit if ETH drops below $2,000") and Kyber Earn will automatically withdraw your position when those conditions are met — no need to monitor 24/7. See the [Smart Exit documentation](../smart-exit/) for full details.
 
 ## Core Capabilities
 
@@ -65,38 +92,39 @@ Active liquidity management requires continuous oversight. Kyber Earn replaces f
 
 #### **Position Creation**
 
-* **Single/Multi-Asset Zap In:** Supply liquidity using a single or multiple tokens (up to 5) of the user’s choice; the inputted assets do not need to correspond to the target liquidity pair. The protocol handles the necessary underlying swaps by leveraging KyberSwap Aggregator to match the pool's required reserves with minimal price impact.
-* **Zap Migrate:** Execute an atomic migration of capital. Users can exit a position and instantly add those funds into a new pool in a single transaction sequence.
+* **Zap In (Single or Multi-Token)** — Enter any pool using 1 to 5 tokens of your choice. The tokens don't need to match the pool's pair — KyberZap swaps them into the correct ratio via the [KyberSwap Aggregator](../../developer-guide/aggregator-api/) with minimal price impact.
+* **Zap Migrate** — Move capital from an existing position directly into a new pool in one transaction. Your current position is exited, fees are claimed, and assets are swapped and redeposited into the target pool automatically.
 
 #### **Position Management, Increase Liquidity and Reposition**
 
-Kyber Earn enables users to view and manage existing position performances through “[My Positions](https://kyberswap.com/earn/positions)” dashboard.
+You can view and manage all your existing positions from the [My Positions](https://kyberswap.com/earn/positions) dashboard.
 
-* **Performance Tracking:** Granular, real-time tracking of accrued trading fees, [FairFlow](../kyberswap-fairflow/) rewards, and position status (in-range vs. out-of-range).
-* **Increasing Liquidity using Zap In:** Increase the size of an existing position by zapping in additional assets. The protocol automatically calculates the exact token ratio required by your specific price range and handles the underlying conversions for you, with the same execution flow as a standard Zap In.
-* **Repositioning:** Adjust to market volatility by moving liquidity to a new price range. Kyber Earn executes the fee claiming and liquidity withdrawal, necessary asset rebalancing, and redepositing into the new tick range seamlessly.
+* **Performance Tracking** — Monitor accrued trading fees, [FairFlow](https://docs.kyberswap.com/kyberswap-solutions/kyberswap-fairflow) rewards, bonus rewards, and whether each position is in-range or out-of-range — all in real time.
+* **Increase Liquidity** — Increase the size of an existing position by zapping in additional assets. The protocol automatically calculates the exact token ratio required by your specific price range and handles the underlying conversions for you, with the same execution flow as a standard Zap In.
+* **Repositioning** — Adjust your position to a new price range when the market shifts. Kyber Earn withdraws your liquidity, claims accrued fees, rebalances the assets for the new range, and redeposits — all in one transaction.
 
 #### **Fee and Reward Management**
 
 Users can view and manage fees and rewards generated by their liquidity positions directly within Kyber Earn.
 
-* **Claiming:** Accrued trading fees can be claimed per position at any time from the My Positions dashboard.
+* **Claiming** — Accrued trading fees can be claimed per position at any time from the My Positions dashboard.
   * FairFlow rewards are separate from trading fees and governed by a vesting schedule. The accumulated reward amount becomes claimable after the vesting period concludes at the end of each FairFlow cycle. Refer to the [FairFlow documentation](../kyberswap-fairflow/) and information on the interface for cycle timing and claim details.
-* **One-Click Compounding:** Automatically reinvest accrued fees for each position back into the core principal of the corresponding position in one transaction, maximizing the effects of compound interest without manual asset swapping.
+* **One-Click Compounding** — Automatically reinvest accrued fees for each position back into the core principal of the corresponding position in one transaction, maximizing the effects of compound interest without manual asset swapping.
 
 #### **Advanced Exit Strategies**
 
 Users have flexible options to withdraw their capital, tailored to specific market conditions and risk parameters:
 
-* **Zap Out (Single Asset):** Withdraw partially or fully remove a position, then automatically swap the underlying pool assets into a single target token of your choice. This operation is powered by KyberZap, which routes the consolidation swap through the KyberSwap Aggregator to minimize price impact.
-* **Standard Withdrawal:** Withdraw partially or fully remove a position manually, receiving the underlying pool assets in their current ratio, no additional swaps. Accrued fees are collected in the same transaction.
-* [**Smart Exit**](../smart-exit/) (Industry-First Intent-Based Liquidity Withdrawal):\*\* Leverage a unique, intent-based market solution to conditionally remove liquidity. Rather than monitoring active ticks 24/7, users simply define specific exit conditions. Liquidity is withdrawn only when these specific conditions are triggered, ensuring execution is strictly enforced and fully verifiable via public smart contracts.
+* **Zap Out (Single Asset)** — Withdraw partially or fully remove a position, then automatically swap the underlying pool assets into a single target token of your choice. This operation is powered by KyberZap, which routes the consolidation swap through the KyberSwap Aggregator to minimize price impact.
+* **Standard Withdrawal** — Withdraw partially or fully remove a position manually, receiving the underlying pool assets in their current ratio, no additional swaps. Accrued fees are collected in the same transaction.
+* [**Smart Exit**](../smart-exit/) (Industry-First Intent-Based Liquidity Withdrawal) — Leverage a unique, intent-based market solution to conditionally remove liquidity. Rather than monitoring active ticks 24/7, users simply define specific exit conditions. Liquidity is withdrawn only when these specific conditions are triggered, ensuring execution is strictly enforced and fully verifiable via public smart contracts.
   * **Example scenario:** An LP holds a ETH/USDC position with a price range of $2,200–$2,800. They submit a Smart Exit condition to trigger if the ETH price drops below $2,100 or after 12:00, April 1, 2026. If the on-chain ETH price is ≤ $2,100, the Smart Exit contract withdraws the position and returns the pool assets to the LP’s wallet, limiting further impermanent loss exposure below that level. If the price condition is never met, the position is automatically withdrawn at or after 12:00 on April 1, 2026.
   * Notes:
-    * Submitting, cancelling, and modifying Smart Exit conditions are handled off-chain - no gas is required for these actions. The only on-chain transaction occurs when exit conditions are triggered and the position withdrawal is executed.
-      *   Smart Exit returns assets in the pool token ratio. It does not consolidate into a single token - an automatic Zap Out as part of the Smart Exit flow is not currently supported.
+    *   Submitting, cancelling, and modifying Smart Exit conditions are handled off-chain - no gas is required for these actions. The only on-chain transaction occurs when exit conditions are triggered and the position withdrawal is executed.
 
-          For comprehensive technical details and guidelines, you can refer to: [Smart Exit documentation](../smart-exit/).
+        * Smart Exit returns assets in the pool token ratio. It does not consolidate into a single token - an automatic Zap Out as part of the Smart Exit flow is not currently supported.
+
+        For comprehensive technical details and guidelines, you can refer to: [Smart Exit documentation](../smart-exit/).
 
 {% hint style="warning" %}
 Before confirming any Zap operation (Zap In, Zap Out, Migrate, or Reposition), always review the quoted output, slippage, Zap impact, and applicable fees displayed in the interface.
@@ -104,7 +132,7 @@ Before confirming any Zap operation (Zap In, Zap Out, Migrate, or Reposition), a
 
 #### **Permissionless Pool Creation**
 
-* **Custom Pool Creation:** If a desired pair and fee tier do not exist, users can initialize a new liquidity pool directly through the Kyber Earn interface using any combination of up to 5 tokens, setting the foundational liquidity parameters for the market.
+* **Custom Pool Creation** — If a desired pair and fee tier do not exist, users can initialize a new liquidity pool directly through the Kyber Earn interface using any combination of up to 5 tokens, setting the foundational liquidity parameters for the market.
 
 {% hint style="info" %}
 Disclaimer: KyberSwap provides tools for tracking and managing liquidity on third-party protocols. KyberSwap does not operate, control, or guarantee the performance of any third-party pool. Any pool-related concerns should be directed to the corresponding protocol.
@@ -118,4 +146,4 @@ Refer to [Fee Structure](../fee-schedule.md) for further details.
 
 
 
-**Ready to start earning?** [Explore pools on Kyber Earn](https://kyberswap.com/earn) and manage all your LP positions from one place.
+**Ready to start earning?** [Explore pools on Kyber Earn](https://kyberswap.com/earn) and manage all your LP positions — with deeper insights, visual analytics, and smarter tools — from one place.
