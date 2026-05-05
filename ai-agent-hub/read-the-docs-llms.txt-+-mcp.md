@@ -55,8 +55,8 @@ HTTP transport. No authentication required. The server only provides access to p
 
 ### Setup
 
-#### **Claude Code**
-
+{% tabs %}
+{% tab title="Claude Code" %}
 ```
 claude mcp add --scope user --transport http kyberswap-docs https://docs.kyberswap.com/~gitbook/mcp
 ```
@@ -67,18 +67,21 @@ Verify with:
 claude mcp list
 ```
 
-#### Claude Desktop
 
+{% endtab %}
+
+{% tab title="Claude Desktop" %}
 Go to Settings > Connectors > Add custom connector. Set the name to KyberSwap Docs and the URL to:
 
-```
-https://docs.kyberswap.com/~gitbook/mcp
-```
+<pre><code><strong>https://docs.kyberswap.com/~gitbook/mcp
+</strong></code></pre>
 
 When chatting, click the attachments button (plus icon) and select the KyberSwap Docs connector.
 
-#### **Cursor**
 
+{% endtab %}
+
+{% tab title="Cursor" %}
 Open the command palette (Cmd + Shift + P / Ctrl + Shift + P), search for **Open MCP settings**, and add:
 
 ```
@@ -91,8 +94,10 @@ Open the command palette (Cmd + Shift + P / Ctrl + Shift + P), search for **Open
 }
 ```
 
-#### **Windsurf**
 
+{% endtab %}
+
+{% tab title="Windsurf" %}
 Open the command palette, search for **Windsurf: Configure MCP Servers**, and add:
 
 ```
@@ -105,13 +110,19 @@ Open the command palette, search for **Windsurf: Configure MCP Servers**, and ad
 }
 ```
 
-#### **VS Code**
 
+{% endtab %}
+
+{% tab title="VS Code" %}
 Run from terminal:
 
 ```
 code --add-mcp '{"name":"kyberswap-docs","type":"http","url":"https://docs.kyberswap.com/~gitbook/mcp"}'
 ```
+
+
+{% endtab %}
+{% endtabs %}
 
 #### **Other MCP-compatible tools**
 
