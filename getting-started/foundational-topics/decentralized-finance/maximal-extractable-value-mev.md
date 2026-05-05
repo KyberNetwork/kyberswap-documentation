@@ -18,7 +18,7 @@ All transactions on such networks will first have to be added to a queue (mempoo
 
 ## The time premium <a href="#id-7536" id="id-7536"></a>
 
-The information above is only valuable as long as the transaction has yet to be finalized. As such, the transaction confirmation duration sets an upper bound on the time value of such information, after which the information is essentially worthless to the MEV strategy. Given that ETH block times are approximately [\~12 seconds](https://ycharts.com/indicators/ethereum\_average\_block\_time), this doesn’t give much time for the MEV strategy to be carried out. As such, MEV is usually carried out by bots which generally does the following:
+The information above is only valuable as long as the transaction has yet to be finalized. As such, the transaction confirmation duration sets an upper bound on the time value of such information, after which the information is essentially worthless to the MEV strategy. Given that ETH block times are approximately [\~12 seconds](https://ycharts.com/indicators/ethereum_average_block_time), this doesn’t give much time for the MEV strategy to be carried out. As such, MEV is usually carried out by bots which generally does the following:
 
 * Monitor the transaction queue for transactions which meet their specific criteria
 * Calculate profitability based on available information. This will also have to take into account the gas costs
@@ -79,21 +79,13 @@ Taking this a step further, miners could even rewrite blockchain history in what
 
 The second point above is what is concerning as it is hard to argue that such unconventional MEV strategies are of more value than securing the network.
 
-## Protecting our LPs
+## Protecting our traders
 
-[KyberSwap Elastic](../../../reference/legacy/kyberswap-elastic/) comes with an [anti-sniping feature](../../../reference/legacy/kyberswap-elastic/concepts/anti-sniping-mechanism.md) to natively protect LPs from any potential front-runners. This lock based vested reward system eliminates any front-running opportunities brought about from liquidity additions or removals. Refer to [Anti-Sniping Mechanism](../../../reference/legacy/kyberswap-elastic/concepts/anti-sniping-mechanism.md) for more information on how Elastic keeps its LPs safe.
-
-For traders, the KyberSwap Aggregator allows you to [customize the maximum slippage](broken-reference/) for each trade. This minimizes any front-running opportunities linked to your trade as your trade will only be executed if the final price is within the interval set.
+For traders, the KyberSwap Aggregator allows you to [customize the maximum slippage](../../../user-guide/swap/instantly-swap-at-the-best-rate.md#customizing-trade-parameters) for each trade. This minimizes any front-running opportunities linked to your trade as your trade will only be executed if the final price is within the interval set.
 
 {% tabs %}
-{% tab title="Liquidity Providers" %}
-* [Elastic Pool Creation](../../../reference/legacy/kyberswap-elastic/#liquidity-providers)
-* [Add Liquidity To An Existing Classic Pool](../../../reference/legacy/kyberswap-elastic/#liquidity-providers)
-* [Increasing Liquidity On Elastic](../../../reference/legacy/kyberswap-elastic/#liquidity-providers)
-{% endtab %}
-
 {% tab title="Traders" %}
-* [Customize trade parameters](broken-reference/)
-* [Instantly Swap At Superior Rates](broken-reference/)
+* [Customize trade parameters](../../../user-guide/swap/instantly-swap-at-the-best-rate.md#customizing-trade-parameters)
+* [Instantly Swap At Superior Rates](../../../user-guide/swap/instantly-swap-at-the-best-rate.md)
 {% endtab %}
 {% endtabs %}
