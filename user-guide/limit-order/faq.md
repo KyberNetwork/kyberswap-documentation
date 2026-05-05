@@ -6,7 +6,7 @@ description: Your KyberSwap Limit Order Questions Answered
 
 ## General
 
-<details>
+<details open>
 
 <summary>Which chains are supported by Limit Orders?</summary>
 
@@ -14,7 +14,7 @@ The full list of supported chains can be found on [Supported Exchanges and Netwo
 
 </details>
 
-<details>
+<details open>
 
 <summary>Which tokens does Limit Orders support?</summary>
 
@@ -24,7 +24,7 @@ KyberSwap whitelists well-known tokens for ease of access, but you can import cu
 
 ## Trading
 
-<details>
+<details open>
 
 <summary>How do I tell If my Limit Order has been filled?</summary>
 
@@ -38,7 +38,7 @@ If you cannot find your order on the Active Orders tab, it may have been complet
 
 </details>
 
-<details>
+<details open>
 
 <summary>Why is my Limit Order not being filled?</summary>
 
@@ -58,7 +58,7 @@ Orders that involve exotic tokens or token pairs may have fewer takers to fill t
 
 </details>
 
-<details>
+<details open>
 
 <summary>Why can't I view my order?</summary>
 
@@ -70,7 +70,7 @@ There are several factors that can make you not see your order:
 
 </details>
 
-<details>
+<details open>
 
 <summary>Why does modifying or canceling my limit order incur gas fees?</summary>
 
