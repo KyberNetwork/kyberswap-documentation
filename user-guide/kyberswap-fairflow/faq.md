@@ -1,6 +1,6 @@
 # FAQ
 
-<details>
+<details open>
 
 <summary>Is FairFlow safe? Who holds the funds? </summary>
 
@@ -10,7 +10,7 @@ FairFlow hook smart contract is audited by [Omniscia](https://x.com/Omniscia_sec
 
 </details>
 
-<details>
+<details open>
 
 <summary>How can I claim my EG Sharing?</summary>
 
@@ -18,7 +18,7 @@ To claim EG Sharing, your wallet must hold the LP token at the time of claiming.
 
 </details>
 
-<details>
+<details open>
 
 <summary>Is FairFlow only applicable on Uniswap v4 and Pancakeswap v4?</summary>
 
@@ -26,7 +26,7 @@ No. FairFlow initially launched on Uniswap V4 and Pancakeswap V4 pools, but we p
 
 </details>
 
-<details>
+<details open>
 
 <summary>Can the EG Sharing Program change over time?</summary>
 
@@ -34,7 +34,7 @@ Yes. The EG Sharing Program, funded by the FairFlow hook, is subjected to consta
 
 </details>
 
-<details>
+<details open>
 
 <summary>How is the EG Sharing Program different from a Liquidity Mining Program? </summary>
 
@@ -42,7 +42,7 @@ Yes, they are different. The EG Sharing Program is funded by actual arbitrage op
 
 </details>
 
-<details>
+<details open>
 
 <summary>Can FairFlow run a Liquidity Mining Program alongside the EG Sharing Program?</summary>
 
@@ -50,7 +50,7 @@ Yes, FairFlow can run a Liquidity Mining Program alongside the EG Sharing Progra
 
 </details>
 
-<details>
+<details open>
 
 <summary>How does the KyberSwap Aggregator ensure the best rate for takers while Equilibrium Gain (EG) is absorbed?</summary>
 
@@ -58,7 +58,7 @@ A FairFlow pool is included in the routing only when it offers a better rate tha
 
 </details>
 
-<details>
+<details open>
 
 <summary>Does limiting FairFlow access to the KyberSwap Aggregator restrict takers from interacting with it? </summary>
 
@@ -66,7 +66,7 @@ No, it does not. Even though only KyberSwap Aggregator is allowed to swap with F
 
 </details>
 
-<details>
+<details open>
 
 <summary>Will FairFlow hook be available for pools not created by Kyber? </summary>
 
