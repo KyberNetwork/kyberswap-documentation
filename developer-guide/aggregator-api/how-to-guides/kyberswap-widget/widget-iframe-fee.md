@@ -23,7 +23,7 @@ If no Platform Fee is configured, it will not be displayed.
 
 KyberSwap offers a flexible underlying infrastructure that enables partners and protocols to collect the Widget/iFrame Fee in either the input or output token of each swap. Additionally, partners can customize the fee structure according to their specific needs by choosing between a percentage of the trade size or a fixed token amount. Upon successful execution of the swap, the fee is directly transferred to the specified `feeReceiver` address (provided as one of the parameters).
 
-<details>
+<details open>
 
 <summary><strong>Example of choosing Fee Token:</strong></summary>
 
