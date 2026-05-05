@@ -44,7 +44,7 @@ To support more performant queries and the use of RFQ liquidity sources, KyberSw
 \[V1] `GET` `/routes` API is designed to be performant and real-time, the market moves constantly so it is recommended to not cache routes from client side for more than 5-10 seconds and to refetch a new route before swapping if the current swap is too long ago to avoid potential slippage.
 {% endhint %}
 
-<details>
+<details open>
 
 <summary>API statuses and support</summary>
 
@@ -90,17 +90,17 @@ The Aggregator APIs require a chain **name** to be included in the path when cal
 <figure><img src="../../../.gitbook/assets/Aggregator APIv1.jpg" alt=""><figcaption></figcaption></figure>
 
 {% openapi-operation spec="aggregator-api" path="/{chain}/api/v1/routes" method="get" %}
-[OpenAPI aggregator-api](https://4401d86825a13bf607936cc3a9f3897a.r2.cloudflarestorage.com/gitbook-x-prod-openapi/raw/698e6c3717e5d61030fcf2806033dc6093f2ddcc5ac1514ecae076f22b60bd56.yaml?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=dce48141f43c0191a2ad043a6888781c%2F20260410%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260410T063407Z&X-Amz-Expires=172800&X-Amz-Signature=9c6fd09eee16c1d1e6013d7f9b18474caf1ee9b90461929fdc5f4d4a860bf652&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
+[OpenAPI aggregator-api](https://4401d86825a13bf607936cc3a9f3897a.r2.cloudflarestorage.com/gitbook-x-prod-openapi/raw/698e6c3717e5d61030fcf2806033dc6093f2ddcc5ac1514ecae076f22b60bd56.yaml?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=dce48141f43c0191a2ad043a6888781c%2F20260505%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260505T091056Z&X-Amz-Expires=172800&X-Amz-Signature=5e009ce15d02bab09ecd34d1a292aa1420c722a06208e38f10853dea245662e9&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
 {% endopenapi-operation %}
 
 {% openapi-operation spec="aggregator-api" path="/{chain}/api/v1/route/build" method="post" %}
-[OpenAPI aggregator-api](https://4401d86825a13bf607936cc3a9f3897a.r2.cloudflarestorage.com/gitbook-x-prod-openapi/raw/698e6c3717e5d61030fcf2806033dc6093f2ddcc5ac1514ecae076f22b60bd56.yaml?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=dce48141f43c0191a2ad043a6888781c%2F20260410%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260410T063407Z&X-Amz-Expires=172800&X-Amz-Signature=9c6fd09eee16c1d1e6013d7f9b18474caf1ee9b90461929fdc5f4d4a860bf652&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
+[OpenAPI aggregator-api](https://4401d86825a13bf607936cc3a9f3897a.r2.cloudflarestorage.com/gitbook-x-prod-openapi/raw/698e6c3717e5d61030fcf2806033dc6093f2ddcc5ac1514ecae076f22b60bd56.yaml?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=dce48141f43c0191a2ad043a6888781c%2F20260505%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260505T091056Z&X-Amz-Expires=172800&X-Amz-Signature=5e009ce15d02bab09ecd34d1a292aa1420c722a06208e38f10853dea245662e9&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
 {% endopenapi-operation %}
 
 ### Legacy
 
 {% openapi-operation spec="aggregator-api" path="/{chain}/route/encode" method="get" %}
-[OpenAPI aggregator-api](https://4401d86825a13bf607936cc3a9f3897a.r2.cloudflarestorage.com/gitbook-x-prod-openapi/raw/698e6c3717e5d61030fcf2806033dc6093f2ddcc5ac1514ecae076f22b60bd56.yaml?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=dce48141f43c0191a2ad043a6888781c%2F20260410%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260410T063407Z&X-Amz-Expires=172800&X-Amz-Signature=9c6fd09eee16c1d1e6013d7f9b18474caf1ee9b90461929fdc5f4d4a860bf652&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
+[OpenAPI aggregator-api](https://4401d86825a13bf607936cc3a9f3897a.r2.cloudflarestorage.com/gitbook-x-prod-openapi/raw/698e6c3717e5d61030fcf2806033dc6093f2ddcc5ac1514ecae076f22b60bd56.yaml?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=dce48141f43c0191a2ad043a6888781c%2F20260505%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260505T091056Z&X-Amz-Expires=172800&X-Amz-Signature=5e009ce15d02bab09ecd34d1a292aa1420c722a06208e38f10853dea245662e9&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
 {% endopenapi-operation %}
 
 ## **KyberSwap positive slippage surplus collection**
