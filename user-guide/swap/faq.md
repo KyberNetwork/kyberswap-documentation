@@ -6,19 +6,25 @@ description: Your KyberSwap Aggregator Questions Answered
 
 ## General
 
-1. **Which chains does KyberSwap Aggregator support?**
+<details open>
+
+<summary><strong>Which chains does KyberSwap Aggregator support?</strong></summary>
 
 The full list of supported chains can be found on [Supported Exchanges and Networks](../../getting-started/supported-exchanges-and-networks.md).
 
+</details>
 
+<details open>
 
-2. **Which tokens does KyberSwap Aggregator support?**
+<summary><strong>Which tokens does KyberSwap Aggregator support?</strong></summary>
 
 KyberSwap whitelists well-known tokens for ease of access, but you can import custom tokens that meet the ERC20 standard via our user interface. For more information on how to do this, please refer to [Add Your Favourite Tokens](../user-guides/add-your-favourite-tokens.md).
 
+</details>
 
+<details open>
 
-3. **What fees do I need to pay to use the KyberSwap Aggregator?**
+<summary><strong>What fees do I need to pay to use the KyberSwap Aggregator?</strong></summary>
 
 Network Fees: KyberSwap is a fully onchain service. Everyone who creates transactions on the blockchain will need to pay network fees associated with their transactions. These fees vary depending on
 
@@ -28,21 +34,29 @@ Network Fees: KyberSwap is a fully onchain service. Everyone who creates transac
 
 Trading Fees: KyberSwap does not charge fees to users using the protocol to swap tokens. However Liquidity Providers are allowed to set fees on their liquidity pools and traders who choose to use these pools to perform swaps will need to pay trading fees to the LP, along with any associated network fees. The output amount that users see returned from KyberSwap Aggregator is already the amount after this fee.
 
+</details>
+
 
 
 ## Trading
 
-1. **How do I change slippage tolerance?**
+<details open>
+
+<summary><strong>How do I change slippage tolerance?</strong></summary>
 
 Slippage tolerance for swaps defaults to different values depending on the token pair's categorization, but you can change this in Swap settings.
 
 For more information on completing a swap, you can refer to [Instantly Swap At The Best Rates](./) for a step-by-step guide.
 
+</details>
+
 
 
 ## Troubleshooting
 
-1. **Why is my transaction stuck in "Pending" state?**
+<details open>
+
+<summary><strong>Why is my transaction stuck in "Pending" state?</strong></summary>
 
 **Reasons for stuck transactions**
 
@@ -65,15 +79,19 @@ Here are links to instructions on how to perform this action on some of the more
 * [1inch iOS Wallet](https://help.1inch.io/en/articles/5211509-how-to-cancel-or-speed-up-a-pending-transaction-in-the-1inch-wallet)
 * [Crypto.com Defi Wallet](https://help.crypto.com/en/articles/4476691-how-do-i-cancel-or-speed-up-my-pending-eth-erc-20-transaction-on-crypto-com-defi-wallet-with-replace-by-fee)
 
+</details>
 
+<details open>
 
-2. **I received fewer tokens than expected**
+<summary><strong>I received fewer tokens than expected</strong></summary>
 
 Before confirming a swap transaction, you will be shown an order confirmation screen that clearly displays the tokens you will receive after the swap. This screen helps to ensure that there are no unpleasant surprises; you will never receive fewer tokens than the minimum amount displayed on this screen if the swap is successful.
 
 Do pay particular attention to the [Price Impact](../../getting-started/foundational-topics/decentralized-finance/price-impact.md) and [Slippage](../../getting-started/foundational-topics/decentralized-finance/slippage.md) numbers. For further details, please refer to [Confirm the swap](./#step-5-confirm-the-swap).
 
 <img src="../../.gitbook/assets/image (71).png" alt="" data-size="original">
+
+</details>
 
 
 
