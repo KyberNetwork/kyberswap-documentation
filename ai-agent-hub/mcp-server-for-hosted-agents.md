@@ -22,8 +22,8 @@ The [Model Context Protocol](https://modelcontextprotocol.io/) is an open standa
 
 ## Setup
 
-### Claude Code
-
+{% tabs %}
+{% tab title="Claude Code" %}
 Add the server to your project or user scope:
 
 ```json
@@ -38,8 +38,10 @@ Add the server to your project or user scope:
 }
 ```
 
-### Claude Desktop
 
+{% endtab %}
+
+{% tab title="Claude Desktop" %}
 ```json
 // claude_desktop_config.json
 {
@@ -52,8 +54,10 @@ Add the server to your project or user scope:
 }
 ```
 
-### Cursor
 
+{% endtab %}
+
+{% tab title="Cursor" %}
 ```json
 // .cursor/mcp.json
 {
@@ -65,6 +69,10 @@ Add the server to your project or user scope:
   }
 }
 ```
+
+
+{% endtab %}
+{% endtabs %}
 
 ### Other MCP-Compatible Tools
 
