@@ -6,7 +6,7 @@ description: Your KyberSwap Questions Answered
 
 ## General
 
-<details>
+<details open>
 
 <summary>What is KyberSwap?</summary>
 
@@ -16,7 +16,7 @@ You can visit our [Introduction to KyberSwap](../../) page for more details.
 
 </details>
 
-<details>
+<details open>
 
 <summary>How is KyberSwap different from other DeFi platforms?</summary>
 
@@ -31,7 +31,7 @@ For the full KyberSwap Solution suite, please refer to [Our Solutions](../../#ou
 
 </details>
 
-<details>
+<details open>
 
 <summary>Which countries are KyberSwap available in?</summary>
 
@@ -40,7 +40,7 @@ Users are responsible to ensure that their use of KyberSwap complies with all ap
 
 </details>
 
-<details>
+<details open>
 
 <summary>Is KyberSwap licensed by the Monetary Authority of Singapore (MAS)?</summary>
 
@@ -52,7 +52,7 @@ Users are responsible to ensure that their use of KyberSwap complies with all ap
 
 </details>
 
-<details>
+<details open>
 
 <summary>What chains does KyberSwap support?</summary>
 
@@ -60,7 +60,7 @@ Please refer to [Supported Exchanges And Networks](../supported-exchanges-and-ne
 
 </details>
 
-<details>
+<details open>
 
 <summary>How secure are KyberSwap and KyberDAO?</summary>
 
@@ -72,7 +72,7 @@ You can find links to their security audit reports [here](../../security/audits.
 
 </details>
 
-<details>
+<details open>
 
 <summary>What fees do I need to pay to use KyberSwap?</summary>
 
@@ -92,7 +92,7 @@ It should be noted that of these Trading Fees collected by LPs, [10% goes to Kyb
 
 </details>
 
-<details>
+<details open>
 
 <summary>Information about campaigns and contests</summary>
 
@@ -100,7 +100,7 @@ We host trading campaigns and contests from time to time via our community chann
 
 </details>
 
-<details>
+<details open>
 
 <summary>Can I get a refund from KyberSwap?</summary>
 
@@ -108,7 +108,7 @@ KyberSwap is a decentralized platform and does not hold our users’ funds in cu
 
 </details>
 
-<details>
+<details open>
 
 <summary>How to contact us for business outreach</summary>
 
@@ -124,7 +124,7 @@ If you have a marketing opportunity you would like to share with us, please post
 
 ## Accounts and wallets
 
-<details>
+<details open>
 
 <summary>How do I create an account</summary>
 
@@ -134,7 +134,7 @@ Connecting your Web3 wallet to the KyberSwap platform will enable you to use the
 
 </details>
 
-<details>
+<details open>
 
 <summary>How to connect or disconnect a Web3 wallet</summary>
 
@@ -142,7 +142,7 @@ Please refer to [Connect Your Wallet](../../user-guide/user-guides/connect-your-
 
 </details>
 
-<details>
+<details open>
 
 <summary>How to change RPC in Metamask</summary>
 
@@ -180,7 +180,7 @@ The newly defined network that uses the new RPC should now appear in your Networ
 
 ## Troubleshooting
 
-<details>
+<details open>
 
 <summary>I cannot connect my Metamask wallet</summary>
 
@@ -198,7 +198,7 @@ If these steps do not solve the problem, please take screenshots of what you’r
 
 </details>
 
-<details>
+<details open>
 
 <summary>I cannot claim my 5KNC Learnoverse Learndrop</summary>
 
@@ -210,7 +210,7 @@ If you believe your drop to be missing or late, please contact Learnoverse ([hel
 
 ## Others
 
-<details>
+<details open>
 
 <summary>How do I restore my old KyberSwap App wallet?</summary>
 
@@ -240,7 +240,7 @@ Once you have obtained your secret, **keep it safe and do not share it with anyo
 
 </details>
 
-<details>
+<details open>
 
 <summary>How to report scam or phishing Google Ads?</summary>
 
@@ -275,5 +275,5 @@ If you would like to help us keep our community safe, you can contribute by repo
 
 Can't find what you're looking for? Our dedicated team of experts are available 24 hours a day to assist you with any queries, concerns, or technical issues you might encounter.
 
-Please visit the [KyberSwap Help Center](https://discord.com/channels/608934314960224276/1192426056183972010) for further details.
+For assistance, please contact us via [Discord server](https://discord.gg/kyberswap).
 {% endhint %}
