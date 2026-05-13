@@ -25,9 +25,7 @@ The result is a swap execution that is more resilient to slippage, more resistan
 
 ## Supported Chains
 
-Smart Settlement is currently available on: Ethereum, Base, Arbitrum, Avalanche, Berachain, Polygon.
-
-It is rolling out gradually and will be expanded to more supported chains. Check [KyberSwap.com](https://kyberswap.com) for up-to-date availability.
+Smart Settlement is available on all chains supported by the KyberSwap Aggregator. For the list of supported chains, refer to [Supported Exchanges and Networks](../../../getting-started/supported-exchanges-and-networks.md).
 
 ## How It Works
 
