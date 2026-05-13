@@ -46,6 +46,7 @@
 * [Kyber Earn](user-guide/kyber-earn/README.md)
   * [Smart Exit](user-guide/smart-exit/README.md)
   * [APR Metrics](user-guide/kyber-earn/apr-metrics.md)
+  * [FAQs](user-guide/kyber-earn/faqs.md)
 * [Smart Exit](user-guide/smart-exit/README.md)
   * [Feature Capabilities](user-guide/smart-exit/feature-capabilities.md)
   * [User Guide](user-guide/smart-exit/user-guide.md)
