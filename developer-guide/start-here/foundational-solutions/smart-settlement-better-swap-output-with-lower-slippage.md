@@ -44,8 +44,9 @@ This happens in the background - you simply enjoy a better result with stronger 
 
 ### Frequently Asked Questions
 
-1. **How is Smart Settlement different from Dynamic Trade Routing?**
-   * [Dynamic Trade Routing](dynamic-trade-routing.md) determines the optimal route across liquidity sources at quote time - before the transaction is submitted. Smart Settlement operates at execution time, comparing candidate pools on-chain at the moment the transaction is processed. The two mechanisms work in combination: Dynamic Trade Routing selects the route and pool split, Smart Settlement verifies and can adjust the pool selection within that route at execution.
+1.  **How is Smart Settlement different from Dynamic Trade Routing?**
+
+    [Dynamic Trade Routing](dynamic-trade-routing.md) determines the optimal route across liquidity sources at quote time - before the transaction is submitted. Smart Settlement operates at execution time, comparing candidate pools on-chain at the moment the transaction is processed. The two mechanisms work in combination: Dynamic Trade Routing selects the route and pool split, Smart Settlement verifies and can adjust the pool selection within that route at execution.
 
 |                                                              | Before: Dynamic Trade Routing only                                                                                                                                  | After: Dynamic Trade Routing + Smart Settlement                                                                                                        |
 | ------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -59,7 +60,7 @@ This happens in the background - you simply enjoy a better result with stronger 
 | Gas cost                                                     | Standard                                                                                                                                                            | Slightly higher in some cases due to on-chain pool comparisons. In most cases, the additional tokens received outweigh the small increase in gas cost. |
 | User action required                                         | None — automatic                                                                                                                                                    | None — automatic                                                                                                                                       |
 
-* In summary, Dynamic Trade Routing and Smart Settlement operate at different stages of a swap - quote time and execution time respectively - and together provide both optimal routing and on-chain execution verification.
+In summary, Dynamic Trade Routing and Smart Settlement operate at different stages of a swap - quote time and execution time respectively - and together provide both optimal routing and on-chain execution verification.
 
 2. **Which tokens or pairs benefit from Smart Settlement?**\
    Smart Settlement is most effective for low-liquidity tokens, newly launched tokens, and pairs with high price volatility. It is also particularly beneficial for large swap amounts where price impact across pools is more significant, and for pairs where the primary liquidity source is a PropAMM or PMM pool.
