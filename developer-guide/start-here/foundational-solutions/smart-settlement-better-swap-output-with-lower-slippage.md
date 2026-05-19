@@ -29,7 +29,7 @@ Smart Settlement is available on all chains supported by the KyberSwap Aggregato
 
 ## How It Works
 
-<figure><img src="../../../.gitbook/assets/image (195).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/smart settlement.png" alt=""><figcaption></figcaption></figure>
 
 1. You select input and output tokens + amount (just like a normal swap).
 2. **Smart Settlement** automatically detects pools with high slippage risk (e.g. small pools, PropAMM pools...) and proposes extra candidate pools for on-chain comparison.
