@@ -76,19 +76,7 @@ You can find links to their security audit reports [here](../../security/audits.
 
 <summary>What fees do I need to pay to use KyberSwap?</summary>
 
-**Network Fees**
-
-KyberSwap is a fully onchain service. Everyone who creates transactions on the blockchain will need to pay network fees associated with their transactions. These fees vary depending on
-
-1. The network being used
-2. Network congestion at the time
-3. Complexity of the smart contract transaction being executed
-
-**Trading Fees**
-
-KyberSwap does not charge fees to users using the protocol to swap tokens. However Liquidity Providers are allowed to set fees on their liquidity pools and traders who choose to use these pools to perform swaps will need to pay trading fees to the LP, along with any associated network fees.
-
-It should be noted that of these Trading Fees collected by LPs, [10% goes to KyberSwap’s governance DAO](../../governance/kyberdao/fees-to-kyberdao.md), KyberDAO.
+For more information about the fee, please refer to [Fee Schedule](../fee-schedule.md).
 
 </details>
 

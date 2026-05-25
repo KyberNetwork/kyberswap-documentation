@@ -11,7 +11,7 @@ KyberSwap has implemented a gas refund program following strong community suppor
 The Gas Refund Program will make trading on KyberSwap even more efficient and align incentives between KNC holders and KyberSwap users. KyberSwap’s Gas Refund Program will launch in beta only on Ethereum initially, but we have plans to expand to other popular chains such as Polygon, Arbitrum, and Optimism.
 
 {% hint style="success" %}
-#### User guide: [Stake KNC And Enjoy Gas Savings](../kyberdao/user-guides/stake-knc-and-enjoy-gas-savings.md)
+**User guide:** [**Stake KNC And Enjoy Gas Savings**](../kyberdao/user-guides/stake-knc-and-enjoy-gas-savings.md)
 {% endhint %}
 
 ## Eligibility Criteria

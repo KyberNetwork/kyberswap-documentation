@@ -5,9 +5,9 @@
 KyberDAO has a 5/9 multisig (5 admin approval signatures required in order to execute a txn) as a DAO operator. The role of the DAO operator multisig is to assist with operational tasks such as creating and cancelling KIP proposals and ensuring the integrity of KyberDAO. The DAO operator also acts as an additional safeguard against malicious actors when dealing with critical KIPs that can potentially result in major changes to KyberDAO or the KNC token, for example, KIPs related to minting KNC or changing the KNC implementation. The multisig comprises a mix of KyberSwap team members and external DeFi project representatives.
 
 {% hint style="info" %}
-#### KyberDAO Operator Multisig address:&#x20;
+**KyberDAO Operator Multisig address:**
 
-#### [`0xe6a7338cba0a1070adfb22c07115299605454713`](https://etherscan.io/address/0xe6a7338cba0a1070adfb22c07115299605454713)
+[**`0xe6a7338cba0a1070adfb22c07115299605454713`**](https://etherscan.io/address/0xe6a7338cba0a1070adfb22c07115299605454713)
 {% endhint %}
 
 ## Signatories

@@ -1,7 +1,7 @@
 # Number Of Trades
 
 {% hint style="info" %}
-#### In one sentence
+**In one sentence**
 
 The total number and types of trades across DeFi protocols which involves the token.
 {% endhint %}
@@ -10,12 +10,12 @@ The total number and types of trades across DeFi protocols which involves the to
 
 <figure><img src="../../../../.gitbook/assets/KyberAI_NoOfTrades.png" alt=""><figcaption><p>Number of trades</p></figcaption></figure>
 
-The number of trades counts the total swaps and swap types which have occured across various [DEXs](broken-reference) for the specific token. Trades are split into two categories with green indicating a buy and red indicating a sell. By comparing the totals of each trade type, users will be able to get a sense of the relative buy/sell pressure based on trade counts. Moreover, when comparing trade counts across past periods, it is also possible to deduce whether interest in the token has increased or decreased based on the history of the specific token.
+The number of trades counts the total swaps and swap types which have occured across various [DEXs](broken-reference/) for the specific token. Trades are split into two categories with green indicating a buy and red indicating a sell. By comparing the totals of each trade type, users will be able to get a sense of the relative buy/sell pressure based on trade counts. Moreover, when comparing trade counts across past periods, it is also possible to deduce whether interest in the token has increased or decreased based on the history of the specific token.
 
 Note that the number of trades differs from [number of transfers](number-of-transfers.md), as the former only accounts for transfers between DEX smart contract addresses and EOA addresses while the latter counts transfers between EOA addresses. In other words, number of trades counts the DEX trades while number of transfers count the number of direct peer-to-peer transfers.
 
 {% hint style="info" %}
-#### Cross-chain data
+**Cross-chain data**
 
 Data shown in graph is specific to the selected chain. For the same token, the KyberAI interface allows users to toggle between the supported chains. Refer [On-Chain Indicators](./) for more info.
 {% endhint %}
@@ -23,7 +23,7 @@ Data shown in graph is specific to the selected chain. For the same token, the K
 ## Improving trades with Number of Trades
 
 {% hint style="warning" %}
-#### Disclaimer: Not financial advice
+**Disclaimer: Not financial advice**
 
 KyberAI was created with the intention of empowering our users with the data insights required to make informed trading decisions. Users must exercise due diligence in their trading decisions with the best trading strategies incorporating the insights enabled by KyberAI.
 {% endhint %}

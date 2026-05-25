@@ -8,7 +8,7 @@ description: Your KyberDAO Questions Answered
 
 <details>
 
-<summary>Which Ethereum wallet connections are supported? </summary>
+<summary>Which Ethereum wallet connections are supported?</summary>
 
 Metamask, Ledger, Trezor, JSON keystore file, Coinbase Link, and WalletConnect are supported.
 
@@ -126,11 +126,11 @@ No. You will always be able to withdraw the full KNC capital deposited.
 
 <summary>KNC token contract address</summary>
 
-#### KNC Address
+**KNC Address**
 
 KNC is the ticker symbol for Kyber Network Crystal v2, the native token of KyberSwap that is used by our governance DAO, KyberDAO. The KNC token address is `0xdeFA4e8a7bcBA345F687a2f1456F5Edd9CE97202`
 
-#### KNCL Address
+**KNCL Address**
 
 KNCL is the ticker symbol for Kyber Network Crystal v1, our legacy token that can and should be migrated to KNC as soon as possible. For a guide on how to migrate KNCL to KNC, please refer to [this blogpost](https://blog.kyber.network/knc-token-migration-guide-fda08bfe62c2). The KNCL token address is `0xdd974d5c2e2928dea5f71b9825b8b646686bd200`
 
@@ -140,15 +140,15 @@ KNCL is the ticker symbol for Kyber Network Crystal v1, our legacy token that ca
 
 <summary>How to migrate KNCL to KNC v2</summary>
 
-#### Introduction
+**Introduction**
 
 In KIP-6, the Kyber team proposed a Kyber Network Crystal (KNC) token upgrade and migration to make KNC much more dynamic and flexible with the ability to support more efficient upgrades, while amplifying KyberDAO’s governance power. The KyberDAO community gave their strong stamp of approval with a large majority of 99.89% voting in favor of the proposal.
 
 The [old token](https://etherscan.io/address/0xdd974d5c2e2928dea5f71b9825b8b646686bd200) (aka Kyber Network Crystal Legacy or KNCL) can now be migrated to the [new KNC token](https://etherscan.io/address/0xdeFA4e8a7bcBA345F687a2f1456F5Edd9CE97202) using our migration portal.
 
-#### How to Migrate
+**How to Migrate**
 
-Migration can be performed via the migration portal at [https://kyberswap.com/kyberdao/stake-knc](https://kyberswap.com/kyberdao/stake-knc)&#x20;
+Migration can be performed via the migration portal at [https://kyberswap.com/kyberdao/stake-knc](https://kyberswap.com/kyberdao/stake-knc)
 
 **Step 1**: Connect your wallet to KyberSwap and ensure that you are on the Ethereum network.
 
@@ -182,7 +182,7 @@ If you have a positive KNC balance but [KyberDAO](https://kyberswap.com/kyberdao
 
 <img src="https://support.kyberswap.com/hc/article_attachments/14345621843993" alt="KyberDAO_Balance_Network.png" data-size="original">
 
-If you have KNC tokens on other networks, these will first need to be [bridged to Ethereum](broken-reference) before they can be used to participate in KyberDAO.
+If you have KNC tokens on other networks, these will first need to be [bridged to Ethereum](broken-reference/) before they can be used to participate in KyberDAO.
 
 </details>
 

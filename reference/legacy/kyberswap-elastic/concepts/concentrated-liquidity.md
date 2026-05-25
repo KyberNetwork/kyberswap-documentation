@@ -11,20 +11,20 @@ Concentrated liquidity enables LPs to allocate liquidity towards customized pric
 Concentrated liquidity is the next step in AMM advancement which enables LPs to engage in more fine-tuned liquidity provisioning strategies. To see why this is the case, it is crucial to understand how the AMM space has evolved in accordance to capital efficiency demands.
 
 {% hint style="success" %}
-#### Choosing The Best Range To Maximize LP Returns
+**Choosing The Best Range To Maximize LP Returns**
 
 <img src="../../../../.gitbook/assets/PositionRangesAndAPR_Tease.jpg" alt="" data-size="original">
 
-A LPs returns are heavily dependent on the [position range selected](broken-reference) for [concentrated liquidity](concentrated-liquidity.md) protocols such as KyberSwap Elastic. To help you maximize your potential returns, [KyberSwap Insights](https://blog.kyberswap.com/learn/insights-en/) has created a simple flow diagram which walks you through each of the key decision points when determining a position range which best suites your risk-adjusted return preferences.
+A LPs returns are heavily dependent on the [position range selected](broken-reference/) for [concentrated liquidity](concentrated-liquidity.md) protocols such as KyberSwap Elastic. To help you maximize your potential returns, [KyberSwap Insights](https://blog.kyberswap.com/learn/insights-en/) has created a simple flow diagram which walks you through each of the key decision points when determining a position range which best suites your risk-adjusted return preferences.
 
-View and interact with the full diagram in greater detail [here](https://blog.kyberswap.com/choosing-the-best-range-to-maximize-lp-returns-flow-chart/).&#x20;
+View and interact with the full diagram in greater detail [here](https://blog.kyberswap.com/choosing-the-best-range-to-maximize-lp-returns-flow-chart/).
 {% endhint %}
 
 ## The evolution of AMMs
 
-### Basic price curve with infinite price range&#x20;
+### Basic price curve with infinite price range
 
-The basic AMM started by implementing a standard constant product curve (`x*y=k`)whereby liquidity was uniformly distributed across an infinite price range (i.e. 0 → ∞). While this supported trades across all possible price ranges, majority of the capital was left unutilized as trades for most tokens would usually be within a much narrower price range. This was especially so for more correlated pairs such as stablecoin pairs (i.e. USDC/USDT, DAI/USDC, etc.) or wrapped token pairs (i.e. wstETH/ETH, HBTC/WBTC, etc.) where price ratios rarely diverged.&#x20;
+The basic AMM started by implementing a standard constant product curve (`x*y=k`)whereby liquidity was uniformly distributed across an infinite price range (i.e. 0 → ∞). While this supported trades across all possible price ranges, majority of the capital was left unutilized as trades for most tokens would usually be within a much narrower price range. This was especially so for more correlated pairs such as stablecoin pairs (i.e. USDC/USDT, DAI/USDC, etc.) or wrapped token pairs (i.e. wstETH/ETH, HBTC/WBTC, etc.) where price ratios rarely diverged.
 
 Consequently, suboptimal capital allocation resulted in greater slippage risks as there was less liquidity supporting widely traded price ranges. With fewer trades, LPs would also receive less fees while simultaneously having to bear the opportunity cost of locked but unutilized funds. The cumulative result of the above was that markets would also tend to be more volatile as limited liquidity meant that trades against smaller pools would result in significant price impacts which might kickstart a vicious cycle.
 
@@ -38,7 +38,7 @@ This price curve modification enabled trades against a balanced pool to have min
 
 Keeping with the core design of the earlier version, it was discovered that liquidity could be better utilized if pools were created with a more tightly bounded price curve. For example, instead of uniformly distributing liquidity across a 0 → ∞ range, the lower and upper bound of the range should approximate the the price interval which the token pair regularly trades at. This meant that capital efficiency was greatly amplified the narrower the supported price range (i.e. a range of 0.99 → 1.01 instead of 0.9 → 1.1 is roughly 10x more capital efficient).
 
-More liquidity supporting a narrower price range also effectively reduced slippage risks as the trade size would have to scale up according to the pool to have the same price impact. Consequently, these modified price curves worked especially well for more stable pairs where the risks of going out of range was minimal. Critically, this bounding of ranges could work hand-in-hand with price curve modifications to significantly increase capital efficiency while generalizing the applicability of this approach for all token pairs. This was the approach which [KyberSwap Classic](broken-reference) took.
+More liquidity supporting a narrower price range also effectively reduced slippage risks as the trade size would have to scale up according to the pool to have the same price impact. Consequently, these modified price curves worked especially well for more stable pairs where the risks of going out of range was minimal. Critically, this bounding of ranges could work hand-in-hand with price curve modifications to significantly increase capital efficiency while generalizing the applicability of this approach for all token pairs. This was the approach which [KyberSwap Classic](broken-reference/) took.
 
 While this design enabled liquidity to be better utilized, it was limited in its ability to support multiple liquidity preferences as the price curve had to be fixed at the point of pool creation. This meant that LPs had to choose between adding liquidity to a specific range defined by the pool creator or else create their own pool (which also comes with significantly more gas fees). As such, depending on LP risk preferences, liquidity was likely to be fractured across different pools for the same token pair resulting in less than ideal slippage and trading volume.
 
@@ -58,7 +58,7 @@ For the same total value locked (TVL), a position with a narrower range will hav
 
 <figure><img src="../../../../.gitbook/assets/LiquidityConceptDiagram.png" alt=""><figcaption><p>Liquidity concept</p></figcaption></figure>
 
-Taking an ETH-USDC pool with 3 positions with the same TVL, we can see that the proportion of tokens which each position contributes towards supporting the market price differs.&#x20;
+Taking an ETH-USDC pool with 3 positions with the same TVL, we can see that the proportion of tokens which each position contributes towards supporting the market price differs.
 
 <table data-header-hidden><thead><tr><th width="126"></th><th width="162"></th><th></th><th></th></tr></thead><tbody><tr><td>Position</td><td>TVL (USD value)</td><td>Price Range</td><td>Liquidity Contributed</td></tr><tr><td>1</td><td>6,000</td><td>1,960-2,020 (Width: 60)</td><td>10</td></tr><tr><td>2</td><td>6,000</td><td>1,980-2,000 (Width: 20)</td><td>30</td></tr><tr><td>3</td><td>6,000</td><td>1,990-2,000 (Width: 10)</td><td>60</td></tr></tbody></table>
 
@@ -68,7 +68,7 @@ When plotted on the above graph, a position is represented as follows:
 
 * The width on the position (i.e. x-axis) represents the LP's selected price range for the position. LPs will continue to earn a cut of the trading fees if their position's range supports the market price.
 * The height of the position (i.e. y-axis) measures the liquidity contributed to a specific price. For each trade, the trading fees will be distributed according to the positions supporting the trade as measured by their relative liquidity values.
-* The area of the position (i.e. width x height) is equivalent to the TVL of the position.&#x20;
+* The area of the position (i.e. width x height) is equivalent to the TVL of the position.
 
 ## Calculating liquidity
 

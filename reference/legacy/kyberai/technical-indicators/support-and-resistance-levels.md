@@ -1,7 +1,7 @@
 # Support & Resistance Levels
 
 {% hint style="info" %}
-#### In one sentence
+**In one sentence**
 
 Psychological price levels which limits the range of market movement based on the min/max value assigned by the market for an arbitrary time period.
 {% endhint %}
@@ -19,7 +19,7 @@ Given that the support level limits downwards movements while the resistance lev
 ## Improving trades with Support & Resistance levels
 
 {% hint style="warning" %}
-#### Disclaimer: Not financial advice
+**Disclaimer: Not financial advice**
 
 KyberAI was created with the intention of empowering our users with the data insights required to make informed trading decisions. Users must exercise due diligence in their trading decisions with the best trading strategies incorporating the insights enabled by KyberAI.
 {% endhint %}

@@ -7,6 +7,7 @@
 * [Quickstart](getting-started/quickstart/README.md)
   * [FAQ](getting-started/quickstart/faq.md)
 * [Supported Exchanges And Networks](getting-started/supported-exchanges-and-networks.md)
+* [Fee Schedule](getting-started/fee-schedule.md)
 * [Foundational Topics](getting-started/foundational-topics/README.md)
   * [Decentralized Finance](getting-started/foundational-topics/decentralized-finance/README.md)
     * [Tokens](getting-started/foundational-topics/decentralized-finance/tokens.md)
@@ -59,7 +60,6 @@
   * [Experiment Results](user-guide/kyberswap-fairflow/experiment-results.md)
   * [Position APR Estimation](user-guide/kyberswap-fairflow/position-apr-estimation.md)
   * [FAQ](user-guide/kyberswap-fairflow/faq.md)
-* [Fee Schedule](user-guide/fee-schedule.md)
 
 ## Developer Guide
 

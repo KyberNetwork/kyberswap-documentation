@@ -1,7 +1,7 @@
 # Live Charts
 
 {% hint style="info" %}
-#### In one sentence
+**In one sentence**
 
 An interactive chart that displays the historical price of the token together with the relevant technical indicators for further analysis.
 {% endhint %}
@@ -46,7 +46,7 @@ The live charts provide users with a single interactive price chart which conven
 ## Improving trades with Live Charts
 
 {% hint style="warning" %}
-#### Disclaimer: Not financial advice
+**Disclaimer: Not financial advice**
 
 KyberAI was created with the intention of empowering our users with the data insights required to make informed trading decisions. Users must exercise due diligence in their trading decisions with the best trading strategies incorporating the insights enabled by KyberAI.
 {% endhint %}

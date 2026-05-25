@@ -11,20 +11,20 @@ As each liquidity position in Elastic is non-fungible, different formulas are re
 * [**Elastic Pool APR**](apr-calculations.md#annual-percentage-rate-apr-calculation): The APR for the pool. Calculated by sampling the fees over the active liquidity range every 30 minutes for the last 24 hours and extrapolates to an annual basis.
 * [**My Pool APR**](apr-calculations.md#my-pool-apr-calculation): The APR for a specific position within a pool. My Pool APR is calculated by extrapolating the total trading fees earned since the position was created over the period of a year.
 * [**Dynamic Farm APR**](apr-calculations.md#dynamic-farm-apr-calculation): The minimum APR for an active position staked in the Dynamic Farm. Dynamic Farm APR is calculated by comparing the farming rewards against the total value of all in and out of range positions in the pool.
-* [**My Dynamic Farm APR**](apr-calculations.md#my-dynamic-farm-apr-calculation): The estimated APR of a position staked in the Dynamic Farm. Dynamic Farming rewards received by the position are extrapolated and compared against the position's TVL.&#x20;
+* [**My Dynamic Farm APR**](apr-calculations.md#my-dynamic-farm-apr-calculation): The estimated APR of a position staked in the Dynamic Farm. Dynamic Farming rewards received by the position are extrapolated and compared against the position's TVL.
 * [**Static Farm Range APR**](apr-calculations.md#static-farm-range-apr-calculation): The optimal APR for a Static Farm position whose range is exactly the same as the operator defined farm range. Farming range rewards are calculated based on the [farming shares](tick-based-farming.md#static-farms) which the range has accumulated.
 * [**My Static Farm APR**](apr-calculations.md#my-static-farm-apr-calculation): The expected APR of a position staked in the Static Farm. Rewards are distributed based on the farming shares which the position has accumulated.
 
 For pools where trades occur infrequently, the APR calculations adopts a last available data approach. For example, if there is no available data in the last 24 hours, KyberSwap Elastic will display the last available 24H timeframe with APR data. This ensures that the APR displayed is more representative of actual returns especially for exotic pools where the majority of trading fees take place in short bursts.
 
 {% hint style="success" %}
-#### Choosing The Best Range To Maximize LP Returns
+**Choosing The Best Range To Maximize LP Returns**
 
 <img src="../../../../.gitbook/assets/PositionRangesAndAPR_Tease.jpg" alt="" data-size="original">
 
-A LPs returns are heavily dependent on the [position range selected](broken-reference) for [concentrated liquidity](concentrated-liquidity.md) protocols such as KyberSwap Elastic. To help you maximize your potential returns, [KyberSwap Insights](https://blog.kyberswap.com/learn/insights-en/) has created a simple flow diagram which walks you through each of the key decision points when determining a position range which best suites your risk-adjusted return preferences.
+A LPs returns are heavily dependent on the [position range selected](broken-reference/) for [concentrated liquidity](concentrated-liquidity.md) protocols such as KyberSwap Elastic. To help you maximize your potential returns, [KyberSwap Insights](https://blog.kyberswap.com/learn/insights-en/) has created a simple flow diagram which walks you through each of the key decision points when determining a position range which best suites your risk-adjusted return preferences.
 
-View and interact with the full diagram in greater detail [here](https://blog.kyberswap.com/choosing-the-best-range-to-maximize-lp-returns-flow-chart/).&#x20;
+View and interact with the full diagram in greater detail [here](https://blog.kyberswap.com/choosing-the-best-range-to-maximize-lp-returns-flow-chart/).
 {% endhint %}
 
 ## Elastic Pool Annual Percentage Rate (APR) calculation[​](https://docs.kyberswap.com/overview/elastic-pool-apr-calculation#annual-percentage-rate-apr-calculation) <a href="#annual-percentage-rate-apr-calculation" id="annual-percentage-rate-apr-calculation"></a>
@@ -48,7 +48,7 @@ $$
 $$
 
 {% hint style="info" %}
-#### Data sampling and APR accuracy
+**Data sampling and APR accuracy**
 
 To account for market volatility which could result in significant changes to the pool's liquidity within the specified 30 minute interval, the APR formula samples the data according to the following rules:
 
@@ -97,7 +97,7 @@ The above calculation is repeated for each of the 48 intervals with the total re
 
 ## My Pool APR calculation
 
-As each Elastic position supports [specific liquidity ranges](concentrated-liquidity.md), the APR of a position varies greatly depending on whether the position is in-range (i.e. supporting the currently active trading price)  or out-of-range (i.e. outside the active trading price). Trading fees are only distributed to positions which have supported the trade and hence the My Pool APR calculations have to consider the customized liquidity range that was selected by the user.
+As each Elastic position supports [specific liquidity ranges](concentrated-liquidity.md), the APR of a position varies greatly depending on whether the position is in-range (i.e. supporting the currently active trading price) or out-of-range (i.e. outside the active trading price). Trading fees are only distributed to positions which have supported the trade and hence the My Pool APR calculations have to consider the customized liquidity range that was selected by the user.
 
 To account for the unique price ranges for each position, the My Pool APR calculation aggregates the trading fees that was earned by the position since its creation and extrapolates it over 365 days. In doing so, KyberSwap is able to provide a more accurate My Pool APR as the historical fees generated by that position already comprises the status of the position (i.e. in-range or out-of-range). As a result, the My Pool APR tends to smoothen out over a longer time period as variances caused by short-term market fluctuations will be distributed more evenly.
 
@@ -123,7 +123,7 @@ $$
 
 ## Dynamic Farm APR calculation
 
-As Dynamic Farm rewards are based on the [active time of liquidity](tick-based-farming.md#elastic-farming-v1), the expected APR will be directly proportional to the amount of time which the user's underlying liquidity goes into supporting the active price. Given that this is highly dependent on the position's range which the LP has set relative to the market price, the estimated APRs for Dynamic Farms are computed using the TVL of the underlying pool (both in and out of range positions). As such, **the Dynamic Farm APRs displayed are the minimum returns that a staker can expect to receive by participating in the farm.**&#x20;
+As Dynamic Farm rewards are based on the [active time of liquidity](tick-based-farming.md#elastic-farming-v1), the expected APR will be directly proportional to the amount of time which the user's underlying liquidity goes into supporting the active price. Given that this is highly dependent on the position's range which the LP has set relative to the market price, the estimated APRs for Dynamic Farms are computed using the TVL of the underlying pool (both in and out of range positions). As such, **the Dynamic Farm APRs displayed are the minimum returns that a staker can expect to receive by participating in the farm.**
 
 As long as the staked position supports the active price range, returns will always exceed the stated Dynamic Farm APRs. The more [concentrated](concentrated-liquidity.md) the liquidity supporting the market price, the more rewards distributed to the position. Note that positions outside the active range are not eligible for farming rewards. The Dynamic Farm APR formula below simplifies the APR calculations so as not to add on the complexity of dynamically accounting for market movements as well as customized liquidity ranges which can go in and out of range.
 
@@ -137,7 +137,7 @@ Note that the total farm rewards are spread across the full TVL of the underlyin
 
 #### Scenario
 
-A farm is setup to distribute 100,000`USDT` as farming rewards for the  `ETH - USDT (1% fee tier)` Elastic Pool over the duration of 14 days. Upon the farm being launched, multiple LPs stake a total of USD300,000 to benefit from the farming rewards.
+A farm is setup to distribute 100,000`USDT` as farming rewards for the `ETH - USDT (1% fee tier)` Elastic Pool over the duration of 14 days. Upon the farm being launched, multiple LPs stake a total of USD300,000 to benefit from the farming rewards.
 
 #### Calculation
 
@@ -155,7 +155,7 @@ $$
 
 In a similar fashion to the My Pool APR, the My Farm APR can be obtained by extrapolating the rewards received by a staked position over the period of a year. Farming rewards are only distributed to positions which have supported the trade and hence the My Pool APR calculations have to consider the customized liquidity range that was selected by the user.
 
-To account for the unique price ranges for each position, the My Farm APR calculation aggregates the rewards that was earned by the position over the last 24 hours and extrapolates it over 365 days. In doing so, KyberSwap is able to provide a more accurate My Farm APR as the historical rewards earned by that position already comprises the status of the position (i.e. is it in-range or out-of-range).&#x20;
+To account for the unique price ranges for each position, the My Farm APR calculation aggregates the rewards that was earned by the position over the last 24 hours and extrapolates it over 365 days. In doing so, KyberSwap is able to provide a more accurate My Farm APR as the historical rewards earned by that position already comprises the status of the position (i.e. is it in-range or out-of-range).
 
 In the case of My Farm APR, the rewards streamed per day is constant and known at the time of farm setup. As such, the My Farm APR will be determined by the amount of time that a staked position is in range as well as the current value of the position.
 
@@ -194,7 +194,7 @@ $$
 With the introduction of [weighted farm ranges](tick-based-farming.md#elastic-farming-v2) in Static Farms, the estimated APRs are heavily dependent on the specific farm range which a position is staked into. Moreover, as rewards are distributed based on the proportional share of the total farm rewards, the APR for a particular farm range is also affected by the total liquidity that has been contributed across all other farm ranges. Given this interdependence, the static farm range APR displayed is the optimal APR assuming that the staked positions have the exact same range as the operator defined farming range.
 
 {% hint style="info" %}
-#### Getting the optimal APRs
+**Getting the optimal APRs**
 
 As farming rewards are distributed according to the proportion of liquidity which a user contributes to the farming range, users will be able to realize the maximum farm APR if all the liquidity contributed goes wholly towards the selected farm range (i.e. underlying position price range = farm price range). For staked positions with a price range that is wider than the farm, the expected rewards will be adjusted accordingly as the underlying position is distributed over a wider range with farming range rewards only going towards a portion of the staked position.
 {% endhint %}
@@ -227,7 +227,7 @@ $$TVL=Liquidity*f(P_{rangeMin}, P_{rangeMax}, P_{current})$$
 
 The formulas below showcases the functional relationship, $$f(P_{rangeMin}, P_{rangeMax}, P_{current})$$, between range TVL, price, and farm range. Note that $$P$$ denotes pool price (i.e. ratio of prices between $$Token_A$$ and $$Token_B$$) while $$MP$$ denotes market price (i.e. USD value).
 
-* If $$P_{current}<P_{rangeMin}$$, position is out of range and consists of only $$Token_A$$:&#x20;
+* If $$P_{current}<P_{rangeMin}$$, position is out of range and consists of only $$Token_A$$:
 
 $$(\frac{1}{\sqrt{P_{rangeMin}}}-\frac{1}{\sqrt{P_{rangeMax}}})*MP_{Token_A}$$
 
@@ -235,7 +235,7 @@ $$(\frac{1}{\sqrt{P_{rangeMin}}}-\frac{1}{\sqrt{P_{rangeMax}}})*MP_{Token_A}$$
 
 $$\left[(\frac{1}{\sqrt{P_{current}}}-\frac{1}{\sqrt{P_{rangeMax}}})*MP_{token_A}+(\sqrt{P_{current}}-\sqrt{P_{rangeMin}})*MP_{token_B}\right]$$
 
-* If $$P_{current} \geq P_{rangeMax}$$, position is out of range and consists of only $$Token_B$$:&#x20;
+* If $$P_{current} \geq P_{rangeMax}$$, position is out of range and consists of only $$Token_B$$:
 
 $$(\sqrt{P_{rangeMax}}-\sqrt{P_{rangeMin}})*MP_{Token_B}$$
 
@@ -288,7 +288,7 @@ Based on `ETH` current price of USD2,000, the pool operator wants to incentivize
 <table><thead><tr><th width="223">Farm range ID</th><th width="276">Farm range</th><th width="250">Weight</th></tr></thead><tbody><tr><td>A</td><td>1,900-2,100</td><td>2</td></tr><tr><td>B</td><td>2,100-2,300</td><td>5</td></tr></tbody></table>
 
 {% hint style="info" %}
-#### Farm operators: Choosing weights
+**Farm operators: Choosing weights**
 
 Note that for simplicity, the example utilizes weights with a small absolute value for better readability. In practice, it is recommended that the farm operator selects a higher absolute value for the farm range weights (i.e. 100s or 1000s) to enable more precise handling of farm reward distribution.
 {% endhint %}
@@ -320,7 +320,7 @@ Note that the expected rewards are extrapolated over the course of 365 days to g
 
 #### Static Farm APR - Single staker
 
-Currently, only farm range A contains a staked position hence the total number of shares in the range is equivalent to the total shares issued for the farm. Recall that rewards are distributed based on the number of shares issued to a staked position. The total rewards allocated to a farming range is therefore the aggregate of all position shares that have staked in that farm range.&#x20;
+Currently, only farm range A contains a staked position hence the total number of shares in the range is equivalent to the total shares issued for the farm. Recall that rewards are distributed based on the number of shares issued to a staked position. The total rewards allocated to a farming range is therefore the aggregate of all position shares that have staked in that farm range.
 
 As Alice is the only staker and she has chosen farm range A, all shares are currently allocated to farm range A. To get the shares for an individual position, a $$Liquidity$$ value is assigned to each position to determine the proportion of value which a position has contributed towards a specific price range. The formula for $$Liquidity$$ can be found [here](tick-based-farming.md#calculating-liquidity).
 

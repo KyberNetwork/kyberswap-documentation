@@ -9,7 +9,7 @@ description: Concentrated Liquidity Farms
 As a tick-based automated market maker (AMM), KyberSwap Elastic enables greater capital efficiency by allowing users to provide liquidity to a pool within a [custom price range](concentrated-liquidity.md). This also means that liquidity contributed by an LP is no longer equally distributed across the same range as other LPs.
 
 {% hint style="success" %}
-#### Liquidity: Measuring LP contributions
+**Liquidity: Measuring LP contributions**
 
 Please refer to [this section](concentrated-liquidity.md#liquidity-tracking-lp-contributions-at-a-specific-price) on the liquidity concept if you would like to understand how concentrated liquidity AMM protocols keep track of LP contributions and how trading fees are distributed.
 {% endhint %}
@@ -23,11 +23,11 @@ To tackle these challenges, KyberSwap Elastic introduced innovative liquidity mi
 * Liquidity contributed to operator-specified farm ranges (Static Farms)
 
 {% hint style="info" %}
-#### Static Farms: Capital efficient rewards distribution
+**Static Farms: Capital efficient rewards distribution**
 
 While both Dynamic and Static Farms achieves practical distribution of farming rewards, the core distribution mechanism differs between the two. Dynamic Farms takes an active position approach while Static Farms takes a weighted distribution approach based on fixed farming ranges. Based on this difference, Static Farms introduces the following benefits:
 
-* Operator (i.e. reward admin) configured farming ranges with weighted rewards distribution&#x20;
+* Operator (i.e. reward admin) configured farming ranges with weighted rewards distribution
 * Farming rewards for inactive ranges depending on operator defined farm ranges
 * Simpler user farming journey
 
@@ -133,7 +133,7 @@ The example below walks you through how farming rewards are calculated in the ca
 
 #### Static Farm setup
 
-A farm operator setups a `KNC-USDT` farm which runs for 2 weeks (1,209,600 seconds) with total rewards of 100,000`KNC`. The rewards are spread across the following 2 ranges, each with a weight configured by the farm operator.&#x20;
+A farm operator setups a `KNC-USDT` farm which runs for 2 weeks (1,209,600 seconds) with total rewards of 100,000`KNC`. The rewards are spread across the following 2 ranges, each with a weight configured by the farm operator.
 
 <table><thead><tr><th width="223">Farm range ID</th><th width="276">Farm range</th><th width="250">Weight</th></tr></thead><tbody><tr><td>A</td><td>0.75-0.80</td><td>2</td></tr><tr><td>B</td><td>0.80-0.85</td><td>5</td></tr></tbody></table>
 
@@ -146,7 +146,7 @@ Based on the weights specified, the farm operator intends to incentivize more li
 Upon the farm becoming active, Alice decides to participate in the 0.75-0.80 farm range. Alice has an existing [concentrated liquidity](concentrated-liquidity.md) position worth USD1,000 in the `KNC-USDT` pool with a price range of 0.75-0.80 (assume tick-spacing of 0.01 for simplicity). Alice expects that `KNC` price will continue to trade within this range and hence does not change her position to continue earning trading fees.
 
 {% hint style="info" %}
-#### Farm range rewards eligibility
+**Farm range rewards eligibility**
 
 Do note that only liquidity positions whose price range covers the full range of the farm are eligible for farming rewards. For example, if Alice creates a position with a range of 0.75-.079, she would not be eligible for the the Farm A rewards.
 {% endhint %}
@@ -167,9 +167,9 @@ With multiple stakers in the farm, the farm now needs to track the proportion of
 
 <table><thead><tr><th width="103.33333333333331">LP</th><th width="169">Position Range</th><th width="136">Position TVL</th><th>Farm Range staked</th></tr></thead><tbody><tr><td>Alice</td><td>0.75-0.80</td><td>USD1,000</td><td>A (Range: 0.75-0.80, Weight: 2)</td></tr><tr><td>Bob</td><td>0.75-0.85</td><td>USD1,000</td><td>B (Range: 0.75-0.85, Weight: 5)</td></tr></tbody></table>
 
-To get the reward shares for each position, the protocol calculates the proportion of [liquidity](concentrated-liquidity.md#liquidity-tracking-lp-contributions-at-a-specific-price) that the position has contributed to the farm.&#x20;
+To get the reward shares for each position, the protocol calculates the proportion of [liquidity](concentrated-liquidity.md#liquidity-tracking-lp-contributions-at-a-specific-price) that the position has contributed to the farm.
 
-This example glances over the exact calculation but the formula for the liquidity contributed, $$L$$, can be found in the [section](concentrated-liquidity.md#calculating-liquidity) or in the [Elastic Whitepaper](broken-reference). For every concentrated liquidity position, the TVL is distributed across the selected price range in accordance to the pool's price curve. Consequently, what is important to note is that $$L$$ indicates the proportion of liquidity that a position has contributed within the specified price range.
+This example glances over the exact calculation but the formula for the liquidity contributed, $$L$$, can be found in the [section](concentrated-liquidity.md#calculating-liquidity) or in the [Elastic Whitepaper](broken-reference/). For every concentrated liquidity position, the TVL is distributed across the selected price range in accordance to the pool's price curve. Consequently, what is important to note is that $$L$$ indicates the proportion of liquidity that a position has contributed within the specified price range.
 
 To get the liquidity value, we have the following parameters:
 
@@ -194,7 +194,7 @@ $$
 
 Notice that $$L_{Alice}$$ is higher than $$L_{Bob}$$ even though their positions are of similar dollar value. This is because the TVL of Bob's position is spread over a wider range when compared to Alice's position. In other words, for the price ranges where Alice's and Bob's position overlaps, Alice contributes significantly more liquidity to support trades within her selected price range.
 
-To get the farming reward shares, we then need to factor in the weight assigned to each farming range whereby:&#x20;
+To get the farming reward shares, we then need to factor in the weight assigned to each farming range whereby:
 
 $$
 share_A=weight_{FarmRange}*L_A

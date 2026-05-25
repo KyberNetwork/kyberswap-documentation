@@ -1,9 +1,9 @@
 # Netflow To CEX
 
 {% hint style="info" %}
-#### In one sentence
+**In one sentence**
 
-The net value of tokens (in USD) that are being transferred in/out of major centralized exchange wallet addresses.&#x20;
+The net value of tokens (in USD) that are being transferred in/out of major centralized exchange wallet addresses.
 {% endhint %}
 
 ## Overview
@@ -23,12 +23,12 @@ CEXs play an important role as fiat to token on/off-ramps. As such, the netflow 
 
 There are a few pieces of information that can be assumed based on CEX inflows and outflows:
 
-* **CEX token whitelisting**: Unlike [DEXs](broken-reference), tokens must first be whitelisted by the CEX before it can be traded. As such, by listing a token, CEXs are indirectly endorsing the token which implies that the token has managed to get a reasonable amount of traction. Nonetheless, such whitelistings have to be considered in conjunction with the CEX's reputation as each CEX has different token listing criterias. Note that CEXs are not able to control token inflows in the case that a user transfers an unsupported token to the wallet address.
+* **CEX token whitelisting**: Unlike [DEXs](broken-reference/), tokens must first be whitelisted by the CEX before it can be traded. As such, by listing a token, CEXs are indirectly endorsing the token which implies that the token has managed to get a reasonable amount of traction. Nonetheless, such whitelistings have to be considered in conjunction with the CEX's reputation as each CEX has different token listing criterias. Note that CEXs are not able to control token inflows in the case that a user transfers an unsupported token to the wallet address.
 * **Positive netflow**: A constant inflow of tokens to CEX addresses indicates that users are depositing their tokens to CEXs and is generally assumed to be a bearish signal. While CEXs do offer additional non-trading services to incentivize deposits (i.e. staking, interest earning products, etc.), the aggregate impact of inflows to CEXs usually indicates that users are planning to sell the token on CEXs. By selling via a CEX, users can easily convert their tokens to fiat and also avoid gas fees.
 * **Negative netflow**: A constant outflow of tokens from CEX addresses indicates that users are buying the token on CEXs and transferring it to their own wallets for safekeeping or staking. CEXs act as an on-ramp for fiat to tokens and hence such outflows suggests that there is an increased demand for the token. Aside from purely market factors, another key driver of outflows could be due to a lost of trust in the ability of CEXs to honour token withdrawals and hence users might transfer their balances into their own wallets for safekeeping.
 
 {% hint style="info" %}
-#### Cross-chain data
+**Cross-chain data**
 
 Data shown in graph is specific to the selected chain. For the same token, the KyberAI interface allows users to toggle between the supported chains. Refer [On-Chain Indicators](./) for more info.
 {% endhint %}
@@ -36,7 +36,7 @@ Data shown in graph is specific to the selected chain. For the same token, the K
 ## Improving trades with Netflow to CEX
 
 {% hint style="warning" %}
-#### Disclaimer: Not financial advice
+**Disclaimer: Not financial advice**
 
 KyberAI was created with the intention of empowering our users with the data insights required to make informed trading decisions. Users must exercise due diligence in their trading decisions with the best trading strategies incorporating the insights enabled by KyberAI.
 {% endhint %}

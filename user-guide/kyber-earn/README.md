@@ -142,7 +142,7 @@ Disclaimer: KyberSwap provides tools for tracking and managing liquidity on thir
 
 All operations executed through [the KyberZap contract](../../developer-guide/zap-as-a-service-zaas-api/contracts-and-addresses.md) incur a platform fee. The fee is charged on the input amount and varies based on the specific token pair category. The applicable fee amount is transparently displayed in the interface for review prior to transaction confirmation.
 
-Refer to [Fee Structure](../fee-schedule.md) for further details.
+Refer to [Fee Structure](../../getting-started/fee-schedule.md) for further details.
 
 
 

@@ -21,7 +21,7 @@ The result is a swap execution that is more resilient to slippage, more resistan
 * **Resilience Against MEV and Sandwich Attacks** - Even when the originally selected pool is sandwiched or front-run within the same block, Smart Settlement can detect the worsened rate and switch to a better pool. This provides an additional layer of resilience on top of your existing slippage protection.
 * **Protection Against JIT Liquidity Removal** - In some cases, liquidity providers may add liquidity to a pool temporarily — to appear deep and attractive to aggregators, or to farm trading fee rewards and liquidity mining incentives — then remove it before execution. When this happens, the pool is shallower than expected and delivers worse output. Smart Settlement detects this on-chain at execution time: if the pool’s liquidity has been pulled and output has worsened, it switches to a pool with sufficient depth instead.
 * **Seamless & Automatic** - No extra steps - just keep swapping on KyberSwap or any other integrating partners.
-* **No Additional Protocol Fee** - Smart Settlement does not add any protocol fee. As per [Fee Schedule](../../../user-guide/fee-schedule.md), KyberSwap does not charge fees to users using the protocol to swap tokens.
+* **No Additional Protocol Fee** - Smart Settlement does not add any protocol fee. As per [Fee Schedule](../../../getting-started/fee-schedule.md), KyberSwap does not charge fees to users using the protocol to swap tokens.
 
 ## Supported Chains
 

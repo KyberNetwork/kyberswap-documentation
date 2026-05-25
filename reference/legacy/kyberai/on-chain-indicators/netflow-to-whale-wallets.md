@@ -1,16 +1,16 @@
 # Netflow To Whale Wallets
 
 {% hint style="info" %}
-#### In one sentence
+**In one sentence**
 
-The net value of tokens (in USD) that are being transferred in/out of whale wallet addresses.&#x20;
+The net value of tokens (in USD) that are being transferred in/out of whale wallet addresses.
 {% endhint %}
 
 ## Overview
 
 <figure><img src="../../../../.gitbook/assets/KyberAI_NetflowToWhales.png" alt=""><figcaption><p>Netflow to whale wallets</p></figcaption></figure>
 
-The netflow to whale wallets measures the net total USD value of tokens which are being transferred to and from whale wallets. Inflows refers to tokens being deposited to the whale wallet while outflows refers to when tokens are withdrawn from said wallet. Inflow and outflow can be an outcome of direct wallet transfers or [DEX](broken-reference) swaps. KyberAI defines 2 classes of whales:
+The netflow to whale wallets measures the net total USD value of tokens which are being transferred to and from whale wallets. Inflows refers to tokens being deposited to the whale wallet while outflows refers to when tokens are withdrawn from said wallet. Inflow and outflow can be an outcome of direct wallet transfers or [DEX](broken-reference/) swaps. KyberAI defines 2 classes of whales:
 
 * **General whales**: Wallets with assets totalling over USD5M across supported chains.
 * **Token whales**: Wallets that hold more than 1% of the total token supply for a particular token.
@@ -22,7 +22,7 @@ Positive netflow indicates that whales might be accumulating the token while a n
 Do note that addresses belonging to DEX smart contracts, CEXs, as well as multi-sig wallets are excluded from this list hence the whale wallet lists identifies individual whale wallets (i.e. EOA addresses). This is because such addresses tend to accumulate a large portion of the tokens but are not actively trading the token. Critically, tokens which have been transferred to DEX smart contract addresses could be used for both DEX swaps as well as liquidity provision hence such a large transfer out of a whale wallet requires further investigation as to whether it is a bullish or bearish signal.
 
 {% hint style="info" %}
-#### Cross-chain data
+**Cross-chain data**
 
 Data shown in graph is specific to the selected chain. For the same token, the KyberAI interface allows users to toggle between the supported chains. Refer [On-Chain Indicators](./) for more info.
 {% endhint %}
@@ -30,7 +30,7 @@ Data shown in graph is specific to the selected chain. For the same token, the K
 ## Improving trades with Netflow to Whale Wallets
 
 {% hint style="warning" %}
-#### Disclaimer: Not financial advice
+**Disclaimer: Not financial advice**
 
 KyberAI was created with the intention of empowering our users with the data insights required to make informed trading decisions. Users must exercise due diligence in their trading decisions with the best trading strategies incorporating the insights enabled by KyberAI.
 {% endhint %}

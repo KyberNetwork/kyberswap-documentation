@@ -38,7 +38,7 @@ Supported on:
 {% endhint %}
 
 {% hint style="info" %}
-#### Elastic Legacy
+**Elastic Legacy**
 
 On 17 April 2023, KyberSwap validated a vulnerability reported by a whitehat hacker which could result in double-counting of liquidity deposits under a specific condition. Elastic pools and farms were paused with all user funds being safely withdrawn from the identified contracts. If you still have funds in Elastic Legacy, please refer to [Remove Elastic Legacy Liquidity](../elastic-legacy/remove-elastic-legacy-liquidity.md) for a guide on how to retrieve your funds.
 
@@ -54,9 +54,9 @@ As of 25 May 2023, all the relevant Elastic protocol and farm contracts have bee
 * [Learn how price ranges affect your yield](concepts/concentrated-liquidity.md)
 * [Discover how your yields are being compounded](concepts/reinvestment-curve.md)
 * [Understand how Elastic protects you from front runners](concepts/anti-sniping-mechanism.md)
-* [Create your own Elastic pool](broken-reference)
-* [Contribute liquidity to an existing Elastic pool](broken-reference)
-* [Receive additional rewards by yield farming on Elastic](broken-reference)
+* [Create your own Elastic pool](broken-reference/)
+* [Contribute liquidity to an existing Elastic pool](broken-reference/)
+* [Receive additional rewards by yield farming on Elastic](broken-reference/)
 
 </details>
 
@@ -65,7 +65,7 @@ As of 25 May 2023, all the relevant Elastic protocol and farm contracts have bee
 <summary>Traders</summary>
 
 * [Learn how Elastic APR is calculated](concepts/apr-calculations.md)
-* [Get superior rates via the integrated KyberSwap Aggregator](broken-reference)
+* [Get superior rates via the integrated KyberSwap Aggregator](broken-reference/)
 
 </details>
 
@@ -74,7 +74,7 @@ As of 25 May 2023, all the relevant Elastic protocol and farm contracts have bee
 <summary>Developers</summary>
 
 * [Explore key Elastic concepts](concepts/)
-* [Execute a swap against Elastic pools](broken-reference)
+* [Execute a swap against Elastic pools](broken-reference/)
 * [View Elastic contract code and addresses](contracts/)
 
 </details>

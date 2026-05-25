@@ -1,7 +1,7 @@
 # Volume Of Transfers
 
 {% hint style="info" %}
-#### In one sentence
+**In one sentence**
 
 The total USD value of on-chain transfers between user wallets for the token.
 {% endhint %}
@@ -17,7 +17,7 @@ Note that the volume of transfers differs from [trading volume](trading-volume.m
 It is crucial to note that as the trading volume is denominated in USD, it is also highly dependent on the price movements of the token. For example, if 1ETH was transferred when its price was USD2,000, the volume of transfers would be increased by USD2,000 but if the next day ETH price increases to USD2,200, the same token unit transfer increases the volume of transfers by USD2,200. As such, the transfer volume has to be taken in context with token price movements.
 
 {% hint style="info" %}
-#### Cross-chain data
+**Cross-chain data**
 
 Data shown in graph is specific to the selected chain. For the same token, the KyberAI interface allows users to toggle between the supported chains. Refer [On-Chain Indicators](./) for more info.
 {% endhint %}
@@ -25,12 +25,12 @@ Data shown in graph is specific to the selected chain. For the same token, the K
 ## Improving trades with Number of Transfers
 
 {% hint style="warning" %}
-#### Disclaimer: Not financial advice
+**Disclaimer: Not financial advice**
 
 KyberAI was created with the intention of empowering our users with the data insights required to make informed trading decisions. Users must exercise due diligence in their trading decisions with the best trading strategies incorporating the insights enabled by KyberAI.
 {% endhint %}
 
-Similar to the [number of transfers](number-of-transfers.md), the volume of transfers acts as a proxy for the total general interest in the token. Successive periods of increased transfer volume indicates that the token is likely experiencing a significant surge in interest. When comparing the transfer volume to previous periods, users can also see when there was a sudden spike in interest and whether this interest lead to more gradual growth or an immediate decline.&#x20;
+Similar to the [number of transfers](number-of-transfers.md), the volume of transfers acts as a proxy for the total general interest in the token. Successive periods of increased transfer volume indicates that the token is likely experiencing a significant surge in interest. When comparing the transfer volume to previous periods, users can also see when there was a sudden spike in interest and whether this interest lead to more gradual growth or an immediate decline.
 
 Taken in isolation, the volume of transfers is unable to provide further guidance as to whether the token is bullish or bearish as it is indifferent to transfers resulting from buys or sells. To solve this, the [trade volume](trading-volume.md) provides a more price specific view as it takes into account trade types. Critically, by comparing the [trade volume](trading-volume.md) against the volume of transfers, this ratio provides a good indication of interest in the token outside of trading. This might be a good indicator as to whether the token is driving value via wider adoption through various means (i.e. utility, payments, etc.).
 

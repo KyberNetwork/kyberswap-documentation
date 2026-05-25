@@ -5,7 +5,7 @@ description: Trade KNC On Multiple Chains
 # KNC Contract Addresses
 
 {% hint style="info" %}
-#### An upgraded Kyber Network Crystal token
+**An upgraded Kyber Network Crystal token**
 
 KNC was launched on Ethereum in 2017 and based on the ERC-20 standard. All vested tokens for founders and advisors have been unlocked and distributed since September 2019.
 
@@ -32,7 +32,7 @@ For avoidance of doubt, KNC refers to the current version of the token while KNC
    \
    Can only upgrade the KNC token implementation after a successful DAO vote
 
-**Governance Implementation:**&#x20;
+**Governance Implementation:**
 
 Kyber Network: Governance (Voting Contract - submitVote) [https://etherscan.io/address/0x7Ec8FcC26bE7e9E85B57E73083E5Fe0550d8A7fE](https://etherscan.io/address/0x7Ec8FcC26bE7e9E85B57E73083E5Fe0550d8A7fE)
 
@@ -169,7 +169,7 @@ Kyber Network: Governance (Voting Contract - submitVote) [https://etherscan.io/a
 ## Multichain Wrapped (mKNC)
 
 {% hint style="danger" %}
-#### Multichain ceasing of operations
+**Multichain ceasing of operations**
 
 As of 14 July 2023, the Multichain team has ceased all operations. Wrapped KNC token contracts on the following chains are owned and deployed by the Multichain team. Due to the nature of public blockchains (where contracts are immutable unless written with a specific `selfdestruct` function), these contracts remain callable but users are highly discouraged from interacting with said contracts.
 

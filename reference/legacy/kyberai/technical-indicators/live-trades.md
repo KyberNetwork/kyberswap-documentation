@@ -1,7 +1,7 @@
 # Live Trades
 
 {% hint style="info" %}
-#### In one sentence
+**In one sentence**
 
 Displays the 50 latest DEX trades involving the token as well as the USD value of the trade.
 {% endhint %}
@@ -10,7 +10,7 @@ Displays the 50 latest DEX trades involving the token as well as the USD value o
 
 <figure><img src="../../../../.gitbook/assets/KyberAI_LiveTrades.png" alt=""><figcaption></figcaption></figure>
 
-The live trades section showcases the latest 50 token transactions that were executed via a [DEX](broken-reference). All trades involving the token are captured hence this captures any token-to-token swaps. The USD value of the trade as well as the price at which it was executed is computed to enable users to better contextualize the latest market value flows.
+The live trades section showcases the latest 50 token transactions that were executed via a [DEX](broken-reference/). All trades involving the token are captured hence this captures any token-to-token swaps. The USD value of the trade as well as the price at which it was executed is computed to enable users to better contextualize the latest market value flows.
 
 For each of the latest 50 transaction, users will be able to see the following information:
 
@@ -24,7 +24,7 @@ For each of the latest 50 transaction, users will be able to see the following i
 Based on the data above, users will be able to glance the direction of the latest trades and if there were any recent trades that were significant enough to move the markets. Note that the trades displayed are specific to the chain selected.
 
 {% hint style="info" %}
-#### Cross-chain data
+**Cross-chain data**
 
 Data shown in graph is specific to the selected chain. For the same token, the KyberAI interface allows users to toggle between the supported chains. Refer [On-Chain Indicators](../on-chain-indicators/) for more info.
 {% endhint %}
@@ -32,7 +32,7 @@ Data shown in graph is specific to the selected chain. For the same token, the K
 ## Improving trades with Live Trades
 
 {% hint style="warning" %}
-#### Disclaimer: Not financial advice
+**Disclaimer: Not financial advice**
 
 KyberAI was created with the intention of empowering our users with the data insights required to make informed trading decisions. Users must exercise due diligence in their trading decisions with the best trading strategies incorporating the insights enabled by KyberAI.
 {% endhint %}

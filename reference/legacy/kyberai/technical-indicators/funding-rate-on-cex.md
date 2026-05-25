@@ -1,7 +1,7 @@
 # Funding Rate On CEX
 
 {% hint style="info" %}
-#### In one sentence
+**In one sentence**
 
 Periodic funding premium which is paid to traders with open short/long positions that ensures that perpetuals trade close to or at the spot market price.
 {% endhint %}
@@ -16,10 +16,10 @@ Cryptocurreny perpetuals are cash-settled meaning that only the equivalent cash 
 
 The funding rate is a product of the perpetual futures contract market which in itself is considerably complicated. As such, to appreciate why funding rates are one of the key indicators of future price movements, we need to first understand perpetuals as an asset. To this end, the section below unpacks all the complexities of perpetual futures by progressively building upon key concepts.
 
-Note that funding rates are dependent upon CEXs supporting contracts for the token. In cases where there are no CEX contracts for the token, no funding rate will be displayed.&#x20;
+Note that funding rates are dependent upon CEXs supporting contracts for the token. In cases where there are no CEX contracts for the token, no funding rate will be displayed.
 
 {% hint style="info" %}
-#### Cross-chain data
+**Cross-chain data**
 
 Data shown in graph is sourced from multiple CEX venues with futures contracts involving the token. As such contracts are chain agnostic, the funding rates shown are indicative for the token as a whole. In other words, the funding rate is chain agnostic and applies for the same token across all chains.
 {% endhint %}
@@ -77,7 +77,7 @@ CEX funding rates will usually also include an interest rate component which is 
 ## Improving trades with CEX funding rates
 
 {% hint style="warning" %}
-#### Disclaimer: Not financial advice
+**Disclaimer: Not financial advice**
 
 KyberAI was created with the intention of empowering our users with the data insights required to make informed trading decisions. Users must exercise due diligence in their trading decisions with the best trading strategies incorporating the insights enabled by KyberAI.
 {% endhint %}

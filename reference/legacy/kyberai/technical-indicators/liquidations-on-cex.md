@@ -1,7 +1,7 @@
 # Liquidations On CEX
 
 {% hint style="info" %}
-#### In one sentence
+**In one sentence**
 
 The total USD value of all futures positions which were force closed due to traders having insufficient funds to keep their leveraged trades open.
 {% endhint %}
@@ -19,7 +19,7 @@ Cryptocurreny perpetuals are cash-settled meaning that only the equivalent cash 
 Note that liquidations are dependent upon CEXs supporting contracts for the token. In cases where there are no CEX contracts for the token, no liquidations will be displayed.
 
 {% hint style="info" %}
-#### Cross-chain data
+**Cross-chain data**
 
 Data shown in graph is aggregated across all CEX venues with futures contracts involving the token. As such contracts are chain agnostic, the liquidation volumes shown are indicative for the token as a whole. In other words, the liquidation volume is chain agnostic and applies for the same token across all chains.
 {% endhint %}
@@ -46,7 +46,7 @@ Taking the ETHUSD contract with a 10 contract size, each dollar movement away fr
 
 #### Liquidations
 
-As a trader's risks are amplified by the amount of leverage selected, CEXs implement a liquidation mechanism which caps a traders maximum loss. This not only protects the trader but also ensures that the contract terms can be fulfilled thereby ensuring continued market confidence.&#x20;
+As a trader's risks are amplified by the amount of leverage selected, CEXs implement a liquidation mechanism which caps a traders maximum loss. This not only protects the trader but also ensures that the contract terms can be fulfilled thereby ensuring continued market confidence.
 
 This liquidation mechanism essentially force closes a trader's position if there are insufficient funds in the trader's futures account to maintain the position. The maintenance margin determines the threshold at which the liquidation process will be triggered. Recall that at every funding interval, shorts pay longs whenever the [funding rate](funding-rate-on-cex.md) is negative and vice versa. As such, if the trader is on the losing side of the trade, the amount required to fulfil the funding rate will be directly debited from their futures account. This might cause the trader's position to be forced closed if their balance drops below the maintenance margin.
 
@@ -74,14 +74,14 @@ $$
 contractValue_{day1}=10*1,950=19,500
 $$
 
-When the [funding interval](funding-rate-on-cex.md#funding-intervals-payments-and-interest-rates) is reached, USD500 is debited form Alice's account to cover the funding rate to the short trader.  Following this debit, Alice's remaining balance of USD500 is now significantly below the maintenance margin of USD900 and her position is therefore forced closed. This is done by the CEX through creating a short position of the same value as the initial long position created by Alice which effectively nets Alice's losing position.
+When the [funding interval](funding-rate-on-cex.md#funding-intervals-payments-and-interest-rates) is reached, USD500 is debited form Alice's account to cover the funding rate to the short trader. Following this debit, Alice's remaining balance of USD500 is now significantly below the maintenance margin of USD900 and her position is therefore forced closed. This is done by the CEX through creating a short position of the same value as the initial long position created by Alice which effectively nets Alice's losing position.
 
-Note that with an $$indexTickSize$$ of 1, every USD1 move in ETH's price causes a USD10 profit/loss for the futures trader (i.e. a 10x leverage). In this example Alice lost USD500 due to a USD50 drop in ETH price. This is a 50% loss of her initial capital due to a 2.5% drop in ETH price. While this is a significant loss on Alice's end, the aggregate result of the liquidation might result in neighboring positions being liquidated as well due to the netting of Alice's position.&#x20;
+Note that with an $$indexTickSize$$ of 1, every USD1 move in ETH's price causes a USD10 profit/loss for the futures trader (i.e. a 10x leverage). In this example Alice lost USD500 due to a USD50 drop in ETH price. This is a 50% loss of her initial capital due to a 2.5% drop in ETH price. While this is a significant loss on Alice's end, the aggregate result of the liquidation might result in neighboring positions being liquidated as well due to the netting of Alice's position.
 
 ## Improving trades with CEX liquidations
 
 {% hint style="warning" %}
-#### Disclaimer: Not financial advice
+**Disclaimer: Not financial advice**
 
 KyberAI was created with the intention of empowering our users with the data insights required to make informed trading decisions. Users must exercise due diligence in their trading decisions with the best trading strategies incorporating the insights enabled by KyberAI.
 {% endhint %}
@@ -92,9 +92,9 @@ There is an inverse relationship between liquidations and token price movements 
 
 {% tabs %}
 {% tab title="CoinGlass" %}
-**API**: [https://open-api.coinglass.com/public/v2/liquidation\_history](https://open-api.coinglass.com/public/v2/liquidation\_history)
+**API**: [https://open-api.coinglass.com/public/v2/liquidation\_history](https://open-api.coinglass.com/public/v2/liquidation_history)
 
-**API**: [https://open-api.coinglass.com/public/v2/liquidation\_info](https://open-api.coinglass.com/public/v2/liquidation\_info)
+**API**: [https://open-api.coinglass.com/public/v2/liquidation\_info](https://open-api.coinglass.com/public/v2/liquidation_info)
 {% endtab %}
 {% endtabs %}
 

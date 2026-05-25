@@ -9,7 +9,7 @@ description: Making Sense Of Raw Trustless Data
 Users can realize the power of on-chain data by conveniently accessing all the various indicators that KyberAI has queried, sorted, and processed via the KyberSwap Interface. KyberAI enables users to view trends for the most important on-chain metrics as well as mix-and-match key indicators to derive further insights. To gain even further insights and context, the on-chain indicators can be combined with [off-chain technical indicators](../technical-indicators/). You can refer to [On-Chain vs Off-Chain Data](../../../../getting-started/foundational-topics/decentralized-technologies/on-chain-vs-off-chain-data.md) for more information on how this hybrid approach equips KyberAI users with the tools required to make data-driven trades.
 
 {% hint style="info" %}
-#### Cross-chain data
+**Cross-chain data**
 
 The data displayed across all on-chain indicators are specific to the selected chain. With DeFi expanding significantly across multiple chains ([KyberSwap included](../../../../getting-started/supported-exchanges-and-networks.md)), token teams have also taken this opportunity to launch their tokens across a [multitude of chains](../../../../getting-started/supported-exchanges-and-networks.md).
 

@@ -5,7 +5,7 @@ description: Governance Contracts
 # KyberDAO Contract Addresses
 
 {% hint style="info" %}
-#### KNC Contract Addresses
+**KNC Contract Addresses**
 
 To aid with readability, the KNC token addresses can be found on a separate page [here](../../knc-token/knc-contract-addresses.md).
 {% endhint %}

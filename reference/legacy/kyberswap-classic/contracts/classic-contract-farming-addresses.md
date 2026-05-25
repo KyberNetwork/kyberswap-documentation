@@ -4,7 +4,7 @@
 
 <summary>Ethereum (ChainID: 1)</summary>
 
-#### **RewardLocker:** 0xfab5186A194588F5AD5074Bd52659302906B4522
+**RewardLocker: 0xfab5186A194588F5AD5074Bd52659302906B4522**
 
 **FairLaunch 1:**
 
@@ -40,7 +40,7 @@
   * Start block: 13262850
   * End block: 13631850
 
-#### RewardLocker: 0xbbd817b146f73f4b8022dc998b2c275ddda166bf
+**RewardLocker: 0xbbd817b146f73f4b8022dc998b2c275ddda166bf**
 
 **FairLaunch 3:**
 
@@ -78,7 +78,7 @@
 
 <summary>BSC (ChainID: 56)</summary>
 
-#### RewardLocker: [0xd93f7a2cbf4912158d6ccda585c9d234a0d70652](https://bscscan.com/address/0xd93f7a2cbf4912158d6ccda585c9d234a0d70652)
+**RewardLocker:** [**0xd93f7a2cbf4912158d6ccda585c9d234a0d70652**](https://bscscan.com/address/0xd93f7a2cbf4912158d6ccda585c9d234a0d70652)
 
 **FairLaunchV2:**
 
@@ -93,7 +93,7 @@
   * Start: 1654176600
   * End: 1664717400
 
-#### RewardLocker: 0xfab5186A194588F5AD5074Bd52659302906B4522
+**RewardLocker: 0xfab5186A194588F5AD5074Bd52659302906B4522**
 
 * Lock Duration: 400,000 blocks
 
@@ -165,7 +165,7 @@
 
 <summary>Polygon PoS (ChainID: 137)</summary>
 
-#### RewardLocker: 0x063DD8b5a42AaE93a014ce5FAbB5B70474667961
+**RewardLocker: 0x063DD8b5a42AaE93a014ce5FAbB5B70474667961**
 
 * LockDuration: 1200000 blocks
 
@@ -265,7 +265,7 @@
 
 <summary>Avalanche (ChainID: 43114)</summary>
 
-#### RewardLocker: 0xf530a090EF6481cfB33F98c63532E7745abab58A
+**RewardLocker: 0xf530a090EF6481cfB33F98c63532E7745abab58A**
 
 * Lock Duration: 650000 blocks
 
