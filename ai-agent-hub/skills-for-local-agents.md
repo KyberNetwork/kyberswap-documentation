@@ -26,6 +26,18 @@ claude --plugin-dir /path/to/kyberswap-skills
 
 No API keys required. KyberSwap APIs are public.
 
+
+
+**Alternative methods:**
+
+Install KyberSwap Skills in one command:
+
+```
+npx skills add KyberNetwork/kyberswap-skills
+```
+
+This method currently supports swap and price discovery & market data skills. Limit order and Zap will be added soon.
+
 ## How Skills Work
 
 The execution flow is always the same:
