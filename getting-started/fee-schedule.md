@@ -6,12 +6,15 @@
 
     <table><thead><tr><th align="center">Product</th><th width="163" align="center">Fee Type</th><th align="center">Fee Rate</th><th align="center" valign="middle">Note</th></tr></thead><tbody><tr><td align="center">Swap</td><td align="center">No fee</td><td align="center">No fee</td><td align="center" valign="middle"></td></tr><tr><td align="center">Limit Order</td><td align="center">Fixed</td><td align="center">0.01% - 1%</td><td align="center" valign="middle">depends on volatility level of the tokens</td></tr><tr><td align="center">Earn</td><td align="center">Fixed</td><td align="center">0.01% - 0.25%</td><td align="center" valign="middle"></td></tr><tr><td align="center">Widget/ iFrame</td><td align="center">Variable</td><td align="center">Variable</td><td align="center" valign="middle">Configured by protocol using (not by KyberSwap)</td></tr><tr><td align="center">Cross-chain Swap</td><td align="center">Fixed</td><td align="center">0.05% - 0.25%</td><td align="center" valign="middle">depends on route and volatility level of the tokens</td></tr><tr><td align="center">Other value-added service (Market Overview, Analytics, Token Checker, and MEV Protection)</td><td align="center">No fee</td><td align="center">No fee</td><td align="center" valign="middle"></td></tr></tbody></table>
 
-    <br>
+    \
+    \* For Aggregator, we do not charge a protocol fee. However, positive slippage is applied to certain trades. For more information, please refer to [KyberSwap positive slippage surplus collection](../developer-guide/aggregator-api/aggregator-api-specification/evm-swaps.md#kyberswap-positive-slippage-surplus-collection).
 3.  **Product-Specific Fee Details**
 
     1.  **Swap**
 
-        KyberSwap does not charge fees to users for using the protocol to swap tokens. However, we have positive slippage applied to certain trades. For more information, please refer to [KyberSwap positive slippage surplus collection](../developer-guide/aggregator-api/aggregator-api-specification/evm-swaps.md#kyberswap-positive-slippage-surplus-collection).
+        KyberSwap does not charge fees to users who trade on [KyberSwap.com](https://kyberswap.com/) or call directly from KyberSwap Aggregator API. Other integrators may apply their own fees, which are configured by the integrators themselves.
+
+        However, we have positive slippage applied to certain trades. For more information, please refer to [KyberSwap positive slippage surplus collection](../developer-guide/aggregator-api/aggregator-api-specification/evm-swaps.md#kyberswap-positive-slippage-surplus-collection).
     2.  **Limit Order**
 
         To support the continued development of the Limit Orders feature, KyberSwap will charge variable taker fees for orders filled on the following chains:
