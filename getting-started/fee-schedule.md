@@ -139,7 +139,7 @@
         * Similar to protocol fees, partners will only be able to charge the fee by the input token for Zap In.
         * Provides both a valid non-zero feeAddress and a positive integer feePcm (the unit is per cent mille, i.e. 1-1000th of 1%) in the API call to [GetRoute](../kyberswap-solutions/kyberswap-zap-as-a-service/kyberswap-zap-as-a-service-zaas-api/zaas-http-api.md#get-route). Otherwise, no fee will be collected for partner.
     4.  **Widget/ iFrame**\
-        The Widget/iFrame fee structure is **not applied universally across all integrations**; it depends on the specific protocols using it. These fees are not technically charged by KyberSwap—instead, they are configured by the partner protocols themselves. KyberSwap provides the underlying infrastructure that enables these protocols to implement and manage their custom fee customizations.
+        The Widget/iFrame fee structure is **not applied universally across all integrations**; it depends on the specific protocols using it. These fees are not technically charged by KyberSwap—instead, they are configured by the partner protocols themselves. KyberSwap provides the underlying infrastructure that enables these protocols to implement and manage their custom fee customizations. For further details, refer to [Widget/iFrame Fee](../developer-guide/aggregator-api/how-to-guides/kyberswap-widget/widget-iframe-fee.md).
 
         Users trading directly on [KyberSwap.com](http://kyberswap.com/) UI are not subject to this fee structure.
     5.  **Cross-chain Swap**
