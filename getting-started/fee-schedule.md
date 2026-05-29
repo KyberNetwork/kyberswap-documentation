@@ -14,7 +14,10 @@
 
         KyberSwap does not charge fees to users who trade on [KyberSwap.com](https://kyberswap.com/) or call directly from KyberSwap Aggregator API. Other integrators may apply their own fees, which are configured by the integrators themselves.
 
-        However, we have positive slippage applied to certain trades. For more information, please refer to [KyberSwap positive slippage surplus collection](../developer-guide/aggregator-api/aggregator-api-specification/evm-swaps.md#kyberswap-positive-slippage-surplus-collection).
+        However, we have positive slippage applied to certain trades. For more information, please refer to [KyberSwap positive slippage surplus collection](../developer-guide/aggregator-api/aggregator-api-specification/evm-swaps.md#kyberswap-positive-slippage-surplus-collection).\
+        \
+        **Note:** Other platforms or channels may add their own fees by including fee parameters in kyberswap.com URL. When such fees are applied, they are always displayed transparently on the swap interface. KyberSwap itself does not charge any platform fee for swapping. No platform fee is applied when accessing [KyberSwap.com](http://kyberswap.com/) directly.\
+        Users are advised to review the fee details on the swap interface when accessing KyberSwap from external sources.
     2.  **Limit Order**
 
         To support the continued development of the Limit Orders feature, KyberSwap will charge variable taker fees for orders filled on the following chains:
