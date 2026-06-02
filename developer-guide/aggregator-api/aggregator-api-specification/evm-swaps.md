@@ -90,17 +90,17 @@ The Aggregator APIs require a chain **name** to be included in the path when cal
 <figure><img src="../../../.gitbook/assets/Aggregator APIv1.jpg" alt=""><figcaption></figcaption></figure>
 
 {% openapi-operation spec="aggregator-api" path="/{chain}/api/v1/routes" method="get" %}
-[OpenAPI aggregator-api](https://4401d86825a13bf607936cc3a9f3897a.r2.cloudflarestorage.com/gitbook-x-prod-openapi/raw/698e6c3717e5d61030fcf2806033dc6093f2ddcc5ac1514ecae076f22b60bd56.yaml?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=dce48141f43c0191a2ad043a6888781c%2F20260602%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260602T112104Z&X-Amz-Expires=172800&X-Amz-Signature=a8cec0587e667d9a20770be251329d187a6febdeda150f25ece72fc2a1dbaf56&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
+[OpenAPI aggregator-api](https://4401d86825a13bf607936cc3a9f3897a.r2.cloudflarestorage.com/gitbook-x-prod-openapi/raw/698e6c3717e5d61030fcf2806033dc6093f2ddcc5ac1514ecae076f22b60bd56.yaml?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=dce48141f43c0191a2ad043a6888781c%2F20260602%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260602T161414Z&X-Amz-Expires=172800&X-Amz-Signature=2787c48b2eda6b816db3ad42aeb5b34ef8a6e2236d945787e5418cfdb35485e0&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
 {% endopenapi-operation %}
 
 {% openapi-operation spec="aggregator-api" path="/{chain}/api/v1/route/build" method="post" %}
-[OpenAPI aggregator-api](https://4401d86825a13bf607936cc3a9f3897a.r2.cloudflarestorage.com/gitbook-x-prod-openapi/raw/698e6c3717e5d61030fcf2806033dc6093f2ddcc5ac1514ecae076f22b60bd56.yaml?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=dce48141f43c0191a2ad043a6888781c%2F20260602%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260602T112104Z&X-Amz-Expires=172800&X-Amz-Signature=a8cec0587e667d9a20770be251329d187a6febdeda150f25ece72fc2a1dbaf56&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
+[OpenAPI aggregator-api](https://4401d86825a13bf607936cc3a9f3897a.r2.cloudflarestorage.com/gitbook-x-prod-openapi/raw/698e6c3717e5d61030fcf2806033dc6093f2ddcc5ac1514ecae076f22b60bd56.yaml?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=dce48141f43c0191a2ad043a6888781c%2F20260602%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260602T161414Z&X-Amz-Expires=172800&X-Amz-Signature=2787c48b2eda6b816db3ad42aeb5b34ef8a6e2236d945787e5418cfdb35485e0&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
 {% endopenapi-operation %}
 
 ### Legacy
 
 {% openapi-operation spec="aggregator-api" path="/{chain}/route/encode" method="get" %}
-[OpenAPI aggregator-api](https://4401d86825a13bf607936cc3a9f3897a.r2.cloudflarestorage.com/gitbook-x-prod-openapi/raw/698e6c3717e5d61030fcf2806033dc6093f2ddcc5ac1514ecae076f22b60bd56.yaml?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=dce48141f43c0191a2ad043a6888781c%2F20260602%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260602T112105Z&X-Amz-Expires=172800&X-Amz-Signature=25a5526cbf5649518c0fc0e90105dda7ffad8a77c56ce67ed82a9525e4a1ccd5&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
+[OpenAPI aggregator-api](https://4401d86825a13bf607936cc3a9f3897a.r2.cloudflarestorage.com/gitbook-x-prod-openapi/raw/698e6c3717e5d61030fcf2806033dc6093f2ddcc5ac1514ecae076f22b60bd56.yaml?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=dce48141f43c0191a2ad043a6888781c%2F20260602%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260602T161414Z&X-Amz-Expires=172800&X-Amz-Signature=2787c48b2eda6b816db3ad42aeb5b34ef8a6e2236d945787e5418cfdb35485e0&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
 {% endopenapi-operation %}
 
 ## **KyberSwap positive slippage surplus collection**
@@ -122,5 +122,5 @@ During swap execution, a transaction may be routed through multiple liquidity so
 
 Notwithstanding the occurrence of any unconsumed tokens during execution, users remain subject to and protected by the slippage settings confirmed before submitting the transaction.
 
-For the avoidance of doubt, any unconsumed tokens transferred to KyberSwap's Dust Collector contract do not constitute fees and arise solely as a consequence of the transaction execution mechanics described above.
+For the avoidance of doubt, any unconsumed tokens accrued to KyberSwap do not constitute fees and arise solely as a consequence of the transaction execution mechanics described above.
 {% endhint %}
