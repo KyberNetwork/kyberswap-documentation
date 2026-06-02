@@ -90,17 +90,17 @@ The Aggregator APIs require a chain **name** to be included in the path when cal
 <figure><img src="../../../.gitbook/assets/Aggregator APIv1.jpg" alt=""><figcaption></figcaption></figure>
 
 {% openapi-operation spec="aggregator-api" path="/{chain}/api/v1/routes" method="get" %}
-[OpenAPI aggregator-api](https://4401d86825a13bf607936cc3a9f3897a.r2.cloudflarestorage.com/gitbook-x-prod-openapi/raw/698e6c3717e5d61030fcf2806033dc6093f2ddcc5ac1514ecae076f22b60bd56.yaml?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=dce48141f43c0191a2ad043a6888781c%2F20260505%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260505T091056Z&X-Amz-Expires=172800&X-Amz-Signature=5e009ce15d02bab09ecd34d1a292aa1420c722a06208e38f10853dea245662e9&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
+[OpenAPI aggregator-api](https://4401d86825a13bf607936cc3a9f3897a.r2.cloudflarestorage.com/gitbook-x-prod-openapi/raw/698e6c3717e5d61030fcf2806033dc6093f2ddcc5ac1514ecae076f22b60bd56.yaml?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=dce48141f43c0191a2ad043a6888781c%2F20260602%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260602T112104Z&X-Amz-Expires=172800&X-Amz-Signature=a8cec0587e667d9a20770be251329d187a6febdeda150f25ece72fc2a1dbaf56&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
 {% endopenapi-operation %}
 
 {% openapi-operation spec="aggregator-api" path="/{chain}/api/v1/route/build" method="post" %}
-[OpenAPI aggregator-api](https://4401d86825a13bf607936cc3a9f3897a.r2.cloudflarestorage.com/gitbook-x-prod-openapi/raw/698e6c3717e5d61030fcf2806033dc6093f2ddcc5ac1514ecae076f22b60bd56.yaml?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=dce48141f43c0191a2ad043a6888781c%2F20260505%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260505T091056Z&X-Amz-Expires=172800&X-Amz-Signature=5e009ce15d02bab09ecd34d1a292aa1420c722a06208e38f10853dea245662e9&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
+[OpenAPI aggregator-api](https://4401d86825a13bf607936cc3a9f3897a.r2.cloudflarestorage.com/gitbook-x-prod-openapi/raw/698e6c3717e5d61030fcf2806033dc6093f2ddcc5ac1514ecae076f22b60bd56.yaml?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=dce48141f43c0191a2ad043a6888781c%2F20260602%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260602T112104Z&X-Amz-Expires=172800&X-Amz-Signature=a8cec0587e667d9a20770be251329d187a6febdeda150f25ece72fc2a1dbaf56&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
 {% endopenapi-operation %}
 
 ### Legacy
 
 {% openapi-operation spec="aggregator-api" path="/{chain}/route/encode" method="get" %}
-[OpenAPI aggregator-api](https://4401d86825a13bf607936cc3a9f3897a.r2.cloudflarestorage.com/gitbook-x-prod-openapi/raw/698e6c3717e5d61030fcf2806033dc6093f2ddcc5ac1514ecae076f22b60bd56.yaml?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=dce48141f43c0191a2ad043a6888781c%2F20260505%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260505T091056Z&X-Amz-Expires=172800&X-Amz-Signature=5e009ce15d02bab09ecd34d1a292aa1420c722a06208e38f10853dea245662e9&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
+[OpenAPI aggregator-api](https://4401d86825a13bf607936cc3a9f3897a.r2.cloudflarestorage.com/gitbook-x-prod-openapi/raw/698e6c3717e5d61030fcf2806033dc6093f2ddcc5ac1514ecae076f22b60bd56.yaml?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=dce48141f43c0191a2ad043a6888781c%2F20260602%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260602T112105Z&X-Amz-Expires=172800&X-Amz-Signature=25a5526cbf5649518c0fc0e90105dda7ffad8a77c56ce67ed82a9525e4a1ccd5&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
 {% endopenapi-operation %}
 
 ## **KyberSwap positive slippage surplus collection**
@@ -111,4 +111,16 @@ For every swap executed by the KyberSwap Aggregator, users will be able to see a
 In the event that the market moves in favor of the trade which results in a surplus of tokens above the estimated output amount (i.e positive slippage), this surplus will initially accrue to KyberSwap. Surplus sharing programs will be explored as the KyberSwap ecosystem grows to be more self-sufficient. _**Critically, users are guaranteed at least the minimum received amount (the estimated output adjusted by the selected max slippage) that they confirmed before submitting the transaction.**_
 
 Note that this surplus is different from fees as it only applies in cases where the executed swap rate is better than the estimated rate at the point of transaction confirmation. Please refer to [slippage](../../../getting-started/foundational-topics/decentralized-finance/slippage.md) for more information.
+{% endhint %}
+
+
+
+## **KyberSwap Dust Collector**
+
+{% hint style="info" %}
+During swap execution, a transaction may be routed through multiple liquidity sources and intermediate tokens, each with different execution mechanics. Under certain circumstances, including but not limited to depleted liquidity or pool-specific input rounding requirements, a liquidity source may partially fill an order, resulting in a portion of the input/intermediate tokens remaining unconsumed. Any such unconsumed tokens are initially accrued to KyberSwap.
+
+Notwithstanding the occurrence of any unconsumed tokens during execution, users remain subject to and protected by the slippage settings confirmed before submitting the transaction.
+
+For the avoidance of doubt, any unconsumed tokens transferred to KyberSwap's Dust Collector contract do not constitute fees and arise solely as a consequence of the transaction execution mechanics described above.
 {% endhint %}
