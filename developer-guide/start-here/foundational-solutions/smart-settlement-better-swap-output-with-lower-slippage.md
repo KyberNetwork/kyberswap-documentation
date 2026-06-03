@@ -100,7 +100,7 @@ Yes. Smart Settlement does not change your existing trading experience or slippa
 
 **Why do I see "execution reverted" warnings on my transaction hash link?**
 
-This is expected and your transaction has completed successfully. Smart Settlement works by trying multiple candidate pools on-chain within the same transaction. The candidates that are not selected will show as failed internal calls on the block explorer - because the contract checked them, found they weren't the best option, and moved on. These show as "Call Failed" on block explorers. The candidate that delivered the highest output is the one that actually executed your swap. Your transaction status and final token output are unaffected - in fact, these "Call Failed" entries are evidence that Smart Settlement actively compared pools to get you a better result.
+This is expected and your transaction has completed successfully. Smart Settlement works by trying multiple candidate pools on-chain within the same transaction. The candidates that are not selected will show as failed internal calls on the block explorer - because the contract checked them, found they weren't the best option, and moved on. These show as "execution reverted" on block explorers. The candidate that delivered the highest output is the one that actually executed your swap. Your transaction status and final token output are unaffected - in fact, these "execution reverted" entries are evidence that Smart Settlement actively compared pools to get you a better result.
 
 
 
