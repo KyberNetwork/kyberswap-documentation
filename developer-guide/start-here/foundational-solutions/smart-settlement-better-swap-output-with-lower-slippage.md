@@ -98,7 +98,7 @@ Yes. Smart Settlement does not change your existing trading experience or slippa
 
 
 
-**Why do I see "Call Failed" warnings on my transaction hash link?**
+**Why do I see "execution reverted" warnings on my transaction hash link?**
 
 This is expected and your transaction has completed successfully. Smart Settlement works by trying multiple candidate pools on-chain within the same transaction. The candidates that are not selected will show as failed internal calls on the block explorer - because the contract checked them, found they weren't the best option, and moved on. These show as "Call Failed" on block explorers. The candidate that delivered the highest output is the one that actually executed your swap. Your transaction status and final token output are unaffected - in fact, these "Call Failed" entries are evidence that Smart Settlement actively compared pools to get you a better result.
 
@@ -111,7 +111,7 @@ Smart Settlement is currently available only to selected client IDs. Smart Settl
 ## Need Help?
 
 * Join our [Discord](https://discord.gg/kyberswap) or [Telegram](https://t.me/kyberswap) for support.
-* Check the full [KyberSwap User Guide](/broken/pages/mxns8qL7odOMYPx9JS4K) for more trading tips.
+* Check the full [KyberSwap User Guide](https://app.gitbook.com/s/w1XgQJc40kVeGUIxgI7c/user-guide) for more trading tips.
 * Developers: See the [Aggregator EVM API](../../aggregator-api/aggregator-api-specification/evm-swaps.md) for integrating KyberSwap with Smart Settlement into your dApp.
 
 ***
