@@ -98,9 +98,9 @@ Alice expected 2,000`USDT` and managed to get 2,010`USDT` for a net surplus of 1
 
 KyberSwap's highest priority is the safety of our users. As such, we have implemented multiple safeguards to ensure that traders using our platform do not receive any unwelcome surprises.
 
-By splitting and rerouting trades across multiple liquidity sources, the [KyberSwap Aggregator](../../../kyberswap-solutions/kyberswap-aggregator/) minimizes the potential slippage incurred from any single source. Moreover, the [KyberSwap Aggregator](../../../kyberswap-solutions/kyberswap-aggregator/) enables traders to set a `Max Slippage` to guarantee that trades are only executed if the final price is within the expected price range.
+By splitting and rerouting trades across multiple liquidity sources, the [KyberSwap Aggregator](../../../developer-guide/aggregator-api/) minimizes the potential slippage incurred from any single source. Moreover, the [KyberSwap Aggregator](../../../user-guide/swap/) enables traders to set a `Max Slippage` to guarantee that trades are only executed if the final price is within the expected price range.
 
-Lastly, [KyberSwap Limit Order](../../../kyberswap-solutions/limit-order/) allows traders predefine the prices at which their trades will be executed. This sidesteps any negative slippage risks and provides traders much greater price guarantees for their trades.
+Lastly, [KyberSwap Limit Order](../../../user-guide/limit-order/) allows traders predefine the prices at which their trades will be executed. This sidesteps any negative slippage risks and provides traders much greater price guarantees for their trades.
 
 {% tabs %}
 {% tab title="Traders" %}
