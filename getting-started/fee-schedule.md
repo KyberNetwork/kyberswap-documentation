@@ -102,7 +102,7 @@
 
         **Normal (0.1%)**
 
-        * Top 200 tokens by market cap (identified via multiple on and off-chain services), excluding tokens under the super stable, stable, and KNC categories.
+        * Top 50 tokens by market cap (identified via multiple on and off-chain services), excluding tokens under the super stable, stable, and KNC categories.
 
         **Exotic (0.3%)**
 
