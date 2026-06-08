@@ -25,9 +25,7 @@ Users are advised to review the fee details on the swap interface when accessing
 
 A tip-enabled swap link is a shareable swap link that allows the person who creates it (the "sharer") to receive an optional tip when other users trade through the link and choose to tip. For example:
 
-```
-https://kyberswap.com/partner-swap?chainId=8453&inputCurrency=0x4200000000000000000000000000000000000006&outputCurrency=0x461d3C96D170e551611f54FA466D3D74A680AbA3&clientId=dexscreener&feeReceiver=0x0DA2a82ED2c387d1751ccbAf999A80b65bdb269E&enableTip=true&chargeFeeBy=currency_out&feeAmount=100&preferredFeeTokens=0x4200000000000000000000000000000000000006&tab=swap&from=1&to=bitcoin&tokenIn=eth&activeTab=my_order
-```
+https://kyberswap.com/partner-swap?chainId=8453\&inputCurrency=0x4200000000000000000000000000000000000006\&outputCurrency=0x461d3C96D170e551611f54FA466D3D74A680AbA3\&clientId=dexscreener\&feeReceiver=0x0DA2a82ED2c387d1751ccbAf999A80b65bdb269E\&enableTip=true\&chargeFeeBy=currency\_out\&feeAmount=100\&preferredFeeTokens=0x4200000000000000000000000000000000000006\&tab=swap\&from=1\&to=bitcoin\&tokenIn=eth\&activeTab=my\_order
 
 <figure><img src="../.gitbook/assets/Screenshot 2026-06-05 at 14.57.33.png" alt=""><figcaption></figcaption></figure>
 
