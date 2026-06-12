@@ -1,16 +1,27 @@
 # Fee Schedule
 
-1. **Introduction**\
-   By using the Sites or the Services, a Transaction Fee may be charged for each transaction executed, for the use of or execution of transactions on a blockchain network or in connection with the Services. Therefore, in addition to the network fees associated with their transactions, KyberSwap may charge a Transaction Fee depending on the product being used. The Fee Schedule below provides details of the specific Transaction Fee for each product on KyberSwap.
-2.  **Fee Summary Table**<br>
+KyberSwap does not charge a protocol fee for swaps made directly on KyberSwap.com. Each product and service listed below has its own fee structure - these fees are not applied collectively, and only the fee relevant to the specific product being used applies.
 
-    <table><thead><tr><th align="center">Product</th><th width="163" align="center">Fee Type</th><th align="center">Fee Rate</th><th align="center" valign="middle">Note</th></tr></thead><tbody><tr><td align="center">Swap *</td><td align="center">No fee</td><td align="center">No fee</td><td align="center" valign="middle"></td></tr><tr><td align="center">Limit Order</td><td align="center">Fixed</td><td align="center">0.01% - 1%</td><td align="center" valign="middle">depends on volatility level of the tokens</td></tr><tr><td align="center">Earn</td><td align="center">Fixed</td><td align="center">0.01% - 0.25%</td><td align="center" valign="middle"></td></tr><tr><td align="center">Widget/ iFrame</td><td align="center">Variable</td><td align="center">Variable</td><td align="center" valign="middle">Configured by protocol using (not by KyberSwap)</td></tr><tr><td align="center">Cross-chain Swap</td><td align="center">Fixed</td><td align="center">0.05% - 0.25%</td><td align="center" valign="middle">depends on route and volatility level of the tokens</td></tr><tr><td align="center">Smart Exit</td><td align="center">Fixed</td><td align="center">0.025% - 0.3%</td><td align="center" valign="middle"></td></tr><tr><td align="center">Other value-added service (Market Overview, Analytics, Token Checker, and MEV Protection)</td><td align="center">No fee</td><td align="center">No fee</td><td align="center" valign="middle"></td></tr></tbody></table>
+### **Introduction**
 
-    \
-    \* For Swap (KyberSwap Aggregator), we do not charge a protocol fee. However, positive slippage and dust collector are applied to certain trades. For more information, please refer to [KyberSwap positive slippage surplus collection](../developer-guide/aggregator-api/aggregator-api-specification/evm-swaps.md#kyberswap-positive-slippage-surplus-collection) and [KyberSwap Dust Collector](../developer-guide/aggregator-api/aggregator-api-specification/evm-swaps.md#kyberswap-dust-collector).
-3. **Product-Specific Fee Details**
+By using the Sites or the Services, a Transaction Fee may be charged for each transaction executed, for the use of or execution of transactions on a blockchain network or in connection with the Services. Therefore, in addition to the network fees associated with their transactions, KyberSwap may charge a Transaction Fee depending on the product being used. The Fee Schedule below provides details of the specific Transaction Fee for each product on KyberSwap.
 
-**Swap**
+
+
+### **Fee Summary Table**
+
+<table><thead><tr><th align="center">Product</th><th width="163" align="center">Fee Type</th><th align="center">Fee Rate</th><th align="center" valign="middle">Note</th></tr></thead><tbody><tr><td align="center">Swap *</td><td align="center">No fee</td><td align="center">No fee</td><td align="center" valign="middle"></td></tr><tr><td align="center">Limit Order</td><td align="center">Fixed</td><td align="center">0.01% - 1%</td><td align="center" valign="middle">depends on volatility level of the tokens</td></tr><tr><td align="center">Earn</td><td align="center">Fixed</td><td align="center">0.01% - 0.25%</td><td align="center" valign="middle"></td></tr><tr><td align="center">Widget/ iFrame</td><td align="center">Variable</td><td align="center">Variable</td><td align="center" valign="middle">Configured by protocol using (not by KyberSwap)</td></tr><tr><td align="center">Cross-chain Swap</td><td align="center">Fixed</td><td align="center">0.05% - 0.25%</td><td align="center" valign="middle">depends on route and volatility level of the tokens</td></tr><tr><td align="center">Smart Exit</td><td align="center">Fixed</td><td align="center">0.025% - 0.3%</td><td align="center" valign="middle"></td></tr><tr><td align="center">Other value-added service (Market Overview, Analytics, Token Checker, and MEV Protection)</td><td align="center">No fee</td><td align="center">No fee</td><td align="center" valign="middle"></td></tr></tbody></table>
+
+\
+\* For Swap (KyberSwap Aggregator), we do not charge a protocol fee. However, positive slippage and dust collector are applied to certain trades. For more information, please refer to [KyberSwap positive slippage surplus collection](../developer-guide/aggregator-api/aggregator-api-specification/evm-swaps.md#kyberswap-positive-slippage-surplus-collection) and [KyberSwap Dust Collector](../developer-guide/aggregator-api/aggregator-api-specification/evm-swaps.md#kyberswap-dust-collector).
+
+
+
+### **Product-Specific Fee Details**
+
+<details>
+
+<summary><strong>Swap</strong></summary>
 
 KyberSwap does not charge fees to users who trade on [KyberSwap.com](https://kyberswap.com/) or call directly from KyberSwap Aggregator API. Other integrators may apply their own fees, which are configured by the integrators themselves.
 
@@ -18,6 +29,8 @@ However, we have positive slippage applied to certain trades. For more informati
 \
 **Note:** Other platforms or channels may add their own fees by including fee parameters in kyberswap.com URL. When such fees are applied, they are always displayed transparently on the swap interface. KyberSwap itself does not charge any platform fee for swapping. No platform fee is applied when accessing [KyberSwap.com](https://kyberswap.com/) directly.\
 Users are advised to review the fee details on the swap interface when accessing KyberSwap from external sources.
+
+</details>
 
 <details>
 
@@ -40,9 +53,9 @@ Users are advised to review the URL and all details on the swap interface before
 
 </details>
 
+<details>
 
-
-**Limit Order**
+<summary><strong>Limit Order</strong></summary>
 
 To support the continued development of the Limit Orders feature, KyberSwap will charge variable taker fees for orders filled on the following chains:
 
@@ -144,9 +157,11 @@ The fees charged will be according to the most exotic token in the trading pair.
 
 * Trades to and from KNC will be charged a flat 0.1% fee.
 
+</details>
 
+<details>
 
-**Earn**
+<summary><strong>Earn</strong></summary>
 
 There are two types of fees incorporated into the Zap API:\
 \
@@ -171,26 +186,37 @@ Protocol fees are charged by KyberSwap in input token for Zap. In feature, and a
 
 
 
-**Widget/ iFrame**\
+</details>
+
+<details>
+
+<summary><strong>Widget/ iFrame</strong></summary>
+
 The Widget/iFrame fee structure is **not applied universally across all integrations**; it depends on the specific protocols using it. These fees are not technically charged by KyberSwap—instead, they are configured by the partner protocols themselves. KyberSwap provides the underlying infrastructure that enables these protocols to implement and manage their custom fee customizations. For further details, refer to [Widget/iFrame Fee](../developer-guide/aggregator-api/how-to-guides/kyberswap-widget/widget-iframe-fee.md).
 
 Users trading directly on [KyberSwap.com](http://kyberswap.com/) UI are not subject to this fee structure.
 
+</details>
 
+<details>
 
-**Cross-chain Swap**
+<summary><strong>Cross-chain Swap</strong></summary>
 
 To support the continued development and maintenance of the Cross-Chain Swap, KyberSwap applies a platform fee for using this feature. Below is the detailed fee structure:
 
 <table data-header-hidden><thead><tr><th></th><th width="181.61328125"></th><th></th><th></th><th></th></tr></thead><tbody><tr><td><strong>Route</strong></td><td><strong>Stable tokens &#x26; Same native token</strong></td><td><strong>Common</strong></td><td><strong>Exotic</strong></td><td><strong>High-volatility</strong></td></tr><tr><td><strong>EVM ↔ EVM</strong></td><td>0.05 %</td><td>0.10 %</td><td>0.15 %</td><td>0.25 %</td></tr><tr><td><strong>Near ↔ EVM</strong></td><td>0.1%</td><td>0.2%</td><td>0.2%</td><td>0.2%</td></tr><tr><td><strong>Solana ↔ EVM</strong></td><td>0.1%</td><td>0.2%</td><td>0.2%</td><td>0.2%</td></tr><tr><td><strong>BTC ↔ EVM</strong></td><td>0.25 % </td><td>0.25 % </td><td>0.25 % </td><td>0.25 % </td></tr><tr><td><strong>Non-EVM ↔ Non-EVM</strong></td><td>0.25 %</td><td>0.25 % </td><td>0.25 % </td><td>0.25 %</td></tr></tbody></table>
 
+</details>
 
+<details>
 
-**Smart Exit**
+<summary><strong>Smart Exit</strong></summary>
 
 To support the continued development and maintenance of the Smart Exit, KyberSwap applies a platform fee for using this feature. When reviewing a Smart Exit order, the applicable platform fee is displayed as “Platform Fee” in the Confirmation section before the order is confirmed.
 
 <table data-header-hidden><thead><tr><th width="274.02734375"></th><th width="181.61328125"></th></tr></thead><tbody><tr><td><strong>Pair Category</strong></td><td><strong>Platform Fee</strong></td></tr><tr><td><strong>Stable pair</strong></td><td>0.025 %</td></tr><tr><td><strong>Correlated pair</strong></td><td>0.05%</td></tr><tr><td><strong>Common pair</strong></td><td>0.15%</td></tr><tr><td><strong>High volatility pair</strong></td><td>0.75 % </td></tr><tr><td><strong>Exotic pair</strong></td><td>0.3 %</td></tr></tbody></table>
+
+</details>
 
 
 
