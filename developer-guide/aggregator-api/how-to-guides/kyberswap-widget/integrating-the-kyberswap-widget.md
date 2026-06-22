@@ -51,4 +51,4 @@ That's it! You should now see a fully functional swap widget on your site. You c
 
 ## GitHub Repo
 
-{% embed url="https://github.com/KyberNetwork/kyberswap-interface/tree/main/packages/swap-widgets" %}
+[https://github.com/KyberNetwork/kyberswap-interface/tree/main/packages/swap-widgets](https://github.com/KyberNetwork/kyberswap-interface/tree/main/packages/swap-widgets)
