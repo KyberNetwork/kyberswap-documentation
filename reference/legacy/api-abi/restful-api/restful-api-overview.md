@@ -1,3 +1,25 @@
+---
+noIndex: true
+layout:
+  width: default
+  title:
+    visible: true
+  description:
+    visible: true
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+  metadata:
+    visible: true
+  tags:
+    visible: true
+  actions:
+    visible: false
+---
+
 # RESTful API Overview
 
 {% hint style="warning" %}
@@ -5,24 +27,24 @@ You are referring to the **`Legacy`** version of KyberSwap docs.
 
 For the most updated information, please refer to:
 
-* [**`Classic`**](broken-reference)
+* [**`Classic`**](broken-reference/)
 * [**`Elastic`**](../../kyberswap-elastic/)
 * [**`Limit Order`**](../../../../kyberswap-solutions/limit-order/)
 * [**`Aggregator`**](../../../../kyberswap-solutions/kyberswap-aggregator/)
 {% endhint %}
 
-### Introduction[​](https://docs.kyberswap.com/Legacy/api-abi/restful-api/api\_abi-restfulapioverview#introduction) <a href="#introduction" id="introduction"></a>
+### Introduction[​](https://docs.kyberswap.com/Legacy/api-abi/restful-api/api_abi-restfulapioverview#introduction) <a href="#introduction" id="introduction"></a>
 
 The RESTful API can be used to perform trades on the Kyber Network platform.
 
-#### NETWORK URL[​](https://docs.kyberswap.com/Legacy/api-abi/restful-api/api\_abi-restfulapioverview#network-url) <a href="#network-url" id="network-url"></a>
+#### NETWORK URL[​](https://docs.kyberswap.com/Legacy/api-abi/restful-api/api_abi-restfulapioverview#network-url) <a href="#network-url" id="network-url"></a>
 
 | Network |                                   URL                                   |
 | :-----: | :---------------------------------------------------------------------: |
 | Mainnet |         [https://api.kyber.network](https://api.kyber.network/)         |
 | Ropsten | [https://ropsten-api.kyber.network](https://ropsten-api.kyber.network/) |
 
-### Things to note[​](https://docs.kyberswap.com/Legacy/api-abi/restful-api/api\_abi-restfulapioverview#things-to-note) <a href="#things-to-note" id="things-to-note"></a>
+### Things to note[​](https://docs.kyberswap.com/Legacy/api-abi/restful-api/api_abi-restfulapioverview#things-to-note) <a href="#things-to-note" id="things-to-note"></a>
 
 If for any reason there is an error in the response, you will receive the following response message:
 
@@ -44,7 +66,7 @@ The `reason` can be one of the following:
 
 Please ensure that errors are being handled appropriately. For example, if you get an error when calling the `tradeData` endpoint, ensure that your users are not able to proceed with the trade.
 
-#### REST Limitations[​](https://docs.kyberswap.com/Legacy/api-abi/restful-api/api\_abi-restfulapioverview#rest-limitations) <a href="#rest-limitations" id="rest-limitations"></a>
+#### REST Limitations[​](https://docs.kyberswap.com/Legacy/api-abi/restful-api/api_abi-restfulapioverview#rest-limitations) <a href="#rest-limitations" id="rest-limitations"></a>
 
 There is a current limitation of **60 requests per minute per IP address**. If you exceed this you will get the following reply:
 
