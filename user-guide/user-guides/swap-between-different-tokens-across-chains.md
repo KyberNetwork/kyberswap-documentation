@@ -1,6 +1,24 @@
 ---
 description: Access Any Token On Any Chain All Via A Single Swap
-hidden: true
+noIndex: true
+layout:
+  width: default
+  title:
+    visible: true
+  description:
+    visible: true
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+  metadata:
+    visible: true
+  tags:
+    visible: true
+  actions:
+    visible: false
 ---
 
 # Swap Between Different Tokens Across Chains
