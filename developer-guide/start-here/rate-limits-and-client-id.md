@@ -28,6 +28,6 @@ This will enable us to serve you better as we continuously strive to improve our
 
 ### Requesting a Higher Limit
 
-By default, the Aggregator API allows **3 rps** (requests per second), and the ZaaS API allows **1 rps.**
+By default, Aggregator API allows **3 rps** (requests per second), Limit Order API allows **10 rps**, and ZaaS API allows **1 rps.**
 
 If you wish to get your client-id whitelisted and to increase the rate limit, contact the KyberSwap BD team at [**business@kyber.network**](mailto:business@kyber.network)**.**
