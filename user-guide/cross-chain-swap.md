@@ -21,29 +21,27 @@ KyberSwap Cross-chain Swap feature aggregates liquidity from multiple third-part
 * For complete transparency, users can easily view all available options from other protocols, including rates, fees, and estimated arrival times, empowering them to make informed decisions.
 * Furthermore, the entire cross-chain journey is simplified with a single interface to track the status of each transaction in real-time, providing a smooth and transparent experience end-to-end.
 
-<details>
-
-<summary>Supported Network and Cross-chain Protocols</summary>
+#### Supported Network and Cross-chain Protocols
 
 Supported chains include:
 
 * [Major EVM chains currently supported on KyberSwap](https://docs.kyberswap.com/getting-started/supported-exchanges-and-networks)
 * Bitcoin
 * Near
+* Solana
 
 Supported third-party cross-chain swaps and cross-chain swap protocols:
 
 * Near Intent
 * Across
 * Relay Protocol
-* XY Finance
 * Debridge
 * LI.FI
 * Mayan Finance
+* Bungee
+* Symbiosis
 
 _Support for chains and protocols could be changed over time._
-
-</details>
 
 <details>
 
@@ -67,9 +65,7 @@ Below is the detailed fee structure:
 
 Let’s navigate to the Cross-chain tab on KyberSwap interface or visit the link: [https://kyberswap.com/cross-chain](https://kyberswap.com/cross-chain) to experience seamless asset swaps across multiple blockchain networks, no switching apps.
 
-<details>
-
-<summary>Connect wallet</summary>
+### Step 1: Connect Wallet
 
 **1.1. EVM to EVM**
 
@@ -79,7 +75,7 @@ Let’s navigate to the Cross-chain tab on KyberSwap interface or visit the link
   * Simply connect your [Web3 wallet](https://docs.kyberswap.com/kyberswap-solutions/kyberswap-interface/user-guides/connect-your-wallet) using the “Connect” button in the top-right corner, or through “Connect Wallet” in the Cross-chain Swap panel.
   * Ensure that your wallet is connected to the appropriate source network. If not, the interface will prompt you to switch to the correct network before allowing you to proceed with the swap configuration.
 * Destination chain:
-  * No additional wallet connection is required if the same EVM-compatible wallet supports the destination networ
+  * No additional wallet connection is required if the same EVM-compatible wallet supports the destination network.
 
 **1.2. EVM to Bitcoin/Near**
 
@@ -112,11 +108,7 @@ Let’s navigate to the Cross-chain tab on KyberSwap interface or visit the link
   * You are required to manually enter your receiving address to receive the output tokens.
   * If you prefer to connect your wallet, you can click “Select Wallet” to connect an available compatible wallet for the destination chain. In this case, the default receiving address will be your connected wallet address.
 
-</details>
-
-<details>
-
-<summary>Configure your swap details</summary>
+### Step 2: Configure your swap details
 
 <figure><img src="../.gitbook/assets/7.png" alt="" width="375"><figcaption></figcaption></figure>
 
@@ -131,13 +123,9 @@ Let’s navigate to the Cross-chain tab on KyberSwap interface or visit the link
     * If you do not connect a compatible wallet for the destination chain, you are required to manually enter the receiving address to receive the output tokens.
     * If you have connected a receiving wallet to the KyberSwap interface for the destination chain, the default receiving address will be your connected wallet address.
 
-KyberSwap will source from all available routing options from supported protocols and select the most optimal option.
+KyberSwap will source from all available routing options from supported protocols and select the optimal option.
 
-</details>
-
-<details>
-
-<summary><strong>View Quotes and Explore other Routing Options</strong></summary>
+### Step 3: View Quotes and Explore other Routing Options
 
 <figure><img src="../.gitbook/assets/8.png" alt="" width="563"><figcaption></figcaption></figure>
 
@@ -147,11 +135,7 @@ For full visibility, you can click “More Options” to open the “Choose Your
 
 Note: Some providers may have their protocol fee for using their router; if applicable, this fee will be displayed on Swap details as “Protocol Fee” (when the route is selected) or via “Choose Your Route” section.
 
-</details>
-
-<details>
-
-<summary>Review Details and Confirm Swap</summary>
+### Step 4: Review Details and Confirm Swap
 
 <figure><img src="../.gitbook/assets/image (2) (1) (1) (1).png" alt="" width="375"><figcaption></figcaption></figure>
 
@@ -161,15 +145,11 @@ A confirmation box will be opened, where you should carefully review all transac
 
 Once everything is verified, click “Confirm Swap” and approve the transaction in your wallet.
 
-</details>
-
-<details>
-
-<summary>Review transaction history</summary>
+### Step 5: Review transaction history
 
 <figure><img src="../.gitbook/assets/image (3) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
-After initiating a cross-chain swap, users can track the entire transaction lifecycle directly within the KyberSwap interface, eliminating the need to manually monitor multiple platforms or dashboards. The \*\*\*\*transaction history panel presents a detailed overview of each swap, including the time and date when the swap is initiated, sender wallet, status, route, amount of input and output tokens, and on-chain transactions.
+After initiating a cross-chain swap, users can track the entire transaction lifecycle directly within the KyberSwap interface, eliminating the need to manually monitor multiple platforms or dashboards. The transaction history panel presents a detailed overview of each swap, including the time and date when the swap is initiated, sender wallet, status, route, amount of input and output tokens, and on-chain transactions.
 
 The status of each transaction is updated in real time to reflect its current state:
 
@@ -180,5 +160,3 @@ The status of each transaction is updated in real time to reflect its current st
 * **Failed** – The transaction could not be completed. It is automatically reverted, and the input tokens are returned to your sender wallet address.
 
 This integrated visibility ensures that users stay informed at every step, from initial approval to final settlement. Whether you're verifying a large trade, troubleshooting a failed transaction, or simply tracking past activity, KyberSwap's transaction history provides a centralized, transparent, and user-friendly view of your cross-chain interactions.
-
-</details>
