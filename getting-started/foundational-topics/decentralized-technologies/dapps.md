@@ -18,18 +18,18 @@ At KyberSwap, we are building the next generation of liquidity solutions that wi
 
 {% tabs %}
 {% tab title="Liquidity Providers" %}
-* [Earn Yield By Contributing Liquidity](broken-reference/)
+* [Earn Yield By Contributing Liquidity](https://github.com/KyberNetwork/kyberswap-documentation/blob/main/getting-started/foundational-topics/decentralized-technologies/broken-reference/README.md)
 {% endtab %}
 
 {% tab title="Traders" %}
-* [Instantly Swap At Superior Rates](broken-reference/)
+* [Instantly Swap At Superior Rates](https://github.com/KyberNetwork/kyberswap-documentation/blob/main/getting-started/foundational-topics/decentralized-technologies/broken-reference/README.md)
 * [Swap At Your Preferred Rates](../../../user-guide/limit-order/)
 {% endtab %}
 
 {% tab title="Developers" %}
 * [Integrating The KyberSwap Widget](../../../developer-guide/aggregator-api/how-to-guides/kyberswap-widget/integrating-the-kyberswap-widget.md)
 * [Execute A Swap With The Aggregator API](../../../developer-guide/aggregator-api/how-to-guides/execute-a-swap-with-the-aggregator-api/)
-* [Place A Limit Order](broken-reference/)
-* [Fill A Limit Order](broken-reference/)
+* [Place A Limit Order](https://github.com/KyberNetwork/kyberswap-documentation/blob/main/getting-started/foundational-topics/decentralized-technologies/broken-reference/README.md)
+* [Fill A Limit Order](https://github.com/KyberNetwork/kyberswap-documentation/blob/main/getting-started/foundational-topics/decentralized-technologies/broken-reference/README.md)
 {% endtab %}
 {% endtabs %}

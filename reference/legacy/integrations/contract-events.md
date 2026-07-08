@@ -5,7 +5,7 @@ You are referring to the **`Legacy`** version of KyberSwap docs.
 
 For the most updated information, please refer to:
 
-* [**`Classic`**](broken-reference)
+* [**`Classic`**](https://github.com/KyberNetwork/kyberswap-documentation/blob/main/reference/legacy/integrations/broken-reference/README.md)
 * [**`Elastic`**](../kyberswap-elastic/)
 * [**`Limit Order`**](../../../kyberswap-solutions/limit-order/)
 * [**`Aggregator`**](../../../kyberswap-solutions/kyberswap-aggregator/)
@@ -58,13 +58,13 @@ These events are no longer emitted, but remain documented.
 ### [KyberNetworkProxy](https://docs.kyberswap.com/Legacy/integrations/addresses-mainnet.md#kybernetworkproxy)[​](https://docs.kyberswap.com/Legacy/integrations/contract-events#kybernetworkproxy) <a href="#kybernetworkproxy" id="kybernetworkproxy"></a>
 
 _Contract Address_: [0x9AAb3f75489902f3a48495025729a0AF77d4b11e](https://etherscan.io/address/0x9AAb3f75489902f3a48495025729a0AF77d4b11e)\
-&#xNAN;_&#x53;ource_: [KyberNetworkProxy.sol](https://github.com/KyberNetwork/smart-contracts/blob/Katalyst/contracts/sol6/KyberNetworkProxy.sol)
+\&#xNAN;_Source_: [KyberNetworkProxy.sol](https://github.com/KyberNetwork/smart-contracts/blob/Katalyst/contracts/sol6/KyberNetworkProxy.sol)
 
 #### `ExecuteTrade (V2)`[​](https://docs.kyberswap.com/Legacy/integrations/contract-events#executetrade-v2) <a href="#executetrade-v2" id="executetrade-v2"></a>
 
 Event is emitted when a trade is executed.
 
-event **ExecuteTrade**(address indexed trader, IERC20 src, IERC20 dest, address destAddress, uint256 actualSrcAmount, uint256 actualDestAmount, address platformWallet, uint256 platformFeeBps)&#x20;
+event **ExecuteTrade**(address indexed trader, IERC20 src, IERC20 dest, address destAddress, uint256 actualSrcAmount, uint256 actualDestAmount, address platformWallet, uint256 platformFeeBps)
 
 | Parameter         | Type    | Indexed | Description                                        |
 | ----------------- | ------- | ------- | -------------------------------------------------- |
@@ -81,13 +81,13 @@ Event Signature: `0xf724b4df6617473612b53d7f88ecc6ea983074b30960a049fcd0657ffe80
 ### [KyberNetworkProxy (V1)](https://docs.kyberswap.com/Legacy/integrations/addresses-mainnet.md#kybernetworkproxy-v1)[​](https://docs.kyberswap.com/Legacy/integrations/contract-events#kybernetworkproxy-v1) <a href="#kybernetworkproxy-v1" id="kybernetworkproxy-v1"></a>
 
 _Contract Address_: [0x818E6FECD516Ecc3849DAf6845e3EC868087B755](https://etherscan.io/address/0x818E6FECD516Ecc3849DAf6845e3EC868087B755)\
-&#xNAN;_&#x53;ource_: [KyberNetworkProxy.sol](https://github.com/KyberNetwork/smart-contracts/blob/master/contracts/KyberNetworkProxy.sol)
+\&#xNAN;_Source_: [KyberNetworkProxy.sol](https://github.com/KyberNetwork/smart-contracts/blob/master/contracts/KyberNetworkProxy.sol)
 
 #### `ExecuteTrade (V1)`[​](https://docs.kyberswap.com/Legacy/integrations/contract-events#executetrade-v1) <a href="#executetrade-v1" id="executetrade-v1"></a>
 
 Event is emitted when a trade is executed.
 
-event **ExecuteTrade**(address indexed sender, ERC20 src, ERC20 dest, uint actualSrcAmount, uint actualDestAmount)&#x20;
+event **ExecuteTrade**(address indexed sender, ERC20 src, ERC20 dest, uint actualSrcAmount, uint actualDestAmount)
 
 | Parameter          | Type    | Indexed | Description                              |
 | ------------------ | ------- | ------- | ---------------------------------------- |
@@ -97,13 +97,12 @@ event **ExecuteTrade**(address indexed sender, ERC20 src, ERC20 dest, uint actua
 | `actualSrcAmount`  | uint    | uint    | source ERC20 token amount in wei         |
 | `actualDestAmount` | uint    | NO      | destination ERC20 token amount in wei    |
 
-Event Signature: `0x1849bd6a030a1bca28b83437fd3de96f3d27a5d172fa7e9c78e7b61468928a39`\
-
+Event Signature: `0x1849bd6a030a1bca28b83437fd3de96f3d27a5d172fa7e9c78e7b61468928a39`\\
 
 ### [KyberNetwork](https://docs.kyberswap.com/Legacy/integrations/addresses-mainnet.md#kybernetwork)[​](https://docs.kyberswap.com/Legacy/integrations/contract-events#kybernetwork) <a href="#kybernetwork" id="kybernetwork"></a>
 
 _Contract Address_: [0x7C66550C9c730B6fdd4C03bc2e73c5462c5F7ACC](https://etherscan.io/address/0x7C66550C9c730B6fdd4C03bc2e73c5462c5F7ACC)\
-&#xNAN;_&#x53;ource_: [KyberNetwork.sol](https://github.com/KyberNetwork/smart-contracts/blob/Katalyst/contracts/sol6/KyberNetwork.sol)
+\&#xNAN;_Source_: [KyberNetwork.sol](https://github.com/KyberNetwork/smart-contracts/blob/Katalyst/contracts/sol6/KyberNetwork.sol)
 
 #### `KyberTrade (V2)`[​](https://docs.kyberswap.com/Legacy/integrations/contract-events#kybertrade-v2) <a href="#kybertrade-v2" id="kybertrade-v2"></a>
 
@@ -134,7 +133,7 @@ Event Signature: `0xc6efb0df0b5d684cd6482e00270d068229ca5833634798e25f85b79eee51
 ### [KyberFeeHandler (ETH)](https://docs.kyberswap.com/Legacy/integrations/addresses-mainnet.md#kyberfeehandler-eth)[​](https://docs.kyberswap.com/Legacy/integrations/contract-events#kyberfeehandler-eth) <a href="#kyberfeehandler-eth" id="kyberfeehandler-eth"></a>
 
 _Contract Address_: [0xd3d2b5643e506c6d9B7099E9116D7aAa941114fe](https://etherscan.io/address/0xd3d2b5643e506c6d9B7099E9116D7aAa941114fe)\
-&#xNAN;_&#x53;ource_: [KyberFeeHandler.sol](https://github.com/KyberNetwork/smart-contracts/blob/Katalyst/contracts/sol6/Dao/KyberFeeHandler.sol)
+\&#xNAN;_Source_: [KyberFeeHandler.sol](https://github.com/KyberNetwork/smart-contracts/blob/Katalyst/contracts/sol6/Dao/KyberFeeHandler.sol)
 
 #### `FeeDistributed`[​](https://docs.kyberswap.com/Legacy/integrations/contract-events#feedistributed) <a href="#feedistributed" id="feedistributed"></a>
 
@@ -209,14 +208,14 @@ Event Signature: `0x11c852d8be537f120b8d4b4d5c3c211870522fd96a8bd9fa51d102774077
 ### [KyberReserve](https://docs.kyberswap.com/Legacy/integrations/addresses-mainnet.md#kyberreserve)[​](https://docs.kyberswap.com/Legacy/integrations/contract-events#kyberreserve) <a href="#kyberreserve" id="kyberreserve"></a>
 
 _Contract Address_: [0x63825c174ab367968EC60f061753D3bbD36A0D8F](https://etherscan.io/address/0x63825c174ab367968EC60f061753D3bbD36A0D8F/)\
-&#xNAN;_&#x4F;ther Reserves_: Visit our [tracker](https://tracker.kyber.network/#/reserves) to see other reserve addresses.\
-&#xNAN;_&#x53;ource_: [KyberReserve.sol](https://github.com/KyberNetwork/smart-contracts/blob/master/contracts/KyberReserve.sol)
+\&#xNAN;_Other Reserves_: Visit our [tracker](https://tracker.kyber.network/#/reserves) to see other reserve addresses.\
+\&#xNAN;_Source_: [KyberReserve.sol](https://github.com/KyberNetwork/smart-contracts/blob/master/contracts/KyberReserve.sol)
 
 #### `DepositToken`[​](https://docs.kyberswap.com/Legacy/integrations/contract-events#deposittoken) <a href="#deposittoken" id="deposittoken"></a>
 
 Event is emitted when the contract receives the token deposit.
 
-event **DepositToken**(ERC20 token, uint amount)&#x20;
+event **DepositToken**(ERC20 token, uint amount)
 
 | Parameter | Type  | Indexed | Description                  |
 | --------- | ----- | ------- | ---------------------------- |
@@ -229,7 +228,7 @@ Event Signature: `0x2d0c0a8842b9944ece1495eb61121621b5e36bd6af3bba0318c695f525ae
 
 Event is emitted when trading is enabled for the reserve.
 
-event **TradeEnabled**(bool enable)&#x20;
+event **TradeEnabled**(bool enable)
 
 | Parameter | Type | Indexed | Description                                                 |
 | --------- | ---- | ------- | ----------------------------------------------------------- |
@@ -241,7 +240,7 @@ Event Signature: `0x7d7f00509dd73ac4449f698ae75ccc797895eff5fa9d446d3df387598a26
 
 Event is emitted when the reserve has executed a trade.
 
-event **TradeExecute**(address indexed origin, address src, uint srcAmount, address destToken, uint destAmount, address destAddress)&#x20;
+event **TradeExecute**(address indexed origin, address src, uint srcAmount, address destToken, uint destAmount, address destAddress)
 
 | Parameter     | Type        | Indexed | Description                                    |
 | ------------- | ----------- | ------- | ---------------------------------------------- |
@@ -258,7 +257,7 @@ Event Signature: `0xea9415385bae08fe9f6dc457b02577166790cde83bb18cc340aac6cb81b8
 
 Event is emitted with funds are withdrawn from the reserve.
 
-event **WithdrawFunds**(ERC20 token, uint amount, address destination)&#x20;
+event **WithdrawFunds**(ERC20 token, uint amount, address destination)
 
 | Parameter     | Type    | Indexed | Description                             |
 | ------------- | ------- | ------- | --------------------------------------- |
@@ -280,7 +279,7 @@ _Past Contract Addresses_:\
 
 Emitted when a trade is executed in the internal network.
 
-event **KyberTrade**(address indexed trader, ERC20 src, ERC20 dest, uint srcAmount, uint dstAmount, address destAddress, uint ethWeiValue, address reserve1, address reserve2, bytes hint)&#x20;
+event **KyberTrade**(address indexed trader, ERC20 src, ERC20 dest, uint srcAmount, uint dstAmount, address destAddress, uint ethWeiValue, address reserve1, address reserve2, bytes hint)
 
 | Parameter     | Type    | Indexed | Description                                                 |
 | ------------- | ------- | ------- | ----------------------------------------------------------- |
@@ -322,7 +321,7 @@ Event Signature: `0xf838f6ddc89706878e3c3e698e9b5cbfbf2c0e3d3dcd0bd2e00f1ccf313e
 
 Event is emitted when fees for fee sharing are assigned for a reserve.
 
-event **AssignFeeToWallet**(address reserve, address wallet, uint walletFee)&#x20;
+event **AssignFeeToWallet**(address reserve, address wallet, uint walletFee)
 
 | Parameter   | Type    | Indexed | Description                                     |
 | ----------- | ------- | ------- | ----------------------------------------------- |
@@ -336,7 +335,7 @@ Event Signature: `0x366bc34352215bf0bd3b527cfd6718605e1f5938777e42bcd8ed92f57836
 
 Event is emitted when fees are burned.
 
-event **BurnAssignedFees**(address indexed reserve, address sender, uint quantity)&#x20;
+event **BurnAssignedFees**(address indexed reserve, address sender, uint quantity)
 
 | Parameter  | Type    | Indexed | Description                          |
 | ---------- | ------- | ------- | ------------------------------------ |
@@ -350,12 +349,12 @@ Event Signature: `0x2f8d2d194cbe1816411754a2fc9478a11f0707da481b11cff7c69791eb87
 
 Event is emitted when fees are sent to a wallet as part of the fee sharing program.
 
-event **SendWalletFees**(address indexed wallet, address reserve, address sender)&#x20;
+event **SendWalletFees**(address indexed wallet, address reserve, address sender)
 
-| Parameter | Type     | Indexed | Description                        |   |
-| --------- | -------- | ------- | ---------------------------------- | - |
-| `wallet`  | address  | YES     | reserve's specified wallet address |   |
-| `reserve` | address  | NO      | reserve's contract address         |   |
-| `sender`  | address  | NO      | sender's address                   |   |
+| Parameter | Type    | Indexed | Description                        |   |
+| --------- | ------- | ------- | ---------------------------------- | - |
+| `wallet`  | address | YES     | reserve's specified wallet address |   |
+| `reserve` | address | NO      | reserve's contract address         |   |
+| `sender`  | address | NO      | sender's address                   |   |
 
 Event Signature: `0xb3f3e7375c0c0c4f7dd94069a5a4e68667827491318da786c818b8c7a794924e`

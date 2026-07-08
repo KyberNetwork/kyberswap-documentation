@@ -5,7 +5,7 @@ You are referring to the **`Legacy`** version of KyberSwap docs.
 
 For the most updated information, please refer to:
 
-* [**`Classic`**](broken-reference)
+* [**`Classic`**](https://github.com/KyberNetwork/kyberswap-documentation/blob/main/reference/legacy/addresses/broken-reference/README.md)
 * [**`Elastic`**](../kyberswap-elastic/)
 * [**`Limit Order`**](../../../kyberswap-solutions/limit-order/)
 * [**`Aggregator`**](../../../kyberswap-solutions/kyberswap-aggregator/)
@@ -17,7 +17,7 @@ Please note that `KyberReserve`, `ConversionRates`, `SanityRates`, `OrderbookRes
 
 [https://api.kyber.network/currencies](https://api.kyber.network/currencies)\
 \
-Read more [here](https://docs.kyberswap.com/Legacy/addresses/api\_abi-restfulapi.md#currencies)
+Read more [here](https://docs.kyberswap.com/Legacy/addresses/api_abi-restfulapi.md#currencies)
 
 ### Contract Addresses[​](https://docs.kyberswap.com/Legacy/addresses/addresses-mainnet#contract-addresses) <a href="#contract-addresses" id="contract-addresses"></a>
 
@@ -73,7 +73,7 @@ New: `0x9AAb3f75489902f3a48495025729a0AF77d4b11e`\ Old: `0x818E6FECD516Ecc3849DA
 
 Please use [https://api.kyber.network/currencies](https://api.kyber.network/currencies) for the list of supported tokens and their addresses.\
 \
-Read more [here](https://docs.kyberswap.com/Legacy/addresses/api\_abi-restfulapi.md#currencies)
+Read more [here](https://docs.kyberswap.com/Legacy/addresses/api_abi-restfulapi.md#currencies)
 
 We recommend using a JSON formatter extension or plugin of your choice. For Google Chrome, we recommend [this JSON formatter](https://chrome.google.com/webstore/detail/json-formatter/bcjindcccaagfpapjjmafapmmgkkhgoa).
 

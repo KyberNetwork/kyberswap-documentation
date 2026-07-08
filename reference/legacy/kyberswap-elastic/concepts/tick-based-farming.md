@@ -169,7 +169,7 @@ With multiple stakers in the farm, the farm now needs to track the proportion of
 
 To get the reward shares for each position, the protocol calculates the proportion of [liquidity](concentrated-liquidity.md#liquidity-tracking-lp-contributions-at-a-specific-price) that the position has contributed to the farm.
 
-This example glances over the exact calculation but the formula for the liquidity contributed, $$L$$, can be found in the [section](concentrated-liquidity.md#calculating-liquidity) or in the [Elastic Whitepaper](broken-reference/). For every concentrated liquidity position, the TVL is distributed across the selected price range in accordance to the pool's price curve. Consequently, what is important to note is that $$L$$ indicates the proportion of liquidity that a position has contributed within the specified price range.
+This example glances over the exact calculation but the formula for the liquidity contributed, $$L$$, can be found in the [section](concentrated-liquidity.md#calculating-liquidity) or in the [Elastic Whitepaper](https://github.com/KyberNetwork/kyberswap-documentation/blob/main/reference/legacy/kyberswap-elastic/concepts/broken-reference/README.md). For every concentrated liquidity position, the TVL is distributed across the selected price range in accordance to the pool's price curve. Consequently, what is important to note is that $$L$$ indicates the proportion of liquidity that a position has contributed within the specified price range.
 
 To get the liquidity value, we have the following parameters:
 

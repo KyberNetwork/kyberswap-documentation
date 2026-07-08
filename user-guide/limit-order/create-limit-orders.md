@@ -1,6 +1,6 @@
 # Create Limit Orders
 
-A [**Limit Order** ](../../kyberswap-solutions/limit-order/)is a way for KyberSwap traders to swap tokens at a specified price or better. This stipulation allows you to have better control over your prices and capital efficiency. Limit orders are not sent to any specific user, but can instead be filled by anyone, including the KyberSwap aggregator. You can also create limit orders via KyberSwap APIs. When the market price matches the price set in the limit order, a **taker** can fill it. When a taker fills the order, the taker pays the gas fees associated with the transaction.
+A [**Limit Order** ](../../kyberswap-solutions/limit-order/)is a way for KyberSwap traders to swap tokens at a specified price or better. This stipulation allows you to have better control over your prices and capital efficiency. Limit orders are not sent to any specific user, but can instead be filled by anyone, including the KyberSwap aggregator. You can also create [limit orders via KyberSwap APIs](../../developer-guide/limit-order-api/how-to-guides/place-a-limit-order.md). When the market price matches the price set in the limit order, a **taker** can fill it. When a taker fills the order, the taker pays the gas fees associated with the transaction.
 
 ### **Step 1: Connect your wallet**
 
@@ -10,15 +10,15 @@ A [**Limit Order** ](../../kyberswap-solutions/limit-order/)is a way for KyberSw
 
 ### **Step 2**: Navigate to the limit order page
 
-From the Swap page, click the “Limit” tab on the token swap interface. This brings up the limit order interface.
+From the Swap page, click the “Limit Order” tab. This brings up the limit order interface.
 
-![Limit order screen](https://support.kyberswap.com/hc/article_attachments/14668135361561)
+<figure><img src="../../.gitbook/assets/LO-1.png" alt=""><figcaption></figcaption></figure>
 
 ### **Step 3**: Specify your swap pair
 
-You can either do this manually using the individual token selection buttons on the swap screen or by searching for your desired swap pair using the search field. (The keyboard shortcut Ctrl+K also opens this search feature.)
+Specify the token pair to use for the transaction.
 
-![USDC-KNC search](https://support.kyberswap.com/hc/article_attachments/14668185799449)
+<figure><img src="../../.gitbook/assets/LO-2.png" alt="" width="375"><figcaption></figcaption></figure>
 
 {% hint style="warning" %}
 **Fee-on-transfer tokens**
@@ -39,13 +39,15 @@ Note that the FOT tax is specified in the FOT token's smart contract (i.e. the F
 
 Specify the amount you would like to offer by typing in an amount manually into the “You Pay” field. Please ensure that your wallet balance is sufficient to cover the swap offer.
 
-![Specify offer amount.png](https://support.kyberswap.com/hc/article_attachments/14668185864985)
+<figure><img src="../../.gitbook/assets/image (196).png" alt="" width="375"><figcaption></figcaption></figure>
 
 ### **Step 5**: Configure your order price
 
-Set the price by manually entering a price at the “Sell \[token] at rate”. This will calculate an estimate of the amount you should receive in the “You Receive” field. KyberSwap will provide you with a percentage estimate of how much more favorable/unfavorable to you (the market maker) the specified price is relative to the current market price.
+Set the price by manually entering a price at the “Sell \[token] at rate”. This calculates an estimate of the amount you will receive in the "You Buy" field. KyberSwap also shows how much more favourable or unfavourable the specified rate is relative to the current market price, expressed as a percentage.
 
-![Specify price](https://support.kyberswap.com/hc/article_attachments/14668151102489)
+Instead of entering a rate manually, you can set your price relative to the current market price. Enter a percentage in the percentage field, or select one of the quick presets (+10%, +20%, +50%), and the corresponding rate is calculated for you. You can also select "Market" to use the current market price directly.
+
+<figure><img src="../../.gitbook/assets/LO-4.png" alt="" width="375"><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Taker gas fees and filling of orders**
@@ -54,49 +56,53 @@ KyberSwap LO uses an [off-chain relay, on-chain settlement](../../kyberswap-solu
 
 For example, if it costs a taker 40USD in gas fees to settle an Ethereum LO on-chain, takers will unlikely execute smaller volume trades due to the transaction costs. As such, maker LOs with lower volumes will likely not be filled unless the price diverges significantly enough to justify a taker's gas fees. This effect is less pronounced on other chains where gas fees tend to be negligible.
 
-To increase the likelihood that your LO will be filled, KyberSwap UI provides a handy helper whenever it detects that the current LO volume would likely result in unfilled orders.
+To help you set a realistic price, KyberSwap displays a warning when the order's rate differs from the current market price by 30% or more, as such orders are less likely to be filled.
 
-<img src="../../.gitbook/assets/LO_UserGuide_TakerGasFeesFillRate.png" alt="" data-size="original">
+![](../../.gitbook/assets/LO-13.png)
 {% endhint %}
 
 ### **Step 6**: Specify the time limit of your order
 
-If your order is not filled by the end of this time limit, it will be automatically cancelled. You can either select from a list of set times or specify a custom expiry time and date. Note that you can still manually cancel your order (or any unfilled portion of your order) before it expires.
+If your order is not filled by the end of this time limit, it will be automatically cancelled. You can either select from a list of set times or specify a custom expiry time and date. Note that you can still manually [cancel your order](cancel-limit-orders.md) (or any unfilled portion of your order) before it expires.
 
-![Set expiry for order](https://support.kyberswap.com/hc/article_attachments/14668186069529)
+<figure><img src="../../.gitbook/assets/LO-12.png" alt="" width="375"><figcaption></figcaption></figure>
 
-### **Step 7**: Approve contract to spend tokens
+### **Step 7:** Review and place your order
 
-If this is the first time you are swapping this token on this network, click on “Approve \[Token]”. Your wallet will prompt you to give your approval (an onchain transaction requiring gas) for the KyberSwap smart contract to transact using this token on this network. This is a one-time action and subsequent swaps involving this token will not require further approvals unless there is an update to the smart contract.
+Once you have configured the order amount, price, and expiry, click "Review Order" to open the "Review your order" screen. This summarises what you will pay, what you will receive, the order rate, and the expiry date and time, alongside the current market price for reference.
+
+When you are satisfied with the details, click "Place Order" to proceed. If the token being sold is a native token (such as ETH, BNB), the button reads "Wrap & Place Order", as the native token is first converted to its wrapped ERC20 form as part of the process.
+
+<figure><img src="../../.gitbook/assets/LO-14.png" alt="" width="375"><figcaption></figcaption></figure>
+
+### Step 8: Complete the order steps
+
+After you place the order, a "Processing Order" screen guides you through the required steps in sequence. Depending on the token and your existing approvals, these may include:
+
+<figure><img src="../../.gitbook/assets/LO-15.png" alt="" width="375"><figcaption></figcaption></figure>
+
+* **Wrapping \[token]** — shown only when selling a native token, converting it to its wrapped ERC20 form.
+* **Approve \[token]** — granting the KyberSwap contract permission to transfer the token. This is a one-time action per token and is skipped on subsequent orders.
+* **Sign order** — signing the order to place it.
+
+Wrapping and approval are on-chain transactions that require gas. Signing the order itself does not require gas, as KyberSwap limit orders use an off-chain relay, on-chain settlement mechanism. If a step fails, you can retry from that step; steps already completed do not need to be repeated.
 
 {% hint style="info" %}
 **Asset balances and token allowance**
 
-By setting a token allowance, you are allowing the KyberSwap contract to transfer the the available amount of tokens in your wallet. Your tokens will remain in your wallet until the limit order is executed. However, in cases whereby your wallet contains insufficient tokens for the limit order to be completed (i.e. tokens are removed from wallet or tokens were used for earlier orders), your outstanding limit order will not be filled. The limit order token amount is capped by the available tokens in your wallet at the point of order creation.
+By setting a token allowance, you authorise the KyberSwap contract to transfer this token from your wallet on your behalf when a limit order is settled. Granting an allowance does not move or lock any tokens by itself; it only permits the contract to transfer the token, up to the approved amount, at the time of settlement.
 {% endhint %}
 
-![Approve USDC](https://support.kyberswap.com/hc/article_attachments/14668151296537)
+Once the order has been placed, it appears in the Active Orders screen of the interface. You can select an individual order to view the price history for the order pair. When an order is _completely_ filled, it moves to the Order History tab.
 
-### **Step 8**: Review and confirm your order
-
-Click on “Review Order” to bring up the preview screen. Once you are satisfied with the details of the limit order, click “Place Order” to proceed.
-
-![Review limit order](https://support.kyberswap.com/hc/article_attachments/14668186328089)
-
-You will need to confirm this onchain transaction in your web3 wallet.
-
-![Transaction pending confirmation](https://support.kyberswap.com/hc/article_attachments/14668151529369)
-
-Once the order has been confirmed you should see it appear in the Active Orders screen of the swap interface. You can select individual orders to view the price history for the order pair.
-
-![Active orders](https://support.kyberswap.com/hc/article_attachments/14668186560537)
-
-Note: When your order is _completely_ filled it will be moved to the Order History tab of this interface.
+<figure><img src="../../.gitbook/assets/LO-16.png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Limit order and wallet balances**
 
-Tokens which have been comitted to the limit order will only be deducted from the maker's wallet when a matching taker order is settled on-chain. This means that, up until the point when the limit order is executed the tokens remain available in your wallet and can be used in any of the usual ways. During execution, if there are insufficient tokens in your wallet, the limit order will not fill and therefore result in a failed transaction.
+Tokens committed to a limit order remain in the maker's wallet and are only transferred when a matching taker order is settled on-chain. Until the order is executed, these tokens stay available in the wallet and may be used as usual.
 
-Limit orders can only be created if the user has sufficient token balances in their wallet at the point of placing the maker order.
+If the wallet holds insufficient tokens at the time of execution - for example, because the committed tokens have since been moved or spent — the order can only be filled up to the amount then available in the wallet. If no balance is available, the order will not be filled. The fillable amount is therefore limited by the tokens actually held in the maker's wallet at the time of settlement.
+
+A limit order can only be created if the maker holds a sufficient token balance in their wallet at the point of placing the order.
 {% endhint %}

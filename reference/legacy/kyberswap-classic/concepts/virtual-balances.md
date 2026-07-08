@@ -30,8 +30,7 @@ x' = a \cdot x_0 + \Delta x_0 \\
   y' = a \cdot y_0 + \Delta y_0
 $$
 
-where $$a$$ is the [amplification factor](broken-reference). \
-
+where $$a$$ is the [amplification factor](https://github.com/KyberNetwork/kyberswap-documentation/blob/main/reference/legacy/kyberswap-classic/concepts/broken-reference/README.md). \\
 
 The constant product $$x' \cdot y' = (a \cdot x_0 + \Delta x_0) \cdot (a \cdot y_0 + \Delta y_0) = k'$$. Note that $$P_{min}$$ and $$P_{max}$$ at this time are:
 

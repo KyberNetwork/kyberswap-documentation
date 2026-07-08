@@ -182,7 +182,7 @@ If you have a positive KNC balance but [KyberDAO](https://kyberswap.com/kyberdao
 
 <img src="https://support.kyberswap.com/hc/article_attachments/14345621843993" alt="KyberDAO_Balance_Network.png" data-size="original">
 
-If you have KNC tokens on other networks, these will first need to be [bridged to Ethereum](broken-reference/) before they can be used to participate in KyberDAO.
+If you have KNC tokens on other networks, these will first need to be [bridged to Ethereum](https://github.com/KyberNetwork/kyberswap-documentation/blob/main/governance/kyberdao/broken-reference/README.md) before they can be used to participate in KyberDAO.
 
 </details>
 

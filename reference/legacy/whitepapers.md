@@ -10,10 +10,10 @@ The KyberSwap team is constantly innovating to bring you the best liquidity solu
 {% tab title="KyberSwap Classic" %}
 {% embed url="https://drive.google.com/file/d/1Pvvn_qJ_9xQr_ga2CWqGexLo4wF2jklO/view?usp=share_link" %}
 
-_Please note that the naming of certain concepts have been altered in the docs for ease of understanding:_&#x20;
+_Please note that the naming of certain concepts have been altered in the docs for ease of understanding:_
 
-* _Dynamic Pricing Curve Setups =_ [_Programmable Pricing Curves_](broken-reference)
-* _Flexible Fee Adjustment =_ [_Dynamic Auto-Adjusting Fees_](broken-reference)
+* _Dynamic Pricing Curve Setups =_ [_Programmable Pricing Curves_](https://github.com/KyberNetwork/kyberswap-documentation/blob/main/reference/legacy/broken-reference/README.md)
+* _Flexible Fee Adjustment =_ [_Dynamic Auto-Adjusting Fees_](https://github.com/KyberNetwork/kyberswap-documentation/blob/main/reference/legacy/broken-reference/README.md)
 {% endtab %}
 
 {% tab title="KyberSwap Elastic" %}

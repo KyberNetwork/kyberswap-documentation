@@ -5,7 +5,7 @@ You are referring to the **`Legacy`** version of KyberSwap docs.
 
 For the most updated information, please refer to:
 
-* [**`Classic`**](broken-reference)
+* [**`Classic`**](https://github.com/KyberNetwork/kyberswap-documentation/blob/main/reference/legacy/integrations/broken-reference/README.md)
 * [**`Elastic`**](../kyberswap-elastic/)
 * [**`Limit Order`**](../../../kyberswap-solutions/limit-order/)
 * [**`Aggregator`**](../../../kyberswap-solutions/kyberswap-aggregator/)
@@ -103,8 +103,8 @@ const SRC_QTY = BN.from(100).mul(BN.from(10).pow(SRC_DECIMALS)); // 100 KNC
 
 The following ABIs are imported for these functionalities:
 
-* [`IERC20_ABI`](https://docs.kyberswap.com/Legacy/integrations/api\_abi-abi.md#ierc20): Token approvals and transfers
-* [`IKyberNetworkProxy_ABI`](https://docs.kyberswap.com/Legacy/integrations/api\_abi-abi.md#ikybernetworkproxy): Fetch rates and execute trades
+* [`IERC20_ABI`](https://docs.kyberswap.com/Legacy/integrations/api_abi-abi.md#ierc20): Token approvals and transfers
+* [`IKyberNetworkProxy_ABI`](https://docs.kyberswap.com/Legacy/integrations/api_abi-abi.md#ikybernetworkproxy): Fetch rates and execute trades
 
 ```javascript
 // Contract ABIs and proxy address
@@ -1088,7 +1088,7 @@ The contract to interact with for this functionality here is the _KyberStorage_ 
 
 **Define Contract ABI and Address**[**​**](https://docs.kyberswap.com/Legacy/integrations/ethers-js#define-contract-abi-and-address)
 
-We import the [`IKyberStorage_ABI`](https://docs.kyberswap.com/Legacy/integrations/api\_abi-abi.md#ikyberstorage) to fetch reserve IDs, and define the kyberStorage address.
+We import the [`IKyberStorage_ABI`](https://docs.kyberswap.com/Legacy/integrations/api_abi-abi.md#ikyberstorage) to fetch reserve IDs, and define the kyberStorage address.
 
 ```javascript
 const IKyberStorage_ABI = [
@@ -1360,7 +1360,7 @@ The contract to interact with for this functionality here is the _KyberHintHandl
 * For ether -> token trades, call the `buildTokenToEthHint` function
 * For token -> token trades, call the `buildTokenToTokenHint` function
 
-Their input parameters are explained below:&#x20;
+Their input parameters are explained below:
 
 | Parameter              | Type       | Description                                               |
 | ---------------------- | ---------- | --------------------------------------------------------- |
@@ -1380,7 +1380,7 @@ Their input parameters are explained below:&#x20;
 
 **Define Contract ABI and Address**[**​**](https://docs.kyberswap.com/Legacy/integrations/ethers-js#define-contract-abi-and-address-1)
 
-We import the [`IKyberHint_ABI`](https://docs.kyberswap.com/Legacy/integrations/api\_abi-abi.md#ikyberhint) to fetch reserve IDs, and define the kyberHintHandler address.
+We import the [`IKyberHint_ABI`](https://docs.kyberswap.com/Legacy/integrations/api_abi-abi.md#ikyberhint) to fetch reserve IDs, and define the kyberHintHandler address.
 
 ```javascript
 const IKyberHint_ABI = [

@@ -54,9 +54,9 @@ As of 25 May 2023, all the relevant Elastic protocol and farm contracts have bee
 * [Learn how price ranges affect your yield](concepts/concentrated-liquidity.md)
 * [Discover how your yields are being compounded](concepts/reinvestment-curve.md)
 * [Understand how Elastic protects you from front runners](concepts/anti-sniping-mechanism.md)
-* [Create your own Elastic pool](broken-reference/)
-* [Contribute liquidity to an existing Elastic pool](broken-reference/)
-* [Receive additional rewards by yield farming on Elastic](broken-reference/)
+* [Create your own Elastic pool](https://github.com/KyberNetwork/kyberswap-documentation/blob/main/reference/legacy/kyberswap-elastic/broken-reference/README.md)
+* [Contribute liquidity to an existing Elastic pool](https://github.com/KyberNetwork/kyberswap-documentation/blob/main/reference/legacy/kyberswap-elastic/broken-reference/README.md)
+* [Receive additional rewards by yield farming on Elastic](https://github.com/KyberNetwork/kyberswap-documentation/blob/main/reference/legacy/kyberswap-elastic/broken-reference/README.md)
 
 </details>
 
@@ -65,7 +65,7 @@ As of 25 May 2023, all the relevant Elastic protocol and farm contracts have bee
 <summary>Traders</summary>
 
 * [Learn how Elastic APR is calculated](concepts/apr-calculations.md)
-* [Get superior rates via the integrated KyberSwap Aggregator](broken-reference/)
+* [Get superior rates via the integrated KyberSwap Aggregator](https://github.com/KyberNetwork/kyberswap-documentation/blob/main/reference/legacy/kyberswap-elastic/broken-reference/README.md)
 
 </details>
 
@@ -74,7 +74,7 @@ As of 25 May 2023, all the relevant Elastic protocol and farm contracts have bee
 <summary>Developers</summary>
 
 * [Explore key Elastic concepts](concepts/)
-* [Execute a swap against Elastic pools](broken-reference/)
+* [Execute a swap against Elastic pools](https://github.com/KyberNetwork/kyberswap-documentation/blob/main/reference/legacy/kyberswap-elastic/broken-reference/README.md)
 * [View Elastic contract code and addresses](contracts/)
 
 </details>

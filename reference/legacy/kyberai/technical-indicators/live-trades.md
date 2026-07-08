@@ -10,7 +10,7 @@ Displays the 50 latest DEX trades involving the token as well as the USD value o
 
 <figure><img src="../../../../.gitbook/assets/KyberAI_LiveTrades.png" alt=""><figcaption></figcaption></figure>
 
-The live trades section showcases the latest 50 token transactions that were executed via a [DEX](broken-reference/). All trades involving the token are captured hence this captures any token-to-token swaps. The USD value of the trade as well as the price at which it was executed is computed to enable users to better contextualize the latest market value flows.
+The live trades section showcases the latest 50 token transactions that were executed via a [DEX](https://github.com/KyberNetwork/kyberswap-documentation/blob/main/reference/legacy/kyberai/technical-indicators/broken-reference/README.md). All trades involving the token are captured hence this captures any token-to-token swaps. The USD value of the trade as well as the price at which it was executed is computed to enable users to better contextualize the latest market value flows.
 
 For each of the latest 50 transaction, users will be able to see the following information:
 

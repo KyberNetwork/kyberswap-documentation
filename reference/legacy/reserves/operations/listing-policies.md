@@ -5,7 +5,7 @@ You are referring to the **`Legacy`** version of KyberSwap docs.
 
 For the most updated information, please refer to:
 
-* [**`Classic`**](broken-reference)
+* [**`Classic`**](https://github.com/KyberNetwork/kyberswap-documentation/blob/main/reference/legacy/reserves/operations/broken-reference/README.md)
 * [**`Elastic`**](../../kyberswap-elastic/)
 * [**`Limit Order`**](../../../../kyberswap-solutions/limit-order/)
 * [**`Aggregator`**](../../../../kyberswap-solutions/kyberswap-aggregator/)
@@ -17,7 +17,7 @@ There are few requirements to have your token listed on Kyber Network:
 2. Legal opinion that the token is a **utility token**, based on Malta law.
 3. The legal opinion should come from a licensed Law Firm in its respective jurisdiction.
 4. Liquidity has to be provided for the token. This is done by being a permissioned token reserve, or by using an existing 3rd party reserve that is already integrated with Kyber.
-5. Complete [this listing form](https://docs.google.com/forms/d/1KJfKn3oFhz\_puutC5ciQPiPMJlJ1JSKEIjD3t5HKC-8/edit)
+5. Complete [this listing form](https://docs.google.com/forms/d/1KJfKn3oFhz_puutC5ciQPiPMJlJ1JSKEIjD3t5HKC-8/edit)
 6. A **deposit of USD $1000 worth of KNC** as commitment towards this listing process, because considerable effort is required on both parties. The funds will be returned once the token goes live on KyberSwap.
 
 ### Policies[​](https://docs.kyberswap.com/Legacy/reserves/operation/listing-policies#policies) <a href="#policies" id="policies"></a>

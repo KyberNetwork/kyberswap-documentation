@@ -5,7 +5,7 @@ You are referring to the **`Legacy`** version of KyberSwap docs.
 
 For the most updated information, please refer to:
 
-* [**`Classic`**](broken-reference)
+* [**`Classic`**](https://github.com/KyberNetwork/kyberswap-documentation/blob/main/reference/legacy/integrations/broken-reference/README.md)
 * [**`Elastic`**](../kyberswap-elastic/)
 * [**`Limit Order`**](../../../kyberswap-solutions/limit-order/)
 * [**`Aggregator`**](../../../kyberswap-solutions/kyberswap-aggregator/)
@@ -305,7 +305,7 @@ bytes32[] memory reserveIds = kyberStorage.getReserveIdsPerTokenDest(KNC_ADDRESS
 * For ether -> token trades, call the `buildTokenToEthHint` function
 * For token -> token trades, call the `buildTokenToTokenHint` function
 
-Their input parameters are explained below:&#x20;
+Their input parameters are explained below:
 
 | Parameter              | Type       | Description                                     |
 | ---------------------- | ---------- | ----------------------------------------------- |

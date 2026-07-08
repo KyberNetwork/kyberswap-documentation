@@ -5,7 +5,7 @@ You are referring to the **`Legacy`** version of KyberSwap docs.
 
 For the most updated information, please refer to:
 
-* [**`Classic`**](broken-reference)
+* [**`Classic`**](https://github.com/KyberNetwork/kyberswap-documentation/blob/main/reference/legacy/reserves/development-guides/broken-reference/README.md)
 * [**`Elastic`**](../../kyberswap-elastic/)
 * [**`Limit Order`**](../../../../kyberswap-solutions/limit-order/)
 * [**`Aggregator`**](../../../../kyberswap-solutions/kyberswap-aggregator/)
@@ -36,7 +36,7 @@ With this in mind, the automated reserve was designed with various parameters to
 
 #### `Step 0: Clone Repo`[​](https://docs.kyberswap.com/Legacy/reserves/development-guides/automated-price-reserve#step-0-clone-repo) <a href="#step-0-clone-repo" id="step-0-clone-repo"></a>
 
-Create a local directory, clone the `master` branch of our [reserves smart contracts repo](https://github.com/KyberNetwork/kyber\_reserves\_sc) and install necessary dependencies. Yarn is used as the package manager, but npm / npx can be used too.
+Create a local directory, clone the `master` branch of our [reserves smart contracts repo](https://github.com/KyberNetwork/kyber_reserves_sc) and install necessary dependencies. Yarn is used as the package manager, but npm / npx can be used too.
 
 ```
 git clone https://github.com/KyberNetwork/kyber_reserves_sc.git
@@ -128,7 +128,7 @@ For example, a reserve manager can specify a maximum tolerance of 50% decrease a
 
 **Configuring liquidity parameters**[**​**](https://docs.kyberswap.com/Legacy/reserves/development-guides/automated-price-reserve#configuring-liquidity-parameters)
 
-Setting the liquidity parameters is done by executing the [`setLiquidityParameters()`](https://docs.kyberswap.com/Legacy/reserves/development-guides/api\_abi-liquidityconversionrates.md#setliquidityparams) function from the LiquidityConversionRates contract.
+Setting the liquidity parameters is done by executing the [`setLiquidityParameters()`](https://docs.kyberswap.com/Legacy/reserves/development-guides/api_abi-liquidityconversionrates.md#setliquidityparams) function from the LiquidityConversionRates contract.
 
 In the same `./deployment/apr` directory, open `liquidity_settings.json`. If you have completed step 2,the `reserve` field should have reflect the deployed reserve address.
 
@@ -264,7 +264,7 @@ Below, we will calculate the different parameters.
 
 How is the price be set, given a list of trades? Assuming the price (ETH/Token) will be given by _P(E)_ which will be a function of the current ETH reserve size. Then assuming we want a change in the price to be proportional to the amount traded we will have:
 
-![AprFormula1](https://docs.kyberswap.com/assets/images/apr\_1-6bd106083c0f6ef3d25b0263d349da37.png)
+![AprFormula1](https://docs.kyberswap.com/assets/images/apr_1-6bd106083c0f6ef3d25b0263d349da37.png)
 
 where _r_ is the proportion factor. When _∆E_ is very small we'll have
 
@@ -272,8 +272,7 @@ where _r_ is the proportion factor. When _∆E_ is very small we'll have
 
 integration gives
 
-![AprFormula3](https://docs.kyberswap.com/assets/images/apr\_3-f52947ddd89e7795c7efaa73bfcea97b.png)\
-
+![AprFormula3](https://docs.kyberswap.com/assets/images/apr_3-f52947ddd89e7795c7efaa73bfcea97b.png)\\
 
 Where _e^A_ is the minimal price given by _Pmin_ , so we have
 
@@ -285,11 +284,11 @@ The amount of tokens _Tmax_ that will be sold until reaching _Pmax_ , is related
 
 where _Emax_ is given from _Pmax_ itself,
 
-![AprFormula6](https://docs.kyberswap.com/assets/images/apr\_6-970b912e134f5119b65689d0f3393f87.png)
+![AprFormula6](https://docs.kyberswap.com/assets/images/apr_6-970b912e134f5119b65689d0f3393f87.png)
 
 carrying out the integration and plugging in _Emax_ will give:
 
-![AprFormula7](https://docs.kyberswap.com/assets/images/apr\_7-693a86764d36a523709c03253245c038.png)
+![AprFormula7](https://docs.kyberswap.com/assets/images/apr_7-693a86764d36a523709c03253245c038.png)
 
 the initial amount of tokens _T0_ will be given by calculating _Tmax_ at _E0_ , which finally gives
 
@@ -305,22 +304,21 @@ So given _Pmin_, _Pmax_, _P0_, _r_ we can find _E0_, _T0_, _Emax_.
 
 _∆E_ can be positive (increasing the amount of ethers in the reserve and selling tokens to the trader), or negative. Solving the following integral
 
-![AprFormula10](https://docs.kyberswap.com/assets/images/apr\_10-474a2e11ef4904a5395842806ee713a4.png)
+![AprFormula10](https://docs.kyberswap.com/assets/images/apr_10-474a2e11ef4904a5395842806ee713a4.png)
 
 will give the result for _∆T_
 
-![AprFormula11](https://docs.kyberswap.com/assets/images/apr\_11-1cbf4704dc70d41ffaa8b50490795ba1.png)
+![AprFormula11](https://docs.kyberswap.com/assets/images/apr_11-1cbf4704dc70d41ffaa8b50490795ba1.png)
 
 #### Trading ∆T Tokens[​](https://docs.kyberswap.com/Legacy/reserves/development-guides/automated-price-reserve#trading-t-tokens) <a href="#trading-t-tokens" id="trading-t-tokens"></a>
 
 _∆T_ can be positive (increasing the amount of tokens in the reserve and selling ethers to the trader), or negative. Integrating the following
 
-![AprFormula12](https://docs.kyberswap.com/assets/images/apr\_12-065698173ad20a1a8d4a2be46a28d370.png)
+![AprFormula12](https://docs.kyberswap.com/assets/images/apr_12-065698173ad20a1a8d4a2be46a28d370.png)
 
 and solving with respect to _∆E_ gives
 
-\
-
+\\
 
 <figure><img src="../../../../.gitbook/assets/download (5).png" alt=""><figcaption></figcaption></figure>
 

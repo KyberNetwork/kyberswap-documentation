@@ -5,7 +5,7 @@ You are referring to the **`Legacy`** version of KyberSwap docs.
 
 For the most updated information, please refer to:
 
-* [**`Classic`**](broken-reference)
+* [**`Classic`**](https://github.com/KyberNetwork/kyberswap-documentation/blob/main/reference/legacy/addresses/broken-reference/README.md)
 * [**`Elastic`**](../kyberswap-elastic/)
 * [**`Limit Order`**](../../../kyberswap-solutions/limit-order/)
 * [**`Aggregator`**](../../../kyberswap-solutions/kyberswap-aggregator/)
@@ -17,7 +17,7 @@ Please note that contracts `KyberReserve` and `ConversionRates` below are using 
 
 [https://ropsten-api.kyber.network/currencies](https://ropsten-api.kyber.network/currencies)\
 \
-Read more [here](https://docs.kyberswap.com/Legacy/addresses/api\_abi-restfulapi.md#currencies)
+Read more [here](https://docs.kyberswap.com/Legacy/addresses/api_abi-restfulapi.md#currencies)
 
 ### Contract Addresses[​](https://docs.kyberswap.com/Legacy/addresses/addresses-ropsten#contract-addresses) <a href="#contract-addresses" id="contract-addresses"></a>
 

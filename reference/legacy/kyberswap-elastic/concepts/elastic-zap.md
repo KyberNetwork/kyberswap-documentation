@@ -36,9 +36,9 @@ Consequently, LPs would usually have to swap + add liquidity multiple times befo
 
 ### Aggregator Integration
 
-When sourcing the token ratio for a zap in, swaps can be executed via the target pool itself or via other liquidity sources. In the latter case, LPs do not have to worry about the target pool price changing as a result of the swap transaction. That is, the pool which the LP is adding liquidity to will not experience a state change as the swap occurs external to the pool.&#x20;
+When sourcing the token ratio for a zap in, swaps can be executed via the target pool itself or via other liquidity sources. In the latter case, LPs do not have to worry about the target pool price changing as a result of the swap transaction. That is, the pool which the LP is adding liquidity to will not experience a state change as the swap occurs external to the pool.
 
-As a consequence of the [AMM](broken-reference) design, swapping against the pool prior to liquidity addition introduces additional technical complexities when computing the token ratio to be added (because the swap will change the pool price before addition). Critically, while the above can be solved mathematically, such LPs could also be exposed to further IL risks as a result of the zap in direction. This is especially so in cases where the pool price varies significantly from the market price.
+As a consequence of the [AMM](https://github.com/KyberNetwork/kyberswap-documentation/blob/main/reference/legacy/kyberswap-elastic/concepts/broken-reference/README.md) design, swapping against the pool prior to liquidity addition introduces additional technical complexities when computing the token ratio to be added (because the swap will change the pool price before addition). Critically, while the above can be solved mathematically, such LPs could also be exposed to further IL risks as a result of the zap in direction. This is especially so in cases where the pool price varies significantly from the market price.
 
 The example below highlights this fact conceptually when swapping against the target pool:
 

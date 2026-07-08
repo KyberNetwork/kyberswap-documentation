@@ -2,13 +2,13 @@
 
 ## Problem: Gas Fees And Capital Efficiency
 
-As a Liquidity Provider, one of the major pain points when contributing liquidity to [AMM pools](broken-reference) is the  need to source the exact ratio of tokens at the point of adding liquidity. For example, if you are adding liquidity to a USDC-WETH pool but only had 1,000USDC in your wallet, you would have go through multiple steps:
+As a Liquidity Provider, one of the major pain points when contributing liquidity to [AMM pools](https://github.com/KyberNetwork/kyberswap-documentation/blob/main/getting-started/foundational-topics/decentralized-finance/broken-reference/README.md) is the need to source the exact ratio of tokens at the point of adding liquidity. For example, if you are adding liquidity to a USDC-WETH pool but only had 1,000USDC in your wallet, you would have go through multiple steps:
 
 * Check the ratio of tokens required for adding liquidity. This ratio will be dependent on the current pool price as well as the position's selected range.
 * Swap USDC -> WETH
 * Add the exact amounts of the remaining USDC and the newly swapped WETH
 
-Note that throughout the above process, swaps as well as liquidity additions are exposed to [slippage](slippage.md) risks(as well as [price impact](price-impact.md) for swaps). As such, the amount added is rarely ever exact which results in unpredictable amounts of tokens being left in your wallet. If this is a significant amount, not only will you be losing out on potential yield but you would have to repeat the above process again, incurring double the amount of gas fees.&#x20;
+Note that throughout the above process, swaps as well as liquidity additions are exposed to [slippage](slippage.md) risks(as well as [price impact](price-impact.md) for swaps). As such, the amount added is rarely ever exact which results in unpredictable amounts of tokens being left in your wallet. If this is a significant amount, not only will you be losing out on potential yield but you would have to repeat the above process again, incurring double the amount of gas fees.
 
 ## Solution: One Click Zap
 

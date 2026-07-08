@@ -6,10 +6,10 @@ All of KyberSwap's smart contract code can be found on our GitHub repo at [Kyber
 
 {% embed url="https://github.com/KyberNetwork/ks-classic-sc" %}
 
-Please refer to [Classic Contract Addresses](broken-reference) for the deployed pool contract addresses.
+Please refer to [Classic Contract Addresses](https://github.com/KyberNetwork/kyberswap-documentation/blob/main/reference/legacy/kyberswap-classic/contracts/broken-reference/README.md) for the deployed pool contract addresses.
 
 ### Farming contracts
 
 {% embed url="https://github.com/KyberNetwork/dao_sc/tree/master/contracts/liquidityMining" %}
 
-Please refer to [Classic Farming Contract Addresses](broken-reference) for the deployed farming contract addresses.
+Please refer to [Classic Farming Contract Addresses](https://github.com/KyberNetwork/kyberswap-documentation/blob/main/reference/legacy/kyberswap-classic/contracts/broken-reference/README.md) for the deployed farming contract addresses.

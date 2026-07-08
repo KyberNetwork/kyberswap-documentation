@@ -56,7 +56,7 @@ Alice got into `ETH` early and is planning to cash out her profits by selling he
 
 * The current pool price is 2,000 (i.e. 1`ETH` = 2,000`USDT`) which is in line with the wider market price for `ETH`
 * `USDT` maintains it's peg with the US dollar
-* Alice wants to sell 1`ETH` and sets a [max slippage](broken-reference/) of 1% (higher value chosen for illustrative purposes)
+* Alice wants to sell 1`ETH` and sets a [max slippage](https://github.com/KyberNetwork/kyberswap-documentation/blob/main/getting-started/foundational-topics/decentralized-finance/broken-reference/README.md) of 1% (higher value chosen for illustrative purposes)
 * Alice confirms the 1`ETH` swap with an estimated output 2,000`USDT`
 * Based on the above, the minimum received for the transaction is 1,980`USDT`. Below this threshold, the transaction is reverted (i.e. cancelled).
 
@@ -72,7 +72,7 @@ $$
 Slippage=\frac{1990-2000}{2000}*100\%=-0.5\%
 $$
 
-Alice expected 2,000`USDT` but only got 1,990`USDT` for a net shortfall of 10`USDT`. This equates to a negative slippage of 0.5%. Note that the negative slippage is capped at the 1% max slippage setting hence if output amount from the trade falls below 1,980`USDT`, the trade will not be executed. As such, it is always recommended that you [configure a max slippage](broken-reference/) for your trades.
+Alice expected 2,000`USDT` but only got 1,990`USDT` for a net shortfall of 10`USDT`. This equates to a negative slippage of 0.5%. Note that the negative slippage is capped at the 1% max slippage setting hence if output amount from the trade falls below 1,980`USDT`, the trade will not be executed. As such, it is always recommended that you [configure a max slippage](https://github.com/KyberNetwork/kyberswap-documentation/blob/main/getting-started/foundational-topics/decentralized-finance/broken-reference/README.md) for your trades.
 
 #### No slippage
 

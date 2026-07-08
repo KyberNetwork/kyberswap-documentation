@@ -22,7 +22,7 @@ For pools where trades occur infrequently, the APR calculations adopts a last av
 
 <img src="../../../../.gitbook/assets/PositionRangesAndAPR_Tease.jpg" alt="" data-size="original">
 
-A LPs returns are heavily dependent on the [position range selected](broken-reference/) for [concentrated liquidity](concentrated-liquidity.md) protocols such as KyberSwap Elastic. To help you maximize your potential returns, [KyberSwap Insights](https://blog.kyberswap.com/learn/insights-en/) has created a simple flow diagram which walks you through each of the key decision points when determining a position range which best suites your risk-adjusted return preferences.
+A LPs returns are heavily dependent on the [position range selected](https://github.com/KyberNetwork/kyberswap-documentation/blob/main/reference/legacy/kyberswap-elastic/concepts/broken-reference/README.md) for [concentrated liquidity](concentrated-liquidity.md) protocols such as KyberSwap Elastic. To help you maximize your potential returns, [KyberSwap Insights](https://blog.kyberswap.com/learn/insights-en/) has created a simple flow diagram which walks you through each of the key decision points when determining a position range which best suites your risk-adjusted return preferences.
 
 View and interact with the full diagram in greater detail [here](https://blog.kyberswap.com/choosing-the-best-range-to-maximize-lp-returns-flow-chart/).
 {% endhint %}

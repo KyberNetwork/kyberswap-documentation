@@ -5,7 +5,7 @@ You are referring to the **`Legacy`** version of KyberSwap docs.
 
 For the most updated information, please refer to:
 
-* [**`Classic`**](broken-reference)
+* [**`Classic`**](https://github.com/KyberNetwork/kyberswap-documentation/blob/main/reference/legacy/integrations/broken-reference/README.md)
 * [**`Elastic`**](../kyberswap-elastic/)
 * [**`Limit Order`**](../../../kyberswap-solutions/limit-order/)
 * [**`Aggregator`**](../../../kyberswap-solutions/kyberswap-aggregator/)
@@ -25,7 +25,7 @@ The token conversion rate varies with different source token quantities. It is i
 
 <figure><img src="https://docs.kyberswap.com/assets/images/showing-slippage-rate-7ee9fcae6a397578a47f6302ac729a74.jpeg" alt=""><figcaption></figcaption></figure>
 
-&#x20;An example of how this could be done is shown above. How the rate slippage is calculated is as follows:
+An example of how this could be done is shown above. How the rate slippage is calculated is as follows:
 
 1. Call `getExpectedRate` for 1 ETH equivalent worth of `srcToken`.
 2. Call `getExpectedRate` for actual `srcToken` amount.

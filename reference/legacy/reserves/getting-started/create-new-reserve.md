@@ -5,7 +5,7 @@ You are referring to the **`Legacy`** version of KyberSwap docs.
 
 For the most updated information, please refer to:
 
-* [**`Classic`**](broken-reference)
+* [**`Classic`**](https://github.com/KyberNetwork/kyberswap-documentation/blob/main/reference/legacy/reserves/getting-started/broken-reference/README.md)
 * [**`Elastic`**](../../kyberswap-elastic/)
 * [**`Limit Order`**](../../../../kyberswap-solutions/limit-order/)
 * [**`Aggregator`**](../../../../kyberswap-solutions/kyberswap-aggregator/)
@@ -17,8 +17,8 @@ We believe there are a lot more reserve models that have yet to be created for u
 
 ![Reserve Models](https://docs.kyberswap.com/assets/images/reservemodels-ffba91dc90153720e0c0e2d689a42844.png)
 
-1.  Implement The KyberReserveInterface  \
-    For the exact functions and inputs to implement, refer to the [KyberReserveInterface](https://docs.kyberswap.com/Legacy/reserves/getting-started/api\_abi-ikyberreserve.md) contract.
+1.  Implement The KyberReserveInterface\
+    For the exact functions and inputs to implement, refer to the [KyberReserveInterface](https://docs.kyberswap.com/Legacy/reserves/getting-started/api_abi-ikyberreserve.md) contract.
 
     <figure><img src="https://docs.kyberswap.com/assets/images/reserveinterface-506494754a05ec844b03c92900f63552.png" alt=""><figcaption></figcaption></figure>
 2. For `getConversionRate`, require statements should be avoided. Returning zero rate is suggested as the alternative.
@@ -41,7 +41,7 @@ This section below lists some guidelines on creating a new reserve model.
 
 The reserve interface provides a generic template of the contract functions one should implement in their smart contract. This interface may be tweaked depending on the needs and features of each blockchain. All existing reserve types, like the ones covered in the developer portal (e.g. Fed Price Reserve), as well as integrated reserves (e.g. Bridge Reserve), implement this interface.
 
-All Kyber reserves that enable liquidity provision have to use KyberReserveInterface. The example below, a snippet of kyber [WETH Reserve](https://github.com/KyberNetwork/kyber\_reserves\_sc/blob/master/contracts/sol4/weth/KyberWethReserve.sol), illustrates how to implement the 2 functions of the reserve interface.
+All Kyber reserves that enable liquidity provision have to use KyberReserveInterface. The example below, a snippet of kyber [WETH Reserve](https://github.com/KyberNetwork/kyber_reserves_sc/blob/master/contracts/sol4/weth/KyberWethReserve.sol), illustrates how to implement the 2 functions of the reserve interface.
 
 **Implement getConversionRate function**
 
@@ -103,7 +103,7 @@ function doTrade(
 }
 ```
 
-You can refer to the reserve contract for detailed code [here](https://github.com/KyberNetwork/kyber\_reserves\_sc/blob/master/contracts/sol4/weth/KyberWethReserve.sol) .
+You can refer to the reserve contract for detailed code [here](https://github.com/KyberNetwork/kyber_reserves_sc/blob/master/contracts/sol4/weth/KyberWethReserve.sol) .
 
 **Deploying the new reserve model**
 

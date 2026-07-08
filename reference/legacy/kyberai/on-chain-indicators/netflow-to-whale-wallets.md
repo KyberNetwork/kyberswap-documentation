@@ -10,7 +10,7 @@ The net value of tokens (in USD) that are being transferred in/out of whale wall
 
 <figure><img src="../../../../.gitbook/assets/KyberAI_NetflowToWhales.png" alt=""><figcaption><p>Netflow to whale wallets</p></figcaption></figure>
 
-The netflow to whale wallets measures the net total USD value of tokens which are being transferred to and from whale wallets. Inflows refers to tokens being deposited to the whale wallet while outflows refers to when tokens are withdrawn from said wallet. Inflow and outflow can be an outcome of direct wallet transfers or [DEX](broken-reference/) swaps. KyberAI defines 2 classes of whales:
+The netflow to whale wallets measures the net total USD value of tokens which are being transferred to and from whale wallets. Inflows refers to tokens being deposited to the whale wallet while outflows refers to when tokens are withdrawn from said wallet. Inflow and outflow can be an outcome of direct wallet transfers or [DEX](https://github.com/KyberNetwork/kyberswap-documentation/blob/main/reference/legacy/kyberai/on-chain-indicators/broken-reference/README.md) swaps. KyberAI defines 2 classes of whales:
 
 * **General whales**: Wallets with assets totalling over USD5M across supported chains.
 * **Token whales**: Wallets that hold more than 1% of the total token supply for a particular token.

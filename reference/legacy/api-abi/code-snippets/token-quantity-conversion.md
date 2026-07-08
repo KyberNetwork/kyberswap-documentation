@@ -5,17 +5,17 @@ You are referring to the **`Legacy`** version of KyberSwap docs.
 
 For the most updated information, please refer to:
 
-* [**`Classic`**](broken-reference)
+* [**`Classic`**](https://github.com/KyberNetwork/kyberswap-documentation/blob/main/reference/legacy/api-abi/code-snippets/broken-reference/README.md)
 * [**`Elastic`**](../../kyberswap-elastic/)
 * [**`Limit Order`**](../../../../kyberswap-solutions/limit-order/)
 * [**`Aggregator`**](../../../../kyberswap-solutions/kyberswap-aggregator/)
 {% endhint %}
 
-### Token Amount Conversion[​](https://docs.kyberswap.com/Legacy/api-abi/code-snippets/api\_abi-tokenquantityconversion#token-amount-conversion) <a href="#token-amount-conversion" id="token-amount-conversion"></a>
+### Token Amount Conversion[​](https://docs.kyberswap.com/Legacy/api-abi/code-snippets/api_abi-tokenquantityconversion#token-amount-conversion) <a href="#token-amount-conversion" id="token-amount-conversion"></a>
 
 Since `getExpectedRate` returns a rate, not the amount, the following code snippets show how to convert to both source and destination token amounts, taking their decimals into account.
 
-#### `calcSrcQty`[​](https://docs.kyberswap.com/Legacy/api-abi/code-snippets/api\_abi-tokenquantityconversion#calcsrcqty) <a href="#calcsrcqty" id="calcsrcqty"></a>
+#### `calcSrcQty`[​](https://docs.kyberswap.com/Legacy/api-abi/code-snippets/api_abi-tokenquantityconversion#calcsrcqty) <a href="#calcsrcqty" id="calcsrcqty"></a>
 
 | Parameter     |                        Description                        |
 | ------------- | :-------------------------------------------------------: |
@@ -27,7 +27,7 @@ Since `getExpectedRate` returns a rate, not the amount, the following code snipp
 **Returns:**\
 ERC20 source token amount in its decimals.
 
-**Javascript**[**​**](https://docs.kyberswap.com/Legacy/api-abi/code-snippets/api\_abi-tokenquantityconversion#javascript)
+**Javascript**[**​**](https://docs.kyberswap.com/Legacy/api-abi/code-snippets/api_abi-tokenquantityconversion#javascript)
 
 ```
 // DISCLAIMER: Code snippets in this guide are just examples and you
@@ -48,11 +48,11 @@ function calcSrcQty(dstQty, srcDecimals, dstDecimals, rate) {
 }
 ```
 
-**Solidity**[**​**](https://docs.kyberswap.com/Legacy/api-abi/code-snippets/api\_abi-tokenquantityconversion#solidity)
+**Solidity**[**​**](https://docs.kyberswap.com/Legacy/api-abi/code-snippets/api_abi-tokenquantityconversion#solidity)
 
 Refer to the [Utils contract](https://github.com/KyberNetwork/smart-contracts/blob/master/contracts/Utils.sol#L47-L64).
 
-#### `calcDstQty`[​](https://docs.kyberswap.com/Legacy/api-abi/code-snippets/api\_abi-tokenquantityconversion#calcdstqty) <a href="#calcdstqty" id="calcdstqty"></a>
+#### `calcDstQty`[​](https://docs.kyberswap.com/Legacy/api-abi/code-snippets/api_abi-tokenquantityconversion#calcdstqty) <a href="#calcdstqty" id="calcdstqty"></a>
 
 | Parameter     |                        Description                        |
 | ------------- | :-------------------------------------------------------: |
@@ -64,7 +64,7 @@ Refer to the [Utils contract](https://github.com/KyberNetwork/smart-contracts/bl
 **Returns:**\
 ERC20 destination token amount in its decimals.
 
-**Javascript**[**​**](https://docs.kyberswap.com/Legacy/api-abi/code-snippets/api\_abi-tokenquantityconversion#javascript-1)
+**Javascript**[**​**](https://docs.kyberswap.com/Legacy/api-abi/code-snippets/api_abi-tokenquantityconversion#javascript-1)
 
 ```
 // DISCLAIMER: Code snippets in this guide are just examples and you
@@ -81,11 +81,11 @@ function calcDstQty(srcQty, srcDecimals, dstDecimals, rate) {
 }
 ```
 
-**Solidity**[**​**](https://docs.kyberswap.com/Legacy/api-abi/code-snippets/api\_abi-tokenquantityconversion#solidity-1)
+**Solidity**[**​**](https://docs.kyberswap.com/Legacy/api-abi/code-snippets/api_abi-tokenquantityconversion#solidity-1)
 
 Refer to the [Utils contract](https://github.com/KyberNetwork/smart-contracts/blob/master/contracts/Utils.sol#L34-L45).
 
-#### `calcRateFromQty`[​](https://docs.kyberswap.com/Legacy/api-abi/code-snippets/api\_abi-tokenquantityconversion#calcratefromqty) <a href="#calcratefromqty" id="calcratefromqty"></a>
+#### `calcRateFromQty`[​](https://docs.kyberswap.com/Legacy/api-abi/code-snippets/api_abi-tokenquantityconversion#calcratefromqty) <a href="#calcratefromqty" id="calcratefromqty"></a>
 
 | Parameter     |  Type  |                   Description                  |
 | ------------- | :----: | :--------------------------------------------: |
@@ -97,7 +97,7 @@ Refer to the [Utils contract](https://github.com/KyberNetwork/smart-contracts/bl
 **Returns:**\
 Token conversion rate independent of token decimals
 
-**Javascript**[**​**](https://docs.kyberswap.com/Legacy/api-abi/code-snippets/api\_abi-tokenquantityconversion#javascript-2)
+**Javascript**[**​**](https://docs.kyberswap.com/Legacy/api-abi/code-snippets/api_abi-tokenquantityconversion#javascript-2)
 
 ```
 // DISCLAIMER: Code snippets in this guide are just examples and you
@@ -118,6 +118,6 @@ function calcRateFromQty(srcAmount, destAmount, srcDecimals, dstDecimals) {
 }
 ```
 
-**Solidity**[**​**](https://docs.kyberswap.com/Legacy/api-abi/code-snippets/api\_abi-tokenquantityconversion#solidity-2)
+**Solidity**[**​**](https://docs.kyberswap.com/Legacy/api-abi/code-snippets/api_abi-tokenquantityconversion#solidity-2)
 
 Refer to the [Utils2 contract](https://github.com/KyberNetwork/smart-contracts/blob/master/contracts/Utils2.sol#L36-L49).

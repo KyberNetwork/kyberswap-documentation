@@ -50,7 +50,7 @@ For developers, KyberSwap Aggregator exposes a set of [swap APIs ](../../../deve
 
 {% tabs %}
 {% tab title="Traders" %}
-* [Instantly Swap At Superior Rates](broken-reference/)
+* [Instantly Swap At Superior Rates](https://github.com/KyberNetwork/kyberswap-documentation/blob/main/getting-started/foundational-topics/decentralized-finance/broken-reference/README.md)
 {% endtab %}
 
 {% tab title="Developers" %}

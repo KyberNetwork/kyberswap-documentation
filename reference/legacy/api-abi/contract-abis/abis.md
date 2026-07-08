@@ -5,7 +5,7 @@ You are referring to the **`Legacy`** version of KyberSwap docs.
 
 For the most updated information, please refer to:
 
-* [**`Classic`**](broken-reference)
+* [**`Classic`**](https://github.com/KyberNetwork/kyberswap-documentation/blob/main/reference/legacy/api-abi/contract-abis/broken-reference/README.md)
 * [**`Elastic`**](../../kyberswap-elastic/)
 * [**`Limit Order`**](../../../../kyberswap-solutions/limit-order/)
 * [**`Aggregator`**](../../../../kyberswap-solutions/kyberswap-aggregator/)
@@ -15,19 +15,19 @@ The contract Application Binary Interface (ABI) is the standard way to interact 
 
 We recommend importing the interfaces for the following functionalities:
 
-* [`IKyberNetworkProxy`](https://docs.kyberswap.com/Legacy/api-abi/contract-abis/api\_abi-abi#ikybernetworkproxy): Fetch rates and execute trades
-* [`ISimpleKyberProxy`](https://docs.kyberswap.com/Legacy/api-abi/contract-abis/api\_abi-abi#isimplekyberproxy): Simple APIs for trade execution
-* [`IKyberHint`](https://docs.kyberswap.com/Legacy/api-abi/contract-abis/api\_abi-abi#ikyberhint): Building and parsing hints
-* [`IKyberStorage`](https://docs.kyberswap.com/Legacy/api-abi/contract-abis/api\_abi-abi#ikyberstorage): Get reserve IDs for building hints
-* [`IKyberFeeHandler`](https://docs.kyberswap.com/Legacy/api-abi/contract-abis/api\_abi-abi#ikyberfeehandler): Claim staker rewards, reserve rebates or platform fees
-* [`IKyberReserve`](https://docs.kyberswap.com/Legacy/api-abi/contract-abis/api\_abi-abi#ikyberreserve): Fetch rates of a specific reserve
-* [`IERC20`](https://docs.kyberswap.com/Legacy/api-abi/contract-abis/api\_abi-abi#ierc20): Token operations (Eg. token transfers / approvals)
+* [`IKyberNetworkProxy`](https://docs.kyberswap.com/Legacy/api-abi/contract-abis/api_abi-abi#ikybernetworkproxy): Fetch rates and execute trades
+* [`ISimpleKyberProxy`](https://docs.kyberswap.com/Legacy/api-abi/contract-abis/api_abi-abi#isimplekyberproxy): Simple APIs for trade execution
+* [`IKyberHint`](https://docs.kyberswap.com/Legacy/api-abi/contract-abis/api_abi-abi#ikyberhint): Building and parsing hints
+* [`IKyberStorage`](https://docs.kyberswap.com/Legacy/api-abi/contract-abis/api_abi-abi#ikyberstorage): Get reserve IDs for building hints
+* [`IKyberFeeHandler`](https://docs.kyberswap.com/Legacy/api-abi/contract-abis/api_abi-abi#ikyberfeehandler): Claim staker rewards, reserve rebates or platform fees
+* [`IKyberReserve`](https://docs.kyberswap.com/Legacy/api-abi/contract-abis/api_abi-abi#ikyberreserve): Fetch rates of a specific reserve
+* [`IERC20`](https://docs.kyberswap.com/Legacy/api-abi/contract-abis/api_abi-abi#ierc20): Token operations (Eg. token transfers / approvals)
 
 The full contract ABIs are also given below the interface section.
 
-### Interface ABIs[​](https://docs.kyberswap.com/Legacy/api-abi/contract-abis/api\_abi-abi#interface-abis) <a href="#interface-abis" id="interface-abis"></a>
+### Interface ABIs[​](https://docs.kyberswap.com/Legacy/api-abi/contract-abis/api_abi-abi#interface-abis) <a href="#interface-abis" id="interface-abis"></a>
 
-#### `IKyberNetworkProxy`[​](https://docs.kyberswap.com/Legacy/api-abi/contract-abis/api\_abi-abi#ikybernetworkproxy) <a href="#ikybernetworkproxy" id="ikybernetworkproxy"></a>
+#### `IKyberNetworkProxy`[​](https://docs.kyberswap.com/Legacy/api-abi/contract-abis/api_abi-abi#ikybernetworkproxy) <a href="#ikybernetworkproxy" id="ikybernetworkproxy"></a>
 
 [Smart Contract URL](https://github.com/KyberNetwork/smart-contracts/blob/Katalyst/contracts/sol6/IKyberNetworkProxy.sol)
 
@@ -176,7 +176,7 @@ The full contract ABIs are also given below the interface section.
 ];
 ```
 
-#### `ISimpleKyberProxy`[​](https://docs.kyberswap.com/Legacy/api-abi/contract-abis/api\_abi-abi#isimplekyberproxy) <a href="#isimplekyberproxy" id="isimplekyberproxy"></a>
+#### `ISimpleKyberProxy`[​](https://docs.kyberswap.com/Legacy/api-abi/contract-abis/api_abi-abi#isimplekyberproxy) <a href="#isimplekyberproxy" id="isimplekyberproxy"></a>
 
 [Smart Contract URL](https://github.com/KyberNetwork/smart-contracts/blob/Katalyst/contracts/sol6/ISimpleKyberProxy.sol)
 
@@ -218,7 +218,7 @@ The full contract ABIs are also given below the interface section.
 ];
 ```
 
-#### `IKyberHint`[​](https://docs.kyberswap.com/Legacy/api-abi/contract-abis/api\_abi-abi#ikyberhint) <a href="#ikyberhint" id="ikyberhint"></a>
+#### `IKyberHint`[​](https://docs.kyberswap.com/Legacy/api-abi/contract-abis/api_abi-abi#ikyberhint) <a href="#ikyberhint" id="ikyberhint"></a>
 
 [Smart Contract URL](https://github.com/KyberNetwork/smart-contracts/blob/Katalyst/contracts/sol6/IKyberHint.sol)
 
@@ -429,7 +429,7 @@ The full contract ABIs are also given below the interface section.
 ];
 ```
 
-#### `IKyberStorage`[​](https://docs.kyberswap.com/Legacy/api-abi/contract-abis/api\_abi-abi#ikyberstorage) <a href="#ikyberstorage" id="ikyberstorage"></a>
+#### `IKyberStorage`[​](https://docs.kyberswap.com/Legacy/api-abi/contract-abis/api_abi-abi#ikyberstorage) <a href="#ikyberstorage" id="ikyberstorage"></a>
 
 [Smart Contract URL](https://github.com/KyberNetwork/smart-contracts/blob/Katalyst/contracts/sol6/IKyberStorage.sol)
 
@@ -672,7 +672,7 @@ The full contract ABIs are also given below the interface section.
 ];
 ```
 
-#### `IKyberFeeHandler`[​](https://docs.kyberswap.com/Legacy/api-abi/contract-abis/api\_abi-abi#ikyberfeehandler) <a href="#ikyberfeehandler" id="ikyberfeehandler"></a>
+#### `IKyberFeeHandler`[​](https://docs.kyberswap.com/Legacy/api-abi/contract-abis/api_abi-abi#ikyberfeehandler) <a href="#ikyberfeehandler" id="ikyberfeehandler"></a>
 
 [Smart Contract URL](https://github.com/KyberNetwork/smart-contracts/blob/Katalyst/contracts/sol6/IKyberFeeHandler.sol)
 
@@ -833,7 +833,7 @@ The full contract ABIs are also given below the interface section.
 ];
 ```
 
-#### `IKyberReserve`[​](https://docs.kyberswap.com/Legacy/api-abi/contract-abis/api\_abi-abi#ikyberreserve) <a href="#ikyberreserve" id="ikyberreserve"></a>
+#### `IKyberReserve`[​](https://docs.kyberswap.com/Legacy/api-abi/contract-abis/api_abi-abi#ikyberreserve) <a href="#ikyberreserve" id="ikyberreserve"></a>
 
 [Smart Contract URL](https://github.com/KyberNetwork/smart-contracts/blob/Katalyst/contracts/sol6/IKyberReserve.sol)
 
@@ -868,7 +868,7 @@ The full contract ABIs are also given below the interface section.
 ];
 ```
 
-#### `IERC20`[​](https://docs.kyberswap.com/Legacy/api-abi/contract-abis/api\_abi-abi#ierc20) <a href="#ierc20" id="ierc20"></a>
+#### `IERC20`[​](https://docs.kyberswap.com/Legacy/api-abi/contract-abis/api_abi-abi#ierc20) <a href="#ierc20" id="ierc20"></a>
 
 [Smart Contract URL](https://github.com/KyberNetwork/smart-contracts/blob/Katalyst/contracts/sol6/IERC20.sol)
 
@@ -964,7 +964,7 @@ The full contract ABIs are also given below the interface section.
 ];
 ```
 
-#### `KyberNetworkProxyInterface (V1)`[​](https://docs.kyberswap.com/Legacy/api-abi/contract-abis/api\_abi-abi#kybernetworkproxyinterface-v1) <a href="#kybernetworkproxyinterface-v1" id="kybernetworkproxyinterface-v1"></a>
+#### `KyberNetworkProxyInterface (V1)`[​](https://docs.kyberswap.com/Legacy/api-abi/contract-abis/api_abi-abi#kybernetworkproxyinterface-v1) <a href="#kybernetworkproxyinterface-v1" id="kybernetworkproxyinterface-v1"></a>
 
 [Smart Contract URL](https://github.com/KyberNetwork/smart-contracts/blob/Katalyst/contracts/sol4/KyberNetworkProxyInterface.sol)
 
@@ -1055,7 +1055,7 @@ The full contract ABIs are also given below the interface section.
 ];
 ```
 
-#### `ConversionRatesInterface`[​](https://docs.kyberswap.com/Legacy/api-abi/contract-abis/api\_abi-abi#conversionratesinterface) <a href="#conversionratesinterface" id="conversionratesinterface"></a>
+#### `ConversionRatesInterface`[​](https://docs.kyberswap.com/Legacy/api-abi/contract-abis/api_abi-abi#conversionratesinterface) <a href="#conversionratesinterface" id="conversionratesinterface"></a>
 
 [Smart Contract URL](https://github.com/KyberNetwork/smart-contracts/blob/Katalyst/contracts/sol4/ConversionRatesInterface.sol)
 
@@ -1092,7 +1092,7 @@ The full contract ABIs are also given below the interface section.
 ];
 ```
 
-#### `SanityRatesInterface`[​](https://docs.kyberswap.com/Legacy/api-abi/contract-abis/api\_abi-abi#sanityratesinterface) <a href="#sanityratesinterface" id="sanityratesinterface"></a>
+#### `SanityRatesInterface`[​](https://docs.kyberswap.com/Legacy/api-abi/contract-abis/api_abi-abi#sanityratesinterface) <a href="#sanityratesinterface" id="sanityratesinterface"></a>
 
 [Smart Contract URL](https://github.com/KyberNetwork/smart-contracts/blob/Katalyst/contracts/sol4/SanityRatesInterface.sol)
 
@@ -1113,9 +1113,9 @@ The full contract ABIs are also given below the interface section.
 ];
 ```
 
-### Full Contract ABIs[​](https://docs.kyberswap.com/Legacy/api-abi/contract-abis/api\_abi-abi#full-contract-abis) <a href="#full-contract-abis" id="full-contract-abis"></a>
+### Full Contract ABIs[​](https://docs.kyberswap.com/Legacy/api-abi/contract-abis/api_abi-abi#full-contract-abis) <a href="#full-contract-abis" id="full-contract-abis"></a>
 
-#### `KyberNetworkProxy V2 (Katalyst)`[​](https://docs.kyberswap.com/Legacy/api-abi/contract-abis/api\_abi-abi#kybernetworkproxy-v2-katalyst) <a href="#kybernetworkproxy-v2-katalyst" id="kybernetworkproxy-v2-katalyst"></a>
+#### `KyberNetworkProxy V2 (Katalyst)`[​](https://docs.kyberswap.com/Legacy/api-abi/contract-abis/api_abi-abi#kybernetworkproxy-v2-katalyst) <a href="#kybernetworkproxy-v2-katalyst" id="kybernetworkproxy-v2-katalyst"></a>
 
 [Smart Contract URL](https://github.com/KyberNetwork/smart-contracts/blob/Katalyst/contracts/sol6/KyberNetworkProxy.sol)
 
@@ -1594,7 +1594,7 @@ The full contract ABIs are also given below the interface section.
 ];
 ```
 
-#### `KyberHintHandler`[​](https://docs.kyberswap.com/Legacy/api-abi/contract-abis/api\_abi-abi#kyberhinthandler) <a href="#kyberhinthandler" id="kyberhinthandler"></a>
+#### `KyberHintHandler`[​](https://docs.kyberswap.com/Legacy/api-abi/contract-abis/api_abi-abi#kyberhinthandler) <a href="#kyberhinthandler" id="kyberhinthandler"></a>
 
 [Smart Contract URL](https://github.com/KyberNetwork/smart-contracts/blob/Katalyst/contracts/sol6/KyberHintHandler.sol)
 
@@ -1805,7 +1805,7 @@ The full contract ABIs are also given below the interface section.
 ];
 ```
 
-#### `KyberStorage`[​](https://docs.kyberswap.com/Legacy/api-abi/contract-abis/api\_abi-abi#kyberstorage) <a href="#kyberstorage" id="kyberstorage"></a>
+#### `KyberStorage`[​](https://docs.kyberswap.com/Legacy/api-abi/contract-abis/api_abi-abi#kyberstorage) <a href="#kyberstorage" id="kyberstorage"></a>
 
 [Smart Contract URL](https://github.com/KyberNetwork/smart-contracts/blob/Katalyst/contracts/sol6/KyberStorage.sol)
 
@@ -2533,7 +2533,7 @@ The full contract ABIs are also given below the interface section.
 ];
 ```
 
-#### `KyberFeeHandler (ETH)`[​](https://docs.kyberswap.com/Legacy/api-abi/contract-abis/api\_abi-abi#kyberfeehandler-eth) <a href="#kyberfeehandler-eth" id="kyberfeehandler-eth"></a>
+#### `KyberFeeHandler (ETH)`[​](https://docs.kyberswap.com/Legacy/api-abi/contract-abis/api_abi-abi#kyberfeehandler-eth) <a href="#kyberfeehandler-eth" id="kyberfeehandler-eth"></a>
 
 [Smart Contract URL](https://github.com/KyberNetwork/smart-contracts/blob/Katalyst/contracts/sol6/Dao/KyberFeeHandler.sol)
 
@@ -3127,7 +3127,7 @@ The full contract ABIs are also given below the interface section.
 ];
 ```
 
-#### `KyberReserve`[​](https://docs.kyberswap.com/Legacy/api-abi/contract-abis/api\_abi-abi#kyberreserve) <a href="#kyberreserve" id="kyberreserve"></a>
+#### `KyberReserve`[​](https://docs.kyberswap.com/Legacy/api-abi/contract-abis/api_abi-abi#kyberreserve) <a href="#kyberreserve" id="kyberreserve"></a>
 
 [Etherscan link to ABI](https://etherscan.io/address/0xa107dfa919c3f084a7893a260b99586981beb528#code)
 
@@ -3580,7 +3580,7 @@ The full contract ABIs are also given below the interface section.
 ];
 ```
 
-#### `ConversionRates`[​](https://docs.kyberswap.com/Legacy/api-abi/contract-abis/api\_abi-abi#conversionrates) <a href="#conversionrates" id="conversionrates"></a>
+#### `ConversionRates`[​](https://docs.kyberswap.com/Legacy/api-abi/contract-abis/api_abi-abi#conversionrates) <a href="#conversionrates" id="conversionrates"></a>
 
 [Etherscan link to ABI](https://etherscan.io/address/0x798AbDA6Cc246D0EDbA912092A2a3dBd3d11191B#code)
 
@@ -4040,7 +4040,7 @@ The full contract ABIs are also given below the interface section.
 ];
 ```
 
-#### `LiquidityConversionRates`[​](https://docs.kyberswap.com/Legacy/api-abi/contract-abis/api\_abi-abi#liquidityconversionrates) <a href="#liquidityconversionrates" id="liquidityconversionrates"></a>
+#### `LiquidityConversionRates`[​](https://docs.kyberswap.com/Legacy/api-abi/contract-abis/api_abi-abi#liquidityconversionrates) <a href="#liquidityconversionrates" id="liquidityconversionrates"></a>
 
 [Etherscan link to ABI](https://etherscan.io/address/0x97d7126b6ff7c4d95601912f4cdf790a3cd1edab#code)
 
@@ -4726,7 +4726,7 @@ The full contract ABIs are also given below the interface section.
 ];
 ```
 
-#### `SanityRates`[​](https://docs.kyberswap.com/Legacy/api-abi/contract-abis/api\_abi-abi#sanityrates) <a href="#sanityrates" id="sanityrates"></a>
+#### `SanityRates`[​](https://docs.kyberswap.com/Legacy/api-abi/contract-abis/api_abi-abi#sanityrates) <a href="#sanityrates" id="sanityrates"></a>
 
 [Etherscan link to ABI](https://etherscan.io/address/0xdfc85C08d5e5924aB49750E006CF8a826ffb7B13#code)
 
@@ -4971,7 +4971,7 @@ The full contract ABIs are also given below the interface section.
 ];
 ```
 
-#### `KyberNetworkProxy (V1)`[​](https://docs.kyberswap.com/Legacy/api-abi/contract-abis/api\_abi-abi#kybernetworkproxy-v1) <a href="#kybernetworkproxy-v1" id="kybernetworkproxy-v1"></a>
+#### `KyberNetworkProxy (V1)`[​](https://docs.kyberswap.com/Legacy/api-abi/contract-abis/api_abi-abi#kybernetworkproxy-v1) <a href="#kybernetworkproxy-v1" id="kybernetworkproxy-v1"></a>
 
 [Smart Contract URL](https://github.com/KyberNetwork/smart-contracts/blob/Katalyst/contracts/sol4/KyberProxyV1.sol)
 

@@ -16,7 +16,7 @@ If the number of liquidity sources gets too overwhelming, you can always avoid t
 
 <figure><img src="../../../.gitbook/assets/KyberAI_Liquidity_DEX.png" alt=""><figcaption><p>DEX Token Liquidity</p></figcaption></figure>
 
-The trading volume of the token across [Decentralized Exchanges](broken-reference).
+The trading volume of the token across [Decentralized Exchanges](https://github.com/KyberNetwork/kyberswap-documentation/blob/main/reference/legacy/kyberai/broken-reference/README.md).
 
 ### Centralized Exchanges
 

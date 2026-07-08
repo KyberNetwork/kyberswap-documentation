@@ -20,9 +20,9 @@ You can visit our [Introduction to KyberSwap](../../) page for more details.
 
 <summary>How is KyberSwap different from other DeFi platforms?</summary>
 
-KyberSwap is DeFi's first multi-chain [Dynamic Automated Market Maker](broken-reference/) (DMM) that is also a liquidity aggregator that optimizes returns for liquidity providers. KyberSwap differs from other DeFi platforms in the following ways:
+KyberSwap is DeFi's first multi-chain [Dynamic Automated Market Maker](https://github.com/KyberNetwork/kyberswap-documentation/blob/main/getting-started/quickstart/broken-reference/README.md) (DMM) that is also a liquidity aggregator that optimizes returns for liquidity providers. KyberSwap differs from other DeFi platforms in the following ways:
 
-* [Amplified Classic AMM pools with dynamic fees](broken-reference/)
+* [Amplified Classic AMM pools with dynamic fees](https://github.com/KyberNetwork/kyberswap-documentation/blob/main/getting-started/quickstart/broken-reference/README.md)
 * [Auto-compounding concentrated liquidity positions](../../reference/legacy/kyberswap-elastic/)
 * [Optimized trade routing across DEXs and aggregators on multiple chains](../../kyberswap-solutions/kyberswap-aggregator/)
 * [Surfacing valuable on/off-chain token data for data-driven trades](../../reference/legacy/kyberai/)

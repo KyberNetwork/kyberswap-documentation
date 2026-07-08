@@ -219,7 +219,7 @@ Click the “Swap” button to bring up the confirmation screen.
 In the case of the standard flow where the cross-chain swap:
 
 * is not expected to result in significant [price impact](../../getting-started/foundational-topics/decentralized-finance/price-impact.md) or;
-* has not been [configured](../../kyberswap-solutions/kyberswap-interface/user-guides/broken-reference/) with an aggressive max [slippage](../../getting-started/foundational-topics/decentralized-finance/slippage.md);
+* has not been [configured](https://github.com/KyberNetwork/kyberswap-documentation/blob/main/kyberswap-solutions/kyberswap-interface/user-guides/broken-reference/README.md) with an aggressive max [slippage](../../getting-started/foundational-topics/decentralized-finance/slippage.md);
 
 the confirmation pop-up will be as follows:
 
@@ -243,7 +243,7 @@ Depending on the available liquidity for the tokens being swapped, the expected 
 
 <figure><img src="../../.gitbook/assets/UserGuide_CrossChain_PriceImpactMoreThan10.png" alt=""><figcaption><p>Extremely high price impact</p></figcaption></figure>
 
-Note that to proceed with swaps with extremely high price impact, users must enable [Degen Mode](../../kyberswap-solutions/kyberswap-interface/user-guides/broken-reference/).
+Note that to proceed with swaps with extremely high price impact, users must enable [Degen Mode](https://github.com/KyberNetwork/kyberswap-documentation/blob/main/kyberswap-solutions/kyberswap-interface/user-guides/broken-reference/README.md).
 {% endtab %}
 {% endtabs %}
 

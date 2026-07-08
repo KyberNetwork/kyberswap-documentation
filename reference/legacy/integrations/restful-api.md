@@ -5,7 +5,7 @@ You are referring to the **`Legacy`** version of KyberSwap docs.
 
 For the most updated information, please refer to:
 
-* [**`Classic`**](broken-reference)
+* [**`Classic`**](https://github.com/KyberNetwork/kyberswap-documentation/blob/main/reference/legacy/integrations/broken-reference/README.md)
 * [**`Elastic`**](../kyberswap-elastic/)
 * [**`Limit Order`**](../../../kyberswap-solutions/limit-order/)
 * [**`Aggregator`**](../../../kyberswap-solutions/kyberswap-aggregator/)
@@ -29,8 +29,8 @@ We break this guide into 3 sections:
 
 ### Things to note[​](https://docs.kyberswap.com/Legacy/integrations/restful-api#things-to-note) <a href="#things-to-note" id="things-to-note"></a>
 
-1. If the source token is not ETH (ie. an ERC20 token), the user is **first required** to call the [`/enabled_data`](https://docs.kyberswap.com/Legacy/integrations/api\_abi-restfulapi.md) endpoint to give an allowance to the smart contract executing the trade.
-2. Refer to the [API overview](https://docs.kyberswap.com/Legacy/integrations/api\_abi-restfulapioverview.md#network-url) for the test and mainnet network URLs to use.
+1. If the source token is not ETH (ie. an ERC20 token), the user is **first required** to call the [`/enabled_data`](https://docs.kyberswap.com/Legacy/integrations/api_abi-restfulapi.md) endpoint to give an allowance to the smart contract executing the trade.
+2. Refer to the [API overview](https://docs.kyberswap.com/Legacy/integrations/api_abi-restfulapioverview.md#network-url) for the test and mainnet network URLs to use.
 3. To prevent front running, the contract limits the gas price trade transactions can have. The transaction will be reverted if the limit is exceeded. To query for the maximum gas limit, check the public variable `maxGasPrice`.
 
 ```javascript
@@ -123,7 +123,7 @@ const GAS_PRICE = 'medium';
 
 #### Check Token Support[​](https://docs.kyberswap.com/Legacy/integrations/restful-api#check-token-support) <a href="#check-token-support" id="check-token-support"></a>
 
-We first have to check if the traded tokens are supported on Kyber. We make use of the `/currencies` endpoint, which returns basic information about all tokens supported on Kyber. Details about possible path parameters and output fields can be [found here](https://docs.kyberswap.com/Legacy/integrations/api\_abi-restfulapi.md#currencies).
+We first have to check if the traded tokens are supported on Kyber. We make use of the `/currencies` endpoint, which returns basic information about all tokens supported on Kyber. Details about possible path parameters and output fields can be [found here](https://docs.kyberswap.com/Legacy/integrations/api_abi-restfulapi.md#currencies).
 
 It is recommended to use the token contract address as the identifier instead of the token symbol, as multiple tokens may share the same symbol.
 
@@ -155,9 +155,9 @@ function caseInsensitiveEquals(a, b) {
 
 #### Check Source Token Approval[​](https://docs.kyberswap.com/Legacy/integrations/restful-api#check-source-token-approval) <a href="#check-source-token-approval" id="check-source-token-approval"></a>
 
-We use the `/users/<user_address>/currencies` endpoint to check whether the proxy contract has been approved for selling source tokens on behalf of the user. This endpoints returns a JSON of enabled statuses of ERC20 tokens for the given walletAddress. Details about the path parameters and output fields can be [found here](https://docs.kyberswap.com/Legacy/integrations/api\_abi-restfulapi.md#users-user-address-currencies).
+We use the `/users/<user_address>/currencies` endpoint to check whether the proxy contract has been approved for selling source tokens on behalf of the user. This endpoints returns a JSON of enabled statuses of ERC20 tokens for the given walletAddress. Details about the path parameters and output fields can be [found here](https://docs.kyberswap.com/Legacy/integrations/api_abi-restfulapi.md#users-user-address-currencies).
 
-If the source token is not enabled for trading, querying the `users/<user_address>/currencies/<currency_id>/enable_data` endpoint returns a transaction payload needed to be signed and broadcasted by the user to enable the KyberNetwork contract to trade source tokens on his behalf. Details about the path parameters and output fields can be [found here](https://docs.kyberswap.com/Legacy/integrations/api\_abi-restfulapi.md#users-user-address-currencies-currency-id-enable-data).
+If the source token is not enabled for trading, querying the `users/<user_address>/currencies/<currency_id>/enable_data` endpoint returns a transaction payload needed to be signed and broadcasted by the user to enable the KyberNetwork contract to trade source tokens on his behalf. Details about the path parameters and output fields can be [found here](https://docs.kyberswap.com/Legacy/integrations/api_abi-restfulapi.md#users-user-address-currencies-currency-id-enable-data).
 
 ```javascript
 // DISCLAIMER: Code snippets in this guide are just examples and you
@@ -213,7 +213,7 @@ async function enableTokenTransfer(tokenAddress, userAddress, gasPrice) {
 
 #### Get Destination Token Amount Receivable[​](https://docs.kyberswap.com/Legacy/integrations/restful-api#get-destination-token-amount-receivable) <a href="#get-destination-token-amount-receivable" id="get-destination-token-amount-receivable"></a>
 
-Create a function to get an approximate of the destination token amount for the specified amount of source token. We will use the `/quote_amount` endpoint in this function. Details about the path parameters and output fields can be [found here](https://docs.kyberswap.com/Legacy/integrations/api\_abi-restfulapi.md#quote\_amount).
+Create a function to get an approximate of the destination token amount for the specified amount of source token. We will use the `/quote_amount` endpoint in this function. Details about the path parameters and output fields can be [found here](https://docs.kyberswap.com/Legacy/integrations/api_abi-restfulapi.md#quote_amount).
 
 **Note:**
 
@@ -238,7 +238,7 @@ async function getQuoteAmount(srcToken, destToken, srcQty) {
 
 #### Trade Execution[​](https://docs.kyberswap.com/Legacy/integrations/restful-api#trade-execution) <a href="#trade-execution" id="trade-execution"></a>
 
-We now have all the required information to peform the trade transaction. Querying the `/trade_data` endpoint will return the transaction payload to be signed and broadcasted by the user to make the conversion. Details about the path parameters and output fields can be [found here](https://docs.kyberswap.com/Legacy/integrations/api\_abi-restfulapi.md#trade\_data).
+We now have all the required information to peform the trade transaction. Querying the `/trade_data` endpoint will return the transaction payload to be signed and broadcasted by the user to make the conversion. Details about the path parameters and output fields can be [found here](https://docs.kyberswap.com/Legacy/integrations/api_abi-restfulapi.md#trade_data).
 
 ```javascript
 // DISCLAIMER: Code snippets in this guide are just examples and you
@@ -515,7 +515,7 @@ For token -> token trades, you can specify a routing rule for each half. For exa
 
 #### Fetching Reserve Information[​](https://docs.kyberswap.com/Legacy/integrations/restful-api#fetching-reserve-information) <a href="#fetching-reserve-information" id="fetching-reserve-information"></a>
 
-Query the `/reserves` endpoint to get a list of supporting reserves for a trade. Details about the path parameters and output fields can be [found here](https://docs.kyberswap.com/Legacy/integrations/api\_abi-restfulapi.md#reserves).
+Query the `/reserves` endpoint to get a list of supporting reserves for a trade. Details about the path parameters and output fields can be [found here](https://docs.kyberswap.com/Legacy/integrations/api_abi-restfulapi.md#reserves).
 
 The `id` return parameter will be useful for building hints.
 
@@ -569,7 +569,7 @@ await fetchReservesInformation();
 
 #### Building Hints[​](https://docs.kyberswap.com/Legacy/integrations/restful-api#building-hints) <a href="#building-hints" id="building-hints"></a>
 
-Querying the `/hint` endpoint will return data needed for the `hint` input parameter for the `/trade_data` endpoint. Details about the path parameters and output fields can be [found here](https://docs.kyberswap.com/Legacy/integrations/api\_abi-restfulapi.md#hint).
+Querying the `/hint` endpoint will return data needed for the `hint` input parameter for the `/trade_data` endpoint. Details about the path parameters and output fields can be [found here](https://docs.kyberswap.com/Legacy/integrations/api_abi-restfulapi.md#hint).
 
 **Examples**[**​**](https://docs.kyberswap.com/Legacy/integrations/restful-api#examples-1)
 
@@ -736,7 +736,7 @@ async function getTradeParams() {
 
 #### Basic Token Information[​](https://docs.kyberswap.com/Legacy/integrations/restful-api#basic-token-information) <a href="#basic-token-information" id="basic-token-information"></a>
 
-The `/currencies` endpoint returns basic information about all tokens supported on Kyber. Details about possible path parameters and output fields can be [found here](https://docs.kyberswap.com/Legacy/integrations/api\_abi-restfulapi.md#currencies).
+The `/currencies` endpoint returns basic information about all tokens supported on Kyber. Details about possible path parameters and output fields can be [found here](https://docs.kyberswap.com/Legacy/integrations/api_abi-restfulapi.md#currencies).
 
 **Example**[**​**](https://docs.kyberswap.com/Legacy/integrations/restful-api#example-1)
 
@@ -794,7 +794,7 @@ await getSupportedTokens();
 
 #### Token Price & Volume Information[​](https://docs.kyberswap.com/Legacy/integrations/restful-api#token-price--volume-information) <a href="#token-price--volume-information" id="token-price--volume-information"></a>
 
-The `/market` endpoint returns price and volume information on token to ETH pairs supported on Kyber. Details about possible path parameters and output fields can be [found here](https://docs.kyberswap.com/Legacy/integrations/api\_abi-restfulapi.md#market).
+The `/market` endpoint returns price and volume information on token to ETH pairs supported on Kyber. Details about possible path parameters and output fields can be [found here](https://docs.kyberswap.com/Legacy/integrations/api_abi-restfulapi.md#market).
 
 **Example**[**​**](https://docs.kyberswap.com/Legacy/integrations/restful-api#example-2)
 
@@ -855,7 +855,7 @@ await getMarketInformation();
 
 #### Token/ETH and Token/USD Price Information[​](https://docs.kyberswap.com/Legacy/integrations/restful-api#tokeneth-and-tokenusd-price-information) <a href="#tokeneth-and-tokenusd-price-information" id="tokeneth-and-tokenusd-price-information"></a>
 
-The `/change24h` endpoint returns current token to ETH and USD rates and price percentage changes against the previous day. Details about possible path parameters and output fields can be [found here](https://docs.kyberswap.com/Legacy/integrations/api\_abi-restfulapi.md#change24h).
+The `/change24h` endpoint returns current token to ETH and USD rates and price percentage changes against the previous day. Details about possible path parameters and output fields can be [found here](https://docs.kyberswap.com/Legacy/integrations/api_abi-restfulapi.md#change24h).
 
 **Example**[**​**](https://docs.kyberswap.com/Legacy/integrations/restful-api#example-3)
 

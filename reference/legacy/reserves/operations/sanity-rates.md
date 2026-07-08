@@ -5,7 +5,7 @@ You are referring to the **`Legacy`** version of KyberSwap docs.
 
 For the most updated information, please refer to:
 
-* [**`Classic`**](broken-reference)
+* [**`Classic`**](https://github.com/KyberNetwork/kyberswap-documentation/blob/main/reference/legacy/reserves/operations/broken-reference/README.md)
 * [**`Elastic`**](../../kyberswap-elastic/)
 * [**`Limit Order`**](../../../../kyberswap-solutions/limit-order/)
 * [**`Aggregator`**](../../../../kyberswap-solutions/kyberswap-aggregator/)
@@ -15,7 +15,7 @@ For the most updated information, please refer to:
 
 ![Sanityrates](https://docs.kyberswap.com/assets/images/sanityrates-b91ab083b7dd195d08ddacee36687063.png)
 
-The sanity module protects reserves from (1) bugs in the conversion rate logic or from (2) hacks into the conversion rate system. If there are large inconsistencies between the sanity rates and the actual rates, then trades involving your reserve will be disabled. The functions below are from [`SanityRates.sol`](https://docs.kyberswap.com/Legacy/reserves/operation/api\_abi-sanityrates.md).
+The sanity module protects reserves from (1) bugs in the conversion rate logic or from (2) hacks into the conversion rate system. If there are large inconsistencies between the sanity rates and the actual rates, then trades involving your reserve will be disabled. The functions below are from [`SanityRates.sol`](https://docs.kyberswap.com/Legacy/reserves/operation/api_abi-sanityrates.md).
 
 * An admin sets `reasonableDiff` by calling `setReasonableDiff()`
 * An operator sets the `sanityRate` of a token by calling `setSanityRates()`

@@ -6,4 +6,4 @@ description: Configurable Fees
 
 There is initially no protocol fee. However, the fee setter is able to set **up to** a maximum of 20%. The protocol fee is not paid by traders, but when liquidity providers add or remove liquidity to / from a pool.
 
-Updates to the protocol fee are done through the [factory contract](broken-reference), and affects all deployed pools.
+Updates to the protocol fee are done through the [factory contract](https://github.com/KyberNetwork/kyberswap-documentation/blob/main/reference/legacy/kyberswap-classic/concepts/broken-reference/README.md), and affects all deployed pools.

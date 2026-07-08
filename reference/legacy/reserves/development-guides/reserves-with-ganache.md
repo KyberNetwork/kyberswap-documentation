@@ -5,7 +5,7 @@ You are referring to the **`Legacy`** version of KyberSwap docs.
 
 For the most updated information, please refer to:
 
-* [**`Classic`**](broken-reference)
+* [**`Classic`**](https://github.com/KyberNetwork/kyberswap-documentation/blob/main/reference/legacy/reserves/development-guides/broken-reference/README.md)
 * [**`Elastic`**](../../kyberswap-elastic/)
 * [**`Limit Order`**](../../../../kyberswap-solutions/limit-order/)
 * [**`Aggregator`**](../../../../kyberswap-solutions/kyberswap-aggregator/)
@@ -54,110 +54,110 @@ git clone git@github.com:KyberNetwork/workshop.git
 
 workshop\
 ├── config\
-&#x20;│   ├── network.json\
-&#x20;│  └── tokens.json\
+│ ├── network.json\
+│ └── tokens.json\
 ├── contracts\
-&#x20;│   ├── ConversionRatesInterface.sol\
-&#x20;│   ├── ConversionRates.sol\
-&#x20;│   ├── ERC20Interface.sol\
-&#x20;│   ├── examples\
-&#x20;│    │   ├── SwapEtherToToken.sol\
-&#x20;│    │   ├── SwapTokenToEther.sol\
-&#x20;│    │   └── SwapTokenToToken.sol\
-&#x20;│    │   └── Trade.sol\
-&#x20;│   ├── ExpectedRateInterface.sol\
-&#x20;│   ├── ExpectedRate.sol\
-&#x20;│   ├── FeeBurnerInterface.sol\
-&#x20;│   ├── FeeBurner.sol\
-&#x20;│   ├── KyberAutomatedReserve.sol\
-&#x20;│   ├── KyberNetworkInterface.sol\
-&#x20;│   ├── KyberNetworkProxyInterface.sol\
-&#x20;│   ├── KyberNetworkProxy.sol\
-&#x20;│   ├── KyberNetwork.sol\
-&#x20;│   ├── KyberOrderbookReserve.sol\
-&#x20;│   ├── KyberReserveInterface.sol\
-&#x20;│   ├── KyberReserve.sol\
-&#x20;│   ├── LiquidityConversionRates.sol\
-&#x20;│   ├── LiquidityFormula.sol\
-&#x20;│   ├── Migrations.sol\
-&#x20;│   ├── mockTokens\
-&#x20;│    │   ├── KyberGenesisToken.sol\
-&#x20;│    │   ├── KyberNetworkCrystal.sol\
-&#x20;│    │   ├── Mana.sol\
-&#x20;│    │   ├── OmiseGo.sol\
-&#x20;│    │   ├── Polymath.sol\
-&#x20;│    │   ├── Salt.sol\
-&#x20;│    │   ├── Status.sol\
-&#x20;│    │   └── Zilliqa.sol\
-&#x20;│   ├── PermissionGroups.sol\
-&#x20;│   ├── permissionless\
-&#x20;│    │   ├── OrderbookReserveInterface.sol\
-&#x20;│    │   ├── OrderbookReserve.sol\
-&#x20;│    │   ├── OrderIdManager.sol\
-&#x20;│    │   ├── OrderListFactoryInterface.sol\
-&#x20;│    │   ├── OrderListFactory.sol\
-&#x20;│    │   ├── OrderListInterface.sol\
-&#x20;│    │   ├── OrderList.sol\
-&#x20;│    │   └── PermissionlessOrderbookReserveLister.sol\
-&#x20;│   ├── SanityRatesInterface.sol\
-&#x20;│   ├── SanityRates.sol\
-&#x20;│   ├── SimpleNetworkInterface.sol\
-&#x20;│   ├── Utils2.sol\
-&#x20;│   ├── Utils.sol\
-&#x20;│   ├── VolumeImbalanceRecorder.sol\
-&#x20;│   ├── WhiteListInterface.sol\
-&#x20;│   ├── WhiteList.sol\
-&#x20;│   └── Withdrawable.sol\
+│ ├── ConversionRatesInterface.sol\
+│ ├── ConversionRates.sol\
+│ ├── ERC20Interface.sol\
+│ ├── examples\
+│ │ ├── SwapEtherToToken.sol\
+│ │ ├── SwapTokenToEther.sol\
+│ │ └── SwapTokenToToken.sol\
+│ │ └── Trade.sol\
+│ ├── ExpectedRateInterface.sol\
+│ ├── ExpectedRate.sol\
+│ ├── FeeBurnerInterface.sol\
+│ ├── FeeBurner.sol\
+│ ├── KyberAutomatedReserve.sol\
+│ ├── KyberNetworkInterface.sol\
+│ ├── KyberNetworkProxyInterface.sol\
+│ ├── KyberNetworkProxy.sol\
+│ ├── KyberNetwork.sol\
+│ ├── KyberOrderbookReserve.sol\
+│ ├── KyberReserveInterface.sol\
+│ ├── KyberReserve.sol\
+│ ├── LiquidityConversionRates.sol\
+│ ├── LiquidityFormula.sol\
+│ ├── Migrations.sol\
+│ ├── mockTokens\
+│ │ ├── KyberGenesisToken.sol\
+│ │ ├── KyberNetworkCrystal.sol\
+│ │ ├── Mana.sol\
+│ │ ├── OmiseGo.sol\
+│ │ ├── Polymath.sol\
+│ │ ├── Salt.sol\
+│ │ ├── Status.sol\
+│ │ └── Zilliqa.sol\
+│ ├── PermissionGroups.sol\
+│ ├── permissionless\
+│ │ ├── OrderbookReserveInterface.sol\
+│ │ ├── OrderbookReserve.sol\
+│ │ ├── OrderIdManager.sol\
+│ │ ├── OrderListFactoryInterface.sol\
+│ │ ├── OrderListFactory.sol\
+│ │ ├── OrderListInterface.sol\
+│ │ ├── OrderList.sol\
+│ │ └── PermissionlessOrderbookReserveLister.sol\
+│ ├── SanityRatesInterface.sol\
+│ ├── SanityRates.sol\
+│ ├── SimpleNetworkInterface.sol\
+│ ├── Utils2.sol\
+│ ├── Utils.sol\
+│ ├── VolumeImbalanceRecorder.sol\
+│ ├── WhiteListInterface.sol\
+│ ├── WhiteList.sol\
+│ └── Withdrawable.sol\
 ├── db\
 ├── examples\
-&#x20;│  ├── solidity\
-&#x20;│   │   ├── SwapEtherToToken.sol -> ../../contracts/examples/SwapEtherToToken.sol\
-&#x20;│   │   ├── SwapTokenToEther.sol -> ../../contracts/examples/SwapTokenToEther.sol\
-&#x20;│   │  └── SwapTokenToToken.sol -> ../../contracts/examples/SwapTokenToToken.sol\
-&#x20;│   │  └── Trade.sol -> ../../contracts/examples/Trade.sol\
-&#x20;│  ├── truffle\
-&#x20;│   │   ├── getExpectedRate.js\
-&#x20;│   │   ├── swapEtherToToken.js\
-&#x20;│   │   ├── swapTokenToEther.js\
-&#x20;│   │   ├── swapTokenToToken.js\
-&#x20;│   │   └── trade.js\
-&#x20;│  └── web3\
-&#x20;│   ├── abi\
-&#x20;│    │   ├── KyberNetworkProxy.abi\
-&#x20;│    │   ├── KNC.abi\
-&#x20;│    │   ├── OMG.abi\
-&#x20;│    │   ├── MANA.abi\
-&#x20;│    │   ├── SALT.abi\
-&#x20;│    │   └── ZIL.abi\
-&#x20;│   ├── getExpectedRate.js\
-&#x20;│   ├── swapEtherToToken.js\
-&#x20;│   ├── swapTokenToEther.js\
-&#x20;│   └── swapTokenToToken.js\
+│ ├── solidity\
+│ │ ├── SwapEtherToToken.sol -> ../../contracts/examples/SwapEtherToToken.sol\
+│ │ ├── SwapTokenToEther.sol -> ../../contracts/examples/SwapTokenToEther.sol\
+│ │ └── SwapTokenToToken.sol -> ../../contracts/examples/SwapTokenToToken.sol\
+│ │ └── Trade.sol -> ../../contracts/examples/Trade.sol\
+│ ├── truffle\
+│ │ ├── getExpectedRate.js\
+│ │ ├── swapEtherToToken.js\
+│ │ ├── swapTokenToEther.js\
+│ │ ├── swapTokenToToken.js\
+│ │ └── trade.js\
+│ └── web3\
+│ ├── abi\
+│ │ ├── KyberNetworkProxy.abi\
+│ │ ├── KNC.abi\
+│ │ ├── OMG.abi\
+│ │ ├── MANA.abi\
+│ │ ├── SALT.abi\
+│ │ └── ZIL.abi\
+│ ├── getExpectedRate.js\
+│ ├── swapEtherToToken.js\
+│ ├── swapTokenToEther.js\
+│ └── swapTokenToToken.js\
 ├── LICENSE\
 ├── migrations\
-&#x20;│   ├── 1\_initial\_migration.js\
-&#x20;│   ├── 2\_deploy\_tokens.js\
-&#x20;│   ├── 3\_deploy\_contracts.js\
-&#x20;│   ├── 4\_setup\_permissions.js\
-&#x20;│   ├── 5\_setup\_KyberNetworkProxy.js\
-&#x20;│   ├── 6\_setup\_KyberReserve.js\
-&#x20;│   ├── 7\_setup\_KyberAutomatedReserve.js\
-&#x20;│   ├── 8\_setup\_KyberOrderbookReserve.js\
-&#x20;│   ├── 9\_setup\_FeeBurner.js\
-&#x20;│   ├── 10\_setup\_ExpectedRate.js\
-&#x20;│   ├── 11\_setup\_ConversionRates.js\
-&#x20;│   ├── 12\_setup\_LiquidityConversionRates.js\
-&#x20;│   ├── 13\_setup\_SanityRates.js\
-&#x20;│   ├── 14\_setup\_WhiteList.js\
-&#x20;│   ├── 15\_setup\_KyberNetwork.js\
-&#x20;│   ├── 16\_add\_PermissionlessOrderbookReserve.js\
-&#x20;│   ├── 17\_transfer\_tokens.js\
-&#x20;│   └── 18\_deployment\_summary.js\
+│ ├── 1\_initial\_migration.js\
+│ ├── 2\_deploy\_tokens.js\
+│ ├── 3\_deploy\_contracts.js\
+│ ├── 4\_setup\_permissions.js\
+│ ├── 5\_setup\_KyberNetworkProxy.js\
+│ ├── 6\_setup\_KyberReserve.js\
+│ ├── 7\_setup\_KyberAutomatedReserve.js\
+│ ├── 8\_setup\_KyberOrderbookReserve.js\
+│ ├── 9\_setup\_FeeBurner.js\
+│ ├── 10\_setup\_ExpectedRate.js\
+│ ├── 11\_setup\_ConversionRates.js\
+│ ├── 12\_setup\_LiquidityConversionRates.js\
+│ ├── 13\_setup\_SanityRates.js\
+│ ├── 14\_setup\_WhiteList.js\
+│ ├── 15\_setup\_KyberNetwork.js\
+│ ├── 16\_add\_PermissionlessOrderbookReserve.js\
+│ ├── 17\_transfer\_tokens.js\
+│ └── 18\_deployment\_summary.js\
 ├── package.json\
 ├── README.md\
 ├── scripts\
-&#x20;│   ├── get\_liquidity\_params.py\
-&#x20;│   └── liquidity\_input\_params.json\
+│ ├── get\_liquidity\_params.py\
+│ └── liquidity\_input\_params.json\
 └── truffle.js
 
 #### Directory Details[​](https://docs.kyberswap.com/Legacy/reserves/development-guides/reserves-ganache#directory-details) <a href="#directory-details" id="directory-details"></a>
@@ -327,9 +327,9 @@ For `bytes14Buy` and `bytes14Sell`, for simplicity, assume that we want to modif
 
 Suppose the reserve supports 3 tokens: DAI, BAT, and DGX. We want to make the following modifications to their base buy rates:
 
-* \+2.5% (+25 pts) to DAI\_BASE\_BUY\_RATE
-* \+1% (+10 pts) to BAT\_BASE\_BUY\_RATE
-* \-3% (-30 pts) to DGX\_BASE\_BUY\_RATE
+* +2.5% (+25 pts) to DAI\_BASE\_BUY\_RATE
+* +1% (+10 pts) to BAT\_BASE\_BUY\_RATE
+* -3% (-30 pts) to DGX\_BASE\_BUY\_RATE
 
 Note:
 
@@ -422,8 +422,7 @@ Modify the file `config/tokens.json` and add the new token section (replace NEW 
 |             `Ether`             |          The amount of initial ETH inventory to be deposited into the automated reserve. It is recommended to allocate at least 100 ETH.          |
 |             `Tokens`            | The amount of initial token inventory to be deposited into the automated reserve. It is recommended to allocate at least 100 ETH worth of tokens. |
 
-\
-
+\\
 
 The function that will be invoked to set liquidity parameters is:
 
@@ -483,7 +482,7 @@ Below, we will calculate the different parameters.
 | `_maxTokenToEthRateInPrecision` | pMax _initial price of token_ 10^18 | \_maxTokenToEthRateInPrecision = (2.0 _0.00005_ 10^18) = **100000000000000** |
 | `_minTokenToEthRateInPrecision` | pMin _initial price of token_ 10^18 |  \_minTokenToEthRateInPrecision = (0.5 _0.00005_ 10^18) = **25000000000000** |
 
-**Using get\_liquidity\_params.py Python script**[**​**](https://docs.kyberswap.com/Legacy/reserves/development-guides/reserves-ganache#using-get\_liquidity\_paramspy-python-script)
+**Using get\_liquidity\_params.py Python script**[**​**](https://docs.kyberswap.com/Legacy/reserves/development-guides/reserves-ganache#using-get_liquidity_paramspy-python-script)
 
 A Python script, located in `scripts/get_liquidity_params.py` in the `smart-contracts` repository, will help you calculate the liquidity parameters. Edit the input file `liquidity_input_params.json`, and specify the inputs similar to the considerations in the example above.
 
@@ -570,8 +569,7 @@ These 3 fields are explained below:
 | `maxOrdersPerTrade` | The maximum number of orders to traverse (and therefore use) to fulfill 1 trade request. |
 |     `burnFeeBps`    |   The fee amount in basis points (1 bp = 0.01%) that should be calculated in the price.  |
 
-\
-
+\\
 
 **3. Set the initial limit order to the Orderbook Reserve**[**​**](https://docs.kyberswap.com/Legacy/reserves/development-guides/reserves-ganache#3-set-the-initial-limit-order-to-the-orderbook-reserve)
 
@@ -604,8 +602,7 @@ These 7 fields are explained below:
 |    `ETHBuy`    |             The amount of ETH to buy in an ASK order.            |
 |   `TokenSell`  |           The amount of tokens to sell in an ASK order.          |
 
-\
-
+\\
 
 **4. Run the Truffle migration**[**​**](https://docs.kyberswap.com/Legacy/reserves/development-guides/reserves-ganache#4-run-the-truffle-migration)
 
