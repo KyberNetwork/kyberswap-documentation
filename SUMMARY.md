@@ -42,6 +42,7 @@
   * [Create Limit Orders](user-guide/limit-order/create-limit-orders.md)
   * [Update Limit Orders](user-guide/limit-order/update-limit-orders.md)
   * [Cancel Limit Orders](user-guide/limit-order/cancel-limit-orders.md)
+  * [Fill Limit Orders](user-guide/limit-order/fill-limit-orders.md)
   * [FAQ](user-guide/limit-order/faq.md)
 * [Cross-chain Swap](user-guide/cross-chain-swap.md)
 * [Kyber Earn](user-guide/kyber-earn/README.md)
