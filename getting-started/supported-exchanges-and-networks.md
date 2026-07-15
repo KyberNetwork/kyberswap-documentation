@@ -31,7 +31,7 @@ For developers integrating with the [KyberSwap Aggregator](../kyberswap-solution
 | EVM      | Monad (143)                                                       | ✅              | ✅               | ✅       | ✅                    |
 | EVM      | zkSync                                                            |                |                 |         | ✅                    |
 | EVM      | Mantle (5000)                                                     |                |                 |         | ✅                    |
-| EVM      | Robinhood (4663) <mark style="color:orange;">`Provisional`</mark> | ✅              | ✅               |         |                      |
+| EVM      | Robinhood (4663) <mark style="color:orange;">`Provisional`</mark> | ✅              | ✅               |         | ✅                    |
 | EVM      | Scroll                                                            |                |                 |         | ✅                    |
 | EVM      | Fantom                                                            |                |                 |         | ✅                    |
 | EVM      | Blast                                                             |                |                 |         | ✅                    |
