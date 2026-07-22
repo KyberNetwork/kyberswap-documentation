@@ -83,6 +83,7 @@ The Aggregator APIs require a chain **name** to be included in the path when cal
 * Etherlink (ChainID: 42793) -> `etherlink`
 * Monad (ChainID: 143) -> `monad`
 * MegaETH (ChainID: 4326) -> `megaeth`
+* Robinhood Chain (ChainID: 4663) -> `robinhood`
 {% endhint %}
 
 ### &#x20;Latest
@@ -90,17 +91,17 @@ The Aggregator APIs require a chain **name** to be included in the path when cal
 <figure><img src="../../../.gitbook/assets/Aggregator APIv1.jpg" alt=""><figcaption></figcaption></figure>
 
 {% openapi-operation spec="aggregator-api" path="/{chain}/api/v1/routes" method="get" %}
-[OpenAPI aggregator-api](https://4401d86825a13bf607936cc3a9f3897a.r2.cloudflarestorage.com/gitbook-x-prod-openapi/raw/698e6c3717e5d61030fcf2806033dc6093f2ddcc5ac1514ecae076f22b60bd56.yaml?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=dce48141f43c0191a2ad043a6888781c%2F20260602%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260602T161414Z&X-Amz-Expires=172800&X-Amz-Signature=2787c48b2eda6b816db3ad42aeb5b34ef8a6e2236d945787e5418cfdb35485e0&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
+[OpenAPI aggregator-api](https://4401d86825a13bf607936cc3a9f3897a.r2.cloudflarestorage.com/gitbook-x-prod-openapi/raw/698e6c3717e5d61030fcf2806033dc6093f2ddcc5ac1514ecae076f22b60bd56.yaml?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=dce48141f43c0191a2ad043a6888781c%2F20260722%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260722T160618Z&X-Amz-Expires=172800&X-Amz-Signature=7ac62a179f5a2fef2f568b63d267be33e572a3ed7bebec9a71fd03e979fd690d&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
 {% endopenapi-operation %}
 
 {% openapi-operation spec="aggregator-api" path="/{chain}/api/v1/route/build" method="post" %}
-[OpenAPI aggregator-api](https://4401d86825a13bf607936cc3a9f3897a.r2.cloudflarestorage.com/gitbook-x-prod-openapi/raw/698e6c3717e5d61030fcf2806033dc6093f2ddcc5ac1514ecae076f22b60bd56.yaml?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=dce48141f43c0191a2ad043a6888781c%2F20260602%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260602T161414Z&X-Amz-Expires=172800&X-Amz-Signature=2787c48b2eda6b816db3ad42aeb5b34ef8a6e2236d945787e5418cfdb35485e0&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
+[OpenAPI aggregator-api](https://4401d86825a13bf607936cc3a9f3897a.r2.cloudflarestorage.com/gitbook-x-prod-openapi/raw/698e6c3717e5d61030fcf2806033dc6093f2ddcc5ac1514ecae076f22b60bd56.yaml?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=dce48141f43c0191a2ad043a6888781c%2F20260722%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260722T160618Z&X-Amz-Expires=172800&X-Amz-Signature=7ac62a179f5a2fef2f568b63d267be33e572a3ed7bebec9a71fd03e979fd690d&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
 {% endopenapi-operation %}
 
 ### Legacy
 
 {% openapi-operation spec="aggregator-api" path="/{chain}/route/encode" method="get" %}
-[OpenAPI aggregator-api](https://4401d86825a13bf607936cc3a9f3897a.r2.cloudflarestorage.com/gitbook-x-prod-openapi/raw/698e6c3717e5d61030fcf2806033dc6093f2ddcc5ac1514ecae076f22b60bd56.yaml?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=dce48141f43c0191a2ad043a6888781c%2F20260602%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260602T161414Z&X-Amz-Expires=172800&X-Amz-Signature=2787c48b2eda6b816db3ad42aeb5b34ef8a6e2236d945787e5418cfdb35485e0&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
+[OpenAPI aggregator-api](https://4401d86825a13bf607936cc3a9f3897a.r2.cloudflarestorage.com/gitbook-x-prod-openapi/raw/698e6c3717e5d61030fcf2806033dc6093f2ddcc5ac1514ecae076f22b60bd56.yaml?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=dce48141f43c0191a2ad043a6888781c%2F20260722%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260722T160618Z&X-Amz-Expires=172800&X-Amz-Signature=7ac62a179f5a2fef2f568b63d267be33e572a3ed7bebec9a71fd03e979fd690d&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
 {% endopenapi-operation %}
 
 ## **KyberSwap positive slippage surplus collection**
