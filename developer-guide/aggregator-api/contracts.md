@@ -88,5 +88,10 @@ Monad (ChainID: 143)
 
 MegaETH (ChainID: 4326)
 
-* **MetaAggregationRouterV2:** [`0x6131B5fae19EA4f9D964eAc0408E4408b66337b5`](https://megaeth.blockscout.com/address/0x6131b5fae19ea4f9d964eac0408e4408b66337b5)
-* **InputScalingHelperV2:** [`0x2f577A41BeC1BE1152AeEA12e73b7391d15f655D`](https://megaeth.blockscout.com/address/0x2f577A41BeC1BE1152AeEA12e73b7391d15f655D)
+* **MetaAggregationRouterV2:** [`0x6131B5fae19EA4f9D964eAc0408E4408b66337b5`](https://mega.etherscan.io/address/0x6131b5fae19ea4f9d964eac0408e4408b66337b5)
+* **InputScalingHelperV2:** [`0x2f577A41BeC1BE1152AeEA12e73b7391d15f655D`](https://mega.etherscan.io/address/0x2f577A41BeC1BE1152AeEA12e73b7391d15f655D)
+
+Robinhood (ChainID: 4663)
+
+* **MetaAggregationRouterV2:** [`0x6131B5fae19EA4f9D964eAc0408E4408b66337b5`](https://robinhoodchain.blockscout.com/address/0x6131b5fae19ea4f9d964eac0408e4408b66337b5)
+* **InputScalingHelperV2:** [`0x2f577A41BeC1BE1152AeEA12e73b7391d15f655D`](https://robinhoodchain.blockscout.com/address/0x2f577A41BeC1BE1152AeEA12e73b7391d15f655D)

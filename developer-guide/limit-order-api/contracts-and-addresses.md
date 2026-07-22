@@ -94,5 +94,10 @@ Monad (ChainID: 143)
 
 MegaETH (ChainID: 4326)
 
-* **DSLOProtocol**: [`0xcab2FA2eeab7065B45CBcF6E3936dDE2506b4f6C`](https://megaeth.blockscout.com/address/0xcab2FA2eeab7065B45CBcF6E3936dDE2506b4f6C)
-* **WETHUnwrapper:** [`0x37334Cd06DFEcd2e9b3937a6dA17853d637A5b94`](https://megaeth.blockscout.com/address/0x37334Cd06DFEcd2e9b3937a6dA17853d637A5b94)
+* **DSLOProtocol**: [`0xcab2FA2eeab7065B45CBcF6E3936dDE2506b4f6C`](https://mega.etherscan.io/address/0xcab2fa2eeab7065b45cbcf6e3936dde2506b4f6c)
+* **WETHUnwrapper:** [`0x37334Cd06DFEcd2e9b3937a6dA17853d637A5b94`](https://mega.etherscan.io/address/0x37334Cd06DFEcd2e9b3937a6dA17853d637A5b94)
+
+Robinhood (ChainID: 4663)
+
+* **DSLOProtocol**: [`0xcab2FA2eeab7065B45CBcF6E3936dDE2506b4f6C`](https://robinhoodchain.blockscout.com/address/0xcab2FA2eeab7065B45CBcF6E3936dDE2506b4f6C)
+* **WETHUnwrapper:** [`0x37334Cd06DFEcd2e9b3937a6dA17853d637A5b94`](https://robinhoodchain.blockscout.com/address/0x37334Cd06DFEcd2e9b3937a6dA17853d637A5b94)
