@@ -75,3 +75,13 @@ You can visit our [Audits](../../security/audits.md) page for more details.
 * **KSDistributor**: [`0xEae300Ac9409B2072697CA1d5fD137f8bB286f9c`](https://monadscan.com/address/0xEae300Ac9409B2072697CA1d5fD137f8bB286f9c)
 
 </details>
+
+<details>
+
+<summary>Robinhood (ChainID: 4663)</summary>
+
+* **UniswapV4KEMHook**: [`0x4445520306c9C70952bDFEc28F3989f53d9f80C4`](https://robinhoodchain.blockscout.com/address/0x4445520306c9C70952bDFEc28F3989f53d9f80C4)
+* **WhitelistedCollector**: [`0x9ed9AFb6B4caFbDfB2d833B0e70845997300f6B9`](https://robinhoodchain.blockscout.com/address/0x9ed9AFb6B4caFbDfB2d833B0e70845997300f6B9)
+* **KSDistributor**: [`0xEae300Ac9409B2072697CA1d5fD137f8bB286f9c`](https://robinhoodchain.blockscout.com/address/0xEae300Ac9409B2072697CA1d5fD137f8bB286f9c)
+
+</details>
