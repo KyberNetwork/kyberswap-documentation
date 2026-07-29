@@ -8,7 +8,7 @@ description: Complete HTTP API reference for all ZaaS endpoints.
 
 **Base URL:** `https://zap-api.kyberswap.com/{chain}`
 
-All requests must include the `X-Client-ID` header. Without a whitelisted ID, the default rate limit is **10 requests per 10 seconds**. Contact [bd@kyber.network](mailto:bd@kyber.network) to request a higher quota.
+All requests must include the `X-Client-ID` header. Without a whitelisted ID, the default rate limit is **10 requests per 10 seconds**. Contact [business@kyber.network](mailto:business@kyber.network) to request a higher quota.
 
 ### Endpoints
 
