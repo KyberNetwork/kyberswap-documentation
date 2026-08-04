@@ -15,7 +15,7 @@ _Disclaimer: Data provided as-is. Please see the relevant_ [_Developer Guide_](.
 {% hint style="success" %}
 **Note on integration: clientID**
 
-In order to continuously improve the KyberSwap Aggregator, our APIs implement a client identifier field that enables us to understand how the APIs are being utilized. A stricter rate limit will be applied if a clientId is not provided. As a developer integrating with our APIs, **please preferably use the same clientID (i.e. company name or your app name)** for:
+Use the same `clientId` for the endpoints below. Set it to your company or app name. Requests without a `clientId` have stricter rate limits.
 
 * **\[V1] Get Swap Route**
   * **Header:** `x-client-id`
@@ -36,9 +36,21 @@ This will enable us to serve you better as we continuously strive to improve our
 
 ## EVM swap APIs
 
+{% hint style="warning" %}
+**Swap API gateway migration**
+
+Use the API gateway base URL: `https://api.kyberswap.com/swap/`.
+
+Include an `X-Api-Key` header with every request. The gateway provides better performance and higher rate limits.
+
+Contact the Business Development team as usual to request an API key.
+
+The previous base URL remains available. It is rate limited. Migrate integrations to the API gateway.
+{% endhint %}
+
 If you're just getting started with the KyberSwap Aggregator, you can refer to our [Execute A Swap With The Aggregator API](../how-to-guides/execute-a-swap-with-the-aggregator-api/) dev guide for information and code samples on how to query and execute swaps at superior rates. Note that there is also a [KyberSwap Widget](../how-to-guides/kyberswap-widget/) option for integrators who require a simple minimal-code implementation. For existing integrators, please refer to [Upgrading To APIv1](../how-to-guides/execute-a-swap-with-the-aggregator-api/upgrading-to-apiv1.md) for further details on the motivation behind the upgrade as well as the relevant changes to swap flow and parameters.
 
-To support more performant queries and the use of RFQ liquidity sources, KyberSwap highly encourages all integrators to implement the latest API `[V1]` version. While both versions of the API remains backwards compatible, only the `[V1]` APIs will continue to receive updates and can make use of RFQ liquidity sources, and hence developers are highly encouraged to implement the latest `[V1]` APIs to avoid any disruptions as the non-versioned API will eventually be deprecated.
+Use the latest `[V1]` APIs for faster queries and RFQ liquidity. Both API versions remain backward compatible. Only `[V1]` APIs receive updates and support RFQ liquidity. Migrate before the non-versioned API is deprecated.
 
 {% hint style="info" %}
 \[V1] `GET` `/routes` API is designed to be performant and real-time, the market moves constantly so it is recommended to not cache routes from client side for more than 5-10 seconds and to refetch a new route before swapping if the current swap is too long ago to avoid potential slippage.
@@ -48,7 +60,7 @@ To support more performant queries and the use of RFQ liquidity sources, KyberSw
 
 <summary>API statuses and support</summary>
 
-KyberSwap APIs uses the following statuses to minimize version miscommunications and ensure an uninterrupted service for the end user:
+KyberSwap APIs use these statuses to prevent version confusion and support uninterrupted service:
 
 * `Latest`: API is functional and supported. This is the recommended version for all integrators (new and existing).
 * `Legacy`: API remains functional with support for bugs only. No new feature updates.
@@ -86,22 +98,22 @@ The Aggregator APIs require a chain **name** to be included in the path when cal
 * Robinhood Chain (ChainID: 4663) -> `robinhood`
 {% endhint %}
 
-### &#x20;Latest
+### Latest
 
 <figure><img src="../../../.gitbook/assets/Aggregator APIv1.jpg" alt=""><figcaption></figcaption></figure>
 
 {% openapi-operation spec="aggregator-api" path="/{chain}/api/v1/routes" method="get" %}
-[OpenAPI aggregator-api](https://4401d86825a13bf607936cc3a9f3897a.r2.cloudflarestorage.com/gitbook-x-prod-openapi/raw/698e6c3717e5d61030fcf2806033dc6093f2ddcc5ac1514ecae076f22b60bd56.yaml?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=dce48141f43c0191a2ad043a6888781c%2F20260722%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260722T160618Z&X-Amz-Expires=172800&X-Amz-Signature=7ac62a179f5a2fef2f568b63d267be33e572a3ed7bebec9a71fd03e979fd690d&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
+[OpenAPI aggregator-api](https://4401d86825a13bf607936cc3a9f3897a.r2.cloudflarestorage.com/gitbook-x-prod-openapi/raw/698e6c3717e5d61030fcf2806033dc6093f2ddcc5ac1514ecae076f22b60bd56.yaml?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=dce48141f43c0191a2ad043a6888781c%2F20260804%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260804T103832Z&X-Amz-Expires=172800&X-Amz-Signature=c691b7d216c8cb6da0dd93111282a7e5cdb239127b4129aeb8747803646a54a4&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
 {% endopenapi-operation %}
 
 {% openapi-operation spec="aggregator-api" path="/{chain}/api/v1/route/build" method="post" %}
-[OpenAPI aggregator-api](https://4401d86825a13bf607936cc3a9f3897a.r2.cloudflarestorage.com/gitbook-x-prod-openapi/raw/698e6c3717e5d61030fcf2806033dc6093f2ddcc5ac1514ecae076f22b60bd56.yaml?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=dce48141f43c0191a2ad043a6888781c%2F20260722%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260722T160618Z&X-Amz-Expires=172800&X-Amz-Signature=7ac62a179f5a2fef2f568b63d267be33e572a3ed7bebec9a71fd03e979fd690d&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
+[OpenAPI aggregator-api](https://4401d86825a13bf607936cc3a9f3897a.r2.cloudflarestorage.com/gitbook-x-prod-openapi/raw/698e6c3717e5d61030fcf2806033dc6093f2ddcc5ac1514ecae076f22b60bd56.yaml?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=dce48141f43c0191a2ad043a6888781c%2F20260804%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260804T103832Z&X-Amz-Expires=172800&X-Amz-Signature=c691b7d216c8cb6da0dd93111282a7e5cdb239127b4129aeb8747803646a54a4&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
 {% endopenapi-operation %}
 
 ### Legacy
 
 {% openapi-operation spec="aggregator-api" path="/{chain}/route/encode" method="get" %}
-[OpenAPI aggregator-api](https://4401d86825a13bf607936cc3a9f3897a.r2.cloudflarestorage.com/gitbook-x-prod-openapi/raw/698e6c3717e5d61030fcf2806033dc6093f2ddcc5ac1514ecae076f22b60bd56.yaml?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=dce48141f43c0191a2ad043a6888781c%2F20260722%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260722T160618Z&X-Amz-Expires=172800&X-Amz-Signature=7ac62a179f5a2fef2f568b63d267be33e572a3ed7bebec9a71fd03e979fd690d&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
+[OpenAPI aggregator-api](https://4401d86825a13bf607936cc3a9f3897a.r2.cloudflarestorage.com/gitbook-x-prod-openapi/raw/698e6c3717e5d61030fcf2806033dc6093f2ddcc5ac1514ecae076f22b60bd56.yaml?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=dce48141f43c0191a2ad043a6888781c%2F20260804%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260804T103832Z&X-Amz-Expires=172800&X-Amz-Signature=c691b7d216c8cb6da0dd93111282a7e5cdb239127b4129aeb8747803646a54a4&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
 {% endopenapi-operation %}
 
 ## **KyberSwap positive slippage surplus collection**
@@ -113,8 +125,6 @@ In the event that the market moves in favor of the trade which results in a surp
 
 Note that this surplus is different from fees as it only applies in cases where the executed swap rate is better than the estimated rate at the point of transaction confirmation. Please refer to [slippage](../../../getting-started/foundational-topics/decentralized-finance/slippage.md) for more information.
 {% endhint %}
-
-
 
 ## **KyberSwap Dust Collector**
 
