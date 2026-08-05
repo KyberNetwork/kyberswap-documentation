@@ -2,6 +2,67 @@
 
 ## Deployment Contracts
 
+### V3 contracts
+
+Ethereum (ChainID: 1)
+
+* KSZapRouterV3: [`0x3bdB21Ea8793AcBF0cE18954865b7572694d037f`](https://etherscan.io/address/0x3bdB21Ea8793AcBF0cE18954865b7572694d037f)
+* KSZapValidatorV3Part1: [`0x00F7EE284f94085f664c6cA5a88cc4B3399B685c`](https://etherscan.io/address/0x00F7EE284f94085f664c6cA5a88cc4B3399B685c)
+
+BSC (ChainID: 56)
+
+* KSZapRouterV3: [`0x3bdB21Ea8793AcBF0cE18954865b7572694d037f`](https://bscscan.com/address/0x3bdB21Ea8793AcBF0cE18954865b7572694d037f)
+* KSZapValidatorV3Part1: [`0x00F7EE284f94085f664c6cA5a88cc4B3399B685c`](https://bscscan.com/address/0x00F7EE284f94085f664c6cA5a88cc4B3399B685c)
+
+Arbitrum (ChainID: 42161)
+
+* KSZapRouterV3: [`0x3bdB21Ea8793AcBF0cE18954865b7572694d037f`](https://arbiscan.io/address/0x3bdB21Ea8793AcBF0cE18954865b7572694d037f)
+* KSZapValidatorV3Part1: [`0x00F7EE284f94085f664c6cA5a88cc4B3399B685c`](https://arbiscan.io/address/0x00F7EE284f94085f664c6cA5a88cc4B3399B685c)
+
+Polygon PoS (ChainID: 137)
+
+* KSZapRouterV3: [`0x3bdB21Ea8793AcBF0cE18954865b7572694d037f`](https://polygonscan.com/address/0x3bdB21Ea8793AcBF0cE18954865b7572694d037f)
+* KSZapValidatorV3Part1: [`0x00F7EE284f94085f664c6cA5a88cc4B3399B685c`](https://polygonscan.com/address/0x00F7EE284f94085f664c6cA5a88cc4B3399B685c)
+
+Optimism (ChainID: 10)
+
+* KSZapRouterV3: [`0x3bdB21Ea8793AcBF0cE18954865b7572694d037f`](https://optimistic.etherscan.io/address/0x3bdB21Ea8793AcBF0cE18954865b7572694d037f)
+* KSZapValidatorV3Part1: [`0x00F7EE284f94085f664c6cA5a88cc4B3399B685c`](https://optimistic.etherscan.io/address/0x00F7EE284f94085f664c6cA5a88cc4B3399B685c)
+
+Avalanche (ChainID: 43114)
+
+* KSZapRouterV3: [`0x3bdB21Ea8793AcBF0cE18954865b7572694d037f`](https://snowscan.xyz/address/0x3bdB21Ea8793AcBF0cE18954865b7572694d037f)
+* KSZapValidatorV3Part1: [`0x00F7EE284f94085f664c6cA5a88cc4B3399B685c`](https://snowscan.xyz/address/0x00F7EE284f94085f664c6cA5a88cc4B3399B685c)
+
+Base (ChainID: 8453)
+
+* KSZapRouterV3: [`0x3bdB21Ea8793AcBF0cE18954865b7572694d037f`](https://basescan.org/address/0x3bdB21Ea8793AcBF0cE18954865b7572694d037f)
+* KSZapValidatorV3Part1: [`0x00F7EE284f94085f664c6cA5a88cc4B3399B685c`](https://basescan.org/address/0x00F7EE284f94085f664c6cA5a88cc4B3399B685c)
+
+Linea (ChainID: 59144)
+
+* KSZapRouterV3: [`0x3bdB21Ea8793AcBF0cE18954865b7572694d037f`](https://lineascan.build/address/0x3bdB21Ea8793AcBF0cE18954865b7572694d037f)
+* KSZapValidatorV3Part1: [`0x00F7EE284f94085f664c6cA5a88cc4B3399B685c`](https://lineascan.build/address/0x00F7EE284f94085f664c6cA5a88cc4B3399B685c)
+
+Berachain (ChainID: 80094)
+
+* KSZapRouterV3: [`0x3bdB21Ea8793AcBF0cE18954865b7572694d037f`](https://berascan.com/address/0x3bdB21Ea8793AcBF0cE18954865b7572694d037f)
+* KSZapValidatorV3Part1: [`0x00F7EE284f94085f664c6cA5a88cc4B3399B685c`](https://berascan.com/address/0x00F7EE284f94085f664c6cA5a88cc4B3399B685c)
+
+Monad (ChainID: 143)
+
+* KSZapRouterV3: [`0x3bdB21Ea8793AcBF0cE18954865b7572694d037f`](https://monadscan.com/address/0x3bdB21Ea8793AcBF0cE18954865b7572694d037f)
+* KSZapValidatorV3Part1: [`0x00F7EE284f94085f664c6cA5a88cc4B3399B685c`](https://monadscan.com/address/0x00F7EE284f94085f664c6cA5a88cc4B3399B685c)
+
+Robinhood (ChainID: 4663)
+
+* KSZapRouterV3: [`0x3bdB21Ea8793AcBF0cE18954865b7572694d037f`](https://robinhoodchain.blockscout.com/address/0x3bdB21Ea8793AcBF0cE18954865b7572694d037f)
+* KSZapValidatorV3Part1: [`0x00F7EE284f94085f664c6cA5a88cc4B3399B685c`](https://robinhoodchain.blockscout.com/address/0x00F7EE284f94085f664c6cA5a88cc4B3399B685c)
+
+<details>
+
+<summary>V2 contracts</summary>
+
 Ethereum (ChainID: 1)
 
 * **KSZapRouterPosition**: [`0x0e97c887b61ccd952a53578b04763e7134429e05`](https://etherscan.io/address/0x0e97c887b61ccd952a53578b04763e7134429e05)
@@ -64,4 +125,8 @@ Ronin (ChainID: 2020)
 
 * **KSZapRouterPosition**: [`0x0e97c887b61ccd952a53578b04763e7134429e05`](https://app.roninchain.com/address/0x0e97c887b61ccd952a53578b04763e7134429e05)
 * **KSZapValidatorV2Part1**: [`0xa16f32442209c6b978431818aa535bcc9ad2863e`](https://app.roninchain.com/address/0xa16f32442209c6b978431818aa535bcc9ad2863e)
+
+</details>
+
+
 
