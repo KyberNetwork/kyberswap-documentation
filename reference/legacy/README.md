@@ -1,6 +1,5 @@
 ---
 description: Restless Innovation
-noIndex: true
 noRobotsIndex: true
 layout:
   width: default
