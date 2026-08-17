@@ -10,34 +10,35 @@ For traders, you can specify which DEXs are considered when computing your swap 
 For developers integrating with the [KyberSwap Aggregator](../kyberswap-solutions/kyberswap-aggregator/), please refer to [DEX IDs](../developer-guide/aggregator-api/dex-ids.md) for internal mapping of DEXs used for filtering via the [API](../developer-guide/aggregator-api/aggregator-api-specification/).
 {% endhint %}
 
-| **Type** | **Network (Chain ID)**                                            | **Aggregator** | **Limit Order** | **Zap** | **Cross-chain Swap** |
-| -------- | ----------------------------------------------------------------- | -------------- | --------------- | ------- | -------------------- |
-| EVM      | Ethereum (1)                                                      | ✅              | ✅               | ✅       | ✅                    |
-| EVM      | BNB Chain (56)                                                    | ✅              | ✅               | ✅       | ✅                    |
-| EVM      | Avalanche (43114)                                                 | ✅              | ✅               | ✅       | ✅                    |
-| EVM      | Berachain (80094)                                                 | ✅              | ✅               | ✅       | ✅                    |
-| EVM      | Sonic (146)                                                       | ✅              | ✅               | ✅       | ✅                    |
-| EVM      | Ronin (2020)                                                      | ✅              | ✅               | ✅       | ✅                    |
-| EVM      | Base (8453)                                                       | ✅              | ✅               | ✅       | ✅                    |
-| EVM      | Arbitrum (42161)                                                  | ✅              | ✅               | ✅       | ✅                    |
-| EVM      | Optimism (10)                                                     | ✅              | ✅               | ✅       | ✅                    |
-| EVM      | Polygon POS (137)                                                 | ✅              | ✅               | ✅       | ✅                    |
-| EVM      | Unichain (130)                                                    | ✅              | ✅               |         | ✅                    |
-| EVM      | Linea (59144)                                                     | ✅              | ✅               | ✅       | ✅                    |
-| EVM      | HyperEVM (999)                                                    | ✅              | ✅               |         | ✅                    |
-| EVM      | Plasma (9745)                                                     | ✅              |                 |         | ✅                    |
-| EVM      | Etherlink (42793)                                                 | ✅              |                 |         | ✅                    |
-| EVM      | MegaETH (4326)                                                    | ✅              | ✅               |         | ✅                    |
-| EVM      | Monad (143)                                                       | ✅              | ✅               | ✅       | ✅                    |
-| EVM      | zkSync                                                            |                |                 |         | ✅                    |
-| EVM      | Mantle (5000)                                                     |                |                 |         | ✅                    |
-| EVM      | Robinhood (4663) <mark style="color:orange;">`Provisional`</mark> | ✅              | ✅               | ✅       | ✅                    |
-| EVM      | Scroll                                                            |                |                 |         | ✅                    |
-| EVM      | Fantom                                                            |                |                 |         | ✅                    |
-| EVM      | Blast                                                             |                |                 |         | ✅                    |
-| Non-EVM  | NEAR                                                              |                |                 |         | ✅                    |
-| Non-EVM  | Bitcoin                                                           |                |                 |         | ✅                    |
-| Non-EVM  | Solana                                                            |                |                 |         | ✅                    |
+| **Type** | **Network (Chain ID)**                                       | **Aggregator** | **Limit Order** | **Zap** | **Cross-chain Swap** |
+| -------- | ------------------------------------------------------------ | -------------- | --------------- | ------- | -------------------- |
+| EVM      | Ethereum (1)                                                 | ✅              | ✅               | ✅       | ✅                    |
+| EVM      | BNB Chain (56)                                               | ✅              | ✅               | ✅       | ✅                    |
+| EVM      | Avalanche (43114)                                            | ✅              | ✅               | ✅       | ✅                    |
+| EVM      | Berachain (80094)                                            | ✅              | ✅               | ✅       | ✅                    |
+| EVM      | Sonic (146)                                                  | ✅              | ✅               | ✅       | ✅                    |
+| EVM      | Ronin (2020)                                                 | ✅              | ✅               | ✅       | ✅                    |
+| EVM      | Base (8453)                                                  | ✅              | ✅               | ✅       | ✅                    |
+| EVM      | Arbitrum (42161)                                             | ✅              | ✅               | ✅       | ✅                    |
+| EVM      | Optimism (10)                                                | ✅              | ✅               | ✅       | ✅                    |
+| EVM      | Polygon POS (137)                                            | ✅              | ✅               | ✅       | ✅                    |
+| EVM      | Unichain (130)                                               | ✅              | ✅               |         | ✅                    |
+| EVM      | Linea (59144)                                                | ✅              | ✅               | ✅       | ✅                    |
+| EVM      | HyperEVM (999)                                               | ✅              | ✅               |         | ✅                    |
+| EVM      | Plasma (9745)                                                | ✅              |                 |         | ✅                    |
+| EVM      | Etherlink (42793)                                            | ✅              |                 |         | ✅                    |
+| EVM      | MegaETH (4326)                                               | ✅              | ✅               |         | ✅                    |
+| EVM      | Monad (143)                                                  | ✅              | ✅               | ✅       | ✅                    |
+| EVM      | zkSync                                                       |                |                 |         | ✅                    |
+| EVM      | Mantle (5000)                                                |                |                 |         | ✅                    |
+| EVM      | Robinhood (4663)                                             | ✅              | ✅               | ✅       | ✅                    |
+| EVM      | Rise (4153) <mark style="color:orange;">`Provisional`</mark> | ✅              | ✅               |         |                      |
+| EVM      | Scroll                                                       |                |                 |         | ✅                    |
+| EVM      | Fantom                                                       |                |                 |         | ✅                    |
+| EVM      | Blast                                                        |                |                 |         | ✅                    |
+| Non-EVM  | NEAR                                                         |                |                 |         | ✅                    |
+| Non-EVM  | Bitcoin                                                      |                |                 |         | ✅                    |
+| Non-EVM  | Solana                                                       |                |                 |         | ✅                    |
 
 **Provisional networks** (with tag <mark style="color:orange;">`Provisional`</mark>) are newly added chains that are currently in an initial observation period. We keep these networks under close monitoring to evaluate their overall stability within the KyberSwap ecosystem. These networks provide the full KyberSwap experience with all supported functions available. However, please be aware that support for any provisional network may be discontinued following this evaluation.
 
