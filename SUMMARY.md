@@ -38,6 +38,7 @@
 * [Swap](user-guide/swap/README.md)
   * [Instantly Swap At The Best Rate](user-guide/swap/instantly-swap-at-the-best-rate.md)
   * [Smart Settlement](developer-guide/start-here/foundational-solutions/smart-settlement-better-swap-output-with-lower-slippage.md)
+  * [Token Discovery](user-guide/swap/token-discovery.md)
   * [FAQ](user-guide/swap/faq.md)
 * [Limit Order](user-guide/limit-order/README.md)
   * [Create Limit Orders](user-guide/limit-order/create-limit-orders.md)
