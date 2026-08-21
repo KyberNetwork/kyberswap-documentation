@@ -1,13 +1,10 @@
+---
+description: How to set automatic exit conditions for your liquidity positions
+---
+
 # User Guide
 
-Smart Exit is currently available on BNB Chain and Base for the following protocols:
-
-* Uniswap v3
-* Uniswap v4 (including FairFlow)
-* PancakeSwap v3
-* PancakeSwap Infinity CL (including FairFlow)
-
-_Support for chains and protocols will be updated over time._
+Smart Exit is available on select chains and protocols. Refer to [Supported Exchanges and Networks](../../getting-started/supported-exchanges-and-networks.md#smart-exit) for the full list of supported chains and protocols.
 
 ## Create Smart Exit order
 
