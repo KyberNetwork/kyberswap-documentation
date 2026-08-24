@@ -44,11 +44,10 @@ Users are responsible to ensure that their use of KyberSwap complies with all ap
 
 <summary>Is KyberSwap licensed by the Monetary Authority of Singapore (MAS)?</summary>
 
-​Neither KyberSwap, Kyber Network nor any entity affiliated therewith :\
-(i) ​is regulated by MAS; or\
-(ii) ​holds a licence issued by MAS for the provision of, or is authorised by MAS to provide, any service relating to tokens (whether digital payment tokens under the Payment Services Act of Singapore or digital tokens under the Financial Markets Services Act of Singapore).
-
-​Please also note that this Site and its contents have not been reviewed by MAS.
+​A. This Website and its contents have not been reviewed by the Monetary Authority of Singapore (“MAS”).\
+B. Neither KyberSwap nor any entity affiliated therewith:\
+(i) is regulated by MAS; or\
+(ii) holds a licence issued by MAS for the provision of, or is authorised by MAS to provide, any service relating to tokens (whether digital payment tokens under the Payment Services Act of Singapore or digital tokens under the Financial Markets Services Act of Singapore).
 
 </details>
 
