@@ -104,10 +104,6 @@ This is expected and your transaction has completed successfully. Smart Settleme
 
 
 
-{% hint style="info" %}
-Smart Settlement is currently available only to selected client IDs. Smart Settlement is rolling out gradually and will be expanded over time. If you are interested, reach out to us on #business-outreach channel on [Discord](https://discord.gg/kyberswap) or at [**business@kyber.network**](mailto:business@kyber.network).
-{% endhint %}
-
 ## Need Help?
 
 * Join our [Discord](https://discord.gg/kyberswap) or [Telegram](https://t.me/kyberswap) for support.
