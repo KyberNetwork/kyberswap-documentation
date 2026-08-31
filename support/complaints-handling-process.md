@@ -1,3 +1,7 @@
+---
+hidden: true
+---
+
 # Complaints Handling Process
 
 DMM aims to process any complaints received in a fair, consistent, and prompt manner.
