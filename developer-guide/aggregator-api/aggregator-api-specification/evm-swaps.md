@@ -1,5 +1,23 @@
 ---
 description: KyberSwap Aggregator EVM APIs
+layout:
+  width: wide
+  title:
+    visible: true
+  description:
+    visible: true
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+  metadata:
+    visible: true
+  tags:
+    visible: true
+  actions:
+    visible: true
 ---
 
 # API - EVM Swaps
@@ -10,7 +28,7 @@ _Disclaimer: Data provided as-is. Please see the relevant_ [_Developer Guide_](.
 
 ## Download OpenAPI specification:
 
-{% file src="../../../.gitbook/assets/KyberSwapAggregator_EVMAPIs_v2.12.1.yaml" %}
+{% file src="../../../.gitbook/assets/KyberSwapAggregator_EVMAPIs_v2.13.0.yaml" %}
 
 {% hint style="success" %}
 **Note on integration: clientID**
@@ -48,7 +66,7 @@ Contact the Business Development team as usual to request an API key.
 The previous base URL remains available. It is rate limited. Migrate integrations to the API gateway.
 {% endhint %}
 
-If you're just getting started with the KyberSwap Aggregator, you can refer to our [Execute A Swap With The Aggregator API](../how-to-guides/execute-a-swap-with-the-aggregator-api/) dev guide for information and code samples on how to query and execute swaps at superior rates. Note that there is also a [KyberSwap Widget](../how-to-guides/kyberswap-widget/) option for integrators who require a simple minimal-code implementation. For existing integrators, please refer to [Upgrading To APIv1](../how-to-guides/execute-a-swap-with-the-aggregator-api/upgrading-to-apiv1.md) for further details on the motivation behind the upgrade as well as the relevant changes to swap flow and parameters.
+If you're just getting started with the KyberSwap Aggregator, you can refer to our [Execute A Swap With The Aggregator API](../how-to-guides/execute-a-swap-with-the-aggregator-api/) dev guide for information and code samples on how to query and execute swaps at superior rates. Note that there is also a [KyberSwap Widget](../how-to-guides/kyberswap-widget/) option for integrators who require a simple minimal-code implementation. For existing integrators, please refer to Upgrading To APIv1 for further details on the motivation behind the upgrade as well as the relevant changes to swap flow and parameters.
 
 Use the latest `[V1]` APIs for faster queries and RFQ liquidity. Both API versions remain backward compatible. Only `[V1]` APIs receive updates and support RFQ liquidity. Migrate before the non-versioned API is deprecated.
 
@@ -100,20 +118,42 @@ The Aggregator APIs require a chain **name** to be included in the path when cal
 
 ### Latest
 
-<figure><img src="../../../.gitbook/assets/Aggregator APIv1.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://1368568567-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fw1XgQJc40kVeGUIxgI7c%2Fuploads%2Fgit-blob-f599662c2cc1d73415837ad0deff7e06ef0403de%2FAggregator%20APIv1.jpg?alt=media" alt=""><figcaption></figcaption></figure>
 
 {% openapi-operation spec="aggregator-api" path="/{chain}/api/v1/routes" method="get" %}
-[OpenAPI aggregator-api](https://4401d86825a13bf607936cc3a9f3897a.r2.cloudflarestorage.com/gitbook-x-prod-openapi/raw/698e6c3717e5d61030fcf2806033dc6093f2ddcc5ac1514ecae076f22b60bd56.yaml?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=dce48141f43c0191a2ad043a6888781c%2F20260804%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260804T103832Z&X-Amz-Expires=172800&X-Amz-Signature=c691b7d216c8cb6da0dd93111282a7e5cdb239127b4129aeb8747803646a54a4&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
+[OpenAPI aggregator-api](https://4401d86825a13bf607936cc3a9f3897a.r2.cloudflarestorage.com/gitbook-x-prod-openapi/raw/7733f9404c9c46d41a5add8f2d5d445043fc62a22ec958ef413c5489a9d9b5ad.yaml?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=dce48141f43c0191a2ad043a6888781c%2F20260903%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260903T081705Z&X-Amz-Expires=172800&X-Amz-Signature=68341b626bdf8940a1499e4d11b635fa93359db5154e1fd7d39b40662cc9eadc&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
 {% endopenapi-operation %}
 
 {% openapi-operation spec="aggregator-api" path="/{chain}/api/v1/route/build" method="post" %}
-[OpenAPI aggregator-api](https://4401d86825a13bf607936cc3a9f3897a.r2.cloudflarestorage.com/gitbook-x-prod-openapi/raw/698e6c3717e5d61030fcf2806033dc6093f2ddcc5ac1514ecae076f22b60bd56.yaml?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=dce48141f43c0191a2ad043a6888781c%2F20260804%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260804T103832Z&X-Amz-Expires=172800&X-Amz-Signature=c691b7d216c8cb6da0dd93111282a7e5cdb239127b4129aeb8747803646a54a4&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
+[OpenAPI aggregator-api](https://4401d86825a13bf607936cc3a9f3897a.r2.cloudflarestorage.com/gitbook-x-prod-openapi/raw/7733f9404c9c46d41a5add8f2d5d445043fc62a22ec958ef413c5489a9d9b5ad.yaml?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=dce48141f43c0191a2ad043a6888781c%2F20260903%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260903T081705Z&X-Amz-Expires=172800&X-Amz-Signature=68341b626bdf8940a1499e4d11b635fa93359db5154e1fd7d39b40662cc9eadc&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
+{% endopenapi-operation %}
+
+## \[V1 BETA] Get Swap Route And Encoded Data
+
+{% hint style="warning" %}
+**Beta — whitelisted clients only**
+
+This endpoint is in **beta** and only available to whitelisted and configured clients (access is gated at the API gateway). Contact the Business Development team to request access.
+{% endhint %}
+
+{% hint style="danger" %}
+**Only call this endpoint when you have an actual swap intent**
+
+This endpoint combines route finding and transaction building into a single call, and unlike the legacy `GET` `/route/encode`, it does **not** exclude RFQ liquidity sources - every call may consume a live market maker quote. Only call this endpoint when you intend to actually execute the returned swap.
+
+**Calling this API without following through with the swap will lead to your client being banned.** If you only need a route preview (no intent to swap), use \[V1] `GET` `/routes` instead.
+{% endhint %}
+
+This endpoint **replaces the legacy** `GET` `/route/encode` endpoint, combining \[V1] Get Swap Route and \[V1] Post Swap Route For Encoded Data into a single round trip to reduce latency, while (unlike the legacy endpoint) supporting RFQ liquidity sources. It also replaces old legacy field names with V1's new field names.
+
+{% openapi-operation spec="aggregator-api" path="/{chain}/api/v1/swap" method="get" %}
+[OpenAPI aggregator-api](https://4401d86825a13bf607936cc3a9f3897a.r2.cloudflarestorage.com/gitbook-x-prod-openapi/raw/7733f9404c9c46d41a5add8f2d5d445043fc62a22ec958ef413c5489a9d9b5ad.yaml?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=dce48141f43c0191a2ad043a6888781c%2F20260903%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260903T081705Z&X-Amz-Expires=172800&X-Amz-Signature=68341b626bdf8940a1499e4d11b635fa93359db5154e1fd7d39b40662cc9eadc&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
 {% endopenapi-operation %}
 
 ### Legacy
 
 {% openapi-operation spec="aggregator-api" path="/{chain}/route/encode" method="get" %}
-[OpenAPI aggregator-api](https://4401d86825a13bf607936cc3a9f3897a.r2.cloudflarestorage.com/gitbook-x-prod-openapi/raw/698e6c3717e5d61030fcf2806033dc6093f2ddcc5ac1514ecae076f22b60bd56.yaml?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=dce48141f43c0191a2ad043a6888781c%2F20260804%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260804T103832Z&X-Amz-Expires=172800&X-Amz-Signature=c691b7d216c8cb6da0dd93111282a7e5cdb239127b4129aeb8747803646a54a4&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
+[OpenAPI aggregator-api](https://4401d86825a13bf607936cc3a9f3897a.r2.cloudflarestorage.com/gitbook-x-prod-openapi/raw/7733f9404c9c46d41a5add8f2d5d445043fc62a22ec958ef413c5489a9d9b5ad.yaml?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=dce48141f43c0191a2ad043a6888781c%2F20260903%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260903T081705Z&X-Amz-Expires=172800&X-Amz-Signature=68341b626bdf8940a1499e4d11b635fa93359db5154e1fd7d39b40662cc9eadc&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
 {% endopenapi-operation %}
 
 ## **KyberSwap positive slippage surplus collection**
@@ -123,7 +163,7 @@ For every swap executed by the KyberSwap Aggregator, users will be able to see a
 
 In the event that the market moves in favor of the trade which results in a surplus of tokens above the estimated output amount (i.e positive slippage), this surplus will initially accrue to KyberSwap. Surplus sharing programs will be explored as the KyberSwap ecosystem grows to be more self-sufficient. _**Critically, users are guaranteed at least the minimum received amount (the estimated output adjusted by the selected max slippage) that they confirmed before submitting the transaction.**_
 
-Note that this surplus is different from fees as it only applies in cases where the executed swap rate is better than the estimated rate at the point of transaction confirmation. Please refer to [slippage](../../../getting-started/foundational-topics/decentralized-finance/slippage.md) for more information.
+Note that this surplus is different from fees as it only applies in cases where the executed swap rate is better than the estimated rate at the point of transaction confirmation. Please refer to slippage for more information.
 {% endhint %}
 
 ## **KyberSwap Dust Collector**
