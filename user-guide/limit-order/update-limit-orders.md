@@ -1,5 +1,6 @@
 ---
 description: Manage Your Positions Effortlessly
+hidden: true
 ---
 
 # Update Limit Orders
