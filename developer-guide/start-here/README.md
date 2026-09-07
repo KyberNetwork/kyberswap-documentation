@@ -17,9 +17,9 @@ KyberSwap offers 3 APIs. Find your use case in the table below.
 * [**Limit Order API:**](https://docs.kyberswap.com/kyberswap-solutions/limit-order/developer-guides) A set of [Maker](../limit-order-api/#maker) and [Taker](../limit-order-api/#taker) APIs enables gasless management of limit orders secured by the option to settle on-chain. When settling orders on-chain, KyberSwap Limit Order provides the relevant APIs required to encode the call data to be sent to the Limit Order smart contracts.
 * [**KyberSwap Zap as a Service (ZaaS)**](../zap-as-a-service-zaas-api/): An API that streamlines decentralized liquidity provision. Powered by [KyberSwap Aggregator](../aggregator-api/), Zap minimizes price impact and employs fallback logic to execute additional swaps when necessary - maximizing capital efficiency and reducing failure rates, even during volatile market conditions.
 
-## Rate Limits & Client ID
+## Rate Limits & Authentication
 
-KyberSwap APIs do not require authentication. Include `x-client-id` header in every request, using your app or company name as the value. Refer to [Rate Limits & Client ID](rate-limits-and-client-id.md) for further details.
+KyberSwap APIs identify each request by a header. Include `x-client-id` in every request, using your app or company name as the value. The Aggregator API also accepts an `X-Api-Key` header, used with the API gateway for higher rate limits. Refer to [Rate Limits & Authentication](rate-limits-and-client-id.md) for further details.
 
 
 

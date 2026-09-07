@@ -67,7 +67,7 @@
 ## Developer Guide
 
 * [Start Here](developer-guide/start-here/README.md)
-  * [Rate Limits & Client ID](developer-guide/start-here/rate-limits-and-client-id.md)
+  * [Rate Limits & Authentication](developer-guide/start-here/rate-limits-and-client-id.md)
   * [Foundational Solutions](developer-guide/start-here/foundational-solutions/README.md)
     * [Dynamic Trade Routing](developer-guide/start-here/foundational-solutions/dynamic-trade-routing.md)
     * [Smart Settlement](developer-guide/start-here/foundational-solutions/smart-settlement-better-swap-output-with-lower-slippage.md)
