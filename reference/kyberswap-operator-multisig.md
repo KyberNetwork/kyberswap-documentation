@@ -6,90 +6,123 @@ To facilitate the smooth running of campaigns and liquidity mining programs, Kyb
 
 The KyberSwap Operator MultiSig has been deployed at the same address across all chains that have or previously had active campaigns and liquidity mining programs. For your convenience, the full list of contracts can be found below:
 
-<details>
+<details open>
 
 <summary>Ethereum (ChainID: 1)</summary>
 
-* **MultiSigWalletWithDailyLimit:** [`0x2475039bF2ECDCe2EE4C82954e64bE9674f43546`](https://etherscan.io/address/0x2475039bF2ECDCe2EE4C82954e64bE9674f43546)
+* **MultiSigWalletWithDailyLimit:** [`0xeB28e1C4c47b471a88B00bA93163a3a44AE65D9C`](https://etherscan.io/address/0xeB28e1C4c47b471a88B00bA93163a3a44AE65D9C)
 
 </details>
 
-<details>
+<details open>
 
 <summary>BSC (ChainID: 56)</summary>
 
-* **MultiSigWalletWithDailyLimit:** [`0x2475039bF2ECDCe2EE4C82954e64bE9674f43546`](https://bscscan.com/address/0x2475039bF2ECDCe2EE4C82954e64bE9674f43546)
+* **MultiSigWalletWithDailyLimit:** [`0xeB28e1C4c47b471a88B00bA93163a3a44AE65D9C`](https://bscscan.com/address/0xeB28e1C4c47b471a88B00bA93163a3a44AE65D9C)
 
 </details>
 
-<details>
+<details open>
 
 <summary>Arbitrum (ChainID: 42161)</summary>
 
-* **MultiSigWalletWithDailyLimit:** [`0x2475039bF2ECDCe2EE4C82954e64bE9674f43546`](https://arbiscan.io/address/0x2475039bF2ECDCe2EE4C82954e64bE9674f43546)
+* **MultiSigWalletWithDailyLimit:** [`0xeB28e1C4c47b471a88B00bA93163a3a44AE65D9C`](https://arbiscan.io/address/0xeB28e1C4c47b471a88B00bA93163a3a44AE65D9C)
 
 </details>
 
-<details>
+<details open>
 
 <summary>Polygon PoS (ChainID: 137)</summary>
 
-* **MultiSigWalletWithDailyLimit:** [`0x2475039bF2ECDCe2EE4C82954e64bE9674f43546`](https://polygonscan.com/address/0x2475039bF2ECDCe2EE4C82954e64bE9674f43546)
+* **MultiSigWalletWithDailyLimit:** [`0xeB28e1C4c47b471a88B00bA93163a3a44AE65D9C`](https://polygonscan.com/address/0xeB28e1C4c47b471a88B00bA93163a3a44AE65D9C)
 
 </details>
 
-<details>
+<details open>
 
 <summary>Optimism (ChainID: 10)</summary>
 
-* **MultiSigWalletWithDailyLimit:** [`0x2475039bF2ECDCe2EE4C82954e64bE9674f43546`](https://optimistic.etherscan.io/address/0x2475039bF2ECDCe2EE4C82954e64bE9674f43546)
+* **MultiSigWalletWithDailyLimit:** [`0xeB28e1C4c47b471a88B00bA93163a3a44AE65D9C`](https://optimistic.etherscan.io/address/0xeB28e1C4c47b471a88B00bA93163a3a44AE65D9C)
 
 </details>
 
-<details>
+<details open>
 
 <summary>Avalanche (ChainID: 43114)</summary>
 
-* **MultiSigWalletWithDailyLimit:** [`0x2475039bF2ECDCe2EE4C82954e64bE9674f43546`](https://snowtrace.io/address/0x2475039bF2ECDCe2EE4C82954e64bE9674f43546)
+* **MultiSigWalletWithDailyLimit:** [`0xeB28e1C4c47b471a88B00bA93163a3a44AE65D9C`](https://snowtrace.io/address/0xeB28e1C4c47b471a88B00bA93163a3a44AE65D9C)
 
 </details>
 
-<details>
+<details open>
 
 <summary>Base (ChainID: 8453)</summary>
 
-* **MultiSigWalletWithDailyLimit:** [`0x2475039bF2ECDCe2EE4C82954e64bE9674f43546`](https://basescan.org/address/0x2475039bF2ECDCe2EE4C82954e64bE9674f43546)
+* **MultiSigWalletWithDailyLimit:** [`0xeB28e1C4c47b471a88B00bA93163a3a44AE65D9C`](https://basescan.org/address/0xeB28e1C4c47b471a88B00bA93163a3a44AE65D9C)
 
 </details>
 
-<details>
-
-<summary>Fantom (ChainID: 250)</summary>
-
-* **MultiSigWalletWithDailyLimit:** [`0x2475039bF2ECDCe2EE4C82954e64bE9674f43546`](https://ftmscan.com/address/0x2475039bF2ECDCe2EE4C82954e64bE9674f43546)
-
-</details>
-
-<details>
-
-<summary>Polygon zkEVM (ChainID: 1101)</summary>
-
-* **MultiSigWalletWithDailyLimit:** [`0x2475039bF2ECDCe2EE4C82954e64bE9674f43546`](https://zkevm.polygonscan.com/address/0x2475039bF2ECDCe2EE4C82954e64bE9674f43546)
-
-</details>
-
-<details>
+<details open>
 
 <summary>Linea (ChainID: 59144)</summary>
 
-* **MultiSigWalletWithDailyLimit:** [`0x2475039bF2ECDCe2EE4C82954e64bE9674f43546`](https://lineascan.build/address/0x2475039bF2ECDCe2EE4C82954e64bE9674f43546)
+* **MultiSigWalletWithDailyLimit:** [`0xeB28e1C4c47b471a88B00bA93163a3a44AE65D9C`](https://lineascan.build/address/0xeB28e1C4c47b471a88B00bA93163a3a44AE65D9C)
 
 </details>
 
-<details>
+<details open>
 
-<summary>Scroll (ChainID: 534352)</summary>
+<summary>Berachain (ChainID: 80094)</summary>
 
-* **MultiSigWalletWithDailyLimit:** [`0x2475039bF2ECDCe2EE4C82954e64bE9674f43546`](https://scrollscan.com/address/0x2475039bF2ECDCe2EE4C82954e64bE9674f43546)
+* **MultiSigWalletWithDailyLimit:** [`0xeB28e1C4c47b471a88B00bA93163a3a44AE65D9C`](https://berascan.com/address/0xeB28e1C4c47b471a88B00bA93163a3a44AE65D9C)
 
 </details>
+
+<details open>
+
+<summary>Sonic (ChainID: 146)</summary>
+
+* **MultiSigWalletWithDailyLimit:** [`0xeB28e1C4c47b471a88B00bA93163a3a44AE65D9C`](https://sonicscan.org/address/0xeB28e1C4c47b471a88B00bA93163a3a44AE65D9C)
+
+</details>
+
+<details open>
+
+<summary>HyperEVM (ChainID: 999)</summary>
+
+* **MultiSigWalletWithDailyLimit:** [`0xeB28e1C4c47b471a88B00bA93163a3a44AE65D9C`](https://hyperevmscan.io/address/0xeB28e1C4c47b471a88B00bA93163a3a44AE65D9C)
+
+</details>
+
+<details open>
+
+<summary>Plasma (ChainID: 9745)</summary>
+
+* **MultiSigWalletWithDailyLimit:** [`0xeB28e1C4c47b471a88B00bA93163a3a44AE65D9C`](https://plasmascan.to/address/0xeB28e1C4c47b471a88B00bA93163a3a44AE65D9C)
+
+</details>
+
+<details open>
+
+<summary>Monad (ChainID: 143)</summary>
+
+* **MultiSigWalletWithDailyLimit:** [`0xeB28e1C4c47b471a88B00bA93163a3a44AE65D9C`](https://monadvision.com/address/0xeB28e1C4c47b471a88B00bA93163a3a44AE65D9C)
+
+</details>
+
+<details open>
+
+<summary>Unichain (ChainID: 130)</summary>
+
+* **MultiSigWalletWithDailyLimit:** [`0xeB28e1C4c47b471a88B00bA93163a3a44AE65D9C`](https://unichain.blockscout.com/address/0xeB28e1C4c47b471a88B00bA93163a3a44AE65D9C)
+
+</details>
+
+<details open>
+
+<summary>Robinhood (ChainID: 4663)</summary>
+
+* **MultiSigWalletWithDailyLimit:** [`0xeB28e1C4c47b471a88B00bA93163a3a44AE65D9C`](https://robinhoodchain.blockscout.com/address/0xeB28e1C4c47b471a88B00bA93163a3a44AE65D9C)
+
+</details>
+
