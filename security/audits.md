@@ -20,13 +20,19 @@ Hacken was engaged to conduct an audit of the KNC token contract. There were no 
 
 ***
 
+## KyberSwap Dex Aggregator
+
+### Third-party Audit
+
+<table data-view="cards"><thead><tr><th></th><th data-hidden data-type="image">Cover image (dark)</th><th data-hidden data-card-target data-type="content-ref"></th><th data-hidden data-card-cover data-type="image">Cover image</th><th data-hidden data-type="image">Cover image (dark)</th><th data-hidden data-card-cover-dark data-type="image">Cover image (dark)</th></tr></thead><tbody><tr><td>Hexens - KSAggregationRouterV3</td><td><a href="../.gitbook/assets/logomark-x-white 1.png">logomark-x-white 1.png</a></td><td><a href="https://hexens.io/audit-reports/kyber-network-ksaggregationrouterv3-nov-2025">https://hexens.io/audit-reports/kyber-network-ksaggregationrouterv3-nov-2025</a></td><td data-object-fit="contain"><a href="../.gitbook/assets/hexens-black.svg">hexens-black.svg</a></td><td><a href="../.gitbook/assets/hexens-black.svg">hexens-black.svg</a></td><td data-object-fit="contain"><a href="../.gitbook/assets/hexens-white 1.png">hexens-white 1.png</a></td></tr></tbody></table>
+
 ## KyberSwap FairFlow
 
 ### Third-party Audit
 
 <table data-view="cards"><thead><tr><th></th><th data-hidden data-card-target data-type="content-ref"></th><th data-hidden data-card-cover data-type="image">Cover image</th></tr></thead><tbody><tr><td>Omniscia - Hook contracts</td><td><a href="https://omniscia.io/reports/kyber-network-uniswap-v4-hooks-68163cf266222800187026b8/">https://omniscia.io/reports/kyber-network-uniswap-v4-hooks-68163cf266222800187026b8/</a></td><td data-object-fit="contain"><a href="../.gitbook/assets/logo.svg">logo.svg</a></td></tr><tr><td>Spearbit - Hook contracts</td><td><a href="https://cantina.xyz/portfolio/eb59f23b-ef3c-4b3c-9d28-3455d5337d3f">https://cantina.xyz/portfolio/eb59f23b-ef3c-4b3c-9d28-3455d5337d3f</a></td><td data-object-fit="contain"><a href="../.gitbook/assets/68358b456156be9ef1caf5dc_spearbit_pictogram_brand_dark_background.svg">68358b456156be9ef1caf5dc_spearbit_pictogram_brand_dark_background.svg</a></td></tr></tbody></table>
 
-## Smart Intent
+## KyberSwap Smart Intent
 
 ### Third-party Audit
 
