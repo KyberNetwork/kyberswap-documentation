@@ -8,12 +8,14 @@ All KyberSwap Aggregator contracts have been deployed at the same address across
 
 Ethereum (ChainID: 1)
 
+* **KSAggregationRouterV3:** [`0x6868d319c8c9a78f7d39dc3602c5c917315132d7`](https://etherscan.io/address/0x6868d319c8c9a78f7d39dc3602c5c917315132d7)
 * **MetaAggregationRouterV2:** [`0x6131B5fae19EA4f9D964eAc0408E4408b66337b5`](https://etherscan.io/address/0x6131B5fae19EA4f9D964eAc0408E4408b66337b5)
 * **AggregationExecutorProxy:** [`0x8F10B468b06c6FD214B65F87778827F7D113f996`](https://etherscan.io/address/0x8F10B468b06c6FD214B65F87778827F7D113f996)
 * **InputScalingHelperV2:** [`0x2f577A41BeC1BE1152AeEA12e73b7391d15f655D`](https://etherscan.io/address/0x2f577A41BeC1BE1152AeEA12e73b7391d15f655D)
 
 BSC (ChainID: 56)
 
+* **KSAggregationRouterV3:** [`0x6868d319c8c9a78f7d39dc3602c5c917315132d7`](https://bscscan.com/address/0x6868d319c8c9a78f7d39dc3602c5c917315132d7)
 * **MetaAggregationRouterV2:** [`0x6131B5fae19EA4f9D964eAc0408E4408b66337b5`](https://bscscan.com/address/0x6131B5fae19EA4f9D964eAc0408E4408b66337b5)
 * **AggregationExecutorProxy:** [`0x8F10B468b06c6FD214B65F87778827F7D113f996`](https://bscscan.com/address/0x8F10B468b06c6FD214B65F87778827F7D113f996)
 * **InputScalingHelperV2:** [`0x2f577A41BeC1BE1152AeEA12e73b7391d15f655D`](https://bscscan.com/address/0x2f577A41BeC1BE1152AeEA12e73b7391d15f655D)
@@ -44,6 +46,7 @@ Avalanche (ChainID: 43114)
 
 Base (ChainID: 8453)
 
+* **KSAggregationRouterV3:** [`0x6868d319c8c9a78f7d39dc3602c5c917315132d7`](https://basescan.org/address/0x6868d319c8c9a78f7d39dc3602c5c917315132d7)
 * **MetaAggregationRouterV2:** [`0x6131B5fae19EA4f9D964eAc0408E4408b66337b5`](https://basescan.org/address/0x6131B5fae19EA4f9D964eAc0408E4408b66337b5)
 * **AggregationExecutorProxy:** [`0x8F10B468b06c6FD214B65F87778827F7D113f996`](https://basescan.org/address/0x8F10B468b06c6FD214B65F87778827F7D113f996)
 * **InputScalingHelperV2:** [`0x2f577A41BeC1BE1152AeEA12e73b7391d15f655D`](https://basescan.org/address/0x2f577A41BeC1BE1152AeEA12e73b7391d15f655D)
@@ -110,6 +113,7 @@ MegaETH (ChainID: 4326)
 
 Robinhood (ChainID: 4663)
 
+* **KSAggregationRouterV3:** [`0x6868d319c8c9a78f7d39dc3602c5c917315132d7`](https://robinhoodchain.blockscout.com/address/0x6868D319c8c9A78F7d39DC3602C5c917315132D7)
 * **MetaAggregationRouterV2:** [`0x6131B5fae19EA4f9D964eAc0408E4408b66337b5`](https://robinhoodchain.blockscout.com/address/0x6131b5fae19ea4f9d964eac0408e4408b66337b5)
 * **AggregationExecutorProxy:** [`0x8F10B468b06c6FD214B65F87778827F7D113f996`](https://robinhoodchain.blockscout.com/address/0x8F10B468b06c6FD214B65F87778827F7D113f996)
 * **InputScalingHelperV2:** [`0x2f577A41BeC1BE1152AeEA12e73b7391d15f655D`](https://robinhoodchain.blockscout.com/address/0x2f577A41BeC1BE1152AeEA12e73b7391d15f655D)
