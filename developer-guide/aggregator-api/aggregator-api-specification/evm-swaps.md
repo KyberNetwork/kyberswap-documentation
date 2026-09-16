@@ -18,6 +18,8 @@ layout:
     visible: true
   actions:
     visible: true
+  anchors:
+    visible: true
 ---
 
 # API - EVM Swaps
@@ -114,6 +116,7 @@ The Aggregator APIs require a chain **name** to be included in the path when cal
 * Monad (ChainID: 143) -> `monad`
 * MegaETH (ChainID: 4326) -> `megaeth`
 * Robinhood Chain (ChainID: 4663) -> `robinhood`
+* Arc (ChainID: 5042) -> `arc`
 {% endhint %}
 
 ### Latest
@@ -121,11 +124,11 @@ The Aggregator APIs require a chain **name** to be included in the path when cal
 <figure><img src="https://1368568567-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fw1XgQJc40kVeGUIxgI7c%2Fuploads%2Fgit-blob-f599662c2cc1d73415837ad0deff7e06ef0403de%2FAggregator%20APIv1.jpg?alt=media" alt=""><figcaption></figcaption></figure>
 
 {% openapi-operation spec="aggregator-api" path="/{chain}/api/v1/routes" method="get" %}
-[OpenAPI aggregator-api](https://4401d86825a13bf607936cc3a9f3897a.r2.cloudflarestorage.com/gitbook-x-prod-openapi/raw/7733f9404c9c46d41a5add8f2d5d445043fc62a22ec958ef413c5489a9d9b5ad.yaml?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=dce48141f43c0191a2ad043a6888781c%2F20260909%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260909T114441Z&X-Amz-Expires=172800&X-Amz-Signature=9d8c4f3679e5ee4d4a18d907be42d20d995b5d7f55e22324d5f948f031688097&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
+[OpenAPI aggregator-api](https://4401d86825a13bf607936cc3a9f3897a.r2.cloudflarestorage.com/gitbook-x-prod-openapi/raw/7733f9404c9c46d41a5add8f2d5d445043fc62a22ec958ef413c5489a9d9b5ad.yaml?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=dce48141f43c0191a2ad043a6888781c%2F20260916%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260916T111023Z&X-Amz-Expires=172800&X-Amz-Signature=a1e34d9c81473f86e3aef302832eccd898ad3e17a5fdeef60c1ff41ffe47f4ba&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
 {% endopenapi-operation %}
 
 {% openapi-operation spec="aggregator-api" path="/{chain}/api/v1/route/build" method="post" %}
-[OpenAPI aggregator-api](https://4401d86825a13bf607936cc3a9f3897a.r2.cloudflarestorage.com/gitbook-x-prod-openapi/raw/7733f9404c9c46d41a5add8f2d5d445043fc62a22ec958ef413c5489a9d9b5ad.yaml?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=dce48141f43c0191a2ad043a6888781c%2F20260909%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260909T114441Z&X-Amz-Expires=172800&X-Amz-Signature=9d8c4f3679e5ee4d4a18d907be42d20d995b5d7f55e22324d5f948f031688097&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
+[OpenAPI aggregator-api](https://4401d86825a13bf607936cc3a9f3897a.r2.cloudflarestorage.com/gitbook-x-prod-openapi/raw/7733f9404c9c46d41a5add8f2d5d445043fc62a22ec958ef413c5489a9d9b5ad.yaml?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=dce48141f43c0191a2ad043a6888781c%2F20260916%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260916T111023Z&X-Amz-Expires=172800&X-Amz-Signature=a1e34d9c81473f86e3aef302832eccd898ad3e17a5fdeef60c1ff41ffe47f4ba&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
 {% endopenapi-operation %}
 
 ## \[V1 BETA] Get Swap Route And Encoded Data
@@ -153,13 +156,13 @@ Please note that one same calldata is not guaranteed to be able to execute on-ch
 This endpoint **replaces the legacy** `GET` `/route/encode` endpoint, combining \[V1] Get Swap Route and \[V1] Post Swap Route For Encoded Data into a single round trip to reduce latency, while (unlike the legacy endpoint) supporting RFQ liquidity sources. It also replaces old legacy field names with V1's new field names.
 
 {% openapi-operation spec="aggregator-api" path="/{chain}/api/v1/swap" method="get" %}
-[OpenAPI aggregator-api](https://4401d86825a13bf607936cc3a9f3897a.r2.cloudflarestorage.com/gitbook-x-prod-openapi/raw/7733f9404c9c46d41a5add8f2d5d445043fc62a22ec958ef413c5489a9d9b5ad.yaml?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=dce48141f43c0191a2ad043a6888781c%2F20260909%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260909T114441Z&X-Amz-Expires=172800&X-Amz-Signature=9d8c4f3679e5ee4d4a18d907be42d20d995b5d7f55e22324d5f948f031688097&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
+[OpenAPI aggregator-api](https://4401d86825a13bf607936cc3a9f3897a.r2.cloudflarestorage.com/gitbook-x-prod-openapi/raw/7733f9404c9c46d41a5add8f2d5d445043fc62a22ec958ef413c5489a9d9b5ad.yaml?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=dce48141f43c0191a2ad043a6888781c%2F20260916%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260916T111023Z&X-Amz-Expires=172800&X-Amz-Signature=a1e34d9c81473f86e3aef302832eccd898ad3e17a5fdeef60c1ff41ffe47f4ba&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
 {% endopenapi-operation %}
 
 ### Legacy
 
 {% openapi-operation spec="aggregator-api" path="/{chain}/route/encode" method="get" %}
-[OpenAPI aggregator-api](https://4401d86825a13bf607936cc3a9f3897a.r2.cloudflarestorage.com/gitbook-x-prod-openapi/raw/7733f9404c9c46d41a5add8f2d5d445043fc62a22ec958ef413c5489a9d9b5ad.yaml?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=dce48141f43c0191a2ad043a6888781c%2F20260909%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260909T114441Z&X-Amz-Expires=172800&X-Amz-Signature=9d8c4f3679e5ee4d4a18d907be42d20d995b5d7f55e22324d5f948f031688097&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
+[OpenAPI aggregator-api](https://4401d86825a13bf607936cc3a9f3897a.r2.cloudflarestorage.com/gitbook-x-prod-openapi/raw/7733f9404c9c46d41a5add8f2d5d445043fc62a22ec958ef413c5489a9d9b5ad.yaml?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=dce48141f43c0191a2ad043a6888781c%2F20260916%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260916T111023Z&X-Amz-Expires=172800&X-Amz-Signature=a1e34d9c81473f86e3aef302832eccd898ad3e17a5fdeef60c1ff41ffe47f4ba&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
 {% endopenapi-operation %}
 
 ## **KyberSwap positive slippage surplus collection**
