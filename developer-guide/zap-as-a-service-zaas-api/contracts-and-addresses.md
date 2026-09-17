@@ -59,6 +59,11 @@ Robinhood (ChainID: 4663)
 * KSZapRouterV3: [`0x3bdB21Ea8793AcBF0cE18954865b7572694d037f`](https://robinhoodchain.blockscout.com/address/0x3bdB21Ea8793AcBF0cE18954865b7572694d037f)
 * KSZapValidatorV3Part1: [`0x00F7EE284f94085f664c6cA5a88cc4B3399B685c`](https://robinhoodchain.blockscout.com/address/0x00F7EE284f94085f664c6cA5a88cc4B3399B685c)
 
+Arc (ChainID: 5042)
+
+* KSZapRouterV3: [`0x3bdB21Ea8793AcBF0cE18954865b7572694d037f`](https://arc.etherscan.io/address/0x3bdB21Ea8793AcBF0cE18954865b7572694d037f)
+* KSZapValidatorV3Part1: [`0x00F7EE284f94085f664c6cA5a88cc4B3399B685c`](https://arc.etherscan.io/address/0x00F7EE284f94085f664c6cA5a88cc4B3399B685c)
+
 <details>
 
 <summary>V2 contracts</summary>

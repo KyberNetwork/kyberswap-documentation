@@ -126,6 +126,6 @@ Rise (ChainID: 4153)
 
 Arc (ChainID: 5042)
 
-* **MetaAggregationRouterV2:** [`0x6131B5fae19EA4f9D964eAc0408E4408b66337b5`](https://explorer.arc.io/address/0x6131B5fae19EA4f9D964eAc0408E4408b66337b5)
-* **AggregationExecutorProxy:** [`0x8F10B468b06c6FD214B65F87778827F7D113f996`](https://explorer.arc.io/address/0x8F10B468b06c6FD214B65F87778827F7D113f996)
-* **InputScalingHelperV2:** [`0x2f577A41BeC1BE1152AeEA12e73b7391d15f655D`](https://explorer.arc.io/address/0x2f577A41BeC1BE1152AeEA12e73b7391d15f655D)
+* **MetaAggregationRouterV2:** [`0x6131B5fae19EA4f9D964eAc0408E4408b66337b5`](https://arc.etherscan.io/address/0x6131B5fae19EA4f9D964eAc0408E4408b66337b5)
+* **AggregationExecutorProxy:** [`0x8F10B468b06c6FD214B65F87778827F7D113f996`](https://arc.etherscan.io/address/0x8F10B468b06c6FD214B65F87778827F7D113f996)
+* **InputScalingHelperV2:** [`0x2f577A41BeC1BE1152AeEA12e73b7391d15f655D`](https://arc.etherscan.io/address/0x2f577A41BeC1BE1152AeEA12e73b7391d15f655D)
