@@ -1,6 +1,6 @@
 # Create Limit Orders
 
-A [**Limit Order** ](../../kyberswap-solutions/limit-order/)is a way for KyberSwap traders to swap tokens at a specified price or better. This stipulation allows you to have better control over your prices and capital efficiency. Limit orders are not sent to any specific user, but can instead be filled by anyone, including the KyberSwap aggregator. You can also create [limit orders via KyberSwap APIs](../../developer-guide/limit-order-api/how-to-guides/place-a-limit-order.md). When the market price matches the price set in the limit order, a **taker** can fill it. When a taker fills the order, the taker pays the gas fees associated with the transaction.
+A [**Limit Order** ](../../kyberswap-solutions/limit-order/)is a way for KyberSwap traders to swap tokens at a specified price. This stipulation allows you to have better control over your prices and capital efficiency. Limit orders are not sent to any specific user, but can instead be filled by anyone, including the KyberSwap aggregator. You can also create [limit orders via KyberSwap APIs](../../developer-guide/limit-order-api/how-to-guides/place-a-limit-order.md). When the market price matches the price set in the limit order, a **taker** can fill it. When a taker fills the order, the taker pays the gas fees associated with the transaction.
 
 ### **Step 1: Connect your wallet**
 
