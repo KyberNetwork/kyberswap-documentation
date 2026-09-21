@@ -33,7 +33,7 @@ For developers integrating with the [KyberSwap Aggregator](../kyberswap-solution
 | EVM      | Mantle (5000)                                                |                |                 |         | ✅                    |
 | EVM      | Robinhood (4663)                                             | ✅              | ✅               | ✅       | ✅                    |
 | EVM      | Rise (4153) <mark style="color:orange;">`Provisional`</mark> | ✅              | ✅               |         |                      |
-| EVM      | Arc (5042)                                                   | ✅              | ✅               | ✅       |                      |
+| EVM      | Arc (5042)                                                   | ✅              | ✅               | ✅       | ✅                    |
 | EVM      | Scroll                                                       |                |                 |         | ✅                    |
 | EVM      | Fantom                                                       |                |                 |         | ✅                    |
 | EVM      | Blast                                                        |                |                 |         | ✅                    |
