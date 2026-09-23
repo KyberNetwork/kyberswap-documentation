@@ -6,27 +6,19 @@ description: Your KyberSwap Limit Order Questions Answered
 
 ## General
 
-<details open>
-
-<summary>Which chains are supported by Limit Orders?</summary>
+#### Which chains are supported by Limit Orders?
 
 The full list of supported chains can be found on [Supported Exchanges and Networks](../../getting-started/supported-exchanges-and-networks.md).
 
-</details>
 
-<details open>
 
-<summary>Which tokens does Limit Orders support?</summary>
+#### Which tokens does Limit Orders support?
 
 KyberSwap whitelists well-known tokens for ease of access, but you can import custom tokens that meet the ERC20 standard via our user interface. For more information on how to do this, please refer to [Add Your Favourite Tokens](../user-guides/add-your-favourite-tokens.md).
 
-</details>
-
 ## Trading
 
-<details open>
-
-<summary>How do I tell If my Limit Order has been filled?</summary>
+#### How do I tell If my Limit Order has been filled?
 
 Under your Active Orders, you should be able to see a yellow progress bar if your order has been partially filled. You can click on the dropdown button next to the order to see the individual taker orders that partially filled your limit order.
 
@@ -36,11 +28,9 @@ If you cannot find your order on the Active Orders tab, it may have been complet
 
 <img src="https://support.kyberswap.com/hc/article_attachments/14668248798489" alt="002_100PercentFilledGreen.png" data-size="original">
 
-</details>
 
-<details open>
 
-<summary>Why is my Limit Order not being filled?</summary>
+#### Why is my Limit Order not being filled?
 
 Here are a few common reasons for Limit Orders not being filled.
 
@@ -56,11 +46,9 @@ Takers must consider the order's size, gas fees, and personal profit margin befo
 
 Orders that involve exotic tokens or token pairs may have fewer takers to fill the order.
 
-</details>
 
-<details open>
 
-<summary>Why can't I view my order?</summary>
+#### Why can't I view my order?
 
 There are several factors that can make you not see your order:
 
@@ -68,11 +56,9 @@ There are several factors that can make you not see your order:
 * The order was already executed (you can check in Order History tab)
 * The page needs to be refreshed.
 
-</details>
 
-<details open>
 
-<summary>Why does modifying or canceling my limit order incur gas fees?</summary>
+#### Why does modifying or canceling my limit order incur gas fees?
 
 You can now cancel for free with [gasless cancel](../../kyberswap-solutions/limit-order/concepts/gasless-cancellation.md). Please refer to [Cancellation Options ](cancel-limit-orders.md#cancellation-options)for the user guide.
 
@@ -80,6 +66,18 @@ For users who require cancellation to be instant, KyberSwap provides a [hard can
 
 Please refer to [Off-Chain Relay, On-Chain Settlement](../../kyberswap-solutions/limit-order/concepts/off-chain-relay.md) for further details on the Limit Order mechanism.
 
-</details>
 
-Still can't find what you're looking for? Reach out to us on [Discord](https://discord.gg/kyberswap).
+
+#### Why did I receive less value than the market price when my Limit Order was filled?
+
+A Limit Order locks in a **fixed rate** at the time you sign it. When your order is filled, you receive exactly the rate you create - regardless of where the market price is at the time of execution.
+
+For example, if you create an order to sell 1,000 Token A at a rate of 0.50 USDC per token, you will receive 500 USDC when filled - even if Token A's market price has risen to 0.80 USDC by then.
+
+This is how limit orders work:
+
+* **You (the maker)** set a specific rate and sign the order.
+* **A taker** fills your order when they find it profitable to do so — typically when the market price has reached or moved above your specified rate.
+* **You receive** exactly the amount defined by your order. The taker acquires your tokens at your rate and may sell them at the prevailing market price.
+
+If the market price rises significantly after you place your order, your order still fills at the original rate you set. To avoid this, you can **cancel and re-create** your order at an updated rate. Gasless cancellation is available - see [Cancel a Limit Order](cancel-limit-orders.md) for details.
