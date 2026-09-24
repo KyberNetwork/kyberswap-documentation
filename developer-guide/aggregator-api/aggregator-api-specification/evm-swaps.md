@@ -124,11 +124,11 @@ The Aggregator APIs require a chain **name** to be included in the path when cal
 <figure><img src="https://1368568567-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fw1XgQJc40kVeGUIxgI7c%2Fuploads%2Fgit-blob-f599662c2cc1d73415837ad0deff7e06ef0403de%2FAggregator%20APIv1.jpg?alt=media" alt=""><figcaption></figcaption></figure>
 
 {% openapi-operation spec="aggregator-api" path="/{chain}/api/v1/routes" method="get" %}
-[OpenAPI aggregator-api](https://4401d86825a13bf607936cc3a9f3897a.r2.cloudflarestorage.com/gitbook-x-prod-openapi/raw/7733f9404c9c46d41a5add8f2d5d445043fc62a22ec958ef413c5489a9d9b5ad.yaml?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=dce48141f43c0191a2ad043a6888781c%2F20260916%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260916T111023Z&X-Amz-Expires=172800&X-Amz-Signature=a1e34d9c81473f86e3aef302832eccd898ad3e17a5fdeef60c1ff41ffe47f4ba&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
+[OpenAPI aggregator-api](https://4401d86825a13bf607936cc3a9f3897a.r2.cloudflarestorage.com/gitbook-x-prod-openapi/raw/7733f9404c9c46d41a5add8f2d5d445043fc62a22ec958ef413c5489a9d9b5ad.yaml?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=dce48141f43c0191a2ad043a6888781c%2F20260924%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260924T100541Z&X-Amz-Expires=172800&X-Amz-Signature=c4dd3bfa2bc767d639e3146b05ee05c787938e33d60840061224d411f0cf2b41&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
 {% endopenapi-operation %}
 
 {% openapi-operation spec="aggregator-api" path="/{chain}/api/v1/route/build" method="post" %}
-[OpenAPI aggregator-api](https://4401d86825a13bf607936cc3a9f3897a.r2.cloudflarestorage.com/gitbook-x-prod-openapi/raw/7733f9404c9c46d41a5add8f2d5d445043fc62a22ec958ef413c5489a9d9b5ad.yaml?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=dce48141f43c0191a2ad043a6888781c%2F20260916%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260916T111023Z&X-Amz-Expires=172800&X-Amz-Signature=a1e34d9c81473f86e3aef302832eccd898ad3e17a5fdeef60c1ff41ffe47f4ba&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
+[OpenAPI aggregator-api](https://4401d86825a13bf607936cc3a9f3897a.r2.cloudflarestorage.com/gitbook-x-prod-openapi/raw/7733f9404c9c46d41a5add8f2d5d445043fc62a22ec958ef413c5489a9d9b5ad.yaml?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=dce48141f43c0191a2ad043a6888781c%2F20260924%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260924T100541Z&X-Amz-Expires=172800&X-Amz-Signature=c4dd3bfa2bc767d639e3146b05ee05c787938e33d60840061224d411f0cf2b41&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
 {% endopenapi-operation %}
 
 ## \[V1 BETA] Get Swap Route And Encoded Data
@@ -156,13 +156,13 @@ Please note that one same calldata is not guaranteed to be able to execute on-ch
 This endpoint **replaces the legacy** `GET` `/route/encode` endpoint, combining \[V1] Get Swap Route and \[V1] Post Swap Route For Encoded Data into a single round trip to reduce latency, while (unlike the legacy endpoint) supporting RFQ liquidity sources. It also replaces old legacy field names with V1's new field names.
 
 {% openapi-operation spec="aggregator-api" path="/{chain}/api/v1/swap" method="get" %}
-[OpenAPI aggregator-api](https://4401d86825a13bf607936cc3a9f3897a.r2.cloudflarestorage.com/gitbook-x-prod-openapi/raw/7733f9404c9c46d41a5add8f2d5d445043fc62a22ec958ef413c5489a9d9b5ad.yaml?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=dce48141f43c0191a2ad043a6888781c%2F20260916%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260916T111023Z&X-Amz-Expires=172800&X-Amz-Signature=a1e34d9c81473f86e3aef302832eccd898ad3e17a5fdeef60c1ff41ffe47f4ba&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
+[OpenAPI aggregator-api](https://4401d86825a13bf607936cc3a9f3897a.r2.cloudflarestorage.com/gitbook-x-prod-openapi/raw/7733f9404c9c46d41a5add8f2d5d445043fc62a22ec958ef413c5489a9d9b5ad.yaml?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=dce48141f43c0191a2ad043a6888781c%2F20260924%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260924T100541Z&X-Amz-Expires=172800&X-Amz-Signature=c4dd3bfa2bc767d639e3146b05ee05c787938e33d60840061224d411f0cf2b41&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
 {% endopenapi-operation %}
 
 ### Legacy
 
 {% openapi-operation spec="aggregator-api" path="/{chain}/route/encode" method="get" %}
-[OpenAPI aggregator-api](https://4401d86825a13bf607936cc3a9f3897a.r2.cloudflarestorage.com/gitbook-x-prod-openapi/raw/7733f9404c9c46d41a5add8f2d5d445043fc62a22ec958ef413c5489a9d9b5ad.yaml?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=dce48141f43c0191a2ad043a6888781c%2F20260916%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260916T111023Z&X-Amz-Expires=172800&X-Amz-Signature=a1e34d9c81473f86e3aef302832eccd898ad3e17a5fdeef60c1ff41ffe47f4ba&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
+[OpenAPI aggregator-api](https://4401d86825a13bf607936cc3a9f3897a.r2.cloudflarestorage.com/gitbook-x-prod-openapi/raw/7733f9404c9c46d41a5add8f2d5d445043fc62a22ec958ef413c5489a9d9b5ad.yaml?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=dce48141f43c0191a2ad043a6888781c%2F20260924%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260924T100541Z&X-Amz-Expires=172800&X-Amz-Signature=c4dd3bfa2bc767d639e3146b05ee05c787938e33d60840061224d411f0cf2b41&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
 {% endopenapi-operation %}
 
 ## **KyberSwap positive slippage surplus collection**
@@ -183,4 +183,12 @@ During swap execution, a transaction may be routed through multiple liquidity so
 Notwithstanding the occurrence of any unconsumed tokens during execution, users remain subject to and protected by the slippage settings confirmed before submitting the transaction.
 
 For the avoidance of doubt, any unconsumed tokens accrued to KyberSwap do not constitute fees and arise solely as a consequence of the transaction execution mechanics described above.
+{% endhint %}
+
+## **Third-Party Liquidity Source Arrangements**
+
+{% hint style="info" %}
+KyberSwap may have commercial arrangements with certain Third-Party Liquidity Sources or service providers integrated with its Services. KyberSwap may receive fees, rebates, incentives, or other compensation through these arrangements.
+
+These arrangements may vary over time. They do not impose additional fees or obligations on users.
 {% endhint %}
