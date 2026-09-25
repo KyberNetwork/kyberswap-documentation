@@ -48,6 +48,7 @@
   * [FAQ](user-guide/limit-order/faq.md)
 * [Cross-chain Swap](user-guide/cross-chain-swap.md)
 * [Kyber Earn](user-guide/kyber-earn/README.md)
+  * [Partner Vault](user-guide/kyber-earn/partner-vault.md)
   * [Smart Exit](user-guide/smart-exit/README.md)
   * [APR Metrics](user-guide/kyber-earn/apr-metrics.md)
   * [FAQs](user-guide/kyber-earn/faqs.md)
