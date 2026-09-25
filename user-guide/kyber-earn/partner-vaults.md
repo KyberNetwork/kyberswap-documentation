@@ -2,7 +2,7 @@
 description: Auto-compounding single-asset strategies on Kyber Earn
 ---
 
-# Partner Vault
+# Partner Vaults
 
 ## Introduction
 
@@ -50,7 +50,7 @@ Kyber Earn offers two withdrawal methods, which differ in speed and in how your 
 
 Before you confirm, you see the estimated amount you will receive, the minimum guaranteed after slippage, and any price impact. Because this method prices at the market rather than redeeming at the vault's share value, the amount you receive may be higher or lower than a native withdrawal.
 
-<figure><img src="../../.gitbook/assets/Screenshot 2026-09-25 at 12.26.28.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2026-09-25 at 16.51.58.png" alt=""><figcaption></figcaption></figure>
 
 **Native withdrawal** submits a redemption request to [ether.fi](https://ether.fi/)'s withdrawal queue and returns the vault's underlying asset. It is not immediate and can take several days; the processing time is shown before you confirm. Your request moves through Requested, Pending, and Completed states, visible on your vault position. When it completes, the assets are sent to your wallet automatically — there is no claim step.
 
