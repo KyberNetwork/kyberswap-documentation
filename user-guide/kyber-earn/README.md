@@ -1,5 +1,5 @@
 ---
-description: All-in-one Liquidity Hub for Liquidity Providers
+description: Discover, enter, and manage earning opportunities across protocols
 ---
 
 # Kyber Earn
@@ -8,12 +8,15 @@ description: All-in-one Liquidity Hub for Liquidity Providers
 
 ### Overview
 
-[Kyber Earn](https://kyberswap.com/earn) is an all-in-one platform that lets you discover, enter, and manage liquidity positions across multiple protocols — including Uniswap V3, Uniswap V4, PancakeSwap, Aerodrome, SushiSwap, etc. - from a single interface.
+[Kyber Earn](https://kyberswap.com/earn) is an all-in-one platform for discovering, entering, and managing earning opportunities from a single interface. It offers two opportunity types:
 
-Instead of switching between DEXs to compare pools, manually balancing tokens, or tracking positions across different dashboards, Kyber Earn brings everything together. You can explore and compare earning opportunities with rich visual analytics, enter positions using any tokens you hold, and actively monitor and adjust your liquidity - all in one place.
+* **Liquidity Pools** - provide liquidity to pools across supported protocols, including Uniswap V3, Uniswap V4, PancakeSwap, Aerodrome, SushiSwap, etc., and earn trading fees and rewards.
+* **Partner Vaults** - deposit into single-asset, auto-compounding strategy vaults operated by partner protocols, starting with ether.fi.
+
+Instead of switching between protocols to compare earning opportunities, manually balancing tokens, or tracking positions across different dashboards, Kyber Earn brings everything together. You can explore and compare earning opportunities with rich visual analytics, enter positions using any tokens you hold, and actively monitor and adjust your liquidity - all in one place.
 
 {% hint style="info" %}
-Kyber Earn does not operate liquidity pools directly. It provides tooling to interact with pools on third-party protocols, currently including Uniswap V3, Uniswap V4, PancakeSwap, Aerodrome, and SushiSwap, among others. For a comprehensive list of supported chains and protocols, refer to [Supported Exchanges And Networks](../../getting-started/supported-exchanges-and-networks.md).
+Kyber Earn does not operate liquidity pools or Partner Vaults directly. It provides tooling to interact with pools on third-party protocols, and access to vaults operated by partner protocols. For a comprehensive list of supported chains and protocols, refer to [Supported Exchanges And Networks](../../getting-started/supported-exchanges-and-networks.md).
 {% endhint %}
 
 ### **Integrated Technologies: Zap technology**
@@ -28,9 +31,11 @@ Key highlights:
 
 For full technical details, see the [**Zap as a Service (ZaaS) documentation**](../../developer-guide/zap-as-a-service-zaas-api/)**.**
 
-## Key Benefits
+## Liquidity Pools
 
-### Discover & Compare Pools with Rich Insights
+### Key Benefits
+
+#### Discover & Compare Pools with Rich Insights
 
 Kyber Earn aggregates pools across supported protocols and gives you the data you need to make informed decisions — not just a single APR number.
 
@@ -47,7 +52,7 @@ Kyber Earn aggregates pools across supported protocols and gives you the data yo
   * **High APR** — Pools offering the highest aggregate yields, suited for LPs comfortable with higher price volatility.
   * **Solid Earning** — Pools with the highest trading fees over the past 7 days, indicating consistent, organic volume.
 
-### Visualized Pool & Position Data
+#### Visualized Pool & Position Data
 
 Every pool detail page is organized into three tabs — **Information**, **Earning(s)**, and **Analytics** — so performance is actually readable, not buried in raw numbers.
 
@@ -61,7 +66,7 @@ Every pool detail page is organized into three tabs — **Information**, **Earni
 
     <figure><img src="../../.gitbook/assets/image (194).png" alt=""><figcaption></figcaption></figure>
 
-### More Reward Opportunities
+#### More Reward Opportunities
 
 Kyber Earn surfaces multiple earning layers beyond standard trading fees:
 
@@ -70,7 +75,7 @@ Kyber Earn surfaces multiple earning layers beyond standard trading fees:
   * **LM (Liquidity Mining) Rewards** — Token incentives allocated to LPs participating in FairFlow pools.
 * **Bonus Rewards via Merkl** — Additional bonus incentives sourced through Merkl are displayed directly in the pool detail view, so you can see the full earning potential of a pool before entering.
 
-### Enter Any Pool in One Transaction
+#### Enter Any Pool in One Transaction
 
 Entering a concentrated liquidity position normally requires multiple steps: swapping tokens in separate transactions to match the pool's required ratio, calculating exact amounts, and then depositing. Kyber Earn removes this friction with [**our Zap technology**](../../developer-guide/zap-as-a-service-zaas-api/).
 
@@ -86,16 +91,16 @@ Once you've entered positions, Kyber Earn gives you a unified dashboard to monit
 * **One-Click Repositioning** — When the market moves and your position goes out of range, reposition to a new price range in a single transaction. Kyber Earn automatically withdraws, claims fees, rebalances, and redeposits for you — no manual steps required.
 * **Smart Exit** — Set predefined exit conditions (e.g., "exit if ETH drops below $2,000") and Kyber Earn will automatically withdraw your position when those conditions are met — no need to monitor 24/7. See the [Smart Exit documentation](../smart-exit/) for full details.
 
-## Core Capabilities
+### Core Capabilities
 
 [Kyber Earn](https://kyberswap.com/earn) provides a unified interface for interacting with supported liquidity pools and managing yield-generating positions. The following core capabilities are available to users:
 
-#### **Position Creation**
+#### Position Creation
 
 * **Zap In (Single or Multi-Token)** — Enter any pool using 1 to 5 tokens of your choice. The tokens don't need to match the pool's pair — KyberZap swaps them into the correct ratio via the [KyberSwap Aggregator](../../developer-guide/aggregator-api/) with minimal price impact.
 * **Zap Migrate** — Move capital from an existing position directly into a new pool in one transaction. Your current position is exited, fees are claimed, and assets are swapped and redeposited into the target pool automatically.
 
-#### **Position Management, Increase Liquidity and Reposition**
+#### Position Management, Increase Liquidity and Reposition
 
 You can view and manage all your existing positions from the [My Positions](https://kyberswap.com/earn/positions) dashboard.
 
@@ -103,7 +108,7 @@ You can view and manage all your existing positions from the [My Positions](http
 * **Increase Liquidity** — Increase the size of an existing position by zapping in additional assets. The protocol automatically calculates the exact token ratio required by your specific price range and handles the underlying conversions for you, with the same execution flow as a standard Zap In.
 * **Repositioning** — Adjust your position to a new price range when the market shifts. Kyber Earn withdraws your liquidity, claims accrued fees, rebalances the assets for the new range, and redeposits — all in one transaction.
 
-#### **Fee and Reward Management**
+#### Fee and Reward Management
 
 Users can view and manage fees and rewards generated by their liquidity positions directly within Kyber Earn.
 
@@ -111,7 +116,7 @@ Users can view and manage fees and rewards generated by their liquidity position
   * FairFlow rewards are separate from trading fees and governed by a vesting schedule. The accumulated reward amount becomes claimable after the vesting period concludes at the end of each FairFlow cycle. Refer to the [FairFlow documentation](../kyberswap-fairflow/) and information on the interface for cycle timing and claim details.
 * **One-Click Compounding** — Automatically reinvest accrued fees for each position back into the core principal of the corresponding position in one transaction, maximizing the effects of compound interest without manual asset swapping.
 
-#### **Advanced Exit Strategies**
+#### Advanced Exit Strategies
 
 Users have flexible options to withdraw their capital, tailored to specific market conditions and risk parameters:
 
@@ -130,7 +135,7 @@ Users have flexible options to withdraw their capital, tailored to specific mark
 Before confirming any Zap operation (Zap In, Zap Out, Migrate, or Reposition), always review the quoted output, slippage, Zap impact, and applicable fees displayed in the interface.
 {% endhint %}
 
-#### **Permissionless Pool Creation**
+#### Permissionless Pool Creation
 
 * **Custom Pool Creation** — If a desired pair and fee tier do not exist, users can initialize a new liquidity pool directly through the Kyber Earn interface using any combination of up to 5 tokens, setting the foundational liquidity parameters for the market.
 
@@ -138,7 +143,15 @@ Before confirming any Zap operation (Zap In, Zap Out, Migrate, or Reposition), a
 Disclaimer: KyberSwap provides tools for tracking and managing liquidity on third-party protocols. KyberSwap does not operate, control, or guarantee the performance of any third-party pool. Any pool-related concerns should be directed to the corresponding protocol.
 {% endhint %}
 
-### Platform fee
+## Partner Vaults
+
+Partner Vaults are single-asset, auto-compounding strategy vaults operated by third-party protocols and made accessible through [Kyber Earn](https://kyberswap.com/earn/vaults). You deposit one or more tokens, which are converted into the vault's deposit asset, and the partner protocol allocates it according to that vault's strategy. Earnings compound automatically - there is no reward to claim.
+
+Deposits and withdrawals are routed through KyberSwap Aggregator, so you can enter with any token you hold and exit to any token in a single swap transaction, rather than waiting for the partner protocol's withdrawal queue.
+
+At launch, Partner Vaults are provided by ether.fi. See [Partner Vaults](partner-vaults.md) for further details.
+
+## Platform fee
 
 All operations executed through [the KyberZap contract](../../developer-guide/zap-as-a-service-zaas-api/contracts-and-addresses.md) incur a platform fee. The fee is charged on the input amount and varies based on the specific token pair category. The applicable fee amount is transparently displayed in the interface for review prior to transaction confirmation.
 
@@ -146,4 +159,4 @@ Refer to [Fee Structure](../../getting-started/fee-schedule.md) for further deta
 
 
 
-**Ready to start earning?** [Explore pools on Kyber Earn](https://kyberswap.com/earn) and manage all your LP positions — with deeper insights, visual analytics, and smarter tools — from one place.
+**Ready to start earning?** [Explore pools on Kyber Earn](https://kyberswap.com/earn) or [explore Partner Vaults](https://kyberswap.com/earn/vaults) on Kyber Earn.
