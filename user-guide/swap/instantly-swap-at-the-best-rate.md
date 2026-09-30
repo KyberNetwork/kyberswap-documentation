@@ -16,7 +16,7 @@ Select the input and output tokens you would like to swap.
 
 <figure><img src="../../.gitbook/assets/Screenshot 2023-04-12 at 12.27.26 PM.png" alt=""><figcaption><p>Specify tokens individually</p></figcaption></figure>
 
-To discover new and trending tokens, see [Token Discovery](token-discovery.md).
+To discover newly whitelisted and trending tokens, see [Token Discovery](token-discovery.md).
 
 {% hint style="warning" %}
 **Fee-on-transfer tokens**
