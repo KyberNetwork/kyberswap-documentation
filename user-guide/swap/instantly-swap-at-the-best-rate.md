@@ -12,13 +12,11 @@ Please refer to [Supported Exchanges and Networks](../../getting-started/support
 
 ### **Step 2:** Specify your swap pair
 
-You can either do this manually using the individual token selection buttons on the swap screen.
+Select the input and output tokens you would like to swap.
 
 <figure><img src="../../.gitbook/assets/Screenshot 2023-04-12 at 12.27.26 PM.png" alt=""><figcaption><p>Specify tokens individually</p></figcaption></figure>
 
-or by searching for your desired swap pair using the search field. (The keyboard shortcut Ctrl+K also opens this search feature.)
-
-<figure><img src="../../.gitbook/assets/Screenshot 2023-04-12 at 12.28.37 PM.png" alt=""><figcaption><p>Swap via smart search</p></figcaption></figure>
+To discover new and trending tokens, see [Token Discovery](token-discovery.md).
 
 {% hint style="warning" %}
 **Fee-on-transfer tokens**
@@ -40,6 +38,12 @@ Note that the FOT tax is specified in the FOT token's smart contract (i.e. the F
 ### **Step 3**: Configure swap amount
 
 Specify the amount you would like to swap by either typing in an amount manually or by using the “Max” and “Half” buttons to swap pre-set proportions of your wallet balance. An estimate of the amount returned should appear in the quote field.
+
+Below the amount fields you will see:
+
+* **Rate:** the current exchange rate (click 🔁 to invert). The ring icon next to it shows the countdown to the next quote refresh.
+* **Minimum Received:** the least you will get after slippage. If the trade would return less, it reverts.
+* **Price Impact:** how much your trade moves the market price.
 
 {% hint style="info" %}
 **Route refresh: Ensuring optimal rates**
@@ -117,7 +121,7 @@ Upon confirming an allowance limit, your wallet will then prompt you to sign the
 
 ### **Step 5**: Confirm the swap
 
-Click the “Swap” button to bring up the confirmation screen.
+Click **Swap** to open the **Confirm Swap Details** pop-up. KyberSwap secures the final route and shows the numbers for you to review.
 
 {% hint style="warning" %}
 **Route confirmation and market volatility**
