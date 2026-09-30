@@ -40,6 +40,16 @@ Slippage tolerance for swaps defaults to different values depending on the token
 
 For more information on completing a swap, you can refer to [Instantly Swap At The Best Rates](./) for a step-by-step guide.
 
+**What slippage should I set for my swap?**
+
+There is no single correct value - the right slippage depends on the token and current market conditions.
+
+* **Lower slippage** protects you from a worse rate, but the swap is more likely to fail during volatility or on low-liquidity tokens.
+* **Higher slippage** makes the swap more likely to go through, but raises the risk of a worse rate and frontrunning.
+* **Volatile, low-liquidity, or fee-on-transfer tokens** (common with meme tokens) usually need a higher slippage to succeed.
+
+KyberSwap recommends keeping your Max Slippage as low as your swap will reliably allow, and setting a Max Slippage on every swap to protect your trade. KyberSwap also displays a suggested slippage for your swap, which you can use as a reference. See [Slippage](../../getting-started/foundational-topics/decentralized-finance/slippage.md) to understand the concept, and [Customizing trade parameters](instantly-swap-at-the-best-rate.md#customizing-trade-parameters) to change it.
+
 **What is price impact?**
 
 Price impact is the effect your trade has on the market price of a token within a liquidity pool. Larger trades relative to the pool's liquidity depth will move the price more, resulting in a less favorable rate. KyberSwap's Dynamic Trade Routing minimizes price impact by splitting trades across multiple pools and liquidity sources. For more details, see [Price Impact](../../getting-started/foundational-topics/decentralized-finance/price-impact.md).
