@@ -6,7 +6,7 @@ description: KyberSwap Limit Order Maker APIs
 
 ## Download OpenAPI specification:
 
-{% file src="../../../.gitbook/assets/LimitOrderAPIs.yaml" %}
+{% file src="../../../.gitbook/assets/LimitOrderAPIs_v1.3 (1).yaml" %}
 
 ## Maker APIs
 
@@ -37,22 +37,22 @@ Please refer to [**Create Limit Order** ](../developer-guides/create-limit-order
 {% endhint %}
 
 {% openapi-operation spec="limit-order" path="/write/api/v1/orders/sign-message" method="post" %}
-[Broken link](broken-reference)
+[OpenAPI limit-order](https://4401d86825a13bf607936cc3a9f3897a.r2.cloudflarestorage.com/gitbook-x-prod-openapi/raw/dbbbe0a0e397675884e9a3e19597800fdad21fcd2201ea03cf8d9243b6723c30.yaml?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=dce48141f43c0191a2ad043a6888781c%2F20261002%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20261002T082124Z&X-Amz-Expires=172800&X-Amz-Signature=45ec4966aed41aef114aad41a6483541fb4a157ab5f0ff89dff29a18b215b84a&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
 {% endopenapi-operation %}
 
 {% openapi-operation spec="limit-order" path="/write/api/v1/orders" method="post" %}
-[Broken link](broken-reference)
+[OpenAPI limit-order](https://4401d86825a13bf607936cc3a9f3897a.r2.cloudflarestorage.com/gitbook-x-prod-openapi/raw/dbbbe0a0e397675884e9a3e19597800fdad21fcd2201ea03cf8d9243b6723c30.yaml?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=dce48141f43c0191a2ad043a6888781c%2F20261002%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20261002T082124Z&X-Amz-Expires=172800&X-Amz-Signature=45ec4966aed41aef114aad41a6483541fb4a157ab5f0ff89dff29a18b215b84a&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
 {% endopenapi-operation %}
 
 #### Query Maker Order(s)
 
-{% openapi src="../../../.gitbook/assets/LimitOrderAPIs_v1.2.1.yaml" path="/read-ks/api/v1/orders" method="get" %}
-[LimitOrderAPIs_v1.2.1.yaml](../../../.gitbook/assets/LimitOrderAPIs_v1.2.1.yaml)
-{% endopenapi %}
+{% openapi-operation spec="limit-order" path="/read-ks/api/v1/orders" method="get" %}
+[OpenAPI limit-order](https://4401d86825a13bf607936cc3a9f3897a.r2.cloudflarestorage.com/gitbook-x-prod-openapi/raw/dbbbe0a0e397675884e9a3e19597800fdad21fcd2201ea03cf8d9243b6723c30.yaml?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=dce48141f43c0191a2ad043a6888781c%2F20261002%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20261002T082124Z&X-Amz-Expires=172800&X-Amz-Signature=45ec4966aed41aef114aad41a6483541fb4a157ab5f0ff89dff29a18b215b84a&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
+{% endopenapi-operation %}
 
-{% openapi src="../../../.gitbook/assets/LimitOrderAPIs_v1.2.yaml" path="/read-ks/api/v1/orders/active-making-amount" method="get" %}
-[LimitOrderAPIs_v1.2.yaml](../../../.gitbook/assets/LimitOrderAPIs_v1.2.yaml)
-{% endopenapi %}
+{% openapi-operation spec="limit-order" path="/read-ks/api/v1/orders/active-making-amount" method="get" %}
+[OpenAPI limit-order](https://4401d86825a13bf607936cc3a9f3897a.r2.cloudflarestorage.com/gitbook-x-prod-openapi/raw/dbbbe0a0e397675884e9a3e19597800fdad21fcd2201ea03cf8d9243b6723c30.yaml?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=dce48141f43c0191a2ad043a6888781c%2F20261002%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20261002T082124Z&X-Amz-Expires=172800&X-Amz-Signature=45ec4966aed41aef114aad41a6483541fb4a157ab5f0ff89dff29a18b215b84a&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
+{% endopenapi-operation %}
 
 #### Gasless Cancel Order(s)
 
@@ -62,13 +62,13 @@ Please refer to [**Create Limit Order** ](../developer-guides/create-limit-order
 Please refer to [**Gasless Cancel**](../developer-guides/gasless-cancel.md) for the relevant sequence diagram as well as a TypeScript example.
 {% endhint %}
 
-{% openapi src="../../../.gitbook/assets/LimitOrderAPIs_v1.2.yaml" path="/write/api/v1/orders/cancel-sign" method="post" %}
-[LimitOrderAPIs_v1.2.yaml](../../../.gitbook/assets/LimitOrderAPIs_v1.2.yaml)
-{% endopenapi %}
+{% openapi-operation spec="limit-order" path="/write/api/v1/orders/cancel-sign" method="post" %}
+[OpenAPI limit-order](https://4401d86825a13bf607936cc3a9f3897a.r2.cloudflarestorage.com/gitbook-x-prod-openapi/raw/dbbbe0a0e397675884e9a3e19597800fdad21fcd2201ea03cf8d9243b6723c30.yaml?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=dce48141f43c0191a2ad043a6888781c%2F20261002%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20261002T082124Z&X-Amz-Expires=172800&X-Amz-Signature=45ec4966aed41aef114aad41a6483541fb4a157ab5f0ff89dff29a18b215b84a&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
+{% endopenapi-operation %}
 
-{% openapi src="../../../.gitbook/assets/LimitOrderAPIs_v1.2.yaml" path="/write/api/v1/orders/cancel" method="post" %}
-[LimitOrderAPIs_v1.2.yaml](../../../.gitbook/assets/LimitOrderAPIs_v1.2.yaml)
-{% endopenapi %}
+{% openapi-operation spec="limit-order" path="/write/api/v1/orders/cancel" method="post" %}
+[OpenAPI limit-order](https://4401d86825a13bf607936cc3a9f3897a.r2.cloudflarestorage.com/gitbook-x-prod-openapi/raw/dbbbe0a0e397675884e9a3e19597800fdad21fcd2201ea03cf8d9243b6723c30.yaml?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=dce48141f43c0191a2ad043a6888781c%2F20261002%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20261002T082124Z&X-Amz-Expires=172800&X-Amz-Signature=45ec4966aed41aef114aad41a6483541fb4a157ab5f0ff89dff29a18b215b84a&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
+{% endopenapi-operation %}
 
 #### Hard Cancel Order(s)
 
@@ -78,10 +78,10 @@ Please refer to [**Gasless Cancel**](../developer-guides/gasless-cancel.md) for 
 Please refer to [**Hard Cancel**](../developer-guides/hard-cancel.md) for the relevant sequence diagram as well as a TypeScript example.
 {% endhint %}
 
-{% openapi src="../../../.gitbook/assets/LimitOrderAPIs_v1.2.yaml" path="/read-ks/api/v1/encode/cancel-batch-orders" method="post" %}
-[LimitOrderAPIs_v1.2.yaml](../../../.gitbook/assets/LimitOrderAPIs_v1.2.yaml)
-{% endopenapi %}
+{% openapi-operation spec="limit-order" path="/read-ks/api/v1/encode/cancel-batch-orders" method="post" %}
+[OpenAPI limit-order](https://4401d86825a13bf607936cc3a9f3897a.r2.cloudflarestorage.com/gitbook-x-prod-openapi/raw/dbbbe0a0e397675884e9a3e19597800fdad21fcd2201ea03cf8d9243b6723c30.yaml?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=dce48141f43c0191a2ad043a6888781c%2F20261002%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20261002T082124Z&X-Amz-Expires=172800&X-Amz-Signature=45ec4966aed41aef114aad41a6483541fb4a157ab5f0ff89dff29a18b215b84a&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
+{% endopenapi-operation %}
 
-{% openapi src="../../../.gitbook/assets/LimitOrderAPIs_v1.2.yaml" path="/read-ks/api/v1/encode/increase-nonce" method="post" %}
-[LimitOrderAPIs_v1.2.yaml](../../../.gitbook/assets/LimitOrderAPIs_v1.2.yaml)
-{% endopenapi %}
+{% openapi-operation spec="limit-order" path="/read-ks/api/v1/encode/increase-nonce" method="post" %}
+[OpenAPI limit-order](https://4401d86825a13bf607936cc3a9f3897a.r2.cloudflarestorage.com/gitbook-x-prod-openapi/raw/dbbbe0a0e397675884e9a3e19597800fdad21fcd2201ea03cf8d9243b6723c30.yaml?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=dce48141f43c0191a2ad043a6888781c%2F20261002%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20261002T082124Z&X-Amz-Expires=172800&X-Amz-Signature=45ec4966aed41aef114aad41a6483541fb4a157ab5f0ff89dff29a18b215b84a&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
+{% endopenapi-operation %}

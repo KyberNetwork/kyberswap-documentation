@@ -6,7 +6,7 @@ description: KyberSwap Limit Order General APIs
 
 ## Download OpenAPI specification:
 
-{% file src="../../../.gitbook/assets/LimitOrderAPIs_v1.2.yaml" %}
+{% file src="../../../.gitbook/assets/LimitOrderAPIs_v1.3 (1).yaml" %}
 
 ## General APIs
 
@@ -28,12 +28,12 @@ The KyberSwap Docs will continue to maintain information regarding `Legacy` and 
 
 ### `Latest`
 
-{% swagger src="../../../.gitbook/assets/LimitOrderAPIs_v1.2.yaml" path="/read-partner/api/v1/orders/pairs" method="get" %}
-[LimitOrderAPIs_v1.2.yaml](../../../.gitbook/assets/LimitOrderAPIs_v1.2.yaml)
-{% endswagger %}
+{% openapi-operation spec="limit-order" path="/read-partner/api/v1/orders/pairs" method="get" %}
+[OpenAPI limit-order](https://4401d86825a13bf607936cc3a9f3897a.r2.cloudflarestorage.com/gitbook-x-prod-openapi/raw/dbbbe0a0e397675884e9a3e19597800fdad21fcd2201ea03cf8d9243b6723c30.yaml?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=dce48141f43c0191a2ad043a6888781c%2F20261002%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20261002T082124Z&X-Amz-Expires=172800&X-Amz-Signature=45ec4966aed41aef114aad41a6483541fb4a157ab5f0ff89dff29a18b215b84a&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
+{% endopenapi-operation %}
 
-{% swagger src="../../../.gitbook/assets/LimitOrderAPIs_v1.2.yaml" path="/read-ks/api/v1/configs/contract-address" method="get" %}
-[LimitOrderAPIs_v1.2.yaml](../../../.gitbook/assets/LimitOrderAPIs_v1.2.yaml)
-{% endswagger %}
+{% openapi-operation spec="limit-order" path="/read-ks/api/v1/configs/contract-address" method="get" %}
+[OpenAPI limit-order](https://4401d86825a13bf607936cc3a9f3897a.r2.cloudflarestorage.com/gitbook-x-prod-openapi/raw/dbbbe0a0e397675884e9a3e19597800fdad21fcd2201ea03cf8d9243b6723c30.yaml?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=dce48141f43c0191a2ad043a6888781c%2F20261002%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20261002T082124Z&X-Amz-Expires=172800&X-Amz-Signature=45ec4966aed41aef114aad41a6483541fb4a157ab5f0ff89dff29a18b215b84a&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
+{% endopenapi-operation %}
 
 _\*For `/read-ks/api/v1/configs/contract-address`, please refer to the `.yaml` file for the full return object as GitBook has limited support for OpenAPI's `additionalProperties` definition._

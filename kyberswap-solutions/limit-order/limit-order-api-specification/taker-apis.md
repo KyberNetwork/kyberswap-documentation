@@ -150,22 +150,22 @@ Please refer to [**Fill Limit Order**](../developer-guides/fill-limit-order.md) 
 
 #### Query Order(s)
 
-{% openapi src="../../../.gitbook/assets/LimitOrderAPIs_v1.2.yaml" path="/read-partner/api/v1/orders" method="get" %}
-[LimitOrderAPIs_v1.2.yaml](../../../.gitbook/assets/LimitOrderAPIs_v1.2.yaml)
-{% endopenapi %}
+{% openapi-operation spec="limit-order" path="/read-partner/api/v1/orders" method="get" %}
+[OpenAPI limit-order](https://4401d86825a13bf607936cc3a9f3897a.r2.cloudflarestorage.com/gitbook-x-prod-openapi/raw/dbbbe0a0e397675884e9a3e19597800fdad21fcd2201ea03cf8d9243b6723c30.yaml?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=dce48141f43c0191a2ad043a6888781c%2F20261002%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20261002T082125Z&X-Amz-Expires=172800&X-Amz-Signature=eb8a65d0434d33c214c8e94e5be631ab6aad42660e60559efd1a01880a6361ac&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
+{% endopenapi-operation %}
 
 #### Get Operator Signature
 
-{% openapi src="../../../.gitbook/assets/LimitOrderAPIs_v1.2.yaml" path="/read-partner/api/v1/orders/operator-signature" method="get" %}
-[LimitOrderAPIs_v1.2.yaml](../../../.gitbook/assets/LimitOrderAPIs_v1.2.yaml)
-{% endopenapi %}
+{% openapi-operation spec="limit-order" path="/read-partner/api/v1/orders/operator-signature" method="get" %}
+[OpenAPI limit-order](https://4401d86825a13bf607936cc3a9f3897a.r2.cloudflarestorage.com/gitbook-x-prod-openapi/raw/dbbbe0a0e397675884e9a3e19597800fdad21fcd2201ea03cf8d9243b6723c30.yaml?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=dce48141f43c0191a2ad043a6888781c%2F20261002%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20261002T082125Z&X-Amz-Expires=172800&X-Amz-Signature=eb8a65d0434d33c214c8e94e5be631ab6aad42660e60559efd1a01880a6361ac&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
+{% endopenapi-operation %}
 
 #### Fill Order(s)
 
-{% openapi src="../../../.gitbook/assets/LimitOrderAPIs_v1.2.yaml" path="/read-ks/api/v1/encode/fill-order-to" method="post" %}
-[LimitOrderAPIs_v1.2.yaml](../../../.gitbook/assets/LimitOrderAPIs_v1.2.yaml)
-{% endopenapi %}
+{% openapi-operation spec="limit-order" path="/read-ks/api/v1/encode/fill-order-to" method="post" %}
+[OpenAPI limit-order](https://4401d86825a13bf607936cc3a9f3897a.r2.cloudflarestorage.com/gitbook-x-prod-openapi/raw/dbbbe0a0e397675884e9a3e19597800fdad21fcd2201ea03cf8d9243b6723c30.yaml?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=dce48141f43c0191a2ad043a6888781c%2F20261002%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20261002T082125Z&X-Amz-Expires=172800&X-Amz-Signature=eb8a65d0434d33c214c8e94e5be631ab6aad42660e60559efd1a01880a6361ac&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
+{% endopenapi-operation %}
 
-{% openapi src="../../../.gitbook/assets/LimitOrderAPIs_v1.2.yaml" path="/read-ks/api/v1/encode/fill-batch-orders-to" method="post" %}
-[LimitOrderAPIs_v1.2.yaml](../../../.gitbook/assets/LimitOrderAPIs_v1.2.yaml)
-{% endopenapi %}
+{% openapi-operation spec="limit-order" path="/read-ks/api/v1/encode/fill-batch-orders-to" method="post" %}
+[OpenAPI limit-order](https://4401d86825a13bf607936cc3a9f3897a.r2.cloudflarestorage.com/gitbook-x-prod-openapi/raw/dbbbe0a0e397675884e9a3e19597800fdad21fcd2201ea03cf8d9243b6723c30.yaml?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=dce48141f43c0191a2ad043a6888781c%2F20261002%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20261002T082125Z&X-Amz-Expires=172800&X-Amz-Signature=eb8a65d0434d33c214c8e94e5be631ab6aad42660e60559efd1a01880a6361ac&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
+{% endopenapi-operation %}
