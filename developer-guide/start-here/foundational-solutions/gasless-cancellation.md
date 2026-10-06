@@ -8,7 +8,7 @@ description: Decentralized Trading Without The Gas Fees
 
 In an effort to provide the same fee-less experience which traders are used to with CEX limit orders, KyberSwap Limit Order has been enhanced with gasless cancellation functionality:
 
-* **Gasless Cancel**: Cancel your limit order without incurring gas fees. Upon triggering gasless cancel, users might need to wait up to 90 seconds for the cancellation to be confirmed.
+* **Gasless Cancel**: Cancel your limit order without incurring gas fees. Upon triggering gasless cancel, users might need to wait up to 2 minutes for the cancellation to be confirmed.
 * **Hard Cancel**: Instantly cancel your limit order by incurring a small prioritization gas fee. Upon triggering hard cancel, users will need to confirm the gas fee whereupon cancellation is confirmed once the transaction has been mined.
 
 With gasless cancellation, traders can now create, modify, and cancel limit orders without ever incurring gas fees with KyberSwap Limit Orders.

@@ -14,8 +14,8 @@ For convenience, KyberSwap also offers the option to cancel a single order or al
 
 KyberSwap Limit Order offers 2 modes of cancellation depending on your trading requirements:
 
-* [**Gasless Cancel**](../../kyberswap-solutions/limit-order/concepts/gasless-cancellation.md#gasless-cancel): Cancel your limit order without incurring gas fees. Upon triggering gasless cancel, users might need to wait up to 2 minutes for the cancellation to be confirmed.
-* [**Hard Cancel**](../../kyberswap-solutions/limit-order/concepts/gasless-cancellation.md#hard-cancel): Instantly cancel your limit order by incurring a small prioritization gas fee. Upon triggering hard cancel, users will need to confirm the gas fee whereupon cancellation is confirmed once the transaction has been mined.
+* [**Gasless Cancel**](../../developer-guide/start-here/foundational-solutions/gasless-cancellation.md): Cancel your limit order without incurring gas fees. Upon triggering gasless cancel, users might need to wait up to 2 minutes for the cancellation to be confirmed.
+* [**Hard Cancel**](cancel-limit-orders.md#hard-cancel): Instantly cancel your limit order by incurring a small prioritization gas fee. Upon triggering hard cancel, users will need to confirm the gas fee whereupon cancellation is confirmed once the transaction has been mined.
 
 {% hint style="info" %}
 **Cancellation mechanisms**
