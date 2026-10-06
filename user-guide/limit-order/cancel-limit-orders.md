@@ -14,7 +14,7 @@ For convenience, KyberSwap also offers the option to cancel a single order or al
 
 KyberSwap Limit Order offers 2 modes of cancellation depending on your trading requirements:
 
-* [**Gasless Cancel**](../../kyberswap-solutions/limit-order/concepts/gasless-cancellation.md#gasless-cancel): Cancel your limit order without incurring gas fees. Upon triggering gasless cancel, users might need to wait up to 5 minutes for the cancellation to be confirmed.
+* [**Gasless Cancel**](../../kyberswap-solutions/limit-order/concepts/gasless-cancellation.md#gasless-cancel): Cancel your limit order without incurring gas fees. Upon triggering gasless cancel, users might need to wait up to 2 minutes for the cancellation to be confirmed.
 * [**Hard Cancel**](../../kyberswap-solutions/limit-order/concepts/gasless-cancellation.md#hard-cancel): Instantly cancel your limit order by incurring a small prioritization gas fee. Upon triggering hard cancel, users will need to confirm the gas fee whereupon cancellation is confirmed once the transaction has been mined.
 
 {% hint style="info" %}
@@ -37,7 +37,7 @@ Find the active order you would like to update and click on its red Cancel butto
 
 On the cancellation pop-up, you will be provided with 2 options for cancellation:
 
-* [**Gasless Cancel**](../../kyberswap-solutions/limit-order/concepts/gasless-cancellation.md#gasless-cancel): Cancel without paying gas. In cases where the LO is close to the market rate, you might need to wait a maximum of 5 minutes.
+* [**Gasless Cancel**](../../kyberswap-solutions/limit-order/concepts/gasless-cancellation.md#gasless-cancel): Cancel without paying gas. In cases where the LO is close to the market rate, you might need to wait a maximum of 2 minutes.
 * [**Hard Cancel**](../../kyberswap-solutions/limit-order/concepts/gasless-cancellation.md#hard-cancel): Pay a small prioritization gas fee to immediately cancel your order.
 
 Please refer to our [Gasless Cancellation](../../kyberswap-solutions/limit-order/concepts/gasless-cancellation.md) page for more details on how KyberSwap Limit Orders enable trades without gas.
@@ -48,7 +48,7 @@ Review the information presented on the Cancel Order screen and select your canc
 
 {% tabs %}
 {% tab title="Gasless Cancel" %}
-This is an [off-chain](../../getting-started/foundational-topics/decentralized-technologies/on-chain-vs-off-chain-data.md) transaction which requires another signature and is almost immediate in most cases. If your order was recently included in a taker or aggregator quote, a countdown timer will be shown indicating the waiting time (maximum 5 mins) until your order is gaslessly cancelled.
+This is an [off-chain](../../getting-started/foundational-topics/decentralized-technologies/on-chain-vs-off-chain-data.md) transaction which requires another signature and is almost immediate in most cases. If your order was recently included in a taker or aggregator quote, a countdown timer will be shown indicating the waiting time (maximum 2 mins) until your order is gaslessly cancelled.
 
 Once the cancellation is confirmed by the KyberSwap Operator, the cancelled order will appear under your Cancelled Orders in your Order History.
 {% endtab %}
