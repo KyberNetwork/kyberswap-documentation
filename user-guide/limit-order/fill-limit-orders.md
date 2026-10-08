@@ -12,7 +12,7 @@ KyberSwap Limit Orders are integrated as a liquidity source on the [**KyberSwap 
 
 **Swap usually gives a better rate**
 
-Because limit orders are already a liquidity source on the KyberSwap Aggregator, a normal [Swap](https://app.notion.com/user-guide/swap.md) gives you a rate equal to or better than filling an order directly in almost all cases — if an order offered the best rate, the Aggregator would already be routing through it. Filling directly is offered for convenience, and the fill panel always shows both rates so you can compare.
+Because limit orders are already a liquidity source on the KyberSwap Aggregator, a normal [Swap](../swap/) gives you a rate equal to or better than filling an order directly in almost all cases — if an order offered the best rate, the Aggregator would already be routing through it. Filling directly is offered for convenience, and the fill panel always shows both rates so you can compare.
 
 ### Reading the order book
 
