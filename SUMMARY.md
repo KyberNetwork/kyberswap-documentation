@@ -127,46 +127,6 @@
 * [Skills - For Local Agents](ai-agent-hub/skills-for-local-agents.md)
 * [MCP Server - For Hosted Agents](ai-agent-hub/mcp-server-for-hosted-agents.md)
 
-## KyberSwap Solutions
-
-* [KyberSwap Interface](kyberswap-solutions/kyberswap-interface/README.md)
-  * [Profiles](kyberswap-solutions/kyberswap-interface/profiles/README.md)
-    * [Profile Creation](kyberswap-solutions/kyberswap-interface/profiles/profile-creation.md)
-    * [Profile Customization](kyberswap-solutions/kyberswap-interface/profiles/profile-customization.md)
-    * [Sync Profile Across Devices](kyberswap-solutions/kyberswap-interface/profiles/sync-profile-across-devices.md)
-  * [Notifications](kyberswap-solutions/kyberswap-interface/notifications/README.md)
-    * [Notification Center](kyberswap-solutions/kyberswap-interface/notifications/notification-center.md)
-* [KyberSwap Aggregator](kyberswap-solutions/kyberswap-aggregator/README.md)
-  * [Concepts](kyberswap-solutions/kyberswap-aggregator/concepts.md)
-  * [Developer Guides](kyberswap-solutions/kyberswap-aggregator/developer-guides.md)
-* [KyberSwap Zap as a Service](kyberswap-solutions/kyberswap-zap-as-a-service/README.md)
-  * [KyberSwap Zap as a Service (ZaaS) API](kyberswap-solutions/kyberswap-zap-as-a-service/kyberswap-zap-as-a-service-zaas-api/README.md)
-    * [ZaaS HTTP API](kyberswap-solutions/kyberswap-zap-as-a-service/kyberswap-zap-as-a-service-zaas-api/zaas-http-api.md)
-    * [ZaaS GRPC API](kyberswap-solutions/kyberswap-zap-as-a-service/kyberswap-zap-as-a-service-zaas-api/zaas-grpc-api.md)
-  * [Zap Fee Model](kyberswap-solutions/kyberswap-zap-as-a-service/zap-fee-model.md)
-  * [Zap's Supported Chains/Dexes](kyberswap-solutions/kyberswap-zap-as-a-service/zaps-supported-chains-dexes.md)
-  * [Deployment Contracts](kyberswap-solutions/kyberswap-zap-as-a-service/zaps-deployed-contract-addresses.md)
-  * [Zap's DEX IDs](kyberswap-solutions/kyberswap-zap-as-a-service/dex-ids.md)
-* [Limit Order](kyberswap-solutions/limit-order/README.md)
-  * [Concepts](kyberswap-solutions/limit-order/concepts/README.md)
-    * [Off-Chain Relay, On-Chain Settlement](kyberswap-solutions/limit-order/concepts/off-chain-relay.md)
-    * [Gasless Cancellation](kyberswap-solutions/limit-order/concepts/gasless-cancellation.md)
-  * [User Guides](kyberswap-solutions/limit-order/user-guides/README.md)
-    * [Swap At Your Preferred Rates](user-guide/limit-order/README.md)
-  * [Developer Guides](kyberswap-solutions/limit-order/developer-guides/README.md)
-    * [Create Limit Order](kyberswap-solutions/limit-order/developer-guides/create-limit-order.md)
-    * [Gasless Cancel](kyberswap-solutions/limit-order/developer-guides/gasless-cancel.md)
-    * [Hard Cancel](kyberswap-solutions/limit-order/developer-guides/hard-cancel.md)
-    * [Fill Limit Order](kyberswap-solutions/limit-order/developer-guides/fill-limit-order.md)
-  * [Deployment Contracts](kyberswap-solutions/limit-order/contracts.md)
-  * [Limit Order API Specification](kyberswap-solutions/limit-order/limit-order-api-specification/README.md)
-    * [General APIs](kyberswap-solutions/limit-order/limit-order-api-specification/general-apis.md)
-    * [Maker APIs](kyberswap-solutions/limit-order/limit-order-api-specification/maker-apis.md)
-    * [Taker APIs](kyberswap-solutions/limit-order/limit-order-api-specification/taker-apis.md)
-  * [FAQ](kyberswap-solutions/limit-order/faq.md)
-* [KyberSwap OnChain Price Service](kyberswap-solutions/kyberswap-onchain-price-service.md)
-* [Fee Schedule](kyberswap-solutions/fee-schedule.md)
-
 ## Governance
 
 * [KyberDAO](governance/kyberdao/README.md)
@@ -352,4 +312,3 @@
 ## Support
 
 * [KyberSwap Help Center](https://discord.gg/kyberswap)
-* [Complaints Handling Process](support/complaints-handling-process.md)

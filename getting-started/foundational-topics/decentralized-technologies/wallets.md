@@ -27,7 +27,7 @@ Wallets generally fall into two overarching categories which are differentiated 
 
 ## KyberSwap wallet integrations
 
-[KyberSwap Interface](../../../kyberswap-solutions/kyberswap-interface/) has been integrated with the leading wallet providers allowing you to select your favourite wallet:
+[KyberSwap Interface](/broken/pages/HIlfhvvDNIEGuuw2wu7J) has been integrated with the leading wallet providers allowing you to select your favourite wallet:
 
 * [Blocto](https://blocto.io/)
 * [Brave Wallet](https://brave.com/wallet/)

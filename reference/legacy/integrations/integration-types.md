@@ -7,8 +7,8 @@ For the most updated information, please refer to:
 
 * [**`Classic`**](https://github.com/KyberNetwork/kyberswap-documentation/blob/main/reference/legacy/integrations/broken-reference/README.md)
 * [**`Elastic`**](../kyberswap-elastic/)
-* [**`Limit Order`**](../../../kyberswap-solutions/limit-order/)
-* [**`Aggregator`**](../../../kyberswap-solutions/kyberswap-aggregator/)
+* [**`Limit Order`**](/broken/pages/DCqb2Gq8yk2f2UIjmGEs)
+* [**`Aggregator`**](/broken/pages/P4AAjSd0nrbC42bSddka)
 {% endhint %}
 
 ![Guides Overview](https://docs.kyberswap.com/assets/images/guidesoverview-30dd38039205ea915fca26dfb42d19a1.png)

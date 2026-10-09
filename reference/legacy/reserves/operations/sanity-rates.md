@@ -7,8 +7,8 @@ For the most updated information, please refer to:
 
 * [**`Classic`**](https://github.com/KyberNetwork/kyberswap-documentation/blob/main/reference/legacy/reserves/operations/broken-reference/README.md)
 * [**`Elastic`**](../../kyberswap-elastic/)
-* [**`Limit Order`**](../../../../kyberswap-solutions/limit-order/)
-* [**`Aggregator`**](../../../../kyberswap-solutions/kyberswap-aggregator/)
+* [**`Limit Order`**](/broken/pages/DCqb2Gq8yk2f2UIjmGEs)
+* [**`Aggregator`**](/broken/pages/P4AAjSd0nrbC42bSddka)
 {% endhint %}
 
 ### Sanity Rates[​](https://docs.kyberswap.com/Legacy/reserves/operation/sanity-rates#sanity-rates) <a href="#sanity-rates" id="sanity-rates"></a>

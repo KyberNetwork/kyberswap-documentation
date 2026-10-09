@@ -1,6 +1,6 @@
 # Create Limit Orders
 
-A [**Limit Order** ](../../kyberswap-solutions/limit-order/)is a way for KyberSwap traders to swap tokens at a specified price. This stipulation allows you to have better control over your prices and capital efficiency. Limit orders are not sent to any specific user, but can instead be filled by anyone, including the KyberSwap aggregator. You can also create [limit orders via KyberSwap APIs](../../developer-guide/limit-order-api/how-to-guides/place-a-limit-order.md). When the market price matches the price set in the limit order, a **taker** can fill it. When a taker fills the order, the taker pays the gas fees associated with the transaction.
+A [**Limit Order** ](/broken/pages/DCqb2Gq8yk2f2UIjmGEs)is a way for KyberSwap traders to swap tokens at a specified price. This stipulation allows you to have better control over your prices and capital efficiency. Limit orders are not sent to any specific user, but can instead be filled by anyone, including the KyberSwap aggregator. You can also create [limit orders via KyberSwap APIs](../../developer-guide/limit-order-api/how-to-guides/place-a-limit-order.md). When the market price matches the price set in the limit order, a **taker** can fill it. When a taker fills the order, the taker pays the gas fees associated with the transaction.
 
 ### **Step 1: Connect your wallet**
 
@@ -30,7 +30,7 @@ Specific to limit orders, tokens are transferred after a maker order has been ma
 * **Output token**: In the case whereby a standard token is being traded for a FOT token, the FOT token is being transferred from the maker to the taker. Maker will receive the standard token less the swap fees while taker will receive the FOT token minus the swap fees AND FOT tax.
 * **Input token**: In the case whereby a FOT token is being traded for a standard token, the FOT token is being transferred from the taker to the maker. Maker will receive the FOT token less the swap fees AND fee-on-transfer while taker will receive the standard token minus the swap fees.
 
-For a swap between two FOT tokens, the FOT tax will be incurred by both parties. If the limit order is filled via the [KyberSwap Aggregator](../../kyberswap-solutions/kyberswap-aggregator/), there will be an additional token hop via the aggregator smart contract hence the FOT tax will also be charged on the additional hop.
+For a swap between two FOT tokens, the FOT tax will be incurred by both parties. If the limit order is filled via the [KyberSwap Aggregator](/broken/pages/P4AAjSd0nrbC42bSddka), there will be an additional token hop via the aggregator smart contract hence the FOT tax will also be charged on the additional hop.
 
 Note that the FOT tax is specified in the FOT token's smart contract (i.e. the FOT token team) hence KyberSwap does not have any control over the FOT mechanism. Users are advised to trade such tokens at their own risk as KyberSwap was optimized to handle the standard ERC20 implementation.
 {% endhint %}
@@ -52,7 +52,7 @@ Instead of entering a rate manually, you can set your price relative to the curr
 {% hint style="info" %}
 **Taker gas fees and filling of orders**
 
-KyberSwap LO uses an [off-chain relay, on-chain settlement](../../kyberswap-solutions/limit-order/concepts/off-chain-relay.md) mechanism which enables makers to create orders without requiring gas fees to be paid. However, takers of an order will have to incur a gas fee to settle the order on-chain. Depending on the chain where the LO is taking place, these gas fees could result in smaller trades being unprofitable.
+KyberSwap LO uses an [off-chain relay, on-chain settlement](/broken/pages/xQ7AqgzkoQ7e6EDcHGFi) mechanism which enables makers to create orders without requiring gas fees to be paid. However, takers of an order will have to incur a gas fee to settle the order on-chain. Depending on the chain where the LO is taking place, these gas fees could result in smaller trades being unprofitable.
 
 For example, if it costs a taker 40USD in gas fees to settle an Ethereum LO on-chain, takers will unlikely execute smaller volume trades due to the transaction costs. As such, maker LOs with lower volumes will likely not be filled unless the price diverges significantly enough to justify a taker's gas fees. This effect is less pronounced on other chains where gas fees tend to be negligible.
 

@@ -13,12 +13,12 @@ description: Ape Smart
 
 Here at KyberSwap, we understand that the trading journey can easily become overwhelming, even for seasoned traders. This is especially so in DeFi, where rapid innovation brings with it amazing opportunities but also a significant amount of novel due diligence on the part of the trader. In an effort to bring more transparency into the DeFi space and empower DeFi users at all stages of their trading journey, KyberSwap has enhanced our current trading suite with valuable data insights derived via KyberAI.
 
-With the introduction of KyberAI, users will be able to confidently answer the most important trading questions, all conveniently accessed via the [KyberSwap Interface](../../../kyberswap-solutions/kyberswap-interface/):
+With the introduction of KyberAI, users will be able to confidently answer the most important trading questions, all conveniently accessed via the [KyberSwap Interface](/broken/pages/HIlfhvvDNIEGuuw2wu7J):
 
 * [**KyberAI's KyberScore**](kyberscore.md): Which token will likely be bullish or bearish in the short term? How do I identify tokens with the most trading potential?
 * **KyberAI** [**On-Chain**](on-chain-indicators/) **and** [**Technical**](technical-indicators/) **Indicators**: What other data do I need to make an informed trade decision once I've shortlisted a token? How can these data points be combined to provide further insights?
-* [**KyberSwap Aggregator**](../../../kyberswap-solutions/kyberswap-aggregator/): How do I [get superior rates](../../../user-guide/swap/) once I've made the decision to buy or sell a token?
-* [**KyberSwap Limit Order**](../../../kyberswap-solutions/limit-order/): How do I [trade tokens based on my identified entry and exit price](../../../user-guide/limit-order/)?
+* [**KyberSwap Aggregator**](/broken/pages/P4AAjSd0nrbC42bSddka): How do I [get superior rates](../../../user-guide/swap/) once I've made the decision to buy or sell a token?
+* [**KyberSwap Limit Order**](/broken/pages/DCqb2Gq8yk2f2UIjmGEs): How do I [trade tokens based on my identified entry and exit price](../../../user-guide/limit-order/)?
 * **KyberSwap Classic and** [**Elastic**](../kyberswap-elastic/): How do I maximize yields by taking advantage of market volatility?
 {% endhint %}
 

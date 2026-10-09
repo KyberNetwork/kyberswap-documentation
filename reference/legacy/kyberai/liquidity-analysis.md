@@ -10,7 +10,7 @@ Discover where tokens are being traded. KyberAI's Liquidity Analysis tab enables
 
 Through looking for relationships between exchange trading volumes, you can infer how decentralized the markets for a specific token are. Consequently, the trading volume facilitated also implies the potential price impact risks that a trade on a particular exchange will face.
 
-If the number of liquidity sources gets too overwhelming, you can always avoid the complexity of sourcing superior rates by trading via the [KyberSwap Aggregator](../../../kyberswap-solutions/kyberswap-aggregator/).
+If the number of liquidity sources gets too overwhelming, you can always avoid the complexity of sourcing superior rates by trading via the [KyberSwap Aggregator](/broken/pages/P4AAjSd0nrbC42bSddka).
 
 ### Decentralized Exchanges
 

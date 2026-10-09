@@ -15,5 +15,5 @@ As a result of this design, makers are able to create and pre-commit to limit or
 {% hint style="success" %}
 **Order cancellation and gas fees**
 
-In order to accommodate varying trading requirements, KyberSwap Limit Order offers our users 2 modes of order cancellation: Gasless Cancel and Hard Cancel. More details can be found on [Gasless Cancellation](../../../kyberswap-solutions/limit-order/concepts/gasless-cancellation.md).
+In order to accommodate varying trading requirements, KyberSwap Limit Order offers our users 2 modes of order cancellation: Gasless Cancel and Hard Cancel. More details can be found on [Gasless Cancellation](/broken/pages/BATcP6lYx871rsCjmJhX).
 {% endhint %}

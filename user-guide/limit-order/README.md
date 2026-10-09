@@ -22,7 +22,7 @@ The [KyberSwap Interface](https://kyberswap.com/limit/) provides a convenient in
 
 ### Aggregator integration
 
-To increase the likelihood that limit orders will be filled, KyberSwap Limit Orders has been integrated as an additional liquidity source on the [KyberSwap Aggregator](../../kyberswap-solutions/kyberswap-aggregator/). This means that swaps via the Aggregator will also be routed through active limit orders which effectively increases the pool of potential takers for a limit order. By combining solutions, KyberSwap enables our users to discover the best liquidity sources for their trades.
+To increase the likelihood that limit orders will be filled, KyberSwap Limit Orders has been integrated as an additional liquidity source on the [KyberSwap Aggregator](/broken/pages/P4AAjSd0nrbC42bSddka). This means that swaps via the Aggregator will also be routed through active limit orders which effectively increases the pool of potential takers for a limit order. By combining solutions, KyberSwap enables our users to discover the best liquidity sources for their trades.
 
 <figure><img src="../../.gitbook/assets/image (156).png" alt=""><figcaption><p>An Aggregator swap routed via Limit Orders</p></figcaption></figure>
 

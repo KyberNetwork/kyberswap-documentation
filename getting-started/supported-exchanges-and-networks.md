@@ -1,13 +1,13 @@
 # Supported Exchanges And Networks
 
-The KyberSwap product suite has been deployed across the majority of the most established DeFi chains. Whichever your preferred network, you can secure the best rates via the [Aggregator](../kyberswap-solutions/kyberswap-aggregator/) (18 Chains, 420+ DEXs), execute precise trades with [Limit Orders](../kyberswap-solutions/limit-order/), or move assets seamlessly between networks using [Cross-chain Swaps](../user-guide/cross-chain-swap.md). You can also utilize [KyberSwap Zap as a Service](../kyberswap-solutions/kyberswap-zap-as-a-service/) to effortlessly add liquidity into any concentrated liquidity protocol using any tokens, while also minimizing price impact through integration with the KyberSwap aggregator.
+The KyberSwap product suite has been deployed across the majority of the most established DeFi chains. Whichever your preferred network, you can secure the best rates via the [Aggregator](/broken/pages/P4AAjSd0nrbC42bSddka) (18 Chains, 420+ DEXs), execute precise trades with [Limit Orders](/broken/pages/DCqb2Gq8yk2f2UIjmGEs), or move assets seamlessly between networks using [Cross-chain Swaps](../user-guide/cross-chain-swap.md). You can also utilize [KyberSwap Zap as a Service](/broken/pages/TSIwXehFvgUNNnYGIgLb) to effortlessly add liquidity into any concentrated liquidity protocol using any tokens, while also minimizing price impact through integration with the KyberSwap aggregator.
 
 {% hint style="info" %}
 **DEX filtering**
 
-For traders, you can specify which DEXs are considered when computing your swap route by Customizing Trade Parameters directly on the [KyberSwap Interface](../kyberswap-solutions/kyberswap-interface/).
+For traders, you can specify which DEXs are considered when computing your swap route by Customizing Trade Parameters directly on the [KyberSwap Interface](/broken/pages/HIlfhvvDNIEGuuw2wu7J).
 
-For developers integrating with the [KyberSwap Aggregator](../kyberswap-solutions/kyberswap-aggregator/), please refer to [DEX IDs](../developer-guide/aggregator-api/dex-ids.md) for internal mapping of DEXs used for filtering via the [API](../developer-guide/aggregator-api/aggregator-api-specification/).
+For developers integrating with the [KyberSwap Aggregator](/broken/pages/P4AAjSd0nrbC42bSddka), please refer to [DEX IDs](../developer-guide/aggregator-api/dex-ids.md) for internal mapping of DEXs used for filtering via the [API](../developer-guide/aggregator-api/aggregator-api-specification/).
 {% endhint %}
 
 | **Type** | **Network (Chain ID)**                                       | **Aggregator** | **Limit Order** | **Zap** | **Cross-chain Swap** |

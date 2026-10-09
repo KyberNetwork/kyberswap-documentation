@@ -36,7 +36,7 @@ The basic concept behind aggregators is quite simple and consists of the followi
 6. An aggregator smart contract atomically executes the signed transaction, debiting the user’s input token.
 7. User receives the output token in their account.
 
-In keeping with DeFi composability, notice that aggregators do not specify a particular user interface implementation nor infrastructure communication channels (i.e. providers). While many aggregator teams have implemented their own user interface (eg. [Kyberswap Interface](../../../kyberswap-solutions/kyberswap-interface/)) for users to view and submit trades, the aggregator API endpoint can be easily triggered from any web application. Aggregators can therefore be seamlessly integrated with applications demanding superior token swap rates without the overhead of managing multiple liquidity sources.
+In keeping with DeFi composability, notice that aggregators do not specify a particular user interface implementation nor infrastructure communication channels (i.e. providers). While many aggregator teams have implemented their own user interface (eg. [Kyberswap Interface](/broken/pages/HIlfhvvDNIEGuuw2wu7J)) for users to view and submit trades, the aggregator API endpoint can be easily triggered from any web application. Aggregators can therefore be seamlessly integrated with applications demanding superior token swap rates without the overhead of managing multiple liquidity sources.
 
 Note that the bundled transactions should also be atomically executed by the network. This ensures that trades with multiple routes do not get partially settled which could result in an overall disadvantageous position as the network condition dynamically changes. Transaction atomicity provides greater assurances around the final swap price which would always be within the user consented interval.
 
@@ -44,7 +44,7 @@ A key aspect to this flow is that users are given the final option to consent to
 
 ## Trade at superior rates
 
-The[ KyberSwap Aggregator ](../../../kyberswap-solutions/kyberswap-aggregator/)can be conveniently accessed via the [KyberSwap Interface](../../../kyberswap-solutions/kyberswap-interface/). By initiating a trade via the KyberSwap [UI](https://kyberswap.com/swap), users are able to view optimal rates as well as the exact route which their trade will take.
+The[ KyberSwap Aggregator ](/broken/pages/P4AAjSd0nrbC42bSddka)can be conveniently accessed via the [KyberSwap Interface](/broken/pages/HIlfhvvDNIEGuuw2wu7J). By initiating a trade via the KyberSwap [UI](https://kyberswap.com/swap), users are able to view optimal rates as well as the exact route which their trade will take.
 
 For developers, KyberSwap Aggregator exposes a set of [swap APIs ](../../../developer-guide/aggregator-api/aggregator-api-specification/)which enable favourable rates to be queried and encoded to be sent to the [Aggregator smart contract](/broken/pages/jGSQwkNNFqLTnHbPExjE).
 

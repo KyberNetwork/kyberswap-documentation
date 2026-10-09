@@ -7,8 +7,8 @@ For the most updated information, please refer to:
 
 * [**`Classic`**](https://github.com/KyberNetwork/kyberswap-documentation/blob/main/reference/legacy/reserves/operations/broken-reference/README.md)
 * [**`Elastic`**](../../kyberswap-elastic/)
-* [**`Limit Order`**](../../../../kyberswap-solutions/limit-order/)
-* [**`Aggregator`**](../../../../kyberswap-solutions/kyberswap-aggregator/)
+* [**`Limit Order`**](/broken/pages/DCqb2Gq8yk2f2UIjmGEs)
+* [**`Aggregator`**](/broken/pages/P4AAjSd0nrbC42bSddka)
 {% endhint %}
 
 ### What are reserve IDs?[​](https://docs.kyberswap.com/Legacy/reserves/operation/reserve-ids#what-are-reserve-ids) <a href="#what-are-reserve-ids" id="what-are-reserve-ids"></a>

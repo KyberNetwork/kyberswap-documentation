@@ -24,7 +24,7 @@ KyberSwap is DeFi's first multi-chain [Dynamic Automated Market Maker](https://g
 
 * [Amplified Classic AMM pools with dynamic fees](https://github.com/KyberNetwork/kyberswap-documentation/blob/main/getting-started/quickstart/broken-reference/README.md)
 * [Auto-compounding concentrated liquidity positions](../../reference/legacy/kyberswap-elastic/)
-* [Optimized trade routing across DEXs and aggregators on multiple chains](../../kyberswap-solutions/kyberswap-aggregator/)
+* [Optimized trade routing across DEXs and aggregators on multiple chains](/broken/pages/P4AAjSd0nrbC42bSddka)
 * [Surfacing valuable on/off-chain token data for data-driven trades](../../reference/legacy/kyberai/)
 
 For the full KyberSwap Solution suite, please refer to [Our Solutions](../../#our-solutions).

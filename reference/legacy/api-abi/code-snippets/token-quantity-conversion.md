@@ -7,8 +7,8 @@ For the most updated information, please refer to:
 
 * [**`Classic`**](https://github.com/KyberNetwork/kyberswap-documentation/blob/main/reference/legacy/api-abi/code-snippets/broken-reference/README.md)
 * [**`Elastic`**](../../kyberswap-elastic/)
-* [**`Limit Order`**](../../../../kyberswap-solutions/limit-order/)
-* [**`Aggregator`**](../../../../kyberswap-solutions/kyberswap-aggregator/)
+* [**`Limit Order`**](/broken/pages/DCqb2Gq8yk2f2UIjmGEs)
+* [**`Aggregator`**](/broken/pages/P4AAjSd0nrbC42bSddka)
 {% endhint %}
 
 ### Token Amount Conversion[​](https://docs.kyberswap.com/Legacy/api-abi/code-snippets/api_abi-tokenquantityconversion#token-amount-conversion) <a href="#token-amount-conversion" id="token-amount-conversion"></a>

@@ -7,8 +7,8 @@ For the most updated information, please refer to:
 
 * [**`Classic`**](https://github.com/KyberNetwork/kyberswap-documentation/blob/main/reference/legacy/protocol/broken-reference/README.md)
 * [**`Elastic`**](../kyberswap-elastic/)
-* [**`Limit Order`**](../../../kyberswap-solutions/limit-order/)
-* [**`Aggregator`**](../../../kyberswap-solutions/kyberswap-aggregator/)
+* [**`Limit Order`**](/broken/pages/DCqb2Gq8yk2f2UIjmGEs)
+* [**`Aggregator`**](/broken/pages/P4AAjSd0nrbC42bSddka)
 {% endhint %}
 
 ### Kyber Core Smart Contract Overview[​](https://docs.kyberswap.com/Legacy/smart-contract-architecture#kyber-core-smart-contract-overview) <a href="#kyber-core-smart-contract-overview" id="kyber-core-smart-contract-overview"></a>

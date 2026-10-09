@@ -182,7 +182,7 @@ Protocol fees are charged by KyberSwap in input token for Zap. In feature, and a
 
 * Partner fee configuration is sent by the partner client via the API to charge a partner fee on top of the protocol fees
 * Similar to protocol fees, partners will only be able to charge the fee by the input token for Zap In.
-* Provides both a valid non-zero feeAddress and a positive integer feePcm (the unit is per cent mille, i.e. 1-1000th of 1%) in the API call to [GetRoute](../kyberswap-solutions/kyberswap-zap-as-a-service/kyberswap-zap-as-a-service-zaas-api/zaas-http-api.md#get-route). Otherwise, no fee will be collected for partner.
+* Provides both a valid non-zero feeAddress and a positive integer feePcm (the unit is per cent mille, i.e. 1-1000th of 1%) in the API call to [GetRoute](/broken/pages/Us7l8h6mTydXM419G26f#get-route). Otherwise, no fee will be collected for partner.
 
 
 

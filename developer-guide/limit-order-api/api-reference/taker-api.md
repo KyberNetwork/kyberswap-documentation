@@ -4,7 +4,7 @@
 
 Taker endpoints cover the full fill flow: query open orders sorted by best rate, obtain the required Operator co-signature, encode the fill calldata, and execute on-chain.
 
-For a step-by-step guide, see [Fill a Limit Order](../../../kyberswap-solutions/limit-order/developer-guides/fill-limit-order.md).
+For a step-by-step guide, see [Fill a Limit Order](/broken/pages/hjKETw7k3CWHDxjSyhgT).
 
 For taker protocol fees and the rate calculation formula, see [Fee Structure.](../fee-structure.md)
 
@@ -17,7 +17,7 @@ For taker protocol fees and the rate calculation formula, see [Fee Structure.](.
 Returns open orders for a token pair sorted by best effective rate (descending). The rate accounts for partial fills and protocol fees — see Fee Structure.
 
 {% openapi-operation spec="limit-order" path="/read-partner/api/v1/orders" method="get" %}
-[OpenAPI limit-order](https://4401d86825a13bf607936cc3a9f3897a.r2.cloudflarestorage.com/gitbook-x-prod-openapi/raw/ff93b2af1088f794fbd0be8747eb18154a1641c007681d048eabba5cefaf6fd1.txt?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=dce48141f43c0191a2ad043a6888781c%2F20260410%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260410T063451Z&X-Amz-Expires=172800&X-Amz-Signature=ba3f39f1d0f567aaaa1e937471008d9482a35cb8a9611214ab5fcbdf36461d1a&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
+[OpenAPI limit-order](https://4401d86825a13bf607936cc3a9f3897a.r2.cloudflarestorage.com/gitbook-x-prod-openapi/raw/dbbbe0a0e397675884e9a3e19597800fdad21fcd2201ea03cf8d9243b6723c30.yaml?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=dce48141f43c0191a2ad043a6888781c%2F20261009%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20261009T033535Z&X-Amz-Expires=172800&X-Amz-Signature=0908e7102a65161bb9f0978afde851c77cf1210d2bf35dc6f45a7c99e93c9baf&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
 {% endopenapi-operation %}
 
 ***
@@ -29,7 +29,7 @@ Returns open orders for a token pair sorted by best effective rate (descending).
 Returns the KyberSwap Operator co-signature for one or more orders. This signature is required as part of the fill calldata and is short-lived — fetch it immediately before building the fill transaction.
 
 {% openapi-operation spec="limit-order" path="/read-partner/api/v1/orders/operator-signature" method="get" %}
-[OpenAPI limit-order](https://4401d86825a13bf607936cc3a9f3897a.r2.cloudflarestorage.com/gitbook-x-prod-openapi/raw/ff93b2af1088f794fbd0be8747eb18154a1641c007681d048eabba5cefaf6fd1.txt?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=dce48141f43c0191a2ad043a6888781c%2F20260410%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260410T063451Z&X-Amz-Expires=172800&X-Amz-Signature=ba3f39f1d0f567aaaa1e937471008d9482a35cb8a9611214ab5fcbdf36461d1a&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
+[OpenAPI limit-order](https://4401d86825a13bf607936cc3a9f3897a.r2.cloudflarestorage.com/gitbook-x-prod-openapi/raw/dbbbe0a0e397675884e9a3e19597800fdad21fcd2201ea03cf8d9243b6723c30.yaml?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=dce48141f43c0191a2ad043a6888781c%2F20261009%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20261009T033535Z&X-Amz-Expires=172800&X-Amz-Signature=0908e7102a65161bb9f0978afde851c77cf1210d2bf35dc6f45a7c99e93c9baf&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
 {% endopenapi-operation %}
 
 ***
@@ -49,7 +49,7 @@ Returns encoded calldata to fill a **single** order on-chain. The encoded data i
 | `operatorSignature` | From `GET /read-partner/api/v1/orders/operator-signature`               |
 
 {% openapi-operation spec="limit-order" path="/read-ks/api/v1/encode/fill-order-to" method="post" %}
-[OpenAPI limit-order](https://4401d86825a13bf607936cc3a9f3897a.r2.cloudflarestorage.com/gitbook-x-prod-openapi/raw/ff93b2af1088f794fbd0be8747eb18154a1641c007681d048eabba5cefaf6fd1.txt?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=dce48141f43c0191a2ad043a6888781c%2F20260410%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260410T063451Z&X-Amz-Expires=172800&X-Amz-Signature=ba3f39f1d0f567aaaa1e937471008d9482a35cb8a9611214ab5fcbdf36461d1a&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
+[OpenAPI limit-order](https://4401d86825a13bf607936cc3a9f3897a.r2.cloudflarestorage.com/gitbook-x-prod-openapi/raw/dbbbe0a0e397675884e9a3e19597800fdad21fcd2201ea03cf8d9243b6723c30.yaml?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=dce48141f43c0191a2ad043a6888781c%2F20261009%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20261009T033535Z&X-Amz-Expires=172800&X-Amz-Signature=0908e7102a65161bb9f0978afde851c77cf1210d2bf35dc6f45a7c99e93c9baf&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
 {% endopenapi-operation %}
 
 ***
@@ -61,5 +61,5 @@ Returns encoded calldata to fill a **single** order on-chain. The encoded data i
 Returns encoded calldata to fill **multiple** orders in a single on-chain transaction. The `orderIds` array and `operatorSignatures` array must be in the same order.
 
 {% openapi-operation spec="limit-order" path="/read-ks/api/v1/encode/fill-batch-orders-to" method="post" %}
-[OpenAPI limit-order](https://4401d86825a13bf607936cc3a9f3897a.r2.cloudflarestorage.com/gitbook-x-prod-openapi/raw/ff93b2af1088f794fbd0be8747eb18154a1641c007681d048eabba5cefaf6fd1.txt?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=dce48141f43c0191a2ad043a6888781c%2F20260410%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260410T063451Z&X-Amz-Expires=172800&X-Amz-Signature=ba3f39f1d0f567aaaa1e937471008d9482a35cb8a9611214ab5fcbdf36461d1a&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
+[OpenAPI limit-order](https://4401d86825a13bf607936cc3a9f3897a.r2.cloudflarestorage.com/gitbook-x-prod-openapi/raw/dbbbe0a0e397675884e9a3e19597800fdad21fcd2201ea03cf8d9243b6723c30.yaml?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=dce48141f43c0191a2ad043a6888781c%2F20261009%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20261009T033535Z&X-Amz-Expires=172800&X-Amz-Signature=0908e7102a65161bb9f0978afde851c77cf1210d2bf35dc6f45a7c99e93c9baf&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
 {% endopenapi-operation %}

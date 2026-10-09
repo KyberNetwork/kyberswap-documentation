@@ -7,8 +7,8 @@ For the most updated information, please refer to:
 
 * [**`Classic`**](https://github.com/KyberNetwork/kyberswap-documentation/blob/main/reference/legacy/integrations/broken-reference/README.md)
 * [**`Elastic`**](../kyberswap-elastic/)
-* [**`Limit Order`**](../../../kyberswap-solutions/limit-order/)
-* [**`Aggregator`**](../../../kyberswap-solutions/kyberswap-aggregator/)
+* [**`Limit Order`**](/broken/pages/DCqb2Gq8yk2f2UIjmGEs)
+* [**`Aggregator`**](/broken/pages/P4AAjSd0nrbC42bSddka)
 {% endhint %}
 
 ### Using Kyber as an on-chain price feed[​](https://docs.kyberswap.com/Legacy/integrations/price-feed-security#using-kyber-as-an-on-chain-price-feed) <a href="#using-kyber-as-an-on-chain-price-feed" id="using-kyber-as-an-on-chain-price-feed"></a>

@@ -35,7 +35,7 @@ Amend the parameters of your limit order in the Edit Order screen. You can chang
 * The amount of token being offered (”You Sell”)
 * The price (”Sell \[token] at rate”)
 * The time limit (”Expires In”)
-* The edit option (See [Gasless Cancellation](../../kyberswap-solutions/limit-order/concepts/gasless-cancellation.md) for more info)
+* The edit option (See [Gasless Cancellation](/broken/pages/BATcP6lYx871rsCjmJhX) for more info)
 
 You cannot amend the token swap pair.
 
@@ -48,7 +48,7 @@ Click on “Edit Order” to proceed.
 Review the details of the order in the “Review your order” screen that appears. Once you are satisfied, click on the “Place Order” button.
 
 * If you chose the "Gasless Edit" option, this will be an [off-chain transaction](../../getting-started/foundational-topics/decentralized-technologies/on-chain-vs-off-chain-data.md) which requires 2 signatures for cancellation and creating a new order.
-* If you chose the "Hard Edit" option, this will be an [on-chain transaction](../../kyberswap-solutions/limit-order/concepts/off-chain-relay.md) that requires an approval and gas.
+* If you chose the "Hard Edit" option, this will be an [on-chain transaction](/broken/pages/xQ7AqgzkoQ7e6EDcHGFi) that requires an approval and gas.
 
 ![Review order](../../.gitbook/assets/LO_Edit_Confirmation.png)
 

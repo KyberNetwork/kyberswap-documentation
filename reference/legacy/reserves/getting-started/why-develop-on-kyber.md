@@ -7,8 +7,8 @@ For the most updated information, please refer to:
 
 * [**`Classic`**](https://github.com/KyberNetwork/kyberswap-documentation/blob/main/reference/legacy/reserves/getting-started/broken-reference/README.md)
 * [**`Elastic`**](../../kyberswap-elastic/)
-* [**`Limit Order`**](../../../../kyberswap-solutions/limit-order/)
-* [**`Aggregator`**](../../../../kyberswap-solutions/kyberswap-aggregator/)
+* [**`Limit Order`**](/broken/pages/DCqb2Gq8yk2f2UIjmGEs)
+* [**`Aggregator`**](/broken/pages/P4AAjSd0nrbC42bSddka)
 {% endhint %}
 
 ### A Flexible and Fully On-chain Reserve System[​](https://docs.kyberswap.com/Legacy/reserves/getting-started/why-develop#a-flexible-and-fully-on-chain-reserve-system) <a href="#a-flexible-and-fully-on-chain-reserve-system" id="a-flexible-and-fully-on-chain-reserve-system"></a>

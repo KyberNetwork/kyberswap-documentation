@@ -5,8 +5,8 @@ You are referring to the **`Legacy`** version of KyberSwap docs.
 
 * **`Classic`**
 * [**`Elastic`**](../kyberswap-elastic/)
-* [**`Limit Order`**](../../../kyberswap-solutions/limit-order/)
-* [**`Aggregator`**](../../../kyberswap-solutions/kyberswap-aggregator/)
+* [**`Limit Order`**](/broken/pages/DCqb2Gq8yk2f2UIjmGEs)
+* [**`Aggregator`**](/broken/pages/P4AAjSd0nrbC42bSddka)
 {% endhint %}
 
 {% hint style="warning" %}
@@ -31,7 +31,7 @@ Reserves are liquidity providers in the network that contributes liquidity in te
 
 **Reserve Interface**[**​**](https://docs.kyberswap.com/Legacy/protocol-overview#reserve-interface)
 
-&#x20;The reserve interface defines the contract functions which reserves are required to conform to. Note that the reserve interface above is a general template of what the reserve interface should look like. The interface may be tweaked further to better suit the needs of the respective blockchains.
+The reserve interface defines the contract functions which reserves are required to conform to. Note that the reserve interface above is a general template of what the reserve interface should look like. The interface may be tweaked further to better suit the needs of the respective blockchains.
 
 Only by complying with the interface will network maintainers be able to register a reserve to the Kyber Core Smart Contracts. The exact implementation details of how reserves determine prices and manage its inventory is not explicitly defined in the protocol and is at the discretion of the developers of these reserves.
 

@@ -5,8 +5,8 @@ You are referring to the **`Legacy`** version of KyberSwap docs.
 
 * **`Classic`**
 * [**`Elastic`**](../kyberswap-elastic/)
-* [**`Limit Order`**](../../../kyberswap-solutions/limit-order/)
-* [**`Aggregator`**](../../../kyberswap-solutions/kyberswap-aggregator/)
+* [**`Limit Order`**](/broken/pages/DCqb2Gq8yk2f2UIjmGEs)
+* [**`Aggregator`**](/broken/pages/P4AAjSd0nrbC42bSddka)
 {% endhint %}
 
 {% hint style="warning" %}

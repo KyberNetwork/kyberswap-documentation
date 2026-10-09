@@ -50,7 +50,7 @@ As hinted above, slippage can be either negative or positive as its definition d
 
 #### Scenario
 
-Alice got into `ETH` early and is planning to cash out her profits by selling her `ETH` for `USDT`. Alice wants to execute the swap immediately and decides to swap via the [KyberSwap Aggregator](../../../kyberswap-solutions/kyberswap-aggregator/) for the best rates.
+Alice got into `ETH` early and is planning to cash out her profits by selling her `ETH` for `USDT`. Alice wants to execute the swap immediately and decides to swap via the [KyberSwap Aggregator](/broken/pages/P4AAjSd0nrbC42bSddka) for the best rates.
 
 #### Assumptions
 

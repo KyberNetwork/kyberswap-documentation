@@ -30,7 +30,7 @@ Due to the varying DEX order matching mechanisms, price impact tends to be more 
 
 Every AMM pool maintains a ratio of tokens against which trades are made along a price curve. As a result of this design, trading against a pool means adding one token to the pool while simultaneously removing the other token. For example, if a trader swaps 1 ETH for DAI in an ETH/DAI pool, the trader is adding 1 ETH to the pool while withdrawing 1600 DAI (assuming market price of the next 1 ETH is 1600 DAI). Given that the token ratio is a key determinant of pool price, this inverse movement of token quantities results in even greater price movements as the supply of the token being bought (i.e. DAI) drops while the supply of the token being sold increases (i.e. ETH).
 
-The AMM price curve design ensures that the price per token scales with the available liquidity in the pool. Nonetheless, this results in higher price impact risks for pools with less liquidity as prices increases exponentially for every additional token. To mitigate price impact risks, it is advisable to split large trades across different pools or you can use an aggregator (e.g. [KyberSwap Aggregator](../../../kyberswap-solutions/kyberswap-aggregator/)) which automatically splits and reroutes trades to the most capitally efficient liquidity sources.
+The AMM price curve design ensures that the price per token scales with the available liquidity in the pool. Nonetheless, this results in higher price impact risks for pools with less liquidity as prices increases exponentially for every additional token. To mitigate price impact risks, it is advisable to split large trades across different pools or you can use an aggregator (e.g. [KyberSwap Aggregator](/broken/pages/P4AAjSd0nrbC42bSddka)) which automatically splits and reroutes trades to the most capitally efficient liquidity sources.
 
 ### Order book price impact
 
@@ -42,9 +42,9 @@ Where price impact does come into play is when a trader sets a limit order that 
 
 KyberSwap's highest priority is the safety of our users. As such, we have implemented multiple safeguards to ensure that traders using our platform do not receive any unwelcomed surprises.
 
-By splitting and rerouting trades across multiple liquidity sources, the [KyberSwap Aggregator](../../../kyberswap-solutions/kyberswap-aggregator/) minimizes the potential price impact incurred from any single source. Moreover, the [KyberSwap Aggregator](../../../kyberswap-solutions/kyberswap-aggregator/) enables traders to set a `Max Slippage` to guarantee that trades are only executed if the final price is within the expected price range.
+By splitting and rerouting trades across multiple liquidity sources, the [KyberSwap Aggregator](/broken/pages/P4AAjSd0nrbC42bSddka) minimizes the potential price impact incurred from any single source. Moreover, the [KyberSwap Aggregator](/broken/pages/P4AAjSd0nrbC42bSddka) enables traders to set a `Max Slippage` to guarantee that trades are only executed if the final price is within the expected price range.
 
-Lastly,[ KyberSwap Limit Orders](../../../kyberswap-solutions/limit-order/) will always attempt to fill active orders at the market price. KyberSwap Limit Orders have been integrated with the KyberSwap Aggregator to ensure a larger potential pool of liquidity sources which reduces the potential price impact of an order.
+Lastly,[ KyberSwap Limit Orders](/broken/pages/DCqb2Gq8yk2f2UIjmGEs) will always attempt to fill active orders at the market price. KyberSwap Limit Orders have been integrated with the KyberSwap Aggregator to ensure a larger potential pool of liquidity sources which reduces the potential price impact of an order.
 
 {% tabs %}
 {% tab title="Traders" %}

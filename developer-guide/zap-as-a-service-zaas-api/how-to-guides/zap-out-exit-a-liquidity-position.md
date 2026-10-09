@@ -28,13 +28,13 @@ Call `GET /api/v1/out/route` to preview how much the user will receive.
 
 **Key request parameters:**
 
-| Parameter     | Description                                                                                                   |
-| ------------- | ------------------------------------------------------------------------------------------------------------- |
-| `dex`         | DEX ID of the source pool — see [DEX IDs](../../../kyberswap-solutions/kyberswap-zap-as-a-service/dex-ids.md) |
-| `pool.id`     | Pool contract address                                                                                         |
-| `position.id` | Position NFT ID to exit                                                                                       |
-| `tokenOut`    | Desired output token address                                                                                  |
-| `slippage`    | Slippage tolerance in basis points (e.g. `100` = 1%)                                                          |
+| Parameter     | Description                                                                   |
+| ------------- | ----------------------------------------------------------------------------- |
+| `dex`         | DEX ID of the source pool — see [DEX IDs](/broken/pages/7FpnuTerZG3ibuKgXOna) |
+| `pool.id`     | Pool contract address                                                         |
+| `position.id` | Position NFT ID to exit                                                       |
+| `tokenOut`    | Desired output token address                                                  |
+| `slippage`    | Slippage tolerance in basis points (e.g. `100` = 1%)                          |
 
 **Key response fields to surface to users:**
 

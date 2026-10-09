@@ -54,7 +54,7 @@ Once the cancellation is confirmed by the KyberSwap Operator, the cancelled orde
 {% endtab %}
 
 {% tab title="Hard Cancel" %}
-This is an [on-chain transaction](../../kyberswap-solutions/limit-order/concepts/off-chain-relay.md) that will require approval and gas fees to be paid to the network.
+This is an [on-chain transaction](/broken/pages/xQ7AqgzkoQ7e6EDcHGFi) that will require approval and gas fees to be paid to the network.
 
 Once the cancel transaction is confirmed on the blockchain, the cancelled order will appear under your Cancelled Orders in your Order History.
 {% endtab %}

@@ -14,7 +14,7 @@ Due to the open and transparent nature of most dapps, one key benefit that arise
 
 ## KyberSwap: The liquidity backbone for dapps
 
-At KyberSwap, we are building the next generation of liquidity solutions that will enable our users to trade and earn at superior rates. Users can access our liquidity suite directly via [KyberSwap Interface](../../../kyberswap-solutions/kyberswap-interface/) or developers can integrate trade functionality directly in their dapp with the [KyberSwap Widget](../../../developer-guide/aggregator-api/how-to-guides/kyberswap-widget/) or [KyberSwap Aggregator](../../../kyberswap-solutions/kyberswap-aggregator/) and [KyberSwap Limit Order](../../../kyberswap-solutions/limit-order/) APIs.
+At KyberSwap, we are building the next generation of liquidity solutions that will enable our users to trade and earn at superior rates. Users can access our liquidity suite directly via [KyberSwap Interface](/broken/pages/HIlfhvvDNIEGuuw2wu7J) or developers can integrate trade functionality directly in their dapp with the [KyberSwap Widget](../../../developer-guide/aggregator-api/how-to-guides/kyberswap-widget/) or [KyberSwap Aggregator](/broken/pages/P4AAjSd0nrbC42bSddka) and [KyberSwap Limit Order](/broken/pages/DCqb2Gq8yk2f2UIjmGEs) APIs.
 
 {% tabs %}
 {% tab title="Liquidity Providers" %}
