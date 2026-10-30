@@ -64,6 +64,10 @@
   * [Experiment Results](user-guide/kyberswap-fairflow/experiment-results.md)
   * [Position APR Estimation](user-guide/kyberswap-fairflow/position-apr-estimation.md)
   * [FAQ](user-guide/kyberswap-fairflow/faq.md)
+* [Stop Market](user-guide/stop-market/README.md)
+  * [Create Stop Market](user-guide/stop-market/create-stop-market.md)
+  * [Manage Stop Market Orders](user-guide/stop-market/manage-stop-market-orders.md)
+  * [FAQs](user-guide/stop-market/faqs.md)
 
 ## Developer Guide
 

@@ -10,7 +10,7 @@ By using the Sites or the Services, a Transaction Fee may be charged for each tr
 
 ### **Fee Summary Table**
 
-<table><thead><tr><th align="center">Product</th><th width="163" align="center">Fee Type</th><th align="center">Fee Rate</th><th align="center" valign="middle">Note</th></tr></thead><tbody><tr><td align="center">Swap *</td><td align="center">No fee</td><td align="center">No fee</td><td align="center" valign="middle"></td></tr><tr><td align="center">Limit Order</td><td align="center">Fixed</td><td align="center">0.01% - 1%</td><td align="center" valign="middle">depends on volatility level of the tokens</td></tr><tr><td align="center">Earn</td><td align="center">Fixed</td><td align="center">0.01% - 0.25%</td><td align="center" valign="middle"></td></tr><tr><td align="center">Widget/ iFrame</td><td align="center">Variable</td><td align="center">Variable</td><td align="center" valign="middle">Configured by protocol using (not by KyberSwap)</td></tr><tr><td align="center">Cross-chain Swap</td><td align="center">Fixed</td><td align="center">0.05% - 0.25%</td><td align="center" valign="middle">depends on route and volatility level of the tokens</td></tr><tr><td align="center">Smart Exit</td><td align="center">Fixed</td><td align="center">0.025% - 0.3%</td><td align="center" valign="middle"></td></tr><tr><td align="center">Other value-added service (Market Overview, Analytics, Token Checker, and MEV Protection)</td><td align="center">No fee</td><td align="center">No fee</td><td align="center" valign="middle"></td></tr></tbody></table>
+<table><thead><tr><th align="center">Product</th><th width="163" align="center">Fee Type</th><th align="center">Fee Rate</th><th align="center" valign="middle">Note</th></tr></thead><tbody><tr><td align="center">Swap *</td><td align="center">No fee</td><td align="center">No fee</td><td align="center" valign="middle"></td></tr><tr><td align="center">Limit Order</td><td align="center">Fixed</td><td align="center">0.01% - 1%</td><td align="center" valign="middle">depends on volatility level of the tokens</td></tr><tr><td align="center">Earn</td><td align="center">Fixed</td><td align="center">0.01% - 0.25%</td><td align="center" valign="middle"></td></tr><tr><td align="center">Widget/ iFrame</td><td align="center">Variable</td><td align="center">Variable</td><td align="center" valign="middle">Configured by protocol using (not by KyberSwap)</td></tr><tr><td align="center">Cross-chain Swap</td><td align="center">Fixed</td><td align="center">0.05% - 0.25%</td><td align="center" valign="middle">depends on route and volatility level of the tokens</td></tr><tr><td align="center">Smart Exit</td><td align="center">Fixed</td><td align="center">0.025% - 0.3%</td><td align="center" valign="middle"></td></tr><tr><td align="center">Stop Market</td><td align="center">Fixed</td><td align="center">0.015% - 1%</td><td align="center" valign="middle">depends on volatility level of the tokens</td></tr><tr><td align="center">Other value-added service (Market Overview, Analytics, Token Checker, and MEV Protection)</td><td align="center">No fee</td><td align="center">No fee</td><td align="center" valign="middle"></td></tr></tbody></table>
 
 \
 \* For Swap (KyberSwap Aggregator), we do not charge a protocol fee. However, positive slippage and dust collector are applied to certain trades. For more information, please refer to [KyberSwap positive slippage surplus collection](../developer-guide/aggregator-api/aggregator-api-specification/evm-swaps.md#kyberswap-positive-slippage-surplus-collection) and [KyberSwap Dust Collector](../developer-guide/aggregator-api/aggregator-api-specification/evm-swaps.md#kyberswap-dust-collector).
@@ -218,7 +218,70 @@ To support the continued development and maintenance of the Smart Exit, KyberSwa
 
 </details>
 
+<details>
 
+<summary>Stop Market</summary>
+
+The fee is a single charge covering two things: the KyberSwap fee for the order, which is set by the token pair, and the network gas for executing the swap on-chain.
+
+### **How the fee is calculated**
+
+The fee rate applied to an order is the greater of two figures: the tier rate for the pair, and the rate that the chain's minimum fee represents for an order of that size.
+
+```
+feeRate = max( tierRate , minFee / orderValueAtTrigger )      // fixed when the order is placed
+
+feeAmount = feeRate × amount received from the swap              // charged at execution
+```
+
+<table><thead><tr><th width="209.00390625">Term</th><th>Meaning</th></tr></thead><tbody><tr><td><code>tierRate</code></td><td>The pair's rate from the table below</td></tr><tr><td><code>minFee</code></td><td>The chain's minimum fee, in its native token</td></tr><tr><td><code>orderValueAtTrigger</code></td><td>What the order is worth if it is executed exactly at your trigger price, in the same unit as minFees</td></tr></tbody></table>
+
+The fee is charged in the token you receive, converted from this amount at the execution price.
+
+<table><thead><tr><th width="260.9609375">Tier</th><th>Rate</th></tr></thead><tbody><tr><td>Super stable</td><td>0.015%</td></tr><tr><td>Correlated</td><td>0.05%</td></tr><tr><td>Normal</td><td>0.15%</td></tr><tr><td>Exotic</td><td>0.3%</td></tr><tr><td>High volatility</td><td>0.5%</td></tr><tr><td>Super high volatility</td><td>1%</td></tr></tbody></table>
+
+### **When the fee is a large share of a small order**
+
+There is no minimum order size for a Stop Market order, and a small order is never blocked. Instead, the Fee (incl. gas) tooltip in the confirmation box sets this out when both of these are true:
+
+* the minimum fee applies — it is higher than the tier rate would give, and
+* the fee is more than **5%** of your order value
+
+Both conditions matter. An order paying the tier rate is paying exactly the published rate, however large it is, so the tooltip does not carry this warning. It is there to tell you that the minimum has pushed your fee above the rate in the table.
+
+The gas-spike clause appears because an order paying the minimum has the least headroom — see below.
+
+### **Minimum fee by chain**
+
+The minimum is set in each chain's native token, not in US dollars. The cost it covers is gas, which is paid in the native token, so a minimum denominated the same way tracks it automatically as the native price moves.
+
+| Chain     | **Minimum** |
+| --------- | ----------- |
+| Base      | 0.00005 ETH |
+| Optimism  | 0.00005 ETH |
+| Arbitrum  | 0.00005 ETH |
+| Polygon   | 2 POL       |
+| BSC       | 0.0003 BNB  |
+| Ethereum  | 0.001 ETH   |
+| Robinhood | 0.00005 ETH |
+| Hyper EVM | 0.002 HYPE  |
+| Avalanche | 0.015 AVAX  |
+
+#### **Why a minimum exists**
+
+Most of the gas used to execute a Stop Market order is fixed overhead — the routing, the on-chain hook, and the Oracle price update — and does not scale with the size of the order. A $20 order costs nearly as much to execute as a $20,000 one, for example.
+
+The minimum reflects that fixed cost. It is not a surcharge on small orders.
+
+#### When network gas is unusually high
+
+The fee covers the on-chain execution cost, so an attempt is skipped when the estimated gas for that fill would exceed **90%** of the fee it would collect. Nothing is cancelled: the order stays in your Active Orders, shows as **Retrying**, and is attempted again once gas settles.
+
+A separate safeguard covers larger shifts. When network gas rises far above its recent baseline, execution pauses rather than proceeding at a loss, and orders hold in **Retrying** until it comes down.
+
+Small orders are the most likely to wait during a gas spike, because their fee covers less gas. Where an order is paying the minimum fee, the **Fee (incl. gas)** tooltip in the confirmation box sets this out for you to review before you sign - see [When the fee is a large share of a small order](fee-schedule.md#when-the-fee-is-a-large-share-of-a-small-order).
+
+</details>
 
 _Additional notes:_
 
