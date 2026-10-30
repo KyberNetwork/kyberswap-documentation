@@ -24,7 +24,7 @@ You set two things in advance: the price that should trigger the swap — the **
 
 The two conditions do different jobs. The trigger price decides **when** the order becomes executable. Min. Receive decides **whether** the swap goes through at that moment — if the swap would return less than that amount, the order is not executed, and it keeps retrying until the conditions are met.
 
-<figure><img src="../../.gitbook/assets/11.png" alt="Stop Market - Trade the moment your price is hit"><figcaption><p>Stop Market - Trade the moment your price is hit</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/11.png" alt="Stop Market - Trade the moment your price is hit"><figcaption></figcaption></figure>
 
 ### What are the benefits of a Stop Market?
 
