@@ -67,6 +67,7 @@
 * [Stop Market](user-guide/stop-market/README.md)
   * [Create Stop Market](user-guide/stop-market/create-stop-market.md)
   * [Manage Stop Market Orders](user-guide/stop-market/manage-stop-market-orders.md)
+  * [Deployment Contracts](user-guide/stop-market/deployment-contracts.md)
   * [FAQs](user-guide/stop-market/faqs.md)
 
 ## Developer Guide
