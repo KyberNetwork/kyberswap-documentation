@@ -25,7 +25,7 @@ For the full list of DEXs which have been integrated across KyberSwap Aggregator
 * **Rates**: KyberSwap Aggregator routes each swap across liquidity sources on the chain, including KyberSwap Limit Orders and Professional Market Maker quotes.
 * **Execution**: [Smart Settlement](../../developer-guide/start-here/foundational-solutions/smart-settlement-better-swap-output-with-lower-slippage.md) checks the candidate pools again when the swap runs and uses the one that delivers the most output for each swap step.
 * **KyberCross, a new cross-chain route:** KyberCross is KyberSwap's own cross-chain swap engine. It brings KyberSwap Aggregator and Smart Settlement to both the source chain and the destination chain. Compare KyberCross and third-party routes by output and estimated time within the same interface. The route with the best return is selected by default.
-  * **Optional Gas drop**: On KyberCross routes, Gas drop delivers a small amount of the destination chain’s native token with your swap, so you don’t need to hold the native token on that chain beforehand. See [Gas Drop](instantly-swap-at-the-best-rate.md#gas-drop).
+  * **Gas Drop**: On KyberCross routes, Gas drop delivers a small amount of the destination chain’s native token with your swap, so you don’t need to hold the native token on that chain beforehand. See [Gas Drop](instantly-swap-at-the-best-rate.md#gas-drop).
 * **Gas-free approval with Permit**: Supported tokens can be approved with a signed message instead of an on-chain approval transaction.
 * **Swap tracking**: Check the status of all your swaps in one place. Same-chain and cross-chain swaps appear in History, where you can see whether each swap is processing, completed or failed, and follow each step of a cross-chain swap until the tokens arrive.
 
@@ -64,6 +64,10 @@ KyberCross is KyberSwap's cross-chain swap engine, built with KyberSwap Aggregat
 3. **Swap on the destination chain:** KyberSwap Aggregator swaps the bridge token into the token you selected.
 
 Both swap steps are routed the same way as a same-chain swap on KyberSwap, including Smart Settlement where it applies. If your token is already the bridge token, that swap step is skipped. If both tokens are the bridge token (for example, USDC → USDC), the route is a bridge only.
+
+**Gas Drop**
+
+KyberCross routes support [Gas Drop](instantly-swap-at-the-best-rate.md#gas-drop), an optional add-on that delivers a small amount of the destination network's native token together with your swap, so you have gas for a transaction on that network after the swap.
 
 **Bridge providers**\
 Across, Mayan, NEAR Intents, Relay, Circle CCTP v2, Chainlink CCIP, Lifi Intent, Eco, Symbiosis, Socket.
