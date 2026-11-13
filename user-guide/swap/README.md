@@ -71,3 +71,5 @@ Across, Mayan, NEAR Intents, Relay, Circle CCTP v2, Chainlink CCIP, Lifi Intent,
 #### Cross-chain Swap with third-party providers
 
 Cross-chain swaps can also route through third-party cross-chain providers: NEAR Intents, Across, Relay Protocol, deBridge, LI.FI, Mayan Finance, Bungee and Symbiosis. KyberSwap fetches their quotes in real time and shows the option with the highest output by default. These routes also cover non-EVM networks such as Bitcoin, Solana and NEAR.
+
+<figure><img src="../../.gitbook/assets/route-list-sol-to-eth-hidden-wallet (1).png" alt=""><figcaption></figcaption></figure>
