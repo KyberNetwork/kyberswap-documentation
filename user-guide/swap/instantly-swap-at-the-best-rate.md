@@ -1,20 +1,36 @@
-# Instantly Swap At The Best Rate
+---
+description: Swap Across Chains, At The Best Available Rate
+---
 
-KyberSwap allows you to swap tokens easily at superior rates by aggregating liquidity from different DEXs and aggregators on the network. Through splitting and optimizing trade routes across various liquidity sources, KyberSwap is able to source favourable rates for your swap.
+# How to Swap
 
-Please refer to [Supported Exchanges and Networks](../../getting-started/supported-exchanges-and-networks.md) for the full list of decentralized exchanges which have been integrated with KyberSwap.
+Swap on KyberSwap uses one interface for same-chain and cross-chain swaps. This guide walks through the steps to complete a swap, the options available for cross-chain swaps, the trade parameters you can adjust, and how to follow your swap after you confirm it.
+
+Please refer to [Supported Exchanges and Networks](../../getting-started/supported-exchanges-and-networks.md) for the full list of supported networks.
 
 ### **Step 1: Connect your wallet**
 
-[Connect your Web3 wallet to KyberSwap](../user-guides/connect-your-wallet.md) and [select the network](../user-guides/selecting-preferred-network.md) that you would like to use for the swap using the selector at the top right of the Swap page.
+Click **Connect Wallet** in the top right corner. What else you need depends on where you swap from:
 
-<figure><img src="../../.gitbook/assets/Screenshot 2023-04-12 at 12.23.58 PM.png" alt=""><figcaption><p>Connected chain and wallet</p></figcaption></figure>
+**From an EVM network**
 
-### **Step 2:** Specify your swap pair
+* To an EVM network: the connected wallet sends and receives the tokens. To receive in a different wallet, use the **Recipient (EVM address)** field below the rate (see **Send to another wallet** in step 3). Recipient (EVM address) field for an EVM-to-EVM swap
+* To a non-EVM network (for example, Solana): click **Select Wallet** in the receive field, then choose **Connect a wallet** to connect a wallet for that network, or **Paste receiver address** and enter an address on that network. Select Wallet menu in the receive field for a Solana destination
 
-Select the input and output tokens you would like to swap.
+<figure><img src="../../.gitbook/assets/2b-evm-to-solana-select-wallet-menu.png" alt="" width="375"><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/Screenshot 2023-04-12 at 12.27.26 PM.png" alt=""><figcaption><p>Specify tokens individually</p></figcaption></figure>
+**From a non-EVM network (for example, Solana)**
+
+<figure><img src="../../.gitbook/assets/4-solana-to-evm-receiving-wallet-options.png" alt="" width="375"><figcaption></figcaption></figure>
+
+* Click **Select Wallet** in the top field or **Connect Solana Wallet**. Connecting a Solana wallet to swap from Solana
+* To receive on an EVM network: your connected EVM wallet is used by default. To change it, click it in the receive field, then connect another wallet or paste a receiver address. Receiving wallet options for a Solana-to-EVM swap
+
+### **Step 2:** Choose the tokens and networks
+
+<figure><img src="../../.gitbook/assets/01-token-selector.png" alt="" width="563"><figcaption></figcaption></figure>
+
+Choose the chain and token you want to swap from and the chain and token you want to receive.
 
 To discover newly whitelisted and trending tokens, see [Token Discovery](token-discovery.md).
 
@@ -35,22 +51,23 @@ For swaps, the token transfer happens after the swap logic has been processed ba
 Note that the FOT tax is specified in the FOT token's smart contract (i.e. the FOT token team) hence KyberSwap does not have any control over the FOT mechanism. Users are advised to trade such tokens at their own risk as KyberSwap was optimized to handle the standard ERC20 implementation.
 {% endhint %}
 
-### **Step 3**: Configure swap amount
+### **Step 3**: Check the quote
 
-Specify the amount you would like to swap by either typing in an amount manually or by using the “Max” and “Half” buttons to swap pre-set proportions of your wallet balance. An estimate of the amount returned should appear in the quote field.
+Below the amounts, the swap interface shows the rate, the minimum received amount, the price impact and the max slippage.
 
-Below the amount fields you will see:
-
-* **Rate:** the current exchange rate (click 🔁 to invert). The ring icon next to it shows the countdown to the next quote refresh.
-* **Minimum Received:** the least you will get after slippage. If the trade would return less, it reverts.
+* **Max Slippage:** click it to pick a preset or enter a custom value. See [Customizing trade parameters](instantly-swap-at-the-best-rate.md#customizing-trade-parameters).
+* **Rate:** the current exchange rate (click 🔁 to invert).
+* **Minimum Received:** the least you will receive after slippage and fee. If the trade would return less, it reverts.
 * **Price Impact:** how much your trade moves the market price.
 
+Cross-chain swaps also show **Estimated Time**, **Platform Fee**, and **Cross-chain Swap Provider**.
+
+<figure><img src="../../.gitbook/assets/02-crosschain-quote-kybercross.png" alt="" width="375"><figcaption></figcaption></figure>
+
 {% hint style="info" %}
-**Route refresh: Ensuring optimal rates**
+**Rate refresh and quote validity**
 
-Do note that the KyberSwap Interface will continuously update the swap rates in order to source superior rates for your swap given the changing market conditions. As such, you will always be able to see the latest proposed route and rates prior to clicking the "Swap" button.
-
-Upon clicking the "Swap" button, KyberSwap Aggregator will attempt to secure the final route that will be displayed on the "Confirm Swap" pop-up (see [Step 5](instantly-swap-at-the-best-rate.md#step-5-confirm-the-swap)).
+The rate on the swap screen refreshes automatically as market conditions change. Each quote is valid for a short time. If it expires before you confirm, go back and review the swap again to get a new quote. When you continue, Confirm Swap Details shows the final rate (step 5).
 {% endhint %}
 
 KyberSwap Interface allows users to customize trade parameters which enables greater trade security or even more advanced trade strategies. Refer to [Customizing trade parameters](instantly-swap-at-the-best-rate.md#customizing-trade-parameters) section for more details.
@@ -58,18 +75,23 @@ KyberSwap Interface allows users to customize trade parameters which enables gre
 {% hint style="danger" %}
 **Max slippage: Protecting your trades**
 
-KyberSwap enables you to avoid any negative trade outcomes by setting a Max Slippage. Please refer to [Customizing trade parameters](instantly-swap-at-the-best-rate.md#customizing-trade-parameters) below for further details or [Slippage](../../getting-started/foundational-topics/decentralized-finance/slippage.md) if you would like to understand the concept better.
+KyberSwap enables you to avoid any negative trade outcomes by setting a Max Slippage. Please refer to [Customizing trade parameters](instantly-swap-at-the-best-rate.md#customizing-trade-parameters) section for more details.
 {% endhint %}
 
-<figure><img src="../../.gitbook/assets/Screenshot 2023-04-12 at 12.30.23 PM.png" alt=""><figcaption><p>Specify swap amount</p></figcaption></figure>
+Before you review, you can also:
+
+* **Choose another route.** Click **Routes** to open **Choose your Route**. Each route shows the amount you receive, the provider and the estimated time; some providers also show their own fee. **Best Return** marks the route with the highest output and is selected by default. **Fastest** marks the route with the shortest estimated time.
+* **Send to another wallet** (EVM destinations). Click **Recipient (EVM address)**. The field shows your connected address; you can paste a different an address on the destination network. For a non-EVM destination, set the receiving address as described in step 1.
+* **Add Gas drop** (KyberCross routes only). Get about $2 of the destination network's native token with your swap. A small extra fee applies, already included in the rate. See [Gas drop](instantly-swap-at-the-best-rate.md#gas-drop).
 
 ### **Step 4**: Approve or permit contract to swap tokens
 
-Approve or Permit KyberSwap to swap the tokens on your behalf. Proceed to Step 5 if token approval/permit is not required.
+Before you swap a token, you need to approve it. If the token isn't approved yet, the swap button asks you to approve it. Click it and approve in your wallet. Once approved, the button changes to **Swap** or **Review the Cross-chain Swap**. If your wallet is on a different network, it first asks you to switch network.
 
-If this is the first time you are swapping this token on this network using this wallet, the "Swap" button will be greyed out. You will first need to approve/permit the KyberSwap smart contract to spend your tokens before proceeding with the swap.
-
-In the pursuit of greater gas savings for our users, KyberSwap has implemented a permit option for tokens which follow the [ERC-2612](https://eips.ethereum.org/EIPS/eip-2612) standard. In contrast to the basic [ERC20](../../getting-started/foundational-topics/decentralized-finance/tokens.md#token-standards) token implementation, ERC-2612 enables gasless approvals of smart contract allowances with just a signed message. In other words, approving a token via "Permit" does not require any gas and achieves the same effect as the ERC20 "Approve". If you see a "Permit" button, it means your token is eligible for gasless approvals!
+* **Same-chain swap:** you approve each token once for KyberSwap.
+* **Cross-chain swap:** each route provider (KyberCross or a third-party provider) uses its own contract, so you approve each token separately for each provider. If you switch to a route from another provider, you may be asked to approve the same token again.
+* Native tokens, such as ETH, don't need approval.
+* Some tokens support **Permit**: you sign a message instead of sending an approval transaction, so the approval itself needs no gas. See [Permitable Tokens](../../reference/permitable-tokens.md) for the full list of tokens that support the ERC-2612 standard.
 
 {% hint style="info" %}
 **Permitable tokens**
@@ -77,117 +99,18 @@ In the pursuit of greater gas savings for our users, KyberSwap has implemented a
 Please refer to [Permitable Tokens](../../reference/permitable-tokens.md) for the full list of tokens which have implemented the ERC-2612 standard.
 {% endhint %}
 
-{% tabs %}
-{% tab title="Permit" %}
-Click on the "Permit \[Token]" button to allow KyberSwap to swap the tokens on your behalf.
+### **Step 5**: Review the swap and confirm
 
-<figure><img src="../../.gitbook/assets/Permit ERC2612 token.png" alt=""><figcaption><p>Permit EIP-2612 compatible tokens</p></figcaption></figure>
+Click **Swap** for a same-chain swap, or **Review the Cross-chain Swap** for a cross-chain swap. **Confirm Swap Details** opens. Review the details. If you agree and want to proceed, click **Confirm Swap**.
 
-To ensure the safety of your tokens, users will be prompted to sign the transaction for the exact amount in their wallet UI. By signing the permit request, this ensures that KyberSwap is only able to swap the exact number of tokens from your wallet. As long as the accumulated tokens for current or future swaps exceeds this limit, another permit process will be required.
-
-Upon signing the permit, you will then be able to proceed with the swap.
-
-<figure><img src="../../.gitbook/assets/Permit signature exact value.png" alt=""><figcaption><p>Note the value in the signature request matches the swap amount</p></figcaption></figure>
-
-{% hint style="info" %}
-**A note on permits**
-
-By permitting the swap, you are authorizing KyberSwap to swap the exact amount of tokens specified in the trade for the next 24 hours. This 24 hour deadline is implemented as a safety mechanism to ensure that the permit expires in case a corresponding swap order was not submitted or in the highly improbable event that an order was not filled. A new permit will be required upon the expiration of the current permit.
-
-Note that the granting of a permit and the confirmation of a swap ([step 5](instantly-swap-at-the-best-rate.md#step-5-confirm-the-swap)) are separate transactions whereby the latter is unable to proceed without the completion of the former. More importantly, as opposed to permits, swaps will always require gas to be paid as token transfers have to be confirmed by the network. As such, in the case whereby a swap remains in a pending state, it is possible to cancel the swap transaction in your wallet while the permit remains valid until expiry. If a future swap requires more tokens than an existing permit, the user will be requested to sign a new permit.
-{% endhint %}
-{% endtab %}
-
-{% tab title="Approve" %}
-Click on the "Approve \[Token]" button to allow KyberSwap to swap the tokens on your behalf.
-
-<figure><img src="../../.gitbook/assets/Screenshot 2023-03-24 at 3.27.03 PM.png" alt=""><figcaption><p>Approve token</p></figcaption></figure>
-
-To ensure the safety of your tokens, KyberSwap will also prompt you to select an allowance limit for the token being approved. By setting an allowance limit, this ensures that KyberSwap is only able to swap the specified number of tokens from your wallet. As long as the accumulated tokens for current or future swaps exceeds this limit, another approve process will be required. You can either set a custom allowance limit or opt for an infinite limit.
-
-Hovering your mouse above the options will also bring up the helpers for your convenience.
-
-<figure><img src="../../.gitbook/assets/image (106).png" alt=""><figcaption><p>Infinite allowance helper</p></figcaption></figure>
-
-<figure><img src="../../.gitbook/assets/image (171).png" alt=""><figcaption><p>Custom allowance helper</p></figcaption></figure>
-
-Note that setting a custom allowance limit via the KyberSwap UI will be available for all wallets except for MetaMask and Trust Wallet. For these, users will be prompted to set the allowance limit directly in their wallet UI. This avoids any tx failures caused by amount mismatch.
-
-<figure><img src="../../.gitbook/assets/Allowance Limit Metamask.png" alt=""><figcaption><p>Set allowance limit in MetaMask</p></figcaption></figure>
-
-Upon confirming an allowance limit, your wallet will then prompt you to sign the transaction request with the relevant gas fees.
-{% endtab %}
-{% endtabs %}
-
-### **Step 5**: Confirm the swap
-
-Click **Swap** to open the **Confirm Swap Details** pop-up. KyberSwap secures the final route and shows the numbers for you to review.
+<figure><img src="../../.gitbook/assets/06-confirm-swap-details-crosschain.png" alt="" width="375"><figcaption></figcaption></figure>
 
 {% hint style="warning" %}
 **Route confirmation and market volatility**
 
-Do note that once the final route has been secured, the details related to your swap will be available for your review in the "Confirm Swap Details" pop-up.
-
-In times of volatility, the market conditions might have changed in-between clicking the "Swap" button and the "Confirm Swap Details" pop-up being displayed. KyberSwap will display the latest rates in the "Confirm Swap Details" pop-up for you to review.
-
-**If there is a change in the price, to protect you, you will need to accept the new price before proceeding with the swap. Refer tabs below for the various scenarios.**
-
-Please review the swap information in full prior to confirmation as the final secured route might differ from the swap screen (see [Step 3](instantly-swap-at-the-best-rate.md#step-3-configure-swap-amount)). As an additional safeguard, KyberSwap highly recommends that users take advantage of our "Max Slippage" feature (refer to [Customizing trade parameters](instantly-swap-at-the-best-rate.md#customizing-trade-parameters)).
+Confirm Swap Details shows the final rate for your swap. If you want to update to the latest price, close the pop-up and review the swap again.\
+After you confirm, the swap only goes through if the amount you receive stays within your Max Slippage.
 {% endhint %}
-
-#### Price changes (==, ++, --)
-
-{% tabs %}
-{% tab title="No change in price" %}
-If there are no changes to the swap price between viewing the route and confirming the route, the UI will display the following "Confirm Swap Details" pop-up.
-
-<figure><img src="../../.gitbook/assets/Screenshot 2023-04-12 at 12.33.24 PM.png" alt=""><figcaption><p>Confirm swap with no change in price</p></figcaption></figure>
-{% endtab %}
-
-{% tab title="Better price" %}
-In the case whereby the market has moved in the trader's favor, the "Confirm Swap Details" pop-up will display the greater amount and users can proceed with the swap. The user can continue to swap at even better rates thanks to KyberSwap sourcing the most optimal and updated route.
-
-<figure><img src="../../.gitbook/assets/Screenshot 2023-04-11 at 6.26.02 PM.png" alt=""><figcaption><p>Confirm swap with better rates</p></figcaption></figure>
-{% endtab %}
-
-{% tab title="Worse price" %}
-In cases whereby market conditions have moved against the trader, KyberSwap will display various warnings depending on the severity of the price deviation. To protect our users, additional safeguards are put in place to ensure that users are always in full control of their trades.
-
-**Price drops by less than 1% (price drop <1%)**
-
-A warning is displayed but no additional steps are required to confirm the swap.
-
-<figure><img src="../../.gitbook/assets/Screenshot 2023-04-11 at 6.20.23 PM.png" alt=""><figcaption><p>Confirm swap for price drop &#x3C; 1%</p></figcaption></figure>
-
-**Price drops more than 1% but less than 5% (1%< price drop < 5%)**
-
-A warning is displayed and user will have to accept the new amount by clicking on the "Accept New Amount" button.
-
-<figure><img src="../../.gitbook/assets/Screenshot 2023-04-11 at 6.18.25 PM.png" alt=""><figcaption><p>Accept new amount for 1% &#x3C; price drop &#x3C; 5%</p></figcaption></figure>
-
-**Price drops more than 5% but less than 10% (5%< price drop < 10%)**
-
-A strong warning is displayed and user will have to accept the new amount by clicking on the "Accept New Amount" button.
-
-<figure><img src="../../.gitbook/assets/Screenshot 2023-04-11 at 6.21.54 PM.png" alt=""><figcaption><p>Accept new amount for 5% &#x3C; price drop &#x3C; 10%</p></figcaption></figure>
-
-**Price drops more than 10% (10%< price drop)**
-
-A warning is displayed and user will have to accept the new amount by clicking on the "Accept New Amount" button. Additionally, users will have to manually type in their confirmation to validate that they consent to the significant price deviation.
-
-<figure><img src="../../.gitbook/assets/Screenshot 2023-04-11 at 6.23.34 PM.png" alt=""><figcaption><p>Accept new amount for price drop &#x3C; 10%</p></figcaption></figure>
-
-<figure><img src="../../.gitbook/assets/Screenshot 2023-04-11 at 6.43.19 PM.png" alt=""><figcaption><p>Manual confirmation of price drop greater than 10%</p></figcaption></figure>
-{% endtab %}
-{% endtabs %}
-
-In all the above cases, the confirmation screen will always display a few key pieces of information for review:
-
-* **Output amount:** Estimated return after the Swap.
-* **Current Price**: the rate at which the swap will happen (this can be inverted using the 🔁 button).
-* **Minimum Received**: This is the minimum amount of output tokens that you will receive from the swap. The swap will only be completed if this minimum amount threshold is achieved else the transaction will revert.
-* **Gas Fee**: The estimated network fee associated with this transaction.
-* **Price Impact**: The estimated change in the market price due to the size of your transaction.
 
 {% hint style="danger" %}
 **Price impact**
@@ -197,23 +120,43 @@ Do take note of the resulting price impact of your trade as this will determine 
 Please refer to the [Price Impact](../../getting-started/foundational-topics/decentralized-finance/price-impact.md) page for further details. Consider [placing a limit order](../limit-order/) instead.
 {% endhint %}
 
-* **Slippage**: The estimated difference between the expected price and final price of the trade. Slippage is an inherent characteristic of all active markets whose risks can only be mitigated. For more detailed insights, please refer to [Slippage](../../getting-started/foundational-topics/decentralized-finance/slippage.md).
-
 {% hint style="warning" %}
-KyberSwap’s interface does **not charge any flat swap fee** for trades executed directly through its interface. If an additional fee appears during a transaction, it is **not charged by KyberSwap**.
+**Fees:** KyberSwap interface charges no fee on same-chain swaps. If an additional fee appears during a same-chain swap, **it is not charged by KyberSwap**.
+
+Cross-chain swaps include a platform fee, shown clearly on the interface before you confirm. See [Fees](../../getting-started/fee-schedule.md#cross-chain-swap).
 {% endhint %}
 
-Click the “Confirm Swap” button to proceed. You should see the Transaction Submitted screen appear. You can click on "View Transaction" to see your transaction on the blockchain explorer. Additionally, you can add the token to MetaMask if you haven't already done so.
+### Step 6: Track the Swap
 
-<figure><img src="../../.gitbook/assets/image (29).png" alt=""><figcaption><p>Transaction broadcasted confirmation</p></figcaption></figure>
+To check your swaps later, click the history icon next to the settings icon. History lists both same-chain and cross-chain swaps.
 
-You should also see the transaction appear in your account’s transaction history.
+<figure><img src="../../.gitbook/assets/history-hidden-hashes.png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/Screenshot 2023-04-12 at 12.58.30 PM (1).png" alt=""><figcaption><p>Transaction history in the KyberSwap wallet UI</p></figcaption></figure>
+For the swap routed through KyberCross, click the view icon next to KyberCross to see its full details.
+
+<figure><img src="../../.gitbook/assets/10-kybercross-transaction-details-1.png" alt="" width="563"><figcaption></figcaption></figure>
+
+#### What does each status mean?
+
+<table><thead><tr><th width="183.40234375">Status</th><th>Meaning</th></tr></thead><tbody><tr><td>Processing</td><td>The transaction is in progress, including the swap on the source chain, bridging, and settlement on the destination chain.</td></tr><tr><td>Success</td><td>The swap completed, and the tokens arrived at the receiving address.</td></tr><tr><td>Failed</td><td>The swap could not be completed. If it failed on the source network, the transaction is reverted and your input tokens stay in your wallet. See <a href="instantly-swap-at-the-best-rate.md#what-happens-if-a-cross-chain-swap-fails">What happens if a cross-chain swap fails?</a></td></tr><tr><td>Refunded</td><td>The swap couldn't be completed as quoted, and the funds were returned. Depending on where the swap stopped, the token you receive or the network you receive it on may differ from the token and network you swapped from on the source chain. See <a href="instantly-swap-at-the-best-rate.md#what-happens-if-a-cross-chain-swap-fails">What happens if a cross-chain swap fails?</a></td></tr></tbody></table>
+
+#### What happens if a cross-chain swap fails?
+
+What you receive depends on which step of the route fails. The swap's steps in History show where it stopped.
+
+<table><thead><tr><th width="181.2578125">Where it fails</th><th>KyberCross route</th><th>Third-party route</th></tr></thead><tbody><tr><td><strong>Source chain</strong></td><td>The transaction reverts. Your tokens stay in your wallet; only the network fee is spent. Status: <strong>Failed</strong>.</td><td>The transaction reverts. Your tokens stay in your wallet; only the network fee is spent. Status: <strong>Failed</strong>.</td></tr><tr><td><strong>Bridge</strong></td><td>The swap does not reach the destination network. The swap shows <strong>Processing</strong> ("Waiting for provider refund") until it ends as <strong>Refunded</strong> or <strong>Failed</strong>. The bridge provider returns the funds to your sending wallet on the source network.</td><td>Handled by the provider under its own process.</td></tr><tr><td><strong>Destination chain</strong></td><td>You receive the bridged token (for example, USDC) on the destination network instead of the token you selected. Status: <strong>Refunded</strong>.</td><td>Handled by the provider under its own process.</td></tr></tbody></table>
+
+If Gas drop is on, see [Gas drop](instantly-swap-at-the-best-rate.md#gas-drop).
+
+#### **What should I do if my swap is stuck?**
+
+Contact KyberSwap's Customer Support by creating a ticket in **#create-ticket** on [Discord](https://discord.gg/kyberswap).
+
+⚠️ **Beware of scammers.** KyberSwap's Customer Support team never sends you a direct message first, and never asks for your seed phrase or private key.
 
 ## Customizing trade parameters
 
-<figure><img src="../../.gitbook/assets/image (65).png" alt=""><figcaption><p>Advanced swap settings</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/07-settings-crosschain.png" alt="" width="375"><figcaption></figcaption></figure>
 
 The KyberSwap Interface also provides additional features for more advanced traders that allow customisation of the following trade parameters:
 
@@ -229,13 +172,12 @@ Setting a higher Max slippage increases the likelihood of transaction success bu
 
 * **Transaction Time Limit:** The amount of time from submission that the transaction is valid for. If the transaction is not executed within the specified time frame, the transaction will be cancelled.
 * **Degen Mode:** Refer to [Degen Mode](instantly-swap-at-the-best-rate.md#degen-mode-tread-carefully) section below.
-* **Liquidity Sources:** Select the liquidity sources (i.e. DEXes) through which your trade will be routed. By default, all KyberSwap supported DEXes on the connected chain will be selected. You can view the list of supported DEXs on each chain on the [Supported Exchanges And Networks Page](../../getting-started/supported-exchanges-and-networks.md).
+* **Cross-Chain Routing Sources:** the providers a cross-chain swap can route through: KyberCross, and other third-party providers. By default, all sources are selected. Turn a source off to leave it out of your quotes.
+* **Liquidity Sources:** the liquidity sources a same-chain swap can route through. By default, all supported sources on the network are selected.
 
-These settings can be accessed via selecting the slider icons on the main swap page:
+Display Settings let you show or hide the Pricing Chart and Trade Route, and turn Sound on or off.
 
-<figure><img src="../../.gitbook/assets/Screenshot 2023-04-12 at 1.01.34 PM.png" alt=""><figcaption><p>Access trade settings</p></figcaption></figure>
-
-## Degen Mode: Trade carefully
+### Degen Mode: Trade carefully
 
 KyberSwap implemented Degen Mode for our most "advanced" apes. While KyberSwap has consistently iterated upon industry-leading safeguards to enable our users to trade safely, we are aware that some advanced traders might find these protective features inconvenient. As such, switching to Degen Mode allows users to conduct high impact trades without any confirmation prompts nor price impact limits.
 
@@ -245,7 +187,7 @@ KyberSwap implemented Degen Mode for our most "advanced" apes. While KyberSwap h
 Note that even with Degen Mode turned on, any significant price deviations that occurs while the swap is being secured will still require user confirmation. Please refer to [Route confirmation and market volatility](instantly-swap-at-the-best-rate.md#step-5-confirm-the-swap) for more details.
 {% endhint %}
 
-### Overriding safeguards
+#### Overriding safeguards
 
 By turning on Degen Mode, multiple safeguards will be overridden allowing users to:
 
@@ -253,7 +195,7 @@ By turning on Degen Mode, multiple safeguards will be overridden allowing users 
 * Confirm trades with price impact ≥10%
 * Proceed with swaps when price impact is unable to be calculated
 
-### Activating Degen Mode
+#### Activating Degen Mode
 
 {% hint style="danger" %}
 **Advanced traders only**
@@ -261,12 +203,41 @@ By turning on Degen Mode, multiple safeguards will be overridden allowing users 
 Tread carefully when turning on Degen Mode as [slippage](../../getting-started/foundational-topics/decentralized-finance/slippage.md) and [price impact](../../getting-started/foundational-topics/decentralized-finance/price-impact.md) risks are not conservatively capped which could result in significant losses. **KyberSwap recommends that users only activate Degen Mode if you are fully aware of the risks of unprotected trades.**
 {% endhint %}
 
-Degen Mode can be toggled on via the "[Advanced Settings](instantly-swap-at-the-best-rate.md#customizing-trade-parameters)" pop-up covered in the previous section.
-
-<figure><img src="../../.gitbook/assets/image (83).png" alt=""><figcaption><p>Degen Mode toggle</p></figcaption></figure>
-
-Upon toggling the Degen Mode switch, you will be prompted to manually confirm the switch.
-
-<figure><img src="../../.gitbook/assets/image (160).png" alt=""><figcaption><p>Confirm Degen Mode</p></figcaption></figure>
-
 As a safety precaution, Degen Mode will be auto-disabled after 30 minutes of being switched on.
+
+### Gas drop
+
+<figure><img src="../../.gitbook/assets/1-gas-drop-button_1.jpg" alt="" width="563"><figcaption></figcaption></figure>
+
+Gas drop is an optional add-on for cross-chain swaps routed through KyberCross. It sends about $2 of the destination network's native token (for example, ETH on Arbitrum or HYPE on HyperEVM) to your receiving wallet together with your swap, so you have gas for a transaction on that network after the swap.
+
+To use Gas drop, you need to turn it on.
+
+**How it works**
+
+* Gas drop runs in KyberCross's destination swap step. After the bridge step, part of the bridged token is swapped into the destination network's native token and sent to your receiving wallet.
+* Your input amount stays the same. The gas drop comes out of your output, so the amount you receive of your selected token is lower - which is shown transparently on the confirmation box before confirming.
+
+<figure><img src="../../.gitbook/assets/gas-drop-confirm.png" alt="" width="375"><figcaption></figcaption></figure>
+
+* Gas drop is only available on KyberCross routes. If your swap uses a third-party route, turning on Gas drop switches it to a KyberCross route.
+* Gas drop isn't available for same-network swaps, when the token you receive is already the native token, when the source or destination network is non-EVM, or when no KyberCross route is available for the swap.
+
+{% hint style="info" %}
+Gas drop adds a small extra protocol fee to cover the gas of the extra swap on the destination network. The fee is paid in that network's native token and is calculated as approximately:\
+`Gas drop fee ≈ 2,000,000 × current gas price on the destination network`\
+Because gas prices change with network conditions, the fee changes too. For example, on Arbitrum at a gas price of 0.020078 gwei: 2,000,000 × 0.020078 gwei ≈ 0.000040156 ETH (around $0.08).\
+This fee isn't shown as a separate line. It is already deducted when the quote is calculated, so the rate and the amount you receive on the swap screen already account for it.
+{% endhint %}
+
+**If the swap fails**
+
+Gas drop only runs once your tokens reach the destination network.
+
+| Where it fails            | Main swap                             | Gas drop    | What you receive                                                                                                             |
+| ------------------------- | ------------------------------------- | ----------- | ---------------------------------------------------------------------------------------------------------------------------- |
+| **Source chain**          | Doesn't run. The transaction reverts. | Doesn't run | Your tokens stay in your wallet                                                                                              |
+| **Bridge**                | Doesn't reach the destination network | Doesn't run | See [What happens if a cross-chain swap fails?](instantly-swap-at-the-best-rate.md#what-happens-if-a-cross-chain-swap-fails) |
+| **Gas drop only**         | Success                               | Failed      | Your selected token, plus about $2 as the bridged token (for example, USDC)                                                  |
+| **Destination swap only** | Refunded                              | Delivered   | The native gas, plus the bridged token                                                                                       |
+| **Both**                  | Refunded                              | Failed      | The full amount as the bridged token                                                                                         |

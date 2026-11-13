@@ -36,7 +36,7 @@
   * [Swap Between Different Tokens Across Chains](user-guide/user-guides/swap-between-different-tokens-across-chains.md)
   * [Tip Link Generator](user-guide/user-guides/tip-link-generator.md)
 * [Swap](user-guide/swap/README.md)
-  * [Instantly Swap At The Best Rate](user-guide/swap/instantly-swap-at-the-best-rate.md)
+  * [How to Swap](user-guide/swap/instantly-swap-at-the-best-rate.md)
   * [Smart Settlement](developer-guide/start-here/foundational-solutions/smart-settlement-better-swap-output-with-lower-slippage.md)
   * [Token Discovery](user-guide/swap/token-discovery.md)
   * [FAQ](user-guide/swap/faq.md)
