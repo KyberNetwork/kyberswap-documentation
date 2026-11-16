@@ -12,7 +12,7 @@ KyberSwap Aggregator splits your swap across many liquidity sources to find capi
 
 For cross-chain swaps through KyberCross, KyberSwap Aggregator and Smart Settlement work on both the source chain and the destination chain. In between, a bridge carries a token with deep liquidity, such as a stablecoin or ETH, from one chain to the other.
 
-For developers, KyberSwap provides the [KyberSwap Aggregator API](../../developer-guide/aggregator-api/) for same-chain swaps and the KyberCross API for cross-chain swaps (which will be released soon). Both find a route across liquidity sources and return the transaction to submit.&#x20;
+For developers, KyberSwap provides the [KyberSwap Aggregator API](../../developer-guide/aggregator-api/) for same-chain swaps and the [KyberCross API](../../developer-guide/kybercross-api/) for cross-chain swaps. Both find a route across liquidity sources and return the transaction to submit.&#x20;
 
 {% hint style="info" %}
 **Supported exchanges and networks**

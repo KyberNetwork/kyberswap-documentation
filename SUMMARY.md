@@ -124,6 +124,12 @@
     * [Error Code Reference](developer-guide/limit-order-api/api-reference/error-code-reference.md)
   * [Contracts & Addresses](developer-guide/limit-order-api/contracts-and-addresses.md)
   * [Fee Structure](developer-guide/limit-order-api/fee-structure.md)
+* [KyberCross API](developer-guide/kybercross-api/README.md)
+  * [How-to Guides](developer-guide/kybercross-api/how-to-guides/README.md)
+    * [Execute A Cross-Chain Swap With KyberCross API](developer-guide/kybercross-api/how-to-guides/execute-a-cross-chain-swap-with-kybercross-api.md)
+    * [Handle Fees And Refunds](developer-guide/kybercross-api/how-to-guides/handle-fees-and-refunds.md)
+  * [API Reference](developer-guide/kybercross-api/api-reference.md)
+  * [Contracts & Addresses](developer-guide/kybercross-api/contracts-and-addresses.md)
 
 ## AI Agent Hub
 
