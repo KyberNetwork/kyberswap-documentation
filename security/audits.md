@@ -36,7 +36,7 @@ Hacken was engaged to conduct an audit of the KNC token contract. There were no 
 
 ### Third-party Audit
 
-<table data-view="cards"><thead><tr><th></th><th data-hidden data-type="content-ref"></th><th data-hidden data-card-cover data-type="image">Cover image</th></tr></thead><tbody><tr><td>Omniscia - ZapRouterV3 and ZapValidatorV3</td><td><a href="https://github.com/KyberNetwork/ks-zap-aggregation-public-sc/blob/main/audits/kyberswap-zap-v3-omniscia-jun-2026.pdf">https://github.com/KyberNetwork/ks-zap-aggregation-public-sc/blob/main/audits/kyberswap-zap-v3-omniscia-jun-2026.pdf</a></td><td data-object-fit="contain"><a href="../.gitbook/assets/logo.svg">logo.svg</a></td></tr></tbody></table>
+<table data-view="cards"><thead><tr><th></th><th data-hidden data-type="content-ref"></th><th data-hidden data-card-cover data-type="image">Cover image</th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td>Omniscia - ZapRouterV3 and ZapValidatorV3</td><td><a href="https://github.com/KyberNetwork/ks-zap-aggregation-public-sc/blob/main/audits/kyberswap-zap-v3-omniscia-jun-2026.pdf">https://github.com/KyberNetwork/ks-zap-aggregation-public-sc/blob/main/audits/kyberswap-zap-v3-omniscia-jun-2026.pdf</a></td><td data-object-fit="contain"><a href="../.gitbook/assets/logo.svg">logo.svg</a></td><td><a href="https://github.com/KyberNetwork/ks-zap-aggregation-public-sc/blob/main/audits/kyberswap-zap-v3-omniscia-jun-2026.pdf">https://github.com/KyberNetwork/ks-zap-aggregation-public-sc/blob/main/audits/kyberswap-zap-v3-omniscia-jun-2026.pdf</a></td></tr></tbody></table>
 
 
 
