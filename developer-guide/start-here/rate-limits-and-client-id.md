@@ -4,7 +4,7 @@ description: Note on integration
 
 # Rate Limits & Authentication
 
-Public rate limits are **3 rps** (requests per second) for the Aggregator API, **10 rps** for the Limit Order API, and **1 rps** for the ZaaS API.
+Public rate limits are **3 rps** (requests per second) for the Aggregator API, **10 rps** for the Limit Order API, and **1 rps** for the ZaaS API. The KyberCross API has a default rate limit of 10 requests per 10 seconds.
 
 ## Aggregator API
 
