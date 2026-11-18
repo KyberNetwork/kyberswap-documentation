@@ -2,7 +2,28 @@
 description: >-
   Enables users to seamlessly move and exchange assets across multiple
   blockchain networks
-hidden: true
+noIndex: true
+layout:
+  width: default
+  title:
+    visible: true
+  description:
+    visible: true
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+  metadata:
+    visible: true
+  tags:
+    visible: true
+  actions:
+    visible: true
+  anchors:
+    visible: true
+metaLinks: {}
 ---
 
 # Cross-chain Swap
