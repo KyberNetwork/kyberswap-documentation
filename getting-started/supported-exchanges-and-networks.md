@@ -1,6 +1,6 @@
 # Supported Exchanges And Networks
 
-The KyberSwap product suite has been deployed across the majority of the most established DeFi chains. Whichever your preferred network, you can secure the best rates via the [Aggregator](../user-guide/swap/) (18 Chains, 420+ DEXs), execute precise trades with [Limit Orders](../user-guide/limit-order/), or move assets seamlessly between networks using [Cross-chain Swaps](../user-guide/cross-chain-swap.md). You can also utilize [KyberSwap Zap as a Service](../developer-guide/zap-as-a-service-zaas-api/) to effortlessly add liquidity into any concentrated liquidity protocol using any tokens, while also minimizing price impact through integration with the KyberSwap aggregator.
+The KyberSwap product suite has been deployed across the majority of the most established DeFi chains. Whichever your preferred network, you can secure the best rates via the [Aggregator](../user-guide/swap/) (18 Chains, 420+ DEXs), execute precise trades with [Limit Orders](../user-guide/limit-order/), or move assets seamlessly between networks using [Cross-chain Swaps](../reference/legacy/cross-chain-swap.md). You can also utilize [KyberSwap Zap as a Service](../developer-guide/zap-as-a-service-zaas-api/) to effortlessly add liquidity into any concentrated liquidity protocol using any tokens, while also minimizing price impact through integration with the KyberSwap aggregator.
 
 {% hint style="info" %}
 **DEX filtering**

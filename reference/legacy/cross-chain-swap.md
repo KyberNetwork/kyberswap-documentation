@@ -2,6 +2,7 @@
 description: >-
   Enables users to seamlessly move and exchange assets across multiple
   blockchain networks
+hidden: true
 noIndex: true
 layout:
   width: default
@@ -30,11 +31,11 @@ metaLinks: {}
 
 ## Introduction
 
-With the introduction of Cross-Chain Swap, KyberSwap expands beyond [Swap](swap/) and [Limit Order](limit-order/) to become a comprehensive, one-stop platform for traders. Users can now access essential trading tools within a single, unified interface - without the need to switch between different protocols or platforms.
+With the introduction of Cross-Chain Swap, KyberSwap expands beyond [Swap](../../user-guide/swap/) and [Limit Order](../../user-guide/limit-order/) to become a comprehensive, one-stop platform for traders. Users can now access essential trading tools within a single, unified interface - without the need to switch between different protocols or platforms.
 
 The Cross-chain Swap function on [KyberSwap.com](http://kyberswap.com/) enables users to seamlessly swap assets across different blockchain networks - all within a single, unified interface. Instead of manually interacting with multiple bridges or swapping assets across multiple DEXs, users can swap from any token on one chain to a different token on another chain, directly through KyberSwap, with no external steps required.
 
-<figure><img src="../.gitbook/assets/1 (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/1 (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 KyberSwap Cross-chain Swap feature aggregates liquidity from multiple third-party cross-chain swaps and cross-chain swap protocols. Key features include:
 
@@ -71,7 +72,7 @@ _Support for chains and protocols could be changed over time._
 
 To support the continued development and maintenance of the Cross-Chain Swap, KyberSwap applies a platform fee for using this feature. When performing a cross-chain swap, the applicable platform fee is shown as “Platform Fee” in the swap details section after the route is generated and before you confirm the transaction.
 
-<figure><img src="../.gitbook/assets/2.png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/2.png" alt="" width="375"><figcaption></figcaption></figure>
 
 Below is the detailed fee structure:
 
@@ -91,7 +92,7 @@ Let’s navigate to the Cross-chain tab on KyberSwap interface or visit the link
 
 **1.1. EVM to EVM**
 
-<figure><img src="../.gitbook/assets/3.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/3.png" alt="" width="563"><figcaption></figcaption></figure>
 
 * Source chain:
   * Simply connect your [Web3 wallet](https://docs.kyberswap.com/kyberswap-solutions/kyberswap-interface/user-guides/connect-your-wallet) using the “Connect” button in the top-right corner, or through “Connect Wallet” in the Cross-chain Swap panel.
@@ -101,7 +102,7 @@ Let’s navigate to the Cross-chain tab on KyberSwap interface or visit the link
 
 **1.2. EVM to Bitcoin/Near**
 
-<figure><img src="../.gitbook/assets/4.jpg" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/4.jpg" alt="" width="375"><figcaption></figcaption></figure>
 
 * Source chain:
   * Simply connect your [Web3 wallet](https://docs.kyberswap.com/kyberswap-solutions/kyberswap-interface/user-guides/connect-your-wallet) using the “Connect Wallet” button in the top-right corner, or through the “Select Wallet” option in the Cross-Chain Swap panel.
@@ -112,7 +113,7 @@ Let’s navigate to the Cross-chain tab on KyberSwap interface or visit the link
 
 **1.3. Bitcoin to other chains**
 
-<figure><img src="../.gitbook/assets/5.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/5.png" alt="" width="563"><figcaption></figcaption></figure>
 
 * Source chain:
   * Click “Select Wallet” in the Cross-Chain Swap panel, and connect a compatible wallet available for Bitcoin.
@@ -122,7 +123,7 @@ Let’s navigate to the Cross-chain tab on KyberSwap interface or visit the link
 
 **1.4. Near to other chains**
 
-<figure><img src="../.gitbook/assets/6.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/6.png" alt="" width="563"><figcaption></figcaption></figure>
 
 * Source chain:
   * Click “Select Wallet” in the Cross-Chain Swap panel, and connect a compatible wallet available for Near.
@@ -132,7 +133,7 @@ Let’s navigate to the Cross-chain tab on KyberSwap interface or visit the link
 
 ### Step 2: Configure your swap details
 
-<figure><img src="../.gitbook/assets/7.png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/7.png" alt="" width="375"><figcaption></figcaption></figure>
 
 * Source Network: Choose the blockchain where your current token is held.
 * Destination Network: Select the target blockchain where you want to receive the output token.
@@ -149,7 +150,7 @@ KyberSwap will source from all available routing options from supported protocol
 
 ### Step 3: View Quotes and Explore other Routing Options
 
-<figure><img src="../.gitbook/assets/8.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/8.png" alt="" width="563"><figcaption></figcaption></figure>
 
 After entering the amount, KyberSwap automatically fetches real-time quotes from multiple third-party cross-chain protocols and **selects the option that provides best rate among the quotes by default.**
 
@@ -159,7 +160,7 @@ Note: Some providers may have their protocol fee for using their router; if appl
 
 ### Step 4: Review Details and Confirm Swap
 
-<figure><img src="../.gitbook/assets/image (2) (1) (1) (1).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1).png" alt="" width="375"><figcaption></figcaption></figure>
 
 After configuring swap details, you might need to Approve the input token first if you haven’t previously authorized the protocol to swap this token on your behalf. Once approved, click “Review the Cross-chain Swap”.
 
@@ -169,7 +170,7 @@ Once everything is verified, click “Confirm Swap” and approve the transactio
 
 ### Step 5: Review transaction history
 
-<figure><img src="../.gitbook/assets/image (3) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 After initiating a cross-chain swap, users can track the entire transaction lifecycle directly within the KyberSwap interface, eliminating the need to manually monitor multiple platforms or dashboards. The transaction history panel presents a detailed overview of each swap, including the time and date when the swap is initiated, sender wallet, status, route, amount of input and output tokens, and on-chain transactions.
 

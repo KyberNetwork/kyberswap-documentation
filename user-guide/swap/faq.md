@@ -64,7 +64,7 @@ There is no minimum or maximum swap amount enforced by KyberSwap. However, very 
 
 **How do I swap between different chains?**
 
-To swap tokens across different blockchain networks, use KyberSwap's [Cross-chain Swap](../cross-chain-swap.md) feature, which integrates with third-party bridge providers to find optimal routes and rates for cross-chain transactions. For single-chain swaps, simply connect your wallet and select the desired network using the chain selector on the swap page.
+To swap tokens across different blockchain networks, use KyberSwap's [Cross-chain Swap](../../reference/legacy/cross-chain-swap.md) feature, which integrates with third-party bridge providers to find optimal routes and rates for cross-chain transactions. For single-chain swaps, simply connect your wallet and select the desired network using the chain selector on the swap page.
 
 
 

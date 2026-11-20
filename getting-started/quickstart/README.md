@@ -10,7 +10,7 @@ Beginner-friendly guides to get you started
 
 * [Instantly swap at the best rates](../../user-guide/swap/)
 * [Swap at your preferred rates](../../user-guide/limit-order/)
-* [Swap between tokens across multiple chains](../../user-guide/cross-chain-swap.md)
+* [Swap between tokens across multiple chains](../../reference/legacy/cross-chain-swap.md)
 * Explore earning opportunities, ape in, and manage your liquidity positions
 
 ## Developer Guides

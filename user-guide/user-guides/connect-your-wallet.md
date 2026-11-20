@@ -32,7 +32,7 @@ Please refer to the respective wallet provider resources on how to setup your wa
 3. Swap Tokens
    * [Instantly Swap At Superior Rates](../swap/)
    * [Swap At Your Preferred Rates](../limit-order/)
-   * [Swap Between Different Tokens Across Chains](../cross-chain-swap.md)
+   * [Swap Between Different Tokens Across Chains](../../reference/legacy/cross-chain-swap.md)
 
 </details>
 
