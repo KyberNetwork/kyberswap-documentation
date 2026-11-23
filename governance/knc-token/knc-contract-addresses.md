@@ -25,10 +25,10 @@ For avoidance of doubt, KNC refers to the current version of the token while KNC
 1. **Owner:** Kyber Multisig [https://etherscan.io/address/0x3EB01B3391EA15CE752d01Cf3D3F09deC596F650](https://etherscan.io/address/0x3EB01B3391EA15CE752d01Cf3D3F09deC596F650)\
    \
    Only has the ability to withdraw tokens transferred wrongly to its address.
-2. **Minter:** Kyber Governance Long Executor [https://etherscan.io/address/0x6758a66cd25fef7767a44895041678fc4ae9afd0](https://etherscan.io/address/0x6758a66cd25fef7767a44895041678fc4ae9afd0)\
+2. **Minter:** Kyber Governance Long Executor [https://etherscan.io/address/0x7d4d05B1a1E5775a9C6ca248ABBE629B52C1D9D9](https://etherscan.io/address/0x7d4d05B1a1E5775a9C6ca248ABBE629B52C1D9D9)\
    \
    Can only mint KNC after a successful DAO vote
-3. **Proxy admin control:** Kyber Governance Long Executor [https://etherscan.io/address/0x6758a66cd25fef7767a44895041678fc4ae9afd0](https://etherscan.io/address/0x6758a66cd25fef7767a44895041678fc4ae9afd0)\
+3. **Proxy admin control:** Kyber Governance Long Executor [https://etherscan.io/address/0x7d4d05B1a1E5775a9C6ca248ABBE629B52C1D9D9](https://etherscan.io/address/0x7d4d05B1a1E5775a9C6ca248ABBE629B52C1D9D9)\
    \
    Can only upgrade the KNC token implementation after a successful DAO vote
 
